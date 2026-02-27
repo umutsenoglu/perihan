@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perihan</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f0f2f5;
+            color: #1a1a2e;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            background: #1a1a2e;
+            color: #fff;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 { font-size: 18px; font-weight: 600; }
+        .model-badge {
+            background: #16213e;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 13px;
+            color: #a8b2d1;
+        }
+
+        /* Tabs */
+        .tabs {
+            background: #fff;
+            display: flex;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .tab {
+            padding: 12px 24px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: #64748b;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+            transition: all 0.2s;
+        }
+        .tab:hover { color: #1a1a2e; }
+        .tab.active {
+            color: #1a1a2e;
+            border-bottom-color: #3b82f6;
+        }
+
+        /* Tab content */
+        .tab-content { display: none; flex: 1; overflow: hidden; }
+        .tab-content.active { display: flex; flex-direction: column; min-height: 0; }
+
+        /* Chat tab */
+        #chat-panel { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+        .chat-mode-bar {
+            background: #fff;
+            padding: 8px 24px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .chat-mode-bar label { font-size: 13px; color: #64748b; }
+        .chat-mode-bar select, .chat-mode-bar input {
+            padding: 6px 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+        .chat-mode-bar select { min-width: 120px; }
+        .chat-mode-bar input { flex: 1; max-width: 400px; }
+
+        /* Toggle switch */
+        .toggle-label {
+            display: flex; align-items: center; gap: 6px;
+            cursor: pointer; white-space: nowrap; user-select: none;
+        }
+        .toggle-label input[type="checkbox"] { display: none; }
+        .toggle-track {
+            width: 36px; height: 20px; background: #cbd5e1;
+            border-radius: 10px; position: relative; transition: background 0.2s;
+            flex-shrink: 0;
+        }
+        .toggle-label input:checked + .toggle-track { background: #8b5cf6; }
+        .toggle-track::after {
+            content: ''; position: absolute; width: 16px; height: 16px;
+            background: #fff; border-radius: 50%; top: 2px; left: 2px;
+            transition: left 0.2s;
+        }
+        .toggle-label input:checked + .toggle-track::after { left: 18px; }
+        .deep-think-badge {
+            display: inline-block; background: #ede9fe; color: #7c3aed;
+            font-size: 11px; padding: 2px 8px; border-radius: 10px; margin-left: 6px;
+        }
+
+        .messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .message {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 14px;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .message.user {
+            align-self: flex-end;
+            background: #3b82f6;
+            color: #fff;
+            border-bottom-right-radius: 4px;
+        }
+        .message.assistant {
+            align-self: flex-start;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-bottom-left-radius: 4px;
+        }
+        .message .sources {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 12px;
+            color: #64748b;
+        }
+        .message .sources span {
+            display: inline-block;
+            background: #f1f5f9;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin: 2px 4px 2px 0;
+        }
+        .tool-calls {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 11px;
+            color: #94a3b8;
+        }
+        .tool-calls summary { cursor: pointer; font-size: 12px; color: #64748b; }
+
+        .chat-input-bar {
+            padding: 16px 24px;
+            background: #fff;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            gap: 12px;
+        }
+        .chat-input-bar input {
+            flex: 1;
+            padding: 10px 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+        .chat-input-bar input:focus { border-color: #3b82f6; }
+        .chat-input-bar button {
+            padding: 10px 24px;
+            background: #3b82f6;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .chat-input-bar button:hover { background: #2563eb; }
+        .chat-input-bar button:disabled { background: #94a3b8; cursor: not-allowed; }
+
+        /* Index tab */
+        .panel {
+            padding: 24px;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            overflow-y: auto;
+            flex: 1;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            border: 1px solid #e2e8f0;
+        }
+        .card h2 { font-size: 16px; margin-bottom: 12px; color: #1a1a2e; }
+        .card p { font-size: 13px; color: #64748b; margin-bottom: 12px; }
+
+        .form-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .form-row input {
+            flex: 1;
+            padding: 10px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .btn-primary { background: #3b82f6; color: #fff; }
+        .btn-primary:hover { background: #2563eb; }
+        .btn-danger { background: #ef4444; color: #fff; }
+        .btn-danger:hover { background: #dc2626; }
+        .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+        .result-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 13px;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+            display: none;
+        }
+        .result-box.visible { display: block; }
+
+        /* Settings */
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .stat-card {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+        .stat-card .value { font-size: 28px; font-weight: 700; color: #3b82f6; }
+        .stat-card .label { font-size: 12px; color: #64748b; margin-top: 4px; }
+
+        .model-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .model-chip {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            cursor: pointer;
+            border: 1px solid #cbd5e1;
+            background: #fff;
+            transition: all 0.2s;
+        }
+        .model-chip:hover { border-color: #3b82f6; }
+        .model-chip.active {
+            background: #3b82f6;
+            color: #fff;
+            border-color: #3b82f6;
+        }
+        .model-chip .size { font-size: 11px; color: #94a3b8; margin-left: 4px; }
+        .model-chip.active .size { color: #bfdbfe; }
+        .model-chip.gemini { border-color: #4285f4; }
+        .model-chip.gemini .size { color: #4285f4; }
+        .model-chip.gemini.active { background: #4285f4; border-color: #4285f4; }
+
+        /* Progress bar (indexing) */
+        .prog-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 6px;
+        }
+        .prog-wrap {
+            background: #e2e8f0;
+            border-radius: 4px;
+            height: 8px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+        .prog-bar {
+            height: 100%;
+            background: #3b82f6;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+        .prog-status {
+            font-size: 12px;
+            color: #64748b;
+            font-style: italic;
+            margin-bottom: 8px;
+            min-height: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .prog-log {
+            font-size: 12px;
+            color: #475569;
+            max-height: 140px;
+            overflow-y: auto;
+            line-height: 1.8;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 4px;
+        }
+
+        /* Loading spinner */
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #e2e8f0;
+            border-top-color: #3b82f6;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .loading-msg {
+            align-self: flex-start;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 12px 16px;
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        /* Setup wizard */
+        #setup-overlay {
+            position: fixed; inset: 0; z-index: 1000;
+            background: rgba(0,0,0,0.6);
+            display: flex; align-items: center; justify-content: center;
+        }
+        #setup-overlay.hidden { display: none; }
+        .wizard-box {
+            background: #fff; border-radius: 16px;
+            padding: 36px 40px; max-width: 520px; width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .wizard-box h1 { font-size: 22px; margin-bottom: 6px; color: #1a1a2e; }
+        .wizard-box .tagline { font-size: 14px; color: #64748b; margin-bottom: 24px; }
+        .wizard-section { margin-bottom: 20px; }
+        .wizard-section h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+        .wizard-section p { font-size: 13px; color: #64748b; margin-bottom: 8px; }
+        .wizard-actions { margin-top: 20px; display: flex; justify-content: flex-end; }
+        .wizard-error {
+            background: #fef2f2; border: 1px solid #fca5a5;
+            color: #dc2626; font-size: 13px; padding: 8px 12px;
+            border-radius: 6px; margin-top: 12px; display: none;
+        }
+        .status-pill {
+            font-size: 11px; padding: 2px 8px; border-radius: 10px;
+            background: #e2e8f0; color: #64748b;
+        }
+        .status-pill.ok { background: #dcfce7; color: #16a34a; }
+        .status-pill.err { background: #fef2f2; color: #dc2626; }
+        .input-with-btn { display: flex; gap: 8px; }
+        .input-with-btn input {
+            flex: 1; padding: 9px 12px; border: 1px solid #cbd5e1;
+            border-radius: 8px; font-size: 13px;
+        }
+        .btn-ghost {
+            padding: 8px 14px; border: 1px solid #cbd5e1; background: #fff;
+            border-radius: 8px; font-size: 13px; cursor: pointer; white-space: nowrap;
+        }
+        .btn-ghost:hover { border-color: #3b82f6; color: #3b82f6; }
+        .save-feedback { font-size: 13px; margin-top: 8px; }
+        .save-feedback.ok { color: #16a34a; }
+        .save-feedback.err { color: #dc2626; }
+        .field-label { font-size: 13px; font-weight: 500; color: #374151; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+    </style>
+</head>
+<body>
+    <div id="setup-overlay" class="hidden">
+      <div class="wizard-box">
+        <h1>Welcome to Perihan</h1>
+        <p class="tagline">Configure at least one AI provider to get started. You can use both.</p>
+
+        <div class="wizard-section">
+          <h3>Google Gemini <span class="status-pill" id="wiz-gemini-pill">Cloud API</span></h3>
+          <p>Paste your Gemini API key. <a href="https://aistudio.google.com/app/apikey" target="_blank">Get one free &rarr;</a></p>
+          <div class="input-with-btn">
+            <input type="password" id="wiz-gemini-key" placeholder="AIza...">
+            <button class="btn-ghost" onclick="toggleViz('wiz-gemini-key',this)">Show</button>
+          </div>
+        </div>
+
+        <div class="wizard-section">
+          <h3>Ollama (local) <span class="status-pill" id="wiz-ollama-pill">Checking...</span></h3>
+          <p>Runs models locally, no API key needed. <a href="https://ollama.com" target="_blank">Download &rarr;</a></p>
+          <div class="input-with-btn">
+            <input type="text" id="wiz-ollama-host" value="http://localhost:11434">
+            <button class="btn-ghost" onclick="recheckOllama()">Check</button>
+          </div>
+        </div>
+
+        <div class="wizard-error" id="wiz-error">Please configure at least one AI provider.</div>
+        <div class="wizard-actions">
+          <button class="btn btn-primary" id="wiz-save-btn" onclick="wizardSave()">Save &amp; Start</button>
+        </div>
+      </div>
+    </div>
+
+    <header>
+        <h1>Perihan</h1>
+        <div class="model-badge" id="header-model">Loading...</div>
+    </header>
+
+    <div class="tabs">
+        <div class="tab active" data-tab="chat">Chat</div>
+        <div class="tab" data-tab="index">Index</div>
+        <div class="tab" data-tab="settings">Settings</div>
+    </div>
+
+    <!-- Chat Tab -->
+    <div id="chat" class="tab-content active">
+        <div id="chat-panel">
+            <div class="chat-mode-bar">
+                <label class="toggle-label">
+                    <input type="checkbox" id="use-drive" checked>
+                    <span class="toggle-track"></span>
+                    <span id="drive-label" style="font-size:13px; color:#64748b;">Google Drive</span>
+                </label>
+                <label class="toggle-label" style="margin-left:8px;">
+                    <input type="checkbox" id="deep-think">
+                    <span class="toggle-track"></span>
+                    <span style="font-size:13px; color:#64748b;">Deep Think</span>
+                </label>
+            </div>
+            <div class="messages" id="messages"></div>
+            <div class="chat-input-bar">
+                <input type="text" id="question" placeholder="Ask a question about your documents..." autofocus>
+                <button id="send-btn" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Index Tab -->
+    <div id="index" class="tab-content">
+        <div class="panel">
+            <div class="card">
+                <h2>Index a Folder</h2>
+                <p>Recursively scan and index all documents (txt, md, pdf, docx, xml) from a local folder into the vector database.</p>
+                <div class="form-row">
+                    <input type="text" id="index-folder-path" placeholder="e.g. C:\Users\documents\company">
+                    <button class="btn btn-primary" id="index-btn" onclick="indexFolder()">Index</button>
+                </div>
+                <div class="result-box" id="index-result"></div>
+            </div>
+
+            <div class="card">
+                <h2>Index Google Drive</h2>
+                <p>Download summaries of all Google Drive files into the local vector database. Drive must be connected first (Settings tab).</p>
+                <div class="form-row">
+                    <input type="text" id="gdrive-folder-id" placeholder="Folder ID (leave empty for all of Drive)">
+                    <button class="btn btn-primary" id="gdrive-index-btn" onclick="indexGdrive()">Index Drive</button>
+                </div>
+                <div class="result-box" id="gdrive-index-result"></div>
+            </div>
+
+            <div class="card">
+                <h2>Indexed Documents</h2>
+                <p>Documents currently stored in the vector database.</p>
+                <button class="btn btn-primary" onclick="loadDocuments()" style="margin-bottom:12px;">Refresh</button>
+                <div class="result-box visible" id="doc-list" style="display:block;">Click Refresh to load.</div>
+            </div>
+
+            <div class="card">
+                <h2>Indexed Folders</h2>
+                <button class="btn btn-primary" onclick="loadFolders()" style="margin-bottom:12px;">Refresh</button>
+                <div class="result-box visible" id="folder-list" style="display:block;">Click Refresh to load.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Tab -->
+    <div id="settings" class="tab-content">
+        <div class="panel">
+            <div class="card">
+                <h2>Vector Database Stats</h2>
+                <div class="stat-grid" id="stats-grid">
+                    <div class="stat-card"><div class="value" id="stat-chunks">-</div><div class="label">Chunks</div></div>
+                    <div class="stat-card"><div class="value" id="stat-files">-</div><div class="label">Files</div></div>
+                    <div class="stat-card"><div class="value" id="stat-folders">-</div><div class="label">Folders</div></div>
+                    <div class="stat-card"><div class="value" id="stat-disk">-</div><div class="label">Disk (KB)</div></div>
+                </div>
+                <button class="btn btn-primary" onclick="loadStats()">Refresh Stats</button>
+            </div>
+
+            <div class="card">
+                <h2>LLM Model</h2>
+                <p>Select the active model (Ollama or Gemini). Click a model to switch.</p>
+                <div class="model-list" id="model-list">Loading models...</div>
+            </div>
+
+            <div class="card">
+                <h2>API Keys &amp; Connections</h2>
+                <p>Changes take effect immediately — no restart needed.</p>
+
+                <div class="field-label">Gemini API Key <span class="status-pill" id="settings-gemini-pill">Unknown</span></div>
+                <div class="input-with-btn">
+                    <input type="password" id="settings-gemini-key" placeholder="Leave blank to keep existing key">
+                    <button class="btn-ghost" onclick="toggleViz('settings-gemini-key',this)">Show</button>
+                </div>
+
+                <div class="field-label" style="margin-top:14px;">Ollama Host <span class="status-pill" id="settings-ollama-pill">Unknown</span></div>
+                <div class="input-with-btn">
+                    <input type="text" id="settings-ollama-host" placeholder="http://localhost:11434">
+                </div>
+
+                <button class="btn btn-primary" style="margin-top:12px;" onclick="saveApiKeys()">Save</button>
+                <div class="save-feedback" id="apikeys-feedback"></div>
+            </div>
+
+            <div class="card">
+                <h2>Google Drive</h2>
+                <p>Connect your Google Drive so the MCP agent can search and read files from it.</p>
+                <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                    <div id="drive-status-dot" style="width:10px; height:10px; border-radius:50%; background:#e2e8f0;"></div>
+                    <span id="drive-status-text" style="font-size:13px; color:#64748b;">Checking...</span>
+                </div>
+                <button class="btn btn-primary" id="drive-connect-btn" onclick="connectDrive()">Connect Google Drive</button>
+                <div class="result-box" id="drive-result"></div>
+            </div>
+
+            <div class="card">
+                <h2>Reset Database</h2>
+                <p>Delete all indexed documents and reset the vector database. This cannot be undone.</p>
+                <button class="btn btn-danger" onclick="resetDB()">Reset Vector Database</button>
+                <div class="result-box" id="reset-result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API = '';
+
+        // --- Tab navigation ---
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+
+                if (tab.dataset.tab === 'settings') { loadStats(); loadModels(); loadApiKeys(); }
+            });
+        });
+
+        // (no mode toggle — single unified chat endpoint)
+
+
+        // Enter key to send
+        document.getElementById('question').addEventListener('keydown', e => {
+            if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+        });
+
+        // --- Chat ---
+        async function sendMessage() {
+            const input = document.getElementById('question');
+            const q = input.value.trim();
+            if (!q) return;
+
+            const messagesDiv = document.getElementById('messages');
+            const sendBtn = document.getElementById('send-btn');
+
+            // Add user message
+            const userMsg = document.createElement('div');
+            userMsg.className = 'message user';
+            userMsg.textContent = q;
+            messagesDiv.appendChild(userMsg);
+            input.value = '';
+            sendBtn.disabled = true;
+
+            // Loading indicator
+            const loading = document.createElement('div');
+            loading.className = 'loading-msg';
+            loading.innerHTML = '<span class="spinner"></span>Thinking...';
+            messagesDiv.appendChild(loading);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+            try {
+                let data;
+                {
+                    const useDrive = document.getElementById('use-drive').checked;
+                    const deepThink = document.getElementById('deep-think').checked;
+                    const params = { question: q };
+                    if (!useDrive) params.use_drive = 'false';
+                    if (deepThink) params.deep_think = 'true';
+                    const resp = await fetch(`${API}/chat?` + new URLSearchParams(params), { method: 'POST' });
+                    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                    data = await resp.json();
+                }
+
+                loading.remove();
+
+                const assistantMsg = document.createElement('div');
+                assistantMsg.className = 'message assistant';
+
+                let html = escapeHtml(data.reply);
+
+                // Deep Think badge
+                if (data.deep_think_used) {
+                    html += '<span class="deep-think-badge">⚡ Deep Think</span>';
+                }
+
+                // Sources (RAG)
+                if (data.sources && data.sources.length > 0) {
+                    html += '<div class="sources"><strong>Sources:</strong> ';
+                    html += data.sources.map(s => `<span>${escapeHtml(s.title)}</span>`).join('');
+                    html += '</div>';
+                }
+
+                // Tool calls (Deep Think)
+                if (data.tool_calls && data.tool_calls.length > 0) {
+                    html += '<details class="tool-calls"><summary>' + data.tool_calls.length + ' tool call(s)</summary>';
+                    data.tool_calls.forEach(tc => {
+                        let label = `<strong>${escapeHtml(tc.tool)}</strong>(${escapeHtml(JSON.stringify(tc.args))})`;
+                        if (tc.file_name) {
+                            label += ` → <em>${escapeHtml(tc.file_name)}</em>`;
+                        } else if (tc.file_count !== undefined) {
+                            label += ` → ${tc.file_count} file(s)`;
+                        }
+                        html += `<div>${label}</div>`;
+                    });
+                    html += '</details>';
+                }
+
+                assistantMsg.innerHTML = html;
+                messagesDiv.appendChild(assistantMsg);
+            } catch (err) {
+                loading.remove();
+                const errMsg = document.createElement('div');
+                errMsg.className = 'message assistant';
+                errMsg.style.borderColor = '#fca5a5';
+                let msg = err.message;
+                if (msg === 'Failed to fetch' || msg === 'Load failed' || msg === 'NetworkError when attempting to fetch resource') {
+                    msg = 'Cannot reach server. Make sure it is running:\n  uvicorn main:app --reload';
+                } else if (msg.startsWith('HTTP 5')) {
+                    msg = 'Server error (' + msg + '). Check the uvicorn terminal for a traceback.';
+                } else if (msg.startsWith('HTTP 4')) {
+                    msg = 'Request error (' + msg + '). Check your input or API key configuration.';
+                }
+                errMsg.textContent = msg;
+                messagesDiv.appendChild(errMsg);
+            }
+
+            sendBtn.disabled = false;
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            input.focus();
+        }
+
+        // --- Index ---
+        async function indexFolder() {
+            const path = document.getElementById('index-folder-path').value.trim();
+            if (!path) return;
+            const btn = document.getElementById('index-btn');
+            const result = document.getElementById('index-result');
+            btn.disabled = true;
+            btn.textContent = 'Indexing...';
+            result.className = 'result-box visible';
+            try {
+                const resp = await fetch(`${API}/index-folder?` + new URLSearchParams({ folder_path: path }), { method: 'POST' });
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                await streamIndexProgress(resp, result);
+            } catch (err) {
+                result.textContent = 'Error: ' + err.message;
+            }
+            btn.disabled = false;
+            btn.textContent = 'Index';
+        }
+
+        async function indexGdrive() {
+            const folderId = document.getElementById('gdrive-folder-id').value.trim();
+            const btn = document.getElementById('gdrive-index-btn');
+            const result = document.getElementById('gdrive-index-result');
+            btn.disabled = true;
+            btn.textContent = 'Indexing...';
+            result.className = 'result-box visible';
+            try {
+                const params = folderId ? { folder_id: folderId } : {};
+                const resp = await fetch(`${API}/index-gdrive?` + new URLSearchParams(params), { method: 'POST' });
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                await streamIndexProgress(resp, result);
+            } catch (err) {
+                result.textContent = 'Error: ' + err.message;
+            }
+            btn.disabled = false;
+            btn.textContent = 'Index Drive';
+        }
+
+        async function streamIndexProgress(resp, container) {
+            container.innerHTML = `
+                <div class="prog-label">
+                    <span id="pg-count">Starting...</span>
+                    <span id="pg-pct"></span>
+                </div>
+                <div class="prog-wrap"><div class="prog-bar" id="pg-bar"></div></div>
+                <div class="prog-status" id="pg-status"></div>
+                <div class="prog-log" id="pg-log"></div>`;
+
+            const bar = document.getElementById('pg-bar');
+            const countEl = document.getElementById('pg-count');
+            const pctEl = document.getElementById('pg-pct');
+            const statusEl = document.getElementById('pg-status');
+            const logEl = document.getElementById('pg-log');
+            let total = 0;
+
+            function setProgress(done, tot, status) {
+                if (tot > 0) {
+                    const pct = Math.round((done / tot) * 100);
+                    bar.style.width = pct + '%';
+                    countEl.textContent = `${done} / ${tot} files`;
+                    pctEl.textContent = pct + '%';
+                }
+                if (status !== undefined) statusEl.textContent = status;
+            }
+
+            function addLog(line) {
+                const div = document.createElement('div');
+                div.textContent = line;
+                logEl.appendChild(div);
+                logEl.scrollTop = logEl.scrollHeight;
+            }
+
+            const reader = resp.body.getReader();
+            const decoder = new TextDecoder();
+            let buffer = '';
+
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+                buffer += decoder.decode(value, { stream: true });
+                const parts = buffer.split('\n\n');
+                buffer = parts.pop() || '';
+
+                for (const part of parts) {
+                    if (!part.startsWith('data: ')) continue;
+                    let event;
+                    try { event = JSON.parse(part.slice(6)); } catch { continue; }
+
+                    if (event.type === 'error') {
+                        container.textContent = 'Error: ' + event.message;
+                        return;
+                    } else if (event.type === 'start') {
+                        total = event.total;
+                        setProgress(0, total, '');
+                        countEl.textContent = `0 / ${total} files`;
+                    } else if (event.type === 'progress') {
+                        const stepLabels = { chunking: 'chunking', summarizing: 'summarizing (LLM)', reading: 'reading', 'listing files': 'listing files…' };
+                        const label = stepLabels[event.step] || event.step;
+                        setProgress(event.done, total, (event.file ? event.file + ' — ' : '') + label);
+                    } else if (event.type === 'file_done') {
+                        const extra = event.chunks !== undefined ? ` (${event.chunks} chunks)` : '';
+                        setProgress(event.done, total, '');
+                        addLog(`✓ ${event.file}${extra}`);
+                    } else if (event.type === 'skip') {
+                        setProgress(event.done, total, '');
+                        addLog(`— ${event.file} (skipped: ${event.reason || 'empty'})`);
+                    } else if (event.type === 'file_error') {
+                        setProgress(event.done, total, '');
+                        addLog(`✗ ${event.file}: ${event.error}`);
+                    } else if (event.type === 'complete') {
+                        bar.style.width = '100%';
+                        bar.style.background = '#22c55e';
+                        statusEl.textContent = '';
+                        const errPart = event.errors && event.errors.length ? ` | ${event.errors.length} error(s)` : '';
+                        const skipPart = event.skipped !== undefined ? ` | Skipped: ${event.skipped}` : '';
+                        countEl.textContent = `Done — ${event.indexed} indexed${skipPart}${errPart}`;
+                        pctEl.textContent = '100%';
+                    }
+                }
+            }
+        }
+
+        async function loadDocuments() {
+            const el = document.getElementById('doc-list');
+            el.textContent = 'Loading...';
+            try {
+                const resp = await fetch(`${API}/documents`);
+                const data = await resp.json();
+                if (data.count === 0) {
+                    el.textContent = 'No documents indexed yet.';
+                } else {
+                    // Group by title
+                    const byTitle = {};
+                    data.documents.forEach(d => {
+                        if (!byTitle[d.title]) byTitle[d.title] = 0;
+                        byTitle[d.title]++;
+                    });
+                    let text = `${data.count} total chunks from ${Object.keys(byTitle).length} file(s):\n\n`;
+                    Object.entries(byTitle).forEach(([title, chunks]) => {
+                        text += `  ${title} (${chunks} chunks)\n`;
+                    });
+                    el.textContent = text;
+                }
+            } catch (err) {
+                el.textContent = 'Error: ' + err.message;
+            }
+        }
+
+        async function loadFolders() {
+            const el = document.getElementById('folder-list');
+            el.textContent = 'Loading...';
+            try {
+                const resp = await fetch(`${API}/folders`);
+                const data = await resp.json();
+                const folders = data.folders;
+                if (Object.keys(folders).length === 0) {
+                    el.textContent = 'No folders indexed yet.';
+                } else {
+                    let text = '';
+                    Object.entries(folders).forEach(([folder, files]) => {
+                        text += `${folder}/\n`;
+                        files.forEach(f => { text += `  ${f}\n`; });
+                        text += '\n';
+                    });
+                    el.textContent = text.trim();
+                }
+            } catch (err) {
+                el.textContent = 'Error: ' + err.message;
+            }
+        }
+
+        // --- Settings ---
+        async function loadStats() {
+            try {
+                const resp = await fetch(`${API}/stats`);
+                const data = await resp.json();
+                document.getElementById('stat-chunks').textContent = data.chunks;
+                document.getElementById('stat-files').textContent = data.unique_files;
+                document.getElementById('stat-folders').textContent = data.unique_folders;
+                document.getElementById('stat-disk').textContent = data.disk_size_kb;
+            } catch (err) {
+                console.error('Failed to load stats:', err);
+            }
+        }
+
+        let currentModel = '';
+        async function loadModels() {
+            const el = document.getElementById('model-list');
+            try {
+                const resp = await fetch(`${API}/models`);
+                const data = await resp.json();
+                if (data.models.length === 0) {
+                    el.textContent = 'No models found. Is Ollama running? Is GEMINI_API_KEY set?';
+                    return;
+                }
+                el.innerHTML = '';
+                data.models.forEach(m => {
+                    const chip = document.createElement('div');
+                    const isGemini = m.provider === 'gemini';
+                    const isActive = m.name === currentModel;
+                    chip.className = 'model-chip' + (isGemini ? ' gemini' : '') + (isActive ? ' active' : '');
+                    const sizeLabel = isGemini ? 'Cloud API' : `${m.size_gb} GB`;
+                    chip.innerHTML = escapeHtml(m.name) + `<span class="size">${sizeLabel}</span>`;
+                    chip.onclick = () => setModel(m.name);
+                    el.appendChild(chip);
+                });
+            } catch (err) {
+                el.textContent = 'Error loading models: ' + err.message;
+            }
+        }
+
+        async function setModel(name) {
+            try {
+                const resp = await fetch(`${API}/model?` + new URLSearchParams({ model_name: name }), { method: 'POST' });
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                currentModel = name;
+                document.getElementById('header-model').textContent = name;
+                loadModels(); // refresh chips
+            } catch (err) {
+                alert('Failed to set model: ' + err.message);
+            }
+        }
+
+        async function resetDB() {
+            if (!confirm('Are you sure you want to reset the vector database? This will delete ALL indexed documents.')) return;
+            const result = document.getElementById('reset-result');
+            result.className = 'result-box visible';
+            result.textContent = 'Resetting...';
+            try {
+                const resp = await fetch(`${API}/reset`, { method: 'POST' });
+                const data = await resp.json();
+                result.textContent = `${data.message} Deleted ${data.deleted_documents} document(s).`;
+                loadStats();
+            } catch (err) {
+                result.textContent = 'Error: ' + err.message;
+            }
+        }
+
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        // --- Google Drive ---
+        async function checkDriveStatus() {
+            try {
+                const resp = await fetch(`${API}/drive/status`);
+                const data = await resp.json();
+                setDriveStatus(data.connected);
+            } catch (e) {
+                setDriveStatus(false);
+            }
+        }
+
+        function setDriveStatus(connected) {
+            const dot = document.getElementById('drive-status-dot');
+            const text = document.getElementById('drive-status-text');
+            const label = document.getElementById('drive-label');
+            if (connected) {
+                dot.style.background = '#22c55e';
+                text.textContent = 'Connected';
+                text.style.color = '#16a34a';
+                if (label) { label.style.color = '#16a34a'; label.textContent = 'Google Drive ✓'; }
+            } else {
+                dot.style.background = '#f87171';
+                text.textContent = 'Not connected — visit Settings to connect';
+                text.style.color = '#dc2626';
+                if (label) { label.style.color = '#94a3b8'; label.textContent = 'Google Drive'; }
+            }
+        }
+
+        async function connectDrive() {
+            const result = document.getElementById('drive-result');
+            result.className = 'result-box visible';
+            result.textContent = 'Fetching authorization URL...';
+            try {
+                const resp = await fetch(`${API}/auth/google`);
+                if (!resp.ok) {
+                    const err = await resp.json();
+                    result.textContent = 'Error: ' + (err.detail || resp.status);
+                    return;
+                }
+                const data = await resp.json();
+                result.innerHTML = `<strong>Open this URL in your browser to authorize:</strong><br><br><a href="${data.auth_url}" target="_blank" style="color:#3b82f6; word-break:break-all;">${escapeHtml(data.auth_url)}</a><br><br>After authorizing, refresh this page.`;
+            } catch (err) {
+                result.textContent = 'Error: ' + err.message;
+            }
+        }
+
+        // Reload drive status when Settings tab is opened
+        const origTabHandler = document.querySelectorAll('.tab');
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                if (tab.dataset.tab === 'settings') { checkDriveStatus(); }
+            });
+        });
+
+        // --- Wizard & API Keys ---
+        function toggleViz(id, btn) {
+            const inp = document.getElementById(id);
+            inp.type = inp.type === 'password' ? 'text' : 'password';
+            btn.textContent = inp.type === 'password' ? 'Show' : 'Hide';
+        }
+        function setPill(id, ok, okLabel, errLabel) {
+            const el = document.getElementById(id);
+            el.textContent = ok ? okLabel : errLabel;
+            el.className = 'status-pill ' + (ok ? 'ok' : 'err');
+        }
+        async function checkOllamaRunning() {
+            try {
+                const data = await (await fetch(`${API}/models`)).json();
+                return data.models.some(m => m.provider === 'ollama');
+            } catch { return false; }
+        }
+
+        async function initWizard() {
+            try {
+                const data = await (await fetch(`${API}/setup-status`)).json();
+                if (data.setup_complete) { document.getElementById('setup-overlay').classList.add('hidden'); return; }
+            } catch { document.getElementById('setup-overlay').classList.add('hidden'); return; }
+            document.getElementById('setup-overlay').classList.remove('hidden');
+            checkOllamaRunning().then(ok => setPill('wiz-ollama-pill', ok, 'Running', 'Not detected'));
+        }
+        async function recheckOllama() {
+            const host = document.getElementById('wiz-ollama-host').value.trim();
+            document.getElementById('wiz-ollama-pill').textContent = 'Checking...';
+            await fetch(`${API}/config`, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ollama_host: host}) });
+            checkOllamaRunning().then(ok => setPill('wiz-ollama-pill', ok, 'Running', 'Not detected'));
+        }
+        async function wizardSave() {
+            const geminiKey = document.getElementById('wiz-gemini-key').value.trim();
+            const ollamaHost = document.getElementById('wiz-ollama-host').value.trim();
+            const ollamaOk = document.getElementById('wiz-ollama-pill').classList.contains('ok');
+            const errEl = document.getElementById('wiz-error');
+            if (!ollamaOk && !geminiKey) { errEl.style.display = 'block'; return; }
+            errEl.style.display = 'none';
+            const btn = document.getElementById('wiz-save-btn');
+            btn.disabled = true; btn.textContent = 'Saving...';
+            try {
+                const body = { setup_complete: true, ollama_host: ollamaHost };
+                if (geminiKey) body.gemini_api_key = geminiKey;
+                await fetch(`${API}/config`, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+                document.getElementById('setup-overlay').classList.add('hidden');
+                await init();
+            } catch(e) {
+                errEl.textContent = 'Save failed: ' + e.message; errEl.style.display = 'block';
+            } finally { btn.disabled = false; btn.textContent = 'Save & Start'; }
+        }
+
+        async function loadApiKeys() {
+            try {
+                const data = await (await fetch(`${API}/config`)).json();
+                setPill('settings-gemini-pill', data.gemini_api_key_set, 'Configured', 'Not set');
+                document.getElementById('settings-ollama-host').value = data.ollama_host || 'http://localhost:11434';
+                checkOllamaRunning().then(ok => setPill('settings-ollama-pill', ok, 'Running', 'Not detected'));
+            } catch {}
+        }
+        async function saveApiKeys() {
+            const geminiKey = document.getElementById('settings-gemini-key').value.trim();
+            const ollamaHost = document.getElementById('settings-ollama-host').value.trim();
+            const fb = document.getElementById('apikeys-feedback');
+            fb.className = 'save-feedback';
+            const body = { ollama_host: ollamaHost };
+            if (geminiKey) body.gemini_api_key = geminiKey;
+            try {
+                const resp = await fetch(`${API}/config`, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                fb.textContent = 'Saved.'; fb.className = 'save-feedback ok';
+                document.getElementById('settings-gemini-key').value = '';
+                loadApiKeys(); loadModels();
+            } catch(e) { fb.textContent = 'Error: ' + e.message; fb.className = 'save-feedback err'; }
+        }
+
+        // --- Init ---
+        async function init() {
+            await initWizard();
+            try {
+                const resp = await fetch(`${API}/current-model`);
+                const data = await resp.json();
+                currentModel = data.model;
+                document.getElementById('header-model').textContent = currentModel;
+            } catch (e) {
+                document.getElementById('header-model').textContent = 'Disconnected';
+            }
+            checkDriveStatus();
+        }
+        init();
+    </script>
+</body>
+</html>

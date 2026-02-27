@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+openai
+chromadb
+python-docx
+PyPDF2
+google-auth
+google-auth-oauthlib
+google-api-python-client
+httpx

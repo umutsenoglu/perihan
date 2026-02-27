@@ -1,0 +1,14 @@
+venv/
+dist/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+vectordb/
+data/
+.env
+credentials.json
+token.json
+model.json
+perihan_config.json
+*.log
