@@ -186,3 +186,34 @@ async def update_config(body: ConfigUpdate):
         patch["setup_complete"] = body.setup_complete
     save_config(patch)
     return {"ok": True}
+
+
+@router.delete("/logs")
+async def clear_logs():
+    """Delete all log entries."""
+    from config import DATA_DIR
+    log_file = DATA_DIR / "logs" / "chat.jsonl"
+    if log_file.exists():
+        log_file.write_text("", encoding="utf-8")
+    return {"ok": True}
+
+
+@router.get("/logs")
+async def get_logs(limit: int = 100, offset: int = 0):
+    """Return log entries from chat.jsonl, newest first."""
+    import json
+    from config import DATA_DIR
+    log_file = DATA_DIR / "logs" / "chat.jsonl"
+    if not log_file.exists():
+        return {"entries": [], "total": 0}
+    lines = log_file.read_text(encoding="utf-8").splitlines()
+    entries = []
+    for line in reversed(lines):
+        line = line.strip()
+        if line:
+            try:
+                entries.append(json.loads(line))
+            except Exception:
+                pass
+    total = len(entries)
+    return {"entries": entries[offset: offset + limit], "total": total}

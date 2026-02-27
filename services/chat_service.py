@@ -295,12 +295,11 @@ Documents:
             "question": question,
             "use_drive": use_drive,
             "deep_think": deep_think,
-            "rag_results": [{"title": m.get("title", ""), "source": m.get("source", ""), "preview": d[:200]} for d, m in zip(docs, metas)],
+            "rag_results": [{"title": m.get("title", ""), "source": m.get("source", ""), "content": d} for d, m in zip(docs, metas)],
             "llm_prompt": llm_messages,
             "llm_response": None,
             "deep_think_triggered": False,
             "mcp_iterations": [],
-            "sources": sources,
             "error": str(e),
             "duration_ms": round((time.perf_counter() - start_time) * 1000),
         })
@@ -313,7 +312,7 @@ Documents:
     reply_clean = reply.replace("[CONFIDENT]", "").replace("[UNCERTAIN]", "").strip()
 
     rag_results_log = [
-        {"title": m.get("title", ""), "source": m.get("source", "local"), "preview": d[:200]}
+        {"title": m.get("title", ""), "source": m.get("source", "local"), "content": d}
         for d, m in zip(docs, metas)
     ]
 
@@ -331,7 +330,6 @@ Documents:
             "llm_response": reply,
             "deep_think_triggered": True,
             "mcp_iterations": mcp_result.get("mcp_iterations", []),
-            "sources": [],
             "error": None,
             "duration_ms": round((time.perf_counter() - start_time) * 1000),
         })
@@ -357,7 +355,6 @@ Documents:
         "llm_response": reply,
         "deep_think_triggered": False,
         "mcp_iterations": [],
-        "sources": sources,
         "error": None,
         "duration_ms": round((time.perf_counter() - start_time) * 1000),
     })

@@ -81,7 +81,6 @@ async def chat_mcp(question: str, folder_path: str = ".", use_drive: str = "fals
             "llm_response": result.get("reply"),
             "deep_think_triggered": False,
             "mcp_iterations": result.get("mcp_iterations", []),
-            "sources": [],
             "error": None,
             "duration_ms": round((time.perf_counter() - start_time) * 1000),
         })
@@ -98,7 +97,6 @@ async def chat_mcp(question: str, folder_path: str = ".", use_drive: str = "fals
             "llm_response": None,
             "deep_think_triggered": False,
             "mcp_iterations": [],
-            "sources": [],
             "error": str(e),
             "duration_ms": round((time.perf_counter() - start_time) * 1000),
         })

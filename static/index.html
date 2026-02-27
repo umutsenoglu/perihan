@@ -351,6 +351,51 @@
             color: #64748b;
         }
 
+        /* Log viewer — split screen */
+        #logs-layout {
+            display: flex; flex: 1; min-height: 0; overflow: hidden;
+        }
+        #logs-left {
+            width: 360px; min-width: 280px; flex-shrink: 0;
+            display: flex; flex-direction: column;
+            border-right: 1px solid #e2e8f0; background: #fff;
+        }
+        #logs-toolbar {
+            padding: 12px 16px; border-bottom: 1px solid #e2e8f0;
+            display: flex; justify-content: space-between; align-items: center;
+            flex-shrink: 0;
+        }
+        #log-list { flex: 1; overflow-y: auto; }
+        .log-row {
+            padding: 10px 16px; cursor: pointer; border-bottom: 1px solid #f1f5f9;
+            transition: background 0.15s;
+        }
+        .log-row:hover { background: #f8fafc; }
+        .log-row.active { background: #eff6ff; border-left: 3px solid #3b82f6; }
+        .log-row-top {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 3px;
+        }
+        .log-row-time { font-size: 11px; color: #94a3b8; }
+        .log-row-ms { font-size: 11px; color: #94a3b8; }
+        .log-row-q { font-size: 13px; color: #1a1a2e; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .log-row-meta { font-size: 11px; color: #94a3b8; margin-top: 2px; display: flex; gap: 8px; }
+        #logs-right {
+            flex: 1; overflow-y: auto; padding: 24px; background: #f8fafc;
+        }
+        #log-detail-empty { color: #94a3b8; font-size: 14px; margin-top: 60px; text-align: center; }
+        .log-section { margin-bottom: 16px; }
+        .log-section-title { font-size: 12px; font-weight: 600; color: #374151; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+        .log-pre {
+            background: #fff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 10px;
+            white-space: pre-wrap; word-break: break-all; font-size: 12px;
+            max-height: 350px; overflow-y: auto; color: #334155; font-family: monospace;
+        }
+        .log-badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; margin-right: 4px; }
+        .log-badge.mcp { background: #ede9fe; color: #7c3aed; }
+        .log-badge.err { background: #fef2f2; color: #dc2626; }
+        .log-badge.ok { background: #dcfce7; color: #16a34a; }
+
         /* Setup wizard */
         #setup-overlay {
             position: fixed; inset: 0; z-index: 1000;
@@ -436,6 +481,7 @@
         <div class="tab active" data-tab="chat">Chat</div>
         <div class="tab" data-tab="index">Index</div>
         <div class="tab" data-tab="settings">Settings</div>
+        <div class="tab" data-tab="logs">Logs</div>
     </div>
 
     <!-- Chat Tab -->
@@ -558,6 +604,24 @@
         </div>
     </div>
 
+    <!-- Logs Tab -->
+    <div id="logs" class="tab-content">
+        <div id="logs-layout">
+            <div id="logs-left">
+                <div id="logs-toolbar">
+                    <span id="logs-count" style="font-size:13px;color:#94a3b8;"></span>
+                    <button class="btn btn-primary" onclick="loadLogs()">Refresh</button>
+                    <button class="btn" style="background:#fee2e2;color:#dc2626;border:none;" onclick="clearLogs()">Clear logs</button>
+                </div>
+                <div id="log-list"></div>
+            </div>
+            <div id="logs-right">
+                <div id="log-detail-empty">Select a log entry to view details.</div>
+                <div id="log-detail-content" style="display:none;"></div>
+            </div>
+        </div>
+    </div>
+
     <script>
         const API = '';
 
@@ -570,6 +634,7 @@
                 document.getElementById(tab.dataset.tab).classList.add('active');
 
                 if (tab.dataset.tab === 'settings') { loadStats(); loadModels(); loadApiKeys(); }
+                if (tab.dataset.tab === 'logs') { loadLogs(); }
             });
         });
 
@@ -1049,6 +1114,89 @@
                 document.getElementById('settings-gemini-key').value = '';
                 loadApiKeys(); loadModels();
             } catch(e) { fb.textContent = 'Error: ' + e.message; fb.className = 'save-feedback err'; }
+        }
+
+        // --- Logs ---
+        let _logEntries = [];
+
+        async function loadLogs() {
+            const list = document.getElementById('log-list');
+            const count = document.getElementById('logs-count');
+            list.innerHTML = '<div style="padding:16px;color:#94a3b8;font-size:13px;">Loading...</div>';
+            try {
+                const data = await (await fetch(`${API}/logs?limit=200`)).json();
+                _logEntries = data.entries || [];
+                count.textContent = `${data.total} entries`;
+                list.innerHTML = '';
+                if (_logEntries.length === 0) {
+                    list.innerHTML = '<div style="padding:16px;color:#94a3b8;font-size:13px;">No logs yet.</div>';
+                    return;
+                }
+                _logEntries.forEach((entry, i) => {
+                    const ts = (entry.timestamp || '').replace('T', ' ').slice(0, 19);
+                    const row = document.createElement('div');
+                    row.className = 'log-row';
+                    row.dataset.idx = i;
+                    const errBadge = entry.error ? '<span class="log-badge err">ERR</span>' : '';
+                    const mcpBadge = entry.deep_think_triggered ? '<span class="log-badge mcp">DT</span>' : '';
+                    row.innerHTML = `
+                        <div class="log-row-top">
+                            <span class="log-row-time">${ts}</span>
+                            <span class="log-row-ms">${entry.duration_ms ?? ''}ms</span>
+                        </div>
+                        <div class="log-row-q">${escapeHtml(entry.question || '')}</div>
+                        <div class="log-row-meta">
+                            <span>${escapeHtml(entry.model || '')}</span>
+                            <span>${entry.endpoint || ''}</span>
+                            ${errBadge}${mcpBadge}
+                        </div>`;
+                    row.onclick = () => selectLog(i, row);
+                    list.appendChild(row);
+                });
+            } catch(err) {
+                list.innerHTML = `<div style="padding:16px;color:#dc2626;font-size:13px;">Error: ${err.message}</div>`;
+            }
+        }
+
+        function selectLog(idx, row) {
+            document.querySelectorAll('.log-row').forEach(r => r.classList.remove('active'));
+            row.classList.add('active');
+            const entry = _logEntries[idx];
+            document.getElementById('log-detail-empty').style.display = 'none';
+            const content = document.getElementById('log-detail-content');
+            content.style.display = 'block';
+
+            const section = (title, data) => {
+                if (data === null || data === undefined) return '';
+                const text = typeof data === 'string' ? data : JSON.stringify(data, null, 2);
+                if (!text) return '';
+                return `<div class="log-section">
+                    <div class="log-section-title">${title}</div>
+                    <div class="log-pre">${escapeHtml(text)}</div>
+                </div>`;
+            };
+
+            const badges = [
+                entry.error ? '<span class="log-badge err">Error</span>' : '<span class="log-badge ok">OK</span>',
+                entry.deep_think_triggered ? '<span class="log-badge mcp">Deep Think</span>' : '',
+                `<span style="font-size:12px;color:#64748b;">${entry.endpoint || ''} &bull; ${entry.model || ''} &bull; ${entry.duration_ms ?? ''}ms</span>`
+            ].join(' ');
+
+            content.innerHTML = `
+                <div style="margin-bottom:16px;">${badges}</div>
+                ${section('Question', entry.question)}
+                ${entry.error ? section('Error', entry.error) : ''}
+                ${section('RAG Results', entry.rag_results)}
+                ${section('LLM Prompt', entry.llm_prompt)}
+                ${section('LLM Response', entry.llm_response)}
+                ${(entry.mcp_iterations||[]).length ? section(`MCP Iterations (${entry.mcp_iterations.length})`, entry.mcp_iterations) : ''}
+            `;
+        }
+
+        async function clearLogs() {
+            if (!confirm('Delete all log entries?')) return;
+            await fetch(`${API}/logs`, { method: 'DELETE' });
+            loadLogs();
         }
 
         // --- Init ---
