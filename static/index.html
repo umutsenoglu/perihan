@@ -396,6 +396,43 @@
         .log-badge.err { background: #fef2f2; color: #dc2626; }
         .log-badge.ok { background: #dcfce7; color: #16a34a; }
 
+        /* RAG result cards */
+        .rag-groups { display: flex; flex-direction: column; gap: 8px; }
+        .rag-group { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+        .rag-group-header {
+            display: flex; align-items: center; gap: 8px;
+            padding: 9px 12px; background: #f1f5f9; cursor: pointer; user-select: none;
+            border-bottom: 1px solid transparent; transition: background 0.15s;
+        }
+        .rag-group-header:hover { background: #e8eef5; }
+        .rag-group.open .rag-group-header { border-bottom-color: #e2e8f0; }
+        .rag-group-arrow { font-size: 10px; color: #94a3b8; transition: transform 0.15s; flex-shrink: 0; }
+        .rag-group.open .rag-group-arrow { transform: rotate(90deg); }
+        .rag-group-title { font-size: 13px; font-weight: 600; color: #1e293b; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .rag-group-meta { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+        .rag-chunk-count {
+            font-size: 11px; font-weight: 600; background: #e0e7ff; color: #3730a3;
+            padding: 1px 7px; border-radius: 10px;
+        }
+        .rag-source-pill {
+            font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 10px;
+        }
+        .rag-source-pill.local { background: #dbeafe; color: #1d4ed8; }
+        .rag-source-pill.gdrive { background: #dcfce7; color: #15803d; }
+        .rag-group-chunks { display: none; flex-direction: column; }
+        .rag-group.open .rag-group-chunks { display: flex; }
+        .rag-chunk { border-top: 1px solid #f1f5f9; padding: 10px 12px; display: flex; gap: 10px; }
+        .rag-chunk + .rag-chunk { border-top: 1px solid #e2e8f0; }
+        .rag-chunk-num {
+            width: 18px; height: 18px; border-radius: 50%; background: #cbd5e1; color: #475569;
+            font-size: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;
+        }
+        .rag-chunk-body {
+            font-size: 12px; color: #475569; line-height: 1.6;
+            white-space: pre-wrap; word-break: break-word; font-family: inherit;
+            max-height: 200px; overflow-y: auto; flex: 1;
+        }
+
         /* Setup wizard */
         #setup-overlay {
             position: fixed; inset: 0; z-index: 1000;
@@ -1182,11 +1219,51 @@
                 `<span style="font-size:12px;color:#64748b;">${entry.endpoint || ''} &bull; ${entry.model || ''} &bull; ${entry.duration_ms ?? ''}ms</span>`
             ].join(' ');
 
+            const ragHtml = (results) => {
+                if (!results || !results.length) return '';
+                // Group chunks by document title
+                const groups = [];
+                const groupIndex = {};
+                results.forEach((r, i) => {
+                    const key = r.title || 'Unknown';
+                    if (!(key in groupIndex)) {
+                        groupIndex[key] = groups.length;
+                        groups.push({ title: key, source: r.source, chunks: [] });
+                    }
+                    groups[groupIndex[key]].chunks.push({ rank: i + 1, content: r.content || r.preview || '' });
+                });
+                const groupsHtml = groups.map((g, gi) => {
+                    const srcClass = g.source === 'gdrive' ? 'gdrive' : 'local';
+                    const srcLabel = g.source === 'gdrive' ? 'Drive' : 'Local';
+                    const chunksHtml = g.chunks.map((c, ci) => `
+                        <div class="rag-chunk">
+                            <div class="rag-chunk-num">${c.rank}</div>
+                            <div class="rag-chunk-body">${escapeHtml(c.content)}</div>
+                        </div>`).join('');
+                    const openClass = groups.length === 1 ? ' open' : '';
+                    return `<div class="rag-group${openClass}" id="rag-group-${gi}">
+                        <div class="rag-group-header" onclick="this.parentElement.classList.toggle('open')">
+                            <span class="rag-group-arrow">&#9654;</span>
+                            <div class="rag-group-title" title="${escapeHtml(g.title)}">${escapeHtml(g.title)}</div>
+                            <div class="rag-group-meta">
+                                <span class="rag-chunk-count">${g.chunks.length} chunk${g.chunks.length > 1 ? 's' : ''}</span>
+                                <span class="rag-source-pill ${srcClass}">${srcLabel}</span>
+                            </div>
+                        </div>
+                        <div class="rag-group-chunks">${chunksHtml}</div>
+                    </div>`;
+                }).join('');
+                return `<div class="log-section">
+                    <div class="log-section-title">RAG Results <span style="font-weight:400;color:#94a3b8;">(${groups.length} doc${groups.length > 1 ? 's' : ''}, ${results.length} chunk${results.length > 1 ? 's' : ''})</span></div>
+                    <div class="rag-groups">${groupsHtml}</div>
+                </div>`;
+            };
+
             content.innerHTML = `
                 <div style="margin-bottom:16px;">${badges}</div>
                 ${section('Question', entry.question)}
                 ${entry.error ? section('Error', entry.error) : ''}
-                ${section('RAG Results', entry.rag_results)}
+                ${ragHtml(entry.rag_results)}
                 ${section('LLM Prompt', entry.llm_prompt)}
                 ${section('LLM Response', entry.llm_response)}
                 ${(entry.mcp_iterations||[]).length ? section(`MCP Iterations (${entry.mcp_iterations.length})`, entry.mcp_iterations) : ''}
