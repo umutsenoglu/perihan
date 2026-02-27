@@ -29,6 +29,13 @@ Abdullah ile ilk yazisma tarihim ne zaman?
 
 
 What are my online fish sellers?
+---------
+
+What personal concerns does the author mention specifically about Ezgi?
+
+------------
+
+Where did Umut's grandparents migrate from?
 
 ----------------------
 

@@ -86,7 +86,7 @@ def tool_search_vectordb(query: str) -> str:
     # Lazy import to avoid circular deps
     from services.search_service import hybrid_search
 
-    docs, metas, _ = hybrid_search(query, n_results=8)
+    docs, metas, _ = hybrid_search(query, n_results=4)
     if not docs:
         return json.dumps({"query": query, "results": []})
 

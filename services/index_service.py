@@ -11,7 +11,7 @@ def generate_file_summary(filename: str, content: str) -> str | None:
     from dependencies import get_llm_client, get_current_model
 
     try:
-        sample = content[:3000]  # keep token cost low
+        sample = content[:6000]
         model = get_current_model()
         response = get_llm_client().chat.completions.create(
             model=model,
@@ -20,10 +20,10 @@ def generate_file_summary(filename: str, content: str) -> str | None:
                 {
                     "role": "system",
                     "content": (
-                        "You are a document analysis assistant. "
-                        "Your job is to describe documents so they can be found by search. "
-                        "Be thorough with ALL names, entities, categories, and topics — "
-                        "even if they seem minor. These keywords are used for search indexing."
+                        "You are a search indexing assistant. "
+                        "Your job is to extract and preserve every specific detail from a document "
+                        "so it can be found later by any related search query. "
+                        "Specific facts, names, and places are more valuable than general descriptions."
                     ),
                 },
                 {
@@ -31,9 +31,16 @@ def generate_file_summary(filename: str, content: str) -> str | None:
                     "content": (
                         f"Document name: {filename}\n\n"
                         f"Content:\n{sample}\n\n"
-                        "Describe what this document contains in 3-5 sentences. "
-                        "List ALL people, company names, product names, categories, "
-                        "and topics mentioned. Be specific and complete."
+                        "Create a search-optimized summary. Include ALL of the following:\n"
+                        "1. A 2-3 sentence description of what this document is about\n"
+                        "2. Every person's name mentioned, with their role or relationship if stated\n"
+                        "3. Every specific place, city, country, or location mentioned\n"
+                        "4. Every date, year, or time period mentioned\n"
+                        "5. Every key fact, event, or specific detail a user might search for\n"
+                        "6. Every company, organization, or product name\n"
+                        "7. Topics and categories\n\n"
+                        "Be exhaustive — include every specific detail, even minor ones. "
+                        "A user might search for any fact in this document."
                     ),
                 },
             ],

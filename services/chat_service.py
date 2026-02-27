@@ -67,24 +67,22 @@ Today's date is {datetime.now().strftime('%d %B %Y')}.
 
 Follow these steps strictly:
 1. FIRST use search_vectordb with a natural language query. It searches both local and Google Drive indexed documents.
-2. For each result: if source=local use read_document(path=...), if source=gdrive use drive_read_file(file_id=...).
-3. Read ALL returned files before answering.
-4. If search_vectordb finds nothing, use drive_search_files and drive_list_files as fallback.
-5. Only answer AFTER reading all relevant files.
-6. Base your answer on the actual file contents."""
+2. You MUST call read_document (for source=local) or drive_read_file (for source=gdrive) for EVERY result returned. Reading files is mandatory — never skip a file.
+3. Only after reading ALL returned files, provide your answer.
+4. If search_vectordb finds nothing, try again with different keywords, then use drive_search_files as fallback.
+5. NEVER answer "I could not find" without first reading every file from the search results.
+6. Base your answer strictly on the actual file contents you have read."""
     else:
         system_prompt = f"""You are Perihan, a helpful document assistant with access to an indexed document database.
 Today's date is {datetime.now().strftime('%d %B %Y')}.
 
 Follow these steps strictly:
 1. FIRST use search_vectordb with a natural language query based on the user's question.
-2. ALWAYS read EVERY file returned by search_vectordb using read_document(path=...). Never skip a file — the snippet may not show the relevant part.
-3. Read ALL returned files before answering (not just the first one).
-4. If search finds nothing OR after reading files you still cannot answer, try search_vectordb again with different keywords.
-5. Only answer AFTER reading all relevant files.
-6. Base your answer on the actual file contents. Do NOT give generic answers if the files contain relevant information.
-7. If a file directly answers the question, quote or paraphrase it accurately.
-8. NEVER say you cannot find information after only one search — always try reading the returned files first."""
+2. You MUST call read_document(path=...) for EVERY file returned by search_vectordb. Reading is mandatory — the snippet alone is never enough.
+3. Only after reading ALL returned files, provide your answer.
+4. If search finds nothing OR after reading you still cannot answer, try search_vectordb again with completely different keywords (e.g. synonyms, related terms, or parts of the question).
+5. NEVER answer "I could not find" without first reading every file from the search results.
+6. Base your answer strictly on the actual file contents you have read. Quote or paraphrase directly when relevant."""
 
     messages = [
         {"role": "system", "content": system_prompt},
@@ -272,7 +270,10 @@ Do NOT mention, guess, or fabricate source file names or paths in your answer. S
 If the question is general and not covered in the documents, answer from your own knowledge.
 Always be clear about whether your answer comes from indexed documents or general knowledge.
 
-IMPORTANT: Start your response with [CONFIDENT] if the documents contain specific information to answer the question, or [UNCERTAIN] if you could not find relevant information.
+IMPORTANT: Start your response with [CONFIDENT] if the documents contain specific, relevant information that answers the question. Start with [UNCERTAIN] if:
+- The documents do not contain the answer, OR
+- Your answer is essentially "I could not find this", "there is no mention of", "the documents do not discuss", or any similar negative finding.
+When in doubt, use [UNCERTAIN] — do not guess or paraphrase absence of information as a confident answer.
 
 Documents:
 {context}
@@ -309,6 +310,21 @@ Documents:
 
     reply = response.choices[0].message.content or ""
     confident = "[UNCERTAIN]" not in reply.lstrip()[:15]
+
+    # Secondary catch: LLM responded confidently but the answer is essentially "nothing found"
+    # This handles cases where the LLM ignores [UNCERTAIN] instruction and just says "no info"
+    if confident and docs:
+        _negative_phrases = [
+            "does not mention", "do not mention", "no mention of",
+            "no information", "cannot find", "could not find", "can't find",
+            "not found", "no specific", "not addressed", "not discussed",
+            "not covered", "unable to find", "no details", "no record of",
+            "none of the", "the documents do not", "sources do not",
+        ]
+        reply_lower = reply.lower()
+        if any(phrase in reply_lower for phrase in _negative_phrases):
+            confident = False
+
     reply_clean = reply.replace("[CONFIDENT]", "").replace("[UNCERTAIN]", "").strip()
 
     rag_results_log = [
