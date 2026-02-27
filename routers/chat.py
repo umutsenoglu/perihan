@@ -17,7 +17,7 @@ async def get_current_model_endpoint():
 @router.post("/chat")
 async def chat(question: str, use_drive: bool = True, deep_think: bool = False):
     """Ask a question across all documents. If deep_think=True and RAG is uncertain, falls back to MCP."""
-    return await chat_service.rag_query(question, use_drive=use_drive, deep_think=deep_think)
+    return await chat_service.rag_query(question, use_drive=use_drive, deep_think=deep_think, endpoint="/chat")
 
 
 @router.post("/chat-folder")
@@ -60,7 +60,46 @@ Documents:
 @router.post("/chat-mcp")
 async def chat_mcp(question: str, folder_path: str = ".", use_drive: str = "false"):
     """Ask a question using MCP-style function calling."""
-    result = await chat_service.run_mcp_query(
-        question, use_drive.lower() in ("true", "1", "yes")
-    )
-    return result
+    import time
+    from dependencies import get_current_model
+    from services.log_service import append_log
+
+    start_time = time.perf_counter()
+    model = get_current_model()
+    try:
+        result = await chat_service.run_mcp_query(
+            question, use_drive.lower() in ("true", "1", "yes")
+        )
+        append_log({
+            "endpoint": "/chat-mcp",
+            "model": model,
+            "question": question,
+            "use_drive": use_drive.lower() in ("true", "1", "yes"),
+            "deep_think": False,
+            "rag_results": [],
+            "llm_prompt": None,
+            "llm_response": result.get("reply"),
+            "deep_think_triggered": False,
+            "mcp_iterations": result.get("mcp_iterations", []),
+            "sources": [],
+            "error": None,
+            "duration_ms": round((time.perf_counter() - start_time) * 1000),
+        })
+        return result
+    except Exception as e:
+        append_log({
+            "endpoint": "/chat-mcp",
+            "model": model,
+            "question": question,
+            "use_drive": use_drive.lower() in ("true", "1", "yes"),
+            "deep_think": False,
+            "rag_results": [],
+            "llm_prompt": None,
+            "llm_response": None,
+            "deep_think_triggered": False,
+            "mcp_iterations": [],
+            "sources": [],
+            "error": str(e),
+            "duration_ms": round((time.perf_counter() - start_time) * 1000),
+        })
+        raise

@@ -2,6 +2,7 @@ import json
 import time
 import asyncio
 from datetime import datetime
+from services.log_service import append_log
 
 
 def drive_fallback_search(
@@ -91,10 +92,12 @@ Follow these steps strictly:
     ]
 
     tool_call_log = []
+    mcp_iterations = []
     max_iterations = 5
     model = get_current_model()
 
-    for _ in range(max_iterations):
+    for i in range(max_iterations):
+        iteration_entry = {"iteration": i + 1, "prompt": [m if isinstance(m, dict) else m.model_dump() for m in messages]}
         response = get_llm_client().chat.completions.create(
             model=model,
             temperature=0.3,
@@ -104,9 +107,13 @@ Follow these steps strictly:
         choice = response.choices[0]
 
         if not choice.message.tool_calls:
-            return {"reply": choice.message.content, "tool_calls": tool_call_log}
+            iteration_entry["response"] = choice.message.content
+            iteration_entry["tool_calls"] = []
+            mcp_iterations.append(iteration_entry)
+            return {"reply": choice.message.content, "tool_calls": tool_call_log, "mcp_iterations": mcp_iterations}
 
         messages.append(choice.message)
+        iteration_tool_calls = []
 
         for tc in choice.message.tool_calls:
             func_name = tc.function.name
@@ -127,20 +134,25 @@ Follow these steps strictly:
             except Exception:
                 pass
             tool_call_log.append(log_entry)
+            iteration_tool_calls.append(log_entry)
 
             messages.append({"role": "tool", "tool_call_id": tc.id, "content": result})
 
+        iteration_entry["tool_calls"] = iteration_tool_calls
+        mcp_iterations.append(iteration_entry)
+
     last_content = response.choices[0].message.content or "Max tool call iterations reached."
-    return {"reply": last_content, "tool_calls": tool_call_log}
+    return {"reply": last_content, "tool_calls": tool_call_log, "mcp_iterations": mcp_iterations}
 
 
-async def rag_query(question: str, use_drive: bool = True, deep_think: bool = False) -> dict:
+async def rag_query(question: str, use_drive: bool = True, deep_think: bool = False, endpoint: str = "/chat") -> dict:
     """Full RAG pipeline with optional deep-think MCP fallback."""
     # Lazy imports to avoid circular deps
     from dependencies import get_llm_client, get_current_model, get_drive
     from services.search_service import hybrid_search
 
-    rag_start = time.perf_counter()
+    start_time = time.perf_counter()
+    rag_start = start_time
     where = None if use_drive else {"source": {"$ne": "gdrive"}}
     docs, metas, search_debug = hybrid_search(question, n_results=8, where=where)
 
@@ -249,14 +261,10 @@ async def rag_query(question: str, use_drive: bool = True, deep_think: bool = Fa
     rag_time = time.perf_counter() - rag_start
 
     model = get_current_model()
-    llm_start = time.perf_counter()
-    response = get_llm_client().chat.completions.create(
-        model=model,
-        temperature=0.3,
-        messages=[
-            {
-                "role": "system",
-                "content": f"""
+    llm_messages = [
+        {
+            "role": "system",
+            "content": f"""
 You are Perihan, a helpful document assistant.
 Today's date is {datetime.now().strftime('%d %B %Y')}.
 If the documents below contain relevant information, use them to answer.
@@ -269,10 +277,34 @@ IMPORTANT: Start your response with [CONFIDENT] if the documents contain specifi
 Documents:
 {context}
 """,
-            },
-            {"role": "user", "content": question},
-        ],
-    )
+        },
+        {"role": "user", "content": question},
+    ]
+
+    llm_start = time.perf_counter()
+    try:
+        response = get_llm_client().chat.completions.create(
+            model=model,
+            temperature=0.3,
+            messages=llm_messages,
+        )
+    except Exception as e:
+        append_log({
+            "endpoint": endpoint,
+            "model": model,
+            "question": question,
+            "use_drive": use_drive,
+            "deep_think": deep_think,
+            "rag_results": [{"title": m.get("title", ""), "source": m.get("source", ""), "preview": d[:200]} for d, m in zip(docs, metas)],
+            "llm_prompt": llm_messages,
+            "llm_response": None,
+            "deep_think_triggered": False,
+            "mcp_iterations": [],
+            "sources": sources,
+            "error": str(e),
+            "duration_ms": round((time.perf_counter() - start_time) * 1000),
+        })
+        raise
 
     llm_time = time.perf_counter() - llm_start
 
@@ -280,9 +312,29 @@ Documents:
     confident = "[UNCERTAIN]" not in reply.lstrip()[:15]
     reply_clean = reply.replace("[CONFIDENT]", "").replace("[UNCERTAIN]", "").strip()
 
+    rag_results_log = [
+        {"title": m.get("title", ""), "source": m.get("source", "local"), "preview": d[:200]}
+        for d, m in zip(docs, metas)
+    ]
+
     # Deep Think fallback: RAG was uncertain, escalate to MCP
     if deep_think and not confident:
         mcp_result = await run_mcp_query(question, use_drive)
+        append_log({
+            "endpoint": endpoint,
+            "model": model,
+            "question": question,
+            "use_drive": use_drive,
+            "deep_think": deep_think,
+            "rag_results": rag_results_log,
+            "llm_prompt": llm_messages,
+            "llm_response": reply,
+            "deep_think_triggered": True,
+            "mcp_iterations": mcp_result.get("mcp_iterations", []),
+            "sources": [],
+            "error": None,
+            "duration_ms": round((time.perf_counter() - start_time) * 1000),
+        })
         return {
             "reply": mcp_result["reply"],
             "sources": [],
@@ -293,6 +345,22 @@ Documents:
                 "llm_seconds": round(llm_time, 3),
             },
         }
+
+    append_log({
+        "endpoint": endpoint,
+        "model": model,
+        "question": question,
+        "use_drive": use_drive,
+        "deep_think": deep_think,
+        "rag_results": rag_results_log,
+        "llm_prompt": llm_messages,
+        "llm_response": reply,
+        "deep_think_triggered": False,
+        "mcp_iterations": [],
+        "sources": sources,
+        "error": None,
+        "duration_ms": round((time.perf_counter() - start_time) * 1000),
+    })
 
     return {
         "reply": reply_clean,
