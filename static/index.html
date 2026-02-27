@@ -452,6 +452,20 @@
         .llm-msg.user   .llm-msg-body { background: #eff6ff; }
         .llm-msg.assistant .llm-msg-body { background: #f0fdf4; }
 
+        /* WhatsApp card */
+        .wa-btn { background: #25D366; color: #fff; border: none; padding: 9px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
+        .wa-btn:hover { background: #1ebe5d; }
+        .wa-btn:disabled { background: #94a3b8; cursor: default; }
+        #wa-qr-wrap { display: none; flex-direction: column; align-items: center; gap: 12px; margin-top: 16px; }
+        #wa-qr-img { width: 220px; height: 220px; border: 2px solid #e2e8f0; border-radius: 10px; }
+        .wa-progress { margin-top: 14px; }
+        .wa-progress-bar-wrap { background: #e2e8f0; border-radius: 6px; height: 8px; margin-top: 6px; overflow: hidden; }
+        .wa-progress-bar { background: #25D366; height: 100%; border-radius: 6px; transition: width 0.4s; width: 0%; }
+        @keyframes wa-pulse { 0%,100% { opacity:1; } 50% { opacity:0.45; } }
+        .wa-status-msg { font-size: 13px; color: #475569; margin-top: 8px; }
+        .wa-done { color: #16a34a; font-weight: 600; font-size: 14px; margin-top: 10px; }
+        .wa-error { color: #dc2626; font-size: 13px; margin-top: 10px; }
+
         /* Setup wizard */
         #setup-overlay {
             position: fixed; inset: 0; z-index: 1000;
@@ -550,7 +564,7 @@
                     <span id="drive-label" style="font-size:13px; color:#64748b;">Google Drive</span>
                 </label>
                 <label class="toggle-label" style="margin-left:8px;">
-                    <input type="checkbox" id="deep-think">
+                    <input type="checkbox" id="deep-think" checked>
                     <span class="toggle-track"></span>
                     <span style="font-size:13px; color:#64748b;">Deep Think</span>
                 </label>
@@ -584,6 +598,26 @@
                     <button class="btn btn-primary" id="gdrive-index-btn" onclick="indexGdrive()">Index Drive</button>
                 </div>
                 <div class="result-box" id="gdrive-index-result"></div>
+            </div>
+
+            <div class="card">
+                <h2>Index WhatsApp</h2>
+                <p>Import your full WhatsApp message history into the vector database. Requires <a href="https://nodejs.org" target="_blank">Node.js</a> installed on this machine.</p>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+                    <button class="wa-btn" id="wa-connect-btn" onclick="startWhatsApp()">Connect WhatsApp</button>
+                    <button class="btn" id="wa-relogin-btn" onclick="reloginWhatsApp()" style="font-size:13px;padding:6px 12px;" title="Clear saved session and scan QR again">Force Re-login</button>
+                </div>
+                <div id="wa-qr-wrap">
+                    <p style="font-size:13px;color:#475569;text-align:center;">Scan this QR code with WhatsApp<br><span style="font-size:12px;color:#94a3b8;">Phone → Linked Devices → Link a Device</span></p>
+                    <img id="wa-qr-img" src="" alt="QR Code">
+                </div>
+                <div class="wa-status-msg" id="wa-status-msg"></div>
+                <div class="wa-progress" id="wa-progress" style="display:none;">
+                    <div class="wa-progress-bar-wrap"><div class="wa-progress-bar" id="wa-progress-bar"></div></div>
+                    <div style="font-size:12px;color:#64748b;margin-top:4px;" id="wa-progress-label"></div>
+                </div>
+                <div class="wa-done" id="wa-done" style="display:none;"></div>
+                <div class="wa-error" id="wa-error" style="display:none;"></div>
             </div>
 
             <div class="card">
@@ -1303,6 +1337,134 @@
                 ${section('LLM Response', entry.llm_response)}
                 ${(entry.mcp_iterations||[]).length ? section(`MCP Iterations (${entry.mcp_iterations.length})`, entry.mcp_iterations) : ''}
             `;
+        }
+
+        // --- WhatsApp ---
+        let _waPollTimer = null
+        let _waConnectedAt = null
+
+        async function startWhatsApp() {
+            const btn = document.getElementById('wa-connect-btn')
+            btn.disabled = true
+            btn.textContent = 'Starting...'
+            document.getElementById('wa-error').style.display = 'none'
+            document.getElementById('wa-done').style.display = 'none'
+            _waConnectedAt = null
+
+            const resp = await fetch(`${API}/whatsapp/start`, { method: 'POST' })
+            const data = await resp.json()
+            if (!data.ok) {
+                document.getElementById('wa-error').textContent = data.error || 'Failed to start'
+                document.getElementById('wa-error').style.display = 'block'
+                btn.disabled = false
+                btn.textContent = 'Connect WhatsApp'
+                return
+            }
+            pollWhatsAppStatus()
+        }
+
+        function pollWhatsAppStatus() {
+            if (_waPollTimer) clearInterval(_waPollTimer)
+            _waPollTimer = setInterval(async () => {
+                try {
+                    const [statusResp, qrResp] = await Promise.all([
+                        fetch(`${API}/whatsapp/status`).then(r => r.json()),
+                        fetch(`${API}/whatsapp/qr`).then(r => r.json()),
+                    ])
+                    updateWhatsAppUI(statusResp, qrResp)
+                    if (['done', 'error', 'disconnected'].includes(statusResp.status)) {
+                        clearInterval(_waPollTimer)
+                    }
+                } catch {}
+            }, 2000)
+        }
+
+        function updateWhatsAppUI(status, qr) {
+            const btn = document.getElementById('wa-connect-btn')
+            const qrWrap = document.getElementById('wa-qr-wrap')
+            const qrImg = document.getElementById('wa-qr-img')
+            const msgEl = document.getElementById('wa-status-msg')
+            const progressWrap = document.getElementById('wa-progress')
+            const progressBar = document.getElementById('wa-progress-bar')
+            const progressLabel = document.getElementById('wa-progress-label')
+            const doneEl = document.getElementById('wa-done')
+            const errorEl = document.getElementById('wa-error')
+
+            msgEl.textContent = status.message || ''
+
+            if (status.status === 'waiting_qr') {
+                btn.textContent = 'Waiting for scan...'
+                btn.disabled = true
+                if (qr.qr) {
+                    qrWrap.style.display = 'flex'
+                    qrImg.src = qr.qr
+                }
+                progressWrap.style.display = 'none'
+            } else if (status.status === 'connected') {
+                if (!_waConnectedAt) _waConnectedAt = Date.now()
+                qrWrap.style.display = 'none'
+                progressWrap.style.display = 'block'
+                progressBar.style.width = '100%'
+                progressBar.style.animation = 'wa-pulse 1.5s ease-in-out infinite'
+                const match = (status.message || '').match(/(\d+)\s+messages/)
+                if (match) {
+                    btn.textContent = 'Receiving...'
+                    progressLabel.textContent = `${parseInt(match[1]).toLocaleString()} messages received...`
+                } else {
+                    btn.textContent = 'Connected'
+                    const elapsed = Math.floor((Date.now() - _waConnectedAt) / 1000)
+                    progressLabel.textContent = `Waiting for history sync... ${elapsed}s (this can take a few minutes)`
+                    if (elapsed >= 180) {
+                        clearInterval(_waPollTimer)
+                        progressWrap.style.display = 'none'
+                        btn.disabled = false
+                        btn.textContent = 'Connect WhatsApp'
+                        errorEl.textContent = 'WhatsApp did not send history. Click "Force Re-login" to scan QR and try again.'
+                        errorEl.style.display = 'block'
+                    }
+                }
+            } else if (status.status === 'importing') {
+                qrWrap.style.display = 'none'
+                btn.textContent = 'Importing...'
+                progressWrap.style.display = 'block'
+                progressBar.style.animation = ''
+                const pct = status.total > 0 ? Math.round((status.done / status.total) * 100) : 0
+                progressBar.style.width = pct + '%'
+                progressLabel.textContent = `${status.done} / ${status.total} groups`
+            } else if (status.status === 'done') {
+                qrWrap.style.display = 'none'
+                progressWrap.style.display = 'none'
+                btn.disabled = false
+                btn.textContent = 'Connect WhatsApp'
+                doneEl.textContent = status.message || 'Import complete.'
+                doneEl.style.display = 'block'
+            } else if (status.status === 'error') {
+                qrWrap.style.display = 'none'
+                progressWrap.style.display = 'none'
+                btn.disabled = false
+                btn.textContent = 'Connect WhatsApp'
+                errorEl.textContent = status.message || 'An error occurred.'
+                errorEl.style.display = 'block'
+            }
+        }
+
+        async function reloginWhatsApp() {
+            if (!confirm('This will clear your saved WhatsApp session and ask you to scan a QR code again. Continue?')) return
+            const btn = document.getElementById('wa-relogin-btn')
+            btn.disabled = true
+            btn.textContent = 'Clearing...'
+            document.getElementById('wa-error').style.display = 'none'
+            document.getElementById('wa-done').style.display = 'none'
+            const resp = await fetch(`${API}/whatsapp/relogin`, { method: 'POST' })
+            const data = await resp.json()
+            btn.disabled = false
+            btn.textContent = 'Force Re-login'
+            if (!data.ok) {
+                document.getElementById('wa-error').textContent = data.error || 'Failed'
+                document.getElementById('wa-error').style.display = 'block'
+                return
+            }
+            pollWhatsAppStatus()
         }
 
         async function clearLogs() {

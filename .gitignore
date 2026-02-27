@@ -13,3 +13,6 @@ model.json
 perihan_config.json
 *.log
 logs/
+whatsapp-sidecar/
+whatsapp_auth/
+whatsapp/

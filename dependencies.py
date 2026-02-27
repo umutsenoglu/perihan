@@ -115,11 +115,14 @@ async def reset_chroma() -> int:
     gc.collect()
     await asyncio.sleep(0.5)  # give OS time to release file locks on Windows
 
-    # Wipe the entire directory
-    try:
-        shutil.rmtree(VECTORDB_PATH)
-    except Exception:
-        pass  # if locked on Windows, the delete already cleared the data
+    # Wipe the entire directory — retry with increasing delays for Windows file locks
+    for delay in (0, 1, 2, 3):
+        await asyncio.sleep(delay)
+        try:
+            shutil.rmtree(VECTORDB_PATH)
+            break
+        except Exception:
+            continue
 
     # Reinitialize fresh
     _init_chroma()

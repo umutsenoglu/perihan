@@ -3,7 +3,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
 from dependencies import init_startup
-from routers import chat, index, drive, settings
+from routers import chat, index, drive, settings, whatsapp
 
 app = FastAPI(title="Perihan")
 
@@ -25,3 +25,4 @@ app.include_router(chat.router)
 app.include_router(index.router)
 app.include_router(drive.router)
 app.include_router(settings.router)
+app.include_router(whatsapp.router)
