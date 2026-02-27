@@ -42,7 +42,7 @@ async def start_whatsapp(request: Request):
     # Kill any existing sidecar process (including node child on Windows)
     if _process and _process.poll() is None:
         subprocess.run(f"taskkill /F /T /PID {_process.pid}", shell=True, capture_output=True)
-        _process.wait()
+        await asyncio.to_thread(_process.wait)
 
     AUTH_DIR.mkdir(parents=True, exist_ok=True)
     _state = {"status": "waiting_qr", "qr": None, "message": "Starting...", "total": 0, "done": 0}
@@ -100,7 +100,7 @@ async def relogin_whatsapp(request: Request):
 
     if _process and _process.poll() is None:
         subprocess.run(f"taskkill /F /T /PID {_process.pid}", shell=True, capture_output=True)
-        _process.wait()
+        await asyncio.to_thread(_process.wait)
 
     import shutil as _shutil
     if AUTH_DIR.exists():
@@ -121,7 +121,7 @@ async def get_qr():
 @router.get("/whatsapp/status")
 async def get_status():
     # If sidecar process died while status is still active, mark as error
-    if _state["status"] in ("waiting_qr", "connected") and _process is not None:
+    if _state["status"] in ("waiting_qr", "connected", "importing") and _process is not None:
         if _process.poll() is not None:  # process has exited
             _state["status"] = "error"
             _state["message"] = f"Sidecar process exited unexpectedly (code {_process.returncode})"
@@ -179,39 +179,51 @@ async def receive_status(body: StatusBody):
 async def receive_messages(body: MessagesBody):
     from dependencies import get_collection
     from config import DATA_DIR
+    from fastapi import HTTPException
 
     collection = get_collection()
     raw_dir = DATA_DIR / "whatsapp"
 
+    errors = []
     for group in body.groups:
-        chat_name = group.chat_name
-        date = group.date
-        messages = group.messages
+        try:
+            chat_name = group.chat_name
+            date = group.date
+            messages = group.messages
 
-        lines = [f"[WhatsApp: {chat_name}] [{date}]"]
-        for msg in messages:
-            lines.append(f"{msg['sender']}: {msg['text']}")
-        content = "\n".join(lines)
+            lines = [f"[WhatsApp: {chat_name}] [{date}]"]
+            for msg in messages:
+                lines.append(f"{msg['sender']}: {msg['text']}")
+            content = "\n".join(lines)
 
-        doc_id = f"whatsapp_{chat_name}_{date}".replace(" ", "_").replace("/", "-")
+            # Sanitize ID: keep only safe ASCII chars
+            raw_id = f"whatsapp_{chat_name}_{date}"
+            doc_id = "".join(c if c.isascii() and c not in ' /\\:*?"<>|' else "_" for c in raw_id)
 
-        collection.upsert(
-            ids=[doc_id],
-            documents=[content],
-            metadatas=[{
-                "title": f"{chat_name} ({date})",
-                "source": "whatsapp",
-                "chat_name": chat_name,
-                "date": date,
-                "folder": "whatsapp",
-                "message_count": len(messages),
-            }],
-        )
+            collection.upsert(
+                ids=[doc_id],
+                documents=[content],
+                metadatas=[{
+                    "title": f"{chat_name} ({date})",
+                    "source": "whatsapp",
+                    "chat_name": chat_name,
+                    "date": date,
+                    "folder": "whatsapp",
+                    "message_count": len(messages),
+                }],
+            )
 
-        # Save raw file for prompt testing
-        safe_chat = chat_name.replace("/", "-").replace("\\", "-").replace(":", "-")
-        chat_dir = raw_dir / safe_chat
-        chat_dir.mkdir(parents=True, exist_ok=True)
-        (chat_dir / f"{date}.txt").write_text(content, encoding="utf-8")
+            # Save raw file for prompt testing
+            safe_chat = chat_name.replace("/", "-").replace("\\", "-").replace(":", "-")
+            chat_dir = raw_dir / safe_chat
+            chat_dir.mkdir(parents=True, exist_ok=True)
+            (chat_dir / f"{date}.txt").write_text(content, encoding="utf-8")
+
+        except Exception as e:
+            errors.append(f"{group.chat_name} ({group.date}): {e}")
+
+    if errors:
+        # Return partial success with details — don't abort the whole import
+        return {"ok": True, "warnings": errors}
 
     return {"ok": True}
