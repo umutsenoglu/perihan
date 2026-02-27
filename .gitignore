@@ -12,3 +12,4 @@ token.json
 model.json
 perihan_config.json
 *.log
+logs/
