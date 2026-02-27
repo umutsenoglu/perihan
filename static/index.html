@@ -433,6 +433,25 @@
             max-height: 200px; overflow-y: auto; flex: 1;
         }
 
+        /* LLM Prompt messages */
+        .llm-messages { display: flex; flex-direction: column; gap: 8px; }
+        .llm-msg { border-radius: 8px; overflow: hidden; border: 1px solid #e2e8f0; }
+        .llm-msg-role {
+            display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.06em;
+            text-transform: uppercase; padding: 4px 10px;
+        }
+        .llm-msg.system .llm-msg-role { background: #f3e8ff; color: #7e22ce; }
+        .llm-msg.user   .llm-msg-role { background: #dbeafe; color: #1d4ed8; }
+        .llm-msg.assistant .llm-msg-role { background: #dcfce7; color: #15803d; }
+        .llm-msg-body {
+            padding: 8px 12px; font-size: 12px; color: #334155; line-height: 1.65;
+            white-space: pre-wrap; word-break: break-word; font-family: inherit;
+            max-height: 260px; overflow-y: auto;
+        }
+        .llm-msg.system .llm-msg-body { background: #faf5ff; }
+        .llm-msg.user   .llm-msg-body { background: #eff6ff; }
+        .llm-msg.assistant .llm-msg-body { background: #f0fdf4; }
+
         /* Setup wizard */
         #setup-overlay {
             position: fixed; inset: 0; z-index: 1000;
@@ -1259,12 +1278,28 @@
                 </div>`;
             };
 
+            const llmPromptHtml = (messages) => {
+                if (!messages || !messages.length) return '';
+                const msgsHtml = messages.map(m => {
+                    const role = (m.role || 'unknown').toLowerCase();
+                    const roleClass = ['system','user','assistant'].includes(role) ? role : 'user';
+                    return `<div class="llm-msg ${roleClass}">
+                        <div class="llm-msg-role">${escapeHtml(role)}</div>
+                        <div class="llm-msg-body">${escapeHtml(typeof m.content === 'string' ? m.content : JSON.stringify(m.content, null, 2))}</div>
+                    </div>`;
+                }).join('');
+                return `<div class="log-section">
+                    <div class="log-section-title">LLM Prompt <span style="font-weight:400;color:#94a3b8;">(${messages.length} message${messages.length > 1 ? 's' : ''})</span></div>
+                    <div class="llm-messages">${msgsHtml}</div>
+                </div>`;
+            };
+
             content.innerHTML = `
                 <div style="margin-bottom:16px;">${badges}</div>
                 ${section('Question', entry.question)}
                 ${entry.error ? section('Error', entry.error) : ''}
                 ${ragHtml(entry.rag_results)}
-                ${section('LLM Prompt', entry.llm_prompt)}
+                ${llmPromptHtml(entry.llm_prompt)}
                 ${section('LLM Response', entry.llm_response)}
                 ${(entry.mcp_iterations||[]).length ? section(`MCP Iterations (${entry.mcp_iterations.length})`, entry.mcp_iterations) : ''}
             `;
