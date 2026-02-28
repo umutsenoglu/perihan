@@ -136,6 +136,32 @@ Real questions based on indexed WhatsApp data. Each entry includes the expected 
 
 ---
 
+## Category 7: Trainer File Recall
+
+**Q22:** What is Deniz's motorbike's brand?
+- **Expected:** Royal Enfield
+- **Source:** trainer/denizmuratoglu.txt
+
+---
+
+**Q23:** Abdullah ile ilk yazışma tarihim ne zaman?
+- **Expected:** 30 Ağustos 2006
+- **Source:** WhatsApp / Abdullah
+
+---
+
+**Q24:** What are my online fish sellers?
+- **Expected:** Abyss, SwellUK, Sims, Auatics to Your Door, RiverPark, Tropco, marineworldaquatics, Essex, Vision, Delta, DC, aquatropics, lgpleco, chens discus, riftvalleycichlids, The Reef Experience
+- **Source:** Google Drive spreadsheet (Fish sellers sheet)
+
+---
+
+**Q25:** Where did Umut's grandparents migrate from?
+- **Expected:** Umut's paternal grandparents immigrated from Macedonia to Turkey.
+- **Source:** trainer / personal background
+
+---
+
 ## Scoring Guide
 
 | Result | Score |

@@ -29,7 +29,8 @@
       "Bash(node:*)",
       "Bash(tasklist:*)",
       "Bash(git:*)",
-      "Bash(GEMINI_API_KEY=\"AIzaSyDgb-gBwhE8RhmBPFCuJPXCjkRoQDxNzsc\" venv/Scripts/python.exe:*)"
+      "Bash(GEMINI_API_KEY=\"AIzaSyDgb-gBwhE8RhmBPFCuJPXCjkRoQDxNzsc\" venv/Scripts/python.exe:*)",
+      "WebFetch(domain:docs.google.com)"
     ]
   },
   "model": "claude-opus-4-6"
