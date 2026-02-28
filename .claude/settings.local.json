@@ -1,5 +1,4 @@
 {
-  "model": "claude-opus-4-6",
   "permissions": {
     "allow": [
       "Bash(source:*)",
@@ -28,7 +27,9 @@
       "Bash(cd \"D:\\\\allcode\\\\allcode2\\\\ai\\\\llmapi\" && git init && git remote add origin https://umutsenoglu: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@github.com/umutsenoglu/perihan.git && git add . && git commit -m \"Initial commit\" && git branch -M main && git push -u origin main 2>&1)",
       "Bash(cd \"D:\\\\umutozel\\\\forai-mylife\\\\base\" && python3 << 'PYEOF'\nfrom docx import Document\n\n# Read first file\ntry:\n    doc1 = Document\\('umut-hayatim.docx'\\)\n    text1 = '\\\\n'.join\\([para.text for para in doc1.paragraphs]\\)\n    print\\(\"=== umut-hayatim.docx ===\"\\)\n    print\\(text1\\)\nexcept Exception as e:\n    print\\(f\"Error reading umut-hayatim.docx: {e}\"\\)\n\nprint\\(\"\\\\n\" + \"=\"*50 + \"\\\\n\"\\)\n\n# Read second file\ntry:\n    doc2 = Document\\('Evladima.docx'\\)\n    text2 = '\\\\n'.join\\([para.text for para in doc2.paragraphs]\\)\n    print\\(\"=== Evladima.docx ===\"\\)\n    print\\(text2\\)\nexcept Exception as e:\n    print\\(f\"Error reading Evladima.docx: {e}\"\\)\nPYEOF)",
       "Bash(node:*)",
-      "Bash(tasklist:*)"
+      "Bash(tasklist:*)",
+      "Bash(git:*)"
     ]
-  }
+  },
+  "model": "claude-opus-4-6"
 }
