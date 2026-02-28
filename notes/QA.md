@@ -76,6 +76,12 @@ Real questions based on indexed WhatsApp data. Each entry includes the expected 
 
 ---
 
+**Q21:** What is Dominik's URL?
+- **Expected:** www.umuttesto.com/7839809873 (Dominik Prod tenant in Web Application Access document)
+- **Source:** trainer/s/Web_Application_Access.docx
+
+---
+
 **Q12:** Avukat Alp tam yargı davası açmamı neden tavsiye etti?
 - **Expected:** Dosyadaki sorumlu şahıslar bitik durumda, icra kabiliyeti yok. Kurumların sorumluluğu var ve diğer müştekiler de bu yola başvuruyor.
 - **Source:** 114603149250795 / 2026-02-20
@@ -140,4 +146,4 @@ Real questions based on indexed WhatsApp data. Each entry includes the expected 
 | Wrong answer or hallucination | ❌ 0 pts |
 | Correctly says "I don't know" (Q15-17) | ✅ 2 pts |
 
-**Max score: 40 pts**
+**Max score: 42 pts**
