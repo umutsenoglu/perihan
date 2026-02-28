@@ -16,3 +16,4 @@ logs/
 whatsapp-sidecar/
 whatsapp_auth/
 whatsapp/
+tests/results/

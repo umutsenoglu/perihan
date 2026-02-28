@@ -186,14 +186,14 @@ async def rag_query(question: str, use_drive: bool = True, deep_think: bool = Fa
             if len(cleaned) >= 6:
                 for trim in range(1, 4):
                     stem = cleaned[:-trim]
-                    if len(stem) < 4:
+                    if len(stem) < 3:
                         break
                     if stem not in seen_st:
                         seen_st.add(stem)
                         raw_terms.append(stem)
         # Also include fuzzy-expanded terms (e.g. "dominik" corrected from "domonik")
         for expanded_kw in search_debug.get("expanded_terms", []):
-            if len(expanded_kw) >= 4 and expanded_kw not in seen_st:
+            if len(expanded_kw) >= 3 and expanded_kw not in seen_st:
                 seen_st.add(expanded_kw)
                 raw_terms.append(expanded_kw)
         # For long queries, keep only 5+ char terms to avoid noise
@@ -275,6 +275,7 @@ If the documents below contain relevant information, use them to answer.
 Do NOT mention, guess, or fabricate source file names or paths in your answer. Source attribution is handled separately.
 If the question is general and not covered in the documents, answer from your own knowledge.
 Always be clear about whether your answer comes from indexed documents or general knowledge.
+In WhatsApp chat logs, speakers labeled "Unknown" can often be identified from conversational context (e.g. if "Me" addresses someone by name and "Unknown" replies, that Unknown is the named person). Use this reasoning to extract information.
 
 IMPORTANT: Start your response with [CONFIDENT] if the documents contain specific, relevant information that answers the question. Start with [UNCERTAIN] if:
 - The documents do not contain the answer, OR

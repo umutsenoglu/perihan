@@ -17,12 +17,12 @@ def build_global_vocab() -> None:
         vocab: set[str] = set()
         for doc in all_data["documents"]:
             for word in re.split(r'\W+', doc):
-                if 4 <= len(word) <= 30:
+                if 3 <= len(word) <= 30:
                     vocab.add(word.lower())
         for meta in all_data["metadatas"]:
             for field in ("title", "relative_path"):
                 for part in re.split(r'[\W_0-9]+', meta.get(field, "")):
-                    if 4 <= len(part) <= 30:
+                    if 3 <= len(part) <= 30:
                         vocab.add(part.lower())
         _global_vocab = vocab
     except Exception:
@@ -38,23 +38,43 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
 
     # --- Keyword search ---
     # Only take words 5+ chars, strip punctuation, deduplicate
+    # Common short words to exclude from keyword search
+    _stopwords = {"the", "and", "for", "are", "but", "not", "you", "all",
+                  "can", "has", "her", "his", "how", "its", "may", "our",
+                  "was", "who", "did", "get", "got", "had", "him", "let",
+                  "say", "she", "too", "use", "bir", "ben", "sen",
+                  "ile", "var", "ama", "onu", "hem",
+                  "what", "when", "where", "which", "does", "that",
+                  "this", "from", "have", "been", "will", "with",
+                  "about", "there", "their", "would", "could", "should",
+                  "these", "those", "what's"}
+
     words = query.split()
     base_keywords = []
     seen_kw = set()
     for w in words:
         cleaned = w.strip("?.,!\"'():-")
-        if len(cleaned) < 4:
+        # Remove possessive 's suffix (e.g. "Seb's" → "Seb")
+        if cleaned.endswith("'s") or cleaned.endswith("\u2019s"):
+            cleaned = cleaned[:-2]
+        if len(cleaned) < 3:
             continue
         cl = cleaned.lower()
+        if cl in _stopwords:
+            continue
         if cl not in seen_kw:
             seen_kw.add(cl)
             base_keywords.append(cleaned)
 
-    # Build per-keyword stem groups and track keyword weight (longer = more distinctive)
+    # Build per-keyword stem groups and track keyword weight
     keyword_groups = {}  # base_kw -> [(stem, weight), ...]
     all_keywords = []    # [(keyword, weight), ...]
     for kw in base_keywords:
-        weight = len(kw)  # longer words are more distinctive
+        weight = len(kw)
+        # Boost proper nouns (capitalized words that aren't sentence starters)
+        # Names like "Seb", "Ron", "Alp" are highly specific search terms
+        if kw[0].isupper() and kw.lower() not in _stopwords:
+            weight = max(weight, 8)
         group = [(kw, weight)]
         all_keywords.append((kw, weight))
         if len(kw) >= 7:
@@ -160,7 +180,8 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
     # reward chunks that contain "Abdullah" — even if the user has many Abdullah
     # conversations that push it above the rare threshold.
     rare_kw_lower = {kw.lower() for kw, _ in rare_keywords}
-    forced_base = [(kw, len(kw)) for kw in base_keywords if kw.lower() not in rare_kw_lower]
+    base_weights = {kw: w for kw, w in all_keywords if kw in base_keywords}
+    forced_base = [(kw, base_weights.get(kw, len(kw))) for kw in base_keywords if kw.lower() not in rare_kw_lower]
     score_keywords = rare_keywords + forced_base
 
     # --- Re-score using rare keywords + forced base keywords ---
@@ -175,6 +196,12 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
             if kw.lower() in doc_lower:
                 score += weight
                 matched_rare.append(kw)
+        # Bonus for matching multiple distinct base keywords — chunks that contain
+        # more of the user's original terms are much more likely to be relevant.
+        matched_base_count = sum(1 for kw in base_keywords if kw.lower() in doc_lower)
+        if matched_base_count >= 2:
+            # Quadratic bonus — matching 3 of 4 keywords is MUCH better than 2 of 4
+            score += matched_base_count ** 2
         # Filename/title bonus:
         # - Short keywords (< 5 chars): word-split only  → "what" won't match "whatsapp"
         # - Longer keywords (≥ 5 chars): also substring  → "abdullah" matches "abdullahavci123.xml"
