@@ -1,0 +1,26 @@
+{
+  "run_id": "2026-02-28_22-38",
+  "perihan_model": "gemini-2.5-flash",
+  "judge_model": "gemini-2.5-flash",
+  "total_score": 2,
+  "max_score": 2,
+  "pct": 100.0,
+  "categories": {
+    "Direct Recall (English)": {
+      "score": 2,
+      "max": 2
+    }
+  },
+  "results": [
+    {
+      "id": "Q1",
+      "category": "Direct Recall (English)",
+      "question": "Was a lost water bottle found in the Beavers 37th group?",
+      "expected": "Yes — a black water bottle (Mikey's) was found at the end.",
+      "source": "Beavers 37th / 2026-01-30",
+      "reply": "Yes, a black water bottle that went missing was found. It was identified as Mikey's water bottle.",
+      "score": 2,
+      "reason": "Perihan correctly answers that a lost water bottle was found and provides the correct identifying details (black, Mikey's) consistent with the expected answer."
+    }
+  ]
+}

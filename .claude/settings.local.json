@@ -28,7 +28,8 @@
       "Bash(cd \"D:\\\\umutozel\\\\forai-mylife\\\\base\" && python3 << 'PYEOF'\nfrom docx import Document\n\n# Read first file\ntry:\n    doc1 = Document\\('umut-hayatim.docx'\\)\n    text1 = '\\\\n'.join\\([para.text for para in doc1.paragraphs]\\)\n    print\\(\"=== umut-hayatim.docx ===\"\\)\n    print\\(text1\\)\nexcept Exception as e:\n    print\\(f\"Error reading umut-hayatim.docx: {e}\"\\)\n\nprint\\(\"\\\\n\" + \"=\"*50 + \"\\\\n\"\\)\n\n# Read second file\ntry:\n    doc2 = Document\\('Evladima.docx'\\)\n    text2 = '\\\\n'.join\\([para.text for para in doc2.paragraphs]\\)\n    print\\(\"=== Evladima.docx ===\"\\)\n    print\\(text2\\)\nexcept Exception as e:\n    print\\(f\"Error reading Evladima.docx: {e}\"\\)\nPYEOF)",
       "Bash(node:*)",
       "Bash(tasklist:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(GEMINI_API_KEY=\"AIzaSyDgb-gBwhE8RhmBPFCuJPXCjkRoQDxNzsc\" venv/Scripts/python.exe:*)"
     ]
   },
   "model": "claude-opus-4-6"

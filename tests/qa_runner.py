@@ -44,13 +44,15 @@ Expected answer: {expected}
 Perihan's response: {reply}
 
 Score the response:
-2 = Correct and complete
-1 = Partially correct or correct but missing details
+2 = Correctly answers the question that was asked
+1 = Partially correct, or contains a factual error alongside correct info
 0 = Wrong, irrelevant, or hallucinated
 
-For questions where the expected answer is "System should say it doesn't know", \
-score 2 if Perihan appropriately says it doesn't have that information, \
-score 0 if it fabricates an answer.
+Important rules:
+- Judge based on what the question asked, not on every detail in the expected answer.
+  Extra details in the expected answer that were NOT asked about do NOT lower the score.
+- For questions where the expected answer says "System should say it doesn't know":
+  score 2 if Perihan says it doesn't have that information, score 0 if it fabricates an answer.
 
 Reply in this exact format:
 SCORE: <0|1|2>
@@ -306,34 +308,32 @@ def build_report(run: dict, previous: dict | None, diff: dict | None) -> str:
 # ---------------------------------------------------------------------------
 
 def main():
-    print(f"Parsing {QA_FILE} …")
+    only = [a.upper() for a in sys.argv[1:]]  # e.g. python qa_runner.py Q7 Q10
+
     questions = parse_qa_file(QA_FILE)
     if not questions:
         print("ERROR: No questions found in QA.md.", file=sys.stderr)
         sys.exit(1)
-    print(f"Found {len(questions)} questions.")
+    if only:
+        questions = [q for q in questions if q["id"] in only]
+        if not questions:
+            print(f"ERROR: No questions matched {only}", file=sys.stderr)
+            sys.exit(1)
 
     judge_client = get_judge_client()
     perihan_model = get_perihan_model()
-    print(f"Perihan model: {perihan_model}  |  Judge model: {JUDGE_MODEL}")
 
     run_id = datetime.now().strftime("%Y-%m-%d_%H-%M")
     results = []
-
-    # Accumulate category scores
     cat_scores: dict[str, dict] = {}
 
     for i, q in enumerate(questions, 1):
-        print(f"  [{i}/{len(questions)}] {q['id']}: {q['question'][:60]}")
-
-        # Ask Perihan
+        safe_q = q['question'].encode('ascii', 'replace').decode()[:60]
+        print(f"[{i}/{len(questions)}] {q['id']}: {safe_q}")
         reply = ask_perihan(q["question"])
-        if reply.startswith("[ERROR"):
-            print(f"    → {reply}")
-
-        # Judge
         score, reason = judge(judge_client, q["question"], q["expected"], reply)
-        print(f"    → Score: {score} | {reason}")
+        safe_r = reason.encode('ascii', 'replace').decode()
+        print(f"  -> Score: {score} | {safe_r}")
 
         cat = q["category"]
         if cat not in cat_scores:
@@ -370,7 +370,6 @@ def main():
     # Save JSON
     json_path = RESULTS_DIR / f"run_{run_id}.json"
     json_path.write_text(json.dumps(run_data, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\nSaved: {json_path}")
 
     # Diff vs previous run
     previous = load_previous_run(json_path)
@@ -380,14 +379,9 @@ def main():
     report = build_report(run_data, previous, diff)
     latest_md = RESULTS_DIR / "latest.md"
     latest_md.write_text(report, encoding="utf-8")
-    print(f"Report: {latest_md}")
 
-    # Summary
-    print(f"\n{'='*50}")
-    print(f"Score: {total_score}/{max_score} ({pct:.1f}%)")
-    if diff:
-        print(f"Regressions: {len(diff['regressions'])}  |  Improvements: {len(diff['improvements'])}")
-    print(f"{'='*50}")
+    print(f"\nScore: {total_score}/{max_score} ({pct:.1f}%)")
+    print(f"Results: {json_path}")
 
 
 if __name__ == "__main__":

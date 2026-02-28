@@ -2,6 +2,7 @@ import json
 import time
 import asyncio
 from datetime import datetime
+from fastapi import HTTPException
 from services.log_service import append_log
 
 
@@ -96,12 +97,17 @@ Follow these steps strictly:
 
     for i in range(max_iterations):
         iteration_entry = {"iteration": i + 1, "prompt": [m if isinstance(m, dict) else m.model_dump() for m in messages]}
-        response = get_llm_client().chat.completions.create(
-            model=model,
-            temperature=0.3,
-            messages=messages,
-            tools=tools,
-        )
+        try:
+            response = get_llm_client().chat.completions.create(
+                model=model,
+                temperature=0.3,
+                messages=messages,
+                tools=tools,
+            )
+        except Exception as e:
+            if "does not support tools" in str(e):
+                raise HTTPException(status_code=400, detail=f"Model '{model}' does not support tool calling. Deep Think / MCP requires a model with tool support (e.g. Gemini).")
+            raise
         choice = response.choices[0]
 
         if not choice.message.tool_calls:
@@ -308,7 +314,8 @@ Documents:
 
     llm_time = time.perf_counter() - llm_start
 
-    reply = response.choices[0].message.content or ""
+    msg = response.choices[0].message if response.choices else None
+    reply = (msg.content if msg and msg.content else "") or ""
     confident = "[UNCERTAIN]" not in reply.lstrip()[:15]
 
     # Secondary catch: LLM responded confidently but the answer is essentially "nothing found"

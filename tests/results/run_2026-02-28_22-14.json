@@ -1,0 +1,26 @@
+{
+  "run_id": "2026-02-28_22-14",
+  "perihan_model": "gemini-2.5-flash",
+  "judge_model": "gemini-2.5-flash",
+  "total_score": 0,
+  "max_score": 2,
+  "pct": 0.0,
+  "categories": {
+    "Direct Recall (Turkish)": {
+      "score": 0,
+      "max": 2
+    }
+  },
+  "results": [
+    {
+      "id": "Q7",
+      "category": "Direct Recall (Turkish)",
+      "question": "SÜLEYMAN MUTLU APARTMANI davasında ne tür bir suçlama var?",
+      "expected": "Kasten adam öldürme. İddianame hazırlandı, tüm taraflara tebliğ edildi. Davaya katılmak isteyenlerin bunu açıkça beyan etmesi gerekiyor.",
+      "source": "SÜLEYMAN MUTLU APARTMANI / 2026-01-20",
+      "reply": "[ERROR: 500 Server Error: Internal Server Error for url: http://localhost:8000/chat?question=S%C3%9CLEYMAN+MUTLU+APARTMANI+davas%C4%B1nda+ne+t%C3%BCr+bir+su%C3%A7lama+var%3F&use_drive=false]",
+      "score": 0,
+      "reason": "Perihan returned a server error instead of answering the question or stating it doesn't know."
+    }
+  ]
+}

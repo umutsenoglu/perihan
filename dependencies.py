@@ -147,8 +147,12 @@ def load_drive_service():
 
     creds = Credentials.from_authorized_user_file(str(GOOGLE_TOKEN_FILE), GOOGLE_SCOPES)
     if creds.expired and creds.refresh_token:
-        creds.refresh(Request())
-        GOOGLE_TOKEN_FILE.write_text(creds.to_json())
+        try:
+            creds.refresh(Request())
+            GOOGLE_TOKEN_FILE.write_text(creds.to_json())
+        except Exception:
+            _drive_service = None
+            return None
     _drive_service = build("drive", "v3", credentials=creds)
     return _drive_service
 

@@ -452,6 +452,65 @@
         .llm-msg.user   .llm-msg-body { background: #eff6ff; }
         .llm-msg.assistant .llm-msg-body { background: #f0fdf4; }
 
+        /* MCP Iterations */
+        .mcp-iterations { display: flex; flex-direction: column; gap: 12px; }
+        .mcp-iter {
+            background: #fff; border: 1px solid #e2e8f0; border-radius: 8px;
+            overflow: hidden;
+        }
+        .mcp-iter-header {
+            display: flex; align-items: center; gap: 8px;
+            padding: 8px 12px; background: #f5f3ff; border-bottom: 1px solid #e2e8f0;
+        }
+        .mcp-iter-num {
+            width: 22px; height: 22px; border-radius: 50%; background: #7c3aed; color: #fff;
+            font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        .mcp-iter-label { font-size: 12px; font-weight: 600; color: #5b21b6; }
+        .mcp-iter-body { padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+        .mcp-tool-call {
+            border: 1px solid #e0e7ff; border-radius: 6px; overflow: hidden;
+        }
+        .mcp-tool-header {
+            display: flex; align-items: center; gap: 6px;
+            padding: 6px 10px; background: #eef2ff; cursor: pointer; user-select: none;
+        }
+        .mcp-tool-header:hover { background: #e0e7ff; }
+        .mcp-tool-icon { font-size: 13px; flex-shrink: 0; }
+        .mcp-tool-name {
+            font-size: 12px; font-weight: 700; color: #3730a3;
+            font-family: monospace;
+        }
+        .mcp-tool-file {
+            font-size: 11px; color: #6366f1; margin-left: auto;
+            max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .mcp-tool-arrow { font-size: 9px; color: #94a3b8; transition: transform 0.15s; flex-shrink: 0; }
+        .mcp-tool-call.open .mcp-tool-arrow { transform: rotate(90deg); }
+        .mcp-tool-detail { display: none; border-top: 1px solid #e0e7ff; }
+        .mcp-tool-call.open .mcp-tool-detail { display: block; }
+        .mcp-tool-args, .mcp-tool-result {
+            padding: 8px 10px; font-size: 11px; font-family: monospace;
+            white-space: pre-wrap; word-break: break-word; line-height: 1.5;
+        }
+        .mcp-tool-args { background: #fefce8; color: #854d0e; border-bottom: 1px solid #e0e7ff; }
+        .mcp-tool-args-label, .mcp-tool-result-label {
+            font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+            margin-bottom: 4px; display: block;
+        }
+        .mcp-tool-args-label { color: #a16207; }
+        .mcp-tool-result-label { color: #047857; }
+        .mcp-tool-result { background: #ecfdf5; color: #065f46; max-height: 200px; overflow-y: auto; }
+        .mcp-iter-response {
+            background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px;
+            padding: 8px 12px; font-size: 12px; color: #166534; line-height: 1.6;
+            white-space: pre-wrap; word-break: break-word;
+        }
+        .mcp-iter-response-label {
+            font-size: 10px; font-weight: 700; color: #15803d; text-transform: uppercase;
+            letter-spacing: 0.06em; margin-bottom: 4px;
+        }
+
         /* WhatsApp card */
         .wa-btn { background: #25D366; color: #fff; border: none; padding: 9px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
         .wa-btn:hover { background: #1ebe5d; }
@@ -1328,6 +1387,58 @@
                 </div>`;
             };
 
+            const mcpIterationsHtml = (iterations) => {
+                if (!iterations || !iterations.length) return '';
+                const itersHtml = iterations.map(iter => {
+                    const toolsHtml = (iter.tool_calls || []).map(tc => {
+                        const fileInfo = tc.file_name ? tc.file_name : (tc.file_count !== undefined ? `${tc.file_count} files` : '');
+                        const argsStr = tc.args ? JSON.stringify(tc.args, null, 2) : '{}';
+                        return `<div class="mcp-tool-call" onclick="this.classList.toggle('open')">
+                            <div class="mcp-tool-header">
+                                <span class="mcp-tool-arrow">&#9654;</span>
+                                <span class="mcp-tool-icon">&#9881;</span>
+                                <span class="mcp-tool-name">${escapeHtml(tc.tool)}</span>
+                                ${fileInfo ? `<span class="mcp-tool-file">${escapeHtml(fileInfo)}</span>` : ''}
+                            </div>
+                            <div class="mcp-tool-detail">
+                                <div class="mcp-tool-args">
+                                    <span class="mcp-tool-args-label">Arguments</span>
+                                    ${escapeHtml(argsStr)}
+                                </div>
+                                <div class="mcp-tool-result">
+                                    <span class="mcp-tool-result-label">Result</span>
+                                    ${escapeHtml(tc.result_preview || '')}
+                                </div>
+                            </div>
+                        </div>`;
+                    }).join('');
+
+                    const responseHtml = iter.response ? `<div class="mcp-iter-response">
+                        <div class="mcp-iter-response-label">Final Response</div>
+                        ${escapeHtml(iter.response)}
+                    </div>` : '';
+
+                    const toolCount = (iter.tool_calls || []).length;
+                    const label = toolCount ? `${toolCount} tool call${toolCount > 1 ? 's' : ''}` : 'Final response';
+
+                    return `<div class="mcp-iter">
+                        <div class="mcp-iter-header">
+                            <span class="mcp-iter-num">${iter.iteration}</span>
+                            <span class="mcp-iter-label">${label}</span>
+                        </div>
+                        <div class="mcp-iter-body">
+                            ${toolsHtml}
+                            ${responseHtml}
+                        </div>
+                    </div>`;
+                }).join('');
+
+                return `<div class="log-section">
+                    <div class="log-section-title">MCP Iterations <span style="font-weight:400;color:#94a3b8;">(${iterations.length})</span></div>
+                    <div class="mcp-iterations">${itersHtml}</div>
+                </div>`;
+            };
+
             content.innerHTML = `
                 <div style="margin-bottom:16px;">${badges}</div>
                 ${section('Question', entry.question)}
@@ -1335,7 +1446,7 @@
                 ${ragHtml(entry.rag_results)}
                 ${llmPromptHtml(entry.llm_prompt)}
                 ${section('LLM Response', entry.llm_response)}
-                ${(entry.mcp_iterations||[]).length ? section(`MCP Iterations (${entry.mcp_iterations.length})`, entry.mcp_iterations) : ''}
+                ${mcpIterationsHtml(entry.mcp_iterations)}
             `;
         }
 
