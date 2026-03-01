@@ -650,7 +650,13 @@
             </div>
 
             <div class="card">
-                <h2>Index Google Drive</h2>
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <h2>Index Google Drive</h2>
+                    <div id="idx-drive-status" style="display:flex;align-items:center;gap:6px;">
+                        <div id="idx-drive-dot" style="width:8px;height:8px;border-radius:50%;background:#e2e8f0;"></div>
+                        <span id="idx-drive-text" style="font-size:12px;color:#94a3b8;">Checking...</span>
+                    </div>
+                </div>
                 <p>Download summaries of all Google Drive files into the local vector database. Drive must be connected first (Settings tab).</p>
                 <div class="form-row">
                     <input type="text" id="gdrive-folder-id" placeholder="Folder ID (leave empty for all of Drive)">
@@ -1228,16 +1234,22 @@
             const dot = document.getElementById('drive-status-dot');
             const text = document.getElementById('drive-status-text');
             const label = document.getElementById('drive-label');
+            const idxDot = document.getElementById('idx-drive-dot');
+            const idxText = document.getElementById('idx-drive-text');
             if (connected) {
                 dot.style.background = '#22c55e';
                 text.textContent = 'Connected';
                 text.style.color = '#16a34a';
                 if (label) { label.style.color = '#16a34a'; label.textContent = 'Google Drive ✓'; }
+                if (idxDot) idxDot.style.background = '#22c55e';
+                if (idxText) { idxText.textContent = 'Connected'; idxText.style.color = '#16a34a'; }
             } else {
                 dot.style.background = '#f87171';
                 text.textContent = 'Not connected — visit Settings to connect';
                 text.style.color = '#dc2626';
                 if (label) { label.style.color = '#94a3b8'; label.textContent = 'Google Drive'; }
+                if (idxDot) idxDot.style.background = '#f87171';
+                if (idxText) { idxText.textContent = 'Not connected'; idxText.style.color = '#dc2626'; }
             }
         }
 
