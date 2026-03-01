@@ -97,7 +97,7 @@ Real questions based on indexed WhatsApp data. Each entry includes the expected 
 ---
 
 **Q14:** Which groups sent New Year messages?
-- **Expected:** At least Castle Gate Close and Ezg-Ron (both have 2026-01-01 messages with New Year wishes).
+- **Expected:** At least Castle Gate Close and Ezg-Ron (both have 2026-01-01 messages with New Year wishes). Other groups like QPA 4L, Hedgehogs etc. are also correct if mentioned.
 - **Source:** Castle Gate Close / 2026-01-01, Ezg-Ron / 2026-01-01
 
 ---

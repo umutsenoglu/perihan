@@ -98,6 +98,31 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
                     all_keywords.append((stem, stem_weight))
         keyword_groups[kw] = group
 
+    # --- Bigram phrase search ---
+    # Consecutive word pairs from the query are much more discriminative than
+    # individual words (e.g. "new year" vs "new" + "year" separately).
+    phrases = []
+    cleaned_words = []
+    for w in words:
+        cw = w.strip("?.,!\"'():-")
+        if len(cw) >= 3:
+            cleaned_words.append(cw)
+    for i in range(len(cleaned_words) - 1):
+        a, b = cleaned_words[i], cleaned_words[i + 1]
+        phrase = f"{a} {b}"
+        phrase_lower = phrase.lower()
+        # Skip if both words are stopwords
+        if a.lower() in _stopwords and b.lower() in _stopwords:
+            continue
+        phrases.append(phrase)
+        # Phrase weight: multi-word matches are far more discriminative than
+        # individual words.  A doc matching "new year" is much more relevant
+        # than one that coincidentally contains "new" and "year" separately.
+        a_wt = max(len(a), 8) if a[0].isupper() else len(a)
+        b_wt = max(len(b), 8) if b[0].isupper() else len(b)
+        phrase_weight = (a_wt + b_wt) * 2 + 10
+        all_keywords.append((phrase, phrase_weight))
+
     # --- Vector search (run early so its content powers fuzzy expansion) ---
     query_kwargs = {
         "query_texts": [query],
@@ -136,6 +161,25 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
                         all_keywords.append((match, len(match)))
     except Exception:
         pass  # fuzzy expansion is best-effort, never blocks the search
+
+    # --- Cross-lingual keyword expansion ---
+    # The indexed data mixes Turkish and English.  Add common translations
+    # so a Turkish query can find English content and vice versa.
+    _translations = {
+        "noel": "christmas", "christmas": "noel",
+        "yılbaşı": "new year", "yilbasi": "new year",
+    }
+    existing_lower = {kw.lower() for kw, _ in all_keywords}
+    base_kw_lower = {kw.lower() for kw in base_keywords}
+    for kw, weight in list(all_keywords):
+        tr = _translations.get(kw.lower())
+        if tr and tr not in existing_lower:
+            existing_lower.add(tr)
+            all_keywords.append((tr, weight))
+            # Also add to base_keywords so it gets scored via forced_base
+            if kw.lower() in base_kw_lower and tr not in base_kw_lower:
+                base_kw_lower.add(tr)
+                base_keywords.append(tr)
 
     # --- Keyword search: find candidate chunks ---
     chunk_data = {}  # id -> {doc, meta}
@@ -253,6 +297,12 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
             # much higher than accidental Turkish-keyword matches elsewhere.
             if in_chat:
                 score += weight * 2
+        # Phrase match bonus: documents matching multi-word phrases from the
+        # query are much more likely relevant than those matching individual
+        # common words by coincidence.
+        for phrase in phrases:
+            if phrase.lower() in doc_lower:
+                score += 20
         scored.append((id_, data["doc"], data["meta"], round(score, 1), matched_rare))
 
     # Sort by score descending
@@ -318,9 +368,6 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
     keyword_docs = [d["doc"] for _, d in ranked]
     keyword_metas = [d["meta"] for _, d in ranked]
 
-    # Take the top-n keyword results, then supplement with vector results.
-    # seen_ids only covers what we're actually returning so that a chunk ranked
-    # just below the keyword cutoff can still be promoted via vector search.
     out_docs = keyword_docs[:n_results]
     out_metas = keyword_metas[:n_results]
     seen_ids = set(keyword_ids[:n_results])

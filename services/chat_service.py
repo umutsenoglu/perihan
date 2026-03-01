@@ -276,6 +276,7 @@ Do NOT mention, guess, or fabricate source file names or paths in your answer. S
 If the question is general and not covered in the documents, answer from your own knowledge.
 Always be clear about whether your answer comes from indexed documents or general knowledge.
 In WhatsApp chat logs, speakers labeled "Unknown" can often be identified from conversational context (e.g. if "Me" addresses someone by name and "Unknown" replies, that Unknown is the named person). Use this reasoning to extract information.
+The indexed data contains both English and Turkish content. Match concepts across languages (e.g. "Noel" = "Christmas", "yeni yıl" = "New Year"). When listing items (groups, people, events), scan ALL provided documents thoroughly — do not stop after finding a few matches.
 
 IMPORTANT: Start your response with [CONFIDENT] if the documents contain specific, relevant information that answers the question. Start with [UNCERTAIN] if:
 - The documents do not contain the answer, OR

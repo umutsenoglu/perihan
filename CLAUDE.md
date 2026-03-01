@@ -1,3 +1,6 @@
+Here's your updated `CLAUDE.md` with the additional shell rules:
+
+```markdown
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
@@ -74,3 +77,12 @@ pip install fastapi uvicorn openai chromadb python-docx PyPDF2 \
 - Ollama on port 11434 (optional — Gemini works without it)
 - `GEMINI_API_KEY` env var set for Gemini models
 - `credentials.json` in project root for Google Drive OAuth
+
+## Shell Rules
+- Never combine `cd` and `git` in a single command. Always `cd` first as a separate command, then run git commands separately.
+- Never use quoted characters in flag names or arguments.
+- When running multi-line Python, always write to a temporary .py file first and execute it. Never use inline `python -c` with complex strings or multi-line code.
+- Keep shell commands simple and single-purpose. Avoid long compound commands chained with `&&`.
+```
+
+The key additions are the last three bullet points in Shell Rules. That should eliminate both the "quoted characters in flag names" and most of the compound command prompts.
