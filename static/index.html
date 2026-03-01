@@ -679,6 +679,12 @@
                 <div class="wa-error" id="wa-error" style="display:none;"></div>
             </div>
 
+            <div style="display:flex;align-items:center;gap:12px;margin:96px 0 16px;">
+                <div style="flex:1;height:1px;background:#cbd5e1;"></div>
+                <span style="font-size:12px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;">Reports</span>
+                <div style="flex:1;height:1px;background:#cbd5e1;"></div>
+            </div>
+
             <div class="card">
                 <h2>Indexed Documents</h2>
                 <p>Documents currently stored in the vector database.</p>
@@ -689,7 +695,7 @@
             <div class="card">
                 <h2>Indexed Folders</h2>
                 <button class="btn btn-primary" onclick="loadFolders()" style="margin-bottom:12px;">Refresh</button>
-                <div class="result-box visible" id="folder-list" style="display:block;">Click Refresh to load.</div>
+                <div class="result-box visible" id="folder-list" style="display:block;max-height:500px;white-space:normal;">Click Refresh to load.</div>
             </div>
         </div>
     </div>
@@ -1041,24 +1047,96 @@
 
         async function loadFolders() {
             const el = document.getElementById('folder-list');
-            el.textContent = 'Loading...';
+            el.innerHTML = '<span>Loading...</span>';
             try {
                 const resp = await fetch(`${API}/folders`);
                 const data = await resp.json();
                 const folders = data.folders;
                 if (Object.keys(folders).length === 0) {
-                    el.textContent = 'No folders indexed yet.';
-                } else {
-                    let text = '';
-                    Object.entries(folders).forEach(([folder, files]) => {
-                        text += `${folder}/\n`;
-                        files.forEach(f => { text += `  ${f}\n`; });
-                        text += '\n';
-                    });
-                    el.textContent = text.trim();
+                    el.innerHTML = '<span>No folders indexed yet.</span>';
+                    return;
                 }
+                // Build nested tree: {name, files, children}
+                const root = {children: {}, files: []};
+                Object.entries(folders).forEach(([folder, files]) => {
+                    const parts = folder.replace(/\//g, '\\').split('\\');
+                    let node = root;
+                    parts.forEach(p => {
+                        if (!node.children[p]) node.children[p] = {children: {}, files: []};
+                        node = node.children[p];
+                    });
+                    node.files = files;
+                });
+                // Count total files recursively
+                function countFiles(node) {
+                    let total = node.files.length;
+                    Object.values(node.children).forEach(c => { total += countFiles(c); });
+                    return total;
+                }
+                // Render tree as nested HTML
+                el.innerHTML = '';
+                el.style.whiteSpace = 'normal';
+                function renderNode(node, name, depth) {
+                    const wrap = document.createElement('div');
+                    wrap.style.marginLeft = (depth > 0 ? 16 : 0) + 'px';
+                    const childKeys = Object.keys(node.children).sort();
+                    const hasContent = childKeys.length > 0 || node.files.length > 0;
+                    const totalFiles = countFiles(node);
+                    // Folder label
+                    const label = document.createElement('div');
+                    label.style.cssText = 'display:flex;align-items:center;gap:6px;padding:5px 4px;cursor:pointer;user-select:none;border-radius:4px;';
+                    label.onmouseenter = () => { label.style.background = '#f1f5f9'; };
+                    label.onmouseleave = () => { label.style.background = 'none'; };
+                    const arrow = document.createElement('span');
+                    arrow.style.cssText = 'font-size:10px;width:14px;flex-shrink:0;display:inline-block;text-align:center;color:#94a3b8;transition:transform 0.15s;';
+                    arrow.textContent = hasContent ? '▶' : '';
+                    const icon = document.createElement('span');
+                    icon.textContent = '📁';
+                    icon.style.fontSize = '14px';
+                    const text = document.createElement('span');
+                    text.style.cssText = 'font-weight:600;font-size:13px;color:#1e293b;';
+                    text.textContent = name;
+                    const count = document.createElement('span');
+                    count.style.cssText = 'font-size:11px;color:#94a3b8;margin-left:2px;';
+                    const directCount = node.files.length;
+                    count.textContent = totalFiles > 0 ? (totalFiles === directCount ? `(${totalFiles})` : `(${totalFiles} total, ${directCount} here)`) : '';
+                    label.append(arrow, icon, text, count);
+                    wrap.appendChild(label);
+                    // Collapsible content (collapsed by default, except depth 0)
+                    const content = document.createElement('div');
+                    const startOpen = depth === 0;
+                    content.style.display = startOpen ? 'block' : 'none';
+                    arrow.style.transform = startOpen ? 'rotate(90deg)' : 'rotate(0deg)';
+                    // Files list
+                    if (node.files.length > 0) {
+                        const fileWrap = document.createElement('div');
+                        fileWrap.style.cssText = 'margin-left:20px;padding:2px 0;';
+                        node.files.forEach(f => {
+                            const fEl = document.createElement('div');
+                            fEl.style.cssText = 'padding:1px 0;font-size:12px;color:#64748b;line-height:1.6;';
+                            fEl.textContent = '📄 ' + f;
+                            fileWrap.appendChild(fEl);
+                        });
+                        content.appendChild(fileWrap);
+                    }
+                    // Child folders
+                    childKeys.forEach(k => { content.appendChild(renderNode(node.children[k], k, depth + 1)); });
+                    wrap.appendChild(content);
+                    // Toggle on click
+                    if (hasContent) {
+                        label.addEventListener('click', () => {
+                            const open = content.style.display !== 'none';
+                            content.style.display = open ? 'none' : 'block';
+                            arrow.style.transform = open ? 'rotate(0deg)' : 'rotate(90deg)';
+                        });
+                    }
+                    return wrap;
+                }
+                Object.keys(root.children).sort().forEach(k => {
+                    el.appendChild(renderNode(root.children[k], k, 0));
+                });
             } catch (err) {
-                el.textContent = 'Error: ' + err.message;
+                el.innerHTML = '<span>Error: ' + err.message + '</span>';
             }
         }
 
