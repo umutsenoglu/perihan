@@ -20,7 +20,7 @@ def build_global_vocab() -> None:
                 if 3 <= len(word) <= 30:
                     vocab.add(word.lower())
         for meta in all_data["metadatas"]:
-            for field in ("title", "relative_path"):
+            for field in ("title", "relative_path", "chat_name"):
                 for part in re.split(r'[\W_0-9]+', meta.get(field, "")):
                     if 3 <= len(part) <= 30:
                         vocab.add(part.lower())
@@ -42,12 +42,20 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
     _stopwords = {"the", "and", "for", "are", "but", "not", "you", "all",
                   "can", "has", "her", "his", "how", "its", "may", "our",
                   "was", "who", "did", "get", "got", "had", "him", "let",
-                  "say", "she", "too", "use", "bir", "ben", "sen",
-                  "ile", "var", "ama", "onu", "hem",
+                  "say", "she", "too", "use",
                   "what", "when", "where", "which", "does", "that",
                   "this", "from", "have", "been", "will", "with",
                   "about", "there", "their", "would", "could", "should",
-                  "these", "those", "what's"}
+                  "these", "those", "what's",
+                  # Turkish stopwords (conservative — only truly generic words)
+                  "bir", "ben", "sen", "ile", "var", "ama", "onu", "hem",
+                  "kim", "kime", "kimi", "nin", "nın", "dan", "den",
+                  "için", "icin", "gibi", "daha", "kadar", "nasıl", "nasil",
+                  "nedir", "neden", "nere", "nerede", "hangi",
+                  "olan", "olarak", "bana", "sana", "ona",
+                  "benim", "senin", "onun", "bizim", "bunun",
+                  "etti", "eden", "etmek",
+                  "söyledi", "soyledi", "gönderdi", "gonderdi",}
 
     words = query.split()
     base_keywords = []
@@ -134,6 +142,7 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
     errors = []
 
     searched_terms = set()
+    searched_folders = set()
     for kw, _weight in all_keywords:
         for search_term in (kw, kw.lower(), kw.capitalize()):
             if search_term in searched_terms:
@@ -143,7 +152,7 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
                 get_kwargs = {
                     "where_document": {"$contains": search_term},
                     "include": ["documents", "metadatas"],
-                    "limit": n_results * 2,
+                    "limit": n_results * 5,
                 }
                 if where:
                     get_kwargs["where"] = where
@@ -156,6 +165,29 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
             except Exception as e:
                 errors.append(f"{search_term}: {e}")
                 continue
+
+            # Also search by metadata (folder, chat_name) so group/folder
+            # names in queries always surface the right chunks
+            if search_term not in searched_folders:
+                searched_folders.add(search_term)
+                for meta_field in ("folder", "chat_name"):
+                    try:
+                        meta_filter = {meta_field: search_term}
+                        if where:
+                            meta_filter = {"$and": [where, meta_filter]}
+                        meta_results = collection.get(
+                            where=meta_filter,
+                            include=["documents", "metadatas"],
+                        )
+                        for id_, doc, meta in zip(
+                            meta_results["ids"],
+                            meta_results["documents"],
+                            meta_results["metadatas"],
+                        ):
+                            if id_ not in chunk_data:
+                                chunk_data[id_] = {"doc": doc, "meta": meta}
+                    except Exception:
+                        pass
 
     # --- Count how many candidate chunks contain each keyword ---
     total_candidates = len(chunk_data)
@@ -202,16 +234,24 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
         if matched_base_count >= 2:
             # Quadratic bonus — matching 3 of 4 keywords is MUCH better than 2 of 4
             score += matched_base_count ** 2
-        # Filename/title bonus:
+        # Filename/title/chat_name bonus:
         # - Short keywords (< 5 chars): word-split only  → "what" won't match "whatsapp"
         # - Longer keywords (≥ 5 chars): also substring  → "abdullah" matches "abdullahavci123.xml"
+        chat_name_lower = data["meta"].get("chat_name", "").lower()
         title_words = set(re.split(r'[^a-z0-9]+', title_lower))
         path_words = set(re.split(r'[^a-z0-9]+', rel_path_lower))
+        chat_words = set(re.split(r'[^a-z0-9]+', chat_name_lower))
         for kw, weight in all_keywords:
             kl = kw.lower()
             in_title = kl in title_words or (len(kl) >= 5 and kl in title_lower)
             in_path = kl in path_words or (len(kl) >= 5 and kl in rel_path_lower)
-            if in_title or in_path:
+            in_chat = kl in chat_words or (len(kl) >= 5 and kl in chat_name_lower)
+            if in_title or in_path or in_chat:
+                score += weight * 2
+            # Extra bonus when keyword matches a chat/group name — the user is
+            # asking about a specific conversation, so those chunks should rank
+            # much higher than accidental Turkish-keyword matches elsewhere.
+            if in_chat:
                 score += weight * 2
         scored.append((id_, data["doc"], data["meta"], round(score, 1), matched_rare))
 
@@ -222,6 +262,58 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
         for id_, doc, meta, sc, mr in scored
     ]
 
+    keyword_ids = [id_ for id_, _ in ranked]
+    keyword_docs = [d["doc"] for _, d in ranked]
+    keyword_metas = [d["meta"] for _, d in ranked]
+
+    # --- Targeted vector search within dominant chat groups ---
+    # When keyword search finds many entries from the same chat (e.g. 27 BUND
+    # messages), keyword scoring alone can't distinguish them.  Run a vector
+    # query scoped to that chat so the most *semantically* relevant entry
+    # surfaces (e.g. "Noel mesajı" → "Merry Christmas" via embedding).
+    chat_counts: dict[str, int] = {}
+    for _, data in ranked:
+        cn = data["meta"].get("chat_name", "")
+        if cn:
+            chat_counts[cn] = chat_counts.get(cn, 0) + 1
+    # Distilled query using only base keywords — removes stopwords and
+    # common Turkish words that dilute the embedding for vector search
+    distilled_query = " ".join(base_keywords) if base_keywords else query
+    for chat_name, count in chat_counts.items():
+        if count > n_results:
+            try:
+                chat_filter: dict = {"chat_name": chat_name}
+                if where:
+                    chat_filter = {"$and": [where, chat_filter]}
+                chat_vector = collection.query(
+                    query_texts=[distilled_query],
+                    where=chat_filter,
+                    n_results=min(n_results, 4),
+                    include=["documents", "metadatas"],
+                )
+                # Boost scores of existing entries that the vector search deems
+                # most relevant — the first result gets the biggest boost
+                vector_ids = chat_vector["ids"][0]
+                ranked_idx = {rid: i for i, (rid, _) in enumerate(ranked)}
+                for rank_pos, vid in enumerate(vector_ids):
+                    idx = ranked_idx.get(vid)
+                    if idx is not None:
+                        # Top vector result gets biggest boost (4→1 points)
+                        boost = max(1, len(vector_ids) - rank_pos)
+                        old = ranked[idx][1]["score"]
+                        ranked[idx][1]["score"] = old + boost
+                    else:
+                        # New entry not yet in candidates
+                        chat_scores = [d["score"] for _, d in ranked if d["meta"].get("chat_name") == chat_name]
+                        top_score = max(chat_scores) if chat_scores else 0
+                        doc = chat_vector["documents"][0][rank_pos]
+                        meta = chat_vector["metadatas"][0][rank_pos]
+                        ranked.append((vid, {"doc": doc, "meta": meta, "score": top_score + 1, "matched_rare": []}))
+            except Exception:
+                pass
+
+    # Re-sort after injections
+    ranked.sort(key=lambda x: x[1]["score"], reverse=True)
     keyword_ids = [id_ for id_, _ in ranked]
     keyword_docs = [d["doc"] for _, d in ranked]
     keyword_metas = [d["meta"] for _, d in ranked]
