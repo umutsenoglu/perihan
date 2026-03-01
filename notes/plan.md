@@ -46,7 +46,7 @@ test1
 
 
 
-You are an autonomous developer. Your task is to implement and test q14 without breaking existing functionality.
+You are an autonomous developer. Your task is to implement and test q1 without breaking existing functionality.
 
 RULES:
 - Ask ALL permission requests upfront before starting work
@@ -54,6 +54,6 @@ RULES:
 - Avoid quote characters inside shell comments (use variables or rewrite commands to prevent quote tracking issues)
 - Iterate until tests pass
 
-CONTEXT FILE: D:\allcode\allcode2\ai\llmapi\whatsapp\Ezg-Ron\2026-01-01.txt
+CONTEXT FILE: D:\allcode\allcode2\ai\llmapi\whatsapp\Beavers 37th\2026-01-30.txt
 
-Read the context file first, then plan, then execute. You have 10 minutes.
+Read the context file first, then plan, then execute.

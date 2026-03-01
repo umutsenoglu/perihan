@@ -251,6 +251,24 @@ async def rag_query(question: str, use_drive: bool = True, deep_think: bool = Fa
     else:
         context = "No documents found."
 
+    # For group/chat listing queries, inject all named WhatsApp groups as context
+    q_lower = question.lower()
+    if any(w in q_lower for w in ("group", "groups", "grup", "grub", "gruplari", "gruplarda")):
+        try:
+            from dependencies import get_collection
+            col = get_collection()
+            all_meta = col.get(include=["metadatas"])
+            named_groups = set()
+            for m in all_meta["metadatas"]:
+                cn = m.get("chat_name", "")
+                if cn and not cn.isdigit() and not cn.replace("+", "").isdigit():
+                    named_groups.add(cn)
+            if named_groups:
+                group_list = ", ".join(sorted(named_groups))
+                context += f"\n\n=== ALL WHATSAPP GROUPS ===\nYour named WhatsApp groups: {group_list}"
+        except Exception:
+            pass
+
     # Build unique sources from metadata
     sources = []
     seen = set()
@@ -275,7 +293,9 @@ If the documents below contain relevant information, use them to answer.
 Do NOT mention, guess, or fabricate source file names or paths in your answer. Source attribution is handled separately.
 If the question is general and not covered in the documents, answer from your own knowledge.
 Always be clear about whether your answer comes from indexed documents or general knowledge.
-In WhatsApp chat logs, speakers labeled "Unknown" can often be identified from conversational context (e.g. if "Me" addresses someone by name and "Unknown" replies, that Unknown is the named person). Use this reasoning to extract information.
+In WhatsApp chat logs, "Me" is the user (Umut). Speakers labeled "Unknown" can often be identified from conversational context (e.g. if "Me" addresses someone by name and "Unknown" replies, that Unknown is the named person). Use this reasoning to extract information.
+In MSN Messenger chat logs (from hatira/ folders), "umut" or "(li)umut(li)" is also the user. All indexed documents — WhatsApp chats, MSN logs, trainer files — belong to the same person.
+WhatsApp chat names may be phone numbers (e.g. "905058540590"). These are system-generated identifiers, NOT personal contact information. Never reveal or infer someone's phone number from a chat identifier. If asked for a phone number, say you do not have that information.
 The indexed data contains both English and Turkish content. Match concepts across languages (e.g. "Noel" = "Christmas", "yeni yıl" = "New Year"). When listing items (groups, people, events), scan ALL provided documents thoroughly — do not stop after finding a few matches.
 
 IMPORTANT: Start your response with [CONFIDENT] if the documents contain specific, relevant information that answers the question. Start with [UNCERTAIN] if:

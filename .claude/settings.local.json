@@ -1,6 +1,7 @@
 {
   "permissions": {
     "allow": [
+      "Edit",
       "Bash(python:*)",
       "Bash(python3:*)",
       "Bash(pip:*)",
@@ -23,9 +24,19 @@
       "Bash(powershell:*)",
       "Bash(powershell.exe:*)",
       "Bash(powershell -Command:*)",
+      "Bash(GEMINI_API_KEY=*)",
+      "Bash(PYTHONIOENCODING=*)",
+      "Bash(sleep:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(rm:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Bash(xargs:*)",
       "WebSearch",
-      "WebFetch(domain:*)",
-      "Bash(GEMINI_API_KEY=AIzaSyDgb-gBwhE8RhmBPFCuJPXCjkRoQDxNzsc python:*)"
+      "WebFetch(domain:*)"
     ]
   },
   "model": "claude-opus-4-6"

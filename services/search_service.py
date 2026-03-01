@@ -1,4 +1,5 @@
 import re
+import math
 import difflib
 
 # Module-level vocabulary cache for robust fuzzy expansion
@@ -154,6 +155,10 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
             if kw_l in checked:
                 continue
             checked.add(kw_l)
+            # Skip fuzzy expansion for phrases — they match concatenated
+            # vocab words too aggressively (e.g. "email address" → "mailaddress")
+            if " " in kw_l:
+                continue
             if kw_l not in vocab:
                 for match in difflib.get_close_matches(kw_l, vocab, n=2, cutoff=0.82):
                     if match not in existing_lower:
@@ -236,13 +241,26 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
     # --- Count how many candidate chunks contain each keyword ---
     total_candidates = len(chunk_data)
     kw_doc_freq = {}  # keyword_lower -> number of chunks containing it
+    # Pre-compile word-boundary patterns for short keywords to avoid
+    # substring inflation (e.g. "seb" matching 200 "seboistnet" docs)
+    _wb_patterns = {}
+    for kw, _w in all_keywords:
+        kl = kw.lower()
+        if " " not in kl and len(kl) < 5 and kl not in _wb_patterns:
+            _wb_patterns[kl] = re.compile(r'\b' + re.escape(kl) + r'\b')
     for kw, _w in all_keywords:
         kw_lower = kw.lower()
         if kw_lower not in kw_doc_freq:
             count = 0
+            wb = _wb_patterns.get(kw_lower)
             for data in chunk_data.values():
-                if kw_lower in data["doc"].lower():
-                    count += 1
+                doc_lower = data["doc"].lower()
+                if wb:
+                    if wb.search(doc_lower):
+                        count += 1
+                else:
+                    if kw_lower in doc_lower:
+                        count += 1
             kw_doc_freq[kw_lower] = max(count, 1)
 
     # Only keep RARE keywords (appear in <10% of candidates) for scoring
@@ -261,6 +279,18 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
     score_keywords = rare_keywords + forced_base
 
     # --- Re-score using rare keywords + forced base keywords ---
+    # IDF base: use total candidates (floored at 20 to avoid extreme values)
+    idf_base = max(total_candidates, 20)
+    # Only exact base keywords get IDF boost — stems are fuzzy derivatives
+    # and IDF-amplifying them inflates scores for chunks that happen to
+    # contain a common substring (e.g. "yazi" stem matching many docs).
+    base_kw_lower = {kw.lower() for kw in base_keywords}
+    rare_base_set = {kw.lower() for kw, _ in rare_keywords if kw.lower() in base_kw_lower}
+    # Phrases also get IDF (they're highly discriminative, not stems)
+    for kw, _ in rare_keywords:
+        if " " in kw:
+            rare_base_set.add(kw.lower())
+
     scored = []
     for id_, data in chunk_data.items():
         doc_lower = data["doc"].lower()
@@ -269,8 +299,19 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
         score = 0.0
         matched_rare = []
         for kw, weight in score_keywords:
-            if kw.lower() in doc_lower:
-                score += weight
+            kl = kw.lower()
+            # Short keywords: word-boundary match to avoid substring noise
+            wb = _wb_patterns.get(kl)
+            matched = wb.search(doc_lower) if wb else (kl in doc_lower)
+            if matched:
+                if kl in rare_base_set:
+                    # Rare base keywords/phrases: IDF boost (capped)
+                    freq = kw_doc_freq.get(kl, 1)
+                    idf = min(math.log(idf_base / max(freq, 1)) + 1, 2.5)
+                    score += weight * idf
+                else:
+                    # Forced base keywords: flat weight (already common, no IDF)
+                    score += weight
                 matched_rare.append(kw)
         # Bonus for matching multiple distinct base keywords — chunks that contain
         # more of the user's original terms are much more likely to be relevant.
@@ -297,12 +338,14 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
             # much higher than accidental Turkish-keyword matches elsewhere.
             if in_chat:
                 score += weight * 2
-        # Phrase match bonus: documents matching multi-word phrases from the
-        # query are much more likely relevant than those matching individual
-        # common words by coincidence.
+        # Phrase match bonus: rare phrases get full bonus, common ones get less
         for phrase in phrases:
             if phrase.lower() in doc_lower:
-                score += 20
+                phrase_freq = kw_doc_freq.get(phrase.lower(), 1)
+                if phrase_freq <= rare_threshold:
+                    score += 20  # rare phrase — highly discriminative
+                else:
+                    score += 5   # common phrase — small bonus
         scored.append((id_, data["doc"], data["meta"], round(score, 1), matched_rare))
 
     # Sort by score descending
@@ -316,28 +359,33 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
     keyword_docs = [d["doc"] for _, d in ranked]
     keyword_metas = [d["meta"] for _, d in ranked]
 
-    # --- Targeted vector search within dominant chat groups ---
-    # When keyword search finds many entries from the same chat (e.g. 27 BUND
-    # messages), keyword scoring alone can't distinguish them.  Run a vector
-    # query scoped to that chat so the most *semantically* relevant entry
-    # surfaces (e.g. "Noel mesajı" → "Merry Christmas" via embedding).
-    chat_counts: dict[str, int] = {}
+    # --- Targeted vector search within dominant groups ---
+    # When keyword search finds many entries from the same source (chat or file),
+    # keyword scoring alone can't distinguish them.  Run a vector query scoped
+    # to that group so the most *semantically* relevant entry surfaces.
+    group_counts: dict[tuple[str, str], int] = {}  # (field, value) -> count
     for _, data in ranked:
         cn = data["meta"].get("chat_name", "")
+        rp = data["meta"].get("relative_path", "")
         if cn:
-            chat_counts[cn] = chat_counts.get(cn, 0) + 1
+            key = ("chat_name", cn)
+        elif rp:
+            key = ("relative_path", rp)
+        else:
+            continue
+        group_counts[key] = group_counts.get(key, 0) + 1
     # Distilled query using only base keywords — removes stopwords and
     # common Turkish words that dilute the embedding for vector search
     distilled_query = " ".join(base_keywords) if base_keywords else query
-    for chat_name, count in chat_counts.items():
+    for (field, value), count in group_counts.items():
         if count > n_results:
             try:
-                chat_filter: dict = {"chat_name": chat_name}
+                group_filter: dict = {field: value}
                 if where:
-                    chat_filter = {"$and": [where, chat_filter]}
+                    group_filter = {"$and": [where, group_filter]}
                 chat_vector = collection.query(
                     query_texts=[distilled_query],
-                    where=chat_filter,
+                    where=group_filter,
                     n_results=min(n_results, 4),
                     include=["documents", "metadatas"],
                 )
@@ -354,8 +402,8 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
                         ranked[idx][1]["score"] = old + boost
                     else:
                         # New entry not yet in candidates
-                        chat_scores = [d["score"] for _, d in ranked if d["meta"].get("chat_name") == chat_name]
-                        top_score = max(chat_scores) if chat_scores else 0
+                        grp_scores = [d["score"] for _, d in ranked if d["meta"].get(field) == value]
+                        top_score = max(grp_scores) if grp_scores else 0
                         doc = chat_vector["documents"][0][rank_pos]
                         meta = chat_vector["metadatas"][0][rank_pos]
                         ranked.append((vid, {"doc": doc, "meta": meta, "score": top_score + 1, "matched_rare": []}))
@@ -364,6 +412,58 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None):
 
     # Re-sort after injections
     ranked.sort(key=lambda x: x[1]["score"], reverse=True)
+
+    # --- Source diversity ---
+    # When many chunks share the same filename across folders (e.g. 50+
+    # abdullahavci chunks in 5 folders), ensure we pick from different
+    # relative_paths (folders) to cover different time periods.
+    # First pass: count unique titles to identify duplicated filenames.
+    title_total: dict[str, int] = {}
+    for _, data in ranked:
+        t = data["meta"].get("title", "")
+        title_total[t] = title_total.get(t, 0) + 1
+    max_per_title = max(n_results // 2, 3)
+    # For titles with many chunks: round-robin across relative_paths
+    diverse_ranked = []
+    overflow = []
+    title_rp_counts: dict[str, dict[str, int]] = {}  # title -> {rp -> count}
+    title_counts: dict[str, int] = {}
+    for item in ranked:
+        title = item[1]["meta"].get("title", "")
+        total = title_total.get(title, 0)
+        if total <= max_per_title:
+            # Not enough to hit the cap — keep as-is
+            diverse_ranked.append(item)
+            continue
+        cnt = title_counts.get(title, 0)
+        if cnt >= max_per_title:
+            overflow.append(item)
+            continue
+        # Within the cap: limit 1 per relative_path for cross-folder diversity
+        rp = item[1]["meta"].get("relative_path", "")
+        rp_counts = title_rp_counts.setdefault(title, {})
+        rp_cnt = rp_counts.get(rp, 0)
+        if rp_cnt == 0:
+            diverse_ranked.append(item)
+            rp_counts[rp] = 1
+            title_counts[title] = cnt + 1
+        else:
+            overflow.append(item)
+    # If we didn't fill the cap (fewer unique paths than max_per_title),
+    # take more from remaining overflow for those titles
+    for item in list(overflow):
+        title = item[1]["meta"].get("title", "")
+        total = title_total.get(title, 0)
+        if total <= max_per_title:
+            continue
+        cnt = title_counts.get(title, 0)
+        if cnt < max_per_title:
+            diverse_ranked.append(item)
+            title_counts[title] = cnt + 1
+            overflow.remove(item)
+    diverse_ranked.extend(overflow)
+    ranked = diverse_ranked
+
     keyword_ids = [id_ for id_, _ in ranked]
     keyword_docs = [d["doc"] for _, d in ranked]
     keyword_metas = [d["meta"] for _, d in ranked]

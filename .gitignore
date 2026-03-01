@@ -17,3 +17,4 @@ whatsapp-sidecar/
 whatsapp_auth/
 whatsapp/
 tests/results/
+tmp/

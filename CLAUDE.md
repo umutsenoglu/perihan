@@ -1,5 +1,3 @@
-Here's your updated `CLAUDE.md` with the additional shell rules:
-
 ```markdown
 # CLAUDE.md
 
@@ -79,10 +77,15 @@ pip install fastapi uvicorn openai chromadb python-docx PyPDF2 \
 - `credentials.json` in project root for Google Drive OAuth
 
 ## Shell Rules
-- Never combine `cd` and `git` in a single command. Always `cd` first as a separate command, then run git commands separately.
+- `cd` must ALWAYS be its own standalone command. Never combine `cd` with anything — not git, not redirection, not `&&` chains. Always `cd` first, then run the next command separately.
 - Never use quoted characters in flag names or arguments.
 - When running multi-line Python, always write to a temporary .py file first and execute it. Never use inline `python -c` with complex strings or multi-line code.
-- Keep shell commands simple and single-purpose. Avoid long compound commands chained with `&&`.
+- Keep shell commands simple and single-purpose. One command per execution.
+
+## Testing
+- Always run `python test_qa.py` after ANY code change
+- Read QA_RULES.md before modifying search or chat logic
+- Never consider a fix complete until all 24 QAs pass
 ```
 
-The key additions are the last three bullet points in Shell Rules. That should eliminate both the "quoted characters in flag names" and most of the compound command prompts.
+Changes from previous version: consolidated the `cd` rules into one clear catch-all, added the Testing section for your QA workflow.
