@@ -53,6 +53,41 @@ def drive_fallback_search(
         return [], []
 
 
+def gmail_fallback_search(
+    question: str, max_threads: int = 2
+) -> tuple[list, list]:
+    """Search Gmail natively and return thread content for RAG context."""
+    from dependencies import get_gmail
+    from utils.gmail_utils import gmail_search
+
+    svc = get_gmail()
+    if not svc:
+        return [], []
+    try:
+        terms = [
+            w.strip("?.,!\"'():-")
+            for w in question.split()
+            if len(w.strip("?.,!\"'():-")) >= 4
+        ]
+        if not terms:
+            return [], []
+        query = " ".join(terms[:5])
+        results = gmail_search(svc, query, max_results=max_threads + 3)
+        docs, metas = [], []
+        for t in results[:max_threads]:
+            if t["content"] and len(t["content"].strip()) >= 10:
+                docs.append(t["content"][:3000])
+                metas.append({
+                    "title": t["subject"] or "(no subject)",
+                    "thread_id": t["id"],
+                    "source": "gmail",
+                    "folder": "gmail",
+                })
+        return docs, metas
+    except Exception:
+        return [], []
+
+
 async def run_mcp_query(question: str, use_drive: bool = True) -> dict:
     """Run MCP tool-calling loop and return {reply, tool_calls}."""
     # Lazy imports to avoid circular deps
@@ -168,6 +203,15 @@ async def rag_query(question: str, use_drive: bool = True, deep_think: bool = Fa
         )
         docs = docs + drive_docs
         metas = metas + drive_metas
+
+    # Gmail native search fallback
+    from dependencies import get_gmail
+    if get_gmail():
+        gmail_docs, gmail_metas = await asyncio.to_thread(
+            gmail_fallback_search, question
+        )
+        docs = docs + gmail_docs
+        metas = metas + gmail_metas
 
     # Extract focused snippets around keyword matches instead of full chunks
     if docs:

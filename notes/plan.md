@@ -10,6 +10,12 @@ Noral network research
 
 Why is OpenClow was so important. My little app nearly can do what it does.
 
+Trello integration
+
+GMail integration
+
+
+
 ---------------
 
 Assistant skill 1 - Searching documents

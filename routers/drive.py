@@ -3,7 +3,7 @@ import os
 from fastapi import APIRouter, HTTPException
 
 from config import GOOGLE_CREDENTIALS_FILE, GOOGLE_TOKEN_FILE, GOOGLE_SCOPES
-from dependencies import get_drive, load_drive_service
+from dependencies import get_drive, get_gmail, load_drive_service
 
 APP_BASE_URL: str = os.environ.get("APP_BASE_URL", "http://localhost:8000")
 
@@ -12,9 +12,10 @@ router = APIRouter()
 
 @router.get("/drive/status")
 async def drive_status():
-    """Return whether Google Drive is connected."""
-    connected = GOOGLE_TOKEN_FILE.exists() and get_drive() is not None
-    return {"connected": connected}
+    """Return whether Google Drive and Gmail are connected."""
+    drive_connected = GOOGLE_TOKEN_FILE.exists() and get_drive() is not None
+    gmail_connected = GOOGLE_TOKEN_FILE.exists() and get_gmail() is not None
+    return {"connected": drive_connected, "gmail_connected": gmail_connected}
 
 
 @router.get("/auth/google")

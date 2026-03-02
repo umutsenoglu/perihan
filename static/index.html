@@ -666,6 +666,22 @@
             </div>
 
             <div class="card">
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <h2>Index Gmail</h2>
+                    <div id="idx-gmail-status" style="display:flex;align-items:center;gap:6px;">
+                        <div id="idx-gmail-dot" style="width:8px;height:8px;border-radius:50%;background:#e2e8f0;"></div>
+                        <span id="idx-gmail-text" style="font-size:12px;color:#94a3b8;">Checking...</span>
+                    </div>
+                </div>
+                <p>Download summaries of your Gmail threads into the local vector database. Requires Gmail access (re-authenticate in Settings if needed).</p>
+                <div class="form-row">
+                    <input type="number" id="gmail-max-threads" placeholder="Max threads (default 500)" min="1" max="10000" style="width:220px;">
+                    <button class="btn btn-primary" id="gmail-index-btn" onclick="indexGmail()">Index Gmail</button>
+                </div>
+                <div class="result-box" id="gmail-index-result"></div>
+            </div>
+
+            <div class="card">
                 <h2>Index WhatsApp</h2>
                 <p>Import your full WhatsApp message history into the vector database. Requires <a href="https://nodejs.org" target="_blank">Node.js</a> installed on this machine.</p>
                 <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
@@ -746,13 +762,17 @@
             </div>
 
             <div class="card">
-                <h2>Google Drive</h2>
-                <p>Connect your Google Drive so the MCP agent can search and read files from it.</p>
-                <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                <h2>Google Account</h2>
+                <p>Connect your Google account for Drive and Gmail access. Both use a single OAuth login.</p>
+                <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
                     <div id="drive-status-dot" style="width:10px; height:10px; border-radius:50%; background:#e2e8f0;"></div>
                     <span id="drive-status-text" style="font-size:13px; color:#64748b;">Checking...</span>
                 </div>
-                <button class="btn btn-primary" id="drive-connect-btn" onclick="connectDrive()">Connect Google Drive</button>
+                <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                    <div id="gmail-status-dot" style="width:10px; height:10px; border-radius:50%; background:#e2e8f0;"></div>
+                    <span id="gmail-status-text" style="font-size:13px; color:#64748b;">Checking...</span>
+                </div>
+                <button class="btn btn-primary" id="drive-connect-btn" onclick="connectDrive()">Connect Google Account</button>
                 <div class="result-box" id="drive-result"></div>
             </div>
 
@@ -939,6 +959,25 @@
             }
             btn.disabled = false;
             btn.textContent = 'Index Drive';
+        }
+
+        async function indexGmail() {
+            const maxThreads = document.getElementById('gmail-max-threads').value.trim();
+            const btn = document.getElementById('gmail-index-btn');
+            const result = document.getElementById('gmail-index-result');
+            btn.disabled = true;
+            btn.textContent = 'Indexing...';
+            result.className = 'result-box visible';
+            try {
+                const params = maxThreads ? { max_threads: maxThreads } : {};
+                const resp = await fetch(`${API}/index-gmail?` + new URLSearchParams(params), { method: 'POST' });
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                await streamIndexProgress(resp, result);
+            } catch (err) {
+                result.textContent = 'Error: ' + err.message;
+            }
+            btn.disabled = false;
+            btn.textContent = 'Index Gmail';
         }
 
         async function streamIndexProgress(resp, container) {
@@ -1225,8 +1264,10 @@
                 const resp = await fetch(`${API}/drive/status`);
                 const data = await resp.json();
                 setDriveStatus(data.connected);
+                setGmailStatus(data.gmail_connected);
             } catch (e) {
                 setDriveStatus(false);
+                setGmailStatus(false);
             }
         }
 
@@ -1238,16 +1279,34 @@
             const idxText = document.getElementById('idx-drive-text');
             if (connected) {
                 dot.style.background = '#22c55e';
-                text.textContent = 'Connected';
+                text.textContent = 'Drive: Connected';
                 text.style.color = '#16a34a';
                 if (label) { label.style.color = '#16a34a'; label.textContent = 'Google Drive ✓'; }
                 if (idxDot) idxDot.style.background = '#22c55e';
                 if (idxText) { idxText.textContent = 'Connected'; idxText.style.color = '#16a34a'; }
             } else {
                 dot.style.background = '#f87171';
-                text.textContent = 'Not connected — visit Settings to connect';
+                text.textContent = 'Drive: Not connected';
                 text.style.color = '#dc2626';
                 if (label) { label.style.color = '#94a3b8'; label.textContent = 'Google Drive'; }
+                if (idxDot) idxDot.style.background = '#f87171';
+                if (idxText) { idxText.textContent = 'Not connected'; idxText.style.color = '#dc2626'; }
+            }
+        }
+
+        function setGmailStatus(connected) {
+            const dot = document.getElementById('gmail-status-dot');
+            const text = document.getElementById('gmail-status-text');
+            const idxDot = document.getElementById('idx-gmail-dot');
+            const idxText = document.getElementById('idx-gmail-text');
+            if (connected) {
+                if (dot) { dot.style.background = '#22c55e'; }
+                if (text) { text.textContent = 'Gmail: Connected'; text.style.color = '#16a34a'; }
+                if (idxDot) idxDot.style.background = '#22c55e';
+                if (idxText) { idxText.textContent = 'Connected'; idxText.style.color = '#16a34a'; }
+            } else {
+                if (dot) { dot.style.background = '#f87171'; }
+                if (text) { text.textContent = 'Gmail: Not connected — re-authenticate to grant access'; text.style.color = '#dc2626'; }
                 if (idxDot) idxDot.style.background = '#f87171';
                 if (idxText) { idxText.textContent = 'Not connected'; idxText.style.color = '#dc2626'; }
             }
@@ -1334,7 +1393,10 @@
         async function loadApiKeys() {
             try {
                 const data = await (await fetch(`${API}/config`)).json();
-                setPill('settings-gemini-pill', data.gemini_api_key_set, 'Configured', 'Not set');
+                const geminiLabel = data.gemini_api_key_set
+                    ? (data.gemini_api_key_source === 'env' ? 'Set (env var)' : 'Set (config)')
+                    : 'Not set';
+                setPill('settings-gemini-pill', data.gemini_api_key_set, geminiLabel, 'Not set');
                 document.getElementById('settings-ollama-host').value = data.ollama_host || 'http://localhost:11434';
                 checkOllamaRunning().then(ok => setPill('settings-ollama-pill', ok, 'Running', 'Not detected'));
             } catch {}

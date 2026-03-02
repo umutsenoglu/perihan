@@ -16,5 +16,6 @@ logs/
 whatsapp-sidecar/
 whatsapp_auth/
 whatsapp/
+gmail/
 tests/results/
 tmp/

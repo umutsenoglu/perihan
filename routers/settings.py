@@ -1,3 +1,4 @@
+import os
 import httpx
 from pathlib import Path
 from typing import Optional
@@ -190,8 +191,17 @@ async def setup_status():
 async def get_config_endpoint():
     from services.config_service import get_config
     cfg = get_config()
+    config_key = cfg.get("gemini_api_key", "")
+    env_key = os.environ.get("GEMINI_API_KEY", "")
+    if config_key:
+        key_source = "config"
+    elif env_key:
+        key_source = "env"
+    else:
+        key_source = None
     return {
-        "gemini_api_key_set": bool(cfg.get("gemini_api_key", "")),
+        "gemini_api_key_set": bool(config_key or env_key),
+        "gemini_api_key_source": key_source,
         "ollama_host": cfg.get("ollama_host", "http://localhost:11434"),
         "setup_complete": cfg.get("setup_complete", False),
     }

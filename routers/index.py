@@ -60,3 +60,17 @@ async def index_gdrive(folder_id: str = "root"):
         media_type="text/event-stream",
         headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
     )
+
+
+@router.post("/index-gmail")
+async def index_gmail(max_threads: int = 500):
+    """Index Gmail threads into the local VectorDB (summaries only). Streams SSE progress events."""
+    async def stream():
+        async for event in index_service.index_gmail_threads(max_threads):
+            yield f"data: {json.dumps(event)}\n\n"
+
+    return StreamingResponse(
+        stream(),
+        media_type="text/event-stream",
+        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+    )

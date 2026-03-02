@@ -134,6 +134,7 @@ async def reset_chroma() -> int:
 # ---------------------------------------------------------------------------
 
 _drive_service = None
+_gmail_service = None
 
 
 def load_drive_service():
@@ -160,6 +161,36 @@ def load_drive_service():
 def get_drive():
     """Return cached Drive service, refreshing if needed."""
     return load_drive_service()
+
+
+def load_gmail_service():
+    """Load/refresh Gmail credentials and return API service, or None if not configured."""
+    global _gmail_service
+    if not GOOGLE_TOKEN_FILE.exists():
+        return None
+    from google.oauth2.credentials import Credentials
+    from google.auth.transport.requests import Request
+    from googleapiclient.discovery import build
+
+    creds = Credentials.from_authorized_user_file(str(GOOGLE_TOKEN_FILE), GOOGLE_SCOPES)
+    if creds.expired and creds.refresh_token:
+        try:
+            creds.refresh(Request())
+            GOOGLE_TOKEN_FILE.write_text(creds.to_json())
+        except Exception:
+            _gmail_service = None
+            return None
+    # Check that the token actually has gmail scope
+    if not creds.scopes or "https://www.googleapis.com/auth/gmail.readonly" not in creds.scopes:
+        _gmail_service = None
+        return None
+    _gmail_service = build("gmail", "v1", credentials=creds)
+    return _gmail_service
+
+
+def get_gmail():
+    """Return cached Gmail service, refreshing if needed."""
+    return load_gmail_service()
 
 
 # ---------------------------------------------------------------------------

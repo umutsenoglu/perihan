@@ -235,3 +235,94 @@ async def index_gdrive_files(folder_id: str = "root"):
         "skipped_files": skipped,
         "errors": errors,
     }
+
+
+async def index_gmail_threads(max_threads: int = 500):
+    """Index Gmail threads into ChromaDB (raw text chunks, no LLM). Async generator yielding SSE progress events."""
+    from dependencies import get_collection, get_gmail
+    from services.search_service import build_global_vocab
+    from utils.gmail_utils import gmail_list_all_threads, gmail_get_thread, gmail_format_thread_text
+    from config import DATA_DIR
+
+    svc = get_gmail()
+    if not svc:
+        yield {"type": "error", "message": "Gmail not connected. Re-authenticate in Settings to grant Gmail access."}
+        return
+
+    collection = get_collection()
+    raw_dir = DATA_DIR / "gmail"
+    raw_dir.mkdir(parents=True, exist_ok=True)
+
+    # Delete existing gmail chunks before re-indexing
+    try:
+        existing = collection.get(where={"source": "gmail"})
+        if existing["ids"]:
+            collection.delete(ids=existing["ids"])
+    except Exception:
+        pass
+
+    yield {"type": "progress", "file": "", "step": "listing threads", "done": 0, "total": 0}
+    all_threads = await asyncio.to_thread(gmail_list_all_threads, svc, max_threads)
+    total = len(all_threads)
+    yield {"type": "start", "total": total}
+
+    indexed = []
+    skipped = []
+    errors = []
+
+    for i, t in enumerate(all_threads):
+        thread_id = t["id"]
+        try:
+            yield {"type": "progress", "file": t.get("snippet", "")[:60], "step": "reading", "done": i, "total": total}
+            thread_data = await asyncio.to_thread(gmail_get_thread, svc, thread_id)
+            subject = thread_data.get("subject", "(no subject)")
+            text = gmail_format_thread_text(thread_data)
+
+            if len(text.strip()) < 20:
+                skipped.append({"file": subject, "reason": "empty thread"})
+                yield {"type": "skip", "file": subject, "reason": "empty thread", "done": i + 1, "total": total}
+                continue
+
+            # Save raw file for development/debugging
+            safe_subject = "".join(c if c.isascii() and c not in ' /\\:*?"<>|' else "_" for c in subject)[:80]
+            raw_file = raw_dir / f"{thread_id}_{safe_subject}.txt"
+            raw_file.write_text(text, encoding="utf-8")
+
+            # Store raw text chunks directly (no LLM summary)
+            folder_context = f"[Gmail: {subject}]\n"
+            words = text.split()
+            chunks = []
+            for j in range(0, len(words), CHUNK_SIZE):
+                chunk = folder_context + " ".join(words[j : j + CHUNK_SIZE])
+                chunks.append(chunk)
+
+            for j, chunk in enumerate(chunks):
+                doc_id = f"gmail_{thread_id}_{j}"
+                collection.upsert(
+                    ids=[doc_id],
+                    documents=[chunk],
+                    metadatas=[{
+                        "title": subject,
+                        "thread_id": thread_id,
+                        "source": "gmail",
+                        "folder": "gmail",
+                        "chunk": j,
+                    }],
+                )
+
+            indexed.append({"file": subject, "thread_id": thread_id, "chunks": len(chunks)})
+            yield {"type": "file_done", "file": subject[:60], "chunks": len(chunks), "done": i + 1, "total": total}
+
+        except Exception as e:
+            errors.append({"file": t.get("snippet", "")[:60], "error": str(e)})
+            yield {"type": "file_error", "file": t.get("snippet", "")[:60], "error": str(e), "done": i + 1, "total": total}
+
+    asyncio.create_task(asyncio.to_thread(build_global_vocab))
+    yield {
+        "type": "complete",
+        "indexed": len(indexed),
+        "skipped": len(skipped),
+        "files": indexed,
+        "skipped_files": skipped,
+        "errors": errors,
+    }
