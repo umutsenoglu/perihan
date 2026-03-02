@@ -1343,7 +1343,33 @@
             const geminiKey = document.getElementById('settings-gemini-key').value.trim();
             const ollamaHost = document.getElementById('settings-ollama-host').value.trim();
             const fb = document.getElementById('apikeys-feedback');
+            const btn = fb.previousElementSibling;
             fb.className = 'save-feedback';
+
+            // Validate Gemini key before saving
+            if (geminiKey) {
+                btn.disabled = true; btn.textContent = 'Validating...';
+                fb.textContent = ''; fb.className = 'save-feedback';
+                try {
+                    const vResp = await fetch(`${API}/config/validate-gemini`, {
+                        method: 'POST', headers: {'Content-Type':'application/json'},
+                        body: JSON.stringify({ gemini_api_key: geminiKey })
+                    });
+                    const vData = await vResp.json();
+                    if (!vData.valid) {
+                        fb.textContent = 'Invalid Gemini key: ' + (vData.error || 'Unknown error');
+                        fb.className = 'save-feedback err';
+                        btn.disabled = false; btn.textContent = 'Save';
+                        return;
+                    }
+                } catch(e) {
+                    fb.textContent = 'Validation failed: ' + e.message;
+                    fb.className = 'save-feedback err';
+                    btn.disabled = false; btn.textContent = 'Save';
+                    return;
+                }
+            }
+
             const body = { ollama_host: ollamaHost };
             if (geminiKey) body.gemini_api_key = geminiKey;
             try {
@@ -1353,6 +1379,7 @@
                 document.getElementById('settings-gemini-key').value = '';
                 loadApiKeys(); loadModels();
             } catch(e) { fb.textContent = 'Error: ' + e.message; fb.className = 'save-feedback err'; }
+            btn.disabled = false; btn.textContent = 'Save';
         }
 
         // --- Logs ---

@@ -151,6 +151,29 @@ async def reset_vectordb():
     return {"message": "Vector database reset.", "deleted_documents": deleted_count}
 
 
+class GeminiKeyValidation(BaseModel):
+    gemini_api_key: str
+
+
+@router.post("/config/validate-gemini")
+async def validate_gemini_key(body: GeminiKeyValidation):
+    """Test a Gemini API key by listing models."""
+    try:
+        async with httpx.AsyncClient() as client:
+            resp = await client.get(
+                "https://generativelanguage.googleapis.com/v1beta/models",
+                params={"key": body.gemini_api_key},
+                timeout=10,
+            )
+        if resp.status_code == 200:
+            return {"valid": True}
+        data = resp.json()
+        msg = data.get("error", {}).get("message", f"HTTP {resp.status_code}")
+        return {"valid": False, "error": msg}
+    except Exception as e:
+        return {"valid": False, "error": str(e)}
+
+
 class ConfigUpdate(BaseModel):
     gemini_api_key: Optional[str] = None
     ollama_host: Optional[str] = None
