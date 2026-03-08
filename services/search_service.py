@@ -6,14 +6,15 @@ import difflib
 _global_vocab: set[str] = set()
 
 
-def build_global_vocab() -> None:
+def build_global_vocab(collection=None) -> None:
     """Rebuild vocabulary from all indexed document content and metadata."""
     global _global_vocab
-    # Lazy import to avoid circular deps
-    from dependencies import get_collection
+
+    if collection is None:
+        from dependencies import get_collection
+        collection = get_collection()
 
     try:
-        collection = get_collection()
         all_data = collection.get(include=["documents", "metadatas"])
         vocab: set[str] = set()
         for doc in all_data["documents"]:
@@ -30,12 +31,11 @@ def build_global_vocab() -> None:
         pass
 
 
-def hybrid_search(query: str, n_results: int = 5, where: dict = None):
+def hybrid_search(query: str, n_results: int = 5, where: dict = None, *, collection=None):
     """Hybrid search: keyword matches first, then vector results."""
-    # Lazy import to avoid circular deps
-    from dependencies import get_collection
-
-    collection = get_collection()
+    if collection is None:
+        from dependencies import get_collection
+        collection = get_collection()
 
     # --- Keyword search ---
     # Only take words 5+ chars, strip punctuation, deduplicate

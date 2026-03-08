@@ -7,15 +7,15 @@ from services.log_service import append_log
 
 
 def drive_fallback_search(
-    question: str, existing_file_ids: set, max_files: int = 2
+    question: str, existing_file_ids: set, max_files: int = 2, *, drive_svc=None
 ) -> tuple[list, list]:
     """Search Google Drive natively and read file content for RAG context."""
-    # Lazy imports to avoid circular deps
-    from dependencies import get_drive
     from utils.drive_utils import drive_read_content
 
-    svc = get_drive()
-    if not svc:
+    if drive_svc is None:
+        from dependencies import get_drive
+        drive_svc = get_drive()
+    if not drive_svc:
         return [], []
     try:
         terms = [
@@ -26,7 +26,7 @@ def drive_fallback_search(
         if not terms:
             return [], []
         drive_query = " or ".join([f"fullText contains '{t}'" for t in terms[:5]])
-        results = svc.files().list(
+        results = drive_svc.files().list(
             q=f"({drive_query}) and trashed=false",
             fields="files(id,name,mimeType)",
             pageSize=5,
@@ -37,7 +37,7 @@ def drive_fallback_search(
                 continue
             if len(docs) >= max_files:
                 break
-            content = drive_read_content(svc, f["id"], f["name"], f["mimeType"])
+            content = drive_read_content(drive_svc, f["id"], f["name"], f["mimeType"])
             if content and len(content.strip()) >= 10:
                 docs.append(content[:3000])
                 metas.append(
@@ -54,14 +54,15 @@ def drive_fallback_search(
 
 
 def gmail_fallback_search(
-    question: str, max_threads: int = 2
+    question: str, max_threads: int = 2, *, gmail_svc=None
 ) -> tuple[list, list]:
     """Search Gmail natively and return thread content for RAG context."""
-    from dependencies import get_gmail
     from utils.gmail_utils import gmail_search
 
-    svc = get_gmail()
-    if not svc:
+    if gmail_svc is None:
+        from dependencies import get_gmail
+        gmail_svc = get_gmail()
+    if not gmail_svc:
         return [], []
     try:
         terms = [
@@ -72,7 +73,7 @@ def gmail_fallback_search(
         if not terms:
             return [], []
         query = " ".join(terms[:5])
-        results = gmail_search(svc, query, max_results=max_threads + 3)
+        results = gmail_search(gmail_svc, query, max_results=max_threads + 3)
         docs, metas = [], []
         for t in results[:max_threads]:
             if t["content"] and len(t["content"].strip()) >= 10:
@@ -88,13 +89,20 @@ def gmail_fallback_search(
         return [], []
 
 
-async def run_mcp_query(question: str, use_drive: bool = True) -> dict:
+async def run_mcp_query(question: str, use_drive: bool = True, *, llm_client=None, model=None, collection=None, drive_svc=None) -> dict:
     """Run MCP tool-calling loop and return {reply, tool_calls}."""
-    # Lazy imports to avoid circular deps
-    from dependencies import get_llm_client, get_current_model, get_drive
-    from services.mcp_tools import MCP_TOOLS, MCP_TOOLS_DRIVE, TOOL_FUNCTIONS
+    from services.mcp_tools import MCP_TOOLS, MCP_TOOLS_DRIVE, make_tool_functions
 
-    drive_tools = MCP_TOOLS_DRIVE if (use_drive and get_drive()) else []
+    if llm_client is None or model is None:
+        from dependencies import get_llm_client, get_current_model
+        llm_client = llm_client or get_llm_client()
+        model = model or get_current_model()
+    if drive_svc is None:
+        from dependencies import get_drive
+        drive_svc = get_drive()
+
+    tool_funcs = make_tool_functions(collection=collection, drive_svc=drive_svc)
+    drive_tools = MCP_TOOLS_DRIVE if (use_drive and drive_svc) else []
     tools = MCP_TOOLS + drive_tools
 
     if drive_tools:
@@ -128,12 +136,11 @@ Follow these steps strictly:
     tool_call_log = []
     mcp_iterations = []
     max_iterations = 5
-    model = get_current_model()
 
     for i in range(max_iterations):
         iteration_entry = {"iteration": i + 1, "prompt": [m if isinstance(m, dict) else m.model_dump() for m in messages]}
         try:
-            response = get_llm_client().chat.completions.create(
+            response = llm_client.chat.completions.create(
                 model=model,
                 temperature=0.3,
                 messages=messages,
@@ -157,7 +164,7 @@ Follow these steps strictly:
         for tc in choice.message.tool_calls:
             func_name = tc.function.name
             args = json.loads(tc.function.arguments)
-            func = TOOL_FUNCTIONS.get(func_name)
+            func = tool_funcs.get(func_name)
             result = (
                 func(**args) if func else json.dumps({"error": f"Unknown tool: {func_name}"})
             )
@@ -184,31 +191,41 @@ Follow these steps strictly:
     return {"reply": last_content, "tool_calls": tool_call_log, "mcp_iterations": mcp_iterations}
 
 
-async def rag_query(question: str, use_drive: bool = True, deep_think: bool = False, endpoint: str = "/chat") -> dict:
+async def rag_query(question: str, use_drive: bool = True, deep_think: bool = False, endpoint: str = "/chat",
+                    *, collection=None, llm_client=None, model=None, drive_svc=None, gmail_svc=None) -> dict:
     """Full RAG pipeline with optional deep-think MCP fallback."""
-    # Lazy imports to avoid circular deps
-    from dependencies import get_llm_client, get_current_model, get_drive
     from services.search_service import hybrid_search
+
+    if llm_client is None or model is None or collection is None:
+        from dependencies import get_llm_client, get_current_model, get_collection
+        llm_client = llm_client or get_llm_client()
+        model = model or get_current_model()
+        collection = collection or get_collection()
+    if drive_svc is None:
+        from dependencies import get_drive
+        drive_svc = get_drive()
+    if gmail_svc is None:
+        from dependencies import get_gmail
+        gmail_svc = get_gmail()
 
     start_time = time.perf_counter()
     rag_start = start_time
     where = None if use_drive else {"source": {"$ne": "gdrive"}}
-    docs, metas, search_debug = hybrid_search(question, n_results=8, where=where)
+    docs, metas, search_debug = hybrid_search(question, n_results=8, where=where, collection=collection)
 
     # Google Drive native search fallback — searches actual file content, not just indexed summaries
-    if use_drive and get_drive():
+    if use_drive and drive_svc:
         existing_ids = {m.get("file_id") for m in metas if m.get("source") == "gdrive"}
         drive_docs, drive_metas = await asyncio.to_thread(
-            drive_fallback_search, question, existing_ids
+            drive_fallback_search, question, existing_ids, drive_svc=drive_svc
         )
         docs = docs + drive_docs
         metas = metas + drive_metas
 
     # Gmail native search fallback
-    from dependencies import get_gmail
-    if get_gmail():
+    if gmail_svc:
         gmail_docs, gmail_metas = await asyncio.to_thread(
-            gmail_fallback_search, question
+            gmail_fallback_search, question, gmail_svc=gmail_svc
         )
         docs = docs + gmail_docs
         metas = metas + gmail_metas
@@ -299,8 +316,7 @@ async def rag_query(question: str, use_drive: bool = True, deep_think: bool = Fa
     q_lower = question.lower()
     if any(w in q_lower for w in ("group", "groups", "grup", "grub", "gruplari", "gruplarda")):
         try:
-            from dependencies import get_collection
-            col = get_collection()
+            col = collection
             all_meta = col.get(include=["metadatas"])
             named_groups = set()
             for m in all_meta["metadatas"]:
@@ -326,7 +342,6 @@ async def rag_query(question: str, use_drive: bool = True, deep_think: bool = Fa
 
     rag_time = time.perf_counter() - rag_start
 
-    model = get_current_model()
     llm_messages = [
         {
             "role": "system",
@@ -356,7 +371,7 @@ Documents:
 
     llm_start = time.perf_counter()
     try:
-        response = get_llm_client().chat.completions.create(
+        response = llm_client.chat.completions.create(
             model=model,
             temperature=0.3,
             messages=llm_messages,
@@ -407,7 +422,7 @@ Documents:
 
     # Deep Think fallback: RAG was uncertain, escalate to MCP
     if deep_think and not confident:
-        mcp_result = await run_mcp_query(question, use_drive)
+        mcp_result = await run_mcp_query(question, use_drive, llm_client=llm_client, model=model, collection=collection, drive_svc=drive_svc)
         append_log({
             "endpoint": endpoint,
             "model": model,

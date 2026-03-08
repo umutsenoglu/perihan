@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from dependencies import get_current_model
+from dependencies import get_current_model, get_llm_client, get_collection, get_drive, get_gmail
 from services import chat_service
 
 router = APIRouter()
@@ -17,18 +17,22 @@ async def get_current_model_endpoint():
 @router.post("/chat")
 async def chat(question: str, use_drive: bool = True, deep_think: bool = False):
     """Ask a question across all documents. If deep_think=True and RAG is uncertain, falls back to MCP."""
-    return await chat_service.rag_query(question, use_drive=use_drive, deep_think=deep_think, endpoint="/chat")
+    return await chat_service.rag_query(
+        question, use_drive=use_drive, deep_think=deep_think, endpoint="/chat",
+        collection=get_collection(), llm_client=get_llm_client(), model=get_current_model(),
+        drive_svc=get_drive(), gmail_svc=get_gmail(),
+    )
 
 
 @router.post("/chat-folder")
 async def chat_folder(question: str, folder: str = None):
     """Ask a question, optionally limited to a specific folder."""
-    from dependencies import get_llm_client, get_current_model
     from services.search_service import hybrid_search
     from datetime import datetime
 
+    collection = get_collection()
     where = {"folder": folder} if folder else None
-    docs, metas, _ = hybrid_search(question, n_results=3, where=where)
+    docs, metas, _ = hybrid_search(question, n_results=3, where=where, collection=collection)
 
     context = "\n---\n".join(docs) if docs else "No documents found."
 
@@ -61,20 +65,22 @@ Documents:
 async def chat_mcp(question: str, folder_path: str = ".", use_drive: str = "false"):
     """Ask a question using MCP-style function calling."""
     import time
-    from dependencies import get_current_model
     from services.log_service import append_log
 
     start_time = time.perf_counter()
     model = get_current_model()
+    use_drive_bool = use_drive.lower() in ("true", "1", "yes")
     try:
         result = await chat_service.run_mcp_query(
-            question, use_drive.lower() in ("true", "1", "yes")
+            question, use_drive_bool,
+            llm_client=get_llm_client(), model=model,
+            collection=get_collection(), drive_svc=get_drive(),
         )
         append_log({
             "endpoint": "/chat-mcp",
             "model": model,
             "question": question,
-            "use_drive": use_drive.lower() in ("true", "1", "yes"),
+            "use_drive": use_drive_bool,
             "deep_think": False,
             "rag_results": [],
             "llm_prompt": None,
@@ -90,7 +96,7 @@ async def chat_mcp(question: str, folder_path: str = ".", use_drive: str = "fals
             "endpoint": "/chat-mcp",
             "model": model,
             "question": question,
-            "use_drive": use_drive.lower() in ("true", "1", "yes"),
+            "use_drive": use_drive_bool,
             "deep_think": False,
             "rag_results": [],
             "llm_prompt": None,

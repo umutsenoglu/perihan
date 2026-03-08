@@ -3,7 +3,7 @@ import json
 from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
 
-from dependencies import get_collection
+from dependencies import get_collection, get_llm_client, get_current_model, get_drive, get_gmail
 from services import index_service
 from config import CHUNK_SIZE
 
@@ -30,15 +30,21 @@ async def index_document(title: str, content: str):
             metadatas=[{"title": title, "chunk": i}],
         )
 
-    asyncio.create_task(asyncio.to_thread(build_global_vocab))
+    asyncio.create_task(asyncio.to_thread(build_global_vocab, collection))
     return {"message": f"Indexed '{title}' in {len(chunks)} chunks"}
 
 
 @router.post("/index-folder")
 async def index_folder(folder_path: str):
     """Index all documents from a local folder recursively. Streams SSE progress events."""
+    collection = get_collection()
+    llm_client = get_llm_client()
+    model = get_current_model()
+
     async def stream():
-        async for event in index_service.index_local_folder(folder_path):
+        async for event in index_service.index_local_folder(
+            folder_path, collection=collection, llm_client=llm_client, model=model
+        ):
             yield f"data: {json.dumps(event)}\n\n"
 
     return StreamingResponse(
@@ -51,8 +57,16 @@ async def index_folder(folder_path: str):
 @router.post("/index-gdrive")
 async def index_gdrive(folder_id: str = "root"):
     """Index all Google Drive files into the local VectorDB. Streams SSE progress events."""
+    collection = get_collection()
+    drive_svc = get_drive()
+    llm_client = get_llm_client()
+    model = get_current_model()
+
     async def stream():
-        async for event in index_service.index_gdrive_files(folder_id):
+        async for event in index_service.index_gdrive_files(
+            folder_id, collection=collection, drive_svc=drive_svc,
+            llm_client=llm_client, model=model,
+        ):
             yield f"data: {json.dumps(event)}\n\n"
 
     return StreamingResponse(
@@ -65,8 +79,13 @@ async def index_gdrive(folder_id: str = "root"):
 @router.post("/index-gmail")
 async def index_gmail(max_threads: int = 500):
     """Index Gmail threads into the local VectorDB (summaries only). Streams SSE progress events."""
+    collection = get_collection()
+    gmail_svc = get_gmail()
+
     async def stream():
-        async for event in index_service.index_gmail_threads(max_threads):
+        async for event in index_service.index_gmail_threads(
+            max_threads, collection=collection, gmail_svc=gmail_svc,
+        ):
             yield f"data: {json.dumps(event)}\n\n"
 
     return StreamingResponse(

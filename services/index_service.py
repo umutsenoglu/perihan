@@ -5,15 +5,16 @@ from config import SUPPORTED_EXTENSIONS, CHUNK_SIZE
 from utils.file_reader import read_file_content
 
 
-def generate_file_summary(filename: str, content: str) -> str | None:
+def generate_file_summary(filename: str, content: str, *, llm_client=None, model=None) -> str | None:
     """Ask the LLM to describe a file's content in plain English for search indexing."""
-    # Lazy imports to avoid circular deps
-    from dependencies import get_llm_client, get_current_model
+    if llm_client is None or model is None:
+        from dependencies import get_llm_client, get_current_model
+        llm_client = llm_client or get_llm_client()
+        model = model or get_current_model()
 
     try:
         sample = content[:6000]
-        model = get_current_model()
-        response = get_llm_client().chat.completions.create(
+        response = llm_client.chat.completions.create(
             model=model,
             temperature=0.1,
             messages=[
@@ -50,13 +51,13 @@ def generate_file_summary(filename: str, content: str) -> str | None:
         return None
 
 
-async def index_local_folder(folder_path: str):
+async def index_local_folder(folder_path: str, *, collection=None, llm_client=None, model=None):
     """Index all supported documents from a local folder. Async generator yielding SSE progress events."""
-    # Lazy imports to avoid circular deps
-    from dependencies import get_collection
     from services.search_service import build_global_vocab
 
-    collection = get_collection()
+    if collection is None:
+        from dependencies import get_collection
+        collection = get_collection()
     base_path = Path(folder_path)
     if not base_path.exists():
         yield {"type": "error", "message": "Folder not found"}
@@ -118,7 +119,7 @@ async def index_local_folder(folder_path: str):
 
             yield {"type": "progress", "file": file.name, "step": "summarizing", "done": i, "total": total}
 
-            summary = await asyncio.to_thread(generate_file_summary, file.name, content)
+            summary = await asyncio.to_thread(generate_file_summary, file.name, content, llm_client=llm_client, model=model)
             if summary:
                 summary_text = f"[Summary of {file.name}]\n{summary}"
                 collection.upsert(
@@ -151,26 +152,28 @@ async def index_local_folder(folder_path: str):
             errors.append({"file": file.name, "error": str(e)})
             yield {"type": "file_error", "file": file.name, "error": str(e), "done": i + 1, "total": total}
 
-    asyncio.create_task(asyncio.to_thread(build_global_vocab))
+    asyncio.create_task(asyncio.to_thread(build_global_vocab, collection))
     yield {"type": "complete", "indexed": len(indexed), "files": indexed, "errors": errors}
 
 
-async def index_gdrive_files(folder_id: str = "root"):
+async def index_gdrive_files(folder_id: str = "root", *, collection=None, drive_svc=None, llm_client=None, model=None):
     """Index all Google Drive files into the local VectorDB (summaries only). Async generator yielding SSE progress events."""
-    # Lazy imports to avoid circular deps
-    from dependencies import get_collection, get_drive
     from services.search_service import build_global_vocab
     from utils.drive_utils import drive_list_all_files, drive_read_content
 
-    svc = get_drive()
-    if not svc:
+    if drive_svc is None:
+        from dependencies import get_drive
+        drive_svc = get_drive()
+    if not drive_svc:
         yield {"type": "error", "message": "Google Drive not connected. Visit Settings to connect."}
         return
 
-    collection = get_collection()
+    if collection is None:
+        from dependencies import get_collection
+        collection = get_collection()
 
     yield {"type": "progress", "file": "", "step": "listing files", "done": 0, "total": 0}
-    all_files = await asyncio.to_thread(drive_list_all_files, svc, folder_id)
+    all_files = await asyncio.to_thread(drive_list_all_files, drive_svc, folder_id)
     total = len(all_files)
     yield {"type": "start", "total": total}
 
@@ -186,7 +189,7 @@ async def index_gdrive_files(folder_id: str = "root"):
 
         try:
             yield {"type": "progress", "file": name, "step": "reading", "done": i, "total": total}
-            content = await asyncio.to_thread(drive_read_content, svc, file_id, name, mime)
+            content = await asyncio.to_thread(drive_read_content, drive_svc, file_id, name, mime)
             if not content or len(content.strip()) < 10:
                 skipped.append({"file": name, "reason": "unsupported or empty"})
                 yield {"type": "skip", "file": name, "reason": "unsupported or empty", "done": i + 1, "total": total}
@@ -197,7 +200,7 @@ async def index_gdrive_files(folder_id: str = "root"):
                 collection.delete(ids=existing["ids"])
 
             yield {"type": "progress", "file": name, "step": "summarizing", "done": i, "total": total}
-            summary = await asyncio.to_thread(generate_file_summary, name, content)
+            summary = await asyncio.to_thread(generate_file_summary, name, content, llm_client=llm_client, model=model)
             if not summary:
                 skipped.append({"file": name, "reason": "summary generation failed"})
                 yield {"type": "skip", "file": name, "reason": "summary generation failed", "done": i + 1, "total": total}
@@ -226,7 +229,7 @@ async def index_gdrive_files(folder_id: str = "root"):
             errors.append({"file": name, "error": str(e)})
             yield {"type": "file_error", "file": name, "error": str(e), "done": i + 1, "total": total}
 
-    asyncio.create_task(asyncio.to_thread(build_global_vocab))
+    asyncio.create_task(asyncio.to_thread(build_global_vocab, collection))
     yield {
         "type": "complete",
         "indexed": len(indexed),
@@ -237,19 +240,22 @@ async def index_gdrive_files(folder_id: str = "root"):
     }
 
 
-async def index_gmail_threads(max_threads: int = 500):
+async def index_gmail_threads(max_threads: int = 500, *, collection=None, gmail_svc=None):
     """Index Gmail threads into ChromaDB (raw text chunks, no LLM). Async generator yielding SSE progress events."""
-    from dependencies import get_collection, get_gmail
     from services.search_service import build_global_vocab
     from utils.gmail_utils import gmail_list_all_threads, gmail_get_thread, gmail_format_thread_text
     from config import DATA_DIR
 
-    svc = get_gmail()
-    if not svc:
+    if gmail_svc is None:
+        from dependencies import get_gmail
+        gmail_svc = get_gmail()
+    if not gmail_svc:
         yield {"type": "error", "message": "Gmail not connected. Re-authenticate in Settings to grant Gmail access."}
         return
 
-    collection = get_collection()
+    if collection is None:
+        from dependencies import get_collection
+        collection = get_collection()
     raw_dir = DATA_DIR / "gmail"
     raw_dir.mkdir(parents=True, exist_ok=True)
 
@@ -262,7 +268,7 @@ async def index_gmail_threads(max_threads: int = 500):
         pass
 
     yield {"type": "progress", "file": "", "step": "listing threads", "done": 0, "total": 0}
-    all_threads = await asyncio.to_thread(gmail_list_all_threads, svc, max_threads)
+    all_threads = await asyncio.to_thread(gmail_list_all_threads, gmail_svc, max_threads)
     total = len(all_threads)
     yield {"type": "start", "total": total}
 
@@ -274,7 +280,7 @@ async def index_gmail_threads(max_threads: int = 500):
         thread_id = t["id"]
         try:
             yield {"type": "progress", "file": t.get("snippet", "")[:60], "step": "reading", "done": i, "total": total}
-            thread_data = await asyncio.to_thread(gmail_get_thread, svc, thread_id)
+            thread_data = await asyncio.to_thread(gmail_get_thread, gmail_svc, thread_id)
             subject = thread_data.get("subject", "(no subject)")
             text = gmail_format_thread_text(thread_data)
 
@@ -317,7 +323,7 @@ async def index_gmail_threads(max_threads: int = 500):
             errors.append({"file": t.get("snippet", "")[:60], "error": str(e)})
             yield {"type": "file_error", "file": t.get("snippet", "")[:60], "error": str(e), "done": i + 1, "total": total}
 
-    asyncio.create_task(asyncio.to_thread(build_global_vocab))
+    asyncio.create_task(asyncio.to_thread(build_global_vocab, collection))
     yield {
         "type": "complete",
         "indexed": len(indexed),

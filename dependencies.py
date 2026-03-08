@@ -207,9 +207,8 @@ async def init_startup() -> None:
     import asyncio as _asyncio
 
     def _build_vocab():
-        # Lazy import to avoid circular deps
         from services.search_service import build_global_vocab
-        build_global_vocab()
+        build_global_vocab(get_collection())
 
     _asyncio.create_task(_asyncio.to_thread(_build_vocab))
     _asyncio.create_task(_asyncio.to_thread(load_drive_service))

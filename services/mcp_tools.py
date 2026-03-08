@@ -81,12 +81,11 @@ def tool_search_files(folder_path: str, keyword: str) -> str:
 # ---------------------------------------------------------------------------
 
 
-def tool_search_vectordb(query: str) -> str:
+def tool_search_vectordb(query: str, *, collection=None) -> str:
     """Search the vector database for documents relevant to a query."""
-    # Lazy import to avoid circular deps
     from services.search_service import hybrid_search
 
-    docs, metas, _ = hybrid_search(query, n_results=4)
+    docs, metas, _ = hybrid_search(query, n_results=4, collection=collection)
     if not docs:
         return json.dumps({"query": query, "results": []})
 
@@ -135,47 +134,44 @@ def tool_search_vectordb(query: str) -> str:
 # ---------------------------------------------------------------------------
 
 
-def tool_drive_list_files(folder_id: str = "root") -> str:
+def tool_drive_list_files(folder_id: str = "root", *, drive_svc=None) -> str:
     """List files in a Google Drive folder."""
-    # Lazy import to avoid circular deps
-    from dependencies import get_drive
-
-    svc = get_drive()
-    if not svc:
+    if drive_svc is None:
+        from dependencies import get_drive
+        drive_svc = get_drive()
+    if not drive_svc:
         return json.dumps({"error": "Google Drive not connected. Visit /auth/google first."})
     query = f"'{folder_id}' in parents and trashed=false"
-    results = svc.files().list(q=query, fields="files(id,name,mimeType,size)").execute()
+    results = drive_svc.files().list(q=query, fields="files(id,name,mimeType,size)").execute()
     return json.dumps({"folder_id": folder_id, "files": results.get("files", [])})
 
 
-def tool_drive_search_files(keyword: str) -> str:
+def tool_drive_search_files(keyword: str, *, drive_svc=None) -> str:
     """Full-text search across all Google Drive files."""
-    # Lazy import to avoid circular deps
-    from dependencies import get_drive
-
-    svc = get_drive()
-    if not svc:
+    if drive_svc is None:
+        from dependencies import get_drive
+        drive_svc = get_drive()
+    if not drive_svc:
         return json.dumps({"error": "Google Drive not connected. Visit /auth/google first."})
     query = f"fullText contains '{keyword}' and trashed=false"
-    results = svc.files().list(
+    results = drive_svc.files().list(
         q=query, fields="files(id,name,mimeType,size)", pageSize=10
     ).execute()
     return json.dumps({"keyword": keyword, "files": results.get("files", [])})
 
 
-def tool_drive_read_file(file_id: str) -> str:
+def tool_drive_read_file(file_id: str, *, drive_svc=None) -> str:
     """Read content of a Google Drive file. Auto-exports Docs as text, Sheets as CSV."""
     import io as _io
     from pathlib import Path as _Path
-
-    # Lazy imports to avoid circular deps
-    from dependencies import get_drive
     from googleapiclient.http import MediaIoBaseDownload
 
-    svc = get_drive()
-    if not svc:
+    if drive_svc is None:
+        from dependencies import get_drive
+        drive_svc = get_drive()
+    if not drive_svc:
         return json.dumps({"error": "Google Drive not connected. Visit /auth/google first."})
-    meta = svc.files().get(fileId=file_id, fields="name,mimeType").execute()
+    meta = drive_svc.files().get(fileId=file_id, fields="name,mimeType").execute()
     mime = meta.get("mimeType", "")
     name = meta.get("name", file_id)
 
@@ -185,11 +181,11 @@ def tool_drive_read_file(file_id: str) -> str:
     }
     try:
         if mime in EXPORT_MAP:
-            content_bytes = svc.files().export(fileId=file_id, mimeType=EXPORT_MAP[mime]).execute()
+            content_bytes = drive_svc.files().export(fileId=file_id, mimeType=EXPORT_MAP[mime]).execute()
             content = content_bytes.decode("utf-8", errors="ignore")
         else:
             buf = _io.BytesIO()
-            downloader = MediaIoBaseDownload(buf, svc.files().get_media(fileId=file_id))
+            downloader = MediaIoBaseDownload(buf, drive_svc.files().get_media(fileId=file_id))
             done = False
             while not done:
                 _, done = downloader.next_chunk()
@@ -208,6 +204,20 @@ def tool_drive_read_file(file_id: str) -> str:
 # ---------------------------------------------------------------------------
 # Tool registries
 # ---------------------------------------------------------------------------
+
+
+def make_tool_functions(collection=None, drive_svc=None) -> dict:
+    """Return a dict of tool-name → callable closures that capture deps."""
+    return {
+        "search_vectordb": lambda **kw: tool_search_vectordb(**kw, collection=collection),
+        "list_files": tool_list_files,
+        "read_document": tool_read_document,
+        "search_files": tool_search_files,
+        "drive_list_files": lambda **kw: tool_drive_list_files(**kw, drive_svc=drive_svc),
+        "drive_search_files": lambda **kw: tool_drive_search_files(**kw, drive_svc=drive_svc),
+        "drive_read_file": lambda **kw: tool_drive_read_file(**kw, drive_svc=drive_svc),
+    }
+
 
 TOOL_FUNCTIONS: dict = {
     "search_vectordb": tool_search_vectordb,
