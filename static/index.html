@@ -983,31 +983,32 @@
         async function streamIndexProgress(resp, container) {
             container.innerHTML = `
                 <div class="prog-label">
-                    <span id="pg-count">Starting...</span>
-                    <span id="pg-pct"></span>
+                    <span class="pg-count">Starting...</span>
+                    <span class="pg-pct"></span>
                 </div>
-                <div class="prog-wrap"><div class="prog-bar" id="pg-bar"></div></div>
-                <div class="prog-status" id="pg-status"></div>
-                <div class="prog-log" id="pg-log"></div>`;
+                <div class="prog-wrap"><div class="prog-bar"></div></div>
+                <div class="prog-status"></div>
+                <div class="prog-log"></div>`;
 
-            const bar = document.getElementById('pg-bar');
-            const countEl = document.getElementById('pg-count');
-            const pctEl = document.getElementById('pg-pct');
-            const statusEl = document.getElementById('pg-status');
-            const logEl = document.getElementById('pg-log');
+            const bar = container.querySelector('.pg-bar');
+            const countEl = container.querySelector('.pg-count');
+            const pctEl = container.querySelector('.pg-pct');
+            const statusEl = container.querySelector('.pg-status');
+            const logEl = container.querySelector('.pg-log');
             let total = 0;
 
             function setProgress(done, tot, status) {
                 if (tot > 0) {
                     const pct = Math.round((done / tot) * 100);
-                    bar.style.width = pct + '%';
-                    countEl.textContent = `${done} / ${tot} files`;
-                    pctEl.textContent = pct + '%';
+                    if (bar) bar.style.width = pct + '%';
+                    if (countEl) countEl.textContent = `${done} / ${tot} files`;
+                    if (pctEl) pctEl.textContent = pct + '%';
                 }
-                if (status !== undefined) statusEl.textContent = status;
+                if (status !== undefined && statusEl) statusEl.textContent = status;
             }
 
             function addLog(line) {
+                if (!logEl) return;
                 const div = document.createElement('div');
                 div.textContent = line;
                 logEl.appendChild(div);
@@ -1036,7 +1037,7 @@
                     } else if (event.type === 'start') {
                         total = event.total;
                         setProgress(0, total, '');
-                        countEl.textContent = `0 / ${total} files`;
+                        if (countEl) countEl.textContent = `0 / ${total} files`;
                     } else if (event.type === 'progress') {
                         const stepLabels = { chunking: 'chunking', summarizing: 'summarizing (LLM)', reading: 'reading', 'listing files': 'listing files…' };
                         const label = stepLabels[event.step] || event.step;
@@ -1052,13 +1053,12 @@
                         setProgress(event.done, total, '');
                         addLog(`✗ ${event.file}: ${event.error}`);
                     } else if (event.type === 'complete') {
-                        bar.style.width = '100%';
-                        bar.style.background = '#22c55e';
-                        statusEl.textContent = '';
+                        if (bar) { bar.style.width = '100%'; bar.style.background = '#22c55e'; }
+                        if (statusEl) statusEl.textContent = '';
                         const errPart = event.errors && event.errors.length ? ` | ${event.errors.length} error(s)` : '';
                         const skipPart = event.skipped !== undefined ? ` | Skipped: ${event.skipped}` : '';
-                        countEl.textContent = `Done — ${event.indexed} indexed${skipPart}${errPart}`;
-                        pctEl.textContent = '100%';
+                        if (countEl) countEl.textContent = `Done — ${event.indexed} indexed${skipPart}${errPart}`;
+                        if (pctEl) pctEl.textContent = '100%';
                     }
                 }
             }

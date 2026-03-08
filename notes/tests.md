@@ -39,6 +39,16 @@ Where did Umut's grandparents migrate from?
 
 ----------------------
 
+Who are my close friends?
+
+--------------------------
+
+
+Who is sending most emails to me
+
+
+-----------------
+
 
                             Pasaport  Dominik   Alya    Motor       Abdullah
 deepSeek-r1:32b               10/50     10/47    7/91    10/52 
