@@ -1,0 +1,6 @@
+perihan-core
+fastapi
+uvicorn[standard]
+httpx
+google-auth
+google-auth-oauthlib

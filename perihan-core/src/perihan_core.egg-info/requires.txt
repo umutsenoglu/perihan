@@ -1,0 +1,5 @@
+openai
+chromadb
+python-docx
+PyPDF2
+google-api-python-client

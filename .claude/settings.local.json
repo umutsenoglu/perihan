@@ -38,7 +38,10 @@
       "WebSearch",
       "WebFetch(domain:*)",
       "Bash(/d/allcode/allcode2/ai/llmapi/tmp/_check.py:*)",
-      "Bash(/d/allcode/allcode2/ai/llmapi/tmp/_check2.py:*)"
+      "Bash(/d/allcode/allcode2/ai/llmapi/tmp/_check2.py:*)",
+      "Bash(./venv/Scripts/python.exe:*)",
+      "Bash(./python/python.exe:*)",
+      "Bash(npx:*)"
     ]
   },
   "model": "claude-opus-4-6"
