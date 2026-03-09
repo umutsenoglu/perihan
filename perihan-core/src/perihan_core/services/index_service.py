@@ -68,10 +68,22 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
     yield {"type": "start", "total": total}
 
     indexed = []
+    skipped_unchanged = 0
     errors = []
 
     for i, file in enumerate(all_files):
         try:
+            current_mtime = file.stat().st_mtime
+
+            # Skip unchanged files — compare stored mtime with current
+            existing = collection.get(where={"full_path": str(file)})
+            if existing["ids"] and existing["metadatas"]:
+                stored_mtime = existing["metadatas"][0].get("modified_at")
+                if stored_mtime is not None and float(stored_mtime) == current_mtime:
+                    skipped_unchanged += 1
+                    yield {"type": "skip", "file": file.name, "reason": "unchanged", "done": i + 1, "total": total}
+                    continue
+
             content = read_file_content(file)
             if not content or len(content.strip()) < 10:
                 yield {"type": "skip", "file": file.name, "reason": "empty", "done": i + 1, "total": total}
@@ -87,7 +99,6 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
             )
             folder_context = f"[Source: {folder}/{file.name}]\n"
 
-            existing = collection.get(where={"full_path": str(file)})
             if existing["ids"]:
                 collection.delete(ids=existing["ids"])
 
@@ -110,6 +121,7 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
                             "full_path": str(file),
                             "file_type": file.suffix.lower(),
                             "chunk": j,
+                            "modified_at": current_mtime,
                         }
                     ],
                 )
@@ -131,6 +143,7 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
                             "file_type": file.suffix.lower(),
                             "chunk": -1,
                             "is_summary": "true",
+                            "modified_at": current_mtime,
                         }
                     ],
                 )
@@ -150,7 +163,7 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
             yield {"type": "file_error", "file": file.name, "error": str(e), "done": i + 1, "total": total}
 
     asyncio.create_task(asyncio.to_thread(build_global_vocab, collection))
-    yield {"type": "complete", "indexed": len(indexed), "files": indexed, "errors": errors}
+    yield {"type": "complete", "indexed": len(indexed), "skipped_unchanged": skipped_unchanged, "files": indexed, "errors": errors}
 
 
 async def index_gdrive_files(folder_id: str = "root", *, collection=None, drive_svc=None, llm_client=None, model=None):
