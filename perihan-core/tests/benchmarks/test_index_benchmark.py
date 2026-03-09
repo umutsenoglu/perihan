@@ -13,7 +13,8 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+BENCH_DIR = Path(__file__).resolve().parent
+ROOT = BENCH_DIR.parent.parent.parent
 sys.path.insert(0, str(ROOT / "perihan-core" / "src"))
 sys.path.insert(0, str(ROOT / "perihan-app" / "src"))
 
@@ -21,7 +22,7 @@ import chromadb
 from perihan_core.config import COLLECTION_NAME
 from perihan_core.services.index_service import index_local_folder
 
-BENCHMARK_DB = ROOT / "tests" / "_benchmark_db"
+BENCHMARK_DB = BENCH_DIR / "_benchmark_db"
 
 
 def create_test_collection():
@@ -33,7 +34,7 @@ def create_test_collection():
 
 
 async def run_benchmark():
-    test_folder = ROOT / "tests" / "test-material"
+    test_folder = BENCH_DIR / "test-material"
     if not test_folder.exists():
         print(f"ERROR: {test_folder} not found")
         return

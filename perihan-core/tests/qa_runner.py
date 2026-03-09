@@ -20,7 +20,9 @@ from datetime import datetime
 from pathlib import Path
 
 from dotenv import load_dotenv
-load_dotenv(Path(__file__).parent.parent / ".env")
+TESTS_DIR = Path(__file__).resolve().parent
+ROOT = TESTS_DIR.parent.parent
+load_dotenv(ROOT / ".env")
 
 import requests
 from openai import OpenAI
@@ -29,7 +31,6 @@ from openai import OpenAI
 # Paths
 # ---------------------------------------------------------------------------
 
-ROOT = Path(__file__).parent.parent
 QA_FILE = ROOT / "notes" / "QA.md"
 RESULTS_DIR = Path(__file__).parent / "results"
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
