@@ -307,6 +307,26 @@
             transition: width 0.3s ease;
             width: 0%;
         }
+        .prog-current-file {
+            font-size: 13px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .prog-step {
+            display: inline-block;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-bottom: 8px;
+        }
+        .prog-step.chunking { background: #dbeafe; color: #1d4ed8; }
+        .prog-step.summarizing { background: #fef3c7; color: #92400e; }
+        .prog-step.reading { background: #e0e7ff; color: #3730a3; }
+        .prog-step.listing { background: #f3e8ff; color: #6b21a8; }
         .prog-status {
             font-size: 12px;
             color: #64748b;
@@ -320,12 +340,41 @@
         .prog-log {
             font-size: 12px;
             color: #475569;
-            max-height: 140px;
+            max-height: 200px;
             overflow-y: auto;
             line-height: 1.8;
             border-top: 1px solid #e2e8f0;
             padding-top: 4px;
         }
+        .prog-log .log-ok { color: #16a34a; }
+        .prog-log .log-skip { color: #94a3b8; }
+        .prog-log .log-skip-unchanged { color: #64748b; font-style: italic; }
+        .prog-log .log-err { color: #dc2626; }
+        .prog-summary {
+            margin-top: 8px;
+            font-size: 12px;
+        }
+        .prog-summary .summary-toggle {
+            color: #3b82f6;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-left: 6px;
+        }
+        .prog-summary .summary-toggle:hover { color: #1d4ed8; }
+        .prog-summary .summary-details {
+            display: none;
+            margin-top: 6px;
+            padding: 6px 10px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            max-height: 160px;
+            overflow-y: auto;
+            font-size: 11px;
+            color: #64748b;
+            line-height: 1.7;
+        }
+        .prog-summary .summary-details.open { display: block; }
 
         /* Loading spinner */
         .spinner {
@@ -987,30 +1036,63 @@
                     <span class="pg-pct"></span>
                 </div>
                 <div class="prog-wrap"><div class="prog-bar"></div></div>
+                <div class="prog-current-file"></div>
+                <div class="prog-step"></div>
                 <div class="prog-status"></div>
                 <div class="prog-log"></div>`;
 
-            const bar = container.querySelector('.pg-bar');
+            const bar = container.querySelector('.prog-bar');
             const countEl = container.querySelector('.pg-count');
             const pctEl = container.querySelector('.pg-pct');
-            const statusEl = container.querySelector('.pg-status');
-            const logEl = container.querySelector('.pg-log');
+            const currentFileEl = container.querySelector('.prog-current-file');
+            const stepEl = container.querySelector('.prog-step');
+            const statusEl = container.querySelector('.prog-status');
+            const logEl = container.querySelector('.prog-log');
             let total = 0;
+            const startTime = Date.now();
 
-            function setProgress(done, tot, status) {
+            function elapsed() {
+                const s = Math.floor((Date.now() - startTime) / 1000);
+                if (s < 60) return s + 's';
+                return Math.floor(s / 60) + 'm ' + (s % 60) + 's';
+            }
+
+            function setProgress(done, tot) {
                 if (tot > 0) {
                     const pct = Math.round((done / tot) * 100);
                     if (bar) bar.style.width = pct + '%';
                     if (countEl) countEl.textContent = `${done} / ${tot} files`;
                     if (pctEl) pctEl.textContent = pct + '%';
                 }
-                if (status !== undefined && statusEl) statusEl.textContent = status;
             }
 
-            function addLog(line) {
+            function setCurrentFile(name, step) {
+                if (currentFileEl) currentFileEl.textContent = name || '';
+                if (stepEl) {
+                    const stepLabels = {
+                        chunking: 'Chunking',
+                        summarizing: 'Summarizing (LLM)',
+                        reading: 'Reading',
+                        'listing files': 'Listing files',
+                        'listing threads': 'Listing threads'
+                    };
+                    const label = stepLabels[step] || step || '';
+                    stepEl.textContent = label;
+                    stepEl.className = 'prog-step';
+                    if (step === 'chunking') stepEl.classList.add('chunking');
+                    else if (step === 'summarizing') stepEl.classList.add('summarizing');
+                    else if (step === 'reading') stepEl.classList.add('reading');
+                    else if (step) stepEl.classList.add('listing');
+                    stepEl.style.display = label ? '' : 'none';
+                }
+                if (statusEl) statusEl.textContent = elapsed();
+            }
+
+            function addLog(line, cls) {
                 if (!logEl) return;
                 const div = document.createElement('div');
                 div.textContent = line;
+                if (cls) div.className = cls;
                 logEl.appendChild(div);
                 logEl.scrollTop = logEl.scrollHeight;
             }
@@ -1036,29 +1118,75 @@
                         return;
                     } else if (event.type === 'start') {
                         total = event.total;
-                        setProgress(0, total, '');
+                        setProgress(0, total);
                         if (countEl) countEl.textContent = `0 / ${total} files`;
                     } else if (event.type === 'progress') {
-                        const stepLabels = { chunking: 'chunking', summarizing: 'summarizing (LLM)', reading: 'reading', 'listing files': 'listing files…' };
-                        const label = stepLabels[event.step] || event.step;
-                        setProgress(event.done, total, (event.file ? event.file + ' — ' : '') + label);
+                        setProgress(event.done, total);
+                        setCurrentFile(event.file, event.step);
                     } else if (event.type === 'file_done') {
                         const extra = event.chunks !== undefined ? ` (${event.chunks} chunks)` : '';
-                        setProgress(event.done, total, '');
-                        addLog(`✓ ${event.file}${extra}`);
+                        setProgress(event.done, total);
+                        setCurrentFile('', '');
+                        addLog(`+ ${event.file}${extra}`, 'log-ok');
                     } else if (event.type === 'skip') {
-                        setProgress(event.done, total, '');
-                        addLog(`— ${event.file} (skipped: ${event.reason || 'empty'})`);
+                        setProgress(event.done, total);
+                        setCurrentFile('', '');
+                        const reason = event.reason || 'empty';
+                        const cls = reason === 'unchanged' ? 'log-skip-unchanged' : 'log-skip';
+                        addLog(`- ${event.file} (${reason})`, cls);
                     } else if (event.type === 'file_error') {
-                        setProgress(event.done, total, '');
-                        addLog(`✗ ${event.file}: ${event.error}`);
+                        setProgress(event.done, total);
+                        setCurrentFile('', '');
+                        addLog(`x ${event.file}: ${event.error}`, 'log-err');
                     } else if (event.type === 'complete') {
                         if (bar) { bar.style.width = '100%'; bar.style.background = '#22c55e'; }
-                        if (statusEl) statusEl.textContent = '';
-                        const errPart = event.errors && event.errors.length ? ` | ${event.errors.length} error(s)` : '';
-                        const skipPart = event.skipped !== undefined ? ` | Skipped: ${event.skipped}` : '';
-                        if (countEl) countEl.textContent = `Done — ${event.indexed} indexed${skipPart}${errPart}`;
+                        if (currentFileEl) currentFileEl.textContent = '';
+                        if (stepEl) stepEl.style.display = 'none';
+                        const summaryParts = [`${event.indexed} indexed`];
+                        if (event.skipped_unchanged) summaryParts.push(`${event.skipped_unchanged} unchanged`);
+                        if (event.skipped_empty) summaryParts.push(`${event.skipped_empty} empty`);
+                        if (event.skipped !== undefined) summaryParts.push(`${event.skipped} skipped`);
+                        if (event.errors && event.errors.length) summaryParts.push(`${event.errors.length} error(s)`);
+                        if (statusEl) statusEl.textContent = `Completed in ${elapsed()}`;
+                        if (countEl) countEl.textContent = `Done — ${summaryParts.join(' | ')}`;
                         if (pctEl) pctEl.textContent = '100%';
+
+                        // Build expandable details for empty files and errors
+                        const detailSections = [];
+                        if (event.skipped_empty_files && event.skipped_empty_files.length) {
+                            detailSections.push({
+                                label: `${event.skipped_empty_files.length} empty file(s)`,
+                                items: event.skipped_empty_files.map(f => f.file)
+                            });
+                        }
+                        if (event.errors && event.errors.length) {
+                            detailSections.push({
+                                label: `${event.errors.length} error(s)`,
+                                items: event.errors.map(e => e.file + ': ' + e.error)
+                            });
+                        }
+                        if (detailSections.length) {
+                            const summaryDiv = document.createElement('div');
+                            summaryDiv.className = 'prog-summary';
+                            for (const section of detailSections) {
+                                const row = document.createElement('div');
+                                row.style.marginBottom = '4px';
+                                const toggle = document.createElement('span');
+                                toggle.className = 'summary-toggle';
+                                toggle.textContent = `Show ${section.label}`;
+                                const details = document.createElement('div');
+                                details.className = 'summary-details';
+                                details.innerHTML = section.items.map(f => '<div>' + f.replace(/</g, '&lt;') + '</div>').join('');
+                                toggle.onclick = function() {
+                                    const open = details.classList.toggle('open');
+                                    toggle.textContent = (open ? 'Hide ' : 'Show ') + section.label;
+                                };
+                                row.appendChild(toggle);
+                                row.appendChild(details);
+                                summaryDiv.appendChild(row);
+                            }
+                            container.appendChild(summaryDiv);
+                        }
                     }
                 }
             }

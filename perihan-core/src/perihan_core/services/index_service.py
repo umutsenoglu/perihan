@@ -69,6 +69,7 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
 
     indexed = []
     skipped_unchanged = 0
+    skipped_empty = []
     errors = []
 
     for i, file in enumerate(all_files):
@@ -86,6 +87,8 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
 
             content = read_file_content(file)
             if not content or len(content.strip()) < 10:
+                relative = file.relative_to(base_path)
+                skipped_empty.append({"file": str(relative), "name": file.name})
                 yield {"type": "skip", "file": file.name, "reason": "empty", "done": i + 1, "total": total}
                 continue
 
@@ -163,7 +166,7 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
             yield {"type": "file_error", "file": file.name, "error": str(e), "done": i + 1, "total": total}
 
     asyncio.create_task(asyncio.to_thread(build_global_vocab, collection))
-    yield {"type": "complete", "indexed": len(indexed), "skipped_unchanged": skipped_unchanged, "files": indexed, "errors": errors}
+    yield {"type": "complete", "indexed": len(indexed), "skipped_unchanged": skipped_unchanged, "skipped_empty": len(skipped_empty), "skipped_empty_files": skipped_empty, "files": indexed, "errors": errors}
 
 
 async def index_gdrive_files(folder_id: str = "root", *, collection=None, drive_svc=None, llm_client=None, model=None):

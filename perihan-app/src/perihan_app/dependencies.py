@@ -1,7 +1,6 @@
 import os
 import gc
 import json
-import shutil
 import asyncio
 from pathlib import Path
 
@@ -87,37 +86,20 @@ def get_chroma():
 
 
 async def reset_chroma() -> int:
-    """Delete all documents, wipe the vectordb directory, and reinitialize.
+    """Delete all documents from the vector database.
 
     Returns the count of deleted documents.
     """
-    global _chroma_client, _collection
-
     collection = get_collection()
     existing = collection.get()
     deleted_count = len(existing["ids"])
 
-    # Delete all documents directly from the collection first
     if existing["ids"]:
-        collection.delete(ids=existing["ids"])
+        # ChromaDB limits batch size — delete in chunks
+        batch = 5000
+        for i in range(0, len(existing["ids"]), batch):
+            collection.delete(ids=existing["ids"][i:i + batch])
 
-    # Release all references so CPython closes the SQLite file handles
-    _collection = None
-    _chroma_client = None
-    gc.collect()
-    await asyncio.sleep(0.5)  # give OS time to release file locks on Windows
-
-    # Wipe the entire directory — retry with increasing delays for Windows file locks
-    for delay in (0, 1, 2, 3):
-        await asyncio.sleep(delay)
-        try:
-            shutil.rmtree(VECTORDB_PATH)
-            break
-        except Exception:
-            continue
-
-    # Reinitialize fresh
-    _init_chroma()
     return deleted_count
 
 
