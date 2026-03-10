@@ -350,6 +350,65 @@
         .prog-log .log-skip { color: #94a3b8; }
         .prog-log .log-skip-unchanged { color: #64748b; font-style: italic; }
         .prog-log .log-err { color: #dc2626; }
+
+        /* Index tab sidebar layout */
+        .index-layout {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+        .index-sidebar {
+            width: 200px;
+            min-width: 200px;
+            background: #fff;
+            border-right: 1px solid #e2e8f0;
+            padding: 16px 0;
+            overflow-y: auto;
+        }
+        .index-sidebar .sidebar-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-left: 3px solid transparent;
+        }
+        .index-sidebar .sidebar-item:hover {
+            background: #f8fafc;
+            color: #1a1a2e;
+        }
+        .index-sidebar .sidebar-item.active {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border-left-color: #3b82f6;
+        }
+        .index-sidebar .sidebar-item .sidebar-icon {
+            font-size: 16px;
+            width: 20px;
+            text-align: center;
+        }
+        .index-sidebar .sidebar-sep {
+            height: 1px;
+            background: #e2e8f0;
+            margin: 12px 20px;
+        }
+        .index-section {
+            display: none;
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+        }
+        .index-section.active {
+            display: block;
+        }
+        .index-section .card {
+            max-width: 700px;
+        }
+
         .prog-summary {
             margin-top: 8px;
             font-size: 12px;
@@ -687,86 +746,121 @@
 
     <!-- Index Tab -->
     <div id="index" class="tab-content">
-        <div class="panel">
-            <div class="card">
-                <h2>Index a Folder</h2>
-                <p>Recursively scan and index all documents (txt, md, pdf, docx, xml) from a local folder into the vector database.</p>
-                <div class="form-row">
-                    <input type="text" id="index-folder-path" placeholder="e.g. C:\Users\documents\company">
-                    <button class="btn btn-primary" id="index-btn" onclick="indexFolder()">Index</button>
+        <div class="index-layout">
+            <nav class="index-sidebar">
+                <div class="sidebar-item active" data-section="idx-folder" onclick="switchIndexSection(this)">
+                    <span class="sidebar-icon">&#128193;</span> Local Folder
                 </div>
-                <div class="result-box" id="index-result"></div>
-            </div>
+                <div class="sidebar-item" data-section="idx-gdrive" onclick="switchIndexSection(this)">
+                    <span class="sidebar-icon">&#9729;</span> Google Drive
+                </div>
+                <div class="sidebar-item" data-section="idx-gmail" onclick="switchIndexSection(this)">
+                    <span class="sidebar-icon">&#9993;</span> Gmail
+                </div>
+                <div class="sidebar-item" data-section="idx-whatsapp" onclick="switchIndexSection(this)">
+                    <span class="sidebar-icon">&#128172;</span> WhatsApp
+                </div>
+                <div class="sidebar-sep"></div>
+                <div style="padding:4px 20px 8px;font-size:11px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;">Reports</div>
+                <div class="sidebar-item" data-section="idx-documents" onclick="switchIndexSection(this)">
+                    <span class="sidebar-icon">&#128196;</span> Documents
+                </div>
+                <div class="sidebar-item" data-section="idx-folders" onclick="switchIndexSection(this)">
+                    <span class="sidebar-icon">&#128194;</span> Folders
+                </div>
+            </nav>
 
-            <div class="card">
-                <div style="display:flex;align-items:center;justify-content:space-between;">
-                    <h2>Index Google Drive</h2>
-                    <div id="idx-drive-status" style="display:flex;align-items:center;gap:6px;">
-                        <div id="idx-drive-dot" style="width:8px;height:8px;border-radius:50%;background:#e2e8f0;"></div>
-                        <span id="idx-drive-text" style="font-size:12px;color:#94a3b8;">Checking...</span>
+            <!-- Local Folder -->
+            <div id="idx-folder" class="index-section active">
+                <div class="card">
+                    <h2>Index a Folder</h2>
+                    <p>Recursively scan and index all documents (txt, md, pdf, docx, xml) from a local folder into the vector database.</p>
+                    <div class="form-row">
+                        <input type="text" id="index-folder-path" placeholder="e.g. C:\Users\documents\company">
+                        <button class="btn btn-primary" id="index-btn" onclick="indexFolder()">Index</button>
                     </div>
+                    <div class="result-box" id="index-result"></div>
                 </div>
-                <p>Download summaries of all Google Drive files into the local vector database. Drive must be connected first (Settings tab).</p>
-                <div class="form-row">
-                    <input type="text" id="gdrive-folder-id" placeholder="Folder ID (leave empty for all of Drive)">
-                    <button class="btn btn-primary" id="gdrive-index-btn" onclick="indexGdrive()">Index Drive</button>
-                </div>
-                <div class="result-box" id="gdrive-index-result"></div>
             </div>
 
-            <div class="card">
-                <div style="display:flex;align-items:center;justify-content:space-between;">
-                    <h2>Index Gmail</h2>
-                    <div id="idx-gmail-status" style="display:flex;align-items:center;gap:6px;">
-                        <div id="idx-gmail-dot" style="width:8px;height:8px;border-radius:50%;background:#e2e8f0;"></div>
-                        <span id="idx-gmail-text" style="font-size:12px;color:#94a3b8;">Checking...</span>
+            <!-- Google Drive -->
+            <div id="idx-gdrive" class="index-section">
+                <div class="card">
+                    <div style="display:flex;align-items:center;justify-content:space-between;">
+                        <h2>Index Google Drive</h2>
+                        <div id="idx-drive-status" style="display:flex;align-items:center;gap:6px;">
+                            <div id="idx-drive-dot" style="width:8px;height:8px;border-radius:50%;background:#e2e8f0;"></div>
+                            <span id="idx-drive-text" style="font-size:12px;color:#94a3b8;">Checking...</span>
+                        </div>
                     </div>
+                    <p>Download summaries of all Google Drive files into the local vector database. Drive must be connected first (Settings tab).</p>
+                    <div class="form-row">
+                        <input type="text" id="gdrive-folder-id" placeholder="Folder ID (leave empty for all of Drive)">
+                        <button class="btn btn-primary" id="gdrive-index-btn" onclick="indexGdrive()">Index Drive</button>
+                    </div>
+                    <div class="result-box" id="gdrive-index-result"></div>
                 </div>
-                <p>Download summaries of your Gmail threads into the local vector database. Requires Gmail access (re-authenticate in Settings if needed).</p>
-                <div class="form-row">
-                    <input type="number" id="gmail-max-threads" placeholder="Max threads (default 500)" min="1" max="10000" style="width:220px;">
-                    <button class="btn btn-primary" id="gmail-index-btn" onclick="indexGmail()">Index Gmail</button>
-                </div>
-                <div class="result-box" id="gmail-index-result"></div>
             </div>
 
-            <div class="card">
-                <h2>Index WhatsApp</h2>
-                <p>Import your full WhatsApp message history into the vector database. Requires <a href="https://nodejs.org" target="_blank">Node.js</a> installed on this machine.</p>
-                <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
-                    <button class="wa-btn" id="wa-connect-btn" onclick="startWhatsApp()">Connect WhatsApp</button>
-                    <button class="btn" id="wa-relogin-btn" onclick="reloginWhatsApp()" style="font-size:13px;padding:6px 12px;" title="Clear saved session and scan QR again">Force Re-login</button>
+            <!-- Gmail -->
+            <div id="idx-gmail" class="index-section">
+                <div class="card">
+                    <div style="display:flex;align-items:center;justify-content:space-between;">
+                        <h2>Index Gmail</h2>
+                        <div id="idx-gmail-status" style="display:flex;align-items:center;gap:6px;">
+                            <div id="idx-gmail-dot" style="width:8px;height:8px;border-radius:50%;background:#e2e8f0;"></div>
+                            <span id="idx-gmail-text" style="font-size:12px;color:#94a3b8;">Checking...</span>
+                        </div>
+                    </div>
+                    <p>Download summaries of your Gmail threads into the local vector database. Requires Gmail access (re-authenticate in Settings if needed).</p>
+                    <div class="form-row">
+                        <input type="number" id="gmail-max-threads" placeholder="Max threads (default 500)" min="1" max="10000" style="width:220px;">
+                        <button class="btn btn-primary" id="gmail-index-btn" onclick="indexGmail()">Index Gmail</button>
+                    </div>
+                    <div class="result-box" id="gmail-index-result"></div>
                 </div>
-                <div id="wa-qr-wrap">
-                    <p style="font-size:13px;color:#475569;text-align:center;">Scan this QR code with WhatsApp<br><span style="font-size:12px;color:#94a3b8;">Phone → Linked Devices → Link a Device</span></p>
-                    <img id="wa-qr-img" src="" alt="QR Code">
-                </div>
-                <div class="wa-status-msg" id="wa-status-msg"></div>
-                <div class="wa-progress" id="wa-progress" style="display:none;">
-                    <div class="wa-progress-bar-wrap"><div class="wa-progress-bar" id="wa-progress-bar"></div></div>
-                    <div style="font-size:12px;color:#64748b;margin-top:4px;" id="wa-progress-label"></div>
-                </div>
-                <div class="wa-done" id="wa-done" style="display:none;"></div>
-                <div class="wa-error" id="wa-error" style="display:none;"></div>
             </div>
 
-            <div style="display:flex;align-items:center;gap:12px;margin:96px 0 16px;">
-                <div style="flex:1;height:1px;background:#cbd5e1;"></div>
-                <span style="font-size:12px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;">Reports</span>
-                <div style="flex:1;height:1px;background:#cbd5e1;"></div>
+            <!-- WhatsApp -->
+            <div id="idx-whatsapp" class="index-section">
+                <div class="card">
+                    <h2>Index WhatsApp</h2>
+                    <p>Import your full WhatsApp message history into the vector database. Requires <a href="https://nodejs.org" target="_blank">Node.js</a> installed on this machine.</p>
+                    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+                        <button class="wa-btn" id="wa-connect-btn" onclick="startWhatsApp()">Connect WhatsApp</button>
+                        <button class="btn" id="wa-relogin-btn" onclick="reloginWhatsApp()" style="font-size:13px;padding:6px 12px;" title="Clear saved session and scan QR again">Force Re-login</button>
+                    </div>
+                    <div id="wa-qr-wrap">
+                        <p style="font-size:13px;color:#475569;text-align:center;">Scan this QR code with WhatsApp<br><span style="font-size:12px;color:#94a3b8;">Phone → Linked Devices → Link a Device</span></p>
+                        <img id="wa-qr-img" src="" alt="QR Code">
+                    </div>
+                    <div class="wa-status-msg" id="wa-status-msg"></div>
+                    <div class="wa-progress" id="wa-progress" style="display:none;">
+                        <div class="wa-progress-bar-wrap"><div class="wa-progress-bar" id="wa-progress-bar"></div></div>
+                        <div style="font-size:12px;color:#64748b;margin-top:4px;" id="wa-progress-label"></div>
+                    </div>
+                    <div class="wa-done" id="wa-done" style="display:none;"></div>
+                    <div class="wa-error" id="wa-error" style="display:none;"></div>
+                </div>
             </div>
 
-            <div class="card">
-                <h2>Indexed Documents</h2>
-                <p>Documents currently stored in the vector database.</p>
-                <button class="btn btn-primary" onclick="loadDocuments()" style="margin-bottom:12px;">Refresh</button>
-                <div class="result-box visible" id="doc-list" style="display:block;">Click Refresh to load.</div>
+            <!-- Indexed Documents -->
+            <div id="idx-documents" class="index-section">
+                <div class="card">
+                    <h2>Indexed Documents</h2>
+                    <p>Documents currently stored in the vector database.</p>
+                    <button class="btn btn-primary" onclick="loadDocuments()" style="margin-bottom:12px;">Refresh</button>
+                    <div class="result-box visible" id="doc-list" style="display:block;">Click Refresh to load.</div>
+                </div>
             </div>
 
-            <div class="card">
-                <h2>Indexed Folders</h2>
-                <button class="btn btn-primary" onclick="loadFolders()" style="margin-bottom:12px;">Refresh</button>
-                <div class="result-box visible" id="folder-list" style="display:block;max-height:500px;white-space:normal;">Click Refresh to load.</div>
+            <!-- Indexed Folders -->
+            <div id="idx-folders" class="index-section">
+                <div class="card">
+                    <h2>Indexed Folders</h2>
+                    <button class="btn btn-primary" onclick="loadFolders()" style="margin-bottom:12px;">Refresh</button>
+                    <div class="result-box visible" id="folder-list" style="display:block;max-height:500px;white-space:normal;">Click Refresh to load.</div>
+                </div>
             </div>
         </div>
     </div>
@@ -867,6 +961,14 @@
                 if (tab.dataset.tab === 'logs') { loadLogs(); }
             });
         });
+
+        // --- Index sidebar navigation ---
+        function switchIndexSection(el) {
+            document.querySelectorAll('.index-sidebar .sidebar-item').forEach(i => i.classList.remove('active'));
+            document.querySelectorAll('.index-section').forEach(s => s.classList.remove('active'));
+            el.classList.add('active');
+            document.getElementById(el.dataset.section).classList.add('active');
+        }
 
         // (no mode toggle — single unified chat endpoint)
 
