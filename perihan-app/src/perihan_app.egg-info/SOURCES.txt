@@ -18,3 +18,4 @@ src/perihan_app/routers/whatsapp.py
 src/perihan_app/services/__init__.py
 src/perihan_app/services/config_service.py
 src/perihan_app/services/log_service.py
+src/perihan_app/static/index.html

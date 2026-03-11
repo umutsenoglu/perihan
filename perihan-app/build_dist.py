@@ -1,27 +1,28 @@
-"""Build dist/perihan-install.zip with the new two-package layout.
+"""Build dist/perihan-install.zip with pre-built wheels.
 
 Contents under perihan/ prefix:
   python/          — embedded Python 3.12 (from dist/python/)
-  perihan-core/    — pip-installable core library
-  perihan-app/     — pip-installable FastAPI app
+  wheels/          — pre-built .whl files for perihan-core and perihan-app
   start.bat        — Windows launcher
   start.sh         — macOS/Linux launcher
   INSTALL.txt      — instructions
 """
 
-import os
+import subprocess
+import sys
 import zipfile
 from pathlib import Path
 
-ROOT = Path(__file__).parent
-DIST = ROOT / "dist"
+SCRIPT_DIR = Path(__file__).parent
+ROOT = SCRIPT_DIR.parent
+DIST = SCRIPT_DIR / "dist"
 ZIP_OUT = DIST / "perihan-install.zip"
 PREFIX = "perihan"
 
-# Directories to embed as pip-installable packages
 CORE_DIR = ROOT / "perihan-core"
 APP_DIR = ROOT / "perihan-app"
 PYTHON_DIR = DIST / "python"
+WHEEL_DIR = DIST / "wheels"
 
 
 def add_tree(zf: zipfile.ZipFile, src: Path, arc_prefix: str, skip_patterns=None):
@@ -31,9 +32,10 @@ def add_tree(zf: zipfile.ZipFile, src: Path, arc_prefix: str, skip_patterns=None
         if path.is_dir():
             continue
         rel = path.relative_to(src)
-        # Skip __pycache__, .egg-info, build artifacts
         parts = rel.parts
-        if any(p in ("__pycache__", ".git", "build", "dist") for p in parts):
+        if any(p in ("__pycache__", ".git") for p in parts):
+            continue
+        if parts[0] in ("build", "dist"):
             continue
         if any(p.endswith(".egg-info") for p in parts):
             continue
@@ -41,6 +43,24 @@ def add_tree(zf: zipfile.ZipFile, src: Path, arc_prefix: str, skip_patterns=None
             continue
         arc_name = f"{arc_prefix}/{rel.as_posix()}"
         zf.write(path, arc_name)
+
+
+def build_wheel(pkg_dir: Path, out_dir: Path):
+    """Build a wheel for a package and return the .whl path."""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    # Clean old wheels for this package
+    pkg_name = pkg_dir.name
+    for old in out_dir.glob(f"{pkg_name.replace('-', '_')}*.whl"):
+        old.unlink()
+
+    subprocess.check_call(
+        [sys.executable, "-m", "pip", "wheel", str(pkg_dir),
+         "--wheel-dir", str(out_dir), "--no-deps"],
+        stdout=sys.stdout, stderr=sys.stderr
+    )
+    wheels = list(out_dir.glob(f"{pkg_name.replace('-', '_')}*.whl"))
+    assert len(wheels) == 1, f"Expected 1 wheel for {pkg_name}, found {len(wheels)}"
+    return wheels[0]
 
 
 def main():
@@ -51,6 +71,13 @@ def main():
     assert APP_DIR.exists(), f"perihan-app/ not found at {APP_DIR}"
     assert PYTHON_DIR.exists(), f"dist/python/ not found at {PYTHON_DIR}"
 
+    # Build wheels
+    print("Building wheels...")
+    core_whl = build_wheel(CORE_DIR, WHEEL_DIR)
+    print(f"  {core_whl.name}")
+    app_whl = build_wheel(APP_DIR, WHEEL_DIR)
+    print(f"  {app_whl.name}")
+
     print(f"Building {ZIP_OUT} ...")
 
     with zipfile.ZipFile(ZIP_OUT, "w", zipfile.ZIP_DEFLATED) as zf:
@@ -58,15 +85,12 @@ def main():
         print("  Adding embedded Python...")
         add_tree(zf, PYTHON_DIR, f"{PREFIX}/python")
 
-        # 2. perihan-core package
-        print("  Adding perihan-core/...")
-        add_tree(zf, CORE_DIR, f"{PREFIX}/perihan-core")
+        # 2. Wheels
+        print("  Adding wheels...")
+        zf.write(core_whl, f"{PREFIX}/wheels/{core_whl.name}")
+        zf.write(app_whl, f"{PREFIX}/wheels/{app_whl.name}")
 
-        # 3. perihan-app package (includes static/index.html)
-        print("  Adding perihan-app/...")
-        add_tree(zf, APP_DIR, f"{PREFIX}/perihan-app")
-
-        # 4. start.bat
+        # 3. start.bat
         print("  Adding start.bat...")
         start_bat = r"""@echo off
 echo.
@@ -87,13 +111,41 @@ if not exist "%~dp0packages_installed.txt" (
     echo  First run - installing dependencies, please wait...
     echo  This takes a few minutes only once.
     echo.
-    echo  [1/3] Installing core library...
-    "%PYEXE%" -m pip install "%~dp0perihan-core" --no-warn-script-location
-    echo  [2/3] Installing app...
-    "%PYEXE%" -m pip install "%~dp0perihan-app" --no-warn-script-location
-    echo  [3/3] Done.
+    echo  Installing packages...
+    "%PYEXE%" -m pip install "%~dp0wheels\perihan_core-0.1.0-py3-none-any.whl" --no-warn-script-location
+    if errorlevel 1 (
+        echo.
+        echo  ERROR: Failed to install core library. Check your internet connection.
+        echo.
+        pause
+        exit /b 1
+    )
+    "%PYEXE%" -m pip install "%~dp0wheels\perihan_app-0.1.0-py3-none-any.whl" --no-warn-script-location
+    if errorlevel 1 (
+        echo.
+        echo  ERROR: Failed to install app. Check your internet connection.
+        echo.
+        pause
+        exit /b 1
+    )
+    echo  Done.
     echo 1 > "%~dp0packages_installed.txt"
     echo.
+)
+
+REM Verify uvicorn is available before launching
+"%PYEXE%" -c "import uvicorn" 2>nul
+if errorlevel 1 (
+    echo  Dependencies incomplete. Re-installing...
+    "%PYEXE%" -m pip install "%~dp0wheels\perihan_core-0.1.0-py3-none-any.whl" --no-warn-script-location
+    "%PYEXE%" -m pip install "%~dp0wheels\perihan_app-0.1.0-py3-none-any.whl" --no-warn-script-location
+    if errorlevel 1 (
+        echo.
+        echo  ERROR: Failed to install dependencies.
+        echo.
+        pause
+        exit /b 1
+    )
 )
 
 echo  Perihan is running at http://localhost:8765
@@ -109,7 +161,7 @@ pause
 """
         zf.writestr(f"{PREFIX}/start.bat", start_bat)
 
-        # 5. start.sh
+        # 4. start.sh
         print("  Adding start.sh...")
         start_sh = r"""#!/bin/bash
 echo ""
@@ -132,8 +184,8 @@ if [ ! -d "venv" ]; then
     echo " This takes a minute only once."
     echo ""
     python3 -m venv venv
-    venv/bin/pip install ./perihan-core
-    venv/bin/pip install ./perihan-app
+    venv/bin/pip install wheels/perihan_core-0.1.0-py3-none-any.whl
+    venv/bin/pip install wheels/perihan_app-0.1.0-py3-none-any.whl
     echo " Done."
     echo ""
 fi
@@ -148,7 +200,7 @@ venv/bin/uvicorn perihan_app.main:app --host 0.0.0.0 --port 8765
 """
         zf.writestr(f"{PREFIX}/start.sh", start_sh)
 
-        # 6. INSTALL.txt
+        # 5. INSTALL.txt
         print("  Adding INSTALL.txt...")
         install_txt = """Perihan - Document Assistant
 ============================
@@ -167,14 +219,13 @@ QUICK START (macOS / Linux)
 
 WHAT'S INSIDE
   python/        Embedded Python 3.12 runtime (Windows only)
-  perihan-core/  Core library (search, indexing, chat services)
-  perihan-app/   FastAPI web application
+  wheels/        Pre-built Python packages
   start.bat      Windows launcher
   start.sh       macOS/Linux launcher
 
 REQUIREMENTS
-  - Internet connection on first launch (pip install)
-  - GEMINI_API_KEY env var OR configure in Settings UI
+  - Internet connection on first launch (pip installs dependencies)
+  - GEMINI_API_KEY env var OR configure in the UI
   - Optional: Ollama for local LLM models
   - Optional: credentials.json for Google Drive/Gmail
 """

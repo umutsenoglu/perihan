@@ -888,30 +888,33 @@
     <div id="model" class="tab-content">
         <div class="panel">
             <div class="card">
-                <h2>LLM Model</h2>
-                <p>Select the active model (Ollama or Gemini). Click a model to switch.</p>
-                <div class="model-list" id="model-list">Loading models...</div>
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <h2>Ollama</h2>
+                    <span class="status-pill" id="settings-ollama-pill">Unknown</span>
+                </div>
+                <div class="field-label">Host</div>
+                <div class="input-with-btn" style="margin-bottom:8px;">
+                    <input type="text" id="settings-ollama-host" placeholder="http://localhost:11434">
+                    <button class="btn btn-primary" onclick="saveApiKeys()">Save</button>
+                </div>
+                <div class="save-feedback" id="ollama-feedback"></div>
+                <div class="model-list" id="ollama-model-list">Loading...</div>
             </div>
 
             <div class="card">
-                <h2>API Keys &amp; Connections</h2>
-                <p>Changes take effect immediately — no restart needed.</p>
-
-                <div class="field-label">Gemini API Key <span class="status-pill" id="settings-gemini-pill">Unknown</span></div>
-                <div class="input-with-btn">
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <h2>Gemini</h2>
+                    <span class="status-pill" id="settings-gemini-pill">Unknown</span>
+                </div>
+                <div class="field-label">API Key</div>
+                <div class="input-with-btn" style="margin-bottom:8px;">
                     <input type="password" id="settings-gemini-key" placeholder="Leave blank to keep existing key">
                     <button class="btn-ghost" onclick="toggleViz('settings-gemini-key',this)">Show</button>
+                    <button class="btn btn-primary" onclick="saveApiKeys()">Save</button>
                 </div>
-
-                <div class="field-label" style="margin-top:14px;">Ollama Host <span class="status-pill" id="settings-ollama-pill">Unknown</span></div>
-                <div class="input-with-btn">
-                    <input type="text" id="settings-ollama-host" placeholder="http://localhost:11434">
-                </div>
-
-                <button class="btn btn-primary" style="margin-top:12px;" onclick="saveApiKeys()">Save</button>
-                <div class="save-feedback" id="apikeys-feedback"></div>
+                <div class="save-feedback" id="gemini-feedback"></div>
+                <div class="model-list" id="gemini-model-list">Loading...</div>
             </div>
-
         </div>
     </div>
 
@@ -1431,27 +1434,40 @@
 
         let currentModel = '';
         async function loadModels() {
-            const el = document.getElementById('model-list');
+            const ollamaEl = document.getElementById('ollama-model-list');
+            const geminiEl = document.getElementById('gemini-model-list');
             try {
                 const resp = await fetch(`${API}/models`);
                 const data = await resp.json();
-                if (data.models.length === 0) {
-                    el.textContent = 'No models found. Is Ollama running? Is GEMINI_API_KEY set?';
-                    return;
+                ollamaEl.innerHTML = '';
+                geminiEl.innerHTML = '';
+                const ollamaModels = data.models.filter(m => m.provider !== 'gemini');
+                const geminiModels = data.models.filter(m => m.provider === 'gemini');
+                if (ollamaModels.length === 0) {
+                    ollamaEl.textContent = 'No models found. Is Ollama running?';
+                } else {
+                    ollamaModels.forEach(m => {
+                        const chip = document.createElement('div');
+                        chip.className = 'model-chip' + (m.name === currentModel ? ' active' : '');
+                        chip.innerHTML = escapeHtml(m.name) + `<span class="size">${m.size_gb} GB</span>`;
+                        chip.onclick = () => setModel(m.name);
+                        ollamaEl.appendChild(chip);
+                    });
                 }
-                el.innerHTML = '';
-                data.models.forEach(m => {
-                    const chip = document.createElement('div');
-                    const isGemini = m.provider === 'gemini';
-                    const isActive = m.name === currentModel;
-                    chip.className = 'model-chip' + (isGemini ? ' gemini' : '') + (isActive ? ' active' : '');
-                    const sizeLabel = isGemini ? 'Cloud API' : `${m.size_gb} GB`;
-                    chip.innerHTML = escapeHtml(m.name) + `<span class="size">${sizeLabel}</span>`;
-                    chip.onclick = () => setModel(m.name);
-                    el.appendChild(chip);
-                });
+                if (geminiModels.length === 0) {
+                    geminiEl.textContent = 'No models found. Is GEMINI_API_KEY set?';
+                } else {
+                    geminiModels.forEach(m => {
+                        const chip = document.createElement('div');
+                        chip.className = 'model-chip gemini' + (m.name === currentModel ? ' active' : '');
+                        chip.innerHTML = escapeHtml(m.name);
+                        chip.onclick = () => setModel(m.name);
+                        geminiEl.appendChild(chip);
+                    });
+                }
             } catch (err) {
-                el.textContent = 'Error loading models: ' + err.message;
+                ollamaEl.textContent = 'Error loading models: ' + err.message;
+                geminiEl.textContent = '';
             }
         }
 
@@ -1622,14 +1638,14 @@
         async function saveApiKeys() {
             const geminiKey = document.getElementById('settings-gemini-key').value.trim();
             const ollamaHost = document.getElementById('settings-ollama-host').value.trim();
-            const fb = document.getElementById('apikeys-feedback');
-            const btn = fb.previousElementSibling;
-            fb.className = 'save-feedback';
+            const ollamaFb = document.getElementById('ollama-feedback');
+            const geminiFb = document.getElementById('gemini-feedback');
+            ollamaFb.className = 'save-feedback'; ollamaFb.textContent = '';
+            geminiFb.className = 'save-feedback'; geminiFb.textContent = '';
 
             // Validate Gemini key before saving
             if (geminiKey) {
-                btn.disabled = true; btn.textContent = 'Validating...';
-                fb.textContent = ''; fb.className = 'save-feedback';
+                geminiFb.textContent = 'Validating...'; geminiFb.className = 'save-feedback';
                 try {
                     const vResp = await fetch(`${API}/config/validate-gemini`, {
                         method: 'POST', headers: {'Content-Type':'application/json'},
@@ -1637,15 +1653,13 @@
                     });
                     const vData = await vResp.json();
                     if (!vData.valid) {
-                        fb.textContent = 'Invalid Gemini key: ' + (vData.error || 'Unknown error');
-                        fb.className = 'save-feedback err';
-                        btn.disabled = false; btn.textContent = 'Save';
+                        geminiFb.textContent = 'Invalid Gemini key: ' + (vData.error || 'Unknown error');
+                        geminiFb.className = 'save-feedback err';
                         return;
                     }
                 } catch(e) {
-                    fb.textContent = 'Validation failed: ' + e.message;
-                    fb.className = 'save-feedback err';
-                    btn.disabled = false; btn.textContent = 'Save';
+                    geminiFb.textContent = 'Validation failed: ' + e.message;
+                    geminiFb.className = 'save-feedback err';
                     return;
                 }
             }
@@ -1655,11 +1669,13 @@
             try {
                 const resp = await fetch(`${API}/config`, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
                 if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-                fb.textContent = 'Saved.'; fb.className = 'save-feedback ok';
+                if (geminiKey) { geminiFb.textContent = 'Saved.'; geminiFb.className = 'save-feedback ok'; }
+                if (ollamaHost) { ollamaFb.textContent = 'Saved.'; ollamaFb.className = 'save-feedback ok'; }
                 document.getElementById('settings-gemini-key').value = '';
                 loadApiKeys(); loadModels();
-            } catch(e) { fb.textContent = 'Error: ' + e.message; fb.className = 'save-feedback err'; }
-            btn.disabled = false; btn.textContent = 'Save';
+            } catch(e) {
+                ollamaFb.textContent = 'Error: ' + e.message; ollamaFb.className = 'save-feedback err';
+            }
         }
 
         // --- Logs ---
