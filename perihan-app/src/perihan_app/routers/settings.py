@@ -19,7 +19,7 @@ async def list_documents():
     return {
         "count": len(all_docs["ids"]),
         "documents": [
-            {"id": id_, "title": meta.get("title", ""), "source": meta.get("source", "local"), "preview": doc[:100]}
+            {"id": id_, "title": meta.get("title", ""), "folder": meta.get("folder", ""), "source": meta.get("source", "local"), "preview": doc[:100]}
             for id_, doc, meta in zip(
                 all_docs["ids"], all_docs["documents"], all_docs["metadatas"]
             )
