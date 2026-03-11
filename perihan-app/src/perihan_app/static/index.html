@@ -737,11 +737,6 @@
         <div id="chat-panel">
             <div class="chat-mode-bar">
                 <label class="toggle-label">
-                    <input type="checkbox" id="use-drive" checked>
-                    <span class="toggle-track"></span>
-                    <span id="drive-label" style="font-size:13px; color:#64748b;">Google Drive</span>
-                </label>
-                <label class="toggle-label" style="margin-left:8px;">
                     <input type="checkbox" id="deep-think" checked>
                     <span class="toggle-track"></span>
                     <span style="font-size:13px; color:#64748b;">Deep Think</span>
@@ -1020,10 +1015,8 @@
             try {
                 let data;
                 {
-                    const useDrive = document.getElementById('use-drive').checked;
                     const deepThink = document.getElementById('deep-think').checked;
                     const params = { question: q };
-                    if (!useDrive) params.use_drive = 'false';
                     if (deepThink) params.deep_think = 'true';
                     const resp = await fetch(`${API}/chat?` + new URLSearchParams(params), { method: 'POST' });
                     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
@@ -1533,21 +1526,21 @@
         function setDriveStatus(connected) {
             const dot = document.getElementById('drive-status-dot');
             const text = document.getElementById('drive-status-text');
-            const label = document.getElementById('drive-label');
+
             const idxDot = document.getElementById('idx-drive-dot');
             const idxText = document.getElementById('idx-drive-text');
             if (connected) {
                 dot.style.background = '#22c55e';
                 text.textContent = 'Drive: Connected';
                 text.style.color = '#16a34a';
-                if (label) { label.style.color = '#16a34a'; label.textContent = 'Google Drive ✓'; }
+
                 if (idxDot) idxDot.style.background = '#22c55e';
                 if (idxText) { idxText.textContent = 'Connected'; idxText.style.color = '#16a34a'; }
             } else {
                 dot.style.background = '#f87171';
                 text.textContent = 'Drive: Not connected';
                 text.style.color = '#dc2626';
-                if (label) { label.style.color = '#94a3b8'; label.textContent = 'Google Drive'; }
+
                 if (idxDot) idxDot.style.background = '#f87171';
                 if (idxText) { idxText.textContent = 'Not connected'; idxText.style.color = '#dc2626'; }
             }
