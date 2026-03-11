@@ -728,7 +728,7 @@
     <div class="tabs">
         <div class="tab active" data-tab="chat">Chat</div>
         <div class="tab" data-tab="index">Index</div>
-        <div class="tab" data-tab="settings">Settings</div>
+        <div class="tab" data-tab="model">Model</div>
         <div class="tab" data-tab="logs">Logs</div>
     </div>
 
@@ -767,15 +767,12 @@
                     <span class="sidebar-icon">&#128172;</span> WhatsApp
                 </div>
                 <div class="sidebar-sep"></div>
-                <div style="padding:4px 20px 8px;font-size:11px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;">Reports</div>
                 <div class="sidebar-item" data-section="idx-documents" onclick="switchIndexSection(this)">
-                    <span class="sidebar-icon">&#128196;</span> Documents
-                </div>
-                <div class="sidebar-item" data-section="idx-folders" onclick="switchIndexSection(this)">
-                    <span class="sidebar-icon">&#128194;</span> Folders
-                </div>
-                <div class="sidebar-item" data-section="idx-stats" onclick="switchIndexSection(this)">
                     <span class="sidebar-icon">&#128202;</span> Stats
+                </div>
+                <div class="sidebar-sep"></div>
+                <div class="sidebar-item" data-section="idx-reset" onclick="switchIndexSection(this)" style="color:#dc2626;">
+                    <span class="sidebar-icon">&#128465;</span> Reset
                 </div>
             </nav>
 
@@ -864,45 +861,31 @@
             <!-- Indexed Documents -->
             <div id="idx-documents" class="index-section">
                 <div class="card">
-                    <h2>Indexed Documents</h2>
+                    <h2>Stats</h2>
                     <div class="stat-grid" id="doc-stats-grid" style="margin-bottom:12px;">
                         <div class="stat-card"><div class="value" id="doc-stat-chunks">-</div><div class="label">Chunks</div></div>
                         <div class="stat-card"><div class="value" id="doc-stat-files">-</div><div class="label">Files</div></div>
                         <div class="stat-card"><div class="value" id="doc-stat-folders">-</div><div class="label">Folders</div></div>
                         <div class="stat-card"><div class="value" id="doc-stat-disk">-</div><div class="label">Disk (KB)</div></div>
                     </div>
-                    <button class="btn btn-primary" onclick="loadDocuments()" style="margin-bottom:12px;">Refresh</button>
-                    <div class="result-box visible" id="doc-list" style="display:block;">Click Refresh to load.</div>
+                    <div class="result-box visible" id="doc-list" style="display:block;">Loading...</div>
                 </div>
             </div>
 
-            <!-- Indexed Folders -->
-            <div id="idx-folders" class="index-section">
+            <!-- Reset -->
+            <div id="idx-reset" class="index-section">
                 <div class="card">
-                    <h2>Indexed Folders</h2>
-                    <button class="btn btn-primary" onclick="loadFolders()" style="margin-bottom:12px;">Refresh</button>
-                    <div class="result-box visible" id="folder-list" style="display:block;max-height:500px;white-space:normal;">Click Refresh to load.</div>
-                </div>
-            </div>
-
-            <!-- Stats -->
-            <div id="idx-stats" class="index-section">
-                <div class="card">
-                    <h2>Vector Database Stats</h2>
-                    <div class="stat-grid" id="stats-grid">
-                        <div class="stat-card"><div class="value" id="stat-chunks">-</div><div class="label">Chunks</div></div>
-                        <div class="stat-card"><div class="value" id="stat-files">-</div><div class="label">Files</div></div>
-                        <div class="stat-card"><div class="value" id="stat-folders">-</div><div class="label">Folders</div></div>
-                        <div class="stat-card"><div class="value" id="stat-disk">-</div><div class="label">Disk (KB)</div></div>
-                    </div>
-                    <button class="btn btn-primary" onclick="loadStats()">Refresh Stats</button>
+                    <h2>Reset Database</h2>
+                    <p>Delete all indexed documents and reset the vector database. This cannot be undone.</p>
+                    <button class="btn btn-danger" onclick="resetDB()">Reset Vector Database</button>
+                    <div class="result-box" id="reset-result"></div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Settings Tab -->
-    <div id="settings" class="tab-content">
+    <div id="model" class="tab-content">
         <div class="panel">
             <div class="card">
                 <h2>LLM Model</h2>
@@ -929,12 +912,6 @@
                 <div class="save-feedback" id="apikeys-feedback"></div>
             </div>
 
-            <div class="card">
-                <h2>Reset Database</h2>
-                <p>Delete all indexed documents and reset the vector database. This cannot be undone.</p>
-                <button class="btn btn-danger" onclick="resetDB()">Reset Vector Database</button>
-                <div class="result-box" id="reset-result"></div>
-            </div>
         </div>
     </div>
 
@@ -967,7 +944,7 @@
                 tab.classList.add('active');
                 document.getElementById(tab.dataset.tab).classList.add('active');
 
-                if (tab.dataset.tab === 'settings') { loadStats(); loadModels(); loadApiKeys(); }
+                if (tab.dataset.tab === 'model') { loadStats(); loadModels(); loadApiKeys(); }
                 if (tab.dataset.tab === 'logs') { loadLogs(); }
             });
         });
@@ -1314,7 +1291,7 @@
                     const sourceLabels = { local: 'Local Folder', gdrive: 'Google Drive', gmail: 'Gmail', whatsapp: 'WhatsApp' };
                     const sourceIcons = { local: '\u{1F4C1}', gdrive: '\u2601', gmail: '\u2709', whatsapp: '\u{1F4AC}' };
 
-                    let html = `<div style="font-size:13px;color:#64748b;margin-bottom:12px;">${data.count} total chunks from ${Object.values(bySource).reduce((s, t) => s + Object.keys(t).length, 0)} file(s)</div>`;
+                    let html = '';
 
                     Object.entries(bySource).forEach(([src, files]) => {
                         const fileCount = Object.keys(files).length;
@@ -1443,16 +1420,10 @@
             try {
                 const resp = await fetch(`${API}/stats`);
                 const data = await resp.json();
-                ['stat', 'doc-stat'].forEach(prefix => {
-                    const c = document.getElementById(prefix + '-chunks');
-                    const f = document.getElementById(prefix + '-files');
-                    const fo = document.getElementById(prefix + '-folders');
-                    const d = document.getElementById(prefix + '-disk');
-                    if (c) c.textContent = data.chunks;
-                    if (f) f.textContent = data.unique_files;
-                    if (fo) fo.textContent = data.unique_folders;
-                    if (d) d.textContent = data.disk_size_kb;
-                });
+                document.getElementById('doc-stat-chunks').textContent = data.chunks;
+                document.getElementById('doc-stat-files').textContent = data.unique_files;
+                document.getElementById('doc-stat-folders').textContent = data.unique_folders;
+                document.getElementById('doc-stat-disk').textContent = data.disk_size_kb;
             } catch (err) {
                 console.error('Failed to load stats:', err);
             }
@@ -2043,6 +2014,7 @@
                 document.getElementById('header-model').textContent = 'Disconnected';
             }
             checkDriveStatus();
+            loadDocuments();
         }
         init();
     </script>
