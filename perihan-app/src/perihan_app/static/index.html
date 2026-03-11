@@ -774,6 +774,9 @@
                 <div class="sidebar-item" data-section="idx-folders" onclick="switchIndexSection(this)">
                     <span class="sidebar-icon">&#128194;</span> Folders
                 </div>
+                <div class="sidebar-item" data-section="idx-stats" onclick="switchIndexSection(this)">
+                    <span class="sidebar-icon">&#128202;</span> Stats
+                </div>
             </nav>
 
             <!-- Local Folder -->
@@ -794,12 +797,14 @@
                 <div class="card">
                     <div style="display:flex;align-items:center;justify-content:space-between;">
                         <h2>Index Google Drive</h2>
-                        <div id="idx-drive-status" style="display:flex;align-items:center;gap:6px;">
+                        <div style="display:flex;align-items:center;gap:8px;">
                             <div id="idx-drive-dot" style="width:8px;height:8px;border-radius:50%;background:#e2e8f0;"></div>
-                            <span id="idx-drive-text" style="font-size:12px;color:#94a3b8;">Checking...</span>
+                            <span id="drive-status-text" style="font-size:12px;color:#94a3b8;">Checking...</span>
+                            <button class="btn btn-primary" id="drive-connect-btn" onclick="connectDrive()" style="padding:3px 10px;font-size:12px;">Connect</button>
                         </div>
                     </div>
-                    <p>Download summaries of all Google Drive files into the local vector database. Drive must be connected first (Settings tab).</p>
+                    <div class="result-box" id="drive-result"></div>
+                    <p>Download summaries of all Google Drive files into the local vector database.</p>
                     <div class="form-row">
                         <input type="text" id="gdrive-folder-id" placeholder="Folder ID (leave empty for all of Drive)">
                         <button class="btn btn-primary" id="gdrive-index-btn" onclick="indexGdrive()">Index Drive</button>
@@ -813,12 +818,14 @@
                 <div class="card">
                     <div style="display:flex;align-items:center;justify-content:space-between;">
                         <h2>Index Gmail</h2>
-                        <div id="idx-gmail-status" style="display:flex;align-items:center;gap:6px;">
+                        <div style="display:flex;align-items:center;gap:8px;">
                             <div id="idx-gmail-dot" style="width:8px;height:8px;border-radius:50%;background:#e2e8f0;"></div>
-                            <span id="idx-gmail-text" style="font-size:12px;color:#94a3b8;">Checking...</span>
+                            <span id="gmail-status-text" style="font-size:12px;color:#94a3b8;">Checking...</span>
+                            <button class="btn btn-primary" id="gmail-connect-btn" onclick="connectDrive('gmail-result')" style="padding:3px 10px;font-size:12px;">Connect</button>
                         </div>
                     </div>
-                    <p>Download summaries of your Gmail threads into the local vector database. Requires Gmail access (re-authenticate in Settings if needed).</p>
+                    <div class="result-box" id="gmail-result"></div>
+                    <p>Download summaries of your Gmail threads into the local vector database.</p>
                     <div class="form-row">
                         <input type="number" id="gmail-max-threads" placeholder="Max threads (default 500)" min="1" max="10000" style="width:220px;">
                         <button class="btn btn-primary" id="gmail-index-btn" onclick="indexGmail()">Index Gmail</button>
@@ -858,7 +865,12 @@
             <div id="idx-documents" class="index-section">
                 <div class="card">
                     <h2>Indexed Documents</h2>
-                    <p>Documents currently stored in the vector database.</p>
+                    <div class="stat-grid" id="doc-stats-grid" style="margin-bottom:12px;">
+                        <div class="stat-card"><div class="value" id="doc-stat-chunks">-</div><div class="label">Chunks</div></div>
+                        <div class="stat-card"><div class="value" id="doc-stat-files">-</div><div class="label">Files</div></div>
+                        <div class="stat-card"><div class="value" id="doc-stat-folders">-</div><div class="label">Folders</div></div>
+                        <div class="stat-card"><div class="value" id="doc-stat-disk">-</div><div class="label">Disk (KB)</div></div>
+                    </div>
                     <button class="btn btn-primary" onclick="loadDocuments()" style="margin-bottom:12px;">Refresh</button>
                     <div class="result-box visible" id="doc-list" style="display:block;">Click Refresh to load.</div>
                 </div>
@@ -872,23 +884,26 @@
                     <div class="result-box visible" id="folder-list" style="display:block;max-height:500px;white-space:normal;">Click Refresh to load.</div>
                 </div>
             </div>
+
+            <!-- Stats -->
+            <div id="idx-stats" class="index-section">
+                <div class="card">
+                    <h2>Vector Database Stats</h2>
+                    <div class="stat-grid" id="stats-grid">
+                        <div class="stat-card"><div class="value" id="stat-chunks">-</div><div class="label">Chunks</div></div>
+                        <div class="stat-card"><div class="value" id="stat-files">-</div><div class="label">Files</div></div>
+                        <div class="stat-card"><div class="value" id="stat-folders">-</div><div class="label">Folders</div></div>
+                        <div class="stat-card"><div class="value" id="stat-disk">-</div><div class="label">Disk (KB)</div></div>
+                    </div>
+                    <button class="btn btn-primary" onclick="loadStats()">Refresh Stats</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Settings Tab -->
     <div id="settings" class="tab-content">
         <div class="panel">
-            <div class="card">
-                <h2>Vector Database Stats</h2>
-                <div class="stat-grid" id="stats-grid">
-                    <div class="stat-card"><div class="value" id="stat-chunks">-</div><div class="label">Chunks</div></div>
-                    <div class="stat-card"><div class="value" id="stat-files">-</div><div class="label">Files</div></div>
-                    <div class="stat-card"><div class="value" id="stat-folders">-</div><div class="label">Folders</div></div>
-                    <div class="stat-card"><div class="value" id="stat-disk">-</div><div class="label">Disk (KB)</div></div>
-                </div>
-                <button class="btn btn-primary" onclick="loadStats()">Refresh Stats</button>
-            </div>
-
             <div class="card">
                 <h2>LLM Model</h2>
                 <p>Select the active model (Ollama or Gemini). Click a model to switch.</p>
@@ -912,21 +927,6 @@
 
                 <button class="btn btn-primary" style="margin-top:12px;" onclick="saveApiKeys()">Save</button>
                 <div class="save-feedback" id="apikeys-feedback"></div>
-            </div>
-
-            <div class="card">
-                <h2>Google Account</h2>
-                <p>Connect your Google account for Drive and Gmail access. Both use a single OAuth login.</p>
-                <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
-                    <div id="drive-status-dot" style="width:10px; height:10px; border-radius:50%; background:#e2e8f0;"></div>
-                    <span id="drive-status-text" style="font-size:13px; color:#64748b;">Checking...</span>
-                </div>
-                <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
-                    <div id="gmail-status-dot" style="width:10px; height:10px; border-radius:50%; background:#e2e8f0;"></div>
-                    <span id="gmail-status-text" style="font-size:13px; color:#64748b;">Checking...</span>
-                </div>
-                <button class="btn btn-primary" id="drive-connect-btn" onclick="connectDrive()">Connect Google Account</button>
-                <div class="result-box" id="drive-result"></div>
             </div>
 
             <div class="card">
@@ -1293,6 +1293,7 @@
         }
 
         async function loadDocuments() {
+            loadStats();
             const el = document.getElementById('doc-list');
             el.textContent = 'Loading...';
             try {
@@ -1442,10 +1443,16 @@
             try {
                 const resp = await fetch(`${API}/stats`);
                 const data = await resp.json();
-                document.getElementById('stat-chunks').textContent = data.chunks;
-                document.getElementById('stat-files').textContent = data.unique_files;
-                document.getElementById('stat-folders').textContent = data.unique_folders;
-                document.getElementById('stat-disk').textContent = data.disk_size_kb;
+                ['stat', 'doc-stat'].forEach(prefix => {
+                    const c = document.getElementById(prefix + '-chunks');
+                    const f = document.getElementById(prefix + '-files');
+                    const fo = document.getElementById(prefix + '-folders');
+                    const d = document.getElementById(prefix + '-disk');
+                    if (c) c.textContent = data.chunks;
+                    if (f) f.textContent = data.unique_files;
+                    if (fo) fo.textContent = data.unique_folders;
+                    if (d) d.textContent = data.disk_size_kb;
+                });
             } catch (err) {
                 console.error('Failed to load stats:', err);
             }
@@ -1524,48 +1531,37 @@
         }
 
         function setDriveStatus(connected) {
-            const dot = document.getElementById('drive-status-dot');
+            const dot = document.getElementById('idx-drive-dot');
             const text = document.getElementById('drive-status-text');
-
-            const idxDot = document.getElementById('idx-drive-dot');
-            const idxText = document.getElementById('idx-drive-text');
+            const btn = document.getElementById('drive-connect-btn');
             if (connected) {
-                dot.style.background = '#22c55e';
-                text.textContent = 'Drive: Connected';
-                text.style.color = '#16a34a';
-
-                if (idxDot) idxDot.style.background = '#22c55e';
-                if (idxText) { idxText.textContent = 'Connected'; idxText.style.color = '#16a34a'; }
+                if (dot) dot.style.background = '#22c55e';
+                if (text) { text.textContent = 'Connected'; text.style.color = '#16a34a'; }
+                if (btn) btn.textContent = 'Re-connect';
             } else {
-                dot.style.background = '#f87171';
-                text.textContent = 'Drive: Not connected';
-                text.style.color = '#dc2626';
-
-                if (idxDot) idxDot.style.background = '#f87171';
-                if (idxText) { idxText.textContent = 'Not connected'; idxText.style.color = '#dc2626'; }
+                if (dot) dot.style.background = '#f87171';
+                if (text) { text.textContent = 'Not connected'; text.style.color = '#dc2626'; }
+                if (btn) btn.textContent = 'Connect';
             }
         }
 
         function setGmailStatus(connected) {
-            const dot = document.getElementById('gmail-status-dot');
+            const dot = document.getElementById('idx-gmail-dot');
             const text = document.getElementById('gmail-status-text');
-            const idxDot = document.getElementById('idx-gmail-dot');
-            const idxText = document.getElementById('idx-gmail-text');
+            const btn = document.getElementById('gmail-connect-btn');
             if (connected) {
-                if (dot) { dot.style.background = '#22c55e'; }
-                if (text) { text.textContent = 'Gmail: Connected'; text.style.color = '#16a34a'; }
-                if (idxDot) idxDot.style.background = '#22c55e';
-                if (idxText) { idxText.textContent = 'Connected'; idxText.style.color = '#16a34a'; }
+                if (dot) dot.style.background = '#22c55e';
+                if (text) { text.textContent = 'Connected'; text.style.color = '#16a34a'; }
+                if (btn) btn.textContent = 'Re-connect';
             } else {
-                if (dot) { dot.style.background = '#f87171'; }
-                if (text) { text.textContent = 'Gmail: Not connected — re-authenticate to grant access'; text.style.color = '#dc2626'; }
-                if (idxDot) idxDot.style.background = '#f87171';
-                if (idxText) { idxText.textContent = 'Not connected'; idxText.style.color = '#dc2626'; }
+                if (dot) dot.style.background = '#f87171';
+                if (text) { text.textContent = 'Not connected'; text.style.color = '#dc2626'; }
+                if (btn) btn.textContent = 'Connect';
             }
         }
 
-        async function connectDrive() {
-            const result = document.getElementById('drive-result');
+        async function connectDrive(resultId) {
+            const result = document.getElementById(resultId || 'drive-result');
             result.className = 'result-box visible';
             result.textContent = 'Fetching authorization URL...';
             try {
@@ -1582,11 +1578,10 @@
             }
         }
 
-        // Reload drive status when Settings tab is opened
-        const origTabHandler = document.querySelectorAll('.tab');
+        // Reload drive status when Index tab is opened
         document.querySelectorAll('.tab').forEach(tab => {
             tab.addEventListener('click', () => {
-                if (tab.dataset.tab === 'settings') { checkDriveStatus(); }
+                if (tab.dataset.tab === 'index') { checkDriveStatus(); }
             });
         });
 
