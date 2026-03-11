@@ -236,8 +236,6 @@
             padding: 12px;
             font-size: 13px;
             white-space: pre-wrap;
-            max-height: 300px;
-            overflow-y: auto;
             display: none;
         }
         .result-box.visible { display: block; }
@@ -337,25 +335,15 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        .prog-log {
-            font-size: 12px;
-            color: #475569;
-            max-height: 200px;
-            overflow-y: auto;
-            line-height: 1.8;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 4px;
-        }
-        .prog-log .log-ok { color: #16a34a; }
-        .prog-log .log-skip { color: #94a3b8; }
-        .prog-log .log-skip-unchanged { color: #64748b; font-style: italic; }
-        .prog-log .log-err { color: #dc2626; }
 
-        /* Index tab sidebar layout */
+        /* Index tab — let browser handle scrolling */
+        #index.tab-content { overflow: visible; }
+        #index.tab-content.active { display: flex; }
+
         .index-layout {
             display: flex;
             flex: 1;
-            overflow: hidden;
+            min-height: 0;
         }
         .index-sidebar {
             width: 200px;
@@ -363,7 +351,6 @@
             background: #fff;
             border-right: 1px solid #e2e8f0;
             padding: 16px 0;
-            overflow-y: auto;
         }
         .index-sidebar .sidebar-item {
             display: flex;
@@ -399,7 +386,6 @@
         .index-section {
             display: none;
             flex: 1;
-            overflow-y: auto;
             padding: 24px;
         }
         .index-section.active {
@@ -427,8 +413,6 @@
             background: #f8fafc;
             border: 1px solid #e2e8f0;
             border-radius: 6px;
-            max-height: 160px;
-            overflow-y: auto;
             font-size: 11px;
             color: #64748b;
             line-height: 1.7;
@@ -630,6 +614,33 @@
         .wa-progress-bar { background: #25D366; height: 100%; border-radius: 6px; transition: width 0.4s; width: 0%; }
         @keyframes wa-pulse { 0%,100% { opacity:1; } 50% { opacity:0.45; } }
         .wa-status-msg { font-size: 13px; color: #475569; margin-top: 8px; }
+        .wa-installing { margin-top: 12px; }
+        .wa-installing .wa-install-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .wa-installing .wa-install-log {
+            font-size: 12px;
+            color: #64748b;
+            font-family: monospace;
+            margin-top: 6px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .wa-installing .wa-install-spinner {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 2px solid #e2e8f0;
+            border-top-color: #3b82f6;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+        }
         .wa-done { color: #16a34a; font-weight: 600; font-size: 14px; margin-top: 10px; }
         .wa-error { color: #dc2626; font-size: 13px; margin-top: 10px; }
 
@@ -835,6 +846,10 @@
                         <img id="wa-qr-img" src="" alt="QR Code">
                     </div>
                     <div class="wa-status-msg" id="wa-status-msg"></div>
+                    <div class="wa-installing" id="wa-installing" style="display:none;">
+                        <div class="wa-install-title"><span class="wa-install-spinner"></span> Installing dependencies... <span id="wa-install-elapsed" style="color:#94a3b8;font-weight:400;"></span></div>
+                        <div class="wa-install-log" id="wa-install-log"></div>
+                    </div>
                     <div class="wa-progress" id="wa-progress" style="display:none;">
                         <div class="wa-progress-bar-wrap"><div class="wa-progress-bar" id="wa-progress-bar"></div></div>
                         <div style="font-size:12px;color:#64748b;margin-top:4px;" id="wa-progress-label"></div>
@@ -1140,8 +1155,7 @@
                 <div class="prog-wrap"><div class="prog-bar"></div></div>
                 <div class="prog-current-file"></div>
                 <div class="prog-step"></div>
-                <div class="prog-status"></div>
-                <div class="prog-log"></div>`;
+                <div class="prog-status"></div>`;
 
             const bar = container.querySelector('.prog-bar');
             const countEl = container.querySelector('.pg-count');
@@ -1149,9 +1163,12 @@
             const currentFileEl = container.querySelector('.prog-current-file');
             const stepEl = container.querySelector('.prog-step');
             const statusEl = container.querySelector('.prog-status');
-            const logEl = container.querySelector('.prog-log');
             let total = 0;
             const startTime = Date.now();
+            const skippedUnchanged = [];
+            const skippedEmpty = [];
+            const fileErrors = [];
+            const indexedFiles = [];
 
             function elapsed() {
                 const s = Math.floor((Date.now() - startTime) / 1000);
@@ -1190,15 +1207,6 @@
                 if (statusEl) statusEl.textContent = elapsed();
             }
 
-            function addLog(line, cls) {
-                if (!logEl) return;
-                const div = document.createElement('div');
-                div.textContent = line;
-                if (cls) div.className = cls;
-                logEl.appendChild(div);
-                logEl.scrollTop = logEl.scrollHeight;
-            }
-
             const reader = resp.body.getReader();
             const decoder = new TextDecoder();
             let buffer = '';
@@ -1229,43 +1237,40 @@
                         const extra = event.chunks !== undefined ? ` (${event.chunks} chunks)` : '';
                         setProgress(event.done, total);
                         setCurrentFile('', '');
-                        addLog(`+ ${event.file}${extra}`, 'log-ok');
+                        indexedFiles.push(event.file + extra);
                     } else if (event.type === 'skip') {
                         setProgress(event.done, total);
-                        setCurrentFile('', '');
                         const reason = event.reason || 'empty';
-                        const cls = reason === 'unchanged' ? 'log-skip-unchanged' : 'log-skip';
-                        addLog(`- ${event.file} (${reason})`, cls);
+                        if (reason === 'unchanged' || reason === 'already indexed') skippedUnchanged.push(event.file);
+                        else skippedEmpty.push(event.file);
                     } else if (event.type === 'file_error') {
                         setProgress(event.done, total);
-                        setCurrentFile('', '');
-                        addLog(`x ${event.file}: ${event.error}`, 'log-err');
+                        fileErrors.push(event.file + ': ' + event.error);
                     } else if (event.type === 'complete') {
                         if (bar) { bar.style.width = '100%'; bar.style.background = '#22c55e'; }
                         if (currentFileEl) currentFileEl.textContent = '';
                         if (stepEl) stepEl.style.display = 'none';
                         const summaryParts = [`${event.indexed} indexed`];
-                        if (event.skipped_unchanged) summaryParts.push(`${event.skipped_unchanged} unchanged`);
-                        if (event.skipped_empty) summaryParts.push(`${event.skipped_empty} empty`);
-                        if (event.skipped !== undefined) summaryParts.push(`${event.skipped} skipped`);
-                        if (event.errors && event.errors.length) summaryParts.push(`${event.errors.length} error(s)`);
+                        if (skippedUnchanged.length) summaryParts.push(`${skippedUnchanged.length} unchanged`);
+                        if (skippedEmpty.length) summaryParts.push(`${skippedEmpty.length} skipped`);
+                        if (fileErrors.length) summaryParts.push(`${fileErrors.length} error(s)`);
                         if (statusEl) statusEl.textContent = `Completed in ${elapsed()}`;
                         if (countEl) countEl.textContent = `Done — ${summaryParts.join(' | ')}`;
                         if (pctEl) pctEl.textContent = '100%';
 
-                        // Build expandable details for empty files and errors
+                        // Build expandable detail sections
                         const detailSections = [];
-                        if (event.skipped_empty_files && event.skipped_empty_files.length) {
-                            detailSections.push({
-                                label: `${event.skipped_empty_files.length} empty file(s)`,
-                                items: event.skipped_empty_files.map(f => f.file)
-                            });
+                        if (indexedFiles.length) {
+                            detailSections.push({ label: `${indexedFiles.length} indexed file(s)`, items: indexedFiles });
                         }
-                        if (event.errors && event.errors.length) {
-                            detailSections.push({
-                                label: `${event.errors.length} error(s)`,
-                                items: event.errors.map(e => e.file + ': ' + e.error)
-                            });
+                        if (skippedUnchanged.length) {
+                            detailSections.push({ label: `${skippedUnchanged.length} unchanged file(s)`, items: skippedUnchanged });
+                        }
+                        if (skippedEmpty.length) {
+                            detailSections.push({ label: `${skippedEmpty.length} empty file(s)`, items: skippedEmpty });
+                        }
+                        if (fileErrors.length) {
+                            detailSections.push({ label: `${fileErrors.length} error(s)`, items: fileErrors });
                         }
                         if (detailSections.length) {
                             const summaryDiv = document.createElement('div');
@@ -1303,17 +1308,41 @@
                 if (data.count === 0) {
                     el.textContent = 'No documents indexed yet.';
                 } else {
-                    // Group by title
-                    const byTitle = {};
+                    // Group by source, then by title within each source
+                    const bySource = {};
                     data.documents.forEach(d => {
-                        if (!byTitle[d.title]) byTitle[d.title] = 0;
-                        byTitle[d.title]++;
+                        const src = d.source || 'local';
+                        if (!bySource[src]) bySource[src] = {};
+                        if (!bySource[src][d.title]) bySource[src][d.title] = 0;
+                        bySource[src][d.title]++;
                     });
-                    let text = `${data.count} total chunks from ${Object.keys(byTitle).length} file(s):\n\n`;
-                    Object.entries(byTitle).forEach(([title, chunks]) => {
-                        text += `  ${title} (${chunks} chunks)\n`;
+
+                    const sourceLabels = { local: 'Local Folder', gdrive: 'Google Drive', gmail: 'Gmail', whatsapp: 'WhatsApp' };
+                    const sourceIcons = { local: '\u{1F4C1}', gdrive: '\u2601', gmail: '\u2709', whatsapp: '\u{1F4AC}' };
+
+                    let html = `<div style="font-size:13px;color:#64748b;margin-bottom:12px;">${data.count} total chunks from ${Object.values(bySource).reduce((s, t) => s + Object.keys(t).length, 0)} file(s)</div>`;
+
+                    Object.entries(bySource).forEach(([src, files]) => {
+                        const fileCount = Object.keys(files).length;
+                        const chunkCount = Object.values(files).reduce((s, c) => s + c, 0);
+                        const label = sourceLabels[src] || src;
+                        const icon = sourceIcons[src] || '';
+                        const id = 'doc-src-' + src;
+
+                        html += `<div style="margin-bottom:8px;">`;
+                        html += `<div onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'block':'none'" style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;">`;
+                        html += `<span style="font-size:16px;">${icon}</span>`;
+                        html += `<span style="font-weight:600;font-size:14px;color:#1e293b;">${label}</span>`;
+                        html += `<span style="font-size:12px;color:#94a3b8;margin-left:auto;">${fileCount} files, ${chunkCount} chunks</span>`;
+                        html += `</div>`;
+                        html += `<div id="${id}" style="display:none;margin-top:4px;padding:8px 12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;font-size:11px;color:#64748b;line-height:1.7;">`;
+                        Object.entries(files).forEach(([title, chunks]) => {
+                            html += `<div style="font-size:12px;color:#475569;">${title.replace(/</g,'&lt;')} <span style="color:#94a3b8;">(${chunks})</span></div>`;
+                        });
+                        html += `</div></div>`;
                     });
-                    el.textContent = text;
+
+                    el.innerHTML = html;
                 }
             } catch (err) {
                 el.textContent = 'Error: ' + err.message;
@@ -1909,8 +1938,29 @@
             const progressLabel = document.getElementById('wa-progress-label')
             const doneEl = document.getElementById('wa-done')
             const errorEl = document.getElementById('wa-error')
+            const installingEl = document.getElementById('wa-installing')
+            const installLogEl = document.getElementById('wa-install-log')
 
-            msgEl.textContent = status.message || ''
+            const msg = status.message || ''
+            const isInstalling = status.status === 'installing' || msg.startsWith('Installing')
+
+            if (isInstalling) {
+                if (!window._waInstallStart) window._waInstallStart = Date.now()
+                installingEl.style.display = 'block'
+                const logText = msg.replace(/^Installing:\s*/, '')
+                installLogEl.textContent = logText || 'starting...'
+                const secs = Math.floor((Date.now() - window._waInstallStart) / 1000)
+                const elapsedEl = document.getElementById('wa-install-elapsed')
+                if (elapsedEl) {
+                    if (secs < 60) elapsedEl.textContent = secs + 's'
+                    else elapsedEl.textContent = Math.floor(secs / 60) + 'm ' + (secs % 60) + 's'
+                }
+                msgEl.textContent = ''
+            } else {
+                installingEl.style.display = 'none'
+                window._waInstallStart = null
+                msgEl.textContent = msg
+            }
 
             if (status.status === 'waiting_qr') {
                 btn.textContent = 'Waiting for scan...'

@@ -23,7 +23,7 @@ _state: dict = {
 }
 _process: Optional[subprocess.Popen] = None
 
-SIDECAR_DIR = Path(__file__).parent.parent / "whatsapp-sidecar"
+SIDECAR_DIR = Path(__file__).resolve().parents[4] / "whatsapp-sidecar"
 AUTH_DIR = (DATA_DIR / "whatsapp_auth").resolve()
 
 
@@ -55,39 +55,48 @@ async def start_whatsapp(request: Request):
 async def _start_sidecar(perihan_url: str):
     global _process, _state
 
-    node_modules = SIDECAR_DIR / "node_modules"
-    if not node_modules.exists():
-        _state["message"] = "Installing dependencies (first run)..."
-
-        def run_npm():
-            proc = subprocess.Popen(
-                "npm install",
-                cwd=str(SIDECAR_DIR),
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                text=True,
-                shell=True,
-            )
-            for line in proc.stdout:
-                text = line.strip()
-                if text:
-                    _state["message"] = f"Installing: {text[:100]}"
-            proc.wait()
-            return proc.returncode
-
-        returncode = await asyncio.to_thread(run_npm)
-        if returncode != 0:
-            _state.update({"status": "error", "message": "npm install failed. Check server logs."})
+    try:
+        if not SIDECAR_DIR.exists():
+            _state.update({"status": "error", "message": f"WhatsApp sidecar not found at {SIDECAR_DIR}"})
             return
 
-    _state["message"] = "Connecting to WhatsApp..."
-    env = {**os.environ, "PERIHAN_URL": perihan_url, "AUTH_DIR": str(AUTH_DIR)}
-    _process = subprocess.Popen(
-        "node index.js",
-        cwd=str(SIDECAR_DIR),
-        env=env,
-        shell=True,
-    )
+        node_modules = SIDECAR_DIR / "node_modules"
+        if not node_modules.exists():
+            _state["status"] = "installing"
+            _state["message"] = "Installing: starting npm install..."
+
+            def run_npm():
+                proc = subprocess.Popen(
+                    "npm install --progress",
+                    cwd=str(SIDECAR_DIR),
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.STDOUT,
+                    text=True,
+                    shell=True,
+                    bufsize=1,
+                )
+                for line in proc.stdout:
+                    text = line.strip()
+                    if text:
+                        _state["message"] = f"Installing: {text[:120]}"
+                proc.wait()
+                return proc.returncode
+
+            returncode = await asyncio.to_thread(run_npm)
+            if returncode != 0:
+                _state.update({"status": "error", "message": "npm install failed. Check server logs."})
+                return
+
+        _state["message"] = "Connecting to WhatsApp..."
+        env = {**os.environ, "PERIHAN_URL": perihan_url, "AUTH_DIR": str(AUTH_DIR)}
+        _process = subprocess.Popen(
+            "node index.js",
+            cwd=str(SIDECAR_DIR),
+            env=env,
+            shell=True,
+        )
+    except Exception as e:
+        _state.update({"status": "error", "message": f"Failed to start WhatsApp: {e}"})
 
 
 @router.post("/whatsapp/relogin")

@@ -71,28 +71,121 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
     skipped_unchanged = 0
     skipped_empty = []
     errors = []
+    done_count = 0
+
+    # Queue for events produced by background summary tasks
+    event_queue = asyncio.Queue()
+    running_summaries = set()
+    MAX_CONCURRENT_SUMMARIES = 5
+
+    async def _summarize_and_enqueue(file, content, relative_path, folder, num_chunks, current_mtime, task_id):
+        """Run LLM summary in background and push result events to the queue."""
+        try:
+            summary = await asyncio.to_thread(
+                generate_file_summary, file.name, content,
+                llm_client=llm_client, model=model
+            )
+            if summary:
+                summary_text = f"[Summary of {file.name}]\n{summary}"
+                collection.upsert(
+                    ids=[f"{relative_path}_summary"],
+                    documents=[summary_text],
+                    metadatas=[
+                        {
+                            "title": file.name,
+                            "folder": folder,
+                            "relative_path": str(relative_path),
+                            "full_path": str(file),
+                            "file_type": file.suffix.lower(),
+                            "chunk": -1,
+                            "is_summary": "true",
+                            "modified_at": current_mtime,
+                            "source": "local",
+                        }
+                    ],
+                )
+            await event_queue.put({
+                "event": {"type": "file_done", "file": file.name, "chunks": num_chunks},
+                "indexed": {"file": str(relative_path), "folder": folder, "chunks": num_chunks, "summary": bool(summary)},
+                "task_id": task_id,
+            })
+        except Exception as e:
+            await event_queue.put({
+                "event": {"type": "file_error", "file": file.name, "error": str(e)},
+                "error": {"file": file.name, "error": str(e)},
+                "task_id": task_id,
+            })
+
+    async def _drain_completed():
+        """Drain all completed summary events from the queue."""
+        nonlocal done_count
+        events = []
+        while not event_queue.empty():
+            item = event_queue.get_nowait()
+            running_summaries.discard(item["task_id"])
+            done_count += 1
+            ev = item["event"]
+            ev["done"] = done_count
+            ev["total"] = total
+            events.append(item)
+        return events
+
+    async def _wait_for_slot():
+        """Wait until a summary slot opens up, yielding completed events."""
+        nonlocal done_count
+        while len(running_summaries) >= MAX_CONCURRENT_SUMMARIES:
+            item = await event_queue.get()
+            running_summaries.discard(item["task_id"])
+            done_count += 1
+            ev = item["event"]
+            ev["done"] = done_count
+            ev["total"] = total
+            yield item
+
+    task_counter = 0
 
     for i, file in enumerate(all_files):
+        # Drain any completed summaries before processing next file
+        for item in await _drain_completed():
+            if "indexed" in item:
+                indexed.append(item["indexed"])
+            if "error" in item:
+                errors.append(item["error"])
+            yield item["event"]
+
         try:
             current_mtime = file.stat().st_mtime
 
-            # Skip unchanged files — compare stored mtime with current
+            # Skip unchanged files (also skip if already indexed but no mtime stored — old data)
             existing = collection.get(where={"full_path": str(file)})
             if existing["ids"] and existing["metadatas"]:
                 stored_mtime = existing["metadatas"][0].get("modified_at")
-                if stored_mtime is not None and float(stored_mtime) == current_mtime:
+                if stored_mtime is None or abs(float(stored_mtime) - current_mtime) < 1:
                     skipped_unchanged += 1
-                    yield {"type": "skip", "file": file.name, "reason": "unchanged", "done": i + 1, "total": total}
+                    yield {"type": "skip", "file": file.name, "reason": "unchanged", "done": done_count, "total": total}
                     continue
 
             content = read_file_content(file)
             if not content or len(content.strip()) < 10:
                 relative = file.relative_to(base_path)
                 skipped_empty.append({"file": str(relative), "name": file.name})
-                yield {"type": "skip", "file": file.name, "reason": "empty", "done": i + 1, "total": total}
+                # Store a marker so we skip this file on next run
+                collection.upsert(
+                    ids=[f"{relative}_empty"],
+                    documents=["[empty file]"],
+                    metadatas=[{
+                        "title": file.name,
+                        "full_path": str(file),
+                        "file_type": file.suffix.lower(),
+                        "modified_at": current_mtime,
+                        "is_empty": "true",
+                        "source": "local",
+                    }],
+                )
+                yield {"type": "skip", "file": file.name, "reason": "empty", "done": done_count, "total": total}
                 continue
 
-            yield {"type": "progress", "file": file.name, "step": "chunking", "done": i, "total": total}
+            yield {"type": "progress", "file": file.name, "step": "chunking", "done": done_count, "total": total}
 
             relative_path = file.relative_to(base_path)
             folder = (
@@ -125,45 +218,45 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
                             "file_type": file.suffix.lower(),
                             "chunk": j,
                             "modified_at": current_mtime,
+                            "source": "local",
                         }
                     ],
                 )
 
-            yield {"type": "progress", "file": file.name, "step": "summarizing", "done": i, "total": total}
+            # Wait for a slot if all summary slots are busy
+            async for item in _wait_for_slot():
+                if "indexed" in item:
+                    indexed.append(item["indexed"])
+                if "error" in item:
+                    errors.append(item["error"])
+                yield item["event"]
 
-            summary = await asyncio.to_thread(generate_file_summary, file.name, content, llm_client=llm_client, model=model)
-            if summary:
-                summary_text = f"[Summary of {file.name}]\n{summary}"
-                collection.upsert(
-                    ids=[f"{relative_path}_summary"],
-                    documents=[summary_text],
-                    metadatas=[
-                        {
-                            "title": file.name,
-                            "folder": folder,
-                            "relative_path": str(relative_path),
-                            "full_path": str(file),
-                            "file_type": file.suffix.lower(),
-                            "chunk": -1,
-                            "is_summary": "true",
-                            "modified_at": current_mtime,
-                        }
-                    ],
-                )
-
-            indexed.append(
-                {
-                    "file": str(relative_path),
-                    "folder": folder,
-                    "chunks": len(chunks),
-                    "summary": bool(summary),
-                }
-            )
-            yield {"type": "file_done", "file": file.name, "chunks": len(chunks), "done": i + 1, "total": total}
+            # Fire off LLM summary in background
+            task_counter += 1
+            tid = task_counter
+            running_summaries.add(tid)
+            yield {"type": "progress", "file": file.name, "step": "summarizing", "done": done_count, "total": total}
+            asyncio.create_task(_summarize_and_enqueue(
+                file, content, relative_path, folder, len(chunks), current_mtime, tid
+            ))
 
         except Exception as e:
             errors.append({"file": file.name, "error": str(e)})
-            yield {"type": "file_error", "file": file.name, "error": str(e), "done": i + 1, "total": total}
+            yield {"type": "file_error", "file": file.name, "error": str(e), "done": done_count, "total": total}
+
+    # Wait for all remaining summaries to finish
+    while running_summaries:
+        item = await event_queue.get()
+        running_summaries.discard(item["task_id"])
+        done_count += 1
+        ev = item["event"]
+        ev["done"] = done_count
+        ev["total"] = total
+        if "indexed" in item:
+            indexed.append(item["indexed"])
+        if "error" in item:
+            errors.append(item["error"])
+        yield ev
 
     asyncio.create_task(asyncio.to_thread(build_global_vocab, collection))
     yield {"type": "complete", "indexed": len(indexed), "skipped_unchanged": skipped_unchanged, "skipped_empty": len(skipped_empty), "skipped_empty_files": skipped_empty, "files": indexed, "errors": errors}
@@ -188,6 +281,7 @@ async def index_gdrive_files(folder_id: str = "root", *, collection=None, drive_
 
     indexed = []
     skipped = []
+    skipped_existing = 0
     errors = []
 
     for i, f in enumerate(all_files):
@@ -197,16 +291,19 @@ async def index_gdrive_files(folder_id: str = "root", *, collection=None, drive_
         folder_path = f["folder_path"]
 
         try:
+            # Skip files already indexed (resume support)
+            existing = collection.get(where={"file_id": file_id})
+            if existing["ids"]:
+                skipped_existing += 1
+                yield {"type": "skip", "file": name, "reason": "already indexed", "done": i + 1, "total": total}
+                continue
+
             yield {"type": "progress", "file": name, "step": "reading", "done": i, "total": total}
             content = await asyncio.to_thread(drive_read_content, drive_svc, file_id, name, mime)
             if not content or len(content.strip()) < 10:
                 skipped.append({"file": name, "reason": "unsupported or empty"})
                 yield {"type": "skip", "file": name, "reason": "unsupported or empty", "done": i + 1, "total": total}
                 continue
-
-            existing = collection.get(where={"file_id": file_id})
-            if existing["ids"]:
-                collection.delete(ids=existing["ids"])
 
             yield {"type": "progress", "file": name, "step": "summarizing", "done": i, "total": total}
             summary = await asyncio.to_thread(generate_file_summary, name, content, llm_client=llm_client, model=model)
@@ -242,6 +339,7 @@ async def index_gdrive_files(folder_id: str = "root", *, collection=None, drive_
     yield {
         "type": "complete",
         "indexed": len(indexed),
+        "skipped_existing": skipped_existing,
         "skipped": len(skipped),
         "files": indexed,
         "skipped_files": skipped,
