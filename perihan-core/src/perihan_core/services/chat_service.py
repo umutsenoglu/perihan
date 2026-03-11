@@ -101,6 +101,16 @@ async def run_mcp_query(question: str, use_drive: bool = True, *, llm_client=Non
     drive_tools = MCP_TOOLS_DRIVE if (use_drive and drive_svc) else []
     tools = MCP_TOOLS + drive_tools
 
+    retry_instructions = """
+CRITICAL RETRY RULES — you MUST follow these:
+- You MUST search at least 3 times with DIFFERENT keywords before concluding you cannot find something.
+- The user's query may contain typos. Try corrected spellings (e.g. "lastigi" → "lastik", "patlkasi" → "patlak").
+- Try shorter keywords: extract the core noun/verb (e.g. "araba lastik patlak" → search "lastik", then "patlak", then "araba").
+- Try synonyms and related terms in both Turkish and English.
+- Try single-word searches — they often find what multi-word queries miss.
+- NEVER give up after just 1 search. If your first search returns no results, that means you MUST try again with different terms.
+- Only after 3+ failed searches with genuinely different keywords may you say you could not find the information."""
+
     if drive_tools:
         system_prompt = f"""You are Perihan, a helpful document assistant with access to an indexed document database and Google Drive.
 Today's date is {datetime.now().strftime('%d %B %Y')}.
@@ -111,7 +121,8 @@ Follow these steps strictly:
 3. Only after reading ALL returned files, provide your answer.
 4. If search_vectordb finds nothing, try again with different keywords, then use drive_search_files as fallback.
 5. NEVER answer "I could not find" without first reading every file from the search results.
-6. Base your answer strictly on the actual file contents you have read."""
+6. Base your answer strictly on the actual file contents you have read.
+{retry_instructions}"""
     else:
         system_prompt = f"""You are Perihan, a helpful document assistant with access to an indexed document database.
 Today's date is {datetime.now().strftime('%d %B %Y')}.
@@ -122,7 +133,8 @@ Follow these steps strictly:
 3. Only after reading ALL returned files, provide your answer.
 4. If search finds nothing OR after reading you still cannot answer, try search_vectordb again with completely different keywords (e.g. synonyms, related terms, or parts of the question).
 5. NEVER answer "I could not find" without first reading every file from the search results.
-6. Base your answer strictly on the actual file contents you have read. Quote or paraphrase directly when relevant."""
+6. Base your answer strictly on the actual file contents you have read. Quote or paraphrase directly when relevant.
+{retry_instructions}"""
 
     messages = [
         {"role": "system", "content": system_prompt},
@@ -131,7 +143,9 @@ Follow these steps strictly:
 
     tool_call_log = []
     mcp_iterations = []
-    max_iterations = 5
+    search_count = 0  # Track how many searches have been done
+    max_iterations = 8
+    min_searches = 3  # Minimum searches before allowing "not found" answers
 
     for i in range(max_iterations):
         iteration_entry = {"iteration": i + 1, "prompt": [m if isinstance(m, dict) else m.model_dump() for m in messages]}
@@ -149,16 +163,37 @@ Follow these steps strictly:
         choice = response.choices[0]
 
         if not choice.message.tool_calls:
-            iteration_entry["response"] = choice.message.content
+            # If the LLM is giving up too early, nudge it to keep searching
+            reply_text = choice.message.content or ""
+            _negative = ["could not find", "cannot find", "can't find", "no information",
+                         "no mention", "unable to find", "not found", "bulamıyorum",
+                         "bulamadım", "bilgi yok", "bilgiye erişme"]
+            is_giving_up = any(p in reply_text.lower() for p in _negative)
+
+            if is_giving_up and search_count < min_searches:
+                # Don't let it give up — force more searches
+                messages.append(choice.message)
+                nudge = (f"You have only searched {search_count} time(s). You MUST try at least {min_searches} searches with different keywords before giving up. "
+                         f"Try shorter or simpler keywords, fix possible typos, or use synonyms. Search again now.")
+                messages.append({"role": "user", "content": nudge})
+                iteration_entry["response"] = reply_text
+                iteration_entry["tool_calls"] = []
+                iteration_entry["nudge"] = nudge
+                mcp_iterations.append(iteration_entry)
+                continue
+
+            iteration_entry["response"] = reply_text
             iteration_entry["tool_calls"] = []
             mcp_iterations.append(iteration_entry)
-            return {"reply": choice.message.content, "tool_calls": tool_call_log, "mcp_iterations": mcp_iterations}
+            return {"reply": reply_text, "tool_calls": tool_call_log, "mcp_iterations": mcp_iterations}
 
         messages.append(choice.message)
         iteration_tool_calls = []
 
         for tc in choice.message.tool_calls:
             func_name = tc.function.name
+            if func_name in ("search_vectordb", "drive_search_files", "search_files"):
+                search_count += 1
             args = json.loads(tc.function.arguments)
             func = tool_funcs.get(func_name)
             result = (

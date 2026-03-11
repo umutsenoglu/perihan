@@ -1272,6 +1272,35 @@
             }
         }
 
+        async function toggleChunks(rowId, titleEnc, folderEnc) {
+            const row = document.getElementById(rowId);
+            if (row.style.display !== 'none') {
+                row.style.display = 'none';
+                return;
+            }
+            const cell = row.querySelector('td');
+            cell.innerHTML = '<div style="padding:8px 10px;color:#94a3b8;font-size:12px;">Loading chunks...</div>';
+            row.style.display = '';
+            try {
+                const params = new URLSearchParams({ title: decodeURIComponent(titleEnc), folder: decodeURIComponent(folderEnc) });
+                const resp = await fetch(`${API}/documents/chunks?` + params);
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                const data = await resp.json();
+                let html = '<div style="padding:4px 10px 8px;">';
+                data.chunks.forEach((c, i) => {
+                    const typeLabel = c.chunk_type ? `<span style="background:#e0f2fe;color:#0369a1;padding:1px 6px;border-radius:4px;font-size:10px;margin-left:6px;">${escapeHtml(c.chunk_type)}</span>` : '';
+                    html += `<div style="margin:4px 0;padding:8px 10px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;font-size:11px;line-height:1.5;">`;
+                    html += `<div style="font-size:10px;color:#94a3b8;margin-bottom:4px;">Chunk ${i + 1}${typeLabel}</div>`;
+                    html += `<div style="color:#334155;white-space:pre-wrap;max-height:200px;overflow-y:auto;">${escapeHtml(c.content)}</div>`;
+                    html += `</div>`;
+                });
+                html += '</div>';
+                cell.innerHTML = html;
+            } catch (err) {
+                cell.innerHTML = `<div style="padding:8px 10px;color:#dc2626;font-size:12px;">Error: ${err.message}</div>`;
+            }
+        }
+
         async function loadDocuments() {
             loadStats();
             const el = document.getElementById('doc-list');
@@ -1316,12 +1345,16 @@
                         html += `<thead><tr style="background:#f1f5f9;text-align:left;"><th style="padding:6px 10px;color:#64748b;font-weight:600;">File</th><th style="padding:6px 10px;color:#64748b;font-weight:600;">Path</th><th style="padding:6px 10px;color:#64748b;font-weight:600;text-align:right;">Chunks</th></tr></thead>`;
                         html += `<tbody>`;
                         Object.values(files).sort((a, b) => (a.folder + a.title).localeCompare(b.folder + b.title)).forEach((f, i) => {
+                            const rowId = 'chunks-' + src + '-' + i;
                             const bg = i % 2 === 0 ? '#fff' : '#f8fafc';
-                            html += `<tr style="background:${bg};border-top:1px solid #f1f5f9;">`;
+                            const titleEnc = encodeURIComponent(f.title);
+                            const folderEnc = encodeURIComponent(f.folder);
+                            html += `<tr style="background:${bg};border-top:1px solid #f1f5f9;cursor:pointer;" onclick="toggleChunks('${rowId}','${titleEnc}','${folderEnc}')">`;
                             html += `<td style="padding:5px 10px;color:#1e293b;white-space:nowrap;">${escapeHtml(f.title)}</td>`;
                             html += `<td style="padding:5px 10px;color:#94a3b8;word-break:break-all;">${escapeHtml(f.folder)}</td>`;
                             html += `<td style="padding:5px 10px;color:#64748b;text-align:right;">${f.chunks}</td>`;
                             html += `</tr>`;
+                            html += `<tr id="${rowId}" style="display:none;"><td colspan="3" style="padding:0;"></td></tr>`;
                         });
                         html += `</tbody></table>`;
                         html += `</div></div>`;

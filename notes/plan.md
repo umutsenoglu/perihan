@@ -63,3 +63,10 @@ RULES:
 CONTEXT FILE: D:\allcode\allcode2\ai\llmapi\whatsapp\Beavers 37th\2026-01-30.txt
 
 Read the context file first, then plan, then execute.
+
+
+------------
+
+
+
+Deniz dedi ki Knowledge graph seversin
