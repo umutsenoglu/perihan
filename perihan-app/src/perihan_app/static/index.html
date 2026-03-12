@@ -1940,7 +1940,7 @@
                         fetch(`${API}/whatsapp/qr`).then(r => r.json()),
                     ])
                     updateWhatsAppUI(statusResp, qrResp)
-                    if (['done', 'error', 'disconnected'].includes(statusResp.status)) {
+                    if (['done', 'disconnected'].includes(statusResp.status)) {
                         clearInterval(_waPollTimer)
                     }
                 } catch {}
@@ -1991,6 +1991,7 @@
                 progressWrap.style.display = 'none'
             } else if (status.status === 'connected') {
                 if (!_waConnectedAt) _waConnectedAt = Date.now()
+                errorEl.style.display = 'none'
                 qrWrap.style.display = 'none'
                 progressWrap.style.display = 'block'
                 progressBar.style.width = '100%'
@@ -2003,16 +2004,9 @@
                     btn.textContent = 'Connected'
                     const elapsed = Math.floor((Date.now() - _waConnectedAt) / 1000)
                     progressLabel.textContent = `Waiting for history sync... ${elapsed}s (this can take a few minutes)`
-                    if (elapsed >= 180) {
-                        clearInterval(_waPollTimer)
-                        progressWrap.style.display = 'none'
-                        btn.disabled = false
-                        btn.textContent = 'Connect WhatsApp'
-                        errorEl.textContent = 'WhatsApp did not send history. Click "Force Re-login" to scan QR and try again.'
-                        errorEl.style.display = 'block'
-                    }
                 }
             } else if (status.status === 'importing') {
+                errorEl.style.display = 'none'
                 qrWrap.style.display = 'none'
                 btn.textContent = 'Importing...'
                 progressWrap.style.display = 'block'
@@ -2021,6 +2015,7 @@
                 progressBar.style.width = pct + '%'
                 progressLabel.textContent = `${status.done} / ${status.total} groups`
             } else if (status.status === 'done') {
+                errorEl.style.display = 'none'
                 qrWrap.style.display = 'none'
                 progressWrap.style.display = 'none'
                 btn.disabled = false

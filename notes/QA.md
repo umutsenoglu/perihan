@@ -162,6 +162,18 @@ Real questions based on indexed WhatsApp data. Each entry includes the expected 
 
 ---
 
+**Q26:** 19:30 da kim gelecekti?
+- **Expected:** Saat 19:30'da teve2 kanalında yayınlanacak olan Kelime Oyunu yarışmasında bir kişi yarışacaktı. Mesajı gönderen kişi kendisinden bahsederek "beni izleyebilirsiniz" demiştir.
+- **Source:** WhatsApp / hatira messages
+
+---
+
+**Q27:** Who was coming at 19:30?
+- **Expected:** ÖZÜÜÜÜ and their mother were coming at 19:30.
+- **Source:** oznuryonek369537355.xml
+
+---
+
 ## Scoring Guide
 
 | Result | Score |
@@ -172,4 +184,4 @@ Real questions based on indexed WhatsApp data. Each entry includes the expected 
 | Wrong answer or hallucination | ❌ 0 pts |
 | Correctly says "I don't know" (Q15-17) | ✅ 2 pts |
 
-**Max score: 42 pts**
+**Max score: 46 pts**
