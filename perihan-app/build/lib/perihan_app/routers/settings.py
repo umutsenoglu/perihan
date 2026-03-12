@@ -19,7 +19,7 @@ async def list_documents():
     return {
         "count": len(all_docs["ids"]),
         "documents": [
-            {"id": id_, "title": meta.get("title", ""), "source": meta.get("source", "local"), "preview": doc[:100]}
+            {"id": id_, "title": meta.get("title", ""), "folder": meta.get("folder", ""), "source": meta.get("source", "local"), "preview": doc[:100]}
             for id_, doc, meta in zip(
                 all_docs["ids"], all_docs["documents"], all_docs["metadatas"]
             )
@@ -40,6 +40,24 @@ async def get_document(doc_id: str):
         "content": result["documents"][0],
         "metadata": result["metadatas"][0],
     }
+
+
+@router.get("/documents/chunks")
+async def get_document_chunks(title: str, folder: str = ""):
+    """Return all chunks for a specific file (by title and folder)."""
+    collection = get_collection()
+    all_docs = collection.get(include=["documents", "metadatas"])
+    chunks = []
+    for id_, doc, meta in zip(all_docs["ids"], all_docs["documents"], all_docs["metadatas"]):
+        if meta.get("title", "") == title and meta.get("folder", "") == folder:
+            chunks.append({
+                "id": id_,
+                "content": doc,
+                "chunk_type": meta.get("chunk_type", ""),
+            })
+    if not chunks:
+        raise HTTPException(status_code=404, detail=f"No chunks found for '{title}' in '{folder}'")
+    return {"title": title, "folder": folder, "count": len(chunks), "chunks": chunks}
 
 
 @router.get("/folders")

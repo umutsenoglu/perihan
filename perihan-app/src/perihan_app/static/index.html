@@ -999,7 +999,11 @@
                     const params = { question: q };
                     if (deepThink) params.deep_think = 'true';
                     const resp = await fetch(`${API}/chat?` + new URLSearchParams(params), { method: 'POST' });
-                    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                    if (!resp.ok) {
+                        let detail = `HTTP ${resp.status}`;
+                        try { const body = await resp.json(); if (body.detail) detail = body.detail; } catch {}
+                        throw new Error(detail);
+                    }
                     data = await resp.json();
                 }
 
@@ -1049,8 +1053,6 @@
                     msg = 'Cannot reach server. Make sure it is running:\n  uvicorn main:app --reload';
                 } else if (msg.startsWith('HTTP 5')) {
                     msg = 'Server error (' + msg + '). Check the uvicorn terminal for a traceback.';
-                } else if (msg.startsWith('HTTP 4')) {
-                    msg = 'Request error (' + msg + '). Check your input or API key configuration.';
                 }
                 errMsg.textContent = msg;
                 messagesDiv.appendChild(errMsg);

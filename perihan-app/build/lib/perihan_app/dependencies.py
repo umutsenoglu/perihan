@@ -33,6 +33,9 @@ current_model: str = (
 
 def get_llm_client() -> OpenAI:
     """Build a fresh client from current config — cheap, no network call at construction."""
+    if not MODEL_FILE.exists():
+        raise HTTPException(status_code=400,
+            detail="No model selected. Go to the Model menu and choose a model first.")
     if current_model.startswith("gemini-"):
         api_key = get_gemini_api_key()
         if not api_key:

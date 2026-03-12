@@ -999,7 +999,11 @@
                     const params = { question: q };
                     if (deepThink) params.deep_think = 'true';
                     const resp = await fetch(`${API}/chat?` + new URLSearchParams(params), { method: 'POST' });
-                    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                    if (!resp.ok) {
+                        let detail = `HTTP ${resp.status}`;
+                        try { const body = await resp.json(); if (body.detail) detail = body.detail; } catch {}
+                        throw new Error(detail);
+                    }
                     data = await resp.json();
                 }
 
@@ -1049,8 +1053,6 @@
                     msg = 'Cannot reach server. Make sure it is running:\n  uvicorn main:app --reload';
                 } else if (msg.startsWith('HTTP 5')) {
                     msg = 'Server error (' + msg + '). Check the uvicorn terminal for a traceback.';
-                } else if (msg.startsWith('HTTP 4')) {
-                    msg = 'Request error (' + msg + '). Check your input or API key configuration.';
                 }
                 errMsg.textContent = msg;
                 messagesDiv.appendChild(errMsg);
@@ -1272,6 +1274,35 @@
             }
         }
 
+        async function toggleChunks(rowId, titleEnc, folderEnc) {
+            const row = document.getElementById(rowId);
+            if (row.style.display !== 'none') {
+                row.style.display = 'none';
+                return;
+            }
+            const cell = row.querySelector('td');
+            cell.innerHTML = '<div style="padding:8px 10px;color:#94a3b8;font-size:12px;">Loading chunks...</div>';
+            row.style.display = '';
+            try {
+                const params = new URLSearchParams({ title: decodeURIComponent(titleEnc), folder: decodeURIComponent(folderEnc) });
+                const resp = await fetch(`${API}/documents/chunks?` + params);
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                const data = await resp.json();
+                let html = '<div style="padding:4px 10px 8px;">';
+                data.chunks.forEach((c, i) => {
+                    const typeLabel = c.chunk_type ? `<span style="background:#e0f2fe;color:#0369a1;padding:1px 6px;border-radius:4px;font-size:10px;margin-left:6px;">${escapeHtml(c.chunk_type)}</span>` : '';
+                    html += `<div style="margin:4px 0;padding:8px 10px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;font-size:11px;line-height:1.5;">`;
+                    html += `<div style="font-size:10px;color:#94a3b8;margin-bottom:4px;">Chunk ${i + 1}${typeLabel}</div>`;
+                    html += `<div style="color:#334155;white-space:pre-wrap;max-height:200px;overflow-y:auto;">${escapeHtml(c.content)}</div>`;
+                    html += `</div>`;
+                });
+                html += '</div>';
+                cell.innerHTML = html;
+            } catch (err) {
+                cell.innerHTML = `<div style="padding:8px 10px;color:#dc2626;font-size:12px;">Error: ${err.message}</div>`;
+            }
+        }
+
         async function loadDocuments() {
             loadStats();
             const el = document.getElementById('doc-list');
@@ -1282,13 +1313,15 @@
                 if (data.count === 0) {
                     el.textContent = 'No documents indexed yet.';
                 } else {
-                    // Group by source, then by title within each source
+                    // Group by source, then by folder, then by file
                     const bySource = {};
                     data.documents.forEach(d => {
                         const src = d.source || 'local';
+                        const folder = d.folder || '';
+                        const key = folder + '/' + d.title;
                         if (!bySource[src]) bySource[src] = {};
-                        if (!bySource[src][d.title]) bySource[src][d.title] = 0;
-                        bySource[src][d.title]++;
+                        if (!bySource[src][key]) bySource[src][key] = { title: d.title, folder: folder, chunks: 0 };
+                        bySource[src][key].chunks++;
                     });
 
                     const sourceLabels = { local: 'Local Folder', gdrive: 'Google Drive', gmail: 'Gmail', whatsapp: 'WhatsApp' };
@@ -1298,7 +1331,7 @@
 
                     Object.entries(bySource).forEach(([src, files]) => {
                         const fileCount = Object.keys(files).length;
-                        const chunkCount = Object.values(files).reduce((s, c) => s + c, 0);
+                        const chunkCount = Object.values(files).reduce((s, f) => s + f.chunks, 0);
                         const label = sourceLabels[src] || src;
                         const icon = sourceIcons[src] || '';
                         const id = 'doc-src-' + src;
@@ -1309,10 +1342,23 @@
                         html += `<span style="font-weight:600;font-size:14px;color:#1e293b;">${label}</span>`;
                         html += `<span style="font-size:12px;color:#94a3b8;margin-left:auto;">${fileCount} files, ${chunkCount} chunks</span>`;
                         html += `</div>`;
-                        html += `<div id="${id}" style="display:none;margin-top:4px;padding:8px 12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;font-size:11px;color:#64748b;line-height:1.7;">`;
-                        Object.entries(files).forEach(([title, chunks]) => {
-                            html += `<div style="font-size:12px;color:#475569;">${title.replace(/</g,'&lt;')} <span style="color:#94a3b8;">(${chunks})</span></div>`;
+                        html += `<div id="${id}" style="display:none;margin-top:4px;border:1px solid #e2e8f0;border-radius:6px;overflow:hidden;">`;
+                        html += `<table style="width:100%;border-collapse:collapse;font-size:12px;">`;
+                        html += `<thead><tr style="background:#f1f5f9;text-align:left;"><th style="padding:6px 10px;color:#64748b;font-weight:600;">File</th><th style="padding:6px 10px;color:#64748b;font-weight:600;">Path</th><th style="padding:6px 10px;color:#64748b;font-weight:600;text-align:right;">Chunks</th></tr></thead>`;
+                        html += `<tbody>`;
+                        Object.values(files).sort((a, b) => (a.folder + a.title).localeCompare(b.folder + b.title)).forEach((f, i) => {
+                            const rowId = 'chunks-' + src + '-' + i;
+                            const bg = i % 2 === 0 ? '#fff' : '#f8fafc';
+                            const titleEnc = encodeURIComponent(f.title);
+                            const folderEnc = encodeURIComponent(f.folder);
+                            html += `<tr style="background:${bg};border-top:1px solid #f1f5f9;cursor:pointer;" onclick="toggleChunks('${rowId}','${titleEnc}','${folderEnc}')">`;
+                            html += `<td style="padding:5px 10px;color:#1e293b;white-space:nowrap;">${escapeHtml(f.title)}</td>`;
+                            html += `<td style="padding:5px 10px;color:#94a3b8;word-break:break-all;">${escapeHtml(f.folder)}</td>`;
+                            html += `<td style="padding:5px 10px;color:#64748b;text-align:right;">${f.chunks}</td>`;
+                            html += `</tr>`;
+                            html += `<tr id="${rowId}" style="display:none;"><td colspan="3" style="padding:0;"></td></tr>`;
                         });
+                        html += `</tbody></table>`;
                         html += `</div></div>`;
                     });
 
@@ -1896,7 +1942,7 @@
                         fetch(`${API}/whatsapp/qr`).then(r => r.json()),
                     ])
                     updateWhatsAppUI(statusResp, qrResp)
-                    if (['done', 'error', 'disconnected'].includes(statusResp.status)) {
+                    if (['done', 'disconnected'].includes(statusResp.status)) {
                         clearInterval(_waPollTimer)
                     }
                 } catch {}
@@ -1947,6 +1993,7 @@
                 progressWrap.style.display = 'none'
             } else if (status.status === 'connected') {
                 if (!_waConnectedAt) _waConnectedAt = Date.now()
+                errorEl.style.display = 'none'
                 qrWrap.style.display = 'none'
                 progressWrap.style.display = 'block'
                 progressBar.style.width = '100%'
@@ -1959,16 +2006,9 @@
                     btn.textContent = 'Connected'
                     const elapsed = Math.floor((Date.now() - _waConnectedAt) / 1000)
                     progressLabel.textContent = `Waiting for history sync... ${elapsed}s (this can take a few minutes)`
-                    if (elapsed >= 180) {
-                        clearInterval(_waPollTimer)
-                        progressWrap.style.display = 'none'
-                        btn.disabled = false
-                        btn.textContent = 'Connect WhatsApp'
-                        errorEl.textContent = 'WhatsApp did not send history. Click "Force Re-login" to scan QR and try again.'
-                        errorEl.style.display = 'block'
-                    }
                 }
             } else if (status.status === 'importing') {
+                errorEl.style.display = 'none'
                 qrWrap.style.display = 'none'
                 btn.textContent = 'Importing...'
                 progressWrap.style.display = 'block'
@@ -1977,6 +2017,7 @@
                 progressBar.style.width = pct + '%'
                 progressLabel.textContent = `${status.done} / ${status.total} groups`
             } else if (status.status === 'done') {
+                errorEl.style.display = 'none'
                 qrWrap.style.display = 'none'
                 progressWrap.style.display = 'none'
                 btn.disabled = false
