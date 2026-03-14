@@ -162,6 +162,10 @@ Follow these steps strictly:
             raise
         choice = response.choices[0]
 
+        # Capture raw LLM response for all iterations
+        raw_msg = choice.message.model_dump() if hasattr(choice.message, 'model_dump') else str(choice.message)
+        iteration_entry["raw_llm_response"] = raw_msg
+
         if not choice.message.tool_calls:
             # If the LLM is giving up too early, nudge it to keep searching
             reply_text = choice.message.content or ""
@@ -201,7 +205,7 @@ Follow these steps strictly:
             )
 
             result_preview = result[:200] + "..." if len(result) > 200 else result
-            log_entry = {"tool": func_name, "args": args, "result_preview": result_preview}
+            log_entry = {"tool": func_name, "args": args, "result_preview": result_preview, "result_full": result}
             try:
                 parsed = json.loads(result)
                 if "name" in parsed:

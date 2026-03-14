@@ -592,7 +592,24 @@
         }
         .mcp-tool-args-label { color: #a16207; }
         .mcp-tool-result-label { color: #047857; }
-        .mcp-tool-result { background: #ecfdf5; color: #065f46; max-height: 200px; overflow-y: auto; }
+        .mcp-tool-result { background: #ecfdf5; color: #065f46; }
+        .mcp-tool-result-preview { max-height: 200px; overflow-y: auto; white-space: pre-wrap; word-break: break-word; }
+        .mcp-tool-result-full { display: none; max-height: 500px; overflow-y: auto; white-space: pre-wrap; word-break: break-word; }
+        .mcp-tool-result.expanded .mcp-tool-result-preview { display: none; }
+        .mcp-tool-result.expanded .mcp-tool-result-full { display: block; }
+        .mcp-expand-btn { cursor: pointer; color: #047857; font-size: 11px; margin-top: 4px; text-decoration: underline; user-select: none; display: inline-block; }
+        .mcp-raw-btn {
+            cursor: pointer; font-size: 11px; color: #6366f1; background: #eef2ff; border: 1px solid #c7d2fe;
+            border-radius: 4px; padding: 3px 8px; margin-left: auto; user-select: none;
+        }
+        .mcp-raw-btn:hover { background: #e0e7ff; }
+        .mcp-raw-response {
+            display: none; background: #1e1b4b; color: #e0e7ff; border-radius: 6px;
+            padding: 10px 12px; font-size: 11px; font-family: monospace;
+            white-space: pre-wrap; word-break: break-word; line-height: 1.5;
+            max-height: 400px; overflow-y: auto;
+        }
+        .mcp-raw-response.open { display: block; }
         .mcp-iter-response {
             background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px;
             padding: 8px 12px; font-size: 12px; color: #166534; line-height: 1.6;
@@ -687,6 +704,31 @@
         .save-feedback.ok { color: #16a34a; }
         .save-feedback.err { color: #dc2626; }
         .field-label { font-size: 13px; font-weight: 500; color: #374151; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+
+        /* Folder picker dialog */
+        .fp-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.35); z-index: 1000; display: flex; align-items: center; justify-content: center; }
+        .fp-dialog { background: #fff; border-radius: 8px; width: 480px; max-width: 90vw; box-shadow: 0 8px 32px rgba(0,0,0,.2); display: flex; flex-direction: column; max-height: 80vh; }
+        .fp-titlebar { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px 10px; border-bottom: 1px solid #e2e8f0; }
+        .fp-titlebar h3 { margin: 0; font-size: 15px; font-weight: 600; color: #1e293b; }
+        .fp-close-btn { background: none; border: none; font-size: 18px; cursor: pointer; color: #94a3b8; padding: 0 4px; }
+        .fp-close-btn:hover { color: #1e293b; }
+        .fp-tree-wrap { flex: 1; overflow-y: auto; padding: 8px 0; min-height: 200px; max-height: 50vh; border-bottom: 1px solid #e2e8f0; }
+        .fp-node { user-select: none; }
+        .fp-row { display: flex; align-items: center; padding: 3px 8px; cursor: pointer; font-size: 13px; color: #1e293b; white-space: nowrap; }
+        .fp-row:hover { background: #f1f5f9; }
+        .fp-row.selected { background: #dbeafe; }
+        .fp-toggle { width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #94a3b8; flex-shrink: 0; cursor: pointer; }
+        .fp-toggle:hover { color: #1e293b; }
+        .fp-toggle.empty { visibility: hidden; }
+        .fp-icon { margin-right: 5px; font-size: 15px; flex-shrink: 0; }
+        .fp-children { display: none; }
+        .fp-children.open { display: block; }
+        .fp-spinner { font-size: 11px; color: #94a3b8; padding-left: 4px; }
+        .fp-bottom { padding: 10px 16px; display: flex; align-items: center; gap: 10px; }
+        .fp-bottom label { font-size: 12px; color: #64748b; white-space: nowrap; }
+        .fp-bottom input { flex: 1; font-size: 13px; padding: 5px 8px; border: 1px solid #e2e8f0; border-radius: 4px; color: #374151; background: #f8fafc; }
+        .fp-buttons { display: flex; gap: 8px; padding: 0 16px 14px; justify-content: flex-end; }
+        .fp-buttons .btn { font-size: 13px; padding: 6px 18px; }
     </style>
 </head>
 <body>
@@ -783,9 +825,29 @@
                     <p>Recursively scan and index all documents (txt, md, pdf, docx, xml) from a local folder into the vector database.</p>
                     <div class="form-row">
                         <input type="text" id="index-folder-path" placeholder="e.g. C:\Users\documents\company">
+                        <button class="btn" onclick="openFolderPicker()" title="Browse folders" style="padding:6px 12px;">&#128193;</button>
                         <button class="btn btn-primary" id="index-btn" onclick="indexFolder()">Index</button>
                     </div>
                     <div class="result-box" id="index-result"></div>
+                </div>
+            </div>
+
+            <!-- Folder picker dialog (rendered once, toggled) -->
+            <div id="fp-overlay" class="fp-overlay" style="display:none;" onclick="if(event.target===this)closeFolderPicker()">
+                <div class="fp-dialog">
+                    <div class="fp-titlebar">
+                        <h3>Browse For Folder</h3>
+                        <button class="fp-close-btn" onclick="closeFolderPicker()">&#10005;</button>
+                    </div>
+                    <div class="fp-tree-wrap" id="fp-tree"></div>
+                    <div class="fp-bottom">
+                        <label>Folder:</label>
+                        <input type="text" id="fp-selected-path" readonly>
+                    </div>
+                    <div class="fp-buttons">
+                        <button class="btn" onclick="closeFolderPicker()">Cancel</button>
+                        <button class="btn btn-primary" id="fp-ok-btn" onclick="fpConfirm()" disabled>OK</button>
+                    </div>
                 </div>
             </div>
 
@@ -1074,7 +1136,7 @@
             result.className = 'result-box visible';
             try {
                 const resp = await fetch(`${API}/index-folder?` + new URLSearchParams({ folder_path: path }), { method: 'POST' });
-                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                if (!resp.ok) { const e = await resp.json().catch(() => null); throw new Error(e?.detail || `HTTP ${resp.status}`); }
                 await streamIndexProgress(resp, result);
             } catch (err) {
                 result.textContent = 'Error: ' + err.message;
@@ -1093,7 +1155,7 @@
             try {
                 const params = folderId ? { folder_id: folderId } : {};
                 const resp = await fetch(`${API}/index-gdrive?` + new URLSearchParams(params), { method: 'POST' });
-                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                if (!resp.ok) { const e = await resp.json().catch(() => null); throw new Error(e?.detail || `HTTP ${resp.status}`); }
                 await streamIndexProgress(resp, result);
             } catch (err) {
                 result.textContent = 'Error: ' + err.message;
@@ -1112,7 +1174,7 @@
             try {
                 const params = maxThreads ? { max_threads: maxThreads } : {};
                 const resp = await fetch(`${API}/index-gmail?` + new URLSearchParams(params), { method: 'POST' });
-                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                if (!resp.ok) { const e = await resp.json().catch(() => null); throw new Error(e?.detail || `HTTP ${resp.status}`); }
                 await streamIndexProgress(resp, result);
             } catch (err) {
                 result.textContent = 'Error: ' + err.message;
@@ -1866,7 +1928,9 @@
                                 </div>
                                 <div class="mcp-tool-result">
                                     <span class="mcp-tool-result-label">Result</span>
-                                    ${escapeHtml(tc.result_preview || '')}
+                                    <div class="mcp-tool-result-preview">${escapeHtml(tc.result_preview || '')}</div>
+                                    ${tc.result_full && tc.result_full.length > 200 ? `<div class="mcp-tool-result-full">${escapeHtml(tc.result_full)}</div>
+                                    <span class="mcp-expand-btn" onclick="event.stopPropagation(); const r=this.parentElement; r.classList.toggle('expanded'); this.textContent=r.classList.contains('expanded')?'Show less':'Show full result';">Show full result</span>` : ''}
                                 </div>
                             </div>
                         </div>`;
@@ -1880,14 +1944,20 @@
                     const toolCount = (iter.tool_calls || []).length;
                     const label = toolCount ? `${toolCount} tool call${toolCount > 1 ? 's' : ''}` : 'Final response';
 
+                    const rawJson = iter.raw_llm_response ? escapeHtml(JSON.stringify(iter.raw_llm_response, null, 2)) : '';
+                    const rawBtn = rawJson ? `<span class="mcp-raw-btn" onclick="event.stopPropagation(); this.parentElement.nextElementSibling.querySelector('.mcp-raw-response').classList.toggle('open'); this.textContent = this.textContent === 'Raw LLM' ? 'Hide Raw' : 'Raw LLM';">Raw LLM</span>` : '';
+                    const rawPanel = rawJson ? `<div class="mcp-raw-response">${rawJson}</div>` : '';
+
                     return `<div class="mcp-iter">
                         <div class="mcp-iter-header">
                             <span class="mcp-iter-num">${iter.iteration}</span>
                             <span class="mcp-iter-label">${label}</span>
+                            ${rawBtn}
                         </div>
                         <div class="mcp-iter-body">
                             ${toolsHtml}
                             ${responseHtml}
+                            ${rawPanel}
                         </div>
                     </div>`;
                 }).join('');
@@ -2057,6 +2127,119 @@
             if (!confirm('Delete all log entries?')) return;
             await fetch(`${API}/logs`, { method: 'DELETE' });
             loadLogs();
+        }
+
+        // --- Folder Picker (tree view) ---
+        let fpSelectedPath = '';
+
+        async function openFolderPicker() {
+            fpSelectedPath = '';
+            document.getElementById('fp-selected-path').value = '';
+            document.getElementById('fp-ok-btn').disabled = true;
+            document.getElementById('fp-overlay').style.display = 'flex';
+            const tree = document.getElementById('fp-tree');
+            tree.innerHTML = '';
+            // Load root nodes (drives on Windows, / on Linux)
+            const roots = await fpFetchChildren('');
+            for (const r of roots) {
+                tree.appendChild(fpCreateNode(r.name, r.path, 0));
+            }
+        }
+
+        function closeFolderPicker() {
+            document.getElementById('fp-overlay').style.display = 'none';
+        }
+
+        function fpConfirm() {
+            if (fpSelectedPath) {
+                document.getElementById('index-folder-path').value = fpSelectedPath;
+            }
+            closeFolderPicker();
+        }
+
+        async function fpFetchChildren(path) {
+            try {
+                const params = path ? '?' + new URLSearchParams({ path }) : '';
+                const resp = await fetch(`${API}/browse-folders${params}`);
+                if (!resp.ok) return [];
+                const data = await resp.json();
+                return data.folders || [];
+            } catch { return []; }
+        }
+
+        function fpCreateNode(name, path, depth) {
+            const node = document.createElement('div');
+            node.className = 'fp-node';
+
+            const row = document.createElement('div');
+            row.className = 'fp-row';
+            row.style.paddingLeft = (12 + depth * 18) + 'px';
+
+            const toggle = document.createElement('span');
+            toggle.className = 'fp-toggle';
+            toggle.textContent = '\u25B6'; // ▶
+
+            const icon = document.createElement('span');
+            icon.className = 'fp-icon';
+            icon.textContent = '\uD83D\uDCC1'; // closed folder
+
+            const label = document.createElement('span');
+            label.textContent = name;
+
+            row.appendChild(toggle);
+            row.appendChild(icon);
+            row.appendChild(label);
+
+            const children = document.createElement('div');
+            children.className = 'fp-children';
+
+            let loaded = false;
+            let expanded = false;
+
+            // Select on click
+            row.addEventListener('click', (e) => {
+                if (e.target === toggle) return; // handled separately
+                document.querySelectorAll('.fp-row.selected').forEach(el => el.classList.remove('selected'));
+                row.classList.add('selected');
+                fpSelectedPath = path;
+                document.getElementById('fp-selected-path').value = path;
+                document.getElementById('fp-ok-btn').disabled = false;
+            });
+
+            // Expand/collapse on toggle click
+            toggle.addEventListener('click', async () => {
+                if (!loaded) {
+                    loaded = true;
+                    toggle.textContent = '';
+                    const spinner = document.createElement('span');
+                    spinner.className = 'fp-spinner';
+                    spinner.textContent = '...';
+                    row.appendChild(spinner);
+                    const subs = await fpFetchChildren(path);
+                    spinner.remove();
+                    if (subs.length === 0) {
+                        toggle.className = 'fp-toggle empty';
+                        toggle.textContent = '';
+                        return;
+                    }
+                    for (const s of subs) {
+                        children.appendChild(fpCreateNode(s.name, s.path, depth + 1));
+                    }
+                }
+                expanded = !expanded;
+                children.classList.toggle('open', expanded);
+                toggle.textContent = expanded ? '\u25BC' : '\u25B6'; // ▼ or ▶
+                icon.textContent = expanded ? '\uD83D\uDCC2' : '\uD83D\uDCC1'; // open/closed folder
+            });
+
+            // Double-click to expand + select
+            row.addEventListener('dblclick', () => {
+                if (!expanded) toggle.click();
+            });
+
+            node.appendChild(row);
+            node.appendChild(children);
+            return node;
         }
 
         // --- Init ---

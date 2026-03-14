@@ -1,18 +1,16 @@
-Develop an installation package for non-developer users
 
-Develop a Desktop UI app
 
 research indexing image files
 
-research training-based options fine tuning and RLHF
+reading email attachments: Read latest weekly letter of Ozan's school QPIA. Summarise
+
 
 Noral network research
 
-Why is OpenClow was so important. My little app nearly can do what it does.
 
 Trello integration
 
-GMail integration
+
 
 
 

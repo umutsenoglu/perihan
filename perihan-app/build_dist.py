@@ -237,11 +237,16 @@ QUICK START (macOS / Linux)
   3. First launch creates a venv and installs dependencies
   4. Opens http://localhost:8765 automatically
 
+UNINSTALL
+  Double-click uninstall.bat and type YES when prompted.
+  Perihan is fully self-contained — nothing is installed outside this folder.
+
 WHAT'S INSIDE
   python/        Embedded Python 3.12 runtime (Windows only)
   wheels/        Pre-built Python packages
   start.bat      Windows launcher
   start.sh       macOS/Linux launcher
+  uninstall.bat  Uninstaller
 
 REQUIREMENTS
   - Internet connection on first launch (pip installs dependencies)
@@ -250,6 +255,41 @@ REQUIREMENTS
   - Optional: credentials.json for Google Drive/Gmail
 """
         zf.writestr(f"{PREFIX}/INSTALL.txt", install_txt)
+
+        # 6. uninstall.bat
+        print("  Adding uninstall.bat...")
+        uninstall_bat = r"""@echo off
+echo.
+echo  Perihan Uninstaller
+echo  ====================
+echo.
+echo  This will permanently delete Perihan and all its data from this folder.
+echo.
+set /p CONFIRM="  Are you sure? Type YES to confirm: "
+if /i not "%CONFIRM%"=="YES" (
+    echo.
+    echo  Uninstall cancelled.
+    echo.
+    pause
+    exit /b 0
+)
+
+echo.
+echo  Removing Perihan...
+
+set PERIHAN_DIR=%~dp0
+cd /d "%TEMP%"
+
+rmdir /s /q "%PERIHAN_DIR%"
+
+echo.
+echo  Perihan has been removed.
+echo  You can close this window.
+echo.
+pause
+exit /b 0
+"""
+        zf.writestr(f"{PREFIX}/uninstall.bat", uninstall_bat)
 
     size_mb = ZIP_OUT.stat().st_size / (1024 * 1024)
     print(f"Done! {ZIP_OUT} ({size_mb:.1f} MB)")

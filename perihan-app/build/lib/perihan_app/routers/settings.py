@@ -11,6 +11,39 @@ from perihan_app.dependencies import get_collection, get_gemini_api_key, get_oll
 router = APIRouter()
 
 
+@router.get("/browse-folders")
+async def browse_folders(path: str = ""):
+    """List subfolders (and drives on Windows) for the folder picker UI."""
+    import platform
+    import string
+
+    # No path given: return filesystem roots
+    if not path:
+        if platform.system() == "Windows":
+            drives = []
+            for letter in string.ascii_uppercase:
+                drive = f"{letter}:\\"
+                if os.path.isdir(drive):
+                    drives.append({"name": f"{letter}:", "path": drive})
+            return {"parent": None, "folders": drives}
+        else:
+            path = "/"
+
+    p = Path(path)
+    if not p.exists() or not p.is_dir():
+        raise HTTPException(status_code=400, detail=f"Folder not found: {path}")
+
+    parent = str(p.parent) if p.parent != p else None
+    folders = []
+    try:
+        for entry in sorted(p.iterdir()):
+            if entry.is_dir() and not entry.name.startswith("."):
+                folders.append({"name": entry.name, "path": str(entry)})
+    except PermissionError:
+        pass
+    return {"parent": parent, "folders": folders}
+
+
 @router.get("/documents")
 async def list_documents():
     """List all indexed documents."""
