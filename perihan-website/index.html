@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perihan — Your Private AI Assistant</title>
+<meta name="description" content="Perihan is a private AI assistant that knows your life — messages, emails, documents — and helps you manage it. Fully local, fully private.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FBF7F0;
+    --warm-white: #FFF9F2;
+    --sand: #F0E6D6;
+    --terracotta: #C4654A;
+    --terracotta-dark: #A8503A;
+    --terracotta-light: #E8967E;
+    --deep-brown: #2C1810;
+    --warm-gray: #6B5D52;
+    --soft-gray: #9B8E83;
+    --sage: #7A8B6F;
+    --sage-light: #A3B396;
+    --gold: #D4A854;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: var(--cream);
+    color: var(--deep-brown);
+    line-height: 1.7;
+    font-weight: 400;
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+  }
+
+  nav.scrolled {
+    background: rgba(251, 247, 240, 0.95);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 1px 20px rgba(44, 24, 16, 0.06);
+  }
+
+  .nav-logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: var(--deep-brown);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-logo-img {
+    height: 32px;
+    width: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    align-items: center;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: var(--warm-gray);
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s;
+    letter-spacing: 0.01em;
+  }
+
+  .nav-links a:hover { color: var(--terracotta); }
+
+  .nav-download {
+    background: var(--terracotta);
+    color: var(--warm-white) !important;
+    padding: 0.55rem 1.4rem;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s !important;
+  }
+
+  .nav-download:hover {
+    background: var(--terracotta-dark) !important;
+    transform: translateY(-1px);
+  }
+
+  .mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .mobile-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--deep-brown);
+    margin: 5px 0;
+    transition: all 0.3s;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 2rem 6rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    right: -20%;
+    width: 70vw;
+    height: 70vw;
+    background: radial-gradient(circle, rgba(196, 101, 74, 0.06) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: -15%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, rgba(122, 139, 111, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .hero-content {
+    max-width: 760px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(196, 101, 74, 0.1);
+    color: var(--terracotta);
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin-bottom: 2rem;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  .hero-logo {
+    display: block;
+    height: 140px;
+    width: auto;
+    margin: 0 auto 1.5rem;
+    animation: fadeUp 0.8s ease 0.05s both;
+  }
+
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    line-height: 1.15;
+    color: var(--deep-brown);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    animation: fadeUp 0.8s ease 0.1s both;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--terracotta);
+  }
+
+  .hero-sub {
+    font-size: 1.25rem;
+    color: var(--warm-gray);
+    max-width: 580px;
+    margin: 0 auto 2.5rem;
+    font-weight: 300;
+    line-height: 1.8;
+    animation: fadeUp 0.8s ease 0.2s both;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeUp 0.8s ease 0.3s both;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.9rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+  }
+
+  .btn-primary {
+    background: var(--terracotta);
+    color: white;
+    box-shadow: 0 4px 20px rgba(196, 101, 74, 0.3);
+  }
+
+  .btn-primary:hover {
+    background: var(--terracotta-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 28px rgba(196, 101, 74, 0.4);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--deep-brown);
+    border: 1.5px solid var(--sand);
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--terracotta-light);
+    color: var(--terracotta);
+    background: rgba(196, 101, 74, 0.04);
+  }
+
+  .btn svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  .hero-note {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: var(--soft-gray);
+    animation: fadeUp 0.8s ease 0.4s both;
+  }
+
+  /* ─── SECTION COMMON ─── */
+  section { padding: 7rem 2rem; }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: var(--deep-brown);
+    margin-bottom: 1.2rem;
+    letter-spacing: -0.02em;
+  }
+
+  .section-desc {
+    font-size: 1.1rem;
+    color: var(--warm-gray);
+    max-width: 600px;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+
+  /* ─── WHAT IS PERIHAN ─── */
+  .what {
+    background: var(--warm-white);
+  }
+
+  .what-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 3.5rem;
+  }
+
+  .what-text h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--deep-brown);
+  }
+
+  .what-text p {
+    color: var(--warm-gray);
+    margin-bottom: 1rem;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+
+  .what-visual {
+    position: relative;
+  }
+
+  .chat-demo {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 40px rgba(44, 24, 16, 0.06);
+    border: 1px solid rgba(240, 230, 214, 0.8);
+  }
+
+  .chat-bubble {
+    padding: 0.9rem 1.2rem;
+    border-radius: 12px;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 88%;
+  }
+
+  .chat-user {
+    background: var(--terracotta);
+    color: white;
+    margin-left: auto;
+    border-bottom-right-radius: 4px;
+  }
+
+  .chat-ai {
+    background: var(--sand);
+    color: var(--deep-brown);
+    border-bottom-left-radius: 4px;
+  }
+
+  .chat-ai .source {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: var(--sage);
+    margin-top: 0.4rem;
+    font-weight: 600;
+  }
+
+  /* ─── FEATURES ─── */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3.5rem;
+  }
+
+  .feature-card {
+    background: var(--warm-white);
+    padding: 2rem;
+    border-radius: 14px;
+    border: 1px solid rgba(240, 230, 214, 0.6);
+    transition: all 0.3s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(44, 24, 16, 0.07);
+    border-color: var(--terracotta-light);
+  }
+
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  .fi-1 { background: rgba(196, 101, 74, 0.1); }
+  .fi-2 { background: rgba(122, 139, 111, 0.12); }
+  .fi-3 { background: rgba(212, 168, 84, 0.12); }
+  .fi-4 { background: rgba(196, 101, 74, 0.1); }
+  .fi-5 { background: rgba(122, 139, 111, 0.12); }
+  .fi-6 { background: rgba(212, 168, 84, 0.12); }
+
+  .feature-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.15rem;
+    margin-bottom: 0.6rem;
+    color: var(--deep-brown);
+  }
+
+  .feature-card p {
+    font-size: 0.92rem;
+    color: var(--warm-gray);
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  /* ─── HOW IT WORKS ─── */
+  .how {
+    background: var(--warm-white);
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 3.5rem;
+    position: relative;
+  }
+
+  .steps::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 15%;
+    right: 15%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--sand), var(--terracotta-light), var(--sand));
+    z-index: 0;
+  }
+
+  .step {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step-number {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--cream);
+    border: 2px solid var(--terracotta);
+    color: var(--terracotta);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .step h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    color: var(--deep-brown);
+  }
+
+  .step p {
+    font-size: 0.92rem;
+    color: var(--warm-gray);
+    font-weight: 300;
+    line-height: 1.7;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  /* ─── DOWNLOAD CTA ─── */
+  .download-cta {
+    text-align: center;
+    background: linear-gradient(135deg, var(--deep-brown) 0%, #3D2820 100%);
+    color: white;
+    border-radius: 20px;
+    padding: 5rem 3rem;
+    margin: 0 2rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .download-cta::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 60%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(196, 101, 74, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .download-cta .section-label { color: var(--terracotta-light); }
+
+  .download-cta .section-title {
+    color: white;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .download-cta .section-desc {
+    color: rgba(255,255,255,0.65);
+    margin: 0 auto 2.5rem;
+    text-align: center;
+  }
+
+  .download-cta .btn-primary {
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+  }
+
+  .download-meta {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.4);
+  }
+
+  /* ─── FOUNDER ─── */
+  .founder {
+    background: var(--warm-white);
+  }
+
+  .founder-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 4rem;
+    align-items: start;
+    margin-top: 3rem;
+  }
+
+  .founder-photo {
+    position: relative;
+  }
+
+  .founder-photo-frame {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--sand) 0%, var(--cream) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    border: 3px solid rgba(240, 230, 214, 0.8);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .founder-initials {
+    font-family: 'DM Serif Display', serif;
+    font-size: 4rem;
+    color: var(--terracotta);
+    opacity: 0.6;
+  }
+
+  .founder-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 1.2rem;
+    color: var(--deep-brown);
+  }
+
+  .founder-role {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--terracotta);
+    font-weight: 600;
+    margin-top: 0.2rem;
+  }
+
+  .founder-bio h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--deep-brown);
+  }
+
+  .founder-bio p {
+    color: var(--warm-gray);
+    margin-bottom: 1rem;
+    font-weight: 300;
+    line-height: 1.85;
+    font-size: 1.02rem;
+  }
+
+  .founder-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+  }
+
+  .highlight-tag {
+    background: rgba(196, 101, 74, 0.08);
+    color: var(--terracotta);
+    padding: 0.35rem 0.9rem;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+
+  .founder-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .founder-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--warm-gray);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .founder-link:hover { color: var(--terracotta); }
+
+  .founder-link svg { width: 18px; height: 18px; }
+
+  /* ─── PROJECTS ─── */
+  .other-projects {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--sand);
+  }
+
+  .other-projects h4 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.1rem;
+    color: var(--deep-brown);
+    margin-bottom: 1rem;
+  }
+
+  .project-list {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .project-pill {
+    background: white;
+    border: 1px solid var(--sand);
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: var(--deep-brown);
+  }
+
+  .project-pill:hover {
+    border-color: var(--terracotta-light);
+    box-shadow: 0 4px 16px rgba(44, 24, 16, 0.06);
+  }
+
+  .project-pill strong { display: block; margin-bottom: 0.2rem; }
+
+  .project-pill span {
+    font-size: 0.8rem;
+    color: var(--soft-gray);
+    font-weight: 300;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-top: 1px solid var(--sand);
+  }
+
+  .footer-logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem;
+    color: var(--deep-brown);
+    margin-bottom: 0.5rem;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+    color: var(--soft-gray);
+  }
+
+  footer a {
+    color: var(--terracotta);
+    text-decoration: none;
+  }
+
+  /* ─── ANIMATIONS ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    .what-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .features-grid { grid-template-columns: 1fr 1fr; }
+    .steps { grid-template-columns: 1fr; gap: 2rem; }
+    .steps::before { display: none; }
+    .founder-layout { grid-template-columns: 1fr; gap: 2rem; }
+    .founder-photo { max-width: 240px; margin: 0 auto; }
+  }
+
+  @media (max-width: 600px) {
+    .nav-links { display: none; }
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(251, 247, 240, 0.98);
+      backdrop-filter: blur(12px);
+      padding: 1.5rem 2rem;
+      gap: 1.2rem;
+      box-shadow: 0 8px 30px rgba(44, 24, 16, 0.08);
+    }
+    .mobile-toggle { display: block; }
+    .features-grid { grid-template-columns: 1fr; }
+    .hero { padding-top: 6rem; }
+    section { padding: 4rem 1.5rem; }
+    .download-cta { margin: 0 1rem; padding: 3rem 1.5rem; border-radius: 14px; }
+    .project-list { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo"><img src="perihan-icon-terracotta-cropped.png" alt="Perihan" class="nav-logo-img">Perihan</a>
+  <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="#what">About</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#founder">Founder</a></li>
+    <li><a href="#download" class="nav-download">Download</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <span class="hero-badge">Open Source &middot; Private &middot; Local</span>
+    <img src="perihan-logo-terracotta.png" alt="Perihan — Your Private AI Assistant" class="hero-logo">
+    <h1>An AI that knows <em>you</em>,<br>not just the internet</h1>
+    <p class="hero-sub">Perihan is a private AI assistant that learns your messages, emails, documents, and files — then helps you find anything and manage your life. All on your own machine.</p>
+    <div class="hero-actions">
+      <a href="#download" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download for Windows
+      </a>
+      <a href="https://github.com/umutsenoglu/perihan" class="btn btn-secondary" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        View on GitHub
+      </a>
+    </div>
+    <p class="hero-note">Free &middot; Open source &middot; No account needed &middot; No data leaves your device</p>
+  </div>
+</section>
+
+<!-- WHAT IS PERIHAN -->
+<section class="what" id="what">
+  <div class="container">
+    <div class="section-label reveal">What is Perihan?</div>
+    <h2 class="section-title reveal">Your personal AI — built on <em>your</em> data</h2>
+    <p class="section-desc reveal">Not another chatbot that knows the internet. An assistant that knows your life — privately, on your own machine.</p>
+
+    <div class="what-grid">
+      <div class="what-text reveal">
+        <h3>Ask anything about your life</h3>
+        <p>Your life is scattered across WhatsApp groups, Gmail threads, Google Drive, and local files. When you need to find something, there's no single place to look.</p>
+        <p>Perihan indexes all your personal data into one private knowledge base. Ask a question in any language, with typos, and get an accurate answer — with source citations — in seconds.</p>
+        <p>Today it searches. Tomorrow it coaches, reminds, and helps you act — grounded in context that only <em>your</em> assistant would know.</p>
+      </div>
+      <div class="what-visual reveal">
+        <div class="chat-demo">
+          <div class="chat-bubble chat-user">When does school reopen after half term?</div>
+          <div class="chat-bubble chat-ai">
+            School reopens on Monday, 24 February. There's an INSET day on the 21st, so children return on the 24th.
+            <span class="source">📎 Broadstone Middle — Parents Group</span>
+          </div>
+          <div class="chat-bubble chat-user" style="margin-top:1rem">What's Seb's email?</div>
+          <div class="chat-bubble chat-ai">
+            Seb's email is seb.reynolds@outlook.com, based on the message he sent in the Scouts group.
+            <span class="source">📎 37th Beavers WhatsApp</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-label reveal">Features</div>
+    <h2 class="section-title reveal">What makes Perihan different</h2>
+    <p class="section-desc reveal">Built for real life — messy data, multiple languages, typos and all.</p>
+
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon fi-1">🔒</div>
+        <h3>Fully Private</h3>
+        <p>Everything runs on your machine. No cloud, no accounts, no data ever leaves your device. Use local AI with Ollama for complete privacy.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon fi-2">🔍</div>
+        <h3>Cross-Source Search</h3>
+        <p>WhatsApp, Gmail, Google Drive, local files — Perihan searches across all your data sources in one query. No more jumping between apps.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon fi-3">✨</div>
+        <h3>Typo-Tolerant</h3>
+        <p>Real-world queries are messy. Perihan handles misspellings, missing accents, and partial matches — "hedgehg" still finds "hedgehogs".</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon fi-4">🌍</div>
+        <h3>Any Language</h3>
+        <p>Ask in English, get answers from Turkish documents — or any other combination. The system is language-agnostic by design.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon fi-5">🧠</div>
+        <h3>Deep Think Mode</h3>
+        <p>When a simple search isn't enough, Perihan autonomously uses multiple tools — re-searching, reading documents, digging deeper — until it finds your answer.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon fi-6">⚡</div>
+        <h3>Open Source</h3>
+        <p>Fully open source. Inspect the code, contribute, run it your way. No vendor lock-in — switch between local and cloud AI models at runtime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-label reveal">How it works</div>
+    <h2 class="section-title reveal">Up and running in minutes</h2>
+    <p class="section-desc reveal">No technical expertise required. Download, index your data, and start asking.</p>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-number">1</div>
+        <h3>Install</h3>
+        <p>Download the one-click installer for Windows. Perihan sets itself up — including a local AI model if you want full privacy.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-number">2</div>
+        <h3>Index Your Data</h3>
+        <p>Point Perihan at your WhatsApp exports, connect your Gmail and Google Drive, or add local folders. It indexes everything into a private knowledge base.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-number">3</div>
+        <h3>Ask Anything</h3>
+        <p>Ask questions in natural language — across all your sources, in any language, with typos. Get answers with source citations in seconds.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD CTA -->
+<section id="download" style="padding-bottom: 7rem;">
+  <div class="download-cta reveal">
+    <img src="perihan-icon-white-cropped.png" alt="" style="height: 60px; width: auto; margin-bottom: 1rem; opacity: 0.8;">
+    <div class="section-label">Get Started</div>
+    <h2 class="section-title">Ready to meet your personal AI?</h2>
+    <p class="section-desc">Free, open source, and completely private. Your data never leaves your machine.</p>
+    <a href="#" class="btn btn-primary" onclick="alert('Download coming soon! Star the GitHub repo to get notified.'); return false;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download for Windows
+    </a>
+    <p class="download-meta">Windows 10+ &middot; No admin required &middot; ~200MB</p>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="founder" id="founder">
+  <div class="container">
+    <div class="section-label reveal">The Founder</div>
+    <h2 class="section-title reveal">Built by someone who needed it</h2>
+
+    <div class="founder-layout">
+      <div class="founder-photo reveal">
+        <div class="founder-photo-frame">
+          <span class="founder-initials">US</span>
+        </div>
+        <div class="founder-name">Umut Senoglu</div>
+        <div class="founder-role">Creator &amp; Developer</div>
+      </div>
+
+      <div class="founder-bio reveal">
+        <h3>20+ years building software,<br>now building for himself</h3>
+        <p>Umut is a senior software developer based in Bournemouth, UK, with over two decades of experience spanning ERP systems, finance and accounting platforms, identity and access management, payment systems, and enterprise architecture.</p>
+        <p>Perihan was born from a personal need — managing the chaos of school WhatsApp groups, legal documents, family logistics, and work files spread across too many apps. Existing AI assistants know the internet but don't know <em>you</em>. So Umut decided to build one that does.</p>
+        <p>His career has taken him from co-founding a software company in Istanbul — building ERP and e-commerce solutions for real businesses — to leading development on enterprise security and financial systems in London. He brings the perspective of someone who has built systems that businesses and people depend on, and now channels that experience into building a personal AI that real people can rely on every day.</p>
+
+        <div class="founder-links">
+          <a href="mailto:umutsenoglu@gmail.com" class="founder-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
+          </a>
+          <a href="https://github.com/umutsenoglu" class="founder-link" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+
+        <div class="other-projects">
+          <h4>Other Projects</h4>
+          <div class="project-list">
+            <a href="https://console.librant.com" class="project-pill" target="_blank">
+              <strong>Librant</strong>
+              <span>Accounting software for small business</span>
+            </a>
+            <div class="project-pill">
+              <strong>Lexpense</strong>
+              <span>Personal expense tracking — mobile app</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="perihan-icon-terracotta-cropped.png" alt="Perihan" style="height: 40px; width: auto; margin-bottom: 0.8rem;">
+  <div class="footer-logo">Perihan</div>
+  <p>Your life, assisted. &middot; Open source &middot; <a href="https://github.com/umutsenoglu/perihan" target="_blank">GitHub</a></p>
+  <p style="margin-top: 0.5rem;">&copy; 2026 Umut Senoglu. All rights reserved.</p>
+</footer>
+
+<script>
+  // Nav scroll effect
+  window.addEventListener('scroll', () => {
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  reveals.forEach(el => observer.observe(el));
+
+  // Close mobile menu on link click
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open'));
+  });
+</script>
+
+</body>
+</html>
