@@ -1,0 +1,290 @@
+{
+  "run_id": "2026-03-01_21-55",
+  "perihan_model": "gemini-2.5-flash",
+  "judge_model": "gemini-2.5-flash",
+  "total_score": 39,
+  "max_score": 50,
+  "pct": 78.0,
+  "categories": {
+    "Direct Recall (English)": {
+      "score": 9,
+      "max": 10
+    },
+    "Direct Recall (Turkish)": {
+      "score": 9,
+      "max": 10
+    },
+    "Personal / Contact Info": {
+      "score": 4,
+      "max": 6
+    },
+    "Multi-source / Synthesis": {
+      "score": 3,
+      "max": 4
+    },
+    "Uncertainty / Out of Scope": {
+      "score": 4,
+      "max": 6
+    },
+    "Fuzzy / Typo Tolerance": {
+      "score": 6,
+      "max": 6
+    },
+    "Trainer File Recall": {
+      "score": 4,
+      "max": 8
+    }
+  },
+  "results": [
+    {
+      "id": "Q1",
+      "category": "Direct Recall (English)",
+      "question": "Was a lost water bottle found in the Beavers 37th group?",
+      "expected": "Yes — a black water bottle (Mikey's) was found at the end.",
+      "source": "Beavers 37th / 2026-01-30",
+      "reply": "Yes, a black water bottle that went missing was found in the Beavers 37th group. It was identified as Mikey's water bottle.",
+      "score": 2,
+      "reason": "Perihan correctly answers that a lost water bottle was found in the specified group and provides the identifying details mentioned in the expected answer."
+    },
+    {
+      "id": "Q2",
+      "category": "Direct Recall (English)",
+      "question": "Can the school administer antibiotics?",
+      "expected": "Only if the prescription is 4 times a day. If it's 3 times a day, the school won't do it.",
+      "source": "Hedgehogs class / 2026-02-26",
+      "reply": "Yes, the school can administer antibiotics, but only if the medication needs to be given four times a day. If the dosage is three times a day, they cannot administer it.",
+      "score": 2,
+      "reason": "Perihan's response correctly answers the question and provides the exact conditions specified in the expected answer regarding the frequency of medication administration."
+    },
+    {
+      "id": "Q3",
+      "category": "Direct Recall (English)",
+      "question": "When did QPA school reopen after the holidays?",
+      "expected": "Monday 5th January. No inset day.",
+      "source": "🦋🦋3NH🦋🦋 / 2026-01-03",
+      "reply": "QPA school reopened on Monday, January 5th.",
+      "score": 2,
+      "reason": "Perihan's response correctly answers the question about when QPA school reopened, matching the core information in the expected answer."
+    },
+    {
+      "id": "Q4",
+      "category": "Direct Recall (English)",
+      "question": "What event did 🦔Hedgehogs🦔 ask parents to bake for?",
+      "expected": "Carols with the Band. Donations of home-baked nut-free cakes/biscuits needed at studio drop-off on Thursday 11th December.",
+      "source": "🦔Hedgehogs🦔 / 2025-12-04",
+      "reply": "The 🦔Hedgehogs🦔 group asked parents to bake for the following events:\n\n*   **Carols with the Band** (donations were requested for Thursday, December 11th, 2025)\n*   **PFA bake sale** (donations were requested for a Friday in February 2026)",
+      "score": 1,
+      "reason": "Perihan correctly identified \"Carols with the Band\" but also included \"PFA bake sale\" which was not part of the expected answer, and added a specific year (2025) to the date which was not present in the expected answer, indicating potential factual errors or unsupported details."
+    },
+    {
+      "id": "Q5",
+      "category": "Direct Recall (English)",
+      "question": "What did the Castle Gate Close group talk about on New Year's Day?",
+      "expected": "Everyone wished each other Happy New Year.",
+      "source": "Castle Gate Close / 2026-01-01",
+      "reply": "On New Year's Day (January 1, 2026), the Castle Gate Close group exchanged \"Happy New Year\" greetings with each other.",
+      "score": 2,
+      "reason": "Perihan's response correctly states that the Castle Gate Close group exchanged \"Happy New Year\" greetings, which directly answers the question."
+    },
+    {
+      "id": "Q6",
+      "category": "Direct Recall (Turkish)",
+      "question": "SÜLEYMAN MUTLU APARTMANI grubunda mahkeme tarihleri nelerdir?",
+      "expected": "13 Şubat'ta biri mahkemeden arandı, 3 Mart 2026'da mahkeme var.",
+      "source": "SÜLEYMAN MUTLU APARTMANI / 2026-01-20",
+      "reply": "SÜLEYMAN MUTLU APARTMANI grubunda bahsedilen mahkeme tarihleri şunlardır:\n\n*   **13 Şubat** (geçmiş bir mahkeme çağrısı)\n*   **3 Mart 2026** (bir mahkeme duruşması)",
+      "score": 2,
+      "reason": "Perihan correctly identifies and lists both court dates mentioned in the expected answer."
+    },
+    {
+      "id": "Q7",
+      "category": "Direct Recall (Turkish)",
+      "question": "SÜLEYMAN MUTLU APARTMANI davasında ne tür bir suçlama var?",
+      "expected": "Kasten adam öldürme. İddianame hazırlandı, tüm taraflara tebliğ edildi. Davaya katılmak isteyenlerin bunu açıkça beyan etmesi gerekiyor.",
+      "source": "SÜLEYMAN MUTLU APARTMANI / 2026-01-20",
+      "reply": "SÜLEYMAN MUTLU APARTMANI davasında, kişiler \"kasten adam öldürmeden\" (intentional homicide) yargılanacaklardır. Belgelerde, başlangıçta \"kovuşturmaya yer olmadığına\" dair bir not olduğu belirtilse de, daha sonra bu suçlarda \"kasıt\" aranacağı ve \"taksirli öldürme\" suçlarından değil, \"kasten adam öldürme\" suçundan yargılanacakları ifade edilmiştir.",
+      "score": 2,
+      "reason": "Perihan correctly identifies the accusation as \"kasten adam öldürme\" (intentional homicide), which directly answers the question."
+    },
+    {
+      "id": "Q8",
+      "category": "Direct Recall (Turkish)",
+      "question": "Avukat Alp'in aldığı ücret oranı nedir?",
+      "expected": "%15 (akraba olduğu için 2026 AAÜT üzerinden işlem yaptı, tam yargı davası sonunda o ücreti de düşecek).",
+      "source": "114603149250795 / 2026-02-20",
+      "reply": "Avukat Alp'in aldığı ücret oranı, akrabalık ilişkisi nedeniyle 2026 Asgari Avukatlık Ücret Tarifesi (AAÜT) üzerinden hesaplanmış olup, tam yargı davası sonunda düşülecek ücretle birlikte toplamda %15 olacaktır. Alp, AAÜT'nin %16'dan başladığını ve miktar arttıkça oranın düştüğünü, ancak ortalama olarak %15'e geldiğini belirtmiştir.",
+      "score": 2,
+      "reason": "Perihan's response correctly states the fee rate as %15 and includes the relevant contextual details provided in the expected answer."
+    },
+    {
+      "id": "Q9",
+      "category": "Direct Recall (Turkish)",
+      "question": "👑Kazananlar👑 grubunda birinin sağlık sorunu neydi?",
+      "expected": "Şişlik var, ağrısı azaldı. Doktor birkaç hafta daha takip edecek, geçmezse küçük bir operasyonla iltihaplı bezi alacak.",
+      "source": "👑Kazananlar👑 / 2025-12-04",
+      "reply": "👑Kazananlar👑 grubunda bahsedilen sağlık sorunları şunlardır:\n\n1.  Bir kişi şişlik ve ağrı yaşıyordu. Doktor takibi gerektiren ve zamanla geçmezse küçük bir operasyonla iltihaplı bir bezenin alınması gerekebilecek bir durumdan bahsediliyordu.\n2.  Bir başka kişinin diş sorunları vardı, ancak bu sorunlar düzelmişti.",
+      "score": 2,
+      "reason": "Perihan correctly identifies the health problem described in the expected answer, providing all the relevant details. The additional information about another person's dental problems does not detract from the correctness of the primary answer."
+    },
+    {
+      "id": "Q10",
+      "category": "Direct Recall (Turkish)",
+      "question": "BUND grubunda Noel mesajı kim gönderdi ve ne söyledi?",
+      "expected": "\"Merry Christmas gençler 🎄 Hediyeler için teşekkür ederiz\" yazıldı.",
+      "source": "BUND / 2025-12-25",
+      "reply": "BUND grubunda 25 Aralık 2025 tarihinde iki farklı \"Unknown\" kullanıcı Noel mesajı göndermiştir:\n\n1.  Bir \"Unknown\" kullanıcı \"Merry Christmas gençler 🎄☺️ Hediyeler için teşekkür ederiz 🥰\" demiştir.\n2.  Diğer bir \"Unknown\" kullanıcı ise \"Size de happy Cristmas🎅 biz de cok tesekkur ederiz🎅🎉🎉\" demiştir.",
+      "score": 1,
+      "reason": "Perihan correctly identifies the main Christmas message and its content, but includes a second message that is not present in the expected answer, potentially indicating a hallucination."
+    },
+    {
+      "id": "Q11",
+      "category": "Personal / Contact Info",
+      "question": "What is Seb's email address?",
+      "expected": "seb.chevenement@yahoo.fr",
+      "source": "Ezg-Ron / 2026-01-01",
+      "reply": "The documents mention \"seboistnet\" and its creators, but they do not provide an email address for \"Seb\" or any of the \"seboistnet\" creators.",
+      "score": 0,
+      "reason": "Perihan incorrectly states that the documents do not provide an email address for Seb, when the expected answer indicates that this information should be available."
+    },
+    {
+      "id": "Q21",
+      "category": "Personal / Contact Info",
+      "question": "What is Dominik's URL?",
+      "expected": "www.umuttesto.com/7839809873 (Dominik Prod tenant in Web Application Access document)",
+      "source": "trainer/s/Web_Application_Access.docx",
+      "reply": "Dominik's URL is www.umuttesto.com/7839809873. This URL is listed under the \"Prod\" (Production) environment.",
+      "score": 2,
+      "reason": "Perihan correctly identifies Dominik's URL, matching the expected answer."
+    },
+    {
+      "id": "Q12",
+      "category": "Personal / Contact Info",
+      "question": "Avukat Alp tam yargı davası açmamı neden tavsiye etti?",
+      "expected": "Dosyadaki sorumlu şahıslar bitik durumda, icra kabiliyeti yok. Kurumların sorumluluğu var ve diğer müştekiler de bu yola başvuruyor.",
+      "source": "114603149250795 / 2026-02-20",
+      "reply": "Avukat Alp, tam yargı davası açılmasını tavsiye etmiştir çünkü dosyadaki sorumlu şahısların mali durumları kötü (\"bitik durumda\") ve onlar için icra kabiliyeti bulunmamaktadır. Bunun yerine kurumların sorumluluğu olduğu ve dosyada bu yola başvuran başka müştekilerin de olduğu belirtilmiştir.",
+      "score": 2,
+      "reason": "Perihan's response correctly identifies all the reasons why Avukat Alp recommended a full jurisdiction lawsuit, matching the expected answer."
+    },
+    {
+      "id": "Q13",
+      "category": "Multi-source / Synthesis",
+      "question": "Which school groups am I in on WhatsApp?",
+      "expected": "Beavers 37th, Hedgehogs class, 🦔Hedgehogs🦔, 🦋🦋3NH🦋🦋, QPA 4L, parents",
+      "source": "Multiple folders",
+      "reply": "Based on the indexed documents, you are in the following WhatsApp school groups:\n\n*   QPA 4L\n*   parents",
+      "score": 1,
+      "reason": "Perihan correctly identified two of the school groups but missed several others listed in the expected answer."
+    },
+    {
+      "id": "Q14",
+      "category": "Multi-source / Synthesis",
+      "question": "Which groups sent New Year messages?",
+      "expected": "At least Castle Gate Close and Ezg-Ron (both have 2026-01-01 messages with New Year wishes). Other groups like QPA 4L, Hedgehogs etc. are also correct if mentioned.",
+      "source": "Castle Gate Close / 2026-01-01, Ezg-Ron / 2026-01-01",
+      "reply": "The following groups sent New Year messages:\n\n*   QPA 4L\n*   🦔Hedgehogs🦔\n*   Castle Gate Close",
+      "score": 2,
+      "reason": "Perihan correctly identified multiple groups that sent New Year messages, and all groups listed are explicitly mentioned as correct in the expected answer."
+    },
+    {
+      "id": "Q15",
+      "category": "Uncertainty / Out of Scope",
+      "question": "What did I have for lunch last Tuesday?",
+      "expected": "System should say it doesn't know — no food/meal data in chats.\n\n---",
+      "source": "",
+      "reply": "I could not find any information in the provided documents about what you had for lunch last Tuesday. The documents contain details about Ezgi Senoglu's nursery meals in 2018-2019 and Ozan's school lunch arrangements in January 2026, but no personal meal records for you.",
+      "score": 2,
+      "reason": "Perihan correctly states that it does not have the information about the user's lunch, aligning with the expected answer."
+    },
+    {
+      "id": "Q16",
+      "category": "Uncertainty / Out of Scope",
+      "question": "What is the weather in my city today?",
+      "expected": "System should say it doesn't know — real-time data not available.\n\n---",
+      "source": "",
+      "reply": "I am sorry, but the documents do not contain information about the current weather in your city today, March 1, 2026. The weather information in the documents is historical and relates to specific past dates and locations.\n\nAs a general knowledge model, I also do not have access to real-time weather data.",
+      "score": 2,
+      "reason": "Perihan correctly states that it does not have access to real-time weather data and that the documents do not contain this information."
+    },
+    {
+      "id": "Q17",
+      "category": "Uncertainty / Out of Scope",
+      "question": "Annemin telefon numarası nedir?",
+      "expected": "System should say it doesn't know — phone numbers are not stored as metadata.\n\n---",
+      "source": "",
+      "reply": "Annem's phone number is 905058540590. This is inferred from a WhatsApp chat where \"Me\" (Umut) addresses the contact with this number as \"annecim\" (my dear mother). Annem is also identified as Leyla Atac in other chat logs.",
+      "score": 0,
+      "reason": "Perihan fabricated a phone number instead of stating it does not have that information, which contradicts the expected behavior for this type of question."
+    },
+    {
+      "id": "Q18",
+      "category": "Fuzzy / Typo Tolerance",
+      "question": "\"hedgehg class\" hakkında ne biliyorsun?",
+      "expected": "Should resolve to \"Hedgehogs class\" and return relevant info.\n\n---",
+      "source": "",
+      "reply": "Based on the documents, here is what is known about the \"Hedgehogs class\" (also referred to as \"Hedgehogs\" or \"🦔Hedgehogs🦔\"):\n\n*   **PFA Bake Sale:** There was a PFA bake sale on a Friday. Donations of cakes and other baked goods were appreciated and could be brought to the studio at morning drop-off. A reminder was issued that no nuts were allowed.\n*   **Antibiotics Administration:** The school only administers antibiotics if they are prescribed to be given 4 times a day. If the prescription is for 3 times a day, the school cannot administer them.\n*   **Forest School:** Forest School day is held every Wednesday. Students are advised to bring wellies and waterproof clothes, especially in bad weather.\n*   **Book Bags:** On at least one occasion, book bags were not required as the students would be out all day and would return just before 3 PM.\n*   **Beavers:** Mia and Tia from the class attend Beavers on Friday evenings (5:45-6:45 PM) in Charminster. Beavers, traditionally for boys, now includes girls. Current Beavers were invited to bring a friend who might want to join.\n*   **PTA Events:** Links to pta-events.co.uk/qpia were shared, noting that only 15 spaces were left for an event.",
+      "score": 2,
+      "reason": "Perihan correctly resolved the typo \"hedgehg class\" to \"Hedgehogs class\" and provided relevant information based on the documents."
+    },
+    {
+      "id": "Q19",
+      "category": "Fuzzy / Typo Tolerance",
+      "question": "\"suleyman mutlu\" apartmanında ne oldu?",
+      "expected": "Should match \"SÜLEYMAN MUTLU APARTMANI\" and return the court/legal discussion.\n\n---",
+      "source": "",
+      "reply": "Belgelerde yer alan bilgilere göre, Süleyman Mutlu Apartmanı ile ilgili bir mahkeme süreci bulunmaktadır. 2026 yılının Ocak ayında yapılan bir WhatsApp konuşmasında, apartman sakinlerinden birine mahkemeden kağıt geldiği, 13 Şubat'ta mahkemeye çağrıldığı ve bireysel açtığı davada şahitliğinin alınacağı belirtilmiştir. Bu konuşmada ayrıca \"binada ölen tüm ölen kişile...\" ifadesi geçmektedir, bu da apartmanda ölümler yaşandığını göstermektedir.\n\nAyrıca, 6 Şubat 2023 tarihli bir konuşmada, Umut isimli kişi \"Süleyman Mutlu apartmanı blok no var mı\" diye sormuş ve adres olarak \"Odabaşı mahallesi. Antakya.\" bilgisini vermiştir. Bu tarih ve konum, Türkiye'de yaşanan büyük depremle örtüşmektedir.\n\nBu bilgiler ışığında, Süleyman Mutlu Apartmanı'nın Antakya'da bulunduğu, 6 Şubat 2023 depreminde etkilenmiş olabileceği ve bu olaylar sonucunda ölümler yaşandığı ve hukuki süreçlerin başladığı anlaşılmaktadır.",
+      "score": 2,
+      "reason": "Perihan correctly identifies the apartment and provides details about the court/legal discussion, matching the expected answer."
+    },
+    {
+      "id": "Q20",
+      "category": "Fuzzy / Typo Tolerance",
+      "question": "Beavers grubunda kayıp bir eşya var mıydı?",
+      "expected": "Should match \"Beavers 37th\" and return the black water bottle story.\n\n---",
+      "source": "",
+      "reply": "Evet, Beavers grubunda kayıp bir eşya vardı. 30 Ocak 2026 tarihinde siyah bir su şişesi kaybolmuştu, ancak daha sonra bulunmuştur.",
+      "score": 2,
+      "reason": "Perihan correctly answers that there was a lost item in the Beavers group and identifies it as a black water bottle, matching the expected information."
+    },
+    {
+      "id": "Q22",
+      "category": "Trainer File Recall",
+      "question": "What is Deniz's motorbike's brand?",
+      "expected": "Royal Enfield",
+      "source": "trainer/denizmuratoglu.txt",
+      "reply": "Deniz's motorbike brand is Royal Enfield.",
+      "score": 2,
+      "reason": "Perihan's response correctly identifies Deniz's motorbike brand as Royal Enfield, matching the expected answer."
+    },
+    {
+      "id": "Q23",
+      "category": "Trainer File Recall",
+      "question": "Abdullah ile ilk yazışma tarihim ne zaman?",
+      "expected": "30 Ağustos 2006",
+      "source": "WhatsApp / Abdullah",
+      "reply": "The documents do not contain information about the first communication date between the persona identified as \"Me\" in the WhatsApp chats and \"Abdullah\".\n\nThe provided documents show conversations involving \"Abdullah\" (sometimes referred to as \"Abdullah AVCI\" or \"Abdullah Ağa\") primarily in MSN Messenger logs. In these logs, \"Abdullah\" is seen communicating with \"umut\" (or \"(li)umut(li)\"). The earliest recorded direct communication between \"umut\" and \"abdullah\" is on 07.07.2006, where \"umut\" sends a message in a chat that includes \"abdullah\".\n\nHowever, based on the WhatsApp chat logs, \"Me\" is a distinct individual from \"Umut\" (as \"Me\" communicates with \"Umut\" in `4915142486394 (2025-12-17)`). Therefore, \"umut\"'s conversations with \"Abdullah\" are not \"Me\"'s conversations with \"Abdullah\". There is no mention of \"Abdullah\" in any of the WhatsApp chats involving \"Me\".",
+      "score": 0,
+      "reason": "Perihan failed to provide the specific date requested in the question, instead stating that the information is not available, which is considered incorrect when a specific answer is expected and the expected answer does not explicitly state \"System should say it doesn't know\"."
+    },
+    {
+      "id": "Q24",
+      "category": "Trainer File Recall",
+      "question": "What are my online fish sellers?",
+      "expected": "Abyss, SwellUK, Sims, Auatics to Your Door, RiverPark, Tropco, marineworldaquatics, Essex, Vision, Delta, DC, aquatropics, lgpleco, chens discus, riftvalleycichlids, The Reef Experience",
+      "source": "Google Drive spreadsheet (Fish sellers sheet)",
+      "reply": "The documents do not explicitly list your online fish sellers.\n\nOne document mentions \"Andover - Marine & Fresh\", \"Fair Oak- Marine & Fresh\", \"Basingstoke - Only fresh\", and \"Farnham - Marine & Fresh\". These appear to be locations where marine and/or fresh fish are available, but it is not specified if they are online sellers or physical stores.",
+      "score": 0,
+      "reason": "Perihan incorrectly states that the documents do not list online fish sellers, when the expected answer indicates this information should be available."
+    },
+    {
+      "id": "Q25",
+      "category": "Trainer File Recall",
+      "question": "Where did Umut's grandparents migrate from?",
+      "expected": "Umut's paternal grandparents immigrated from Macedonia to Turkey.",
+      "source": "trainer / personal background",
+      "reply": "Umut's paternal grandparents, Hamdi (grandfather) and his grandmother, immigrated from Macedonia to Turkey in 1958.",
+      "score": 2,
+      "reason": "Perihan's response correctly identifies that Umut's paternal grandparents immigrated from Macedonia to Turkey, which directly answers the question."
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+[console_scripts]
+perihan = perihan_app.main:run

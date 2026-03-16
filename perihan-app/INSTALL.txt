@@ -1,0 +1,29 @@
+PERIHAN - Installation Guide
+============================
+
+STEP 1 - Set up your AI (pick one or both)
+
+  OPTION A — Gemini (cloud, requires internet + free API key)
+    Get a free key at: https://aistudio.google.com/apikey
+    No extra software needed.
+
+  OPTION B — Ollama (local, runs on your computer, no API key needed)
+    Download and install from: https://ollama.com
+    After installing, open a terminal and run:
+        ollama pull llama3.2
+    (downloads the AI model, ~2 GB, wait for it to finish)
+
+STEP 2 - Extract this ZIP
+  Extract the perihan folder anywhere you like (e.g. Desktop).
+
+STEP 3 - Start Perihan
+  Windows: double-click start.bat
+  Mac/Linux: open a terminal in this folder and run:
+      chmod +x start.sh && ./start.sh
+
+  The first launch installs dependencies (a few minutes, once only).
+  Your browser will open automatically at http://localhost:8765
+  A setup wizard will appear — enter your API key and you are done.
+
+  To stop Perihan: close the terminal window.
+  To start again:  double-click start.bat (or run start.sh)

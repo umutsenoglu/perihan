@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FastAPI Debug",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["perihan_app.main:app", "--reload", "--port", "8000"],
+      "python": "${workspaceFolder}/venv/Scripts/python.exe",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "GEMINI_API_KEY": "AIzaSyDgb-gBwhE8RhmBPFCuJPXCjkRoQDxNzsc"
+      },
+      "jinja": true
+    }
+  ]
+}

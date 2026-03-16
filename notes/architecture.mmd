@@ -1,0 +1,99 @@
+graph TD
+    USER["Browser / Client"]
+
+    subgraph APP["perihan-app"]
+        direction LR
+
+        subgraph APP_ENTRY[" "]
+            direction TB
+            MAIN["main.py"]
+            STATIC["static/index.html"]
+            DEP["dependencies.py<br/>init clients & inject"]
+            APP_CONFIG["config.py<br/>paths & env"]
+        end
+
+        subgraph ROUTERS["routers"]
+            direction TB
+            CHAT_R["/chat  /chat-mcp<br/>/chat-folder"]
+            INDEX_R["/index  /index-folder<br/>/index-gdrive  /index-gmail"]
+            SETTINGS_R["/documents  /stats<br/>/models  /config  /logs"]
+            DRIVE_R["/auth/google<br/>/drive/status"]
+            WHATSAPP_R["/whatsapp/*"]
+        end
+
+        subgraph APP_SVC["app services"]
+            direction TB
+            CONFIG_SVC["config_service"]
+            LOG_SVC["log_service"]
+        end
+    end
+
+    subgraph CORE["perihan-core"]
+        direction LR
+
+        subgraph SERVICES["services"]
+            direction TB
+            CHAT_SVC["chat_service<br/>rag_query · run_mcp_query<br/>LLMError · log_fn callback"]
+            SEARCH_SVC["search_service<br/>hybrid_search<br/>keyword + vector + fuzzy"]
+            INDEX_SVC["index_service<br/>index_local_folder<br/>index_gdrive · index_gmail"]
+            MCP_SVC["mcp_tools<br/>make_tool_functions"]
+        end
+
+        subgraph UTILS["utils"]
+            direction TB
+            FILE_READER["file_reader<br/>txt md pdf docx xml"]
+            DRIVE_UTILS["drive_utils"]
+            GMAIL_UTILS["gmail_utils"]
+        end
+
+        CORE_CONFIG["config.py<br/>constants"]
+    end
+
+    subgraph EXT["External Services"]
+        direction LR
+        OLLAMA["Ollama"]
+        GEMINI["Gemini API"]
+        CHROMADB[("ChromaDB")]
+        GDRIVE["Google Drive"]
+        GMAIL_API["Gmail API"]
+    end
+
+    %% --- Main flow ---
+    USER --> MAIN
+    MAIN --> STATIC
+    MAIN --> ROUTERS
+    ROUTERS --> DEP
+
+    %% --- App internal ---
+    CHAT_R --> LOG_SVC
+    SETTINGS_R --> CONFIG_SVC
+    APP_CONFIG -.->|re-exports| CORE_CONFIG
+
+    %% --- App to Core (the key DI boundary) ---
+    CHAT_R -->|"catch LLMError · pass log_fn"| CHAT_SVC
+    INDEX_R -->|"pass raw_dir"| INDEX_SVC
+
+    %% --- Core internal ---
+    CHAT_SVC --> SEARCH_SVC
+    CHAT_SVC --> MCP_SVC
+    CHAT_SVC --> DRIVE_UTILS & GMAIL_UTILS
+    INDEX_SVC --> FILE_READER & DRIVE_UTILS & GMAIL_UTILS
+    MCP_SVC --> SEARCH_SVC & FILE_READER
+
+    %% --- Core to External ---
+    CHAT_SVC --> OLLAMA & GEMINI
+    SEARCH_SVC --> CHROMADB
+    INDEX_SVC --> CHROMADB
+    DRIVE_UTILS --> GDRIVE
+    GMAIL_UTILS --> GMAIL_API
+
+    %% --- Styles ---
+    classDef core fill:#e8f5e9,stroke:#2e7d32
+    classDef app fill:#e3f2fd,stroke:#1565c0
+    classDef ext fill:#fff3e0,stroke:#e65100
+    classDef user fill:#fce4ec,stroke:#c62828
+
+    class CORE_CONFIG,CHAT_SVC,SEARCH_SVC,INDEX_SVC,MCP_SVC,FILE_READER,DRIVE_UTILS,GMAIL_UTILS core
+    class MAIN,DEP,CHAT_R,INDEX_R,DRIVE_R,SETTINGS_R,WHATSAPP_R,CONFIG_SVC,LOG_SVC,APP_CONFIG,STATIC app
+    class OLLAMA,GEMINI,GDRIVE,GMAIL_API,CHROMADB ext
+    class USER user

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perihan — Architecture Diagram</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 8px;
+    color: #f8fafc;
+    letter-spacing: 2px;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 40px;
+  }
+  .diagram {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+  }
+
+  /* Connector lines */
+  .connector {
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    position: relative;
+  }
+  .connector::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #475569, #334155);
+  }
+  .connector .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0; height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #475569;
+  }
+  .connector .label {
+    position: absolute;
+    right: calc(50% + 14px);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: #64748b;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  /* Multi-connector (fan out) */
+  .multi-connector {
+    display: flex;
+    justify-content: center;
+    height: 28px;
+    position: relative;
+  }
+  .multi-connector::before {
+    content: '';
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    height: 2px;
+    background: #334155;
+  }
+  .multi-connector::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 50%;
+    width: 2px;
+    background: #475569;
+  }
+
+  /* Layer */
+  .layer {
+    border-radius: 12px;
+    padding: 20px 24px;
+    position: relative;
+    border: 1px solid;
+  }
+  .layer-label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    border-radius: 4px;
+  }
+  .layer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 6px;
+  }
+
+  /* Module card */
+  .module {
+    background: rgba(0,0,0,0.3);
+    border-radius: 8px;
+    padding: 12px 16px;
+    flex: 1;
+    min-width: 180px;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .module-name {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .module-name .icon { font-size: 14px; }
+  .module ul {
+    list-style: none;
+    padding: 0;
+  }
+  .module li {
+    font-size: 11px;
+    color: #94a3b8;
+    padding: 2px 0;
+    font-family: 'Cascadia Code', 'Fira Code', monospace;
+  }
+  .module li::before {
+    content: '›';
+    margin-right: 6px;
+    color: #475569;
+  }
+  .endpoint {
+    display: inline-block;
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    margin: 1px 0;
+    font-family: 'Cascadia Code', 'Fira Code', monospace;
+  }
+  .get { background: rgba(34,197,94,0.15); color: #4ade80; }
+  .post { background: rgba(59,130,246,0.15); color: #60a5fa; }
+
+  /* Layer colors */
+  .layer-client {
+    background: linear-gradient(135deg, rgba(139,92,246,0.08), rgba(139,92,246,0.03));
+    border-color: rgba(139,92,246,0.25);
+  }
+  .layer-client .layer-label { background: #7c3aed; color: #fff; }
+
+  .layer-entry {
+    background: linear-gradient(135deg, rgba(236,72,153,0.08), rgba(236,72,153,0.03));
+    border-color: rgba(236,72,153,0.25);
+  }
+  .layer-entry .layer-label { background: #db2777; color: #fff; }
+
+  .layer-router {
+    background: linear-gradient(135deg, rgba(59,130,246,0.08), rgba(59,130,246,0.03));
+    border-color: rgba(59,130,246,0.25);
+  }
+  .layer-router .layer-label { background: #2563eb; color: #fff; }
+
+  .layer-service {
+    background: linear-gradient(135deg, rgba(34,197,94,0.08), rgba(34,197,94,0.03));
+    border-color: rgba(34,197,94,0.25);
+  }
+  .layer-service .layer-label { background: #16a34a; color: #fff; }
+
+  .layer-utils {
+    background: linear-gradient(135deg, rgba(245,158,11,0.08), rgba(245,158,11,0.03));
+    border-color: rgba(245,158,11,0.25);
+  }
+  .layer-utils .layer-label { background: #d97706; color: #fff; }
+
+  .layer-state {
+    background: linear-gradient(135deg, rgba(239,68,68,0.08), rgba(239,68,68,0.03));
+    border-color: rgba(239,68,68,0.25);
+  }
+  .layer-state .layer-label { background: #dc2626; color: #fff; }
+
+  .layer-external {
+    background: linear-gradient(135deg, rgba(100,116,139,0.08), rgba(100,116,139,0.03));
+    border-color: rgba(100,116,139,0.25);
+  }
+  .layer-external .layer-label { background: #475569; color: #fff; }
+
+  /* External boxes */
+  .ext-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 6px;
+  }
+  .ext-box {
+    background: rgba(0,0,0,0.3);
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .ext-box .icon { font-size: 22px; margin-bottom: 6px; }
+  .ext-box .name { font-size: 12px; font-weight: 600; }
+  .ext-box .detail { font-size: 10px; color: #64748b; margin-top: 2px; }
+
+  /* Flow note */
+  .flow-note {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    padding: 20px 24px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+  }
+  .flow-note h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #94a3b8;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .flow-steps {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flow-step {
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  .flow-arrow {
+    color: #475569;
+    font-size: 18px;
+    padding: 0 4px;
+  }
+  .fs-client { background: rgba(139,92,246,0.15); color: #a78bfa; }
+  .fs-entry { background: rgba(236,72,153,0.15); color: #f472b6; }
+  .fs-router { background: rgba(59,130,246,0.15); color: #60a5fa; }
+  .fs-service { background: rgba(34,197,94,0.15); color: #4ade80; }
+  .fs-utils { background: rgba(245,158,11,0.15); color: #fbbf24; }
+  .fs-state { background: rgba(239,68,68,0.15); color: #f87171; }
+  .fs-ext { background: rgba(100,116,139,0.15); color: #94a3b8; }
+
+  .rule-note {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 11px;
+    color: #64748b;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<h1>P E R I H A N</h1>
+<p class="subtitle">RAG + Agentic Document Assistant &mdash; Layered Architecture</p>
+
+<div class="diagram">
+
+  <!-- CLIENT -->
+  <div class="layer layer-client">
+    <div class="layer-label">Client</div>
+    <div class="layer-content">
+      <div class="module" style="flex:1;">
+        <div class="module-name"><span class="icon">&#127760;</span> static/index.html</div>
+        <ul>
+          <li>Single-page app (vanilla JS)</li>
+          <li>SSE streaming for real-time chat</li>
+          <li>Document management UI</li>
+          <li>Gmail / Drive / WhatsApp indexing</li>
+          <li>Settings &amp; model switching</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><span class="label">HTTP / SSE</span><div class="arrow"></div></div>
+
+  <!-- ENTRY POINT -->
+  <div class="layer layer-entry">
+    <div class="layer-label">Entry Point</div>
+    <div class="layer-content">
+      <div class="module" style="flex:1;">
+        <div class="module-name"><span class="icon">&#9889;</span> main.py</div>
+        <ul>
+          <li>FastAPI application factory</li>
+          <li>CORS middleware</li>
+          <li>Mounts all routers</li>
+          <li>Serves static files</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><div class="arrow"></div></div>
+
+  <!-- ROUTERS -->
+  <div class="layer layer-router">
+    <div class="layer-label">Routers</div>
+    <div class="layer-content">
+      <div class="module">
+        <div class="module-name"><span class="icon">&#128172;</span> chat.py</div>
+        <ul>
+          <li><span class="endpoint post">POST</span> /chat</li>
+          <li><span class="endpoint post">POST</span> /chat-folder</li>
+          <li><span class="endpoint post">POST</span> /chat-mcp</li>
+          <li><span class="endpoint get">GET</span> /current-model</li>
+        </ul>
+      </div>
+      <div class="module">
+        <div class="module-name"><span class="icon">&#128195;</span> index.py</div>
+        <ul>
+          <li><span class="endpoint post">POST</span> /index</li>
+          <li><span class="endpoint post">POST</span> /index-folder</li>
+          <li><span class="endpoint post">POST</span> /index-gdrive</li>
+          <li><span class="endpoint post">POST</span> /index-gmail</li>
+          <li><span class="endpoint post">POST</span> /index-whatsapp</li>
+        </ul>
+      </div>
+      <div class="module">
+        <div class="module-name"><span class="icon">&#128273;</span> drive.py</div>
+        <ul>
+          <li><span class="endpoint get">GET</span> /auth/google</li>
+          <li><span class="endpoint get">GET</span> /auth/callback</li>
+          <li><span class="endpoint get">GET</span> /drive/status</li>
+        </ul>
+      </div>
+      <div class="module">
+        <div class="module-name"><span class="icon">&#9881;</span> settings.py</div>
+        <ul>
+          <li><span class="endpoint get">GET</span> /documents</li>
+          <li><span class="endpoint get">GET</span> /stats</li>
+          <li><span class="endpoint post">POST</span> /model</li>
+          <li><span class="endpoint post">POST</span> /reset</li>
+          <li><span class="endpoint get">GET</span> /config</li>
+        </ul>
+      </div>
+      <div class="module">
+        <div class="module-name"><span class="icon">&#128242;</span> whatsapp.py</div>
+        <ul>
+          <li><span class="endpoint post">POST</span> /index-whatsapp</li>
+          <li><span class="endpoint get">GET</span> /whatsapp/status</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><div class="arrow"></div></div>
+
+  <!-- SERVICES -->
+  <div class="layer layer-service">
+    <div class="layer-label">Services</div>
+    <div class="layer-content">
+      <div class="module">
+        <div class="module-name"><span class="icon">&#129504;</span> chat_service.py</div>
+        <ul>
+          <li>rag_query()</li>
+          <li>deep_think() fallback</li>
+          <li>mcp_chat()</li>
+          <li>drive_fallback_search()</li>
+          <li>gmail_fallback_search()</li>
+        </ul>
+      </div>
+      <div class="module">
+        <div class="module-name"><span class="icon">&#128269;</span> search_service.py</div>
+        <ul>
+          <li>hybrid_search()</li>
+          <li>keyword_score() + TF-IDF</li>
+          <li>fuzzy_expand()</li>
+          <li>global_vocab index</li>
+          <li>cross-folder diversity</li>
+        </ul>
+      </div>
+      <div class="module">
+        <div class="module-name"><span class="icon">&#128230;</span> index_service.py</div>
+        <ul>
+          <li>index_file() / index_folder()</li>
+          <li>index_gdrive_files()</li>
+          <li>index_gmail_threads()</li>
+          <li>summarize_with_llm()</li>
+        </ul>
+      </div>
+      <div class="module">
+        <div class="module-name"><span class="icon">&#128736;</span> mcp_tools.py</div>
+        <ul>
+          <li>MCP_TOOLS schemas</li>
+          <li>TOOL_FUNCTIONS map</li>
+          <li>Tool-calling orchestration</li>
+        </ul>
+      </div>
+      <div class="module">
+        <div class="module-name"><span class="icon">&#128190;</span> config_service.py</div>
+        <ul>
+          <li>validate_gemini_key()</li>
+          <li>config CRUD</li>
+        </ul>
+      </div>
+      <div class="module">
+        <div class="module-name"><span class="icon">&#128203;</span> log_service.py</div>
+        <ul>
+          <li>Logging helpers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><div class="arrow"></div></div>
+
+  <!-- UTILS -->
+  <div class="layer layer-utils">
+    <div class="layer-label">Utils</div>
+    <div class="layer-content">
+      <div class="module">
+        <div class="module-name"><span class="icon">&#128196;</span> file_reader.py</div>
+        <ul>
+          <li>read_file_content()</li>
+          <li>txt, md, pdf, docx, xml</li>
+        </ul>
+      </div>
+      <div class="module">
+        <div class="module-name"><span class="icon">&#9729;</span> drive_utils.py</div>
+        <ul>
+          <li>drive_read_content()</li>
+          <li>drive_list_all_files()</li>
+        </ul>
+      </div>
+      <div class="module">
+        <div class="module-name"><span class="icon">&#9993;</span> gmail_utils.py</div>
+        <ul>
+          <li>gmail_list_all_threads()</li>
+          <li>gmail_get_thread()</li>
+          <li>gmail_format_thread_text()</li>
+          <li>gmail_search()</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><div class="arrow"></div></div>
+
+  <!-- SHARED STATE -->
+  <div class="layer layer-state">
+    <div class="layer-label">Shared State & Config</div>
+    <div class="layer-content">
+      <div class="module">
+        <div class="module-name"><span class="icon">&#128279;</span> dependencies.py</div>
+        <ul>
+          <li>ChromaDB collection</li>
+          <li>Ollama / Gemini LLM clients</li>
+          <li>Google Drive service</li>
+          <li>Gmail service</li>
+          <li>Current model state</li>
+        </ul>
+      </div>
+      <div class="module">
+        <div class="module-name"><span class="icon">&#9881;</span> config.py</div>
+        <ul>
+          <li>DATA_DIR, VECTORDB_DIR</li>
+          <li>MODEL names &amp; params</li>
+          <li>SUPPORTED_EXTENSIONS</li>
+          <li>GOOGLE_SCOPES</li>
+          <li>CHUNK_SIZE, TOP_K</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><div class="arrow"></div></div>
+
+  <!-- EXTERNAL -->
+  <div class="layer layer-external">
+    <div class="layer-label">External Dependencies</div>
+    <div class="ext-grid">
+      <div class="ext-box">
+        <div class="icon">&#128451;</div>
+        <div class="name">ChromaDB</div>
+        <div class="detail">vectordb/</div>
+      </div>
+      <div class="ext-box">
+        <div class="icon">&#129302;</div>
+        <div class="name">Ollama</div>
+        <div class="detail">localhost:11434</div>
+      </div>
+      <div class="ext-box">
+        <div class="icon">&#9670;</div>
+        <div class="name">Gemini API</div>
+        <div class="detail">cloud LLM</div>
+      </div>
+      <div class="ext-box">
+        <div class="icon">&#9729;</div>
+        <div class="name">Google APIs</div>
+        <div class="detail">Drive + Gmail</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Data flow -->
+<div class="flow-note">
+  <h3>Data Flow</h3>
+  <div class="flow-steps">
+    <span class="flow-step fs-client">Client</span>
+    <span class="flow-arrow">&#8594;</span>
+    <span class="flow-step fs-router">Router</span>
+    <span class="flow-arrow">&#8594;</span>
+    <span class="flow-step fs-service">Service</span>
+    <span class="flow-arrow">&#8594;</span>
+    <span class="flow-step fs-utils">Utils</span>
+    <span class="flow-arrow">&#8594;</span>
+    <span class="flow-step fs-state">Dependencies</span>
+    <span class="flow-arrow">&#8594;</span>
+    <span class="flow-step fs-ext">External</span>
+  </div>
+  <p class="rule-note">Services import from dependencies lazily (inside function bodies) to avoid circular imports</p>
+</div>
+
+</body>
+</html>

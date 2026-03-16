@@ -1,0 +1,26 @@
+{
+  "run_id": "2026-03-09_00-11",
+  "perihan_model": "deepseek-r1:32b",
+  "judge_model": "gemini-2.5-flash",
+  "total_score": 0,
+  "max_score": 2,
+  "pct": 0.0,
+  "categories": {
+    "Direct Recall (English)": {
+      "score": 0,
+      "max": 2
+    }
+  },
+  "results": [
+    {
+      "id": "Q1",
+      "category": "Direct Recall (English)",
+      "question": "Was a lost water bottle found in the Beavers 37th group?",
+      "expected": "Yes — a black water bottle (Mikey's) was found at the end.",
+      "source": "Beavers 37th / 2026-01-30",
+      "reply": "[ERROR: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=60)]",
+      "score": 0,
+      "reason": "Perihan's response is an error message and does not answer the question asked."
+    }
+  ]
+}

@@ -1,0 +1,2262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perihan</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f0f2f5;
+            color: #1a1a2e;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            background: #1a1a2e;
+            color: #fff;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 { font-size: 18px; font-weight: 600; }
+        .model-badge {
+            background: #16213e;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 13px;
+            color: #a8b2d1;
+        }
+
+        /* Tabs */
+        .tabs {
+            background: #fff;
+            display: flex;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .tab {
+            padding: 12px 24px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: #64748b;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+            transition: all 0.2s;
+        }
+        .tab:hover { color: #1a1a2e; }
+        .tab.active {
+            color: #1a1a2e;
+            border-bottom-color: #3b82f6;
+        }
+
+        /* Tab content */
+        .tab-content { display: none; flex: 1; overflow: hidden; }
+        .tab-content.active { display: flex; flex-direction: column; min-height: 0; }
+
+        /* Chat tab */
+        #chat-panel { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+        .chat-mode-bar {
+            background: #fff;
+            padding: 8px 24px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .chat-mode-bar label { font-size: 13px; color: #64748b; }
+        .chat-mode-bar select, .chat-mode-bar input {
+            padding: 6px 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+        .chat-mode-bar select { min-width: 120px; }
+        .chat-mode-bar input { flex: 1; max-width: 400px; }
+
+        /* Toggle switch */
+        .toggle-label {
+            display: flex; align-items: center; gap: 6px;
+            cursor: pointer; white-space: nowrap; user-select: none;
+        }
+        .toggle-label input[type="checkbox"] { display: none; }
+        .toggle-track {
+            width: 36px; height: 20px; background: #cbd5e1;
+            border-radius: 10px; position: relative; transition: background 0.2s;
+            flex-shrink: 0;
+        }
+        .toggle-label input:checked + .toggle-track { background: #8b5cf6; }
+        .toggle-track::after {
+            content: ''; position: absolute; width: 16px; height: 16px;
+            background: #fff; border-radius: 50%; top: 2px; left: 2px;
+            transition: left 0.2s;
+        }
+        .toggle-label input:checked + .toggle-track::after { left: 18px; }
+        .deep-think-badge {
+            display: inline-block; background: #ede9fe; color: #7c3aed;
+            font-size: 11px; padding: 2px 8px; border-radius: 10px; margin-left: 6px;
+        }
+
+        .messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .message {
+            max-width: 80%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 14px;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .message.user {
+            align-self: flex-end;
+            background: #3b82f6;
+            color: #fff;
+            border-bottom-right-radius: 4px;
+        }
+        .message.assistant {
+            align-self: flex-start;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-bottom-left-radius: 4px;
+        }
+        .message .sources {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 12px;
+            color: #64748b;
+        }
+        .message .sources span {
+            display: inline-block;
+            background: #f1f5f9;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin: 2px 4px 2px 0;
+        }
+        .tool-calls {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 11px;
+            color: #94a3b8;
+        }
+        .tool-calls summary { cursor: pointer; font-size: 12px; color: #64748b; }
+
+        .chat-input-bar {
+            padding: 16px 24px;
+            background: #fff;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            gap: 12px;
+        }
+        .chat-input-bar input {
+            flex: 1;
+            padding: 10px 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+        .chat-input-bar input:focus { border-color: #3b82f6; }
+        .chat-input-bar button {
+            padding: 10px 24px;
+            background: #3b82f6;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .chat-input-bar button:hover { background: #2563eb; }
+        .chat-input-bar button:disabled { background: #94a3b8; cursor: not-allowed; }
+
+        /* Index tab */
+        .panel {
+            padding: 24px;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            overflow-y: auto;
+            flex: 1;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            border: 1px solid #e2e8f0;
+        }
+        .card h2 { font-size: 16px; margin-bottom: 12px; color: #1a1a2e; }
+        .card p { font-size: 13px; color: #64748b; margin-bottom: 12px; }
+
+        .form-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .form-row input {
+            flex: 1;
+            padding: 10px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .btn-primary { background: #3b82f6; color: #fff; }
+        .btn-primary:hover { background: #2563eb; }
+        .btn-danger { background: #ef4444; color: #fff; }
+        .btn-danger:hover { background: #dc2626; }
+        .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+        .result-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 13px;
+            white-space: pre-wrap;
+            display: none;
+        }
+        .result-box.visible { display: block; }
+
+        /* Settings */
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .stat-card {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+        .stat-card .value { font-size: 28px; font-weight: 700; color: #3b82f6; }
+        .stat-card .label { font-size: 12px; color: #64748b; margin-top: 4px; }
+
+        .model-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .model-chip {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            cursor: pointer;
+            border: 1px solid #cbd5e1;
+            background: #fff;
+            transition: all 0.2s;
+        }
+        .model-chip:hover { border-color: #3b82f6; }
+        .model-chip.active {
+            background: #3b82f6;
+            color: #fff;
+            border-color: #3b82f6;
+        }
+        .model-chip .size { font-size: 11px; color: #94a3b8; margin-left: 4px; }
+        .model-chip.active .size { color: #bfdbfe; }
+        .model-chip.gemini { border-color: #4285f4; }
+        .model-chip.gemini .size { color: #4285f4; }
+        .model-chip.gemini.active { background: #4285f4; border-color: #4285f4; }
+
+        /* Progress bar (indexing) */
+        .prog-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 6px;
+        }
+        .prog-wrap {
+            background: #e2e8f0;
+            border-radius: 4px;
+            height: 8px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+        .prog-bar {
+            height: 100%;
+            background: #3b82f6;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+        .prog-current-file {
+            font-size: 13px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .prog-step {
+            display: inline-block;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-bottom: 8px;
+        }
+        .prog-step.chunking { background: #dbeafe; color: #1d4ed8; }
+        .prog-step.summarizing { background: #fef3c7; color: #92400e; }
+        .prog-step.reading { background: #e0e7ff; color: #3730a3; }
+        .prog-step.listing { background: #f3e8ff; color: #6b21a8; }
+        .prog-status {
+            font-size: 12px;
+            color: #64748b;
+            font-style: italic;
+            margin-bottom: 8px;
+            min-height: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Index tab — let browser handle scrolling */
+        #index.tab-content { overflow: visible; }
+        #index.tab-content.active { display: flex; }
+
+        .index-layout {
+            display: flex;
+            flex: 1;
+            min-height: 0;
+        }
+        .index-sidebar {
+            width: 200px;
+            min-width: 200px;
+            background: #fff;
+            border-right: 1px solid #e2e8f0;
+            padding: 16px 0;
+        }
+        .index-sidebar .sidebar-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.15s;
+            border-left: 3px solid transparent;
+        }
+        .index-sidebar .sidebar-item:hover {
+            background: #f8fafc;
+            color: #1a1a2e;
+        }
+        .index-sidebar .sidebar-item.active {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border-left-color: #3b82f6;
+        }
+        .index-sidebar .sidebar-item .sidebar-icon {
+            font-size: 16px;
+            width: 20px;
+            text-align: center;
+        }
+        .index-sidebar .sidebar-sep {
+            height: 1px;
+            background: #e2e8f0;
+            margin: 12px 20px;
+        }
+        .index-section {
+            display: none;
+            flex: 1;
+            padding: 24px;
+        }
+        .index-section.active {
+            display: block;
+        }
+        .index-section .card {
+            max-width: 700px;
+        }
+
+        .prog-summary {
+            margin-top: 8px;
+            font-size: 12px;
+        }
+        .prog-summary .summary-toggle {
+            color: #3b82f6;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-left: 6px;
+        }
+        .prog-summary .summary-toggle:hover { color: #1d4ed8; }
+        .prog-summary .summary-details {
+            display: none;
+            margin-top: 6px;
+            padding: 6px 10px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 11px;
+            color: #64748b;
+            line-height: 1.7;
+        }
+        .prog-summary .summary-details.open { display: block; }
+
+        /* Loading spinner */
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #e2e8f0;
+            border-top-color: #3b82f6;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .loading-msg {
+            align-self: flex-start;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 12px 16px;
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        /* Log viewer — split screen */
+        #logs-layout {
+            display: flex; flex: 1; min-height: 0; overflow: hidden;
+        }
+        #logs-left {
+            width: 360px; min-width: 280px; flex-shrink: 0;
+            display: flex; flex-direction: column;
+            border-right: 1px solid #e2e8f0; background: #fff;
+        }
+        #logs-toolbar {
+            padding: 12px 16px; border-bottom: 1px solid #e2e8f0;
+            display: flex; justify-content: space-between; align-items: center;
+            flex-shrink: 0;
+        }
+        #log-list { flex: 1; overflow-y: auto; }
+        .log-row {
+            padding: 10px 16px; cursor: pointer; border-bottom: 1px solid #f1f5f9;
+            transition: background 0.15s;
+        }
+        .log-row:hover { background: #f8fafc; }
+        .log-row.active { background: #eff6ff; border-left: 3px solid #3b82f6; }
+        .log-row-top {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 3px;
+        }
+        .log-row-time { font-size: 11px; color: #94a3b8; }
+        .log-row-ms { font-size: 11px; color: #94a3b8; }
+        .log-row-q { font-size: 13px; color: #1a1a2e; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .log-row-meta { font-size: 11px; color: #94a3b8; margin-top: 2px; display: flex; gap: 8px; }
+        #logs-right {
+            flex: 1; overflow-y: auto; padding: 24px; background: #f8fafc;
+        }
+        #log-detail-empty { color: #94a3b8; font-size: 14px; margin-top: 60px; text-align: center; }
+        .log-section { margin-bottom: 16px; }
+        .log-section-title { font-size: 12px; font-weight: 600; color: #374151; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+        .log-pre {
+            background: #fff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 10px;
+            white-space: pre-wrap; word-break: break-all; font-size: 12px;
+            max-height: 350px; overflow-y: auto; color: #334155; font-family: monospace;
+        }
+        .log-badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; margin-right: 4px; }
+        .log-badge.mcp { background: #ede9fe; color: #7c3aed; }
+        .log-badge.err { background: #fef2f2; color: #dc2626; }
+        .log-badge.ok { background: #dcfce7; color: #16a34a; }
+
+        /* RAG result cards */
+        .rag-groups { display: flex; flex-direction: column; gap: 8px; }
+        .rag-group { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+        .rag-group-header {
+            display: flex; align-items: center; gap: 8px;
+            padding: 9px 12px; background: #f1f5f9; cursor: pointer; user-select: none;
+            border-bottom: 1px solid transparent; transition: background 0.15s;
+        }
+        .rag-group-header:hover { background: #e8eef5; }
+        .rag-group.open .rag-group-header { border-bottom-color: #e2e8f0; }
+        .rag-group-arrow { font-size: 10px; color: #94a3b8; transition: transform 0.15s; flex-shrink: 0; }
+        .rag-group.open .rag-group-arrow { transform: rotate(90deg); }
+        .rag-group-title { font-size: 13px; font-weight: 600; color: #1e293b; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .rag-group-meta { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+        .rag-chunk-count {
+            font-size: 11px; font-weight: 600; background: #e0e7ff; color: #3730a3;
+            padding: 1px 7px; border-radius: 10px;
+        }
+        .rag-source-pill {
+            font-size: 10px; font-weight: 600; padding: 2px 7px; border-radius: 10px;
+        }
+        .rag-source-pill.local { background: #dbeafe; color: #1d4ed8; }
+        .rag-source-pill.gdrive { background: #dcfce7; color: #15803d; }
+        .rag-group-chunks { display: none; flex-direction: column; }
+        .rag-group.open .rag-group-chunks { display: flex; }
+        .rag-chunk { border-top: 1px solid #f1f5f9; padding: 10px 12px; display: flex; gap: 10px; }
+        .rag-chunk + .rag-chunk { border-top: 1px solid #e2e8f0; }
+        .rag-chunk-num {
+            width: 18px; height: 18px; border-radius: 50%; background: #cbd5e1; color: #475569;
+            font-size: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;
+        }
+        .rag-chunk-body {
+            font-size: 12px; color: #475569; line-height: 1.6;
+            white-space: pre-wrap; word-break: break-word; font-family: inherit;
+            max-height: 200px; overflow-y: auto; flex: 1;
+        }
+
+        /* LLM Prompt messages */
+        .llm-messages { display: flex; flex-direction: column; gap: 8px; }
+        .llm-msg { border-radius: 8px; overflow: hidden; border: 1px solid #e2e8f0; }
+        .llm-msg-role {
+            display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.06em;
+            text-transform: uppercase; padding: 4px 10px;
+        }
+        .llm-msg.system .llm-msg-role { background: #f3e8ff; color: #7e22ce; }
+        .llm-msg.user   .llm-msg-role { background: #dbeafe; color: #1d4ed8; }
+        .llm-msg.assistant .llm-msg-role { background: #dcfce7; color: #15803d; }
+        .llm-msg-body {
+            padding: 8px 12px; font-size: 12px; color: #334155; line-height: 1.65;
+            white-space: pre-wrap; word-break: break-word; font-family: inherit;
+            max-height: 260px; overflow-y: auto;
+        }
+        .llm-msg.system .llm-msg-body { background: #faf5ff; }
+        .llm-msg.user   .llm-msg-body { background: #eff6ff; }
+        .llm-msg.assistant .llm-msg-body { background: #f0fdf4; }
+
+        /* MCP Iterations */
+        .mcp-iterations { display: flex; flex-direction: column; gap: 12px; }
+        .mcp-iter {
+            background: #fff; border: 1px solid #e2e8f0; border-radius: 8px;
+            overflow: hidden;
+        }
+        .mcp-iter-header {
+            display: flex; align-items: center; gap: 8px;
+            padding: 8px 12px; background: #f5f3ff; border-bottom: 1px solid #e2e8f0;
+        }
+        .mcp-iter-num {
+            width: 22px; height: 22px; border-radius: 50%; background: #7c3aed; color: #fff;
+            font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        .mcp-iter-label { font-size: 12px; font-weight: 600; color: #5b21b6; }
+        .mcp-iter-body { padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; }
+        .mcp-tool-call {
+            border: 1px solid #e0e7ff; border-radius: 6px; overflow: hidden;
+        }
+        .mcp-tool-header {
+            display: flex; align-items: center; gap: 6px;
+            padding: 6px 10px; background: #eef2ff; cursor: pointer; user-select: none;
+        }
+        .mcp-tool-header:hover { background: #e0e7ff; }
+        .mcp-tool-icon { font-size: 13px; flex-shrink: 0; }
+        .mcp-tool-name {
+            font-size: 12px; font-weight: 700; color: #3730a3;
+            font-family: monospace;
+        }
+        .mcp-tool-file {
+            font-size: 11px; color: #6366f1; margin-left: auto;
+            max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .mcp-tool-arrow { font-size: 9px; color: #94a3b8; transition: transform 0.15s; flex-shrink: 0; }
+        .mcp-tool-call.open .mcp-tool-arrow { transform: rotate(90deg); }
+        .mcp-tool-detail { display: none; border-top: 1px solid #e0e7ff; }
+        .mcp-tool-call.open .mcp-tool-detail { display: block; }
+        .mcp-tool-args, .mcp-tool-result {
+            padding: 8px 10px; font-size: 11px; font-family: monospace;
+            white-space: pre-wrap; word-break: break-word; line-height: 1.5;
+        }
+        .mcp-tool-args { background: #fefce8; color: #854d0e; border-bottom: 1px solid #e0e7ff; }
+        .mcp-tool-args-label, .mcp-tool-result-label {
+            font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+            margin-bottom: 4px; display: block;
+        }
+        .mcp-tool-args-label { color: #a16207; }
+        .mcp-tool-result-label { color: #047857; }
+        .mcp-tool-result { background: #ecfdf5; color: #065f46; }
+        .mcp-tool-result-preview { max-height: 200px; overflow-y: auto; white-space: pre-wrap; word-break: break-word; }
+        .mcp-tool-result-full { display: none; max-height: 500px; overflow-y: auto; white-space: pre-wrap; word-break: break-word; }
+        .mcp-tool-result.expanded .mcp-tool-result-preview { display: none; }
+        .mcp-tool-result.expanded .mcp-tool-result-full { display: block; }
+        .mcp-expand-btn { cursor: pointer; color: #047857; font-size: 11px; margin-top: 4px; text-decoration: underline; user-select: none; display: inline-block; }
+        .mcp-raw-btn {
+            cursor: pointer; font-size: 11px; color: #6366f1; background: #eef2ff; border: 1px solid #c7d2fe;
+            border-radius: 4px; padding: 3px 8px; margin-left: auto; user-select: none;
+        }
+        .mcp-raw-btn:hover { background: #e0e7ff; }
+        .mcp-raw-response {
+            display: none; background: #1e1b4b; color: #e0e7ff; border-radius: 6px;
+            padding: 10px 12px; font-size: 11px; font-family: monospace;
+            white-space: pre-wrap; word-break: break-word; line-height: 1.5;
+            max-height: 400px; overflow-y: auto;
+        }
+        .mcp-raw-response.open { display: block; }
+        .mcp-iter-response {
+            background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px;
+            padding: 8px 12px; font-size: 12px; color: #166534; line-height: 1.6;
+            white-space: pre-wrap; word-break: break-word;
+        }
+        .mcp-iter-response-label {
+            font-size: 10px; font-weight: 700; color: #15803d; text-transform: uppercase;
+            letter-spacing: 0.06em; margin-bottom: 4px;
+        }
+
+        /* WhatsApp card */
+        .wa-btn { background: #25D366; color: #fff; border: none; padding: 9px 20px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
+        .wa-btn:hover { background: #1ebe5d; }
+        .wa-btn:disabled { background: #94a3b8; cursor: default; }
+        #wa-qr-wrap { display: none; flex-direction: column; align-items: center; gap: 12px; margin-top: 16px; }
+        #wa-qr-img { width: 220px; height: 220px; border: 2px solid #e2e8f0; border-radius: 10px; }
+        .wa-progress { margin-top: 14px; }
+        .wa-progress-bar-wrap { background: #e2e8f0; border-radius: 6px; height: 8px; margin-top: 6px; overflow: hidden; }
+        .wa-progress-bar { background: #25D366; height: 100%; border-radius: 6px; transition: width 0.4s; width: 0%; }
+        @keyframes wa-pulse { 0%,100% { opacity:1; } 50% { opacity:0.45; } }
+        .wa-status-msg { font-size: 13px; color: #475569; margin-top: 8px; }
+        .wa-installing { margin-top: 12px; }
+        .wa-installing .wa-install-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .wa-installing .wa-install-log {
+            font-size: 12px;
+            color: #64748b;
+            font-family: monospace;
+            margin-top: 6px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .wa-installing .wa-install-spinner {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 2px solid #e2e8f0;
+            border-top-color: #3b82f6;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+        }
+        .wa-done { color: #16a34a; font-weight: 600; font-size: 14px; margin-top: 10px; }
+        .wa-error { color: #dc2626; font-size: 13px; margin-top: 10px; }
+
+        /* Setup wizard */
+        #setup-overlay {
+            position: fixed; inset: 0; z-index: 1000;
+            background: rgba(0,0,0,0.6);
+            display: flex; align-items: center; justify-content: center;
+        }
+        #setup-overlay.hidden { display: none; }
+        .wizard-box {
+            background: #fff; border-radius: 16px;
+            padding: 36px 40px; max-width: 520px; width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .wizard-box h1 { font-size: 22px; margin-bottom: 6px; color: #1a1a2e; }
+        .wizard-box .tagline { font-size: 14px; color: #64748b; margin-bottom: 24px; }
+        .wizard-section { margin-bottom: 20px; }
+        .wizard-section h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+        .wizard-section p { font-size: 13px; color: #64748b; margin-bottom: 8px; }
+        .wizard-actions { margin-top: 20px; display: flex; justify-content: flex-end; }
+        .wizard-error {
+            background: #fef2f2; border: 1px solid #fca5a5;
+            color: #dc2626; font-size: 13px; padding: 8px 12px;
+            border-radius: 6px; margin-top: 12px; display: none;
+        }
+        .status-pill {
+            font-size: 11px; padding: 2px 8px; border-radius: 10px;
+            background: #e2e8f0; color: #64748b;
+        }
+        .status-pill.ok { background: #dcfce7; color: #16a34a; }
+        .status-pill.err { background: #fef2f2; color: #dc2626; }
+        .input-with-btn { display: flex; gap: 8px; }
+        .input-with-btn input {
+            flex: 1; padding: 9px 12px; border: 1px solid #cbd5e1;
+            border-radius: 8px; font-size: 13px;
+        }
+        .btn-ghost {
+            padding: 8px 14px; border: 1px solid #cbd5e1; background: #fff;
+            border-radius: 8px; font-size: 13px; cursor: pointer; white-space: nowrap;
+        }
+        .btn-ghost:hover { border-color: #3b82f6; color: #3b82f6; }
+        .save-feedback { font-size: 13px; margin-top: 8px; }
+        .save-feedback.ok { color: #16a34a; }
+        .save-feedback.err { color: #dc2626; }
+        .field-label { font-size: 13px; font-weight: 500; color: #374151; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+
+        /* Folder picker dialog */
+        .fp-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.35); z-index: 1000; display: flex; align-items: center; justify-content: center; }
+        .fp-dialog { background: #fff; border-radius: 8px; width: 480px; max-width: 90vw; box-shadow: 0 8px 32px rgba(0,0,0,.2); display: flex; flex-direction: column; max-height: 80vh; }
+        .fp-titlebar { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px 10px; border-bottom: 1px solid #e2e8f0; }
+        .fp-titlebar h3 { margin: 0; font-size: 15px; font-weight: 600; color: #1e293b; }
+        .fp-close-btn { background: none; border: none; font-size: 18px; cursor: pointer; color: #94a3b8; padding: 0 4px; }
+        .fp-close-btn:hover { color: #1e293b; }
+        .fp-tree-wrap { flex: 1; overflow-y: auto; padding: 8px 0; min-height: 200px; max-height: 50vh; border-bottom: 1px solid #e2e8f0; }
+        .fp-node { user-select: none; }
+        .fp-row { display: flex; align-items: center; padding: 3px 8px; cursor: pointer; font-size: 13px; color: #1e293b; white-space: nowrap; }
+        .fp-row:hover { background: #f1f5f9; }
+        .fp-row.selected { background: #dbeafe; }
+        .fp-toggle { width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #94a3b8; flex-shrink: 0; cursor: pointer; }
+        .fp-toggle:hover { color: #1e293b; }
+        .fp-toggle.empty { visibility: hidden; }
+        .fp-icon { margin-right: 5px; font-size: 15px; flex-shrink: 0; }
+        .fp-children { display: none; }
+        .fp-children.open { display: block; }
+        .fp-spinner { font-size: 11px; color: #94a3b8; padding-left: 4px; }
+        .fp-bottom { padding: 10px 16px; display: flex; align-items: center; gap: 10px; }
+        .fp-bottom label { font-size: 12px; color: #64748b; white-space: nowrap; }
+        .fp-bottom input { flex: 1; font-size: 13px; padding: 5px 8px; border: 1px solid #e2e8f0; border-radius: 4px; color: #374151; background: #f8fafc; }
+        .fp-buttons { display: flex; gap: 8px; padding: 0 16px 14px; justify-content: flex-end; }
+        .fp-buttons .btn { font-size: 13px; padding: 6px 18px; }
+    </style>
+</head>
+<body>
+    <div id="setup-overlay" class="hidden">
+      <div class="wizard-box">
+        <h1>Welcome to Perihan</h1>
+        <p class="tagline">Configure at least one AI provider to get started. You can use both.</p>
+
+        <div class="wizard-section">
+          <h3>Google Gemini <span class="status-pill" id="wiz-gemini-pill">Cloud API</span></h3>
+          <p>Paste your Gemini API key. <a href="https://aistudio.google.com/app/apikey" target="_blank">Get one free &rarr;</a></p>
+          <div class="input-with-btn">
+            <input type="password" id="wiz-gemini-key" placeholder="AIza...">
+            <button class="btn-ghost" onclick="toggleViz('wiz-gemini-key',this)">Show</button>
+          </div>
+        </div>
+
+        <div class="wizard-section">
+          <h3>Ollama (local) <span class="status-pill" id="wiz-ollama-pill">Checking...</span></h3>
+          <p>Runs models locally, no API key needed. <a href="https://ollama.com" target="_blank">Download &rarr;</a></p>
+          <div class="input-with-btn">
+            <input type="text" id="wiz-ollama-host" value="http://localhost:11434">
+            <button class="btn-ghost" onclick="recheckOllama()">Check</button>
+          </div>
+        </div>
+
+        <div class="wizard-error" id="wiz-error">Please configure at least one AI provider.</div>
+        <div class="wizard-actions">
+          <button class="btn btn-primary" id="wiz-save-btn" onclick="wizardSave()">Save &amp; Start</button>
+        </div>
+      </div>
+    </div>
+
+    <header>
+        <h1>Perihan</h1>
+        <div class="model-badge" id="header-model">Loading...</div>
+    </header>
+
+    <div class="tabs">
+        <div class="tab active" data-tab="chat">Chat</div>
+        <div class="tab" data-tab="index">Index</div>
+        <div class="tab" data-tab="model">Model</div>
+        <div class="tab" data-tab="logs">Logs</div>
+    </div>
+
+    <!-- Chat Tab -->
+    <div id="chat" class="tab-content active">
+        <div id="chat-panel">
+            <div class="chat-mode-bar">
+                <label class="toggle-label">
+                    <input type="checkbox" id="deep-think" checked>
+                    <span class="toggle-track"></span>
+                    <span style="font-size:13px; color:#64748b;">Deep Think</span>
+                </label>
+            </div>
+            <div class="messages" id="messages"></div>
+            <div class="chat-input-bar">
+                <input type="text" id="question" placeholder="Ask a question about your documents..." autofocus>
+                <button id="send-btn" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Index Tab -->
+    <div id="index" class="tab-content">
+        <div class="index-layout">
+            <nav class="index-sidebar">
+                <div class="sidebar-item active" data-section="idx-folder" onclick="switchIndexSection(this)">
+                    <span class="sidebar-icon">&#128193;</span> Local Folder
+                </div>
+                <div class="sidebar-item" data-section="idx-gdrive" onclick="switchIndexSection(this)">
+                    <span class="sidebar-icon">&#9729;</span> Google Drive
+                </div>
+                <div class="sidebar-item" data-section="idx-gmail" onclick="switchIndexSection(this)">
+                    <span class="sidebar-icon">&#9993;</span> Gmail
+                </div>
+                <div class="sidebar-item" data-section="idx-whatsapp" onclick="switchIndexSection(this)">
+                    <span class="sidebar-icon">&#128172;</span> WhatsApp
+                </div>
+                <div class="sidebar-sep"></div>
+                <div class="sidebar-item" data-section="idx-documents" onclick="switchIndexSection(this)">
+                    <span class="sidebar-icon">&#128202;</span> Stats
+                </div>
+                <div class="sidebar-sep"></div>
+                <div class="sidebar-item" data-section="idx-reset" onclick="switchIndexSection(this)" style="color:#dc2626;">
+                    <span class="sidebar-icon">&#128465;</span> Reset
+                </div>
+            </nav>
+
+            <!-- Local Folder -->
+            <div id="idx-folder" class="index-section active">
+                <div class="card">
+                    <h2>Index a Folder</h2>
+                    <p>Recursively scan and index all documents (txt, md, pdf, docx, xml) from a local folder into the vector database.</p>
+                    <div class="form-row">
+                        <input type="text" id="index-folder-path" placeholder="e.g. C:\Users\documents\company">
+                        <button class="btn" onclick="openFolderPicker()" title="Browse folders" style="padding:6px 12px;">&#128193;</button>
+                        <button class="btn btn-primary" id="index-btn" onclick="indexFolder()">Index</button>
+                    </div>
+                    <div class="result-box" id="index-result"></div>
+                </div>
+            </div>
+
+            <!-- Folder picker dialog (rendered once, toggled) -->
+            <div id="fp-overlay" class="fp-overlay" style="display:none;" onclick="if(event.target===this)closeFolderPicker()">
+                <div class="fp-dialog">
+                    <div class="fp-titlebar">
+                        <h3>Browse For Folder</h3>
+                        <button class="fp-close-btn" onclick="closeFolderPicker()">&#10005;</button>
+                    </div>
+                    <div class="fp-tree-wrap" id="fp-tree"></div>
+                    <div class="fp-bottom">
+                        <label>Folder:</label>
+                        <input type="text" id="fp-selected-path" readonly>
+                    </div>
+                    <div class="fp-buttons">
+                        <button class="btn" onclick="closeFolderPicker()">Cancel</button>
+                        <button class="btn btn-primary" id="fp-ok-btn" onclick="fpConfirm()" disabled>OK</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Drive -->
+            <div id="idx-gdrive" class="index-section">
+                <div class="card">
+                    <div style="display:flex;align-items:center;justify-content:space-between;">
+                        <h2>Index Google Drive</h2>
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            <div id="idx-drive-dot" style="width:8px;height:8px;border-radius:50%;background:#e2e8f0;"></div>
+                            <span id="drive-status-text" style="font-size:12px;color:#94a3b8;">Checking...</span>
+                            <button class="btn btn-primary" id="drive-connect-btn" onclick="connectDrive()" style="padding:3px 10px;font-size:12px;">Connect</button>
+                        </div>
+                    </div>
+                    <div class="result-box" id="drive-result"></div>
+                    <p>Download summaries of all Google Drive files into the local vector database.</p>
+                    <div class="form-row">
+                        <input type="text" id="gdrive-folder-id" placeholder="Folder ID (leave empty for all of Drive)">
+                        <button class="btn btn-primary" id="gdrive-index-btn" onclick="indexGdrive()">Index Drive</button>
+                    </div>
+                    <div class="result-box" id="gdrive-index-result"></div>
+                </div>
+            </div>
+
+            <!-- Gmail -->
+            <div id="idx-gmail" class="index-section">
+                <div class="card">
+                    <div style="display:flex;align-items:center;justify-content:space-between;">
+                        <h2>Index Gmail</h2>
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            <div id="idx-gmail-dot" style="width:8px;height:8px;border-radius:50%;background:#e2e8f0;"></div>
+                            <span id="gmail-status-text" style="font-size:12px;color:#94a3b8;">Checking...</span>
+                            <button class="btn btn-primary" id="gmail-connect-btn" onclick="connectDrive('gmail-result')" style="padding:3px 10px;font-size:12px;">Connect</button>
+                        </div>
+                    </div>
+                    <div class="result-box" id="gmail-result"></div>
+                    <p>Download summaries of your Gmail threads into the local vector database.</p>
+                    <div class="form-row">
+                        <input type="number" id="gmail-max-threads" placeholder="Max threads (default 500)" min="1" max="10000" style="width:220px;">
+                        <button class="btn btn-primary" id="gmail-index-btn" onclick="indexGmail()">Index Gmail</button>
+                    </div>
+                    <div class="result-box" id="gmail-index-result"></div>
+                </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div id="idx-whatsapp" class="index-section">
+                <div class="card">
+                    <h2>Index WhatsApp</h2>
+                    <p>Import your full WhatsApp message history into the vector database. Requires <a href="https://nodejs.org" target="_blank">Node.js</a> installed on this machine.</p>
+                    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+                        <button class="wa-btn" id="wa-connect-btn" onclick="startWhatsApp()">Connect WhatsApp</button>
+                        <button class="btn" id="wa-relogin-btn" onclick="reloginWhatsApp()" style="font-size:13px;padding:6px 12px;" title="Clear saved session and scan QR again">Force Re-login</button>
+                    </div>
+                    <div id="wa-qr-wrap">
+                        <p style="font-size:13px;color:#475569;text-align:center;">Scan this QR code with WhatsApp<br><span style="font-size:12px;color:#94a3b8;">Phone → Linked Devices → Link a Device</span></p>
+                        <img id="wa-qr-img" src="" alt="QR Code">
+                    </div>
+                    <div class="wa-status-msg" id="wa-status-msg"></div>
+                    <div class="wa-installing" id="wa-installing" style="display:none;">
+                        <div class="wa-install-title"><span class="wa-install-spinner"></span> Installing dependencies... <span id="wa-install-elapsed" style="color:#94a3b8;font-weight:400;"></span></div>
+                        <div class="wa-install-log" id="wa-install-log"></div>
+                    </div>
+                    <div class="wa-progress" id="wa-progress" style="display:none;">
+                        <div class="wa-progress-bar-wrap"><div class="wa-progress-bar" id="wa-progress-bar"></div></div>
+                        <div style="font-size:12px;color:#64748b;margin-top:4px;" id="wa-progress-label"></div>
+                    </div>
+                    <div class="wa-done" id="wa-done" style="display:none;"></div>
+                    <div class="wa-error" id="wa-error" style="display:none;"></div>
+                </div>
+            </div>
+
+            <!-- Indexed Documents -->
+            <div id="idx-documents" class="index-section">
+                <div class="card">
+                    <h2>Stats</h2>
+                    <div class="stat-grid" id="doc-stats-grid" style="margin-bottom:12px;">
+                        <div class="stat-card"><div class="value" id="doc-stat-chunks">-</div><div class="label">Chunks</div></div>
+                        <div class="stat-card"><div class="value" id="doc-stat-files">-</div><div class="label">Files</div></div>
+                        <div class="stat-card"><div class="value" id="doc-stat-folders">-</div><div class="label">Folders</div></div>
+                        <div class="stat-card"><div class="value" id="doc-stat-disk">-</div><div class="label">Disk (KB)</div></div>
+                    </div>
+                    <div class="result-box visible" id="doc-list" style="display:block;">Loading...</div>
+                </div>
+            </div>
+
+            <!-- Reset -->
+            <div id="idx-reset" class="index-section">
+                <div class="card">
+                    <h2>Reset Database</h2>
+                    <p>Delete all indexed documents and reset the vector database. This cannot be undone.</p>
+                    <button class="btn btn-danger" onclick="resetDB()">Reset Vector Database</button>
+                    <div class="result-box" id="reset-result"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Tab -->
+    <div id="model" class="tab-content">
+        <div class="panel">
+            <div class="card">
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <h2>Ollama</h2>
+                    <span class="status-pill" id="settings-ollama-pill">Unknown</span>
+                </div>
+                <div class="field-label">Host</div>
+                <div class="input-with-btn" style="margin-bottom:8px;">
+                    <input type="text" id="settings-ollama-host" placeholder="http://localhost:11434">
+                    <button class="btn btn-primary" onclick="saveApiKeys()">Save</button>
+                </div>
+                <div class="save-feedback" id="ollama-feedback"></div>
+                <div class="model-list" id="ollama-model-list">Loading...</div>
+            </div>
+
+            <div class="card">
+                <div style="display:flex;align-items:center;justify-content:space-between;">
+                    <h2>Gemini</h2>
+                    <span class="status-pill" id="settings-gemini-pill">Unknown</span>
+                </div>
+                <div class="field-label">API Key</div>
+                <div class="input-with-btn" style="margin-bottom:8px;">
+                    <input type="password" id="settings-gemini-key" placeholder="Leave blank to keep existing key">
+                    <button class="btn-ghost" onclick="toggleViz('settings-gemini-key',this)">Show</button>
+                    <button class="btn btn-primary" onclick="saveApiKeys()">Save</button>
+                </div>
+                <div class="save-feedback" id="gemini-feedback"></div>
+                <div class="model-list" id="gemini-model-list">Loading...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logs Tab -->
+    <div id="logs" class="tab-content">
+        <div id="logs-layout">
+            <div id="logs-left">
+                <div id="logs-toolbar">
+                    <span id="logs-count" style="font-size:13px;color:#94a3b8;"></span>
+                    <button class="btn btn-primary" onclick="loadLogs()">Refresh</button>
+                    <button class="btn" style="background:#fee2e2;color:#dc2626;border:none;" onclick="clearLogs()">Clear logs</button>
+                </div>
+                <div id="log-list"></div>
+            </div>
+            <div id="logs-right">
+                <div id="log-detail-empty">Select a log entry to view details.</div>
+                <div id="log-detail-content" style="display:none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API = '';
+
+        // --- Tab navigation ---
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+
+                if (tab.dataset.tab === 'model') { loadStats(); loadModels(); loadApiKeys(); }
+                if (tab.dataset.tab === 'logs') { loadLogs(); }
+            });
+        });
+
+        // --- Index sidebar navigation ---
+        function switchIndexSection(el) {
+            document.querySelectorAll('.index-sidebar .sidebar-item').forEach(i => i.classList.remove('active'));
+            document.querySelectorAll('.index-section').forEach(s => s.classList.remove('active'));
+            el.classList.add('active');
+            document.getElementById(el.dataset.section).classList.add('active');
+        }
+
+        // (no mode toggle — single unified chat endpoint)
+
+
+        // Enter key to send
+        document.getElementById('question').addEventListener('keydown', e => {
+            if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+        });
+
+        // --- Chat ---
+        async function sendMessage() {
+            const input = document.getElementById('question');
+            const q = input.value.trim();
+            if (!q) return;
+
+            const messagesDiv = document.getElementById('messages');
+            const sendBtn = document.getElementById('send-btn');
+
+            // Add user message
+            const userMsg = document.createElement('div');
+            userMsg.className = 'message user';
+            userMsg.textContent = q;
+            messagesDiv.appendChild(userMsg);
+            input.value = '';
+            sendBtn.disabled = true;
+
+            // Loading indicator
+            const loading = document.createElement('div');
+            loading.className = 'loading-msg';
+            loading.innerHTML = '<span class="spinner"></span>Thinking...';
+            messagesDiv.appendChild(loading);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+            try {
+                let data;
+                {
+                    const deepThink = document.getElementById('deep-think').checked;
+                    const params = { question: q };
+                    if (deepThink) params.deep_think = 'true';
+                    const resp = await fetch(`${API}/chat?` + new URLSearchParams(params), { method: 'POST' });
+                    if (!resp.ok) {
+                        let detail = `HTTP ${resp.status}`;
+                        try { const body = await resp.json(); if (body.detail) detail = body.detail; } catch {}
+                        throw new Error(detail);
+                    }
+                    data = await resp.json();
+                }
+
+                loading.remove();
+
+                const assistantMsg = document.createElement('div');
+                assistantMsg.className = 'message assistant';
+
+                let html = escapeHtml(data.reply);
+
+                // Deep Think badge
+                if (data.deep_think_used) {
+                    html += '<span class="deep-think-badge">⚡ Deep Think</span>';
+                }
+
+                // Sources (RAG)
+                if (data.sources && data.sources.length > 0) {
+                    html += '<div class="sources"><strong>Sources:</strong> ';
+                    html += data.sources.map(s => `<span>${escapeHtml(s.title)}</span>`).join('');
+                    html += '</div>';
+                }
+
+                // Tool calls (Deep Think)
+                if (data.tool_calls && data.tool_calls.length > 0) {
+                    html += '<details class="tool-calls"><summary>' + data.tool_calls.length + ' tool call(s)</summary>';
+                    data.tool_calls.forEach(tc => {
+                        let label = `<strong>${escapeHtml(tc.tool)}</strong>(${escapeHtml(JSON.stringify(tc.args))})`;
+                        if (tc.file_name) {
+                            label += ` → <em>${escapeHtml(tc.file_name)}</em>`;
+                        } else if (tc.file_count !== undefined) {
+                            label += ` → ${tc.file_count} file(s)`;
+                        }
+                        html += `<div>${label}</div>`;
+                    });
+                    html += '</details>';
+                }
+
+                assistantMsg.innerHTML = html;
+                messagesDiv.appendChild(assistantMsg);
+            } catch (err) {
+                loading.remove();
+                const errMsg = document.createElement('div');
+                errMsg.className = 'message assistant';
+                errMsg.style.borderColor = '#fca5a5';
+                let msg = err.message;
+                if (msg === 'Failed to fetch' || msg === 'Load failed' || msg === 'NetworkError when attempting to fetch resource') {
+                    msg = 'Cannot reach server. Make sure it is running:\n  uvicorn main:app --reload';
+                } else if (msg.startsWith('HTTP 5')) {
+                    msg = 'Server error (' + msg + '). Check the uvicorn terminal for a traceback.';
+                }
+                errMsg.textContent = msg;
+                messagesDiv.appendChild(errMsg);
+            }
+
+            sendBtn.disabled = false;
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            input.focus();
+        }
+
+        // --- Index ---
+        async function indexFolder() {
+            const path = document.getElementById('index-folder-path').value.trim();
+            if (!path) return;
+            const btn = document.getElementById('index-btn');
+            const result = document.getElementById('index-result');
+            btn.disabled = true;
+            btn.textContent = 'Indexing...';
+            result.className = 'result-box visible';
+            try {
+                const resp = await fetch(`${API}/index-folder?` + new URLSearchParams({ folder_path: path }), { method: 'POST' });
+                if (!resp.ok) { const e = await resp.json().catch(() => null); throw new Error(e?.detail || `HTTP ${resp.status}`); }
+                await streamIndexProgress(resp, result);
+            } catch (err) {
+                result.textContent = 'Error: ' + err.message;
+            }
+            btn.disabled = false;
+            btn.textContent = 'Index';
+        }
+
+        async function indexGdrive() {
+            const folderId = document.getElementById('gdrive-folder-id').value.trim();
+            const btn = document.getElementById('gdrive-index-btn');
+            const result = document.getElementById('gdrive-index-result');
+            btn.disabled = true;
+            btn.textContent = 'Indexing...';
+            result.className = 'result-box visible';
+            try {
+                const params = folderId ? { folder_id: folderId } : {};
+                const resp = await fetch(`${API}/index-gdrive?` + new URLSearchParams(params), { method: 'POST' });
+                if (!resp.ok) { const e = await resp.json().catch(() => null); throw new Error(e?.detail || `HTTP ${resp.status}`); }
+                await streamIndexProgress(resp, result);
+            } catch (err) {
+                result.textContent = 'Error: ' + err.message;
+            }
+            btn.disabled = false;
+            btn.textContent = 'Index Drive';
+        }
+
+        async function indexGmail() {
+            const maxThreads = document.getElementById('gmail-max-threads').value.trim();
+            const btn = document.getElementById('gmail-index-btn');
+            const result = document.getElementById('gmail-index-result');
+            btn.disabled = true;
+            btn.textContent = 'Indexing...';
+            result.className = 'result-box visible';
+            try {
+                const params = maxThreads ? { max_threads: maxThreads } : {};
+                const resp = await fetch(`${API}/index-gmail?` + new URLSearchParams(params), { method: 'POST' });
+                if (!resp.ok) { const e = await resp.json().catch(() => null); throw new Error(e?.detail || `HTTP ${resp.status}`); }
+                await streamIndexProgress(resp, result);
+            } catch (err) {
+                result.textContent = 'Error: ' + err.message;
+            }
+            btn.disabled = false;
+            btn.textContent = 'Index Gmail';
+        }
+
+        async function streamIndexProgress(resp, container) {
+            container.innerHTML = `
+                <div class="prog-label">
+                    <span class="pg-count">Starting...</span>
+                    <span class="pg-pct"></span>
+                </div>
+                <div class="prog-wrap"><div class="prog-bar"></div></div>
+                <div class="prog-current-file"></div>
+                <div class="prog-step"></div>
+                <div class="prog-status"></div>`;
+
+            const bar = container.querySelector('.prog-bar');
+            const countEl = container.querySelector('.pg-count');
+            const pctEl = container.querySelector('.pg-pct');
+            const currentFileEl = container.querySelector('.prog-current-file');
+            const stepEl = container.querySelector('.prog-step');
+            const statusEl = container.querySelector('.prog-status');
+            let total = 0;
+            const startTime = Date.now();
+            const skippedUnchanged = [];
+            const skippedEmpty = [];
+            const fileErrors = [];
+            const indexedFiles = [];
+
+            function elapsed() {
+                const s = Math.floor((Date.now() - startTime) / 1000);
+                if (s < 60) return s + 's';
+                return Math.floor(s / 60) + 'm ' + (s % 60) + 's';
+            }
+
+            function setProgress(done, tot) {
+                if (tot > 0) {
+                    const pct = Math.round((done / tot) * 100);
+                    if (bar) bar.style.width = pct + '%';
+                    if (countEl) countEl.textContent = `${done} / ${tot} files`;
+                    if (pctEl) pctEl.textContent = pct + '%';
+                }
+            }
+
+            function setCurrentFile(name, step) {
+                if (currentFileEl) currentFileEl.textContent = name || '';
+                if (stepEl) {
+                    const stepLabels = {
+                        chunking: 'Chunking',
+                        summarizing: 'Summarizing (LLM)',
+                        reading: 'Reading',
+                        'listing files': 'Listing files',
+                        'listing threads': 'Listing threads'
+                    };
+                    const label = stepLabels[step] || step || '';
+                    stepEl.textContent = label;
+                    stepEl.className = 'prog-step';
+                    if (step === 'chunking') stepEl.classList.add('chunking');
+                    else if (step === 'summarizing') stepEl.classList.add('summarizing');
+                    else if (step === 'reading') stepEl.classList.add('reading');
+                    else if (step) stepEl.classList.add('listing');
+                    stepEl.style.display = label ? '' : 'none';
+                }
+                if (statusEl) statusEl.textContent = elapsed();
+            }
+
+            const reader = resp.body.getReader();
+            const decoder = new TextDecoder();
+            let buffer = '';
+
+            while (true) {
+                const { done, value } = await reader.read();
+                if (done) break;
+                buffer += decoder.decode(value, { stream: true });
+                const parts = buffer.split('\n\n');
+                buffer = parts.pop() || '';
+
+                for (const part of parts) {
+                    if (!part.startsWith('data: ')) continue;
+                    let event;
+                    try { event = JSON.parse(part.slice(6)); } catch { continue; }
+
+                    if (event.type === 'error') {
+                        container.textContent = 'Error: ' + event.message;
+                        return;
+                    } else if (event.type === 'start') {
+                        total = event.total;
+                        setProgress(0, total);
+                        if (countEl) countEl.textContent = `0 / ${total} files`;
+                    } else if (event.type === 'progress') {
+                        setProgress(event.done, total);
+                        setCurrentFile(event.file, event.step);
+                    } else if (event.type === 'file_done') {
+                        const extra = event.chunks !== undefined ? ` (${event.chunks} chunks)` : '';
+                        setProgress(event.done, total);
+                        setCurrentFile('', '');
+                        indexedFiles.push(event.file + extra);
+                    } else if (event.type === 'skip') {
+                        setProgress(event.done, total);
+                        const reason = event.reason || 'empty';
+                        if (reason === 'unchanged' || reason === 'already indexed') skippedUnchanged.push(event.file);
+                        else skippedEmpty.push(event.file);
+                    } else if (event.type === 'file_error') {
+                        setProgress(event.done, total);
+                        fileErrors.push(event.file + ': ' + event.error);
+                    } else if (event.type === 'complete') {
+                        if (bar) { bar.style.width = '100%'; bar.style.background = '#22c55e'; }
+                        if (currentFileEl) currentFileEl.textContent = '';
+                        if (stepEl) stepEl.style.display = 'none';
+                        const summaryParts = [`${event.indexed} indexed`];
+                        if (skippedUnchanged.length) summaryParts.push(`${skippedUnchanged.length} unchanged`);
+                        if (skippedEmpty.length) summaryParts.push(`${skippedEmpty.length} skipped`);
+                        if (fileErrors.length) summaryParts.push(`${fileErrors.length} error(s)`);
+                        if (statusEl) statusEl.textContent = `Completed in ${elapsed()}`;
+                        if (countEl) countEl.textContent = `Done — ${summaryParts.join(' | ')}`;
+                        if (pctEl) pctEl.textContent = '100%';
+
+                        // Build expandable detail sections
+                        const detailSections = [];
+                        if (indexedFiles.length) {
+                            detailSections.push({ label: `${indexedFiles.length} indexed file(s)`, items: indexedFiles });
+                        }
+                        if (skippedUnchanged.length) {
+                            detailSections.push({ label: `${skippedUnchanged.length} unchanged file(s)`, items: skippedUnchanged });
+                        }
+                        if (skippedEmpty.length) {
+                            detailSections.push({ label: `${skippedEmpty.length} empty file(s)`, items: skippedEmpty });
+                        }
+                        if (fileErrors.length) {
+                            detailSections.push({ label: `${fileErrors.length} error(s)`, items: fileErrors });
+                        }
+                        if (detailSections.length) {
+                            const summaryDiv = document.createElement('div');
+                            summaryDiv.className = 'prog-summary';
+                            for (const section of detailSections) {
+                                const row = document.createElement('div');
+                                row.style.marginBottom = '4px';
+                                const toggle = document.createElement('span');
+                                toggle.className = 'summary-toggle';
+                                toggle.textContent = `Show ${section.label}`;
+                                const details = document.createElement('div');
+                                details.className = 'summary-details';
+                                details.innerHTML = section.items.map(f => '<div>' + f.replace(/</g, '&lt;') + '</div>').join('');
+                                toggle.onclick = function() {
+                                    const open = details.classList.toggle('open');
+                                    toggle.textContent = (open ? 'Hide ' : 'Show ') + section.label;
+                                };
+                                row.appendChild(toggle);
+                                row.appendChild(details);
+                                summaryDiv.appendChild(row);
+                            }
+                            container.appendChild(summaryDiv);
+                        }
+                    }
+                }
+            }
+        }
+
+        async function toggleChunks(rowId, titleEnc, folderEnc) {
+            const row = document.getElementById(rowId);
+            if (row.style.display !== 'none') {
+                row.style.display = 'none';
+                return;
+            }
+            const cell = row.querySelector('td');
+            cell.innerHTML = '<div style="padding:8px 10px;color:#94a3b8;font-size:12px;">Loading chunks...</div>';
+            row.style.display = '';
+            try {
+                const params = new URLSearchParams({ title: decodeURIComponent(titleEnc), folder: decodeURIComponent(folderEnc) });
+                const resp = await fetch(`${API}/documents/chunks?` + params);
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                const data = await resp.json();
+                let html = '<div style="padding:4px 10px 8px;">';
+                data.chunks.forEach((c, i) => {
+                    const typeLabel = c.chunk_type ? `<span style="background:#e0f2fe;color:#0369a1;padding:1px 6px;border-radius:4px;font-size:10px;margin-left:6px;">${escapeHtml(c.chunk_type)}</span>` : '';
+                    html += `<div style="margin:4px 0;padding:8px 10px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;font-size:11px;line-height:1.5;">`;
+                    html += `<div style="font-size:10px;color:#94a3b8;margin-bottom:4px;">Chunk ${i + 1}${typeLabel}</div>`;
+                    html += `<div style="color:#334155;white-space:pre-wrap;max-height:200px;overflow-y:auto;">${escapeHtml(c.content)}</div>`;
+                    html += `</div>`;
+                });
+                html += '</div>';
+                cell.innerHTML = html;
+            } catch (err) {
+                cell.innerHTML = `<div style="padding:8px 10px;color:#dc2626;font-size:12px;">Error: ${err.message}</div>`;
+            }
+        }
+
+        async function loadDocuments() {
+            loadStats();
+            const el = document.getElementById('doc-list');
+            el.textContent = 'Loading...';
+            try {
+                const resp = await fetch(`${API}/documents`);
+                const data = await resp.json();
+                if (data.count === 0) {
+                    el.textContent = 'No documents indexed yet.';
+                } else {
+                    // Group by source, then by folder, then by file
+                    const bySource = {};
+                    data.documents.forEach(d => {
+                        const src = d.source || 'local';
+                        const folder = d.folder || '';
+                        const key = folder + '/' + d.title;
+                        if (!bySource[src]) bySource[src] = {};
+                        if (!bySource[src][key]) bySource[src][key] = { title: d.title, folder: folder, chunks: 0 };
+                        bySource[src][key].chunks++;
+                    });
+
+                    const sourceLabels = { local: 'Local Folder', gdrive: 'Google Drive', gmail: 'Gmail', whatsapp: 'WhatsApp' };
+                    const sourceIcons = { local: '\u{1F4C1}', gdrive: '\u2601', gmail: '\u2709', whatsapp: '\u{1F4AC}' };
+
+                    let html = '';
+
+                    Object.entries(bySource).forEach(([src, files]) => {
+                        const fileCount = Object.keys(files).length;
+                        const chunkCount = Object.values(files).reduce((s, f) => s + f.chunks, 0);
+                        const label = sourceLabels[src] || src;
+                        const icon = sourceIcons[src] || '';
+                        const id = 'doc-src-' + src;
+
+                        html += `<div style="margin-bottom:8px;">`;
+                        html += `<div onclick="var d=document.getElementById('${id}');d.style.display=d.style.display==='none'?'block':'none'" style="cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;">`;
+                        html += `<span style="font-size:16px;">${icon}</span>`;
+                        html += `<span style="font-weight:600;font-size:14px;color:#1e293b;">${label}</span>`;
+                        html += `<span style="font-size:12px;color:#94a3b8;margin-left:auto;">${fileCount} files, ${chunkCount} chunks</span>`;
+                        html += `</div>`;
+                        html += `<div id="${id}" style="display:none;margin-top:4px;border:1px solid #e2e8f0;border-radius:6px;overflow:hidden;">`;
+                        html += `<table style="width:100%;border-collapse:collapse;font-size:12px;">`;
+                        html += `<thead><tr style="background:#f1f5f9;text-align:left;"><th style="padding:6px 10px;color:#64748b;font-weight:600;">File</th><th style="padding:6px 10px;color:#64748b;font-weight:600;">Path</th><th style="padding:6px 10px;color:#64748b;font-weight:600;text-align:right;">Chunks</th></tr></thead>`;
+                        html += `<tbody>`;
+                        Object.values(files).sort((a, b) => (a.folder + a.title).localeCompare(b.folder + b.title)).forEach((f, i) => {
+                            const rowId = 'chunks-' + src + '-' + i;
+                            const bg = i % 2 === 0 ? '#fff' : '#f8fafc';
+                            const titleEnc = encodeURIComponent(f.title);
+                            const folderEnc = encodeURIComponent(f.folder);
+                            html += `<tr style="background:${bg};border-top:1px solid #f1f5f9;cursor:pointer;" onclick="toggleChunks('${rowId}','${titleEnc}','${folderEnc}')">`;
+                            html += `<td style="padding:5px 10px;color:#1e293b;white-space:nowrap;">${escapeHtml(f.title)}</td>`;
+                            html += `<td style="padding:5px 10px;color:#94a3b8;word-break:break-all;">${escapeHtml(f.folder)}</td>`;
+                            html += `<td style="padding:5px 10px;color:#64748b;text-align:right;">${f.chunks}</td>`;
+                            html += `</tr>`;
+                            html += `<tr id="${rowId}" style="display:none;"><td colspan="3" style="padding:0;"></td></tr>`;
+                        });
+                        html += `</tbody></table>`;
+                        html += `</div></div>`;
+                    });
+
+                    el.innerHTML = html;
+                }
+            } catch (err) {
+                el.textContent = 'Error: ' + err.message;
+            }
+        }
+
+        async function loadFolders() {
+            const el = document.getElementById('folder-list');
+            el.innerHTML = '<span>Loading...</span>';
+            try {
+                const resp = await fetch(`${API}/folders`);
+                const data = await resp.json();
+                const folders = data.folders;
+                if (Object.keys(folders).length === 0) {
+                    el.innerHTML = '<span>No folders indexed yet.</span>';
+                    return;
+                }
+                // Build nested tree: {name, files, children}
+                const root = {children: {}, files: []};
+                Object.entries(folders).forEach(([folder, files]) => {
+                    const parts = folder.replace(/\//g, '\\').split('\\');
+                    let node = root;
+                    parts.forEach(p => {
+                        if (!node.children[p]) node.children[p] = {children: {}, files: []};
+                        node = node.children[p];
+                    });
+                    node.files = files;
+                });
+                // Count total files recursively
+                function countFiles(node) {
+                    let total = node.files.length;
+                    Object.values(node.children).forEach(c => { total += countFiles(c); });
+                    return total;
+                }
+                // Render tree as nested HTML
+                el.innerHTML = '';
+                el.style.whiteSpace = 'normal';
+                function renderNode(node, name, depth) {
+                    const wrap = document.createElement('div');
+                    wrap.style.marginLeft = (depth > 0 ? 16 : 0) + 'px';
+                    const childKeys = Object.keys(node.children).sort();
+                    const hasContent = childKeys.length > 0 || node.files.length > 0;
+                    const totalFiles = countFiles(node);
+                    // Folder label
+                    const label = document.createElement('div');
+                    label.style.cssText = 'display:flex;align-items:center;gap:6px;padding:5px 4px;cursor:pointer;user-select:none;border-radius:4px;';
+                    label.onmouseenter = () => { label.style.background = '#f1f5f9'; };
+                    label.onmouseleave = () => { label.style.background = 'none'; };
+                    const arrow = document.createElement('span');
+                    arrow.style.cssText = 'font-size:10px;width:14px;flex-shrink:0;display:inline-block;text-align:center;color:#94a3b8;transition:transform 0.15s;';
+                    arrow.textContent = hasContent ? '▶' : '';
+                    const icon = document.createElement('span');
+                    icon.textContent = '📁';
+                    icon.style.fontSize = '14px';
+                    const text = document.createElement('span');
+                    text.style.cssText = 'font-weight:600;font-size:13px;color:#1e293b;';
+                    text.textContent = name;
+                    const count = document.createElement('span');
+                    count.style.cssText = 'font-size:11px;color:#94a3b8;margin-left:2px;';
+                    const directCount = node.files.length;
+                    count.textContent = totalFiles > 0 ? (totalFiles === directCount ? `(${totalFiles})` : `(${totalFiles} total, ${directCount} here)`) : '';
+                    label.append(arrow, icon, text, count);
+                    wrap.appendChild(label);
+                    // Collapsible content (collapsed by default, except depth 0)
+                    const content = document.createElement('div');
+                    const startOpen = depth === 0;
+                    content.style.display = startOpen ? 'block' : 'none';
+                    arrow.style.transform = startOpen ? 'rotate(90deg)' : 'rotate(0deg)';
+                    // Files list
+                    if (node.files.length > 0) {
+                        const fileWrap = document.createElement('div');
+                        fileWrap.style.cssText = 'margin-left:20px;padding:2px 0;';
+                        node.files.forEach(f => {
+                            const fEl = document.createElement('div');
+                            fEl.style.cssText = 'padding:1px 0;font-size:12px;color:#64748b;line-height:1.6;';
+                            fEl.textContent = '📄 ' + f;
+                            fileWrap.appendChild(fEl);
+                        });
+                        content.appendChild(fileWrap);
+                    }
+                    // Child folders
+                    childKeys.forEach(k => { content.appendChild(renderNode(node.children[k], k, depth + 1)); });
+                    wrap.appendChild(content);
+                    // Toggle on click
+                    if (hasContent) {
+                        label.addEventListener('click', () => {
+                            const open = content.style.display !== 'none';
+                            content.style.display = open ? 'none' : 'block';
+                            arrow.style.transform = open ? 'rotate(0deg)' : 'rotate(90deg)';
+                        });
+                    }
+                    return wrap;
+                }
+                Object.keys(root.children).sort().forEach(k => {
+                    el.appendChild(renderNode(root.children[k], k, 0));
+                });
+            } catch (err) {
+                el.innerHTML = '<span>Error: ' + err.message + '</span>';
+            }
+        }
+
+        // --- Settings ---
+        async function loadStats() {
+            try {
+                const resp = await fetch(`${API}/stats`);
+                const data = await resp.json();
+                document.getElementById('doc-stat-chunks').textContent = data.chunks;
+                document.getElementById('doc-stat-files').textContent = data.unique_files;
+                document.getElementById('doc-stat-folders').textContent = data.unique_folders;
+                document.getElementById('doc-stat-disk').textContent = data.disk_size_kb;
+            } catch (err) {
+                console.error('Failed to load stats:', err);
+            }
+        }
+
+        let currentModel = '';
+        async function loadModels() {
+            const ollamaEl = document.getElementById('ollama-model-list');
+            const geminiEl = document.getElementById('gemini-model-list');
+            try {
+                const resp = await fetch(`${API}/models`);
+                const data = await resp.json();
+                ollamaEl.innerHTML = '';
+                geminiEl.innerHTML = '';
+                const ollamaModels = data.models.filter(m => m.provider !== 'gemini');
+                const geminiModels = data.models.filter(m => m.provider === 'gemini');
+                if (ollamaModels.length === 0) {
+                    ollamaEl.textContent = 'No models found. Is Ollama running?';
+                } else {
+                    ollamaModels.forEach(m => {
+                        const chip = document.createElement('div');
+                        chip.className = 'model-chip' + (m.name === currentModel ? ' active' : '');
+                        chip.innerHTML = escapeHtml(m.name) + `<span class="size">${m.size_gb} GB</span>`;
+                        chip.onclick = () => setModel(m.name);
+                        ollamaEl.appendChild(chip);
+                    });
+                }
+                if (geminiModels.length === 0) {
+                    geminiEl.textContent = 'No models found. Is GEMINI_API_KEY set?';
+                } else {
+                    geminiModels.forEach(m => {
+                        const chip = document.createElement('div');
+                        chip.className = 'model-chip gemini' + (m.name === currentModel ? ' active' : '');
+                        chip.innerHTML = escapeHtml(m.name);
+                        chip.onclick = () => setModel(m.name);
+                        geminiEl.appendChild(chip);
+                    });
+                }
+            } catch (err) {
+                ollamaEl.textContent = 'Error loading models: ' + err.message;
+                geminiEl.textContent = '';
+            }
+        }
+
+        async function setModel(name) {
+            try {
+                const resp = await fetch(`${API}/model?` + new URLSearchParams({ model_name: name }), { method: 'POST' });
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                currentModel = name;
+                document.getElementById('header-model').textContent = name;
+                loadModels(); // refresh chips
+            } catch (err) {
+                alert('Failed to set model: ' + err.message);
+            }
+        }
+
+        async function resetDB() {
+            if (!confirm('Are you sure you want to reset the vector database? This will delete ALL indexed documents.')) return;
+            const result = document.getElementById('reset-result');
+            result.className = 'result-box visible';
+            result.textContent = 'Resetting...';
+            try {
+                const resp = await fetch(`${API}/reset`, { method: 'POST' });
+                const data = await resp.json();
+                result.textContent = `${data.message} Deleted ${data.deleted_documents} document(s).`;
+                loadStats();
+            } catch (err) {
+                result.textContent = 'Error: ' + err.message;
+            }
+        }
+
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        // --- Google Drive ---
+        async function checkDriveStatus() {
+            try {
+                const resp = await fetch(`${API}/drive/status`);
+                const data = await resp.json();
+                setDriveStatus(data.connected);
+                setGmailStatus(data.gmail_connected);
+            } catch (e) {
+                setDriveStatus(false);
+                setGmailStatus(false);
+            }
+        }
+
+        function setDriveStatus(connected) {
+            const dot = document.getElementById('idx-drive-dot');
+            const text = document.getElementById('drive-status-text');
+            const btn = document.getElementById('drive-connect-btn');
+            if (connected) {
+                if (dot) dot.style.background = '#22c55e';
+                if (text) { text.textContent = 'Connected'; text.style.color = '#16a34a'; }
+                if (btn) btn.textContent = 'Re-connect';
+            } else {
+                if (dot) dot.style.background = '#f87171';
+                if (text) { text.textContent = 'Not connected'; text.style.color = '#dc2626'; }
+                if (btn) btn.textContent = 'Connect';
+            }
+        }
+
+        function setGmailStatus(connected) {
+            const dot = document.getElementById('idx-gmail-dot');
+            const text = document.getElementById('gmail-status-text');
+            const btn = document.getElementById('gmail-connect-btn');
+            if (connected) {
+                if (dot) dot.style.background = '#22c55e';
+                if (text) { text.textContent = 'Connected'; text.style.color = '#16a34a'; }
+                if (btn) btn.textContent = 'Re-connect';
+            } else {
+                if (dot) dot.style.background = '#f87171';
+                if (text) { text.textContent = 'Not connected'; text.style.color = '#dc2626'; }
+                if (btn) btn.textContent = 'Connect';
+            }
+        }
+
+        async function connectDrive(resultId) {
+            const result = document.getElementById(resultId || 'drive-result');
+            result.className = 'result-box visible';
+            result.textContent = 'Fetching authorization URL...';
+            try {
+                const resp = await fetch(`${API}/auth/google`);
+                if (!resp.ok) {
+                    const err = await resp.json();
+                    result.textContent = 'Error: ' + (err.detail || resp.status);
+                    return;
+                }
+                const data = await resp.json();
+                result.innerHTML = `<strong>Open this URL in your browser to authorize:</strong><br><br><a href="${data.auth_url}" target="_blank" style="color:#3b82f6; word-break:break-all;">${escapeHtml(data.auth_url)}</a><br><br>After authorizing, refresh this page.`;
+            } catch (err) {
+                result.textContent = 'Error: ' + err.message;
+            }
+        }
+
+        // Reload drive status when Index tab is opened
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                if (tab.dataset.tab === 'index') { checkDriveStatus(); }
+            });
+        });
+
+        // --- Wizard & API Keys ---
+        function toggleViz(id, btn) {
+            const inp = document.getElementById(id);
+            inp.type = inp.type === 'password' ? 'text' : 'password';
+            btn.textContent = inp.type === 'password' ? 'Show' : 'Hide';
+        }
+        function setPill(id, ok, okLabel, errLabel) {
+            const el = document.getElementById(id);
+            el.textContent = ok ? okLabel : errLabel;
+            el.className = 'status-pill ' + (ok ? 'ok' : 'err');
+        }
+        async function checkOllamaRunning() {
+            try {
+                const data = await (await fetch(`${API}/models`)).json();
+                return data.models.some(m => m.provider === 'ollama');
+            } catch { return false; }
+        }
+
+        async function initWizard() {
+            try {
+                const data = await (await fetch(`${API}/setup-status`)).json();
+                if (data.setup_complete) { document.getElementById('setup-overlay').classList.add('hidden'); return; }
+            } catch { document.getElementById('setup-overlay').classList.add('hidden'); return; }
+            document.getElementById('setup-overlay').classList.remove('hidden');
+            checkOllamaRunning().then(ok => setPill('wiz-ollama-pill', ok, 'Running', 'Not detected'));
+        }
+        async function recheckOllama() {
+            const host = document.getElementById('wiz-ollama-host').value.trim();
+            document.getElementById('wiz-ollama-pill').textContent = 'Checking...';
+            await fetch(`${API}/config`, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ollama_host: host}) });
+            checkOllamaRunning().then(ok => setPill('wiz-ollama-pill', ok, 'Running', 'Not detected'));
+        }
+        async function wizardSave() {
+            const geminiKey = document.getElementById('wiz-gemini-key').value.trim();
+            const ollamaHost = document.getElementById('wiz-ollama-host').value.trim();
+            const ollamaOk = document.getElementById('wiz-ollama-pill').classList.contains('ok');
+            const errEl = document.getElementById('wiz-error');
+            if (!ollamaOk && !geminiKey) { errEl.style.display = 'block'; return; }
+            errEl.style.display = 'none';
+            const btn = document.getElementById('wiz-save-btn');
+            btn.disabled = true; btn.textContent = 'Saving...';
+            try {
+                const body = { setup_complete: true, ollama_host: ollamaHost };
+                if (geminiKey) body.gemini_api_key = geminiKey;
+                await fetch(`${API}/config`, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+                document.getElementById('setup-overlay').classList.add('hidden');
+                await init();
+            } catch(e) {
+                errEl.textContent = 'Save failed: ' + e.message; errEl.style.display = 'block';
+            } finally { btn.disabled = false; btn.textContent = 'Save & Start'; }
+        }
+
+        async function loadApiKeys() {
+            try {
+                const data = await (await fetch(`${API}/config`)).json();
+                const geminiLabel = data.gemini_api_key_set
+                    ? (data.gemini_api_key_source === 'env' ? 'Set (env var)' : 'Set (config)')
+                    : 'Not set';
+                setPill('settings-gemini-pill', data.gemini_api_key_set, geminiLabel, 'Not set');
+                document.getElementById('settings-ollama-host').value = data.ollama_host || 'http://localhost:11434';
+                checkOllamaRunning().then(ok => setPill('settings-ollama-pill', ok, 'Running', 'Not detected'));
+            } catch {}
+        }
+        async function saveApiKeys() {
+            const geminiKey = document.getElementById('settings-gemini-key').value.trim();
+            const ollamaHost = document.getElementById('settings-ollama-host').value.trim();
+            const ollamaFb = document.getElementById('ollama-feedback');
+            const geminiFb = document.getElementById('gemini-feedback');
+            ollamaFb.className = 'save-feedback'; ollamaFb.textContent = '';
+            geminiFb.className = 'save-feedback'; geminiFb.textContent = '';
+
+            // Validate Gemini key before saving
+            if (geminiKey) {
+                geminiFb.textContent = 'Validating...'; geminiFb.className = 'save-feedback';
+                try {
+                    const vResp = await fetch(`${API}/config/validate-gemini`, {
+                        method: 'POST', headers: {'Content-Type':'application/json'},
+                        body: JSON.stringify({ gemini_api_key: geminiKey })
+                    });
+                    const vData = await vResp.json();
+                    if (!vData.valid) {
+                        geminiFb.textContent = 'Invalid Gemini key: ' + (vData.error || 'Unknown error');
+                        geminiFb.className = 'save-feedback err';
+                        return;
+                    }
+                } catch(e) {
+                    geminiFb.textContent = 'Validation failed: ' + e.message;
+                    geminiFb.className = 'save-feedback err';
+                    return;
+                }
+            }
+
+            const body = { ollama_host: ollamaHost };
+            if (geminiKey) body.gemini_api_key = geminiKey;
+            try {
+                const resp = await fetch(`${API}/config`, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+                if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                if (geminiKey) { geminiFb.textContent = 'Saved.'; geminiFb.className = 'save-feedback ok'; }
+                if (ollamaHost) { ollamaFb.textContent = 'Saved.'; ollamaFb.className = 'save-feedback ok'; }
+                document.getElementById('settings-gemini-key').value = '';
+                loadApiKeys(); loadModels();
+            } catch(e) {
+                ollamaFb.textContent = 'Error: ' + e.message; ollamaFb.className = 'save-feedback err';
+            }
+        }
+
+        // --- Logs ---
+        let _logEntries = [];
+
+        async function loadLogs() {
+            const list = document.getElementById('log-list');
+            const count = document.getElementById('logs-count');
+            list.innerHTML = '<div style="padding:16px;color:#94a3b8;font-size:13px;">Loading...</div>';
+            try {
+                const data = await (await fetch(`${API}/logs?limit=200`)).json();
+                _logEntries = data.entries || [];
+                count.textContent = `${data.total} entries`;
+                list.innerHTML = '';
+                if (_logEntries.length === 0) {
+                    list.innerHTML = '<div style="padding:16px;color:#94a3b8;font-size:13px;">No logs yet.</div>';
+                    return;
+                }
+                _logEntries.forEach((entry, i) => {
+                    const ts = (entry.timestamp || '').replace('T', ' ').slice(0, 19);
+                    const row = document.createElement('div');
+                    row.className = 'log-row';
+                    row.dataset.idx = i;
+                    const errBadge = entry.error ? '<span class="log-badge err">ERR</span>' : '';
+                    const mcpBadge = entry.deep_think_triggered ? '<span class="log-badge mcp">DT</span>' : '';
+                    row.innerHTML = `
+                        <div class="log-row-top">
+                            <span class="log-row-time">${ts}</span>
+                            <span class="log-row-ms">${entry.duration_ms ?? ''}ms</span>
+                        </div>
+                        <div class="log-row-q">${escapeHtml(entry.question || '')}</div>
+                        <div class="log-row-meta">
+                            <span>${escapeHtml(entry.model || '')}</span>
+                            <span>${entry.endpoint || ''}</span>
+                            ${errBadge}${mcpBadge}
+                        </div>`;
+                    row.onclick = () => selectLog(i, row);
+                    list.appendChild(row);
+                });
+            } catch(err) {
+                list.innerHTML = `<div style="padding:16px;color:#dc2626;font-size:13px;">Error: ${err.message}</div>`;
+            }
+        }
+
+        function selectLog(idx, row) {
+            document.querySelectorAll('.log-row').forEach(r => r.classList.remove('active'));
+            row.classList.add('active');
+            const entry = _logEntries[idx];
+            document.getElementById('log-detail-empty').style.display = 'none';
+            const content = document.getElementById('log-detail-content');
+            content.style.display = 'block';
+
+            const section = (title, data) => {
+                if (data === null || data === undefined) return '';
+                const text = typeof data === 'string' ? data : JSON.stringify(data, null, 2);
+                if (!text) return '';
+                return `<div class="log-section">
+                    <div class="log-section-title">${title}</div>
+                    <div class="log-pre">${escapeHtml(text)}</div>
+                </div>`;
+            };
+
+            const badges = [
+                entry.error ? '<span class="log-badge err">Error</span>' : '<span class="log-badge ok">OK</span>',
+                entry.deep_think_triggered ? '<span class="log-badge mcp">Deep Think</span>' : '',
+                `<span style="font-size:12px;color:#64748b;">${entry.endpoint || ''} &bull; ${entry.model || ''} &bull; ${entry.duration_ms ?? ''}ms</span>`
+            ].join(' ');
+
+            const ragHtml = (results) => {
+                if (!results || !results.length) return '';
+                // Group chunks by document title
+                const groups = [];
+                const groupIndex = {};
+                results.forEach((r, i) => {
+                    const key = r.title || 'Unknown';
+                    if (!(key in groupIndex)) {
+                        groupIndex[key] = groups.length;
+                        groups.push({ title: key, source: r.source, chunks: [] });
+                    }
+                    groups[groupIndex[key]].chunks.push({ rank: i + 1, content: r.content || r.preview || '' });
+                });
+                const groupsHtml = groups.map((g, gi) => {
+                    const srcClass = g.source === 'gdrive' ? 'gdrive' : 'local';
+                    const srcLabel = g.source === 'gdrive' ? 'Drive' : 'Local';
+                    const chunksHtml = g.chunks.map((c, ci) => `
+                        <div class="rag-chunk">
+                            <div class="rag-chunk-num">${c.rank}</div>
+                            <div class="rag-chunk-body">${escapeHtml(c.content)}</div>
+                        </div>`).join('');
+                    const openClass = groups.length === 1 ? ' open' : '';
+                    return `<div class="rag-group${openClass}" id="rag-group-${gi}">
+                        <div class="rag-group-header" onclick="this.parentElement.classList.toggle('open')">
+                            <span class="rag-group-arrow">&#9654;</span>
+                            <div class="rag-group-title" title="${escapeHtml(g.title)}">${escapeHtml(g.title)}</div>
+                            <div class="rag-group-meta">
+                                <span class="rag-chunk-count">${g.chunks.length} chunk${g.chunks.length > 1 ? 's' : ''}</span>
+                                <span class="rag-source-pill ${srcClass}">${srcLabel}</span>
+                            </div>
+                        </div>
+                        <div class="rag-group-chunks">${chunksHtml}</div>
+                    </div>`;
+                }).join('');
+                return `<div class="log-section">
+                    <div class="log-section-title">RAG Results <span style="font-weight:400;color:#94a3b8;">(${groups.length} doc${groups.length > 1 ? 's' : ''}, ${results.length} chunk${results.length > 1 ? 's' : ''})</span></div>
+                    <div class="rag-groups">${groupsHtml}</div>
+                </div>`;
+            };
+
+            const llmPromptHtml = (messages) => {
+                if (!messages || !messages.length) return '';
+                const msgsHtml = messages.map(m => {
+                    const role = (m.role || 'unknown').toLowerCase();
+                    const roleClass = ['system','user','assistant'].includes(role) ? role : 'user';
+                    return `<div class="llm-msg ${roleClass}">
+                        <div class="llm-msg-role">${escapeHtml(role)}</div>
+                        <div class="llm-msg-body">${escapeHtml(typeof m.content === 'string' ? m.content : JSON.stringify(m.content, null, 2))}</div>
+                    </div>`;
+                }).join('');
+                return `<div class="log-section">
+                    <div class="log-section-title">LLM Prompt <span style="font-weight:400;color:#94a3b8;">(${messages.length} message${messages.length > 1 ? 's' : ''})</span></div>
+                    <div class="llm-messages">${msgsHtml}</div>
+                </div>`;
+            };
+
+            const mcpIterationsHtml = (iterations) => {
+                if (!iterations || !iterations.length) return '';
+                const itersHtml = iterations.map(iter => {
+                    const toolsHtml = (iter.tool_calls || []).map(tc => {
+                        const fileInfo = tc.file_name ? tc.file_name : (tc.file_count !== undefined ? `${tc.file_count} files` : '');
+                        const argsStr = tc.args ? JSON.stringify(tc.args, null, 2) : '{}';
+                        return `<div class="mcp-tool-call" onclick="this.classList.toggle('open')">
+                            <div class="mcp-tool-header">
+                                <span class="mcp-tool-arrow">&#9654;</span>
+                                <span class="mcp-tool-icon">&#9881;</span>
+                                <span class="mcp-tool-name">${escapeHtml(tc.tool)}</span>
+                                ${fileInfo ? `<span class="mcp-tool-file">${escapeHtml(fileInfo)}</span>` : ''}
+                            </div>
+                            <div class="mcp-tool-detail">
+                                <div class="mcp-tool-args">
+                                    <span class="mcp-tool-args-label">Arguments</span>
+                                    ${escapeHtml(argsStr)}
+                                </div>
+                                <div class="mcp-tool-result">
+                                    <span class="mcp-tool-result-label">Result</span>
+                                    <div class="mcp-tool-result-preview">${escapeHtml(tc.result_preview || '')}</div>
+                                    ${tc.result_full && tc.result_full.length > 200 ? `<div class="mcp-tool-result-full">${escapeHtml(tc.result_full)}</div>
+                                    <span class="mcp-expand-btn" onclick="event.stopPropagation(); const r=this.parentElement; r.classList.toggle('expanded'); this.textContent=r.classList.contains('expanded')?'Show less':'Show full result';">Show full result</span>` : ''}
+                                </div>
+                            </div>
+                        </div>`;
+                    }).join('');
+
+                    const responseHtml = iter.response ? `<div class="mcp-iter-response">
+                        <div class="mcp-iter-response-label">Final Response</div>
+                        ${escapeHtml(iter.response)}
+                    </div>` : '';
+
+                    const toolCount = (iter.tool_calls || []).length;
+                    const label = toolCount ? `${toolCount} tool call${toolCount > 1 ? 's' : ''}` : 'Final response';
+
+                    const rawJson = iter.raw_llm_response ? escapeHtml(JSON.stringify(iter.raw_llm_response, null, 2)) : '';
+                    const rawBtn = rawJson ? `<span class="mcp-raw-btn" onclick="event.stopPropagation(); this.parentElement.nextElementSibling.querySelector('.mcp-raw-response').classList.toggle('open'); this.textContent = this.textContent === 'Raw LLM' ? 'Hide Raw' : 'Raw LLM';">Raw LLM</span>` : '';
+                    const rawPanel = rawJson ? `<div class="mcp-raw-response">${rawJson}</div>` : '';
+
+                    return `<div class="mcp-iter">
+                        <div class="mcp-iter-header">
+                            <span class="mcp-iter-num">${iter.iteration}</span>
+                            <span class="mcp-iter-label">${label}</span>
+                            ${rawBtn}
+                        </div>
+                        <div class="mcp-iter-body">
+                            ${toolsHtml}
+                            ${responseHtml}
+                            ${rawPanel}
+                        </div>
+                    </div>`;
+                }).join('');
+
+                return `<div class="log-section">
+                    <div class="log-section-title">MCP Iterations <span style="font-weight:400;color:#94a3b8;">(${iterations.length})</span></div>
+                    <div class="mcp-iterations">${itersHtml}</div>
+                </div>`;
+            };
+
+            content.innerHTML = `
+                <div style="margin-bottom:16px;">${badges}</div>
+                ${section('Question', entry.question)}
+                ${entry.error ? section('Error', entry.error) : ''}
+                ${ragHtml(entry.rag_results)}
+                ${llmPromptHtml(entry.llm_prompt)}
+                ${section('LLM Response', entry.llm_response)}
+                ${mcpIterationsHtml(entry.mcp_iterations)}
+            `;
+        }
+
+        // --- WhatsApp ---
+        let _waPollTimer = null
+        let _waConnectedAt = null
+
+        async function startWhatsApp() {
+            const btn = document.getElementById('wa-connect-btn')
+            btn.disabled = true
+            btn.textContent = 'Starting...'
+            document.getElementById('wa-error').style.display = 'none'
+            document.getElementById('wa-done').style.display = 'none'
+            _waConnectedAt = null
+
+            const resp = await fetch(`${API}/whatsapp/start`, { method: 'POST' })
+            const data = await resp.json()
+            if (!data.ok) {
+                document.getElementById('wa-error').textContent = data.error || 'Failed to start'
+                document.getElementById('wa-error').style.display = 'block'
+                btn.disabled = false
+                btn.textContent = 'Connect WhatsApp'
+                return
+            }
+            pollWhatsAppStatus()
+        }
+
+        function pollWhatsAppStatus() {
+            if (_waPollTimer) clearInterval(_waPollTimer)
+            _waPollTimer = setInterval(async () => {
+                try {
+                    const [statusResp, qrResp] = await Promise.all([
+                        fetch(`${API}/whatsapp/status`).then(r => r.json()),
+                        fetch(`${API}/whatsapp/qr`).then(r => r.json()),
+                    ])
+                    updateWhatsAppUI(statusResp, qrResp)
+                    if (['done', 'disconnected'].includes(statusResp.status)) {
+                        clearInterval(_waPollTimer)
+                    }
+                } catch {}
+            }, 2000)
+        }
+
+        function updateWhatsAppUI(status, qr) {
+            const btn = document.getElementById('wa-connect-btn')
+            const qrWrap = document.getElementById('wa-qr-wrap')
+            const qrImg = document.getElementById('wa-qr-img')
+            const msgEl = document.getElementById('wa-status-msg')
+            const progressWrap = document.getElementById('wa-progress')
+            const progressBar = document.getElementById('wa-progress-bar')
+            const progressLabel = document.getElementById('wa-progress-label')
+            const doneEl = document.getElementById('wa-done')
+            const errorEl = document.getElementById('wa-error')
+            const installingEl = document.getElementById('wa-installing')
+            const installLogEl = document.getElementById('wa-install-log')
+
+            const msg = status.message || ''
+            const isInstalling = status.status === 'installing' || msg.startsWith('Installing')
+
+            if (isInstalling) {
+                if (!window._waInstallStart) window._waInstallStart = Date.now()
+                installingEl.style.display = 'block'
+                const logText = msg.replace(/^Installing:\s*/, '')
+                installLogEl.textContent = logText || 'starting...'
+                const secs = Math.floor((Date.now() - window._waInstallStart) / 1000)
+                const elapsedEl = document.getElementById('wa-install-elapsed')
+                if (elapsedEl) {
+                    if (secs < 60) elapsedEl.textContent = secs + 's'
+                    else elapsedEl.textContent = Math.floor(secs / 60) + 'm ' + (secs % 60) + 's'
+                }
+                msgEl.textContent = ''
+            } else {
+                installingEl.style.display = 'none'
+                window._waInstallStart = null
+                msgEl.textContent = msg
+            }
+
+            if (status.status === 'waiting_qr') {
+                btn.textContent = 'Waiting for scan...'
+                btn.disabled = true
+                if (qr.qr) {
+                    qrWrap.style.display = 'flex'
+                    qrImg.src = qr.qr
+                }
+                progressWrap.style.display = 'none'
+            } else if (status.status === 'connected') {
+                if (!_waConnectedAt) _waConnectedAt = Date.now()
+                errorEl.style.display = 'none'
+                qrWrap.style.display = 'none'
+                progressWrap.style.display = 'block'
+                progressBar.style.width = '100%'
+                progressBar.style.animation = 'wa-pulse 1.5s ease-in-out infinite'
+                const match = (status.message || '').match(/(\d+)\s+messages/)
+                if (match) {
+                    btn.textContent = 'Receiving...'
+                    progressLabel.textContent = `${parseInt(match[1]).toLocaleString()} messages received...`
+                } else {
+                    btn.textContent = 'Connected'
+                    const elapsed = Math.floor((Date.now() - _waConnectedAt) / 1000)
+                    progressLabel.textContent = `Waiting for history sync... ${elapsed}s (this can take a few minutes)`
+                }
+            } else if (status.status === 'importing') {
+                errorEl.style.display = 'none'
+                qrWrap.style.display = 'none'
+                btn.textContent = 'Importing...'
+                progressWrap.style.display = 'block'
+                progressBar.style.animation = ''
+                const pct = status.total > 0 ? Math.round((status.done / status.total) * 100) : 0
+                progressBar.style.width = pct + '%'
+                progressLabel.textContent = `${status.done} / ${status.total} groups`
+            } else if (status.status === 'done') {
+                errorEl.style.display = 'none'
+                qrWrap.style.display = 'none'
+                progressWrap.style.display = 'none'
+                btn.disabled = false
+                btn.textContent = 'Connect WhatsApp'
+                doneEl.textContent = status.message || 'Import complete.'
+                doneEl.style.display = 'block'
+            } else if (status.status === 'error') {
+                qrWrap.style.display = 'none'
+                progressWrap.style.display = 'none'
+                btn.disabled = false
+                btn.textContent = 'Connect WhatsApp'
+                errorEl.textContent = status.message || 'An error occurred.'
+                errorEl.style.display = 'block'
+            }
+        }
+
+        async function reloginWhatsApp() {
+            if (!confirm('This will clear your saved WhatsApp session and ask you to scan a QR code again. Continue?')) return
+            const btn = document.getElementById('wa-relogin-btn')
+            btn.disabled = true
+            btn.textContent = 'Clearing...'
+            document.getElementById('wa-error').style.display = 'none'
+            document.getElementById('wa-done').style.display = 'none'
+            const resp = await fetch(`${API}/whatsapp/relogin`, { method: 'POST' })
+            const data = await resp.json()
+            btn.disabled = false
+            btn.textContent = 'Force Re-login'
+            if (!data.ok) {
+                document.getElementById('wa-error').textContent = data.error || 'Failed'
+                document.getElementById('wa-error').style.display = 'block'
+                return
+            }
+            pollWhatsAppStatus()
+        }
+
+        async function clearLogs() {
+            if (!confirm('Delete all log entries?')) return;
+            await fetch(`${API}/logs`, { method: 'DELETE' });
+            loadLogs();
+        }
+
+        // --- Folder Picker (tree view) ---
+        let fpSelectedPath = '';
+
+        async function openFolderPicker() {
+            fpSelectedPath = '';
+            document.getElementById('fp-selected-path').value = '';
+            document.getElementById('fp-ok-btn').disabled = true;
+            document.getElementById('fp-overlay').style.display = 'flex';
+            const tree = document.getElementById('fp-tree');
+            tree.innerHTML = '';
+            // Load root nodes (drives on Windows, / on Linux)
+            const roots = await fpFetchChildren('');
+            for (const r of roots) {
+                tree.appendChild(fpCreateNode(r.name, r.path, 0));
+            }
+        }
+
+        function closeFolderPicker() {
+            document.getElementById('fp-overlay').style.display = 'none';
+        }
+
+        function fpConfirm() {
+            if (fpSelectedPath) {
+                document.getElementById('index-folder-path').value = fpSelectedPath;
+            }
+            closeFolderPicker();
+        }
+
+        async function fpFetchChildren(path) {
+            try {
+                const params = path ? '?' + new URLSearchParams({ path }) : '';
+                const resp = await fetch(`${API}/browse-folders${params}`);
+                if (!resp.ok) return [];
+                const data = await resp.json();
+                return data.folders || [];
+            } catch { return []; }
+        }
+
+        function fpCreateNode(name, path, depth) {
+            const node = document.createElement('div');
+            node.className = 'fp-node';
+
+            const row = document.createElement('div');
+            row.className = 'fp-row';
+            row.style.paddingLeft = (12 + depth * 18) + 'px';
+
+            const toggle = document.createElement('span');
+            toggle.className = 'fp-toggle';
+            toggle.textContent = '\u25B6'; // ▶
+
+            const icon = document.createElement('span');
+            icon.className = 'fp-icon';
+            icon.textContent = '\uD83D\uDCC1'; // closed folder
+
+            const label = document.createElement('span');
+            label.textContent = name;
+
+            row.appendChild(toggle);
+            row.appendChild(icon);
+            row.appendChild(label);
+
+            const children = document.createElement('div');
+            children.className = 'fp-children';
+
+            let loaded = false;
+            let expanded = false;
+
+            // Select on click
+            row.addEventListener('click', (e) => {
+                if (e.target === toggle) return; // handled separately
+                document.querySelectorAll('.fp-row.selected').forEach(el => el.classList.remove('selected'));
+                row.classList.add('selected');
+                fpSelectedPath = path;
+                document.getElementById('fp-selected-path').value = path;
+                document.getElementById('fp-ok-btn').disabled = false;
+            });
+
+            // Expand/collapse on toggle click
+            toggle.addEventListener('click', async () => {
+                if (!loaded) {
+                    loaded = true;
+                    toggle.textContent = '';
+                    const spinner = document.createElement('span');
+                    spinner.className = 'fp-spinner';
+                    spinner.textContent = '...';
+                    row.appendChild(spinner);
+                    const subs = await fpFetchChildren(path);
+                    spinner.remove();
+                    if (subs.length === 0) {
+                        toggle.className = 'fp-toggle empty';
+                        toggle.textContent = '';
+                        return;
+                    }
+                    for (const s of subs) {
+                        children.appendChild(fpCreateNode(s.name, s.path, depth + 1));
+                    }
+                }
+                expanded = !expanded;
+                children.classList.toggle('open', expanded);
+                toggle.textContent = expanded ? '\u25BC' : '\u25B6'; // ▼ or ▶
+                icon.textContent = expanded ? '\uD83D\uDCC2' : '\uD83D\uDCC1'; // open/closed folder
+            });
+
+            // Double-click to expand + select
+            row.addEventListener('dblclick', () => {
+                if (!expanded) toggle.click();
+            });
+
+            node.appendChild(row);
+            node.appendChild(children);
+            return node;
+        }
+
+        // --- Init ---
+        async function init() {
+            await initWizard();
+            try {
+                const resp = await fetch(`${API}/current-model`);
+                const data = await resp.json();
+                currentModel = data.model;
+                document.getElementById('header-model').textContent = currentModel;
+            } catch (e) {
+                document.getElementById('header-model').textContent = 'Disconnected';
+            }
+            checkDriveStatus();
+            loadDocuments();
+        }
+        init();
+    </script>
+</body>
+</html>

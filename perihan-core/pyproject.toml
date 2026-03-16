@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "perihan-core"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "openai",
+    "chromadb",
+    "python-docx",
+    "PyPDF2",
+    "google-api-python-client",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "perihan-app"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "perihan-core",
+    "fastapi",
+    "uvicorn[standard]",
+    "httpx",
+    "google-auth",
+    "google-auth-oauthlib",
+]
+
+[project.scripts]
+perihan = "perihan_app.main:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+perihan_app = ["static/**"]
