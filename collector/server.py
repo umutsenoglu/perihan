@@ -20,17 +20,26 @@ from config import OUTPUT_DIR, CATEGORIES, BATCH_SIZE, BATCH_INTERVAL
 from generators import knowledge, medical, messaging, legal, finance, personal, calendar, trello
 
 
-# TEMP: only personal category for review
-GENERATORS = {
+ALL_GENERATORS = {
+    "knowledge": knowledge.generate,
+    "medical": medical.generate,
+    "messaging": messaging.generate,
+    "legal": legal.generate,
+    "finance": finance.generate,
     "personal": personal.generate,
-    # "knowledge": knowledge.generate,
-    # "medical": medical.generate,
-    # "messaging": messaging.generate,
-    # "legal": legal.generate,
-    # "finance": finance.generate,
-    # "calendar": calendar.generate,
-    # "trello": trello.generate,
+    "calendar": calendar.generate,
+    "trello": trello.generate,
 }
+
+# --category flag: "all" (default) or a specific category name
+CATEGORY_FILTER = os.environ.get("COLLECTOR_CATEGORY", "all").lower()
+if CATEGORY_FILTER == "all":
+    GENERATORS = ALL_GENERATORS
+elif CATEGORY_FILTER in ALL_GENERATORS:
+    GENERATORS = {CATEGORY_FILTER: ALL_GENERATORS[CATEGORY_FILTER]}
+else:
+    print(f"  ✗ Unknown category: {CATEGORY_FILTER}. Available: {', '.join(ALL_GENERATORS.keys())}, all")
+    sys.exit(1)
 
 stats = {
     "started_at": None,
