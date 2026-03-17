@@ -391,4 +391,5 @@ Target length: {min_w}-{max_w} words. Plain text format."""
         "description": f"Knowledge: {topic_name[:50]} [{size_label}]",
         "category": "knowledge",
         "source": source,
+        "storyline": None,
     }

@@ -58,8 +58,10 @@ async def generate() -> dict:
 
     # 40% chance to tie to a storyline
     storyline_ctx = ""
+    storyline_id = None
     if random.random() < 0.40:
         storyline = pick_storyline()
+        storyline_id = storyline["id"]
         storyline_ctx = get_storyline_context(storyline)
         moment = f"thinking about {storyline['title'].lower()}"
 
@@ -111,4 +113,5 @@ This is FICTIONAL test data. Format as plain text."""
         "description": f"Personal {doc_type.replace('_', ' ')} - {moment[:40]} [{size_label}]",
         "category": "personal",
         "source": "generated",
+        "storyline": storyline_id,
     }

@@ -20,3 +20,4 @@ gmail/
 tests/results/
 tmp/
 collector/output/
+qa_generator/output/

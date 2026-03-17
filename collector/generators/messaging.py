@@ -66,9 +66,11 @@ async def generate() -> dict:
 
     use_storyline = is_personal and random.random() < 0.40
     storyline_ctx = ""
+    storyline_id = None
 
     if use_storyline:
         storyline = pick_storyline()
+        storyline_id = storyline["id"]
         storyline_ctx = get_storyline_context(storyline)
         # Generate a conversation about this storyline
         platform = random.choice(["whatsapp", "email", "sms"])
@@ -175,4 +177,5 @@ This is FICTIONAL test data."""
         "description": f"{platform.title()}: {theme[:45]} [{size_label}]",
         "category": "messaging",
         "source": "generated",
+        "storyline": storyline_id,
     }

@@ -55,12 +55,14 @@ async def generate() -> dict:
 
     use_storyline = is_personal and random.random() < 0.30
     storyline_ctx = ""
+    storyline_id = None
 
     if use_storyline:
         # Only some storylines have medical angles
         medical_storylines = ["mums_health", "lily_school", "work_migration"]
         storyline = pick_storyline()
         if storyline["id"] in medical_storylines:
+            storyline_id = storyline["id"]
             storyline_ctx = get_storyline_context(storyline)
             patient = PERSONA["name"]
             condition = {"mums_health": "dementia care referral", "lily_school": "child stress assessment",
@@ -191,4 +193,5 @@ Format as a plain text medical document with headers and sections."""
         "description": f"Medical {doc_type} for {patient} - {condition} [{size_label}]",
         "category": "medical",
         "source": source,
+        "storyline": storyline_id,
     }

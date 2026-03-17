@@ -54,8 +54,10 @@ async def generate() -> dict:
 
     # 40% chance to include storyline-related events
     storyline_ctx = ""
+    storyline_id = None
     if random.random() < 0.40:
         storyline = pick_storyline()
+        storyline_id = storyline["id"]
         storyline_ctx = get_storyline_context(storyline)
 
     # Pick some events for variety
@@ -106,4 +108,5 @@ This is FICTIONAL test data. Format as plain text calendar export."""
         "description": f"Calendar: {span_options[size_label]} ({num_events} events) [{size_label}]",
         "category": "calendar",
         "source": "generated",
+        "storyline": storyline_id,
     }

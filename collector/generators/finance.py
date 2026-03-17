@@ -36,9 +36,11 @@ async def generate() -> dict:
 
     use_storyline = is_personal and random.random() < 0.40
     storyline_ctx = ""
+    storyline_id = None
 
     if use_storyline:
         storyline = pick_storyline()
+        storyline_id = storyline["id"]
         storyline_ctx = get_storyline_context(storyline)
         # Generate a financial document related to this storyline
         doc_type = random.choice(["invoice", "bank_statement", "expense_report", "payment_receipt"])
@@ -116,4 +118,5 @@ This is FICTIONAL test data. Format as plain text."""
         "description": f"Finance: {doc_type.replace('_', ' ')} from {company} [{size_label}]",
         "category": "finance",
         "source": "generated",
+        "storyline": storyline_id,
     }

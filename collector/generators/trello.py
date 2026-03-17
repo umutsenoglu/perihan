@@ -124,4 +124,5 @@ Vary detail level naturally. This is FICTIONAL test data. Output valid XML only.
         "description": f"Trello: {board_name} ({num_cards} cards) [{size_label}]",
         "category": "trello",
         "source": "generated",
+        "storyline": None,
     }

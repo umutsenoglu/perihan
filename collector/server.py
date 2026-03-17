@@ -100,6 +100,7 @@ async def generate_one(category: str):
             "category": category,
             "source": source,
             "description": result["description"],
+            "storyline": result.get("storyline"),
             "generated_at": datetime.now().isoformat(),
             "path": f"{category}/{result['filename']}",
         })

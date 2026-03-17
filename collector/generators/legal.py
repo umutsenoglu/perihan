@@ -52,9 +52,11 @@ async def generate() -> dict:
 
     use_storyline = is_personal and random.random() < 0.40
     storyline_ctx = ""
+    storyline_id = None
 
     if use_storyline:
         storyline = pick_storyline()
+        storyline_id = storyline["id"]
         storyline_ctx = get_storyline_context(storyline)
         # Generate a legal document for this storyline
         doc_type = random.choice(["solicitor_letter", "court_notice", "settlement_agreement",
@@ -169,4 +171,5 @@ This is FICTIONAL test data. Format as plain text legal document."""
         "description": f"Legal {doc_type.replace('_', ' ')} - {case_theme[:40]} [{size_label}]",
         "category": "legal",
         "source": source,
+        "storyline": storyline_id,
     }
