@@ -125,11 +125,21 @@ async def run_batch(batch_num: int):
     print_stats()
 
 
-async def main():
+async def main(category_filter: str = "all"):
     """Main loop — generate content continuously."""
+    global GENERATORS
+
     # Wrap stdout for unicode support on Windows
     if sys.platform == "win32":
         sys.stdout.reconfigure(encoding="utf-8")
+
+    # Filter to specific category if requested
+    if category_filter != "all":
+        if category_filter not in GENERATORS:
+            print(f"  ✗ Unknown category: {category_filter}")
+            print(f"  Available: {', '.join(GENERATORS.keys())}")
+            sys.exit(1)
+        GENERATORS = {category_filter: GENERATORS[category_filter]}
 
     print_banner()
 
@@ -156,4 +166,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    category = "all"
+    if len(sys.argv) > 1:
+        category = sys.argv[1].lower()
+    asyncio.run(main(category))

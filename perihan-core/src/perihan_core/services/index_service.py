@@ -5,8 +5,45 @@ from perihan_core.config import SUPPORTED_EXTENSIONS, CHUNK_SIZE
 from perihan_core.utils.file_reader import read_file_content
 
 
-def generate_file_summary(filename: str, content: str, *, llm_client=None, model=None) -> str | None:
-    """Ask the LLM to describe a file's content in plain English for search indexing."""
+# Gemini 2.5 Flash pricing (per token)
+_PRICE_INPUT = 0.15 / 1_000_000
+_PRICE_OUTPUT = 0.60 / 1_000_000
+_PRICE_THINKING = 3.50 / 1_000_000
+
+
+def _calc_llm_cost(usage, model: str = "") -> dict:
+    """Extract token counts and cost from an OpenAI-compatible usage object.
+    Cost is only calculated for Gemini models; local models report $0."""
+    if usage is None:
+        return {"input_tokens": 0, "output_tokens": 0, "thinking_tokens": 0, "cost": 0.0}
+
+    input_tokens = getattr(usage, "prompt_tokens", 0) or 0
+    output_tokens = getattr(usage, "completion_tokens", 0) or 0
+
+    # Check for thinking tokens in completion_tokens_details
+    thinking_tokens = 0
+    details = getattr(usage, "completion_tokens_details", None)
+    if details:
+        thinking_tokens = getattr(details, "reasoning_tokens", 0) or 0
+
+    is_cloud = model.startswith("gemini-") if model else False
+    cost = 0.0
+    if is_cloud:
+        cost = (input_tokens * _PRICE_INPUT
+                + output_tokens * _PRICE_OUTPUT
+                + thinking_tokens * _PRICE_THINKING)
+
+    return {
+        "input_tokens": input_tokens,
+        "output_tokens": output_tokens,
+        "thinking_tokens": thinking_tokens,
+        "cost": round(cost, 6),
+    }
+
+
+def generate_file_summary(filename: str, content: str, *, llm_client=None, model=None) -> tuple[str | None, dict]:
+    """Ask the LLM to describe a file's content in plain English for search indexing.
+    Returns (summary_text, cost_info)."""
     if llm_client is None or model is None:
         raise ValueError("llm_client and model are required")
 
@@ -44,9 +81,10 @@ def generate_file_summary(filename: str, content: str, *, llm_client=None, model
                 },
             ],
         )
-        return response.choices[0].message.content.strip()
+        cost_info = _calc_llm_cost(getattr(response, "usage", None), model=model)
+        return response.choices[0].message.content.strip(), cost_info
     except Exception:
-        return None
+        return None, {"input_tokens": 0, "output_tokens": 0, "thinking_tokens": 0, "cost": 0.0}
 
 
 async def index_local_folder(folder_path: str, *, collection=None, llm_client=None, model=None):
@@ -72,6 +110,9 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
     skipped_empty = []
     errors = []
     done_count = 0
+    total_cost = 0.0
+    total_input_tokens = 0
+    total_output_tokens = 0
 
     # Queue for events produced by background summary tasks
     event_queue = asyncio.Queue()
@@ -81,7 +122,7 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
     async def _summarize_and_enqueue(file, content, relative_path, folder, num_chunks, current_mtime, task_id):
         """Run LLM summary in background and push result events to the queue."""
         try:
-            summary = await asyncio.to_thread(
+            summary, cost_info = await asyncio.to_thread(
                 generate_file_summary, file.name, content,
                 llm_client=llm_client, model=model
             )
@@ -107,6 +148,7 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
             await event_queue.put({
                 "event": {"type": "file_done", "file": file.name, "chunks": num_chunks},
                 "indexed": {"file": str(relative_path), "folder": folder, "chunks": num_chunks, "summary": bool(summary)},
+                "cost_info": cost_info,
                 "task_id": task_id,
             })
         except Exception as e:
@@ -116,6 +158,21 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
                 "task_id": task_id,
             })
 
+    def _accumulate_cost(item):
+        """Add cost from a completed item to running totals."""
+        nonlocal total_cost, total_input_tokens, total_output_tokens
+        ci = item.get("cost_info")
+        if ci:
+            total_cost += ci.get("cost", 0)
+            total_input_tokens += ci.get("input_tokens", 0)
+            total_output_tokens += ci.get("output_tokens", 0)
+
+    def _add_cost_to_event(ev):
+        """Attach current cost totals to an event dict."""
+        ev["total_cost"] = round(total_cost, 4)
+        ev["total_input_tokens"] = total_input_tokens
+        ev["total_output_tokens"] = total_output_tokens
+
     async def _drain_completed():
         """Drain all completed summary events from the queue."""
         nonlocal done_count
@@ -124,9 +181,11 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
             item = event_queue.get_nowait()
             running_summaries.discard(item["task_id"])
             done_count += 1
+            _accumulate_cost(item)
             ev = item["event"]
             ev["done"] = done_count
             ev["total"] = total
+            _add_cost_to_event(ev)
             events.append(item)
         return events
 
@@ -137,9 +196,11 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
             item = await event_queue.get()
             running_summaries.discard(item["task_id"])
             done_count += 1
+            _accumulate_cost(item)
             ev = item["event"]
             ev["done"] = done_count
             ev["total"] = total
+            _add_cost_to_event(ev)
             yield item
 
     task_counter = 0
@@ -249,9 +310,11 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
         item = await event_queue.get()
         running_summaries.discard(item["task_id"])
         done_count += 1
+        _accumulate_cost(item)
         ev = item["event"]
         ev["done"] = done_count
         ev["total"] = total
+        _add_cost_to_event(ev)
         if "indexed" in item:
             indexed.append(item["indexed"])
         if "error" in item:
@@ -259,7 +322,7 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
         yield ev
 
     asyncio.create_task(asyncio.to_thread(build_global_vocab, collection))
-    yield {"type": "complete", "indexed": len(indexed), "skipped_unchanged": skipped_unchanged, "skipped_empty": len(skipped_empty), "skipped_empty_files": skipped_empty, "files": indexed, "errors": errors}
+    yield {"type": "complete", "indexed": len(indexed), "skipped_unchanged": skipped_unchanged, "skipped_empty": len(skipped_empty), "skipped_empty_files": skipped_empty, "files": indexed, "errors": errors, "total_cost": round(total_cost, 4), "total_input_tokens": total_input_tokens, "total_output_tokens": total_output_tokens}
 
 
 async def index_gdrive_files(folder_id: str = "root", *, collection=None, drive_svc=None, llm_client=None, model=None):
@@ -283,6 +346,9 @@ async def index_gdrive_files(folder_id: str = "root", *, collection=None, drive_
     skipped = []
     skipped_existing = 0
     errors = []
+    total_cost = 0.0
+    total_input_tokens = 0
+    total_output_tokens = 0
 
     for i, f in enumerate(all_files):
         file_id = f["id"]
@@ -306,7 +372,11 @@ async def index_gdrive_files(folder_id: str = "root", *, collection=None, drive_
                 continue
 
             yield {"type": "progress", "file": name, "step": "summarizing", "done": i, "total": total}
-            summary = await asyncio.to_thread(generate_file_summary, name, content, llm_client=llm_client, model=model)
+            summary, cost_info = await asyncio.to_thread(generate_file_summary, name, content, llm_client=llm_client, model=model)
+            total_cost += cost_info.get("cost", 0)
+            total_input_tokens += cost_info.get("input_tokens", 0)
+            total_output_tokens += cost_info.get("output_tokens", 0)
+
             if not summary:
                 skipped.append({"file": name, "reason": "summary generation failed"})
                 yield {"type": "skip", "file": name, "reason": "summary generation failed", "done": i + 1, "total": total}
@@ -329,7 +399,7 @@ async def index_gdrive_files(folder_id: str = "root", *, collection=None, drive_
                 ],
             )
             indexed.append({"file": name, "folder": folder_path, "file_id": file_id})
-            yield {"type": "file_done", "file": name, "done": i + 1, "total": total}
+            yield {"type": "file_done", "file": name, "done": i + 1, "total": total, "total_cost": round(total_cost, 4), "total_input_tokens": total_input_tokens, "total_output_tokens": total_output_tokens}
 
         except Exception as e:
             errors.append({"file": name, "error": str(e)})
@@ -344,6 +414,9 @@ async def index_gdrive_files(folder_id: str = "root", *, collection=None, drive_
         "files": indexed,
         "skipped_files": skipped,
         "errors": errors,
+        "total_cost": round(total_cost, 4),
+        "total_input_tokens": total_input_tokens,
+        "total_output_tokens": total_output_tokens,
     }
 
 
