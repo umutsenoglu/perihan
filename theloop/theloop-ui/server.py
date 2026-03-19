@@ -14,7 +14,10 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "theloop-core"))
-from history import load_runs, create_run, update_step, get_run, get_current_run
+from history import (
+    load_runs, create_run, update_step, get_run, get_current_run,
+    load_benchmark, update_benchmark_step,
+)
 from steps import (
     run_collect, run_index, run_generate_qa, run_benchmark, run_perihan_eval,
     run_report, get_report_html, stop_step, check_perihan,
@@ -31,11 +34,14 @@ app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 # SSE helper
 # ---------------------------------------------------------------------------
 
-async def sse_stream(step_name: str, generator, run_id: int):
+async def sse_stream(step_name: str, generator, run_id: int = None, is_benchmark: bool = False):
     """Wrap a step generator as SSE, updating history along the way."""
     from fastapi.responses import StreamingResponse
 
-    update_step(run_id, step_name, {"status": "running", "started": datetime.now().isoformat()})
+    if is_benchmark:
+        update_benchmark_step(step_name, {"status": "running", "started": datetime.now().isoformat()})
+    else:
+        update_step(run_id, step_name, {"status": "running", "started": datetime.now().isoformat()})
 
     async def stream():
         last_cost = 0.0
@@ -62,7 +68,11 @@ async def sse_stream(step_name: str, generator, run_id: int):
         }
         if indexed:
             step_data["indexed"] = indexed
-        update_step(run_id, step_name, step_data)
+
+        if is_benchmark:
+            update_benchmark_step(step_name, step_data)
+        else:
+            update_step(run_id, step_name, step_data)
 
         yield f"data: {json.dumps({'type': 'step_complete', 'step': step_name, 'status': status})}\n\n"
 
@@ -84,11 +94,12 @@ async def dashboard():
 
 @app.get("/api/status")
 async def status():
-    """Get current loop status."""
+    """Get current status — benchmark state + current improve cycle."""
     current = get_current_run()
     perihan_up = await check_perihan()
     return {
-        "current_run": current,
+        "benchmark": load_benchmark(),
+        "current_cycle": current,
         "perihan_up": perihan_up,
         "collector_files": get_collector_file_count(),
         "qa_count": get_qa_count(),
@@ -101,30 +112,50 @@ async def history():
     return load_runs()
 
 
-@app.post("/api/new-run")
-async def new_run():
+# ---------------------------------------------------------------------------
+# Benchmark steps (standalone, no run tracking)
+# ---------------------------------------------------------------------------
+
+@app.post("/api/benchmark/{step}")
+async def run_benchmark_step(step: str, category: str = "all", strategy: str = "all"):
+    """Start a benchmark step. Returns SSE stream."""
+    generators = {
+        "collect": lambda: run_collect(category),
+        "generate_qa": lambda: run_generate_qa(strategy),
+        "benchmark": lambda: run_benchmark(),
+    }
+    if step not in generators:
+        return JSONResponse({"error": f"Unknown benchmark step: {step}"}, status_code=400)
+
+    return await sse_stream(step, generators[step](), is_benchmark=True)
+
+
+# ---------------------------------------------------------------------------
+# Improve cycle steps
+# ---------------------------------------------------------------------------
+
+@app.post("/api/new-cycle")
+async def new_cycle():
+    """Create a new improve cycle."""
     run = create_run()
     return run
 
 
-@app.post("/api/run/{run_id}/{step}")
-async def run_step(run_id: int, step: str, category: str = "all", strategy: str = "all"):
-    """Start a step. Returns SSE stream."""
+@app.post("/api/cycle/{run_id}/{step}")
+async def run_cycle_step(run_id: int, step: str):
+    """Start an improve cycle step. Returns SSE stream."""
     run = get_run(run_id)
     if not run:
-        return JSONResponse({"error": "Run not found"}, status_code=404)
+        return JSONResponse({"error": "Cycle not found"}, status_code=404)
 
     generators = {
-        "collect": lambda: run_collect(category),
         "index": lambda: run_index(),
-        "generate_qa": lambda: run_generate_qa(strategy),
-        "benchmark": lambda: run_benchmark(),
         "perihan": lambda: run_perihan_eval(),
         "report": lambda: run_report(),
     }
 
     if step not in generators:
-        return JSONResponse({"error": f"Unknown step: {step}"}, status_code=400)
+        return JSONResponse({"error": f"Unknown improve step: {step}"}, status_code=400)
 
     return await sse_stream(step, generators[step](), run_id)
 
@@ -135,7 +166,7 @@ async def stop(step: str):
     return {"message": f"Stopped {step}"}
 
 
-@app.post("/api/run/{run_id}/improve")
+@app.post("/api/cycle/{run_id}/improve")
 async def complete_improve(run_id: int, notes: str = ""):
     """Mark the improve step as done."""
     update_step(run_id, "improve", {
@@ -146,9 +177,9 @@ async def complete_improve(run_id: int, notes: str = ""):
     return {"message": "Improvement step completed"}
 
 
-@app.post("/api/run/{run_id}/skip/{step}")
-async def skip_step(run_id: int, step: str):
-    """Skip a step."""
+@app.post("/api/cycle/{run_id}/skip/{step}")
+async def skip_step_endpoint(run_id: int, step: str):
+    """Skip a step in an improve cycle."""
     update_step(run_id, step, {"status": "skipped", "finished": datetime.now().isoformat()})
     return {"message": f"Skipped {step}"}
 

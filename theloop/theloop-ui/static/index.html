@@ -188,19 +188,19 @@
 
         <div class="bottom-section">
             <div class="new-run-area">
-                <button class="btn-new-run" id="btn-new-run" onclick="newRun()">New Loop</button>
+                <button class="btn-new-run" id="btn-new-cycle" onclick="newCycle()">New Cycle</button>
                 <div class="total-cost-box">
-                    <div class="val" id="total-cost">$0.00</div>
-                    <div>total cost</div>
+                    <div class="val" id="cycle-cost">$0.00</div>
+                    <div>cycle cost</div>
                 </div>
                 <div class="total-cost-box" style="margin-top:2px">
-                    <div class="run-id" id="run-label" style="color:#888;font-size:12px">No active run</div>
+                    <div id="cycle-label" style="color:#888;font-size:12px">No active cycle</div>
                 </div>
             </div>
             <div class="history-panel">
-                <h3>History</h3>
+                <h3>Improve History</h3>
                 <table class="history-table">
-                    <thead><tr><th>#</th><th>Date</th><th>Bench</th><th>Perihan</th><th>Cost</th></tr></thead>
+                    <thead><tr><th>#</th><th>Date</th><th>Perihan</th><th>Cost</th></tr></thead>
                     <tbody id="history-body"></tbody>
                 </table>
             </div>
@@ -224,14 +224,14 @@
 </div>
 
 <script>
-// Circle 1: Benchmark (run once to establish baseline)
+// Circle 1: Benchmark (standalone, no run tracking)
 const BENCHMARK_STEPS = [
     { id: 'collect',     label: 'Collect',      icon: '1' },
     { id: 'generate_qa', label: 'Generate\nQA', icon: '2' },
     { id: 'benchmark',   label: 'Benchmark',    icon: '3' },
 ];
 
-// Circle 2: Improve (repeated iteration)
+// Circle 2: Improve (tracked cycles)
 const IMPROVE_STEPS = [
     { id: 'index',   label: 'Index',             icon: '1' },
     { id: 'perihan', label: 'Evaluate\nPerihan', icon: '2' },
@@ -240,8 +240,10 @@ const IMPROVE_STEPS = [
 ];
 
 const ALL_STEPS = [...BENCHMARK_STEPS, ...IMPROVE_STEPS];
+const BENCHMARK_IDS = new Set(BENCHMARK_STEPS.map(s => s.id));
 
-let currentRun = null;
+let benchmarkState = {};  // standalone benchmark step states
+let currentCycle = null;  // current improve cycle
 let selectedStep = null;
 
 // Build circle positions
@@ -257,7 +259,6 @@ const improvePos = circlePositions(IMPROVE_STEPS, 170, 175, 115);
 
 function initCircle(containerId, steps, positions, arrowGroupId) {
     const circle = document.getElementById(containerId);
-    // Remove old nodes
     circle.querySelectorAll('.step-node').forEach(n => n.remove());
 
     steps.forEach((step, i) => {
@@ -275,7 +276,6 @@ function initCircle(containerId, steps, positions, arrowGroupId) {
         circle.appendChild(node);
     });
 
-    // Draw arrows
     const arrowsG = document.getElementById(arrowGroupId);
     arrowsG.innerHTML = '';
     for (let i = 0; i < steps.length; i++) {
@@ -304,22 +304,28 @@ function initLoop() {
     initCircle('circle-improve', IMPROVE_STEPS, improvePos, 'arrows-improve');
 }
 
-function updateLoop() {
-    if (!currentRun) return;
-    document.getElementById('run-label').textContent = `Loop #${currentRun.id}`;
-    document.getElementById('total-cost').textContent = `$${(currentRun.total_cost || 0).toFixed(4)}`;
+function getStepData(stepId) {
+    if (BENCHMARK_IDS.has(stepId)) {
+        return benchmarkState[stepId] || {};
+    }
+    return currentCycle ? (currentCycle.steps[stepId] || {}) : {};
+}
 
-    // Calculate per-circle costs
-    let benchCost = 0, improveCost = 0;
-    BENCHMARK_STEPS.forEach(s => { benchCost += (currentRun.steps[s.id]?.cost || 0); });
-    IMPROVE_STEPS.forEach(s => { improveCost += (currentRun.steps[s.id]?.cost || 0); });
+function updateLoop() {
+    // Benchmark cost
+    const benchCost = (benchmarkState.total_cost || 0);
     document.getElementById('benchmark-cost').textContent = `$${benchCost.toFixed(4)}`;
-    document.getElementById('improve-cost').textContent = `$${improveCost.toFixed(4)}`;
+
+    // Improve cycle cost
+    const cycleCost = currentCycle ? (currentCycle.total_cost || 0) : 0;
+    document.getElementById('improve-cost').textContent = `$${cycleCost.toFixed(4)}`;
+    document.getElementById('cycle-cost').textContent = `$${cycleCost.toFixed(4)}`;
+    document.getElementById('cycle-label').textContent = currentCycle ? `Cycle #${currentCycle.id}` : 'No active cycle';
 
     ALL_STEPS.forEach((step) => {
         const node = document.getElementById(`node-${step.id}`);
         if (!node) return;
-        const stepData = currentRun.steps[step.id] || {};
+        const stepData = getStepData(step.id);
         node.className = 'step-node';
         if (step.id === selectedStep) node.classList.add('active');
         if (stepData.status === 'running') node.classList.add('running');
@@ -327,11 +333,13 @@ function updateLoop() {
         else if (stepData.status === 'error') node.classList.add('error');
         else if (stepData.status === 'skipped') node.classList.add('skipped');
 
-        // Update arrows
         const arrow = document.getElementById(`arrow-${step.id}`);
         if (arrow && stepData.status === 'done') {
             arrow.classList.add('done');
             arrow.setAttribute('marker-end', 'url(#arrowhead-done)');
+        } else if (arrow) {
+            arrow.classList.remove('done');
+            arrow.setAttribute('marker-end', 'url(#arrowhead)');
         }
     });
 }
@@ -345,24 +353,28 @@ function selectStep(stepId) {
 function showStepDetail(stepId) {
     const step = ALL_STEPS.find(s => s.id === stepId);
     if (!step) return;
-    const stepData = currentRun ? (currentRun.steps[stepId] || {}) : {};
+    const stepData = getStepData(stepId);
+    const isBenchmark = BENCHMARK_IDS.has(stepId);
 
     document.getElementById('detail-title').textContent = step.label.replace('\n', ' ');
 
-    let info = '';
-    if (stepData.started) info += `Started: ${new Date(stepData.started).toLocaleTimeString()}`;
+    let info = isBenchmark ? 'Benchmark' : (currentCycle ? `Cycle #${currentCycle.id}` : 'No cycle');
+    if (stepData.started) info += ` | Started: ${new Date(stepData.started).toLocaleTimeString()}`;
     if (stepData.finished) info += ` | Finished: ${new Date(stepData.finished).toLocaleTimeString()}`;
     if (stepData.cost) info += ` | Cost: $${stepData.cost.toFixed(4)}`;
     document.getElementById('detail-info').textContent = info;
 
     const controls = document.getElementById('detail-controls');
     const isRunning = stepData.status === 'running';
-    const canRun = currentRun && !isRunning && stepData.status !== 'done';
+    // Benchmark steps: always re-runnable. Improve steps: need a cycle.
+    const canRun = isBenchmark
+        ? !isRunning
+        : (currentCycle && !isRunning && stepData.status !== 'done');
 
     if (stepId === 'improve') {
         controls.innerHTML = `
             <textarea class="improve-textarea" id="improve-notes" placeholder="Notes about what you improved...">${stepData.notes || ''}</textarea>
-            <button class="btn btn-confirm" onclick="completeImprove()" ${!currentRun ? 'disabled' : ''}>Mark Complete</button>
+            <button class="btn btn-confirm" onclick="completeImprove()" ${!currentCycle ? 'disabled' : ''}>Mark Complete</button>
             <button class="btn btn-skip" onclick="skipStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Skip</button>
         `;
     } else if (stepId === 'collect') {
@@ -380,7 +392,6 @@ function showStepDetail(stepId) {
             </select>
             <button class="btn btn-start" onclick="startStep('collect')" ${!canRun ? 'disabled' : ''}>Start</button>
             <button class="btn btn-stop" onclick="stopStep('collect')" ${!isRunning ? 'disabled' : ''}>Stop</button>
-            <button class="btn btn-skip" onclick="skipStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Skip</button>
         `;
     } else if (stepId === 'generate_qa') {
         controls.innerHTML = `
@@ -392,7 +403,6 @@ function showStepDetail(stepId) {
             </select>
             <button class="btn btn-start" onclick="startStep('generate_qa')" ${!canRun ? 'disabled' : ''}>Start</button>
             <button class="btn btn-stop" onclick="stopStep('generate_qa')" ${!isRunning ? 'disabled' : ''}>Stop</button>
-            <button class="btn btn-skip" onclick="skipStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Skip</button>
         `;
     } else if (stepId === 'report') {
         controls.innerHTML = `
@@ -404,11 +414,11 @@ function showStepDetail(stepId) {
         controls.innerHTML = `
             <button class="btn btn-start" onclick="startStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Start</button>
             <button class="btn btn-stop" onclick="stopStep('${stepId}')" ${!isRunning ? 'disabled' : ''}>Stop</button>
-            <button class="btn btn-skip" onclick="skipStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Skip</button>
+            ${!isBenchmark ? `<button class="btn btn-skip" onclick="skipStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Skip</button>` : ''}
         `;
     }
 
-    // Show cost area for steps that have cost
+    // Show cost area
     const costEl = document.getElementById('detail-cost');
     if (['index', 'benchmark', 'perihan', 'collect', 'generate_qa'].includes(stepId)) {
         costEl.style.display = '';
@@ -416,7 +426,7 @@ function showStepDetail(stepId) {
         costEl.style.display = 'none';
     }
 
-    // Show warning for steps needing Perihan
+    // Perihan warning
     if (['index', 'perihan'].includes(stepId)) {
         fetch('/api/status').then(r => r.json()).then(data => {
             if (!data.perihan_up) {
@@ -427,38 +437,52 @@ function showStepDetail(stepId) {
     }
 }
 
-async function newRun() {
-    const resp = await fetch('/api/new-run', { method: 'POST' });
-    currentRun = await resp.json();
+async function newCycle() {
+    const resp = await fetch('/api/new-cycle', { method: 'POST' });
+    currentCycle = await resp.json();
     updateLoop();
-    document.getElementById('detail-log').innerHTML = '<div class="log-line ok">New loop started: #' + currentRun.id + '</div>';
-    selectStep('collect');
+    document.getElementById('detail-log').innerHTML = '<div class="log-line ok">New cycle started: #' + currentCycle.id + '</div>';
+    selectStep('index');
     refreshHistory();
 }
 
 async function startStep(stepId) {
-    if (!currentRun) { await newRun(); }
+    const isBenchmark = BENCHMARK_IDS.has(stepId);
+
+    // For improve steps, auto-create cycle if needed
+    if (!isBenchmark && !currentCycle) {
+        await newCycle();
+    }
 
     const log = document.getElementById('detail-log');
     log.innerHTML = '';
     document.getElementById('step-cost').textContent = '$0.00';
     document.getElementById('step-tokens').textContent = '-';
 
-    let url = `/api/run/${currentRun.id}/${stepId}`;
+    let url;
     const params = new URLSearchParams();
 
-    if (stepId === 'collect') {
-        const cat = document.getElementById('collect-category')?.value || 'all';
-        params.set('category', cat);
-    } else if (stepId === 'generate_qa') {
-        const strat = document.getElementById('qa-strategy')?.value || 'all';
-        params.set('strategy', strat);
+    if (isBenchmark) {
+        url = `/api/benchmark/${stepId}`;
+        if (stepId === 'collect') {
+            const cat = document.getElementById('collect-category')?.value || 'all';
+            params.set('category', cat);
+        } else if (stepId === 'generate_qa') {
+            const strat = document.getElementById('qa-strategy')?.value || 'all';
+            params.set('strategy', strat);
+        }
+    } else {
+        url = `/api/cycle/${currentCycle.id}/${stepId}`;
     }
 
     if (params.toString()) url += '?' + params.toString();
 
-    // Update UI to running and rebuild controls so Stop button is enabled
-    if (currentRun.steps[stepId]) currentRun.steps[stepId].status = 'running';
+    // Update UI to running
+    if (isBenchmark) {
+        benchmarkState[stepId] = { ...(benchmarkState[stepId] || {}), status: 'running' };
+    } else {
+        if (currentCycle.steps[stepId]) currentCycle.steps[stepId].status = 'running';
+    }
     updateLoop();
     showStepDetail(stepId);
 
@@ -497,7 +521,6 @@ async function startStep(stepId) {
         appendLog('Connection error: ' + err.message, 'error');
     }
 
-    // Refresh state
     await refreshStatus();
     updateLoop();
     showStepDetail(stepId);
@@ -518,7 +541,6 @@ function handleStepEvent(stepId, event) {
         appendLog(`Step ${event.step}: ${event.status}`, event.status === 'done' ? 'ok' : 'error');
     }
 
-    // Update cost display
     if (event.total_cost !== undefined) {
         document.getElementById('step-cost').textContent = `$${event.total_cost.toFixed(4)}`;
     }
@@ -544,17 +566,17 @@ async function stopStep(stepId) {
 }
 
 async function skipStep(stepId) {
-    if (!currentRun) return;
-    await fetch(`/api/run/${currentRun.id}/skip/${stepId}`, { method: 'POST' });
+    if (!currentCycle) return;
+    await fetch(`/api/cycle/${currentCycle.id}/skip/${stepId}`, { method: 'POST' });
     await refreshStatus();
     updateLoop();
     showStepDetail(stepId);
 }
 
 async function completeImprove() {
-    if (!currentRun) return;
+    if (!currentCycle) return;
     const notes = document.getElementById('improve-notes')?.value || '';
-    await fetch(`/api/run/${currentRun.id}/improve`, {
+    await fetch(`/api/cycle/${currentCycle.id}/improve`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams({ notes }),
@@ -571,8 +593,9 @@ function openReport() {
 
 async function refreshStatus() {
     const data = await (await fetch('/api/status')).json();
-    if (data.current_run) {
-        currentRun = data.current_run;
+    benchmarkState = data.benchmark || {};
+    if (data.current_cycle) {
+        currentCycle = data.current_cycle;
     }
     refreshHistory();
 }
@@ -583,18 +606,16 @@ async function refreshHistory() {
     body.innerHTML = '';
     for (const run of [...runs].reverse().slice(0, 10)) {
         const date = new Date(run.started).toLocaleDateString();
-        const bStep = run.steps.benchmark || {};
         const pStep = run.steps.perihan || {};
         const tr = document.createElement('tr');
         tr.innerHTML = `
             <td>${run.id}</td>
             <td>${date}</td>
-            <td class="score">${bStep.status === 'done' ? 'Done' : bStep.status || '-'}</td>
             <td class="score">${pStep.status === 'done' ? 'Done' : pStep.status || '-'}</td>
             <td class="cost">$${(run.total_cost || 0).toFixed(4)}</td>
         `;
         tr.onclick = () => {
-            currentRun = run;
+            currentCycle = run;
             updateLoop();
         };
         body.appendChild(tr);
@@ -605,11 +626,10 @@ async function refreshHistory() {
 initLoop();
 refreshStatus().then(() => {
     updateLoop();
-    if (currentRun) {
-        // Select the first pending step — check benchmark circle first, then improve
-        const allSteps = [...BENCHMARK_STEPS, ...IMPROVE_STEPS];
-        const firstPending = allSteps.find(s => currentRun.steps[s.id]?.status === 'pending');
-        selectStep(firstPending ? firstPending.id : 'collect');
+    // Select first pending improve step, or first benchmark step
+    if (currentCycle) {
+        const pending = IMPROVE_STEPS.find(s => currentCycle.steps[s.id]?.status === 'pending');
+        selectStep(pending ? pending.id : 'index');
     } else {
         selectStep('collect');
     }
