@@ -1,14 +1,44 @@
 """Prompts for QA generation — one per strategy."""
 
 
-def single_doc_prompt(doc_path: str, doc_content: str, qa_count: int) -> str:
-    """Strategy 1: Generate search/factual questions from a single document."""
+def single_doc_prompt(doc_path: str, doc_content: str, qa_count: int,
+                      similar_docs: list[dict] | None = None) -> str:
+    """Strategy 1: Generate search/factual questions from a single document.
+
+    If similar_docs is provided (other docs of the same type), the prompt tells
+    the LLM about them so ambiguous questions get expected answers covering ALL
+    matching documents, not just the primary one.
+    """
+    similar_section = ""
+    if similar_docs:
+        similar_section = f"""
+IMPORTANT — SIMILAR DOCUMENTS EXIST:
+There are {len(similar_docs) + 1} documents of the same type (including the primary one above).
+Here are the others:
+
+"""
+        for sd in similar_docs:
+            similar_section += f"=== FILE: {sd['path']} ===\n{sd['content']}\n\n"
+
+        similar_section += """When you write a question that could apply to ANY of these similar documents
+(e.g., "When is the grocery list dated?" when there are multiple grocery lists),
+the expected answer MUST cover ALL matching documents, not just the primary one.
+
+For example:
+- BAD: "When is the grocery list dated?" → "06/01/2025" (only one doc)
+- GOOD: "When is the grocery list dated?" → "There are multiple grocery lists dated: 06/01/2025, 08/09/2025, 09/06/2025" (covers all)
+- ALSO GOOD: "In the grocery list that mentions organic chicken, what date is it?" → "06/01/2025" (specific enough for one doc)
+
+You may write EITHER kind of question:
+1. Specific questions targeting the primary document (use disambiguating details)
+2. Broad questions where the answer covers all similar documents
+"""
+
     return f"""You are a QA dataset generator. Given the document below, generate exactly {qa_count} question-answer pairs.
 
 RULES:
-- Questions should be answerable ONLY from the information in this document
 - Questions should test whether a search system can find specific facts
-- Answers should be concise and directly extracted from the document
+- Answers should be concise and directly extracted from the document(s)
 - Include the exact text passage that contains the answer as "evidence"
 - Vary question types: who, what, when, where, how much, which
 
@@ -16,7 +46,7 @@ DOCUMENT PATH: {doc_path}
 ---
 {doc_content}
 ---
-
+{similar_section}
 Respond with valid JSON only. No markdown, no explanation. Use this exact format:
 {{
   "questions": [

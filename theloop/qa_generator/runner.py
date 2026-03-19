@@ -47,11 +47,35 @@ def pick_strategy(available: dict[str, list]) -> str | None:
     return random.choices(candidates, weights=weights, k=1)[0]
 
 
-def build_prompt(package: dict, docs: list[dict]) -> str:
+def find_similar_docs(doc_path: str, manifest: list[dict]) -> list[dict]:
+    """Find documents of the same type (same filename prefix) as the given doc."""
+    from packager import read_document
+    # Extract type prefix: e.g. "personal/personal_grocery_list_20250106_699.txt" → "personal/personal_grocery_list"
+    parts = doc_path.rsplit("_", 2)  # split off date and id
+    if len(parts) < 3:
+        return []
+    prefix = parts[0]
+
+    similar = []
+    for entry in manifest:
+        p = entry["path"]
+        if p == doc_path:
+            continue
+        if p.rsplit("_", 2)[0] == prefix:
+            content = read_document(p)
+            if content:
+                similar.append({"path": p, "content": content})
+    return similar
+
+
+def build_prompt(package: dict, docs: list[dict], manifest: list[dict] = None) -> str:
     """Build the appropriate prompt for a package's strategy."""
     strategy = package["strategy"]
     if strategy == "single_doc":
-        return single_doc_prompt(docs[0]["path"], docs[0]["content"], QA_PER_SINGLE_DOC)
+        similar = []
+        if manifest:
+            similar = find_similar_docs(docs[0]["path"], manifest)
+        return single_doc_prompt(docs[0]["path"], docs[0]["content"], QA_PER_SINGLE_DOC, similar or None)
     elif strategy == "same_category":
         return same_category_prompt(docs, package.get("category", "unknown"), QA_PER_SAME_CATEGORY)
     elif strategy == "cross_storyline":
@@ -68,7 +92,7 @@ def expected_qa_count(strategy: str) -> int:
     }.get(strategy, 5)
 
 
-async def process_package(package: dict, state: dict) -> int:
+async def process_package(package: dict, state: dict, manifest: list[dict] = None) -> int:
     """Process a single package: load docs, generate QAs, save results. Returns QA count."""
     docs = load_package_contents(package)
     if not docs:
@@ -89,7 +113,7 @@ async def process_package(package: dict, state: dict) -> int:
 
     mark_in_progress(state, package["hash"], package)
 
-    prompt = build_prompt(package, docs)
+    prompt = build_prompt(package, docs, manifest)
 
     try:
         questions = await generate_qas(prompt)
@@ -114,7 +138,13 @@ async def process_package(package: dict, state: dict) -> int:
     for q in questions:
         q["difficulty"] = difficulty_map.get(strategy, "search")
         q["strategy"] = strategy
-        q["source_documents"] = package["files"]
+        # Source docs: use evidence files if LLM referenced similar docs, else package files
+        evidence_files = []
+        for ev in q.get("evidence", []):
+            f = ev.get("file", "")
+            if f and f not in evidence_files:
+                evidence_files.append(f)
+        q["source_documents"] = evidence_files if evidence_files else package["files"]
         q["storyline"] = package.get("storyline")
         q["package_hash"] = package["hash"]
 
@@ -184,7 +214,7 @@ async def run(strategy_filter: str = "all"):
             break
 
         package = all_packages[strategy].pop(0)
-        qa_count = await process_package(package, state)
+        qa_count = await process_package(package, state, manifest)
         total_qas += qa_count
         processed += 1
 

@@ -366,10 +366,10 @@ function showStepDetail(stepId) {
 
     const controls = document.getElementById('detail-controls');
     const isRunning = stepData.status === 'running';
-    // Benchmark steps: always re-runnable. Improve steps: need a cycle.
+    // Benchmark steps: always re-runnable. Improve steps: auto-create cycle on start.
     const canRun = isBenchmark
         ? !isRunning
-        : (currentCycle && !isRunning && stepData.status !== 'done');
+        : (!isRunning && stepData.status !== 'done');
 
     if (stepId === 'improve') {
         controls.innerHTML = `
