@@ -21,3 +21,7 @@ tests/results/
 tmp/
 collector/output/
 qa_generator/output/
+theloop/collector/output/
+theloop/qa_generator/output/
+theloop/eval_runner/output/
+theloop/history/

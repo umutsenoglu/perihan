@@ -27,7 +27,8 @@ from datetime import datetime
 from pathlib import Path
 
 from dotenv import load_dotenv
-ROOT = Path(__file__).resolve().parent.parent
+THELOOP = Path(__file__).resolve().parent.parent
+ROOT = THELOOP.parent
 load_dotenv(ROOT / ".env")
 
 import httpx
@@ -37,9 +38,9 @@ import requests
 # Paths & Config
 # ---------------------------------------------------------------------------
 
-QA_OUTPUT_FILE = ROOT / "qa_generator" / "output" / "qa_output.json"
+QA_OUTPUT_FILE = THELOOP / "qa_generator" / "output" / "qa_output.json"
 EVAL_RESULTS_FILE = Path(__file__).parent / "output" / "eval_results.json"
-COLLECTOR_OUTPUT_DIR = ROOT / "collector" / "output"
+COLLECTOR_OUTPUT_DIR = THELOOP / "collector" / "output"
 
 PERIHAN_BASE = "http://localhost:8000"
 PERIHAN_CHAT = f"{PERIHAN_BASE}/chat"

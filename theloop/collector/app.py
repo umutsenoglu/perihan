@@ -9,7 +9,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 # Load .env from parent directory (project root)
-load_dotenv(Path(__file__).parent.parent / ".env")
+load_dotenv(Path(__file__).parent.parent.parent / ".env")
 
 from config import OUTPUT_DIR, CATEGORIES, BATCH_SIZE, BATCH_INTERVAL
 from generators import knowledge, medical, messaging, legal, finance, personal, calendar, trello
@@ -80,6 +80,7 @@ async def generate_one(category: str) -> dict | None:
     """Generate one file for the given category."""
     generator = GENERATORS[category]
     try:
+        log(f"[{category}] Generating...", "INFO")
         result = await generator()
 
         # Ensure output directory exists
@@ -97,8 +98,11 @@ async def generate_one(category: str) -> dict | None:
         if len(stats["last_files"]) > 10:
             stats["last_files"] = stats["last_files"][-10:]
 
+        from generators.base import get_cost_summary
+        cost = get_cost_summary()
         log(f"{result['description']}", "OK")
         log(f"  Saved: {category}/{result['filename']}")
+        log(f"  Cost: ${cost['total_cost']:.4f} ({cost['total_input_tokens']} in / {cost['total_output_tokens']} out)")
 
         return result
 
@@ -115,8 +119,8 @@ async def run_batch(batch_num: int):
     # Pick BATCH_SIZE random categories for this batch
     picks = [categories[i % len(categories)] for i in range(batch_num * BATCH_SIZE, (batch_num + 1) * BATCH_SIZE)]
 
-    print(f"  ── Batch {batch_num + 1} ──────────────────────────────────────")
-    log(f"Generating {len(picks)} files: {', '.join(picks)}")
+    print(f"  ── Batch {batch_num + 1} ──────────────────────────────────────", flush=True)
+    log(f"Batch: {len(picks)} files — {', '.join(picks)}")
 
     # Generate concurrently
     tasks = [generate_one(cat) for cat in picks]

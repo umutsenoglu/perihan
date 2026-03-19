@@ -9,7 +9,7 @@ from datetime import datetime
 from pathlib import Path
 
 from dotenv import load_dotenv
-load_dotenv(Path(__file__).parent.parent / ".env")
+load_dotenv(Path(__file__).parent.parent.parent / ".env")
 
 from config import (
     QA_PER_SINGLE_DOC, QA_PER_SAME_CATEGORY, QA_PER_CROSS_STORYLINE,

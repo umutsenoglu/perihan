@@ -11,7 +11,7 @@ from contextlib import asynccontextmanager
 from dotenv import load_dotenv
 
 # Load .env from parent directory (project root)
-load_dotenv(Path(__file__).parent.parent / ".env")
+load_dotenv(Path(__file__).parent.parent.parent / ".env")
 
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse, JSONResponse
@@ -106,7 +106,10 @@ async def generate_one(category: str):
         })
         manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8")
 
-        log(f"{result['description']}", "OK")
+        from generators.base import get_cost_summary
+        cost = get_cost_summary()
+        stats["cost"] = cost
+        log(f"{result['description']} — ${cost['total_cost']:.4f}", "OK")
     except Exception as e:
         stats["errors"] += 1
         log(f"[{category}] Error: {e}", "ERR")

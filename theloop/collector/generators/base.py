@@ -11,6 +11,40 @@ from datetime import datetime, timedelta
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
 
+# Gemini 2.5 Flash pricing
+_PRICE_INPUT = 0.15 / 1_000_000
+_PRICE_OUTPUT = 0.60 / 1_000_000
+_PRICE_THINKING = 3.50 / 1_000_000
+
+# Running cost totals
+total_cost = 0.0
+total_input_tokens = 0
+total_output_tokens = 0
+total_requests = 0
+
+
+def _accumulate_cost(data: dict):
+    """Extract token counts from Gemini response and accumulate cost."""
+    global total_cost, total_input_tokens, total_output_tokens, total_requests
+    usage = data.get("usageMetadata", {})
+    inp = usage.get("promptTokenCount", 0)
+    out = usage.get("candidatesTokenCount", 0)
+    think = usage.get("thoughtsTokenCount", 0)
+    cost = inp * _PRICE_INPUT + out * _PRICE_OUTPUT + think * _PRICE_THINKING
+    total_input_tokens += inp
+    total_output_tokens += out
+    total_cost += cost
+    total_requests += 1
+
+
+def get_cost_summary() -> dict:
+    return {
+        "total_cost": round(total_cost, 4),
+        "total_input_tokens": total_input_tokens,
+        "total_output_tokens": total_output_tokens,
+        "total_requests": total_requests,
+    }
+
 
 async def llm_generate(prompt: str, temperature: float = 1.0, max_tokens: int = 8192) -> str:
     """Call Gemini to generate text content.
@@ -21,19 +55,23 @@ async def llm_generate(prompt: str, temperature: float = 1.0, max_tokens: int = 
     # Ensure a reasonable minimum so small sizes don't get cut off
     effective_tokens = max(max_tokens, 2048)
 
+    request_body = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "temperature": temperature,
+            "maxOutputTokens": effective_tokens,
+            "thinkingConfig": {"thinkingBudget": 0},
+        },
+    }
+
     async with httpx.AsyncClient(timeout=300) as client:
         resp = await client.post(
             f"{GEMINI_URL}?key={GEMINI_API_KEY}",
-            json={
-                "contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {
-                    "temperature": temperature,
-                    "maxOutputTokens": effective_tokens,
-                },
-            },
+            json=request_body,
         )
         resp.raise_for_status()
         data = resp.json()
+        _accumulate_cost(data)
         candidate = data["candidates"][0]
         text = candidate["content"]["parts"][0]["text"]
         finish_reason = candidate.get("finishReason", "")
@@ -53,11 +91,13 @@ async def llm_generate(prompt: str, temperature: float = 1.0, max_tokens: int = 
                         "generationConfig": {
                             "temperature": temperature,
                             "maxOutputTokens": effective_tokens,
+                            "thinkingConfig": {"thinkingBudget": 0},
                         },
                     },
                 )
                 resp2.raise_for_status()
                 data2 = resp2.json()
+                _accumulate_cost(data2)
                 candidate2 = data2["candidates"][0]
                 continuation = candidate2["content"]["parts"][0]["text"]
                 text += "\n" + continuation
@@ -74,7 +114,6 @@ SIZE_PROFILES = [
     ("medium", 300,  600,  25),
     ("long",   800,  2000, 20),
     ("huge",   2500, 6000, 15),
-    ("massive", 8000, 20000, 10),
 ]
 
 

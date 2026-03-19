@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TheLoop</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0a0b10; color: #e0e0e0; min-height: 100vh; }
+
+    .header { text-align: center; padding: 20px 0 10px; }
+    .header h1 { font-size: 24px; color: #fff; letter-spacing: 2px; }
+    .header .sub { font-size: 12px; color: #555; margin-top: 4px; }
+
+    .main { display: flex; gap: 20px; padding: 10px 24px; height: calc(100vh - 80px); }
+    .loops-panel { flex: 0 0 420px; display: flex; flex-direction: column; overflow-y: auto; align-items: center; }
+    .detail-panel { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+    /* Two circles layout — vertical stack */
+    .circles-col { display: flex; flex-direction: column; align-items: center; gap: 0; }
+
+    .circle-group { display: flex; flex-direction: column; align-items: center; }
+    .circle-title { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; }
+    .circle-title.benchmark { color: #4fc3f7; }
+    .circle-title.improve { color: #ffb74d; }
+
+    .loop-circle {
+        position: relative;
+    }
+    .loop-circle.circle-3 { width: 300px; height: 300px; }
+    .loop-circle.circle-4 { width: 340px; height: 340px; }
+    .loop-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .loop-center {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .loop-center .run-id { font-size: 12px; color: #555; }
+    .loop-center .cost { font-size: 20px; font-weight: 700; }
+    .loop-center .cost.benchmark-cost { color: #4fc3f7; }
+    .loop-center .cost.improve-cost { color: #ffb74d; }
+    .loop-center .cost-label { font-size: 10px; color: #666; }
+
+    /* Connection arrow between circles */
+    .circle-connector {
+        display: flex; flex-direction: row; align-items: center; justify-content: center;
+        gap: 8px; padding: 4px 0;
+    }
+    .connector-arrow { color: #555; font-size: 20px; }
+    .connector-label { font-size: 9px; color: #555; text-align: center; line-height: 1.2; }
+
+    .step-node {
+        position: absolute; width: 72px; height: 72px; border-radius: 50%;
+        background: #1a1b26; border: 2px solid #2a2a3a;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        cursor: pointer; transition: all 0.3s; z-index: 2;
+        transform: translate(-50%, -50%);
+    }
+    .step-node:hover { border-color: #4fc3f7; }
+    .step-node.active { border-color: #4fc3f7; box-shadow: 0 0 16px rgba(79,195,247,0.3); }
+    .step-node.running { border-color: #ffb74d; animation: pulse 1.5s infinite; }
+    .step-node.done { border-color: #81c784; }
+    .step-node.error { border-color: #e57373; }
+    .step-node.skipped { border-color: #555; opacity: 0.6; }
+    .step-node .icon { font-size: 20px; }
+    .step-node .label { font-size: 9px; color: #888; margin-top: 2px; text-align: center; line-height: 1.1; }
+    .step-node .status-dot {
+        position: absolute; top: 4px; right: 4px; width: 8px; height: 8px;
+        border-radius: 50%; background: #333;
+    }
+    .step-node.running .status-dot { background: #ffb74d; }
+    .step-node.done .status-dot { background: #81c784; }
+    .step-node.error .status-dot { background: #e57373; }
+
+    @keyframes pulse {
+        0%, 100% { box-shadow: 0 0 8px rgba(255,183,77,0.3); }
+        50% { box-shadow: 0 0 20px rgba(255,183,77,0.5); }
+    }
+
+    /* Arrow between nodes */
+    .loop-arrow { stroke: #2a2a3a; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .loop-arrow.done { stroke: #81c784; }
+
+    /* Detail panel */
+    .detail-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: #1a1b26; border-radius: 8px 8px 0 0; }
+    .detail-header h2 { font-size: 16px; color: #fff; }
+    .detail-header .step-info { font-size: 12px; color: #888; }
+    .detail-controls { display: flex; gap: 8px; padding: 10px 16px; background: #151620; flex-wrap: wrap; }
+    .detail-controls select, .detail-controls input { background: #1a1b26; border: 1px solid #2a2a3a; color: #ccc; padding: 6px 10px; border-radius: 4px; font-size: 13px; }
+    .detail-controls .btn { padding: 6px 16px; border-radius: 4px; border: none; cursor: pointer; font-size: 13px; font-weight: 600; }
+    .btn-start { background: #22c55e; color: #000; }
+    .btn-start:hover { background: #16a34a; }
+    .btn-stop { background: #e57373; color: #000; }
+    .btn-stop:hover { background: #c62828; }
+    .btn-skip { background: #333; color: #ccc; }
+    .btn-skip:hover { background: #444; }
+    .btn-confirm { background: #4fc3f7; color: #000; }
+    .btn-confirm:hover { background: #29b6f6; }
+
+    .detail-log {
+        flex: 1; overflow-y: auto; background: #0d0e14; padding: 10px 16px;
+        font-family: 'Cascadia Code', 'Consolas', monospace; font-size: 12px;
+        border-radius: 0 0 8px 8px; line-height: 1.6;
+    }
+    .detail-log .log-line { color: #888; }
+    .detail-log .log-line .time { color: #555; }
+    .detail-log .log-line.error { color: #e57373; }
+    .detail-log .log-line.ok { color: #81c784; }
+
+    .detail-cost { padding: 8px 16px; background: #151620; font-size: 12px; color: #888; display: flex; gap: 16px; }
+    .detail-cost .cost-val { color: #4fc3f7; font-weight: 600; }
+
+    /* Bottom section: new run + history */
+    .bottom-section { margin-top: 12px; display: flex; gap: 16px; align-items: flex-start; }
+    .new-run-area { display: flex; flex-direction: column; gap: 8px; align-items: center; min-width: 120px; }
+    .btn-new-run { background: #4fc3f7; color: #000; padding: 8px 20px; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; font-weight: 700; }
+    .btn-new-run:hover { background: #29b6f6; }
+    .total-cost-box { text-align: center; font-size: 11px; color: #888; }
+    .total-cost-box .val { color: #81c784; font-weight: 700; font-size: 16px; }
+
+    .history-panel { flex: 1; }
+    .history-panel h3 { font-size: 13px; color: #888; margin-bottom: 6px; }
+    .history-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+    .history-table th { background: #1a1b26; padding: 5px 6px; text-align: left; color: #666; font-weight: 600; }
+    .history-table td { padding: 4px 6px; border-bottom: 1px solid #1a1b26; }
+    .history-table tr:hover { background: #151620; cursor: pointer; }
+    .history-table .cost { color: #4fc3f7; }
+    .history-table .score { font-weight: 600; }
+
+    /* Improve notes */
+    .improve-textarea { width: 100%; background: #1a1b26; border: 1px solid #2a2a3a; color: #ccc; padding: 8px; border-radius: 4px; font-size: 13px; resize: vertical; min-height: 60px; font-family: inherit; }
+
+    /* Perihan warning */
+    .warning { background: #3a2a00; border: 1px solid #ffb74d; color: #ffb74d; padding: 8px 12px; border-radius: 4px; font-size: 12px; margin: 8px 0; }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>THE LOOP</h1>
+    <div class="sub">Benchmark baseline, then iterate on Perihan</div>
+</div>
+
+<div class="main">
+    <div class="loops-panel">
+        <div class="circles-col">
+            <!-- Circle 1: Benchmark -->
+            <div class="circle-group">
+                <div class="circle-title benchmark">Benchmark</div>
+                <div class="loop-circle circle-3" id="circle-benchmark">
+                    <svg class="loop-svg" viewBox="0 0 300 300">
+                        <defs>
+                            <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                                <polygon points="0 0, 8 3, 0 6" fill="#2a2a3a"/>
+                            </marker>
+                            <marker id="arrowhead-done" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                                <polygon points="0 0, 8 3, 0 6" fill="#81c784"/>
+                            </marker>
+                        </defs>
+                        <g id="arrows-benchmark"></g>
+                    </svg>
+                    <div class="loop-center">
+                        <div class="cost benchmark-cost" id="benchmark-cost">$0.00</div>
+                        <div class="cost-label">benchmark cost</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Connector -->
+            <div class="circle-connector">
+                <div class="connector-arrow">&#x2B07;</div>
+                <div class="connector-label">QA + scores feed into</div>
+            </div>
+
+            <!-- Circle 2: Improve -->
+            <div class="circle-group">
+                <div class="circle-title improve">Improve</div>
+                <div class="loop-circle circle-4" id="circle-improve">
+                    <svg class="loop-svg" viewBox="0 0 340 340">
+                        <g id="arrows-improve"></g>
+                    </svg>
+                    <div class="loop-center">
+                        <div class="cost improve-cost" id="improve-cost">$0.00</div>
+                        <div class="cost-label">improve cost</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div class="new-run-area">
+                <button class="btn-new-run" id="btn-new-run" onclick="newRun()">New Loop</button>
+                <div class="total-cost-box">
+                    <div class="val" id="total-cost">$0.00</div>
+                    <div>total cost</div>
+                </div>
+                <div class="total-cost-box" style="margin-top:2px">
+                    <div class="run-id" id="run-label" style="color:#888;font-size:12px">No active run</div>
+                </div>
+            </div>
+            <div class="history-panel">
+                <h3>History</h3>
+                <table class="history-table">
+                    <thead><tr><th>#</th><th>Date</th><th>Bench</th><th>Perihan</th><th>Cost</th></tr></thead>
+                    <tbody id="history-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail-panel" id="detail-panel">
+        <div class="detail-header">
+            <h2 id="detail-title">Select a step</h2>
+            <span class="step-info" id="detail-info"></span>
+        </div>
+        <div class="detail-controls" id="detail-controls"></div>
+        <div class="detail-cost" id="detail-cost" style="display:none">
+            <span>Cost: <span class="cost-val" id="step-cost">$0.00</span></span>
+            <span>Tokens: <span id="step-tokens">-</span></span>
+        </div>
+        <div class="detail-log" id="detail-log">
+            <div class="log-line" style="color:#555">Click a step in either circle to begin</div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Circle 1: Benchmark (run once to establish baseline)
+const BENCHMARK_STEPS = [
+    { id: 'collect',     label: 'Collect',      icon: '1' },
+    { id: 'generate_qa', label: 'Generate\nQA', icon: '2' },
+    { id: 'benchmark',   label: 'Benchmark',    icon: '3' },
+];
+
+// Circle 2: Improve (repeated iteration)
+const IMPROVE_STEPS = [
+    { id: 'index',   label: 'Index',             icon: '1' },
+    { id: 'perihan', label: 'Evaluate\nPerihan', icon: '2' },
+    { id: 'report',  label: 'Report',            icon: '3' },
+    { id: 'improve', label: 'Improve',           icon: '4' },
+];
+
+const ALL_STEPS = [...BENCHMARK_STEPS, ...IMPROVE_STEPS];
+
+let currentRun = null;
+let selectedStep = null;
+
+// Build circle positions
+function circlePositions(steps, cx, cy, r) {
+    return steps.map((s, i) => {
+        const angle = (i / steps.length) * Math.PI * 2 - Math.PI / 2;
+        return { x: cx + r * Math.cos(angle), y: cy + r * Math.sin(angle) };
+    });
+}
+
+const benchmarkPos = circlePositions(BENCHMARK_STEPS, 150, 155, 100);
+const improvePos = circlePositions(IMPROVE_STEPS, 170, 175, 115);
+
+function initCircle(containerId, steps, positions, arrowGroupId) {
+    const circle = document.getElementById(containerId);
+    // Remove old nodes
+    circle.querySelectorAll('.step-node').forEach(n => n.remove());
+
+    steps.forEach((step, i) => {
+        const node = document.createElement('div');
+        node.className = 'step-node';
+        node.id = `node-${step.id}`;
+        node.style.left = positions[i].x + 'px';
+        node.style.top = positions[i].y + 'px';
+        node.innerHTML = `
+            <div class="status-dot"></div>
+            <div class="icon">${step.icon}</div>
+            <div class="label">${step.label}</div>
+        `;
+        node.onclick = () => selectStep(step.id);
+        circle.appendChild(node);
+    });
+
+    // Draw arrows
+    const arrowsG = document.getElementById(arrowGroupId);
+    arrowsG.innerHTML = '';
+    for (let i = 0; i < steps.length; i++) {
+        const j = (i + 1) % steps.length;
+        const from = positions[i];
+        const to = positions[j];
+        const dx = to.x - from.x, dy = to.y - from.y;
+        const dist = Math.sqrt(dx*dx + dy*dy);
+        const nx = dx/dist, ny = dy/dist;
+        const x1 = from.x + nx * 40, y1 = from.y + ny * 40;
+        const x2 = to.x - nx * 40, y2 = to.y - ny * 40;
+
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', x1);
+        line.setAttribute('y1', y1);
+        line.setAttribute('x2', x2);
+        line.setAttribute('y2', y2);
+        line.setAttribute('class', 'loop-arrow');
+        line.id = `arrow-${steps[i].id}`;
+        arrowsG.appendChild(line);
+    }
+}
+
+function initLoop() {
+    initCircle('circle-benchmark', BENCHMARK_STEPS, benchmarkPos, 'arrows-benchmark');
+    initCircle('circle-improve', IMPROVE_STEPS, improvePos, 'arrows-improve');
+}
+
+function updateLoop() {
+    if (!currentRun) return;
+    document.getElementById('run-label').textContent = `Loop #${currentRun.id}`;
+    document.getElementById('total-cost').textContent = `$${(currentRun.total_cost || 0).toFixed(4)}`;
+
+    // Calculate per-circle costs
+    let benchCost = 0, improveCost = 0;
+    BENCHMARK_STEPS.forEach(s => { benchCost += (currentRun.steps[s.id]?.cost || 0); });
+    IMPROVE_STEPS.forEach(s => { improveCost += (currentRun.steps[s.id]?.cost || 0); });
+    document.getElementById('benchmark-cost').textContent = `$${benchCost.toFixed(4)}`;
+    document.getElementById('improve-cost').textContent = `$${improveCost.toFixed(4)}`;
+
+    ALL_STEPS.forEach((step) => {
+        const node = document.getElementById(`node-${step.id}`);
+        if (!node) return;
+        const stepData = currentRun.steps[step.id] || {};
+        node.className = 'step-node';
+        if (step.id === selectedStep) node.classList.add('active');
+        if (stepData.status === 'running') node.classList.add('running');
+        else if (stepData.status === 'done') node.classList.add('done');
+        else if (stepData.status === 'error') node.classList.add('error');
+        else if (stepData.status === 'skipped') node.classList.add('skipped');
+
+        // Update arrows
+        const arrow = document.getElementById(`arrow-${step.id}`);
+        if (arrow && stepData.status === 'done') {
+            arrow.classList.add('done');
+            arrow.setAttribute('marker-end', 'url(#arrowhead-done)');
+        }
+    });
+}
+
+function selectStep(stepId) {
+    selectedStep = stepId;
+    updateLoop();
+    showStepDetail(stepId);
+}
+
+function showStepDetail(stepId) {
+    const step = ALL_STEPS.find(s => s.id === stepId);
+    if (!step) return;
+    const stepData = currentRun ? (currentRun.steps[stepId] || {}) : {};
+
+    document.getElementById('detail-title').textContent = step.label.replace('\n', ' ');
+
+    let info = '';
+    if (stepData.started) info += `Started: ${new Date(stepData.started).toLocaleTimeString()}`;
+    if (stepData.finished) info += ` | Finished: ${new Date(stepData.finished).toLocaleTimeString()}`;
+    if (stepData.cost) info += ` | Cost: $${stepData.cost.toFixed(4)}`;
+    document.getElementById('detail-info').textContent = info;
+
+    const controls = document.getElementById('detail-controls');
+    const isRunning = stepData.status === 'running';
+    const canRun = currentRun && !isRunning && stepData.status !== 'done';
+
+    if (stepId === 'improve') {
+        controls.innerHTML = `
+            <textarea class="improve-textarea" id="improve-notes" placeholder="Notes about what you improved...">${stepData.notes || ''}</textarea>
+            <button class="btn btn-confirm" onclick="completeImprove()" ${!currentRun ? 'disabled' : ''}>Mark Complete</button>
+            <button class="btn btn-skip" onclick="skipStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Skip</button>
+        `;
+    } else if (stepId === 'collect') {
+        controls.innerHTML = `
+            <select id="collect-category">
+                <option value="all">All categories</option>
+                <option value="knowledge">Knowledge</option>
+                <option value="medical">Medical</option>
+                <option value="messaging">Messaging</option>
+                <option value="legal">Legal</option>
+                <option value="finance">Finance</option>
+                <option value="personal">Personal</option>
+                <option value="calendar">Calendar</option>
+                <option value="trello">Trello</option>
+            </select>
+            <button class="btn btn-start" onclick="startStep('collect')" ${!canRun ? 'disabled' : ''}>Start</button>
+            <button class="btn btn-stop" onclick="stopStep('collect')" ${!isRunning ? 'disabled' : ''}>Stop</button>
+            <button class="btn btn-skip" onclick="skipStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Skip</button>
+        `;
+    } else if (stepId === 'generate_qa') {
+        controls.innerHTML = `
+            <select id="qa-strategy">
+                <option value="all">All strategies</option>
+                <option value="single_doc">Single doc</option>
+                <option value="same_category">Same category</option>
+                <option value="cross_storyline">Cross storyline</option>
+            </select>
+            <button class="btn btn-start" onclick="startStep('generate_qa')" ${!canRun ? 'disabled' : ''}>Start</button>
+            <button class="btn btn-stop" onclick="stopStep('generate_qa')" ${!isRunning ? 'disabled' : ''}>Stop</button>
+            <button class="btn btn-skip" onclick="skipStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Skip</button>
+        `;
+    } else if (stepId === 'report') {
+        controls.innerHTML = `
+            <button class="btn btn-start" onclick="startStep('report')" ${!canRun ? 'disabled' : ''}>Generate</button>
+            <button class="btn btn-confirm" onclick="openReport()">View Report</button>
+            <button class="btn btn-skip" onclick="skipStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Skip</button>
+        `;
+    } else {
+        controls.innerHTML = `
+            <button class="btn btn-start" onclick="startStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Start</button>
+            <button class="btn btn-stop" onclick="stopStep('${stepId}')" ${!isRunning ? 'disabled' : ''}>Stop</button>
+            <button class="btn btn-skip" onclick="skipStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Skip</button>
+        `;
+    }
+
+    // Show cost area for steps that have cost
+    const costEl = document.getElementById('detail-cost');
+    if (['index', 'benchmark', 'perihan', 'collect', 'generate_qa'].includes(stepId)) {
+        costEl.style.display = '';
+    } else {
+        costEl.style.display = 'none';
+    }
+
+    // Show warning for steps needing Perihan
+    if (['index', 'perihan'].includes(stepId)) {
+        fetch('/api/status').then(r => r.json()).then(data => {
+            if (!data.perihan_up) {
+                const log = document.getElementById('detail-log');
+                log.innerHTML = '<div class="warning">Perihan server is not running at localhost:8000. Start it before running this step.</div>' + log.innerHTML;
+            }
+        });
+    }
+}
+
+async function newRun() {
+    const resp = await fetch('/api/new-run', { method: 'POST' });
+    currentRun = await resp.json();
+    updateLoop();
+    document.getElementById('detail-log').innerHTML = '<div class="log-line ok">New loop started: #' + currentRun.id + '</div>';
+    selectStep('collect');
+    refreshHistory();
+}
+
+async function startStep(stepId) {
+    if (!currentRun) { await newRun(); }
+
+    const log = document.getElementById('detail-log');
+    log.innerHTML = '';
+    document.getElementById('step-cost').textContent = '$0.00';
+    document.getElementById('step-tokens').textContent = '-';
+
+    let url = `/api/run/${currentRun.id}/${stepId}`;
+    const params = new URLSearchParams();
+
+    if (stepId === 'collect') {
+        const cat = document.getElementById('collect-category')?.value || 'all';
+        params.set('category', cat);
+    } else if (stepId === 'generate_qa') {
+        const strat = document.getElementById('qa-strategy')?.value || 'all';
+        params.set('strategy', strat);
+    }
+
+    if (params.toString()) url += '?' + params.toString();
+
+    // Update UI to running and rebuild controls so Stop button is enabled
+    if (currentRun.steps[stepId]) currentRun.steps[stepId].status = 'running';
+    updateLoop();
+    showStepDetail(stepId);
+
+    appendLog(`Starting ${stepId}...`, 'ok');
+
+    try {
+        const resp = await fetch(url, { method: 'POST' });
+
+        if (!resp.ok) {
+            const errText = await resp.text();
+            appendLog(`Server error ${resp.status}: ${errText}`, 'error');
+            return;
+        }
+
+        const reader = resp.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            buffer += decoder.decode(value, { stream: true });
+            const parts = buffer.split('\n\n');
+            buffer = parts.pop() || '';
+
+            for (const part of parts) {
+                if (!part.startsWith('data: ')) continue;
+                try {
+                    const event = JSON.parse(part.slice(6));
+                    handleStepEvent(stepId, event);
+                } catch (e) { console.warn('Parse error:', e, part); }
+            }
+        }
+    } catch (err) {
+        console.error('Fetch error:', err);
+        appendLog('Connection error: ' + err.message, 'error');
+    }
+
+    // Refresh state
+    await refreshStatus();
+    updateLoop();
+    showStepDetail(stepId);
+}
+
+function handleStepEvent(stepId, event) {
+    if (event.type === 'log') {
+        appendLog(event.text, event.text?.includes('Error') ? 'error' : '');
+    } else if (event.type === 'error') {
+        appendLog(event.text, 'error');
+    } else if (event.type === 'exit') {
+        appendLog(`Process exited with code ${event.code}`, event.code === 0 ? 'ok' : 'error');
+    } else if (event.type === 'file_done' || event.type === 'complete' || event.type === 'progress') {
+        if (event.text) appendLog(event.text);
+    } else if (event.type === 'report_ready') {
+        appendLog('Report generated', 'ok');
+    } else if (event.type === 'step_complete') {
+        appendLog(`Step ${event.step}: ${event.status}`, event.status === 'done' ? 'ok' : 'error');
+    }
+
+    // Update cost display
+    if (event.total_cost !== undefined) {
+        document.getElementById('step-cost').textContent = `$${event.total_cost.toFixed(4)}`;
+    }
+    if (event.total_input_tokens !== undefined) {
+        document.getElementById('step-tokens').textContent =
+            `${event.total_input_tokens.toLocaleString()} in / ${(event.total_output_tokens||0).toLocaleString()} out`;
+    }
+}
+
+function appendLog(text, cls) {
+    const log = document.getElementById('detail-log');
+    const line = document.createElement('div');
+    line.className = 'log-line' + (cls ? ' ' + cls : '');
+    const time = new Date().toLocaleTimeString();
+    line.innerHTML = `<span class="time">${time}</span> ${text.replace(/</g, '&lt;')}`;
+    log.appendChild(line);
+    log.scrollTop = log.scrollHeight;
+}
+
+async function stopStep(stepId) {
+    await fetch(`/api/stop/${stepId}`, { method: 'POST' });
+    appendLog('Stop requested', 'error');
+}
+
+async function skipStep(stepId) {
+    if (!currentRun) return;
+    await fetch(`/api/run/${currentRun.id}/skip/${stepId}`, { method: 'POST' });
+    await refreshStatus();
+    updateLoop();
+    showStepDetail(stepId);
+}
+
+async function completeImprove() {
+    if (!currentRun) return;
+    const notes = document.getElementById('improve-notes')?.value || '';
+    await fetch(`/api/run/${currentRun.id}/improve`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ notes }),
+    });
+    await refreshStatus();
+    updateLoop();
+    showStepDetail('improve');
+    appendLog('Improvement step completed', 'ok');
+}
+
+function openReport() {
+    window.open('/api/report', '_blank');
+}
+
+async function refreshStatus() {
+    const data = await (await fetch('/api/status')).json();
+    if (data.current_run) {
+        currentRun = data.current_run;
+    }
+    refreshHistory();
+}
+
+async function refreshHistory() {
+    const runs = await (await fetch('/api/history')).json();
+    const body = document.getElementById('history-body');
+    body.innerHTML = '';
+    for (const run of [...runs].reverse().slice(0, 10)) {
+        const date = new Date(run.started).toLocaleDateString();
+        const bStep = run.steps.benchmark || {};
+        const pStep = run.steps.perihan || {};
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${run.id}</td>
+            <td>${date}</td>
+            <td class="score">${bStep.status === 'done' ? 'Done' : bStep.status || '-'}</td>
+            <td class="score">${pStep.status === 'done' ? 'Done' : pStep.status || '-'}</td>
+            <td class="cost">$${(run.total_cost || 0).toFixed(4)}</td>
+        `;
+        tr.onclick = () => {
+            currentRun = run;
+            updateLoop();
+        };
+        body.appendChild(tr);
+    }
+}
+
+// Init
+initLoop();
+refreshStatus().then(() => {
+    updateLoop();
+    if (currentRun) {
+        // Select the first pending step — check benchmark circle first, then improve
+        const allSteps = [...BENCHMARK_STEPS, ...IMPROVE_STEPS];
+        const firstPending = allSteps.find(s => currentRun.steps[s.id]?.status === 'pending');
+        selectStep(firstPending ? firstPending.id : 'collect');
+    } else {
+        selectStep('collect');
+    }
+});
+</script>
+</body>
+</html>
