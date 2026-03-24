@@ -42,13 +42,14 @@ async def chat_folder(question: str, folder: str = None):
     context = "\n---\n".join(docs) if docs else "No documents found."
 
     model = get_current_model()
-    response = get_llm_client().chat.completions.create(
-        model=model,
-        temperature=0.3,
-        messages=[
-            {
-                "role": "system",
-                "content": f"""
+    try:
+        response = get_llm_client().chat.completions.create(
+            model=model,
+            temperature=0.3,
+            messages=[
+                {
+                    "role": "system",
+                    "content": f"""
 You are Perihan, a helpful document assistant.
 Today's date is {datetime.now().strftime('%d %B %Y')}.
 If the documents below contain relevant information, use them to answer.
@@ -58,10 +59,14 @@ If the question is general and not covered in the documents, answer from your ow
 Documents:
 {context}
 """,
-            },
-            {"role": "user", "content": question},
-        ],
-    )
+                },
+                {"role": "user", "content": question},
+            ],
+        )
+    except Exception as e:
+        from perihan_core.services.chat_service import _handle_llm_error
+        llm_err = _handle_llm_error(e)
+        raise HTTPException(status_code=llm_err.status_code, detail=str(llm_err))
 
     return {"reply": response.choices[0].message.content}
 

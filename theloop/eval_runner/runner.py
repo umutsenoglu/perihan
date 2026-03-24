@@ -215,8 +215,8 @@ def ask_perihan(question: str) -> str:
     try:
         resp = requests.post(
             PERIHAN_CHAT,
-            params={"question": question, "use_drive": "false"},
-            timeout=60,
+            params={"question": question, "use_drive": "false", "deep_think": "true"},
+            timeout=120,
         )
         resp.raise_for_status()
         data = resp.json()

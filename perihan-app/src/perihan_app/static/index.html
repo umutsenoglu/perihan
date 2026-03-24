@@ -101,6 +101,10 @@
             display: inline-block; background: #ede9fe; color: #7c3aed;
             font-size: 11px; padding: 2px 8px; border-radius: 10px; margin-left: 6px;
         }
+        .cost-badge {
+            display: inline-block; background: #f0fdf4; color: #15803d;
+            font-size: 11px; padding: 2px 8px; border-radius: 10px; margin-left: 6px;
+        }
 
         .messages {
             flex: 1;
@@ -1078,7 +1082,17 @@
 
                 // Deep Think badge
                 if (data.deep_think_used) {
-                    html += '<span class="deep-think-badge">⚡ Deep Think</span>';
+                    html += '<span class="deep-think-badge">Deep Think</span>';
+                }
+
+                // Cost badge
+                if (data.usage) {
+                    const u = data.usage;
+                    const tokens = u.input_tokens + u.output_tokens + u.thinking_tokens;
+                    let label = tokens.toLocaleString() + ' tokens';
+                    if (u.cost > 0) label += ' · $' + u.cost.toFixed(4);
+                    else label += ' · free';
+                    html += '<span class="cost-badge">' + label + '</span>';
                 }
 
                 // Sources (RAG)

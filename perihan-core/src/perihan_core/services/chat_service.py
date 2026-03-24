@@ -3,12 +3,35 @@ import time
 import asyncio
 from datetime import datetime
 
+from openai import APIStatusError
+from perihan_core.services.index_service import _calc_llm_cost
+
 
 class LLMError(Exception):
     """Raised when an LLM operation fails. Carries a status_code for HTTP translation."""
     def __init__(self, message, status_code=400):
         self.status_code = status_code
         super().__init__(message)
+
+
+def _handle_llm_error(e: Exception) -> LLMError:
+    """Convert LLM API errors into user-friendly LLMError exceptions."""
+    if isinstance(e, APIStatusError):
+        body = getattr(e, 'body', None) or {}
+        if isinstance(body, dict):
+            err = body.get('error', {})
+            msg = err.get('message', '') if isinstance(err, dict) else str(err)
+        else:
+            msg = str(body)
+        code = e.status_code
+        if code == 429:
+            return LLMError(f"LLM API rate limit / spending cap exceeded: {msg}", status_code=429)
+        if code == 401:
+            return LLMError(f"LLM API authentication failed: {msg}", status_code=401)
+        if code == 403:
+            return LLMError(f"LLM API access denied: {msg}", status_code=403)
+        return LLMError(f"LLM API error ({code}): {msg}", status_code=code)
+    return LLMError(f"LLM error: {e}", status_code=502)
 
 
 def drive_fallback_search(
@@ -143,6 +166,7 @@ Follow these steps strictly:
 
     tool_call_log = []
     mcp_iterations = []
+    total_usage = {"input_tokens": 0, "output_tokens": 0, "thinking_tokens": 0, "cost": 0.0}
     search_count = 0  # Track how many searches have been done
     max_iterations = 8
     min_searches = 3  # Minimum searches before allowing "not found" answers
@@ -159,7 +183,13 @@ Follow these steps strictly:
         except Exception as e:
             if "does not support tools" in str(e):
                 raise LLMError(f"Model '{model}' does not support tool calling. Deep Think / MCP requires a model with tool support (e.g. Gemini).")
-            raise
+            raise _handle_llm_error(e)
+        # Accumulate token usage
+        iter_usage = _calc_llm_cost(response.usage, model)
+        for k in ("input_tokens", "output_tokens", "thinking_tokens", "cost"):
+            total_usage[k] += iter_usage[k]
+        total_usage["cost"] = round(total_usage["cost"], 6)
+
         choice = response.choices[0]
 
         # Capture raw LLM response for all iterations
@@ -189,7 +219,7 @@ Follow these steps strictly:
             iteration_entry["response"] = reply_text
             iteration_entry["tool_calls"] = []
             mcp_iterations.append(iteration_entry)
-            return {"reply": reply_text, "tool_calls": tool_call_log, "mcp_iterations": mcp_iterations}
+            return {"reply": reply_text, "tool_calls": tool_call_log, "mcp_iterations": mcp_iterations, "usage": total_usage}
 
         messages.append(choice.message)
         iteration_tool_calls = []
@@ -223,7 +253,7 @@ Follow these steps strictly:
         mcp_iterations.append(iteration_entry)
 
     last_content = response.choices[0].message.content or "Max tool call iterations reached."
-    return {"reply": last_content, "tool_calls": tool_call_log, "mcp_iterations": mcp_iterations}
+    return {"reply": last_content, "tool_calls": tool_call_log, "mcp_iterations": mcp_iterations, "usage": total_usage}
 
 
 async def rag_query(question: str, use_drive: bool = True, deep_think: bool = False, endpoint: str = "/chat",
@@ -237,7 +267,7 @@ async def rag_query(question: str, use_drive: bool = True, deep_think: bool = Fa
     start_time = time.perf_counter()
     rag_start = start_time
     where = None if use_drive else {"source": {"$ne": "gdrive"}}
-    docs, metas, search_debug = hybrid_search(question, n_results=8, where=where, collection=collection)
+    docs, metas, search_debug = hybrid_search(question, n_results=15, where=where, collection=collection)
 
     # Google Drive native search fallback — searches actual file content, not just indexed summaries
     if use_drive and drive_svc:
@@ -418,9 +448,10 @@ Documents:
                 "error": str(e),
                 "duration_ms": round((time.perf_counter() - start_time) * 1000),
             })
-        raise
+        raise _handle_llm_error(e)
 
     llm_time = time.perf_counter() - llm_start
+    rag_usage = _calc_llm_cost(response.usage, model)
 
     msg = response.choices[0].message if response.choices else None
     reply = (msg.content if msg and msg.content else "") or ""
@@ -465,11 +496,19 @@ Documents:
                 "error": None,
                 "duration_ms": round((time.perf_counter() - start_time) * 1000),
             })
+        mcp_usage = mcp_result.get("usage", {"input_tokens": 0, "output_tokens": 0, "thinking_tokens": 0, "cost": 0.0})
+        combined_usage = {
+            "input_tokens": rag_usage["input_tokens"] + mcp_usage["input_tokens"],
+            "output_tokens": rag_usage["output_tokens"] + mcp_usage["output_tokens"],
+            "thinking_tokens": rag_usage["thinking_tokens"] + mcp_usage["thinking_tokens"],
+            "cost": round(rag_usage["cost"] + mcp_usage["cost"], 6),
+        }
         return {
             "reply": mcp_result["reply"],
             "sources": [],
             "tool_calls": mcp_result["tool_calls"],
             "deep_think_used": True,
+            "usage": combined_usage,
             "timing": {
                 "rag_seconds": round(rag_time, 3),
                 "llm_seconds": round(llm_time, 3),
@@ -497,6 +536,7 @@ Documents:
         "sources": sources,
         "tool_calls": [],
         "deep_think_used": False,
+        "usage": rag_usage,
         "timing": {
             "rag_seconds": round(rag_time, 3),
             "llm_seconds": round(llm_time, 3),
