@@ -1,0 +1,47 @@
+Sunday, September 10th, 2023
+
+Another Sunday slipping away. It’s 11:47 PM now, and I’m just staring at my phone, blue light burning into my eyes, knowing I should be asleep. But my head’s buzzing. Too much information, too many competing thoughts.
+
+Started the day ridiculously early. Max, as usual. 6:15 AM, little face peering over the duvet, "Daddy, I'm hungry." Claire just groaned and pulled the pillow over her head. Fair enough. She had a tough week at school, Mrs. Henderson was off with a bug and she had to cover Year 3 for a couple of days on top of her own class. Poor thing. Got Max his toast and a banana, put on Bluey – felt like a real zombie. Managed to make a decent coffee though, so small win.
+
+Lily was up by 7, already asking if she could watch something different. The usual Sunday morning negotiations. Got them both sorted, then retreated to the kitchen for a bit of peace while Claire got up. The fish tank was looking a bit murky, really need to do a partial water change tomorrow evening. The rummynose tetras are looking a bit pale, maybe too much light? Or is it the stress from the Gourami? Always something with those guys. It’s meant to be relaxing, but sometimes it feels like just another thing to manage.
+
+Work. That damn payment processing migration. It’s like a low hum of anxiety in the background of everything I do. James was Slack messaging me yesterday, Saturday morning of all times, about the UAT environment being flaky. Said Priya was tearing her hair out, and Richard was breathing down his neck. I know, I know. I’m the Senior Engineer, it’s my baby, but it’s just so much. We’re pushing to go live by the 29th, and honestly, it feels like we’re nowhere near ready. Every integration point is throwing up some obscure error, and the legacy systems are… well, they’re legacy for a reason. Claire asked me at dinner if I’d even had a proper weekend, and I just shrugged. It’s hard to switch off when you know there’s a ticking clock for a multi-million-pound project. My back was actually seizing up a bit yesterday after hunching over the laptop trying to debug that weird API timeout. Need to stretch more. Or get a standing desk. One day.
+
+Anyway, the big distraction today, the rabbit hole I fell down all evening: EVs. Specifically, the Tesla Model 3 vs. the Hyundai Ioniq 5. The Golf is great, reliable, but it’s a 2019 now, and petrol prices… don’t even get me started. Plus, thinking about the environment, the future for Lily and Max. Claire’s keen, too.
+
+Spent hours on forums, watching YouTube reviews, comparing specs.
+
+**Tesla Model 3 (Long Range):**
+*   **Pros:** Performance, charging network (Superchargers are everywhere), tech-forward interior, good residuals. Looks sleek, I suppose.
+*   **Cons:** Elon Musk's… everything. Feels a bit like buying into a cult sometimes. The minimalist interior is almost *too* minimalist, feels a bit cold. Insurance is eye-watering, heard some horror stories. Build quality concerns sometimes surface online, panel gaps etc. And the price, even for a used one, is still up there.
+*   **Thoughts:** Fast, efficient. Good for my commute, definitely. And for trips to Bristol to see Mum. Range seems solid. Claire likes the idea of "just plugging it in" after some initial setup.
+
+**Hyundai Ioniq 5 (Long Range RWD/AWD):**
+*   **Pros:** The design is gorgeous, properly futuristic but also retro. More conventional interior, feels very spacious, like an actual living room. V2L (vehicle-to-load) is cool – imagine powering the coffee machine on a camping trip or during a power cut. Hyundai's warranty is strong. Build quality looks solid.
+*   **Cons:** Charging network not as extensive as Tesla, though public chargers are improving. Range anxiety is a thing, especially with the AWD version – heard some reports of it being less efficient than the Model 3. Resale values might not hold up as well. Also a bit bigger, which might be a faff parking in North London sometimes.
+*   **Thoughts:** Claire really likes the Ioniq 5’s look. She mentioned how much easier it would be to get the kids in and out with the wider doors and flatter floor. The V2L thing is really appealing, feels practical. Would it handle the journey to Manchester to see Hannah okay? Or Edinburgh to see Luke? Probably.
+
+The main question is charging. We don't have a driveway. It’s street parking for us. So it'd be public charging points, or maybe getting a permit for a lamppost charger if they ever get around to installing one on our road. Heard some neighbours talking about a scheme council was running, but knowing our council, it’ll be 2025 before anything happens. That’s a huge mental hurdle. How often would I need to charge? What if they're all in use? The convenience factor of plugging in at home is a massive draw that we just don't have. This is making me lean towards the Model 3 purely for the Supercharger network reliability, even if I prefer the Ioniq 5’s vibe.
+
+Lunch today was chaotic. Made some quick pasta for Lily and Max, who decided it was a competition to see who could get the most sauce on their face. Claire just watched, amused, while I cleaned up. After that, we took them to the park. Swings, slide, the usual. Lily was practicing her "superhero landing" and Max just chased pigeons. It was good to get out, felt the sun for a bit. My asthma was a little bit triggered by the pollen, despite the season supposedly winding down. Just a slight tightness. Nothing major.
+
+Got home around 3 PM, everyone was knackered. Managed to sneak away for an hour to cycle down by the canal, just a short loop. Needed to clear my head. The fintech migration, the EVs, the constant juggle. It all gets a bit much. The wind in my face was good. Saw a kingfisher, darting flash of blue. Always makes me happy. Forgot my camera, though. Always the way.
+
+Dinner tonight was Claire’s chicken curry – her mum’s recipe, really good. She’s so amazing. She deals with seven-year-olds all day, then comes home and puts up with my tech-bro anxieties and still cooks incredible food. We talked a bit about school, Lily’s reading progress (Mrs. Henderson mentioned she’s really flying), and Max’s nursery antics (apparently he tried to feed his toy dinosaur a crayon).
+
+After the kids were finally asleep, around 8:30 PM, that’s when I really buckled down on the EV research. Claire was beside me, occasionally chiming in. "What about the Boot space, Ethan? Will Lily's cello fit in the back?" (She's just started lessons, bless her). "And the range – will it get us to Mum's in Bristol without stopping?" We mapped it out. Bristol is about 120 miles. Model 3 Long Range, no problem. Ioniq 5, probably okay, but depends on motorway speeds and temperature.
+
+It’s not just the car, is it? It’s the whole change. The unknown. Another big expense on top of the mortgage – feels like we’re constantly funneling money into something. The Barclays statements land every month and it’s a grim reminder. But then I think about Dad, George. Passed away two years ago, almost to the day. He never got to see Lily start Year 3, or Max at nursery. He always wanted to be more "green," talked about solar panels and electric cars even back then. This feels like a small step, a way to honour that, maybe.
+
+Mum (Janet) called earlier, too. Just a quick check-in. She’s doing okay, went to her garden club, complaining about slugs. Good to hear her voice. I should really try to visit more often, but Sundays are so precious, and then the work week starts again. Hannah in Manchester and Luke in Edinburgh – feel like I haven't seen them properly in ages. Everyone’s just busy with their own thing.
+
+The clock is almost midnight. My eyes are tired. My back is definitely protesting. The migration deadline is looming, the EV decision is looming, the general feeling of life constantly moving and requiring attention is looming.
+
+Okay. Deep breaths. Tomorrow, Monday. Back to the grind. Need to ping James first thing about the UAT environment, check the Jira board. Write down some pros and cons for the EVs. Maybe check out some local charging points on Zap-Map.
+
+It’s a lot. But it’s my life. Our life. And I wouldn't trade it. Just wish I could switch off my brain sometimes.
+
+Right, sleep. Or try to.
+
+Ethan.

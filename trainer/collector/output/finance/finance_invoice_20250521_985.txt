@@ -1,0 +1,13 @@
+**Payment Confirmation**
+
+**TechCorp Solutions**
+
+**To:** John Smith
+
+Your payment of **$525.50 USD** for Invoice #TCS-2025-05-21-001 has been successfully processed.
+
+**Date Processed:** 2025-05-23
+**Payment Method:** Visa ending in **** 1234
+**Transaction ID:** TXN-TCS-00987654321
+
+Thank you for your business.

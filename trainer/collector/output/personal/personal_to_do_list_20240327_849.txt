@@ -1,0 +1,75 @@
+**Ethan's To-Do List & Day Notes - 27/03/24**
+
+Urgh. Wednesday already. Feel like I'm constantly running on fumes. Max's comment from yesterday evening is still making me smile though. Claire told me when I got back – Miss Claire (the nursery one, not my Claire!) had apparently asked the kids what their favourite animal was. Max, bless him, had apparently very seriously declared, "My favourite animal is a *puddle*!" Claire and I just cracked up. He's such a weird, brilliant little dude. Needed that laugh after the day I had. And today promises more of the same stress. Payment processing migration… *shudder*.
+
+---
+
+**MORNING GRIND**
+
+*   [x] **Get Lily & Max ready**
+    *   Actually, managed this mostly. Lily was surprisingly cooperative, probably because she wanted to wear her new sparkly trainers. Max, standard resistance to clothes. Had to do the "airplane" game with his socks. He still giggled, so win. My back already twinging a bit from bending over to wrestle him into trousers. Maybe I should actually do those stretches Mum keeps sending me links for. Nah, no time.
+*   [x] **Breakfast chaos**
+    *   Cereal everywhere. Max tried to feed his toy dinosaur a cheerio. Lily was asking about fractions in maths which confused me this early in the morning. Had to remind myself which *kind* of fraction she meant. God, Year 3 maths is harder than I remember. Claire usually handles the morning prep for school stuff, I'm more on the 'enforcement' side. She's got it tough though, prepping her own lessons for Year 1s while making sure Lily remembers her reading book and Max doesn't eat the dog's biscuits. No dog yet, but Max would.
+*   [x] **School run (Lily) & Nursery drop (Max)**
+    *   Dropped Lily off first. Mrs. Henderson's classroom window was open, saw her waving. My little grown-up. She asked if I'd remember to water her bean plant experiment tonight. Of course I will, sweetheart. Then Max. He didn't want to leave. "Want Daddy to stay!" Classic. Had to distract him with the promise of "diggers" in the sandpit. Felt a pang. Hate leaving him when he's like that. Always wonder if I spend enough quality time with them. The migration project just sucks up everything.
+*   [x] **Commute to work**
+    *   Managed to get on the 7:45 train, mostly standing. Listened to that new podcast about AI ethics. Interesting stuff, but my mind kept drifting to the migration. Tried to mentally prep for the stand-up. What did I do yesterday? Reviewed James’s pull request, pushed my latest API changes. Not enough. Never enough. The pressure from Richard is ramping up. He’s usually pretty laid back, but even he’s stressed. That Barclays mortgage payment for next month looming large in my mind. We need this bonus from the project.
+
+---
+
+**WORK (FINTECH HELL)**
+
+*   [x] **Stand-up with team (James, Priya, Richard)**
+    *   Standard fare. James is still battling with the external payment gateway integration – surprise, surprise. Priya is making good progress on the reporting module, solid as always. My update was mostly "continuing with UAT sign-off prep, found a few edge cases to test". Richard looked like he hadn't slept. Asked about the 'remaining critical path items'. Knew he would. It's basically *my* stuff. Feeling the weight of it.
+*   [x] **Focus: Payment Processing Migration - UAT sign-off prep**
+    *   This is the big one. Spent literally all morning diving into test cases, mapping them to requirements. Found a potential bug in how refunds are handled for certain transaction types. Shit. Did a quick deep dive. Looks like a minor logic error in the `ProcessRefunds` function. Could be a major headache if not caught. Sent a quick message to James – he worked on that module last week. Hopefully, it's an easy fix. My mild asthma felt a bit tighter today, probably from the stress. Reached for my inhaler, then remembered I left it in the car. Idiot.
+*   [ ] **Code review for new module (Priya's credit scoring logic)**
+    *   *Pushed this.* No time. The refund bug needs my immediate attention. Messaged Priya to let her know I'd get to it this afternoon, but it's looking unlikely. My brain is fried already.
+*   [x] **Lunch break - quick sandwich, maybe a walk**
+    *   "Walk" was a joke. Grabbed a pre-made chicken salad sandwich from Pret. Ate it at my desk while still staring at the refund code. Swore I heard a pop in my lower back when I leaned back too quickly. Just what I need. Managed to sneak in a quick check on the tropical fish forum on my phone. Someone posted a picture of their new Discus tank. So beautiful. A little escape, even if just for five minutes. That's my real stress reliever. Must remember to check my own tank parameters tonight. Need to dose the ferts.
+*   [x] **Sync with Richard on integration issues**
+    *   Quick 15-min call. Explained the potential refund bug. He wasn't thrilled but understood it needed to be addressed *before* UAT sign-off. Asked for an estimate for the fix. Told him I'd have a clearer picture by end of day. He just grunted. This migration… it feels like trying to fix a leaky boat while sailing it through a storm.
+*   [x] **Reply to James re: API docs**
+    *   He responded about the refund bug. Said he'd take a look ASAP. Good. Also asked about some obscure error code in the API docs. Pointed him to the relevant section on Confluence. Finally a tick I can feel good about.
+
+---
+
+**AFTERNOON/EVENING RUSH**
+
+*   [x] **Pick up Max from nursery**
+    *   Raced out of the office a bit late. The traffic was a nightmare. Max was having a meltdown when I got there. Over-tired. Poor little guy. Miss Claire (the nursery one) said he'd been asking for me. Gave him a big hug. He smells like playdough and juice. My favourite smell. Still grinning about his "puddle" comment. So much purer than all this corporate crap.
+*   [x] **Pick up Lily from QPA**
+    *   Lily was buzzing. Said she scored a goal in football club. My little athlete. She immediately started telling me all about her day, Mrs. Henderson, a new classmate called Chloe. Max was clinging to my leg, still tired but happy to see his sister. The contrast between my day and theirs is so stark. They live in a world of goals, puddles, and bean plants. I live in a world of migration bugs and deadlines.
+*   [x] **Start dinner (Pasta?)**
+    *   Yes, pasta. The kids' favourite. Quickest thing after a long day. Threw together a pesto pasta with some cherry tomatoes and halloumi. Max declared it "green spaghetti!" and Lily picked out all the tomatoes (again). Claire will probably pick at it when she gets home, she usually prefers something lighter. But it’s food, and it’s quick.
+*   [x] **Help Lily with maths homework**
+    *   Fractions again. I swear Mrs. Henderson assigns them fractions every other day. "What is 3/4 of 20?" Went through it step-by-step. She eventually got it. Good. Felt like a proper dad for a few minutes, not just a stressed engineer. She drew a little smiley face next to her answer. Made my evening.
+*   [x] **Kids' bath & bedtime stories**
+    *   Bath was splashy. Max tried to make a 'puddle' in the bathroom. Lily patiently showed him how to make bubbles. Read them both "The Gruffalo". Max still loves the mouse. Lily's a bit too old for it now, but she humours her brother. Tucked them in. Heard Lily whisper, "Love you, Daddy." Felt that deep in my chest. So worth all the stress.
+*   [x] **Chat with Claire**
+    *   She got home around 7:30, looking as tired as I felt. Her Year 1s had apparently been extra challenging today. A new kid had bitten another, and she spent half the afternoon dealing with the fallout. We talked over a cuppa. Just the mundane stuff, the day's irritations, the kids' funny moments. She asked how the migration was going. "Stressful. Found a bug." She just nodded, understood. We're a good team. She's my rock. Need to plan a proper date night soon.
+
+---
+
+**LATE EVENING / PERSONAL (FINALLY)**
+
+*   [ ] **Check fish tank parameters**
+    *   Definitely need to do this. The Java Fern looked a bit pale yesterday. If I forget, the algae might start creeping back in. That's a battle I don't want to re-fight. Just a quick check of nitrates/nitrites, pH, add some liquid fertilizer. Ten minutes. That's all. A bit of peace and quiet watching the Neon Tetras.
+*   [ ] **Chase Barclays for mortgage statement query**
+    *   Ugh. Been putting this off. The annual statement arrived last week, and the numbers for the overpayments don't look quite right. Need to get on the phone to them. Probably another hour on hold. Can I face it tonight? Probably not. Maybe tomorrow at lunch, if I actually take a lunch break. *Moved to tomorrow's list.*
+*   [ ] **Research electric car models (VW ID.3? Kia EV6?)**
+    *   My Golf is getting on a bit, and I'm really keen to go electric. Cleaner, cheaper to run (eventually). Been eyeing the VW ID.3, obvious choice given I like VW. But the Kia EV6 looks seriously good. Need to actually sit down and compare specs, charging times, real-world range. Claire's keen too. Maybe this weekend if the weather's rubbish for cycling.
+*   [ ] **Quick bike check for Saturday ride**
+    *   Planning to hit Richmond Park with James on Saturday morning if this rain holds off. Need to check the tyres, brakes, maybe lube the chain. Just five minutes. Don't want any mechanical surprises halfway up a hill. My back might complain afterwards, but the fresh air always helps my seasonal allergies feel a bit better.
+*   [ ] **Call Mum (Janet)**
+    *   Damn, almost forgot. Promised I'd call her today. She was asking about Lily's school play and Max's latest antics. She misses George, especially these quiet evenings. I miss him too. Still hard sometimes. Need to check in. She worries. Just a quick call. Don't want her to feel neglected. Hannah messaged earlier about Luke's new job in Edinburgh, so I can pass that on.
+*   [ ] **Prep lunch for tomorrow**
+    *   Don't want another Pret sandwich. Will make a quick salad or leftover pasta. Save some money and be a bit healthier.
+*   [ ] **Stretch / back exercises**
+    *   My lower back is definitely protesting. This desk job is killing me. Promised Claire I'd actually start doing the exercises the physio recommended. Just ten minutes. No excuses. Feel like I'm already in my 50s.
+*   [ ] **Wind down with photo edits?**
+    *   Probably not. My brain is fried. Maybe just scroll through some of the photos I took last weekend in the park. Lily and Max chasing pigeons. That's a good way to end the day. Better than staring at migration code.
+
+---
+**END OF DAY REFLECTIONS**
+Feeling utterly drained. The work stress is genuinely getting to me. I need to figure out a better way to compartmentalise. The kids' laughter, Max's silly comments, Lily's hugs… that's what keeps me going. Claire's quiet understanding. Sometimes I feel like I'm just clinging on. Need to remember the good bits more. And definitely do those stretches. And call Mum. And maybe just cuddle Claire for five minutes before crashing out. Tomorrow's another day. Another day of migration hell, probably. But also another day of my amazing family. Puddle. Heh.

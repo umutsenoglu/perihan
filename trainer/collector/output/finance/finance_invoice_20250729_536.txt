@@ -1,0 +1,56 @@
+**RYAN COOPER CONSULTANCY LTD**
+Company Reg. No. 09876543
+14B Elmwood Drive, Islington, London, N1 9XX
+VAT Reg. No. GB 123 4567 89
+
+**INVOICE**
+
+**INVOICE NUMBER:** RC/2025/07/001
+**DATE:** 29 July 2025
+**DUE DATE:** 12 August 2025
+
+**BILL TO:**
+Mr. Ethan Marsh
+42 Willow Creek Gardens
+North London, N6 7AB
+
+**PROJECT/SERVICE DESCRIPTION:** Personal Loan Repayment - Final Instalment
+
+| Date       | Description                                                               | Reference          | Amount (GBP) |
+|:-----------|:--------------------------------------------------------------------------|:-------------------|:-------------|
+| 2024-11-10 | Initial Personal Loan from Ethan Marsh (as per agreement)                 | ELM/RC/2024/001    | -£3,000.00   |
+| 2025-03-05 | Partial Repayment (Cheque received, cleared 07/03/2025)                   | ELM/RC/2025/002    | £1,500.00    |
+| 2025-07-29 | Final Repayment - Outstanding Balance of Personal Loan                    | ELM/RC/2025/003    | £1,500.00    |
+|            |                                                                           |                    |              |
+|            |                                                                           | **TOTAL DUE:**     | **£1,500.00**|
+
+**Payment Terms:**
+Payment due within 14 days of invoice date. Please remit the outstanding balance via bank transfer.
+
+**Bank Transfer Details:**
+**Account Name:** Ryan Cooper Consultancy Ltd
+**Bank:** NatWest
+**Sort Code:** 60-12-34
+**Account No:** 12345678
+**Reference:** ELM/RC/2025/003 - Ethan Marsh
+
+**Notes:**
+
+Dear Ethan,
+
+Following up on our conversation last week regarding the remaining balance of the loan. This invoice is to formalise the final repayment of the £3,000 I borrowed from you back in November 2024.
+
+As you know, I paid back £1,500 on March 5th this year, and this covers the remaining £1,500. I really appreciate your patience and understanding with everything that's been going on. The divorce really hit me harder financially than I anticipated, and I'm still trying to get back on my feet properly. I was genuinely embarrassed about not being able to pay you back on time, especially after you helped me out with the flat deposit.
+
+That Canyon Spectral was indeed a gift from Mark for my birthday, but I should have been more upfront with you about my situation. It was a tough few months, and I value our friendship too much for it to be strained over something like this. The chat at The Flask back in March really helped clear the air, and I'm glad we've been able to move past it.
+
+I've finally managed to sort out a few outstanding payments and can clear this for you now.
+
+Let me know if you have any questions. Looking forward to that curry night we talked about! Claire mentioned she's keen too.
+
+Best,
+
+Ryan Cooper
+Director, Ryan Cooper Consultancy Ltd
+ryan.cooper@rcconsultancy.co.uk
+07700 900800

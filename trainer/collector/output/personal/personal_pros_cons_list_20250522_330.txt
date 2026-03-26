@@ -1,0 +1,61 @@
+2025-05-22, Thursday
+
+God, another one of *those* days. Woke up feeling like I'd run a marathon, and it’s only 6 AM. Max was up with a cough at 3, then Lily decided she needed to tell us about a dream involving a talking badger at 5:15. Claire just rolled over and groaned, which, fair enough. Pouring rain outside, naturally. Just adds to the general grey feeling of things.
+
+Got the kids ready for school, the usual chaos. Lily complaining her toast was too crunchy, Max trying to feed his yoghurt to one of my Angelfish again (caught him just in time). Claire was a star, as always, managed to get them both out the door on time for QPA and Little Stars, even after getting no sleep. I saw Mrs. Henderson wave to Lily as she went into Year 3. Feels like only yesterday Claire was dropping Lily off for her first day of nursery, now she's almost 8. Time just flies. Max starts reception next year. Seems impossible.
+
+Commute was a nightmare. Delayed Northern Line again. Sat there stewing, trying to mentally debug that payment processing issue James flagged last night. It’s a legacy system, obviously, full of spaghetti code, and Richard just keeps adding more layers without refactoring. The irony isn’t lost on me that I spend my days fixing complex, interconnected systems at work, yet my own family connections feel so… tangled, and seemingly beyond my ability to fix.
+
+Lunch was a Pret sandwich, eaten at my desk, scrolling mindlessly through LinkedIn. Saw a post about 'family business succession planning' and it just hit me like a truck. Luke. Always Luke.
+
+It’s been months now since the big blow-up, and it still feels raw. January 12th. I remember it exactly because it was a Sunday, and I’d just got back from a decent bike ride, feeling good, and then that phone call with Luke just… gutted me. The way he shouted, "You only care about money, Ethan!" like I was some greedy monster. All I was trying to do was explain that with the rising mortgage rates, and the kitchen renovation we’d just done here (which, by the way, was *not* cheap and we’re still paying it off), we really needed the capital from selling Dad’s Bristol house. It wasn’t about being selfish; it was about being financially responsible for *my* family, for Claire and Lily and Max. He just hung up on me. Completely.
+
+Three weeks of silence. It was deafening. Claire kept asking if I’d heard from him, and I just shook my head. Felt awful, knowing Mum was caught in the middle. Hannah was the one who eventually stepped in, bless her. She spent weeks on the phone, shuttling between us. February 3rd, that was the call where she finally got us to agree to her compromise: keep the house for one more year, then revisit. I didn’t like it. I still don't. It just postpones the inevitable and puts more financial pressure on us, but I went along with it for Mum’s sake, and for Hannah’s sanity. I just wanted the fighting to stop. Luke barely said anything, just a grudging "fine."
+
+Then, on February 8th, I got that text from him. "Sorry for what I said." That was it. No context, no explanation, no acknowledgement of *my* feelings, or the accusations he’d hurled. I typed out a dozen replies, each one angrier than the last, then deleted them all. Just sent "it’s fine." Because what else could I say? It wasn't fine. Nothing about this is fine. Dad would be so disappointed in us. He always said family was everything. He’d want us to get along, to support each other, not fight over his memory like this.
+
+We used to play online chess on Chess.com every Sunday evening. That stopped. Cold turkey. Hasn't resumed. And I miss it, more than I probably let on. It was our thing, a connection, even if it was just over a screen. Now, conversations with him are like walking on eggshells. Super strained. Just surface-level stuff about work or the weather. Anything deeper feels like it could set off another argument.
+
+And then there's the bloody fence. Our neighbours, the Harrisons, are being completely unreasonable. The solicitor letters started coming through last month. Apparently, the boundary line is 'ambiguous' and they’re disputing the existing fence. Like I don't have enough stress with work and family and Luke. Now this. Claire is trying to be supportive, but I know it's getting her down too. It feels like every aspect of my life is just one long negotiation lately.
+
+I just wish I knew what to do about Luke. It’s eating at me, this distance. I keep trying to process it, to find a logical path forward, but it feels more like an emotional maze. I pulled out my phone during a break, staring at his contact, and just started scribbling notes, trying to get my head straight.
+
+***
+
+**Luke & Me: Status Quo / Moving Forward? (22/05/25)**
+
+**Pros of Trying to Rebuild / Reaching Out More:**
+*   **Family:** He’s my brother. Only two of us left on that side after Dad. We’ve been through everything.
+*   **Dad's Memory:** Dad would genuinely be heartbroken seeing us like this. He loved us both, wanted us to stick together.
+*   **Kids:** Lily and Max should have their Uncle Luke. Max still asks about him sometimes. That's hard to hear.
+*   **Mum:** Janet is clearly upset by all this. Hannah said Mum was crying about it on the phone recently. It’s adding to her grief.
+*   **Luke's Pain:** I know he took Dad's death incredibly hard. He was closest to Dad. The guilt about the hiking trip, not being there at the end... that's real. Probably why he's so stubborn about the house being a 'memorial.'
+*   **He did apologise:** On Feb 8th. Even if it felt flimsy, it was *something*. Maybe a sign he knows he overstepped.
+*   **My own peace of mind:** This constant tension is draining. I'm always thinking about it. Resolving it (or trying to) might at least settle something inside me.
+*   **The old days:** We *used* to be close. Chess, holidays, that terrible fishing trip with Dad when we were kids. There’s a history there worth saving.
+
+**Cons / Difficulties in Trying to Rebuild / Why It's Hard:**
+*   **The Bristol House:** Still a huge unresolved issue. Keeping it for "one more year" just kicks the can down the road. It’s tying up capital we need, and the maintenance is a worry. He doesn't seem to grasp the financial reality for us.
+*   **"Only caring about money":** That accusation still stings, deeply. It felt like a fundamental misunderstanding of who I am, and a complete disregard for the real pressures Claire and I are under with the mortgage (Barclays), kids, and those kitchen renovation costs he chose to ignore.
+*   **His Stubbornness:** He dug his heels in so hard over the house. It felt like he put his romanticised view of Dad's memory above practical sense and fairness to Hannah and me.
+*   **One-sided effort:** It always feels like I'm the one who has to reach out, to smooth things over. His apology was minimal, and he hasn't tried to resume chess or any of our old routines.
+*   **Lack of understanding:** He never seems to really *listen* to my perspective or acknowledge my feelings. It's always about his grief, his feelings, his demands.
+*   **Fear of another argument:** I'm so tired of the tension. I don't want to open up the floodgates again, especially with the fence dispute already demanding so much mental energy.
+*   **The emotional cost:** Trying to navigate this feels emotionally exhausting. Walking on eggshells, constantly censoring myself.
+*   **Resentment:** Still feels like there's a deep-seated resentment there from my side, and probably his too. Until that's addressed, any 'rebuilding' feels superficial.
+
+***
+
+Reading that back, it just looks like a list of reasons to stay exactly where we are: civil, but distant. Which isn't what I want, but also feels like the safest option right now.
+
+The afternoon at work blurred into a series of code reviews and Jira tickets. Priya asked if I was alright, said I looked a bit spaced out. Just mumbled something about the fence dispute being a drain. She nodded, empathetic. She's been through similar with her own neighbours. "Solicitors are just a black hole for money and sanity, mate," she said. Too right.
+
+Got home to Claire already making dinner – her amazing chicken pie. The smell was incredible. Lily was showing Max how to draw a dragon, which looked suspiciously like a worm with wings. Moments like that, with them all, I feel so incredibly lucky. And then I think about Luke, and the shadow falls again.
+
+After dinner, baths, stories – Lily's currently obsessed with "The Gruffalo," Max just likes pointing at pictures – I finally sat down. My lower back is killing me again, probably from hunched over the keyboard all day. Need to stretch more, or finally get that standing desk. Popped some paracetamol. Checked the fish tank; everyone seems happy in there, a little slice of predictable peace.
+
+Claire and I watched some rubbish on TV for an hour, but my mind kept drifting back to the list. To Luke. To Dad. The silence between us now is almost worse than the shouting. It's not just a physical distance (Edinburgh is a long way from London), it's an emotional chasm.
+
+I don't know. Maybe I need to be the bigger person. Again. Or maybe I need to accept that people change, relationships evolve, and sometimes drift is just what happens. But that feels like giving up, and I'm not sure I'm ready to do that. Not with family.
+
+My asthma felt a bit tight tonight too, probably the damp weather. Just another layer of discomfort. Tomorrow’s Friday. Weekend. Maybe I'll go for a long cycle, clear my head. Or maybe I’ll just sit and stare at my fish, wishing my life was as simple as theirs. I just want this weight off my chest. Need to sleep. Maybe a fresh perspective in the morning. Or just another headache. Probably the latter.

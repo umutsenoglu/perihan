@@ -1,0 +1,106 @@
+**Workout Log - Ethan Marsh**
+
+**Date:** 2025-02-27
+**Today's moment:** Thinking about tropical fish tank problems
+**Ongoing situation:** Trying to sell old car and buy an EV
+
+---
+
+Thursday. Another Thursday. Sometimes it feels like the week just vanishes, swallowed whole by the constant churn of Jira tickets and school runs and the never-ending hum of life in North London. Woke up at 6:00 AM, before the alarm, which is always a bad sign. Means my brain’s already firing on all cylinders, probably processing last night's work problems or, more likely, today's fish tank woes.
+
+First thing, couldn't help but glance at the 200-litre tank in the living room. It's the first thing you see when you come downstairs. And it’s still, stubbornly, green. A thick, slimy coating on the glass, the plants, even the decorative bogwood. It’s been like this since around 2024-12-10, just a few weeks before Christmas, and honestly, it’s driving me mad. Claire calls it "the swamp" now. Not exactly a glowing endorsement of my primary hobby.
+
+Whiskers, as if on cue, was perched on the tank lid, tail twitching, eyes fixed on the murky depths. God knows what he sees in there. Probably just enjoying the warmth from the lights, but it always makes me nervous. What if he somehow manages to pop the lid off? The shrimp would be toast. And the actual fish... well, they've been through enough lately. Losing two neon tetras and a guppy in January to what I'm pretty sure was columnaris was a real blow. I’d treated the whole tank with eSHa 2000 and the remaining 8 neon tetras, 5 guppies, 4 corydoras, and the 2 bristlenose plecos seemed to recover, along with the 6 cherry shrimp. But then this persistent algae just dug its heels in.
+
+Got up, tiptoed past the kids' rooms. Max, bless him, was already making soft little dinosaur noises in his sleep. Lily, quiet as ever. Shower. The hot water on my lower back was a small moment of relief. It’s been playing up again this week, probably from too many hours hunched over the keyboard at work. Senior software engineer at a fintech, they call me. More like senior back-pain-inducer. I really need to get back to those stretching routines. And maybe a new office chair. The one at home is alright, but after 8-9 hours, it's not cutting it.
+
+Downstairs, Claire was already making tea. She's a machine in the mornings. Teachers, honestly. Lily appeared shortly after, still a bit sleepy, dragging her Year 3 book bag. "Morning, Dad," she mumbled, rubbing her eyes. Max burst in a minute later, a whirlwind of energy, demanding toast immediately. He's four now, full of questions and boundless enthusiasm. It’s exhausting and wonderful all at once. Claire was asking about Lily’s maths homework – Mrs. Henderson had sent a note home about fractions. My mind, however, was already halfway back to the fish tank.
+
+I’d done another water test on 2025-02-23. The results were… well, predictable. pH 7.2, ammonia 0, nitrite 0 – all good. But nitrate was 25ppm and phosphate was 1.5ppm. That phosphate is definitely too high, and the nitrates aren't helping. I've been doing 30% water changes twice weekly since early January, and reducing the light to 6 hours a day, even dosing with Seachem Flourish Excel. Nothing seems to touch it. It’s like the algae is mocking me. Claire, catching me staring into the green abyss while pretending to listen to Max’s recounting of a dream about diggers, just sighed. "Still no better, then? Diane's visiting at Easter, remember. She'll have something to say about your 'pet project'." Easter is 2025-04-18. That gives me less than two months. Pressure's on.
+
+Breakfast was the usual organised chaos. Lily chatting about her friend Maya, Max insisting his toast crusts were "too bumpy." Claire, ever the pragmatist, was reminding me to chase AquaWorld about the new filter. I ordered the Fluval 307 canister filter from Mark at AquaWorld on 2025-02-25 for £189. It’s a significant upgrade from the old internal filter that came with the tank. I'm hoping that increased mechanical and biological filtration will make a difference. It can't make it *worse*, can it?
+
+Left the house around 7:45 AM. Decided to take the tube today instead of cycling. My chest has been feeling a bit tight, probably the early spring pollen kicking in. Mild asthma and seasonal allergies are just another fun part of turning 38. Another puff from the Ventolin before I left. The walk to the tube station was brisk. London air, crisp but still holding onto winter’s chill.
+
+On the Victoria Line, crammed in with the usual commuters, I pulled out my phone. Tried to focus on the news, but my mind kept circling back. Fish tank. The Dennerle CO2 system. The bubble counter has been so inconsistent lately, sometimes a steady stream, sometimes just trickles. Is it running out? Is the regulator faulty? Or the solenoid? Another thing to troubleshoot. It feels like a second job sometimes, this hobby. A very expensive, very frustrating second job.
+
+Then there’s the car situation. My 2019 VW Golf is a good car, done me well, but with the ULEZ expansion and just generally trying to be a bit more environmentally conscious, Claire and I have been seriously discussing switching to an EV. Selling the Golf privately seems like a faff, but I know I'd get more for it than a trade-in. Still, the thought of dealing with endless emails and tyre-kickers… Plus, which EV? The prices are still steep, even with the incentives. Charging infrastructure. Range anxiety. All these things just swirling around. "Ongoing situation," indeed.
+
+Got to the office around 8:30 AM. My desk is in the open-plan area, which is mostly fine, but sometimes I just crave a quiet corner. First thing, checked Jira. Sprint backlog looked daunting. Project Athena, our big internal platform refactor, is still eating up most of my time. Today was supposed to be all about the API integration for the new payment gateway. Had a message from James – "Morning, Marshy, anything exciting happening in fintech-land?" James is my team lead, always upbeat, sometimes *too* upbeat for 8:45 AM. Priya, our lead QA, was already at her desk, headphones on, probably deep into a new test plan. Richard, across from me, looked like he'd pulled an all-nighter. Again. Poor bloke's got a newborn.
+
+Stand-up at 9:15 AM. Quick run through what we did yesterday, what we’re doing today, any blockers. I mentioned the API integration. No blockers, just… complexity. James nodded, scribbled something on his pad. "Good, good. Let's keep that momentum up, team." Easy for him to say. My mind, during the stand-up, drifted to the Fluval 307. Will it arrive tomorrow? Saturday? How long will it take to cycle? Will it actually clear the algae? The tank looks absolutely dire.
+
+The morning was a blur of code. I was knee-deep in a rather gnarly piece of Scala, trying to figure out why a specific idempotent call was failing intermittently in our dev environment. Turns out, it was a subtle race condition. Took me a good hour to narrow it down. But while compiling, my mind would drift. Algae. Phosphate. Nitrates. The Dennerle CO2 system’s dodgy bubble counter. Is there a better way to monitor CO2 than just a drop checker and a bubble counter? Maybe an inline CO2 monitor? God, more money.
+
+Around 11:30 AM, I took a quick break. Poured myself a coffee. My back gave a familiar twinge as I stood up. Did some quick stretches at my desk, much to the amusement of Richard who was now looking slightly more human after his third coffee. Pulled up some aquatic forums on Reddit – r/Aquariums, r/PlantedTank. Searched for "phosphate 1.5ppm algae bloom." Loads of threads. Most of them confirmed what I already suspected: high phosphates are the enemy. Suggestions included GFO (granular ferric oxide) reactors, specific phosphate-absorbing media, even just more aggressive water changes. But I'm already doing 30% twice a week. What if it's the tap water? Haven't checked London's water report in a while. Another mental note.
+
+Lunch break. I usually bring my own – cheaper and healthier. Today was leftover lentil stew and a banana. Sat at my desk, scrolling through the news, but then my fingers automatically typed "EV London charging points" into Google. There are quite a few now in our area, but are they reliable? And expensive? It's not just the purchase price of the EV; it's the whole ecosystem. Will I need to upgrade our home electricals? Our Barclays mortgage is already a significant chunk each month; adding a new car payment and potentially higher electricity bills (though offset by no petrol, obviously) needs careful planning. Sent a quick text to Claire: "Fluval filter ETA? Fingers crossed for Sat." She replied almost immediately: "You and me both! Max had a meltdown over a missing toy car at nursery today. Standard Tuesday. X" Ah, the joys of parenting.
+
+Back to work. The afternoon was less about deep coding and more about meetings. A planning session for the next sprint, then a review of some new security protocols. James was presenting, rattling through slides. My mind kept jumping. What if the Fluval 307 isn’t enough? What if the algae is in the substrate? Do I need to tear down the whole tank? The thought of having to re-scape a 200-litre tank fills me with dread. It’s a huge job. And the poor fish. The whole point of fish keeping is calm and beauty, not constant stress and green slime.
+
+Around 4:30 PM, I finally got an email that made me sit up straight. Subject: "Your AquaWorld Order - Fluval 307 Canister Filter - Confirmed Shipment." Yes! The email was from Mark. It confirmed the filter had shipped today, with an estimated delivery for Friday or Saturday. Phew. A small victory. At least I could tell Claire something positive tonight. Now the mental gymnastics began: how to install it? Where to put the filter media? How to prime it without making a huge mess? It's a proper external canister filter, not a simple internal sponge. This means hoses, connections, a bit of plumbing. I'll need to watch some YouTube videos.
+
+Finished up work around 5:30 PM. Logged off, packed my bag. Another day done. My back was aching a bit more persistently now. Time for some movement. The Tube ride home was less crowded than the morning. Leaned my head against the window, watching the city rush by. My mind wandered back to the Golf. I’ve owned it since 2019, bought it second-hand but it was practically new. Done a decent job. But the environmental cost, the petrol prices. And the thought of being stuck somewhere with a breakdown… an EV feels like the future, a proper adult decision. But which one? I've been looking at the Hyundai Ioniq 5 – love the retro-futuristic design. Tesla Model 3 is the obvious choice, but the price tag is chunky. VW ID.4 would be a natural progression, staying with the brand. So many choices, so much research. It’s exhausting.
+
+Got home around 6:30 PM. The usual welcoming committee – Max, bouncing off the walls, Lily, a little more sedate but still pleased to see me. "Dad, Dad! Look what I drew at nursery!" Max shoved a crumpled drawing of a very abstract rainbow in my face. Claire was in the kitchen, chopping vegetables for dinner. "How was your day, darling? You look knackered." She kissed my cheek. "Filter shipped," I announced, managing a small smile. "Oh, thank goodness," she said, genuinely relieved. Then her eyes drifted to the tank. "But still green, I see. What are you going to do about the phosphate? You know Mum will be here soon enough." The reminder again. Diane and her perfectly manicured house. She’ll spot the algae a mile off.
+
+Dinner was salmon and roasted broccoli – Claire’s specialty. We talked about our days. Lily had a minor spat with her best friend at QPA Primary over a pencil. Max had indeed had a meltdown over a toy car at Little Stars Nursery. Claire had dealt with a particularly challenging parent about a Year 1 child’s reading progress. The daily grind. After dinner, it was the kids' bath and bedtime routine. Max resisted sleep with all the energy of a small, determined badger, demanding "just one more story, Daddy!" Lily, ever the sensible one, was already half-asleep by her third chapter of a Roald Dahl. Kissed them both goodnight. The house finally quieted down around 8:30 PM.
+
+"Right," I said to Claire, "time for me to hit the 'gym'." My 'gym' is our spare room, kitted out with a basic weight bench, some dumbbells, kettlebells, and a yoga mat. Nothing fancy, but it gets the job done. Claire settled on the sofa with a cup of tea and a book. "Don't overdo it, your back's been bad," she cautioned. "I won't," I promised, reaching for my Ventolin. Another puff, just to be safe. My chest felt a bit heavy.
+
+Warm-up first. Dynamic stretches, arm circles, leg swings. Focused on my lower back, gentle twists and cat-cows on the mat. My back felt stiff, but not terrible. Time to get some blood flowing.
+
+**Workout - 2025-02-27**
+
+*   **Warm-up:** 10 mins dynamic stretches, light cardio (jumping jacks)
+
+*   **Strength Circuit (3 rounds):**
+    *   **Goblet Squats:** 3 sets of 10 reps (16kg kettlebell)
+        *   *Round 1:* Form felt okay. Deep breath. Glanced at my phone during rest. Still no replies on the aquatic forums about the high phosphate. My mind immediately went to the tank. That 1.5ppm phosphate reading. It's way too high. How do I even get it down without nuking the plants? The algae is definitely thriving. The reduction of light to 6 hours hasn't done anything. Seachem Flourish Excel, usually a good algaecide in small doses, is proving useless against this onslaught. It's a battle, a slow, losing battle.
+        *   *Round 2:* Focus on core engagement. My lower back twinged slightly. Need to keep it straight. The fish loss in January – two neon tetras, a guppy. Was it really columnaris? Or just general stress from the tank conditions? The eSHa 2000 seemed to stop further losses, but it feels like I’m just patching things up, not solving the underlying problem. It's frustrating.
+        *   *Round 3:* Last set. Push through. My legs felt it. That damn algae. Claire's comments about Diane visiting at Easter. She's right, it looks like a mess. I pride myself on having a healthy, vibrant tank. This is… anything but.
+
+    *   **Dumbbell Bench Press:** 3 sets of 8 reps (20kg dumbbells)
+        *   *Round 1:* Heavy. Slow and controlled. Visualized the new Fluval 307. What if it’s delayed? What if it arrives Saturday and I can’t install it until Sunday? The weekend is already packed with Lily’s swimming lesson and Max’s playdate. When am I going to find a solid two hours to properly drain, install, and prime that beast? And then the cycling period… another week or two of worrying.
+        *   *Round 2:* My shoulders felt it. What was Mark’s exact ETA? His email just said "Friday or Saturday." Such a broad window. Why can’t they be more specific? Is it the Dennerle CO2 system causing some of the plant melt, which then feeds the algae? The irregular bubble counter is definitely not helping consistent CO2 delivery. Plants need consistent CO2 to outcompete algae. It’s a vicious cycle.
+        *   *Round 3:* Almost dropped the last rep. Too much weight? Maybe. Or just tired. Tired of algae, tired of car research, tired of API integrations.
+
+    *   **Dumbbell Rows:** 3 sets of 10 reps (18kg dumbbell)
+        *   *Round 1:* Focus on keeping my back straight, engaging the lats. Conscious of the lower back. The Golf. I need to get it professionally valued. Should I try selling it privately first? Or just bite the bullet and trade it in? Claire thinks trade-in is less hassle, but I know we’d get stung on the price. I want to save as much as possible to put towards the EV. That £189 for the Fluval 307 suddenly feels like a drop in the ocean compared to car costs.
+        *   *Round 2:* Sweat dripping now. The EV research has been constant. Charging times, battery degradation, range. What if we want to drive up to Bristol to see Mum Janet? Or Manchester for Hannah? Or even Edinburgh for Luke? Will the range be an issue on longer trips? The thought of planning every motorway service station stop just to charge is a bit daunting.
+        *   *Round 3:* Good burn. My back felt stretched, in a good way, for now.
+
+    *   **Dumbbell Overhead Press:** 3 sets of 8 reps (14kg dumbbells)
+        *   *Round 1:* My shoulders were feeling heavy. The tank’s current stock: 8 neon tetras, 5 guppies, 4 corydoras, 2 bristlenose plecos, 6 cherry shrimp. All relatively hardy, but they deserve better than living in a murky green soup. The bristlenose plecos usually do a good job on algae, but even they're overwhelmed. This isn't just surface algae; it's everywhere.
+        *   *Round 2:* Almost done. Need to remember to check the water parameters again after the filter is installed, especially the phosphate. I've tried everything – reducing light, Excel, more water changes. It has to be either the filtration or something in my water source. Or maybe an imbalance in the nutrient levels. The nitrates at 25ppm are okay, but combined with the high phosphate… it's a party for algae.
+        *   *Round 3:* Finished. Muscles were burning.
+
+*   **Core Work:**
+    *   Plank: 3 sets of 60 seconds
+    *   Leg Raises: 3 sets of 15 reps
+        *   Focusing on tightening everything. My breath was a bit ragged, but my asthma felt okay, no major wheezing. Just the usual post-workout puffiness.
+
+*   **Cool-down:** 10 mins stretching, focusing on back and hamstrings.
+
+Post-workout shower. The cold water felt great on my hot skin. Stepped out feeling physically spent but mentally still buzzing. Changed into PJs. Made myself a cup of decaf tea.
+
+Laptop open again. Claire was still reading her book, occasionally glancing up.
+"All done?" she asked.
+"Yep. Feeling it now."
+"Good. Now, about that tank..."
+
+She didn't need to finish the sentence. My fingers were already typing. First stop: AquaWorld, checking their stock for phosphate removers. Seachem PhosGuard, API Phosphate Remover, Fluval ClearMax. All options. Then, some serious Dennerle CO2 system troubleshooting. Found a forum thread about inconsistent bubble counters. Could be a kink in the line, or the CO2 cylinder running low, or a faulty regulator. The solenoid valve could be sticking. So many variables. It’s like debugging a really complex piece of software, but with live animals and plants instead of databases and APIs. And without a stack trace.
+
+Then I switched gears to the EV research again. Pulled up Autotrader to get a rough valuation for the Golf. £12k-£13k, depending on condition and mileage. Not bad, but still a chunk to add to any new EV. Looked at the Hyundai Ioniq 5 again. The official range figures look good, but what about real-world winter driving? London traffic will eat into that.
+
+Finally, decided to indulge a different hobby for five minutes. Opened Lightroom. Reviewed some photos I took of Lily and Max cycling in Regent's Park last autumn. Golden light, happy faces. A brief moment of peace, of pure, uncomplicated joy. It’s important to remember those.
+
+Claire eventually put her book down. "Are you coming to bed, Ethan?"
+"Yeah, just finishing up here. Just trying to sort out this damn tank."
+"You'll get there," she said, though I could hear the weariness in her voice. "Just try not to lose too much sleep over it. Diane will just have to deal with it if it's not perfect." A small kindness. She knows how much it bothers me.
+
+But it does bother me. It's a reflection of my ability to care for something, to create a thriving ecosystem. And right now, it's failing. The algae, the high phosphate, the inconsistent CO2, the fish deaths. It’s all a symbol of things I need to fix. Before Diane visits. Before Easter.
+
+Okay, time to log this. And try to get some sleep. Tomorrow, more coding, more car research, and maybe an email to Mark at AquaWorld asking for more specific delivery info. And another check of that murky green tank.
+
+Alarm set for 6:00 AM. Good night.

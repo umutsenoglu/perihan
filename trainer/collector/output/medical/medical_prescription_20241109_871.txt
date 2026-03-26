@@ -1,0 +1,20 @@
+**NHS HIGHGATE FAMILY PRACTICE - OPTOMETRY**
+14 Oakwood Road, Highgate, N6 5AB
+Tel: 020 8123 4567
+
+---
+
+**PATIENT PRESCRIPTION SLIP**
+
+**Patient:** Lily Marsh
+**Date of Birth:** 05/03/2017
+**NHS Number:** 987 654 3210
+**Date:** 2024-11-09
+**Optometrist:** Ms. E. Roberts
+
+**Prescription (Glasses):**
+Right (OD): SPH -1.00 D
+Left (OS): SPH -0.75 D
+Pupillary Distance (PD): 52 mm
+
+**Notes:** Glasses recommended for distance vision. Follow-up in 12-18 months, or sooner if vision concerns recur (e.g., from QPA Primary). Discussed with Mr. E. Marsh.

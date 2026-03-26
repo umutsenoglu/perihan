@@ -1,0 +1,40 @@
+MEMORIAL MEDICAL CENTER
+DISCHARGE SUMMARY
+
+Date: 2025-03-13
+
+**Patient Information:**
+Patient Name: Emma Brown
+DOB: 1968-07-22 (Age: 56)
+MRN: MMC-8765432
+Admitting/Discharging Physician: Dr. Ahmed
+
+**Primary Diagnosis:**
+Type 2 Diabetes Mellitus (T2DM), poorly controlled.
+
+**Reason for Admission:**
+Admission for optimization of T2DM management due to persistently elevated blood glucose and an HbA1c of 9.8% upon presentation.
+
+**Hospital Course Summary:**
+Ms. Brown received comprehensive diabetes education. Her oral regimen was adjusted from metformin monotherapy to metformin 1000mg BID and empagliflozin 25mg QD. Basal insulin (detemir 10 units nightly) was initiated. Daily capillary blood glucose (CBG) monitoring showed improvement, with fasting values stabilizing between 110-140 mg/dL and post-prandial readings generally below 180 mg/dL. Renal function remained stable.
+
+**Condition at Discharge:**
+Stable. Patient is afebrile, normotensive (BP 128/78 mmHg), and denies acute complaints.
+
+**Discharge Medications:**
+1.  Metformin ER 1000mg, 1 tablet PO BID with meals.
+2.  Empagliflozin 25mg, 1 tablet PO QD in AM.
+3.  Insulin Detemir, 10 units SC every evening.
+4.  Aspirin 81mg, 1 tablet PO QD.
+
+**Discharge Instructions & Follow-up:**
+Continue CBG monitoring. Adhere to diabetic-appropriate diet and regular light exercise. Follow-up with Dr. Ahmed in the Endocrinology Clinic in 2 weeks (202
+5-03-27). Patient educated on medication adherence, signs/symptoms of hypo/hyperglycemia, and when to contact the clinic for urgent concerns. Emergency contact number provided.
+
+**Prognosis:**
+Good with strict adherence to the prescribed medical regimen and continued lifestyle modifications. Close monitoring and follow-up are essential for optimal long-term glycemic control.
+
+**__________________________**
+Dr. Ahmed, MD
+Attending Physician
+Memorial Medical Center

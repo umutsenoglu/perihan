@@ -1,0 +1,46 @@
+**PAYMENT RECEIPT**
+
+**Issued by:**
+Ethan Marsh
+14 Willowbrook Crescent
+North London, N12 7AB
+United Kingdom
+ethan.marsh@email.com
+
+**Date of Issue:** 05 March 2025
+
+**Payer Details:**
+Mr. Ryan Cooper
+[Fictional Address - e.g., 
+Mr. Ryan Cooper
+Flat 12, City Heights
+Borough Road
+London, SE1 1DN
+
+**Payment Details:**
+Amount Received: £1,500.00 GBP
+Payment Method: Cheque
+Date of Transaction: 05 March 2025
+Reference: RC Loan Repayment 03/25
+
+**Paid into Ethan Marsh's Account:**
+Bank: Barclays
+Sort Code: 20-17-92
+Account Number: *******78
+
+**Description of Payment:**
+This receipt acknowledges the partial repayment of a personal loan originally extended to Mr. Ryan Cooper by Ethan Marsh on 10 November 2024, for the amount of £3,000.00. This payment represents half of the total outstanding balance.
+
+**Summary:**
+Original Loan Amount (10 Nov 2024): £3,000.00
+Amount Received (05 Mar 2025): £1,500.00
+**Outstanding Balance:** £1,500.00
+
+Payment of the remaining £1,500.00 is due by April 2025, as agreed.
+
+Thank you for your payment.
+
+---
+**Acknowledged by:**
+Ethan Marsh
+(Digital Record)

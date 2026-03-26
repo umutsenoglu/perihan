@@ -1,0 +1,89 @@
+**Aviva Home Insurance Policy Schedule**
+
+**Policyholder:** Mr. Ethan Marsh
+**Policy Number:** HO23456789/EM/25
+**Renewal Date:** 25th November 2025
+**Issue Date:** 25th October 2025
+**Currency:** GBP
+
+**Policyholder Details:**
+Name: Mr. Ethan Marsh
+Address: 14 Willow Crescent, Highgate, London, N6 4AB
+Date of Birth: 12/03/1987
+NI Number: JS123456B
+Email: ethan.marsh@example.com
+Phone: 07700 900123
+
+**Insured Property:**
+Address: 14 Willow Crescent, Highgate, London, N6 4AB
+Property Type: 3-bedroom semi-detached house
+Occupancy: Owner Occupied
+Security Features: Alarm System (monitored), Multi-point locks on all external doors and windows.
+
+**Period of Insurance:**
+From: 00:01 on 25th November 2025
+To: 23:59 on 24th November 2026
+
+**Cover Details:**
+
+**1. Buildings Insurance**
+Sum Insured: £450,000
+This covers the structure of your home, including its fixtures and fittings, against risks such as fire, flood, storm, subsidence, and malicious damage.
+Excess: £250 (Standard)
+Voluntary Excess: £100 (Applied for a reduced premium)
+Total Buildings Excess: £350
+
+**2. Contents Insurance**
+Sum Insured: £75,000
+This covers your household goods and personal belongings within your home against risks such as fire, theft, flood, and accidental damage.
+Excess: £150 (Standard)
+Voluntary Excess: £50 (Applied for a reduced premium)
+Total Contents Excess: £200
+
+**Specified Items (Contents):**
+To ensure adequate cover for high-value items, the following have been individually listed:
+* Canon EOS R6 Mark II Camera Kit (inc. lenses): £3,200
+* Orbea Orca M30i Road Bike: £2,800
+* Rolex Submariner Watch (Gift from George, 2010): £7,500
+* Freshwater Aquarium System (including livestock and equipment): £1,800
+
+**Optional Extras:**
+* Accidental Damage Cover (Buildings): Included
+* Accidental Damage Cover (Contents): Included
+* Personal Possessions Cover (Worldwide): £5,000 (covers items taken outside the home, e.g., Claire's engagement ring, Lily's iPad, Max's pram).
+* Home Emergency Cover: Included (up to £500 per incident for emergencies like boiler breakdown, burst pipes – useful for those winter months!)
+* Legal Expenses Cover: Included (up to £100,000 for legal costs, e.g., property disputes or employment issues).
+
+**Premium Calculation:**
+
+**Annual Premium:**
+Buildings Insurance: £285.50
+Contents Insurance: £195.00
+Personal Possessions Cover: £35.00
+Home Emergency Cover: £25.00
+Legal Expenses Cover: £20.00
+Subtotal Premium: £560.50
+
+Insurance Premium Tax (IPT) @ 12%: £67.26
+
+**Total Annual Premium:** £627.76
+
+**Payment Schedule:**
+Your annual premium of £627.76 will be collected as 12 monthly instalments of £52.31.
+First payment due: 25th November 2025.
+Payment Method: Direct Debit
+Bank Name: Barclays Bank Plc
+Account Name: Mr. E Marsh
+Sort Code: 20-30-40
+Account Number: ******5678
+
+**Important Notes:**
+* Please review your policy document for full terms, conditions, and exclusions. This schedule is a summary of your cover.
+* Remember to inform us immediately of any changes to your circumstances, such as significant home improvements (e.g., that loft conversion you're still debating), new high-value purchases, or if the children start a rock band in the living room.
+* Your current no-claims discount is 8 years.
+* For any claims or queries, please quote your policy number HO23456789/EM/25.
+* We recommend checking your sums insured annually to ensure they reflect the current rebuild cost of your home and the value of your possessions, especially with Lily and Max acquiring more 'essentials' every year!
+
+Thank you for choosing Aviva.
+
+Aviva Insurance Limited. Registered in Scotland No 2116. Registered Office: Pitheavlis, Perth PH2 0NH. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority.

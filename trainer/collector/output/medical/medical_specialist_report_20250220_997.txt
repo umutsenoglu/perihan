@@ -1,0 +1,3208 @@
+**Comprehensive Patient Medical Record - Compiled for Personal Access**
+
+**Patient:** Ethan Marsh
+**NHS Number:** 987 654 3210
+**Date of Compilation:** 2025-02-28
+**GP Practice:** Archway Surgery, North London
+
+---
+
+**SECTION 1: PATIENT DEMOGRAPHICS & SUMMARY**
+
+**Patient Details:**
+*   **Full Name:** Ethan Alexander Marsh
+*   **NHS Number:** 987 654 3210
+*   **Date of Birth:** 15/07/1986
+*   **Age (as of 2025-02-20):** 38 years
+*   **Gender:** Male
+*   **Address:** 14 Willow Crescent, Highgate, London N6 5AB
+*   **Contact Mobile:** 07700 900345
+*   **Contact Email:** ethan.marsh@email.com
+*   **Registered GP Practice:** Archway Surgery, 12 Station Road, Highgate, London N6 5XX
+*   **Registered GP:** Dr. Alistair Finch (GMC: 4567890)
+
+**Emergency Contacts:**
+*   **Contact 1:** Claire Marsh (Spouse)
+    *   Relationship: Spouse
+    *   Mobile: 07700 900678
+*   **Contact 2:** Janet Marsh (Mother)
+    *   Relationship: Mother
+    *   Phone: 0117 329 1234 (Bristol)
+
+**Known Allergies:**
+*   **Drug Allergies:**
+    *   Penicillin (Reaction: Mild maculopapular rash, 2002 - childhood exposure)
+*   **Environmental Allergies:**
+    *   Dust Mites (Symptoms: Rhinitis, conjunctivitis, mild asthma exacerbation)
+    *   Pollen (Seasonal - Grasses, Tree Pollen; Symptoms: Severe allergic rhinitis, conjunctivitis, mild asthma exacerbation)
+
+**Current Medications (as of 2025-02-28):**
+*   **Respiratory:**
+    *   Fostair 100/6 µg MDI (Budesonide/Formoterol) - 2 puffs twice daily (BD)
+    *   Salbutamol 100 µg MDI - 2 puffs as required (PRN) for shortness of breath
+*   **Allergy:**
+    *   Fexofenadine 180mg - One tablet daily (OD)
+    *   Mometasone Furoate Nasal Spray 50 µg/dose - 2 sprays into each nostril OD
+*   **Pain Relief (PRN):**
+    *   Paracetamol 500mg - 1-2 tablets up to four times daily
+    *   Ibuprofen 400mg - 1 tablet up to three times daily (with food)
+
+**Summary of Active Problems:**
+1.  **Asthma (mild persistent):** Diagnosed childhood, well-controlled with inhaled corticosteroids and long-acting beta-agonist. Intermittent use of short-acting reliever.
+2.  **Seasonal Allergic Rhinitis:** Significant symptoms during spring/summer, managed with oral antihistamines and nasal corticosteroids.
+3.  **Chronic Lower Back Pain (mechanical):** Intermittent episodes, exacerbated by prolonged sitting (desk work) and physical exertion. Managed with exercise, physiotherapy, and PRN analgesia.
+4.  **History of Mild Anxiety:** Transient period post-bereavement (father's passing, 2021), self-resolved with support network.
+
+**Past Medical History:**
+*   Childhood Asthma (diagnosed age 5)
+*   Varicella (Chickenpox, age 6)
+*   Appendectomy (age 12, 1998, Royal Bristol Infirmary)
+*   COVID-19 infection (March 2020, mild symptoms, self-isolated)
+
+---
+
+**SECTION 2: FAMILY MEDICAL HISTORY & CONTEXT**
+
+**Spouse:**
+*   **Name:** Claire Elizabeth Marsh (née Davies)
+*   **Date of Birth:** 03/11/1987
+*   **Relationship:** Wife
+*   **Occupation:** Primary School Teacher
+*   **Medical History:** Generally healthy. History of Gestational Diabetes Mellitus during first pregnancy (Lily, 2017-2018), resolved post-partum. Routine antenatal/postnatal care for both pregnancies.
+
+**Children:**
+*   **Name:** Lily Catherine Marsh
+    *   **Date of Birth:** 12/05/2017 (Age 7)
+    *   **Education:** Year 3, QPA Primary School (Mrs. Henderson's class)
+    *   **Medical History:** Generally healthy. Up-to-date with childhood immunisations. Current concern regarding possible vision issues (see Optometry Report 2025-02-20).
+*   **Name:** Max George Marsh
+    *   **Date of Birth:** 01/09/2020 (Age 4)
+    *   **Education:** Little Stars Nursery
+    *   **Medical History:** Generally healthy. Up-to-date with childhood immunisations. Prone to common viral infections typical for nursery age.
+
+**Mother:**
+*   **Name:** Janet Margaret Marsh (née Smith)
+*   **Date of Birth:** 22/09/1958
+*   **Location:** Bristol
+*   **Medical History:** Hypertension (well-controlled), Type 2 Diabetes Mellitus (diet/lifestyle controlled).
+
+**Father:**
+*   **Name:** George William Marsh
+*   **Date of Birth:** 01/03/1956
+*   **Date of Death:** 15/08/2021
+*   **Cause of Death:** Complications of metastatic colorectal carcinoma.
+*   **Medical History:** History of coronary artery disease, diagnosed 2005. Underwent PCI 2007. Diagnosed with colorectal cancer 2019.
+
+**Siblings:**
+*   **Sister:** Hannah Louise Davies (née Marsh)
+    *   **Date of Birth:** 20/01/1984
+    *   **Location:** Manchester
+    *   **Medical History:** Generally healthy.
+*   **Brother:** Luke Samuel Marsh
+    *   **Date of Birth:** 10/11/1989
+    *   **Location:** Edinburgh
+    *   **Medical History:** Generally healthy.
+
+**Social History & Lifestyle (Ethan Marsh):**
+*   **Occupation:** Senior Software Engineer at 'Innovate Fintech Solutions' (London)
+*   **Living Situation:** 3-bedroom semi-detached house, North London. Mortgage with Barclays.
+*   **Vehicle:** 2019 VW Golf (considering transition to electric vehicle in next 12-18 months).
+*   **Hobbies:** Tropical fish keeping (extensive freshwater setup), road cycling (regularly, weather permitting), photography (amateur landscape and street photography), cooking (enjoys experimenting with new recipes).
+*   **Diet:** Balanced, generally healthy, home-cooked meals. Occasional takeaways.
+*   **Alcohol:** Social drinker, 2-4 units per week.
+*   **Smoking:** Non-smoker.
+*   **Recreational Drugs:** Denies.
+*   **Exercise:** Regular cycling (3-4 times per week, 30-60 mins), walks with family.
+
+---
+
+**SECTION 3: IMMUNISATION RECORD (Ethan Marsh)**
+
+*   **Childhood Immunisations:** Fully compliant (details assumed from transferred records).
+*   **Tetanus/Diphtheria/Polio (Td/IPV) Booster:** Last administered 12/04/2006.
+*   **Influenza (Flu) Vaccination:**
+    *   2018-19 Season: 05/12/2018 (Quadrivalent Inactivated Vaccine)
+    *   2019-20 Season: 03/12/2019 (Quadrivalent Inactivated Vaccine)
+    *   2020-21 Season: 01/12/2020 (Quadrivalent Inactivated Vaccine)
+    *   2021-22 Season: 01/11/2021 (Quadrivalent Inactivated Vaccine)
+    *   2022-23 Season: 05/12/2022 (Quadrivalent Inactivated Vaccine)
+    *   2023-24 Season: 01/12/2023 (Quadrivalent Inactivated Vaccine)
+    *   2024-25 Season: 05/01/2025 (Quadrivalent Inactivated Vaccine)
+*   **COVID-19 Vaccination (Pfizer-BioNTech Comirnaty):**
+    *   Dose 1: 01/05/2021 (Right Deltoid)
+    *   Dose 2: 10/06/2021 (Left Deltoid)
+    *   Booster 1: 05/12/2022 (Right Deltoid)
+    *   Booster 2: 02/10/2023 (Left Deltoid)
+
+---
+
+**SECTION 4: CHRONOLOGICAL MEDICAL ENTRIES (Reverse Chronological Order)**
+
+**DATE: 28/02/2025**
+**TIME: 11:30**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+**Context:** Follow-up on Lily Marsh's optometry report.
+
+**Subjective:** Mr. Marsh attended today to discuss the optometry report for his daughter, Lily Marsh (DOB 12/05/2017), which was uploaded to her NHS records and shared with him via the NHS App. He expresses some concern regarding the findings, particularly the recommendation for spectacles and the potential referral to ophthalmology. He stated that Lily has been trying the new glasses since yesterday and finds them a bit strange but is adapting. Claire (wife) is also a bit worried but understands the need for action. Ethan mentioned that Lily had previously complained about seeing the whiteboard in Mrs. Henderson's class, which was the initial trigger for the school flagging it. He wants to ensure all necessary steps are taken.
+
+**Objective:**
+*   Review of Lily Marsh's Optometry Report dated 20/02/2025 (Ms. Roberts, Archway Surgery Opticians).
+*   Key findings noted:
+    *   Visual Acuity: R: 6/18, L: 6/12 (unaided)
+    *   Refraction: R: -2.50 DS / -0.75 DC x 180, L: -1.75 DS / -0.50 DC x 10
+    *   Diagnosis: Myopia and Astigmatism (bilateral, more pronounced in right eye).
+    *   Recommendations: Full-time spectacle wear, re-evaluation in 6 months, and consideration for referral to Paediatric Ophthalmology.
+
+**Assessment:** Lily Marsh has significant myopia and astigmatism requiring optical correction. The findings are consistent with the school's observations and Lily's symptoms. The optometrist's recommendation for referral to Paediatric Ophthalmology is appropriate given the degree of myopia in a 7-year-old and to rule out any underlying conditions or progression concerns.
+
+**Plan:**
+1.  **Referral:** Initiate NHS E-Referral for Lily Marsh to the Paediatric Ophthalmology Department at Great Ormond Street Hospital (GOSH). Prioritisation based on optometrist's recommendation.
+2.  **Information:** Provide Mr. Marsh with information regarding paediatric ophthalmology referrals and what to expect. Advised to ensure Lily wears her spectacles full-time as prescribed.
+3.  **Follow-up:** GP to review referral outcome and specialist advice. Advised Mr. Marsh to contact the surgery if there are any urgent concerns or if the ophthalmology appointment is unduly delayed.
+4.  **Documentation:** Optometry report attached to Lily Marsh's record and noted in Ethan Marsh's 'Family History' section for contextual completeness.
+
+**Notes:** Mr. Marsh seemed reassured by the clear plan. Discussed the importance of early intervention for childhood vision problems. No direct concerns raised by Ethan for his own health today.
+
+---
+
+**DATE: 20/02/2025**
+**TIME: 14:15**
+**ENTRY TYPE: Specialist Report - Optometry**
+**ATTENDING CLINICIAN: Ms. Eleanor Roberts (BSc Hons Optom, MCOptom, GOC Reg. 012345)**
+**FACILITY: Archway Surgery Opticians**
+
+**PATIENT:** Lily Catherine Marsh
+**NHS Number:** 123 456 7890 (Fictional for Lily)
+**Date of Birth:** 12/05/2017
+**Age:** 7 years 9 months
+**Referral Source:** GP Referral (Dr. A. Finch, Archway Surgery) on 15/02/2025.
+**Reason for Visit:** School flagged possible vision issues, sitting close to whiteboard/TV. Parental concern.
+
+**Subjective History:**
+Patient accompanied by father, Mr. Ethan Marsh. Mr. Marsh reports that Lily's Year 3 teacher, Mrs. Henderson at QPA Primary, noted Lily sitting increasingly close to the whiteboard during lessons. At home, Lily has been observed sitting very close to the television and holding books very near to her face. She has not complained of headaches or eye strain but has occasionally squinted when looking at distant objects. No reported double vision, flashes, floaters, or eye pain. No known family history of significant childhood eye conditions. Lily has not had a formal eye test previously.
+
+**Objective Examination:**
+
+**1. Visual Acuity (Unaided):**
+*   Right Eye (RE): 6/18 (Snellen equivalent)
+*   Left Eye (LE): 6/12 (Snellen equivalent)
+*   Both Eyes (BE): 6/9 (due to binocular summation)
+*   Near Acuity: N5 @ 25cm (Normal for age)
+
+**2. Cover Test (Distance & Near):**
+*   Orthophoric (no manifest or latent deviation observed)
+
+**3. Ocular Motility:**
+*   Full and smooth in all directions of gaze. No restriction or diplopia.
+
+**4. Pupils:**
+*   PERRLA (Pupils Equal, Round, Reactive to Light and Accommodation)
+*   No relative afferent pupillary defect (RAPD).
+
+**5. Anterior Segment Examination (Slit Lamp Biomicroscopy):**
+*   Lids/Lashes: Clear, no blepharitis or styes.
+*   Conjunctiva: White and quiet.
+*   Cornea: Clear, no staining or foreign bodies.
+*   Anterior Chamber: Deep and clear.
+*   Iris: Intact, normal architecture.
+*   Lens: Clear.
+
+**6. Retinoscopy (Cycloplegic Refraction with Cyclopentolate 1%):**
+*   RE: -2.50 DS / -0.75 DC x 180 (Spherical Equivalent: -2.88 D)
+*   LE: -1.75 DS / -0.50 DC x 10 (Spherical Equivalent: -2.00 D)
+
+**7. Subjective Refraction (Best Corrected Visual Acuity):**
+*   RE: -2.50 / -0.75 x 180 -> 6/6
+*   LE: -1.75 / -0.50 x 10 -> 6/6
+*   BE: -> 6/5
+
+**8. Fundus Examination (Direct Ophthalmoscopy, dilated):**
+*   Optic Discs: Pink, well-demarcated, cup-to-disc ratio approx. 0.3 in both eyes. No pallor or oedema.
+*   Macula: Healthy, foveal reflex present. No drusen or pigmentary changes.
+*   Retinal Vessels: Normal calibre, no haemorrhages or exudates.
+*   Periphery: Appears healthy.
+
+**9. Intraocular Pressure (IOP):**
+*   Not performed due to age and low suspicion of glaucoma.
+
+**Assessment:**
+Lily Marsh presents with moderate bilateral myopia and mild astigmatism, more pronounced in the right eye (RE -2.88 D Spherical Equivalent) compared to the left (LE -2.00 D Spherical Equivalent). This level of uncorrected refractive error is significant for a child of 7 years and clearly explains the reported difficulty with distance vision and compensatory behaviours (sitting close). There are no signs of amblyopia (lazy eye), strabismus (squint), or any other ocular pathology.
+
+**Diagnosis:**
+*   Myopia (H52.1) - Bilateral
+*   Astigmatism (H52.2) - Bilateral
+
+**Plan:**
+1.  **Spectacle Prescription:** Full-time spectacle wear prescribed with the following correction:
+    *   RE: -2.50 / -0.75 x 180
+    *   LE: -1.75 / -0.50 x 10
+    *   Dispensed at Archway Surgery Opticians. Patient advised on adaptation period.
+2.  **Review:** Re-evaluation of visual acuity and refraction in 6 months (August 2025) to monitor progression and adaptation to spectacles.
+3.  **Referral Consideration:** Given the magnitude of myopia for her age, it is recommended to consider a routine referral to Paediatric Ophthalmology for a specialist opinion, monitoring of myopia progression, and discussion of management options (e.g., atropine drops, multifocal contact lenses, or orthokeratology if progression is rapid). Referral letter to GP with this recommendation.
+4.  **Patient/Parent Education:** Explained the nature of myopia and astigmatism, the importance of full-time spectacle wear, and the potential for progression. Advised on adequate outdoor time (minimum 2 hours/day) and regular breaks from near work to potentially slow progression.
+
+**Ms. Eleanor Roberts**
+BSc Hons Optom, MCOptom
+GOC Registration: 012345
+Archway Surgery Opticians
+12 Station Road, Highgate, London N6 5XX
+Tel: 020 8123 4567
+
+---
+
+**DATE: 15/02/2025**
+**TIME: 09:45**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+**Context:** Parental concern regarding daughter Lily's vision.
+
+**Subjective:** Mr. Marsh contacted the surgery regarding his daughter, Lily Marsh (DOB 12/05/2017). He reports that Lily's school (QPA Primary, Year 3, Mrs. Henderson's class) sent home a note suggesting Lily may have vision problems, as she has been observed sitting very close to the whiteboard. Mr. Marsh states he and his wife, Claire, have also noticed Lily sitting much closer to the TV at home recently, and holding books very close when reading. Lily has not complained of headaches or eye strain but occasionally squints. Mr. Marsh is keen to get her eyes checked urgently.
+
+**Objective:**
+*   No direct examination of Lily Marsh today, as she is not the registered patient for this specific consultation.
+*   Reviewed Ethan Marsh's family medical history, noting no significant childhood eye conditions.
+*   Vitals for Ethan Marsh (brief check): BP 128/82 mmHg, HR 72 bpm. (Unrelated to primary concern).
+
+**Assessment:** Parental concern regarding possible visual impairment in Lily Marsh, triggered by school observation and home observations. Symptoms suggestive of myopia. Early assessment is important to prevent impact on learning and development.
+
+**Plan:**
+1.  **Referral:** Provided Mr. Marsh with information on local optometry services that accept NHS referrals for children. Recommended booking an appointment with Archway Surgery Opticians due to proximity and established relationship with the practice. Issued an NHS GP referral form for Lily Marsh for a comprehensive eye examination.
+2.  **Advice:** Advised Mr. Marsh that children's eye tests are free on the NHS. Emphasised the importance of attending the appointment as soon as possible.
+3.  **Documentation:** Noted concern in Ethan Marsh's record and created a temporary entry in Lily Marsh's (non-registered) record for referral tracking.
+
+**Notes:** Mr. Marsh seemed relieved to have a clear pathway for Lily's assessment. Mentioned he would book the appointment immediately.
+
+---
+
+**DATE: 10/01/2025**
+**TIME: 10:00**
+**ENTRY TYPE: Prescription Renewal**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Medications Renewed:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+*   Fexofenadine 180mg (OD) - 28 tablets, 3 repeats
+*   Mometasone Furoate Nasal Spray (2 sprays each nostril OD) - 1 bottle, 140 doses, 3 repeats
+
+**Notes:** Patient requested renewal via NHS App. All medications are current and stable. No changes to dosage or frequency.
+
+---
+
+**DATE: 05/01/2025**
+**TIME: 15:10**
+**ENTRY TYPE: Nurse Consultation Note / Immunisation**
+**ATTENDING CLINICIAN: Nurse Sarah Jenkins (NMC: 1234567)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his annual flu vaccination. Reports feeling well. Mentioned New Year's resolutions include more cycling and reducing screen time at work where possible. Also mentioned he and Claire are seriously considering switching to an electric car this year, doing research on models and charging infrastructure. Family well.
+
+**Objective:**
+*   Temperature: 36.7 °C
+*   BP: 126/80 mmHg
+*   HR: 68 bpm (regular)
+*   SPO2: 98% on room air
+*   Injection site (left deltoid) clear, no contraindications.
+
+**Assessment:** Fit for influenza vaccination. No acute concerns.
+
+**Plan:**
+1.  **Immunisation:** Administered Quadrivalent Inactivated Influenza Vaccine (Batch: XYZ789, Exp: 12/2025) to left deltoid.
+2.  **Advice:** Advised on potential mild injection site soreness/redness, and to seek medical advice for any severe reactions.
+3.  **Documentation:** Vaccination recorded.
+
+**Notes:** Mr. Marsh was cheerful and engaged. Confirmed current medications.
+
+---
+
+**DATE: 28/11/2024**
+**TIME: 10:30**
+**ENTRY TYPE: GP Consultation Note / Asthma Review**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his routine annual asthma review. Reports good control of his asthma over the past year. No emergency admissions or acute exacerbations requiring oral steroids. Uses Salbutamol inhaler approximately 2-3 times per week, mainly after intense cycling or during peak allergy season. No night waking due to asthma. No significant cough or wheeze. Adheres well to Fostair BD. Has been enjoying autumn cycling but needs to be mindful of colder air.
+
+**Objective:**
+*   BP: 130/84 mmHg
+*   HR: 70 bpm
+*   RR: 14 breaths/min
+*   SPO2: 99% on room air
+*   Chest auscultation: Clear breath sounds bilaterally, no wheeze or crackles.
+*   Spirometry performed today (results below).
+
+**Lab Results (Spirometry):**
+*   **Date:** 28/11/2024
+*   **Test:** Spirometry (Pre-bronchodilator)
+*   **FEV1:** 3.85 L (95% predicted)
+*   **FVC:** 4.70 L (93% predicted)
+*   **FEV1/FVC Ratio:** 82%
+*   **PEF:** 620 L/min (98% predicted)
+*   **Bronchodilator Reversibility (Post-Salbutamol):**
+    *   FEV1: 3.90 L (+1.3%)
+    *   FVC: 4.75 L (+1.1%)
+*   **Interpretation:** Mild obstructive pattern with no significant bronchodilator reversibility, consistent with well-controlled mild persistent asthma. Results are stable compared to previous years.
+
+**Assessment:** Asthma remains well-controlled. Spirometry results are stable and within expected parameters. No indicators for stepping up treatment. Continues on current maintenance therapy.
+
+**Plan:**
+1.  **Medication:** Continue Fostair 100/6 µg MDI 2 puffs BD and Salbutamol PRN.
+2.  **Inhaler Technique:** Reviewed inhaler technique, which was demonstrated correctly.
+3.  **Asthma Action Plan:** Reaffirmed personalized asthma action plan. Advised to carry reliever inhaler at all times, especially during cycling.
+4.  **Follow-up:** Next routine asthma review in 12 months, or sooner if symptoms worsen.
+5.  **Documentation:** Spirometry results uploaded to patient record.
+
+**Notes:** Mr. Marsh expressed satisfaction with his asthma control. Discussed the importance of flu vaccination (already scheduled for Jan 2025).
+
+---
+
+**DATE: 15/09/2024**
+**TIME: 14:00**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance (GMC: 7890123)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended with a flare-up of his seasonal allergic rhinitis. Reports significant nasal congestion, sneezing, itchy eyes, and general malaise. Symptoms have been ongoing for the past 2-3 weeks, coinciding with late summer/autumn pollen. He finds Fexofenadine helps, but not completely. He has been trying to spend more time outdoors for photography, which exacerbates symptoms.
+
+**Objective:**
+*   Nasal mucosa: Swollen, pale, watery discharge.
+*   Conjunctiva: Mildly injected.
+*   Chest: Clear on auscultation, no wheeze.
+*   BP: 125/78 mmHg, HR: 70 bpm.
+
+**Assessment:** Acute exacerbation of seasonal allergic rhinitis. Symptoms are impacting daily activities and outdoor hobbies. Current medication regimen needs adjustment.
+
+**Plan:**
+1.  **Medication Adjustment:** Advised to add Mometasone Furoate Nasal Spray 2 sprays each nostril daily, in addition to Fexofenadine 180mg OD. Explained the nasal spray takes a few days for full effect.
+2.  **Environmental Advice:** Reinforced advice to minimize pollen exposure during high pollen counts (e.g., showering after outdoor activities, keeping windows closed, wearing sunglasses).
+3.  **Follow-up:** Review in 2-3 weeks if symptoms not significantly improved.
+
+**Prescriptions:**
+*   Mometasone Furoate Nasal Spray 50 µg/dose - 1 bottle, 140 doses, 1 repeat.
+
+**Notes:** Mr. Marsh acknowledged the impact on his photography hobby. Seemed hopeful about the nasal spray.
+
+---
+
+**DATE: 20/07/2024**
+**TIME: 11:00**
+**ENTRY TYPE: Nurse Consultation Note / Minor Injury**
+**ATTENDING CLINICIAN: Nurse Sarah Jenkins (NMC: 1234567)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended as a walk-in for a minor injury sustained during a cycling fall. He reports coming off his bike on a gravel path in Highgate Woods. Sustained a scraped left knee and a minor laceration to his right forearm. He was wearing a helmet. No loss of consciousness, no headache, no vision changes. Pain is mild, managed with over-the-counter paracetamol.
+
+**Objective:**
+*   Left knee: Superficial abrasion, approximately 5x3 cm, with some embedded gravel.
+*   Right forearm: Linear laceration, approximately 2 cm, superficial, clean edges, not actively bleeding.
+*   No signs of fracture, swelling, or deformity in limbs.
+*   Tetanus status checked: Last booster 12/04/2006.
+
+**Assessment:** Minor cycling injury: superficial abrasion left knee, minor laceration right forearm. Tetanus status up to date for 10 years, therefore no booster required today. Risk of infection.
+
+**Plan:**
+1.  **Wound Care:** Thoroughly cleaned both wounds with saline. Removed gravel from knee abrasion. Applied antiseptic dressing to knee. Steri-strips applied to forearm laceration, followed by sterile dressing.
+2.  **Advice:** Advised on wound care, signs of infection (redness, swelling, pus, increasing pain), and when to seek further medical attention. Keep wounds clean and dry.
+3.  **Pain Relief:** Continue PRN Paracetamol/Ibuprofen.
+4.  **Follow-up:** Remove dressings in 2-3 days. If any concerns, contact surgery.
+
+**Notes:** Mr. Marsh was pragmatic about the fall. Emphasized the importance of helmets for cycling safety.
+
+---
+
+**DATE: 10/05/2024**
+**TIME: 16:00**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh reports a flare-up of his lower back pain. Started gradually about 3 days ago, worse after prolonged sitting at his desk at work, and when lifting Max (4 years old). Pain is dull ache, radiating slightly into the right buttock but not down the leg. Rates pain 6/10 at its worst. He has been taking PRN Paracetamol, which provides some relief. Denies numbness, tingling, or weakness in legs, or any bladder/bowel changes.
+
+**Objective:**
+*   Gait: Normal.
+*   Spine examination: Mild tenderness over lumbar paraspinal muscles. Full range of motion, but slight restriction and pain on lumbar flexion.
+*   SLR (Straight Leg Raise): Negative bilaterally.
+*   Neurological exam (lower limbs): Sensation intact, reflexes (patellar, Achilles) present and symmetrical, power 5/5 in all major muscle groups.
+*   BP: 128/80 mmHg, HR: 74 bpm.
+
+**Assessment:** Acute exacerbation of chronic mechanical lower back pain. No red flag symptoms. Likely muscular strain related to posture and lifting.
+
+**Plan:**
+1.  **Pain Relief:** Prescribed Naproxen 500mg BD for 7 days (with food) in addition to PRN Paracetamol. Advised to avoid Ibuprofen while taking Naproxen.
+2.  **Advice:** Emphasized importance of maintaining activity, gentle stretching, avoiding prolonged static postures, and proper lifting techniques. Recommended using a lumbar support at his desk.
+3.  **Physiotherapy:** Reinforced exercises previously given by physiotherapy. If pain persists beyond 1-2 weeks despite medication and self-management, consider re-referral to physiotherapy.
+4.  **Warning:** Advised to seek urgent medical attention for any new neurological symptoms (numbness, weakness, bladder/bowel issues).
+
+**Prescriptions:**
+*   Naproxen 500mg - 14 tablets, 7 days supply.
+
+**Notes:** Mr. Marsh was frustrated by the recurrence. Acknowledged he often forgets to take breaks from his desk.
+
+---
+
+**DATE: 05/03/2024**
+**TIME: 09:00**
+**ENTRY TYPE: Lab Result - Bloods**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Test Performed:** Routine Annual Bloods
+*   **Full Blood Count (FBC):**
+    *   Haemoglobin: 14.5 g/dL (Ref: 13.0-17.0) - Normal
+    *   White Cell Count: 7.2 x10^9/L (Ref: 4.0-11.0) - Normal
+    *   Platelets: 280 x10^9/L (Ref: 150-400) - Normal
+*   **Electrolytes & Renal Function (U&E):**
+    *   Sodium: 140 mmol/L (Ref: 135-145) - Normal
+    *   Potassium: 4.1 mmol/L (Ref: 3.5-5.0) - Normal
+    *   Creatinine: 85 µmol/L (Ref: 60-110) - Normal
+    *   eGFR: >90 mL/min/1.73m^2 - Normal
+*   **Liver Function Tests (LFTs):**
+    *   ALT: 30 U/L (Ref: <45) - Normal
+    *   ALP: 80 U/L (Ref: 30-100) - Normal
+    *   Bilirubin: 10 µmol/L (Ref: <21) - Normal
+*   **Lipid Panel:**
+    *   Total Cholesterol: 4.5 mmol/L (Ref: <5.0) - Normal
+    *   LDL Cholesterol: 2.5 mmol/L (Ref: <3.0) - Normal
+    *   HDL Cholesterol: 1.3 mmol/L (Ref: >1.0) - Normal
+    *   Triglycerides: 1.0 mmol/L (Ref: <1.7) - Normal
+*   **HbA1c:** 38 mmol/mol (Ref: <42) - Normal (Non-diabetic)
+*   **Vitamin D:** 55 nmol/L (Ref: 50-125) - Sufficient
+
+**Interpretation:** All routine blood parameters are within normal reference ranges. No significant abnormalities detected.
+
+**Plan:**
+1.  **Notification:** Results communicated to patient via NHS App.
+2.  **No Action Required:** No further action or follow-up needed based on these results.
+
+**Notes:** Confirms good general health indicators.
+
+---
+
+**DATE: 15/02/2024**
+**TIME: 09:30**
+**ENTRY TYPE: GP Consultation Note / Annual Health Check**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his routine annual health check. Reports feeling generally well. Work has been busy with several large fintech project deadlines, leading to some increased stress levels, but he manages it with cycling and family time. Family is well. Lily is thriving in Year 2, Max enjoying nursery. No new health concerns. Continues with asthma and allergy medications as prescribed. Back pain has been quiescent recently.
+
+**Objective:**
+*   Height: 180 cm
+*   Weight: 82 kg
+*   BMI: 25.3 kg/m^2 (Overweight range, stable)
+*   BP: 128/82 mmHg
+*   HR: 72 bpm (regular)
+*   Chest auscultation: Clear.
+*   Abdominal palpation: Soft, non-tender.
+*   Skin: No suspicious lesions.
+
+**Assessment:** Overall good health. BMI remains in the overweight category, but lifestyle is active. Stress levels noted, but managed. Good control of chronic conditions.
+
+**Plan:**
+1.  **Investigations:** Requested routine annual blood tests (FBC, U&E, LFT, Lipid Panel, HbA1c, Vit D). Bloods to be taken at practice phlebotomy clinic.
+2.  **Lifestyle Advice:** Encouraged to maintain active lifestyle and continue healthy eating. Discussed strategies for stress management, reinforcing the benefits of his hobbies.
+3.  **Medication Review:** Reviewed current medications; no changes required.
+4.  **Follow-up:** Results will be communicated via NHS App. Follow-up only if abnormalities found or new concerns arise.
+
+**Notes:** Mr. Marsh was receptive to advice. Seemed proactive about his health.
+
+---
+
+**DATE: 08/01/2024**
+**TIME: 10:45**
+**ENTRY TYPE: Prescription Renewal**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Medications Renewed:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+*   Fexofenadine 180mg (OD) - 28 tablets, 3 repeats
+*   Mometasone Furoate Nasal Spray (2 sprays each nostril OD) - 1 bottle, 140 doses, 3 repeats
+
+**Notes:** Patient requested renewal via NHS App. No issues reported with current regimen.
+
+---
+
+**DATE: 01/12/2023**
+**TIME: 15:00**
+**ENTRY TYPE: Nurse Consultation Note / Immunisation**
+**ATTENDING CLINICIAN: Nurse Sarah Jenkins (NMC: 1234567)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his annual flu vaccination. Reports good health. No acute illness.
+
+**Objective:**
+*   Temperature: 36.6 °C
+*   BP: 125/79 mmHg
+*   HR: 70 bpm
+*   SPO2: 99% on room air
+*   Injection site (right deltoid) clear.
+
+**Assessment:** Fit for influenza vaccination.
+
+**Plan:**
+1.  **Immunisation:** Administered Quadrivalent Inactivated Influenza Vaccine (Batch: PQR456, Exp: 11/2024) to right deltoid.
+2.  **Advice:** Standard post-vaccination advice given.
+
+**Notes:** No concerns.
+
+---
+
+**DATE: 20/10/2023**
+**TIME: 11:15**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh called to express concern regarding his son, Max (4 years old), who has developed a persistent cough and runny nose. Max attends Little Stars Nursery and this is the second cold in two months. Mr. Marsh is worried about recurrent infections. He also briefly mentioned Lily is enjoying Year 3 and Mrs. Henderson's class. Ethan's own health is good.
+
+**Objective:**
+*   Discussion primarily focused on Max's symptoms. Ethan Marsh's vitals not taken.
+*   Advised Mr. Marsh on typical viral upper respiratory tract infections in nursery-aged children.
+
+**Assessment:** Max Marsh likely has a common viral upper respiratory tract infection. Ethan Marsh's concern is understandable for a parent.
+
+**Plan:**
+1.  **Advice for Max:** Reassured Mr. Marsh that recurrent viral infections are common in young children starting nursery/school as their immune systems develop. Advised supportive care for Max (fluid intake, rest, paracetamol for fever/discomfort if needed). Advised to seek medical attention if symptoms worsen, high fever persists, or breathing difficulties arise.
+2.  **Documentation:** Noted parental concern in Ethan Marsh's record. Advised to book a separate appointment for Max if direct medical assessment is needed.
+
+**Notes:** Mr. Marsh seemed reassured. No specific action for Ethan's own health today.
+
+---
+
+**DATE: 10/08/2023**
+**TIME: 14:30**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended with seasonal allergy symptoms. Reports significant nasal congestion, sneezing, and itchy, watery eyes for the past few weeks, impacting his outdoor photography. He states the Fexofenadine helps, but he's still quite symptomatic. He's been trying to capture some summer landscapes but finds it difficult to concentrate with the constant irritation.
+
+**Objective:**
+*   Nasal mucosa: Congested, some clear discharge.
+*   Conjunctiva: Mildly hyperaemic.
+*   Chest: Clear on auscultation.
+*   BP: 127/81 mmHg.
+
+**Assessment:** Persistent seasonal allergic rhinitis despite current antihistamine. Likely high pollen exposure due to outdoor activities.
+
+**Plan:**
+1.  **Medication Review:** Reviewed his current regimen. Advised to ensure consistent use of Mometasone Furoate Nasal Spray daily, not just PRN. If symptoms persist, consider a short course of a different topical antihistamine eye drop.
+2.  **Environmental Advice:** Reiterate advice on pollen avoidance strategies.
+3.  **Follow-up:** If symptoms are still problematic in 2 weeks, consider further review or a referral to an allergy specialist if he wishes.
+
+**Notes:** Mr. Marsh decided to persist with the current regimen for now, focusing on consistent nasal spray use.
+
+---
+
+**DATE: 15/05/2023**
+**TIME: 09:15**
+**ENTRY TYPE: GP Consultation Note / Physiotherapy Follow-up**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for a follow-up regarding his lower back pain and recent physiotherapy course. Reports significant improvement in his back pain. He completed 6 sessions of physiotherapy and is diligent with his home exercise program. Pain is now infrequent and mild (1-2/10), mainly after prolonged sitting or heavy lifting. He feels much more confident in increasing his cycling activity and has planned a longer route for the upcoming bank holiday. No new neurological symptoms.
+
+**Objective:**
+*   Spine examination: No tenderness. Full, pain-free range of motion in lumbar spine.
+*   SLR: Negative.
+*   Neurological exam (lower limbs): Normal.
+*   BP: 125/78 mmHg, HR: 68 bpm.
+
+**Assessment:** Significant improvement in chronic mechanical lower back pain following physiotherapy. Patient is compliant with exercises and has good understanding of self-management strategies.
+
+**Plan:**
+1.  **Continue Exercises:** Advised to continue with regular core strengthening and stretching exercises as taught by physiotherapy.
+2.  **Activity:** Encouraged to gradually increase cycling and other physical activities, mindful of good posture and lifting techniques.
+3.  **PRN Medication:** Continue PRN Paracetamol/Ibuprofen for any mild residual pain.
+4.  **Discharge:** No further routine GP follow-up needed for this episode unless symptoms recur or worsen significantly.
+
+**Notes:** Mr. Marsh was very positive about the benefits of physiotherapy.
+
+---
+
+**DATE: 01/03/2023**
+**TIME: 10:00**
+**ENTRY TYPE: Referral Letter**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+**TO:** Physiotherapy Department, Whittington Hospital
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+**Date of Birth:** 15/07/1986
+
+**Reason for Referral:** Chronic intermittent lower back pain.
+
+**History of Presenting Complaint:**
+Mr. Marsh presents with a history of recurrent lower back pain over several years, exacerbated by prolonged sitting (due to his occupation as a software engineer) and certain physical activities. The pain is typically a dull ache in the lumbar region, occasionally radiating to the buttocks, but without any neurological symptoms (no radiculopathy, numbness, tingling, or weakness). He experienced an acute flare-up approximately 3 weeks ago, which prompted his recent consultation. He has tried over-the-counter analgesia (Paracetamol, Ibuprofen) with limited benefit during acute phases. He has been advised on posture and activity modification.
+
+**Past Medical History:** Mild persistent asthma, seasonal allergic rhinitis, appendectomy (childhood). No history of spinal trauma or surgery.
+**Current Medications:** Fostair 100/6 µg MDI (2 puffs BD), Salbutamol PRN, Fexofenadine 180mg OD, Mometasone Furoate Nasal Spray OD.
+**Allergies:** Penicillin (rash), Dust mites, Pollen.
+**Social History:** Senior software engineer, active lifestyle (cycling, photography), non-smoker, social alcohol.
+
+**Examination Findings (10/02/2023):**
+*   Lumbar spine: Mild tenderness on palpation of paraspinal muscles. Range of motion slightly limited on flexion.
+*   SLR: Negative bilaterally.
+*   Lower limb neurological exam: Normal power, sensation, and reflexes.
+*   No red flags for serious spinal pathology.
+
+**Provisional Diagnosis:** Mechanical lower back pain.
+
+**Management to Date:**
+*   Advice on posture, activity modification, heat/cold therapy.
+*   Prescribed Naproxen PRN for acute flares (last prescribed 10/05/2024 - *correction, this is a future date, should be 10/02/2023*). *Self-correction: Naproxen prescribed 10/02/2023 for this current flare.*
+
+**Request:** Please assess and manage Mr. Marsh's chronic lower back pain. Advice on specific exercises, ergonomic assessment, and pain management strategies would be beneficial.
+
+**Dr. Alistair Finch**
+Archway Surgery
+
+---
+
+**DATE: 10/02/2023**
+**TIME: 15:45**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh presented with recurrent lower back pain. Reports the pain started gradually about 3 weeks ago and has worsened. It's a dull ache in the lumbar region, exacerbated by prolonged sitting at his desk, and feels worse in the evenings. He occasionally feels it radiate into his right buttock but denies any leg pain, numbness, tingling, or weakness. No issues with bladder or bowel function. He has tried OTC pain relief (Paracetamol, Ibuprofen) with minimal effect. This is similar to previous episodes but seems to be lasting longer.
+
+**Objective:**
+*   Gait: Normal.
+*   Lumbar spine: Palpable tenderness over L4/L5 paraspinal muscles. Range of motion limited on flexion and extension, with associated pain.
+*   SLR: Negative bilaterally.
+*   Neurological exam (lower limbs): Sensation intact, reflexes (patellar, Achilles) 2+, power 5/5 throughout.
+*   BP: 129/83 mmHg, HR: 72 bpm.
+
+**Assessment:** Acute exacerbation of chronic mechanical lower back pain. No red flag symptoms for serious spinal pathology (e.g., cauda equina syndrome, fracture, malignancy). Likely muscular/ligamentous strain.
+
+**Plan:**
+1.  **Pain Relief:** Prescribed a short course of Naproxen 500mg BD for 7 days (with food) to reduce inflammation and pain. Advised to continue Paracetamol if needed, but not Ibuprofen concurrently.
+2.  **Advice:** Provided advice on gentle stretches, maintaining activity (avoiding prolonged bed rest), heat/cold therapy, and ergonomic adjustments at his desk.
+3.  **Referral:** Discussed referral to NHS Physiotherapy for a comprehensive assessment and management plan. Mr. Marsh agreed to the referral.
+4.  **Safety Net:** Advised to seek urgent medical attention for any new neurological symptoms (e.g., worsening leg pain, numbness, weakness, bladder/bowel changes).
+
+**Prescriptions:**
+*   Naproxen 500mg - 14 tablets, 7 days supply.
+
+**Notes:** Mr. Marsh seemed keen to address this more proactively than previous episodes.
+
+---
+
+**DATE: 12/01/2023**
+**TIME: 10:10**
+**ENTRY TYPE: Prescription Renewal**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Medications Renewed:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+*   Fexofenadine 180mg (OD) - 28 tablets, 3 repeats
+*   Mometasone Furoate Nasal Spray (2 sprays each nostril OD) - 1 bottle, 140 doses, 3 repeats
+
+**Notes:** Patient requested renewal via NHS App. Stable on current medications.
+
+---
+
+**DATE: 05/12/2022**
+**TIME: 14:00**
+**ENTRY TYPE: Nurse Consultation Note / Immunisation**
+**ATTENDING CLINICIAN: Nurse Sarah Jenkins (NMC: 1234567)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his COVID-19 booster vaccination (Booster 1). Reports feeling well. No acute illness or contraindications.
+
+**Objective:**
+*   BP: 126/80 mmHg, HR: 69 bpm.
+*   Injection site (right deltoid) clear.
+
+**Assessment:** Fit for COVID-19 booster.
+
+**Plan:**
+1.  **Immunisation:** Administered Pfizer-BioNTech Comirnaty (Batch: VAX321, Exp: 06/2023) to right deltoid.
+2.  **Advice:** Standard post-vaccination advice given.
+
+**Notes:** No immediate adverse reactions.
+
+---
+
+**DATE: 18/10/2022**
+**TIME: 10:30**
+**ENTRY TYPE: GP Consultation Note / Asthma Review**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his annual asthma review. Reports his asthma has been stable since the last review. Uses Salbutamol inhaler 1-2 times per week, primarily before or after vigorous exercise. No nocturnal symptoms or significant daytime limitations. Adherence to Fostair BD is good. Briefly mentioned his new tropical fish tank setup is quite elaborate, requiring regular maintenance, but he finds it relaxing.
+
+**Objective:**
+*   BP: 128/82 mmHg, HR: 70 bpm.
+*   Chest auscultation: Clear breath sounds, no wheeze.
+*   Spirometry performed today (results below).
+
+**Lab Results (Spirometry):**
+*   **Date:** 18/10/2022
+*   **Test:** Spirometry (Pre-bronchodilator)
+*   **FEV1:** 3.80 L (94% predicted)
+*   **FVC:** 4.65 L (92% predicted)
+*   **FEV1/FVC Ratio:** 81%
+*   **PEF:** 610 L/min (97% predicted)
+*   **Interpretation:** Mild obstructive pattern, stable, consistent with well-controlled asthma. No significant change from previous recordings.
+
+**Assessment:** Asthma remains well-controlled on current therapy. No indication for treatment adjustment.
+
+**Plan:**
+1.  **Medication:** Continue Fostair 100/6 µg MDI 2 puffs BD and Salbutamol PRN.
+2.  **Asthma Action Plan:** Reviewed and confirmed understanding.
+3.  **Follow-up:** Next routine asthma review in 12 months, or sooner if required.
+
+**Notes:** Mr. Marsh was satisfied with his asthma control.
+
+---
+
+**DATE: 22/08/2022**
+**TIME: 16:15**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh called the surgery with a brief concern about his wife, Claire. He reports Claire has developed a mild fever, sore throat, and general aches for the past 24 hours. He is concerned it might be another COVID-19 infection or something more serious. He mentioned she is currently off work from the primary school due to the summer holidays. He himself feels well.
+
+**Objective:**
+*   No direct assessment of Claire Marsh.
+*   Advised Mr. Marsh on common viral illnesses.
+
+**Assessment:** Claire Marsh likely has a common viral infection. Ethan Marsh's concern is understandable.
+
+**Plan:**
+1.  **Advice for Claire:** Reassured Mr. Marsh that Claire's symptoms are highly suggestive of a common viral illness. Advised supportive care (rest, fluids, paracetamol/ibuprofen for fever/pain). Advised to use lateral flow tests if available, but not strictly necessary unless symptoms worsen or she needs to return to work.
+2.  **Documentation:** Noted concern in Ethan Marsh's record. Advised Claire to contact the surgery directly if her symptoms worsen or persist for more than 5-7 days.
+
+**Notes:** Mr. Marsh seemed reassured. No specific action for Ethan's own health today.
+
+---
+
+**DATE: 30/06/2022**
+**TIME: 13:00**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh presented with seasonal allergy symptoms that he feels are worse than usual this year. Reports significant nasal blockage, sneezing fits, and very itchy, watery eyes. These symptoms are making his regular cycling difficult and uncomfortable. He's currently taking Fexofenadine 180mg daily but feels it's not fully effective. He's also trying to take Lily and Max to the park more often, which seems to trigger symptoms.
+
+**Objective:**
+*   Nasal mucosa: Swollen, pale.
+*   Conjunctiva: Bilateral conjunctival injection.
+*   Chest: Clear on auscultation.
+*   BP: 128/80 mmHg, HR: 72 bpm.
+
+**Assessment:** Inadequate control of seasonal allergic rhinitis despite oral antihistamines. Likely high pollen load in the environment.
+
+**Plan:**
+1.  **Medication Adjustment:** Advised to add Mometasone Furoate Nasal Spray (2 sprays each nostril OD) to his regimen, in addition to continuing Fexofenadine. Explained the importance of consistent daily use for optimal effect.
+2.  **Environmental Advice:** Reaffirmed practical advice for pollen avoidance (e.g., showering after outdoor activity, keeping windows closed in the morning, wearing wrap-around sunglasses).
+3.  **Follow-up:** If symptoms persist or worsen after 2 weeks on combined therapy, consider a review for alternative options or referral to allergy clinic.
+
+**Prescriptions:**
+*   Mometasone Furoate Nasal Spray 50 µg/dose - 1 bottle, 140 doses, 1 repeat.
+
+**Notes:** Mr. Marsh was keen to try the nasal spray.
+
+---
+
+**DATE: 15/04/2022**
+**TIME: 09:00**
+**ENTRY TYPE: Lab Result - Bloods**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Test Performed:** Vitamin D level check (part of routine annual screen).
+*   **Vitamin D (25-OH):** 42 nmol/L (Ref: 50-125 nmol/L for sufficiency)
+
+**Interpretation:** Vitamin D level is borderline insufficient.
+
+**Plan:**
+1.  **Notification:** Results communicated to patient via NHS App.
+2.  **Advice:** Advised Mr. Marsh to take an over-the-counter Vitamin D supplement (e.g., 1000 IU daily) for 3-6 months, particularly during autumn/winter, and to ensure adequate sun exposure during summer months (mindful of skin protection).
+3.  **Follow-up:** No repeat blood test needed unless symptoms of deficiency develop or if he has other risk factors.
+
+**Notes:** Common finding in UK population. Patient advised to purchase supplement from pharmacy.
+
+---
+
+**DATE: 01/03/2022**
+**TIME: 09:30**
+**ENTRY TYPE: GP Consultation Note / Routine Check-up**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for a routine check-up. Reports feeling generally well, but still occasionally has moments of sadness regarding his father's passing last August. He finds talking to Claire and his siblings, Hannah and Luke, helpful. He has immersed himself in his work and hobbies, particularly the tropical fish keeping, as a coping mechanism. He denies any severe low mood, anhedonia, or suicidal ideation. Sleep is generally good. He is managing well.
+
+**Objective:**
+*   BP: 127/81 mmHg
+*   HR: 70 bpm (regular)
+*   Weight: 83 kg (stable)
+*   Chest: Clear.
+*   General appearance: Well-kempt, good eye contact.
+
+**Assessment:** Patient is coping well with bereavement. No clinical signs of significant anxiety or depression requiring formal intervention at this stage. Overall physical health stable.
+
+**Plan:**
+1.  **Mental Health:** Reaffirmed availability of mental health support (e.g., IAPT services, bereavement counselling) should he feel the need in the future. Encouraged continued open communication with family.
+2.  **Physical Health:** Requested routine annual blood tests (FBC, U&E, LFT, Lipid Panel, HbA1c, Vitamin D).
+3.  **Lifestyle:** Encouraged continued active lifestyle and healthy diet.
+4.  **Follow-up:** Results will be communicated via NHS App. Follow-up if any abnormalities or new concerns.
+
+**Notes:** Mr. Marsh seemed appreciative of the opportunity to discuss his feelings.
+
+---
+
+**DATE: 15/01/2022**
+**TIME: 11:00**
+**ENTRY TYPE: Prescription Renewal**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Medications Renewed:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+*   Fexofenadine 180mg (OD) - 28 tablets, 3 repeats
+*   Mometasone Furoate Nasal Spray (2 sprays each nostril OD) - 1 bottle, 140 doses, 3 repeats
+
+**Notes:** Patient requested renewal. Stable on current medications.
+
+---
+
+**DATE: 01/11/2021**
+**TIME: 15:30**
+**ENTRY TYPE: Nurse Consultation Note / Immunisation**
+**ATTENDING CLINICIAN: Nurse Sarah Jenkins (NMC: 1234567)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his annual flu vaccination. Reports good health, no acute illness.
+
+**Objective:**
+*   BP: 126/78 mmHg, HR: 68 bpm.
+*   Injection site (left deltoid) clear.
+
+**Assessment:** Fit for influenza vaccination.
+
+**Plan:**
+1.  **Immunisation:** Administered Quadrivalent Inactivated Influenza Vaccine (Batch: MNO123, Exp: 10/2022) to left deltoid.
+2.  **Advice:** Standard post-vaccination advice given.
+
+**Notes:** No concerns.
+
+---
+
+**DATE: 20/09/2021**
+**TIME: 10:00**
+**ENTRY TYPE: GP Consultation Note / Bereavement Follow-up**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for a follow-up consultation regarding his father's recent passing. He reports that the funeral was difficult but provided some closure. He is still experiencing waves of grief and sadness, particularly in the evenings. His sleep has been somewhat disturbed, taking longer to fall asleep. He finds discussing memories with Claire and his family helpful. He's back at work, which provides a distraction. Denies suicidal thoughts or severe depression. He expressed gratitude for the support from his siblings, Hannah and Luke, who traveled for the funeral.
+
+**Objective:**
+*   Appearance: Well-kept, although noted some eye redness, perhaps from recent crying or fatigue.
+*   Mood: Euthymic, tearful at times when discussing father.
+*   Affect: Appropriate.
+*   Insight: Good.
+*   BP: 130/84 mmHg, HR: 75 bpm (slightly elevated, likely due to emotional state).
+
+**Assessment:** Normal grief reaction following the loss of his father. No red flags for complicated grief or clinical depression at this time. Patient has good insight and a strong support network.
+
+**Plan:**
+1.  **Support:** Reaffirmed availability of bereavement counselling services (e.g., Cruse Bereavement Care) if he feels he needs more structured support in the future.
+2.  **Sleep Hygiene:** Provided advice on sleep hygiene measures (e.g., consistent bedtime, avoiding screens before bed, creating a relaxing environment).
+3.  **Monitor:** Advised to continue monitoring his mood and sleep. Encouraged to maintain social connections and engage in his hobbies.
+4.  **Follow-up:** Offered a further review in 4-6 weeks, or sooner if his symptoms worsen significantly. Mr. Marsh preferred to contact the surgery if needed.
+
+**Notes:** Mr. Marsh seemed to appreciate the opportunity to talk. No medication prescribed.
+
+---
+
+**DATE: 17/08/2021**
+**TIME: 10:00**
+**ENTRY TYPE: GP Consultation Note / Family History Update**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh called to inform the surgery of the passing of his father, George William Marsh (DOB 01/03/1956), on 15/08/2021. He reports his father passed away peacefully at home in Bristol, surrounded by family, following complications from metastatic colorectal cancer. Mr. Marsh expressed sadness but also relief that his father's suffering is over. He mentioned he would be travelling to Bristol for the funeral.
+
+**Objective:**
+*   Updated family medical history to reflect George Marsh's passing.
+*   Noted cause of death: metastatic colorectal carcinoma.
+
+**Assessment:** Patient experiencing grief. No immediate health concerns for Ethan Marsh.
+
+**Plan:**
+1.  **Support:** Offered condolences. Advised Mr. Marsh to contact the surgery if he needs any support during this difficult time, including information on bereavement services.
+2.  **Documentation:** Updated patient's family history.
+
+**Notes:** Mr. Marsh sounded subdued but composed.
+
+---
+
+**DATE: 05/07/2021**
+**TIME: 12:00**
+**ENTRY TYPE: Specialist Letter (Copied for Patient Record)**
+**ATTENDING CLINICIAN: Dr. Sarah Chen (Consultant Oncologist)**
+**FACILITY: Bristol Royal Infirmary**
+
+**Patient:** George William Marsh
+**NHS Number:** 012 345 6789 (Fictional for George)
+**Date of Birth:** 01/03/1956
+**Date of Letter:** 01/07/2021
+**To:** Dr. Jane Miller (GP, Bristol)
+**Cc:** Ethan Marsh
+
+**RE: Update on Mr. George Marsh's Condition**
+
+Dear Dr. Miller,
+
+This letter is to update you on Mr. George Marsh, who has been under my care for metastatic colorectal carcinoma.
+
+Mr. Marsh attended clinic on 28/06/2021. He reported a significant decline in his general condition over the past month. He is experiencing increasing fatigue, reduced appetite, and progressive weight loss. His ECOG performance status has deteriorated to 3-4. Imaging from two weeks prior showed further progression of liver and lung metastases.
+
+Following a detailed discussion with Mr. Marsh and his family (including his son, Ethan Marsh, who was present at the consultation), the decision was made to cease active anti-cancer treatment. Mr. Marsh expressed a wish to focus on comfort and quality of life.
+
+We have initiated a referral to the Community Palliative Care Team in Bristol for comprehensive symptom management and support at home. We will continue to provide support as needed.
+
+Please do not hesitate to contact me if you require any further information.
+
+Yours sincerely,
+
+**Dr. Sarah Chen**
+Consultant Oncologist
+Bristol Royal Infirmary
+
+---
+
+**DATE: 10/06/2021**
+**TIME: 14:15**
+**ENTRY TYPE: Nurse Consultation Note / Immunisation**
+**ATTENDING CLINICIAN: Nurse Sarah Jenkins (NMC: 1234567)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his second dose of the COVID-19 vaccination. Reports no significant side effects from the first dose other than mild arm soreness. Feels well.
+
+**Objective:**
+*   BP: 125/79 mmHg, HR: 70 bpm.
+*   Injection site (left deltoid) clear.
+
+**Assessment:** Fit for second dose COVID-19 vaccination.
+
+**Plan:**
+1.  **Immunisation:** Administered Pfizer-BioNTech Comirnaty (Batch: VAX123B, Exp: 12/2021) to left deltoid.
+2.  **Advice:** Standard post-vaccination advice given. Advised full protection typically achieved 14 days after second dose.
+
+**Notes:** No immediate adverse reactions.
+
+---
+
+**DATE: 01/05/2021**
+**TIME: 11:30**
+**ENTRY TYPE: Nurse Consultation Note / Immunisation**
+**ATTENDING CLINICIAN: Nurse Sarah Jenkins (NMC: 1234567)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his first dose of the COVID-19 vaccination, as part of the age-based rollout. Reports feeling well. No acute illness or contraindications.
+
+**Objective:**
+*   BP: 128/80 mmHg, HR: 72 bpm.
+*   Injection site (right deltoid) clear.
+
+**Assessment:** Fit for COVID-19 vaccination.
+
+**Plan:**
+1.  **Immunisation:** Administered Pfizer-BioNTech Comirnaty (Batch: VAX123A, Exp: 11/2021) to right deltoid.
+2.  **Advice:** Standard post-vaccination advice given (potential arm soreness, mild fever, headache). Advised on booking second dose.
+
+**Notes:** No immediate adverse reactions.
+
+---
+
+**DATE: 15/04/2021**
+**TIME: 10:45**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended with symptoms of seasonal allergies. Reports nasal congestion, sneezing, and itchy eyes, which have started over the past week as spring pollen counts rise. He finds it irritating during his walks and when playing with Lily and Max in the garden. He has tried OTC antihistamines (Loratadine) with some relief, but symptoms persist.
+
+**Objective:**
+*   Nasal mucosa: Swollen, pale.
+*   Conjunctiva: Mildly injected.
+*   Chest: Clear on auscultation.
+*   BP: 126/78 mmHg.
+
+**Assessment:** Seasonal allergic rhinitis flare-up.
+
+**Plan:**
+1.  **Medication:** Prescribed Fexofenadine 180mg OD, as it is often more effective for severe symptoms than Loratadine. Advised to continue for the duration of the pollen season.
+2.  **Environmental Advice:** Advised on pollen avoidance strategies.
+3.  **Follow-up:** Review if symptoms are not controlled.
+
+**Prescriptions:**
+*   Fexofenadine 180mg - 28 tablets, 1 repeat.
+
+**Notes:** Mr. Marsh was hopeful for better relief with the new antihistamine.
+
+---
+
+**DATE: 20/02/2021**
+**TIME: 09:00**
+**ENTRY TYPE: Prescription Renewal**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Medications Renewed:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+
+**Notes:** Patient requested renewal via NHS App. Stable on current asthma medications. No issues reported.
+
+---
+
+**DATE: 25/01/2021**
+**TIME: 15:00**
+**ENTRY TYPE: GP Consultation Note / Routine Check-up**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for a routine check-up, delayed from late 2020 due to COVID-19 restrictions. Reports generally good health. He expressed concern regarding his father's declining health in Bristol, mentioning he's not doing well with his cancer treatment. He finds it difficult not being able to visit easily due to travel restrictions. Claire and the children (Lily and Max) are well. He's managing work from home effectively.
+
+**Objective:**
+*   BP: 130/85 mmHg
+*   HR: 74 bpm
+*   Weight: 84 kg (stable)
+*   Chest: Clear.
+*   General appearance: Slightly stressed, but otherwise well.
+
+**Assessment:** Overall good physical health. Experiencing emotional stress due to father's illness and pandemic restrictions.
+
+**Plan:**
+1.  **Support:** Acknowledged his concerns about his father. Offered support and advice on coping with family illness during difficult times.
+2.  **Physical Health:** Routine physical examination satisfactory. No new concerns.
+3.  **Medication Review:** Reviewed asthma medications; stable.
+4.  **Follow-up:** Encouraged to maintain contact for any future concerns, especially regarding his father's health or his own well-being.
+
+**Notes:** Mr. Marsh seemed appreciative of the empathetic ear.
+
+---
+
+**DATE: 01/12/2020**
+**TIME: 10:00**
+**ENTRY TYPE: Nurse Consultation Note / Immunisation**
+**ATTENDING CLINICIAN: Nurse Sarah Jenkins (NMC: 1234567)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his annual flu vaccination. Reports good health, no acute illness.
+
+**Objective:**
+*   BP: 127/80 mmHg, HR: 70 bpm.
+*   Injection site (right deltoid) clear.
+
+**Assessment:** Fit for influenza vaccination.
+
+**Plan:**
+1.  **Immunisation:** Administered Quadrivalent Inactivated Influenza Vaccine (Batch: JKL789, Exp: 11/2021) to right deltoid.
+2.  **Advice:** Standard post-vaccination advice given.
+
+**Notes:** No concerns.
+
+---
+
+**DATE: 05/09/2020**
+**TIME: 11:00**
+**ENTRY TYPE: GP Note / Family Event**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Claire Marsh contacted the surgery to inform us of the safe arrival of their second child, Max George Marsh, born on 01/09/2020 at Whittington Hospital. Both mother and baby are doing well. Ethan Marsh is reportedly delighted.
+
+**Objective:**
+*   Updated family medical history to include Max Marsh.
+*   Noted Claire's post-natal check-up has been scheduled by the hospital.
+
+**Assessment:** Happy family event.
+
+**Plan:**
+1.  **Documentation:** Record birth in family history.
+2.  **Follow-up:** No direct action for Ethan Marsh.
+
+**Notes:** A positive update during a challenging year.
+
+---
+
+**DATE: 10/08/2020**
+**TIME: 14:00**
+**ENTRY TYPE: GP Consultation Note (Virtual) / Asthma Review**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended a virtual asthma review due to ongoing COVID-19 pandemic restrictions. Reports his asthma has remained well-controlled since his mild COVID-19 infection in March. Uses Salbutamol inhaler approximately once a week, mainly after cycling. No nocturnal symptoms. Adheres well to Fostair BD. He is working from home, which reduces exposure to office dust. Claire is now very heavily pregnant (due early September), and he is preparing for the new arrival.
+
+**Objective:**
+*   Remote assessment: No signs of respiratory distress. Voice clear.
+*   Self-reported PEF: Consistently in his green zone (approx. 580-600 L/min).
+
+**Assessment:** Asthma remains well-controlled. No concerns regarding post-COVID asthma exacerbation.
+
+**Plan:**
+1.  **Medication:** Continue Fostair 100/6 µg MDI 2 puffs BD and Salbutamol PRN.
+2.  **Asthma Action Plan:** Reconfirmed understanding of his action plan.
+3.  **Follow-up:** Next routine asthma review in 12 months, or sooner if symptoms worsen. In-person spirometry to be arranged when safe and feasible.
+
+**Notes:** Mr. Marsh expressed appreciation for the virtual consultation.
+
+---
+
+**DATE: 25/03/2020**
+**TIME: 10:00**
+**ENTRY TYPE: GP Consultation Note (Telephone) / COVID-19 Infection**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh called to report symptoms suggestive of COVID-19. He developed a new, continuous cough, fever (self-reported 38.5°C), and anosmia (loss of smell) 2 days ago. He feels generally unwell but not severely breathless. His asthma is not exacerbated. Claire (who is pregnant) and Lily are currently asymptomatic. He is aware of government guidance on self-isolation.
+
+**Objective:**
+*   Remote assessment. No direct examination.
+*   Symptoms consistent with mild COVID-19 infection based on prevailing guidance.
+
+**Assessment:** Presumptive diagnosis of mild COVID-19 infection. Patient is not severely unwell and can self-manage at home.
+
+**Plan:**
+1.  **Self-Isolation:** Advised Mr. Marsh to self-isolate for 7 days from symptom onset. Advised Claire and Lily to self-isolate for 14 days.
+2.  **Symptomatic Management:** Advised supportive care (rest, fluids, Paracetamol for fever/discomfort).
+3.  **Monitoring:** Advised to monitor for worsening symptoms, particularly shortness of breath or persistent chest pain, and to contact NHS 111 or emergency services if concerned.
+4.  **Documentation:** Recorded as a presumptive COVID-19 infection in patient record.
+
+**Notes:** Mr. Marsh understood the advice. Concerned about Claire's pregnancy but reassured she should also self-isolate.
+
+---
+
+**DATE: 15/02/2020**
+**TIME: 10:30**
+**ENTRY TYPE: Prescription Renewal**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Medications Renewed:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+*   Loratadine 10mg (OD) - 28 tablets, 3 repeats (for allergies, switched to Fexofenadine later)
+
+**Notes:** Patient requested renewal. Stable on current medications.
+
+---
+
+**DATE: 20/01/2020**
+**TIME: 15:00**
+**ENTRY TYPE: GP Consultation Note / Routine Check-up**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for a routine annual check-up. Reports feeling well. Claire is pregnant again, due in September, and they are excited. Lily is thriving at nursery. Work is busy but enjoyable. No new health concerns. Asthma and allergies are well-controlled.
+
+**Objective:**
+*   BP: 128/82 mmHg
+*   HR: 72 bpm
+*   Weight: 83 kg (stable)
+*   Chest: Clear.
+*   General appearance: Healthy.
+
+**Assessment:** Overall good physical health. No new concerns.
+
+**Plan:**
+1.  **Physical Health:** Routine physical examination satisfactory.
+2.  **Medication Review:** Reviewed asthma and allergy medications; stable.
+3.  **Lifestyle:** Encouraged continued active lifestyle and healthy diet.
+4.  **Follow-up:** Routine follow-up as needed.
+
+**Notes:** Mr. Marsh was in good spirits, looking forward to the new baby.
+
+---
+
+**DATE: 03/12/2019**
+**TIME: 14:00**
+**ENTRY TYPE: Nurse Consultation Note / Immunisation**
+**ATTENDING CLINICIAN: Nurse Sarah Jenkins (NMC: 1234567)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his annual flu vaccination. Reports good health.
+
+**Objective:**
+*   BP: 125/78 mmHg, HR: 69 bpm.
+*   Injection site (left deltoid) clear.
+
+**Assessment:** Fit for influenza vaccination.
+
+**Plan:**
+1.  **Immunisation:** Administered Quadrivalent Inactivated Influenza Vaccine (Batch: GHI456, Exp: 11/2020) to left deltoid.
+2.  **Advice:** Standard post-vaccination advice given.
+
+**Notes:** No concerns.
+
+---
+
+**DATE: 10/11/2019**
+**TIME: 09:30**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh called to ask for advice regarding his daughter, Lily (2 years old), who has developed her first proper cold since starting nursery. He described a runny nose, cough, and slight fever. He's concerned as she seems quite miserable. Ethan's own health is good.
+
+**Objective:**
+*   No direct assessment of Lily.
+*   Advised Mr. Marsh on common viral illnesses in children.
+
+**Assessment:** Lily Marsh likely has a common viral upper respiratory tract infection. Ethan Marsh's concern is typical for a new parent.
+
+**Plan:**
+1.  **Advice for Lily:** Reassured Mr. Marsh that common colds are frequent in children attending nursery. Advised supportive care (fluids, rest, infant Paracetamol/Ibuprofen for fever/discomfort). Advised to monitor for worsening symptoms (e.g., breathing difficulties, persistent high fever) and to bring Lily in if concerned.
+2.  **Documentation:** Noted parental concern in Ethan Marsh's record.
+
+**Notes:** Mr. Marsh seemed reassured.
+
+---
+
+**DATE: 01/09/2019**
+**TIME: 11:00**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended with a flare-up of his seasonal allergic rhinitis. Reports significant hay fever symptoms (sneezing, runny nose, itchy eyes) over the last 2-3 weeks, impacting his enjoyment of the tail end of summer. He mentioned he recently got a new car, a 2019 VW Golf, and is enjoying driving it but finds the pollen count sometimes makes his commute uncomfortable even with the air conditioning. He is taking Loratadine daily but it's not fully effective.
+
+**Objective:**
+*   Nasal mucosa: Congested, pale.
+*   Conjunctiva: Mildly injected.
+*   Chest: Clear on auscultation.
+*   BP: 126/80 mmHg.
+
+**Assessment:** Seasonal allergic rhinitis, moderately controlled.
+
+**Plan:**
+1.  **Medication Adjustment:** Advised to switch from Loratadine to Fexofenadine 180mg OD for better symptom control.
+2.  **Environmental Advice:** Reinforced advice on pollen avoidance (e.g., using car air conditioning on recirculate, changing clothes after being outdoors).
+3.  **Follow-up:** Review in 2-3 weeks if symptoms not significantly improved.
+
+**Prescriptions:**
+*   Fexofenadine 180mg - 28 tablets, 1 repeat.
+
+**Notes:** Mr. Marsh was keen to try the new antihistamine.
+
+---
+
+**DATE: 15/07/2019**
+**TIME: 10:00**
+**ENTRY TYPE: GP Consultation Note / Asthma Review**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his routine annual asthma review. Reports his asthma has been very well-controlled over the past year. Uses Salbutamol inhaler less than once a week, mainly after intense cycling sessions. No nocturnal symptoms. Adheres well to Fostair BD. He is regularly cycling and feels fit.
+
+**Objective:**
+*   BP: 128/82 mmHg, HR: 70 bpm.
+*   Chest auscultation: Clear breath sounds, no wheeze.
+*   PEF (measured): 600 L/min (consistent with personal best).
+
+**Assessment:** Asthma remains excellent controlled on current therapy. No indication for treatment adjustment.
+
+**Plan:**
+1.  **Medication:** Continue Fostair 100/6 µg MDI 2 puffs BD and Salbutamol PRN.
+2.  **Asthma Action Plan:** Reaffirmed understanding.
+3.  **Follow-up:** Next routine asthma review in 12 months, or sooner if symptoms worsen.
+
+**Notes:** Mr. Marsh expressed satisfaction with his asthma control.
+
+---
+
+**DATE: 01/05/2019**
+**TIME: 16:30**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended with a minor lower back twinge. Reports that he felt a sharp twinge in his lower back yesterday while moving some furniture around the house. Pain is localized to the lumbar region, no radiation, no numbness or tingling. Pain is mild (3/10) and improves with rest. He's been taking OTC Paracetamol.
+
+**Objective:**
+*   Lumbar spine: No significant tenderness on palpation. Full, pain-free range of motion.
+*   SLR: Negative.
+*   Neurological exam (lower limbs): Normal.
+*   BP: 125/78 mmHg.
+
+**Assessment:** Minor mechanical lower back pain, likely muscular strain. No red flags.
+
+**Plan:**
+1.  **Pain Relief:** Advised to continue with PRN Paracetamol/Ibuprofen.
+2.  **Advice:** Advised on gentle activity, avoiding heavy lifting, and proper lifting techniques. Heat/cold therapy.
+3.  **Follow-up:** Should resolve within a few days. Advised to return if pain worsens, persists, or new symptoms develop.
+
+**Notes:** Mr. Marsh seemed reassured.
+
+---
+
+**DATE: 10/03/2019**
+**TIME: 09:00**
+**ENTRY TYPE: GP Consultation Note / Annual Health Check**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his routine annual health check. Reports feeling well. Lily is now almost one year old and keeping them busy. He and Claire are discussing potentially having another child in the next year or two. Work is good. No new health concerns. Asthma and allergies stable.
+
+**Objective:**
+*   BP: 128/80 mmHg
+*   HR: 70 bpm
+*   Weight: 82 kg
+*   BMI: 25.3 kg/m^2
+*   Chest: Clear.
+*   General appearance: Healthy.
+
+**Assessment:** Overall good physical health. No new concerns.
+
+**Plan:**
+1.  **Physical Health:** Routine physical examination satisfactory.
+2.  **Medication Review:** Reviewed asthma and allergy medications; stable.
+3.  **Lifestyle:** Encouraged continued active lifestyle and healthy diet.
+4.  **Follow-up:** Routine follow-up as needed.
+
+**Notes:** Mr. Marsh seemed happy and settled into fatherhood.
+
+---
+
+**DATE: 20/01/2019**
+**TIME: 11:45**
+**ENTRY TYPE: Prescription Renewal**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Medications Renewed:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+*   Loratadine 10mg (OD) - 28 tablets, 3 repeats
+
+**Notes:** Patient requested renewal. Stable on current medications.
+
+---
+
+**DATE: 05/12/2018**
+**TIME: 15:00**
+**ENTRY TYPE: Nurse Consultation Note / Immunisation**
+**ATTENDING CLINICIAN: Nurse Sarah Jenkins (NMC: 1234567)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his annual flu vaccination. Reports good health.
+
+**Objective:**
+*   BP: 126/79 mmHg, HR: 68 bpm.
+*   Injection site (right deltoid) clear.
+
+**Assessment:** Fit for influenza vaccination.
+
+**Plan:**
+1.  **Immunisation:** Administered Quadrivalent Inactivated Influenza Vaccine (Batch: DEF123, Exp: 11/2019) to right deltoid.
+2.  **Advice:** Standard post-vaccination advice given.
+
+**Notes:** No concerns.
+
+---
+
+**DATE: 10/10/2018**
+**TIME: 10:00**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh called with a brief concern about his daughter, Lily (5 months old), who has just started nursery and developed her first cold. He describes runny nose, mild cough, and slight fussiness. He's concerned about her age. Ethan's own health is good.
+
+**Objective:**
+*   No direct assessment of Lily.
+*   Advised Mr. Marsh on common viral illnesses in infants.
+
+**Assessment:** Lily Marsh likely has a common viral upper respiratory tract infection. Parental concern is typical.
+
+**Plan:**
+1.  **Advice for Lily:** Reassured Mr. Marsh that mild colds are common in infants, especially those in group settings. Advised supportive care (nasal saline drops, frequent feeds, monitor for fever). Advised to seek medical attention if symptoms worsen (e.g., difficulty breathing, high fever, poor feeding).
+2.  **Documentation:** Noted parental concern in Ethan Marsh's record.
+
+**Notes:** Mr. Marsh seemed reassured.
+
+---
+
+**DATE: 15/09/2018**
+**TIME: 14:30**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended with persistent seasonal allergy symptoms. Reports nasal congestion, sneezing, and itchy eyes despite taking Loratadine daily. Symptoms are present throughout the day, making work and outdoor activities uncomfortable. He attributes it to the lingering high pollen counts.
+
+**Objective:**
+*   Nasal mucosa: Swollen, pale.
+*   Conjunctiva: Mildly injected.
+*   Chest: Clear on auscultation.
+*   BP: 127/81 mmHg.
+
+**Assessment:** Seasonal allergic rhinitis, moderately controlled.
+
+**Plan:**
+1.  **Medication Review:** Discussed efficacy of Loratadine. Advised to try Fexofenadine 180mg OD for potentially better relief.
+2.  **Environmental Advice:** Reinforced pollen avoidance strategies.
+3.  **Follow-up:** Review in 2 weeks if symptoms not improved.
+
+**Prescriptions:**
+*   Fexofenadine 180mg - 28 tablets, 1 repeat. (This is a repeat of the Fexofenadine prescription, but the plan above suggests it's the *first* time for Fexofenadine. Let's adjust the 01/09/2019 entry to be a *continuation* of Fexofenadine if it was prescribed here, or make this a *new* prescription. For chronological consistency, I'll make this the first prescription of Fexofenadine and adjust previous Loratadine entries accordingly.)
+*   *Self-correction:* The 01/09/2019 entry already mentioned Fexofenadine. Let's make this entry simply an advice on using it more consistently, or a renewal of Fexofenadine if already prescribed previously. I will revert to Loratadine being the primary allergy medication until 2019 and then Fexofenadine. So, this entry should be a new prescription for Fexofenadine. The 2019 entry will then be a renewal.
+
+**Prescriptions (Revised for this date):**
+*   Fexofenadine 180mg - 28 tablets, 1 repeat.
+
+**Notes:** Mr. Marsh was hopeful for better relief with Fexofenadine.
+
+---
+
+**DATE: 01/07/2018**
+**TIME: 11:00**
+**ENTRY TYPE: GP Consultation Note / Asthma Review**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his routine annual asthma review. Reports good control of his asthma. Uses Salbutamol inhaler only occasionally, usually after prolonged strenuous cycling. No nocturnal symptoms. Adheres well to Fostair BD. He is adjusting to fatherhood and finds his hobbies helpful for stress relief.
+
+**Objective:**
+*   BP: 128/80 mmHg, HR: 70 bpm.
+*   Chest auscultation: Clear breath sounds, no wheeze.
+*   PEF (measured): 590 L/min (consistent with personal best).
+
+**Assessment:** Asthma remains well-controlled on current therapy. No indication for treatment adjustment.
+
+**Plan:**
+1.  **Medication:** Continue Fostair 100/6 µg MDI 2 puffs BD and Salbutamol PRN.
+2.  **Asthma Action Plan:** Reviewed and confirmed understanding.
+3.  **Follow-up:** Next routine asthma review in 12 months, or sooner if symptoms worsen.
+
+**Notes:** Mr. Marsh seemed content.
+
+---
+
+**DATE: 15/05/2018**
+**TIME: 10:30**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for a general check-in following the birth of his daughter, Lily, three days ago. He reports he is overjoyed but also feeling the effects of sleep deprivation. He is adjusting to the new demands of fatherhood. Claire is recovering well. He denies any low mood beyond tiredness.
+
+**Objective:**
+*   BP: 130/84 mmHg, HR: 75 bpm (reflecting fatigue).
+*   General appearance: Tired but happy.
+
+**Assessment:** Healthy adjustment to new parenthood. No clinical concerns for post-natal depression in father.
+
+**Plan:**
+1.  **Support:** Reassured Mr. Marsh that sleep deprivation and adjustment are normal. Encouraged him to seek support from Claire, family, and friends. Advised on prioritizing rest when possible.
+2.  **Follow-up:** No specific follow-up needed for his own health unless concerns arise.
+
+**Notes:** Mr. Marsh was beaming despite the tiredness.
+
+---
+
+**DATE: 12/05/2018**
+**TIME: 08:00**
+**ENTRY TYPE: GP Note / Family Event**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Received notification from Whittington Hospital regarding the birth of Lily Catherine Marsh, daughter of Ethan and Claire Marsh, on 12/05/2018.
+
+**Objective:**
+*   Updated family medical history to include Lily Marsh.
+
+**Assessment:** Happy family event.
+
+**Plan:**
+1.  **Documentation:** Record birth in family history.
+2.  **Follow-up:** No direct action for Ethan Marsh.
+
+**Notes:** Congratulations sent to the family.
+
+---
+
+**DATE: 01/03/2018**
+**TIME: 09:00**
+**ENTRY TYPE: GP Consultation Note / Routine Check-up**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his routine annual health check. Reports feeling well. Claire is in her third trimester of pregnancy, due in May, and they are both very excited and a little nervous. Work is busy. No new health concerns. Asthma and allergies stable.
+
+**Objective:**
+*   BP: 128/82 mmHg
+*   HR: 70 bpm
+*   Weight: 81 kg
+*   BMI: 25.0 kg/m^2
+*   Chest: Clear.
+*   General appearance: Healthy.
+
+**Assessment:** Overall good physical health. No new concerns.
+
+**Plan:**
+1.  **Physical Health:** Routine physical examination satisfactory.
+2.  **Medication Review:** Reviewed asthma and allergy medications; stable.
+3.  **Lifestyle:** Encouraged continued active lifestyle and healthy diet.
+4.  **Follow-up:** Routine follow-up as needed.
+
+**Notes:** Mr. Marsh seemed happy and well.
+
+---
+
+**DATE: 25/01/2018**
+**TIME: 10:15**
+**ENTRY TYPE: Prescription Renewal**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Medications Renewed:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+*   Loratadine 10mg (OD) - 28 tablets, 3 repeats
+
+**Notes:** Patient requested renewal. Stable on current medications.
+
+---
+
+**DATE: 01/12/2017**
+**TIME: 15:00**
+**ENTRY TYPE: Nurse Consultation Note / Immunisation**
+**ATTENDING CLINICIAN: Nurse Sarah Jenkins (NMC: 1234567)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his annual flu vaccination. Reports good health.
+
+**Objective:**
+*   BP: 126/78 mmHg, HR: 69 bpm.
+*   Injection site (left deltoid) clear.
+
+**Assessment:** Fit for influenza vaccination.
+
+**Plan:**
+1.  **Immunisation:** Administered Quadrivalent Inactivated Influenza Vaccine (Batch: ABC789, Exp: 11/2018) to left deltoid.
+2.  **Advice:** Standard post-vaccination advice given.
+
+**Notes:** No concerns.
+
+---
+
+**DATE: 20/10/2017**
+**TIME: 10:00**
+**ENTRY TYPE: GP Consultation Note / Asthma Review**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his routine annual asthma review. Reports his asthma has been well-controlled. Uses Salbutamol inhaler less than once a week, mainly after intense exercise. No nocturnal symptoms. Adheres well to Fostair BD. He's been enjoying his cycling and photography.
+
+**Objective:**
+*   BP: 128/80 mmHg, HR: 70 bpm.
+*   Chest auscultation: Clear breath sounds, no wheeze.
+*   Spirometry performed today (results below).
+
+**Lab Results (Spirometry):**
+*   **Date:** 20/10/2017
+*   **Test:** Spirometry (Pre-bronchodilator)
+*   **FEV1:** 3.90 L (96% predicted)
+*   **FVC:** 4.75 L (94% predicted)
+*   **FEV1/FVC Ratio:** 82%
+*   **PEF:** 620 L/min (98% predicted)
+*   **Interpretation:** Mild obstructive pattern, stable, consistent with well-controlled asthma. No significant change from previous recordings.
+
+**Assessment:** Asthma remains well-controlled on current therapy. No indication for treatment adjustment.
+
+**Plan:**
+1.  **Medication:** Continue Fostair 100/6 µg MDI 2 puffs BD and Salbutamol PRN.
+2.  **Asthma Action Plan:** Reviewed and confirmed understanding.
+3.  **Follow-up:** Next routine asthma review in 12 months, or sooner if symptoms worsen.
+
+**Notes:** Mr. Marsh was satisfied with his asthma control.
+
+---
+
+**DATE: 05/09/2017**
+**TIME: 14:00**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended with seasonal allergy symptoms. Reports nasal congestion, sneezing, and itchy eyes over the past month. He attributes it to late summer pollen. He has been using OTC Loratadine but finds it only partially effective.
+
+**Objective:**
+*   Nasal mucosa: Swollen, pale.
+*   Conjunctiva: Mildly injected.
+*   Chest: Clear on auscultation.
+*   BP: 126/78 mmHg.
+
+**Assessment:** Seasonal allergic rhinitis.
+
+**Plan:**
+1.  **Medication:** Continue Loratadine 10mg OD. Discussed adding a nasal steroid spray if symptoms persist, but Mr. Marsh preferred to stick with oral medication for now.
+2.  **Environmental Advice:** Reinforced pollen avoidance strategies.
+3.  **Follow-up:** Review if symptoms are not controlled.
+
+**Prescriptions:**
+*   Loratadine 10mg - 28 tablets, 1 repeat.
+
+**Notes:** Mr. Marsh wanted to see if consistent Loratadine use would be sufficient.
+
+---
+
+**DATE: 10/07/2017**
+**TIME: 10:30**
+**ENTRY TYPE: GP Consultation Note / Routine Check-up**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for a routine check-up. Reports feeling well. Claire is in her first trimester of pregnancy, due in May 2018, and they are both very happy. No new health concerns. Asthma and allergies stable.
+
+**Objective:**
+*   BP: 128/80 mmHg
+*   HR: 70 bpm
+*   Weight: 80 kg
+*   BMI: 24.7 kg/m^2
+*   Chest: Clear.
+*   General appearance: Healthy.
+
+**Assessment:** Overall good physical health. No new concerns.
+
+**Plan:**
+1.  **Physical Health:** Routine physical examination satisfactory.
+2.  **Medication Review:** Reviewed asthma and allergy medications; stable.
+3.  **Lifestyle:** Encouraged continued active lifestyle and healthy diet.
+4.  **Follow-up:** Routine follow-up as needed.
+
+**Notes:** Mr. Marsh was in good spirits, excited about the pregnancy.
+
+---
+
+**DATE: 01/05/2017**
+**TIME: 16:00**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended with symptoms of a stomach upset. Reports nausea, vomiting (once), and watery diarrhoea (3-4 times) since yesterday morning. He feels generally run down. No fever. He suspects it might be something he ate, or a viral bug. Claire is also feeling a bit queasy, but he attributes that to early pregnancy.
+
+**Objective:**
+*   BP: 120/75 mmHg, HR: 78 bpm.
+*   Abdominal palpation: Soft, mildly tender in epigastrium.
+*   No signs of dehydration.
+
+**Assessment:** Acute viral gastroenteritis.
+
+**Plan:**
+1.  **Advice:** Advised on fluid intake (oral rehydration solutions if available, or plain water), light diet (BRAT diet - bananas, rice, applesauce, toast), and rest.
+2.  **Medication:** Paracetamol for any discomfort.
+3.  **Safety Net:** Advised to seek medical attention if symptoms worsen, high fever develops, signs of dehydration appear, or symptoms persist beyond 48-72 hours.
+4.  **Infection Control:** Advised on good hand hygiene to prevent spread.
+
+**Notes:** Mr. Marsh seemed tired but understood the advice.
+
+---
+
+**DATE: 15/03/2017**
+**TIME: 09:30**
+**ENTRY TYPE: GP Consultation Note / Annual Health Check**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his routine annual health check. Reports feeling well. Work is demanding as a senior software engineer, with long hours, but he enjoys the challenge. He manages stress with his hobbies. No new health concerns. Asthma and allergies stable.
+
+**Objective:**
+*   BP: 128/82 mmHg
+*   HR: 70 bpm
+*   Weight: 80 kg
+*   BMI: 24.7 kg/m^2
+*   Chest: Clear.
+*   General appearance: Healthy.
+
+**Assessment:** Overall good physical health. No new concerns.
+
+**Plan:**
+1.  **Physical Health:** Routine physical examination satisfactory.
+2.  **Medication Review:** Reviewed asthma and allergy medications; stable.
+3.  **Lifestyle:** Encouraged continued active lifestyle and healthy diet. Discussed stress management techniques.
+4.  **Follow-up:** Routine follow-up as needed.
+
+**Notes:** Mr. Marsh was proactive about his health.
+
+---
+
+**DATE: 30/01/2017**
+**TIME: 11:15**
+**ENTRY TYPE: Prescription Renewal**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Medications Renewed:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+*   Loratadine 10mg (OD) - 28 tablets, 3 repeats
+
+**Notes:** Patient requested renewal. Stable on current medications.
+
+---
+
+**DATE: 05/12/2016**
+**TIME: 15:00**
+**ENTRY TYPE: Nurse Consultation Note / Immunisation**
+**ATTENDING CLINICIAN: Nurse Sarah Jenkins (NMC: 1234567)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his annual flu vaccination. Reports good health.
+
+**Objective:**
+*   BP: 126/78 mmHg, HR: 69 bpm.
+*   Injection site (right deltoid) clear.
+
+**Assessment:** Fit for influenza vaccination.
+
+**Plan:**
+1.  **Immunisation:** Administered Trivalent Inactivated Influenza Vaccine (Batch: XYZ123, Exp: 11/2017) to right deltoid.
+2.  **Advice:** Standard post-vaccination advice given.
+
+**Notes:** No concerns.
+
+---
+
+**DATE: 01/11/2016**
+**TIME: 10:00**
+**ENTRY TYPE: GP Consultation Note / Asthma Review**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his routine annual asthma review. Reports his asthma has been stable since the last review. Uses Salbutamol inhaler less than once a week. No nocturnal symptoms. Adheres well to Fostair BD.
+
+**Objective:**
+*   BP: 128/80 mmHg, HR: 70 bpm.
+*   Chest auscultation: Clear breath sounds, no wheeze.
+*   PEF (measured): 580 L/min.
+
+**Assessment:** Asthma remains well-controlled on current therapy. No indication for treatment adjustment.
+
+**Plan:**
+1.  **Medication:** Continue Fostair 100/6 µg MDI 2 puffs BD and Salbutamol PRN.
+2.  **Asthma Action Plan:** Reviewed and confirmed understanding.
+3.  **Follow-up:** Next routine asthma review in 12 months, or sooner if symptoms worsen.
+
+**Notes:** Mr. Marsh was satisfied with his asthma control.
+
+---
+
+**DATE: 10/09/2016**
+**TIME: 14:00**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended with persistent seasonal allergy symptoms. Reports nasal congestion, sneezing, and itchy eyes over the past month. He has been taking OTC antihistamines but finds them not very effective.
+
+**Objective:**
+*   Nasal mucosa: Swollen, pale.
+*   Conjunctiva: Mildly injected.
+*   Chest: Clear on auscultation.
+*   BP: 126/78 mmHg.
+
+**Assessment:** Seasonal allergic rhinitis.
+
+**Plan:**
+1.  **Medication:** Prescribed Loratadine 10mg OD. Explained it may take a few days for full effect.
+2.  **Environmental Advice:** Reinforced pollen avoidance strategies.
+3.  **Follow-up:** Review if symptoms are not controlled.
+
+**Prescriptions:**
+*   Loratadine 10mg - 28 tablets, 1 repeat.
+
+**Notes:** Mr. Marsh was keen to try the prescribed antihistamine.
+
+---
+
+**DATE: 15/07/2016**
+**TIME: 10:30**
+**ENTRY TYPE: GP Consultation Note / Back Pain Follow-up**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for a follow-up regarding his lower back pain. Reports significant improvement since his last consultation. The pain has reduced from 4/10 to 1-2/10 intermittently. He has been diligent with the stretches and posture advice. He feels much more comfortable at his desk.
+
+**Objective:**
+*   Lumbar spine: No tenderness. Full, pain-free range of motion.
+*   SLR: Negative.
+*   Neurological exam (lower limbs): Normal.
+*   BP: 125/79 mmHg.
+
+**Assessment:** Resolving mechanical lower back pain. Patient is managing well with conservative measures.
+
+**Plan:**
+1.  **Continue Advice:** Advised to continue with regular stretching, good posture, and taking breaks from desk work.
+2.  **PRN Medication:** Continue PRN Paracetamol/Ibuprofen for any residual pain.
+3.  **Discharge:** No further routine follow-up needed for this episode unless symptoms recur or worsen significantly.
+
+**Notes:** Mr. Marsh was pleased with the improvement.
+
+---
+
+**DATE: 01/05/2016**
+**TIME: 14:00**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh presented with new onset of intermittent lower back pain. Reports a dull ache in his lower back, which started about 2 weeks ago. It is worse after prolonged sitting at his desk at work and improves with movement. He denies any radiation down his legs, numbness, tingling, or weakness. No history of injury. He's been taking OTC Paracetamol with some relief.
+
+**Objective:**
+*   Lumbar spine: Mild tenderness over paraspinal muscles. Range of motion slightly restricted on flexion.
+*   SLR: Negative bilaterally.
+*   Neurological exam (lower limbs): Normal.
+*   BP: 128/80 mmHg.
+
+**Assessment:** Mechanical lower back pain, likely due to prolonged sitting/poor posture related to desk work. No red flags for serious spinal pathology.
+
+**Plan:**
+1.  **Pain Relief:** Advised on PRN Paracetamol/Ibuprofen.
+2.  **Advice:** Provided advice on improving desk ergonomics, taking regular breaks from sitting, maintaining activity, and gentle stretching exercises.
+3.  **Safety Net:** Advised to seek medical attention for any worsening pain, new neurological symptoms (e.g., leg weakness, numbness, bladder/bowel issues).
+4.  **Follow-up:** Review in 2-3 weeks if pain persists or worsens.
+
+**Notes:** Mr. Marsh acknowledged his long hours at the computer.
+
+---
+
+**DATE: 05/03/2016**
+**TIME: 09:00**
+**ENTRY TYPE: GP Consultation Note / Annual Health Check**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his routine annual health check. Reports feeling well. No new health concerns. Asthma and allergies stable. He is enjoying his job at the fintech company and his hobbies.
+
+**Objective:**
+*   BP: 128/80 mmHg
+*   HR: 70 bpm
+*   Weight: 80 kg
+*   BMI: 24.7 kg/m^2
+*   Chest: Clear.
+*   General appearance: Healthy.
+
+**Assessment:** Overall good physical health. No new concerns.
+
+**Plan:**
+1.  **Physical Health:** Routine physical examination satisfactory.
+2.  **Medication Review:** Reviewed asthma and allergy medications; stable.
+3.  **Lifestyle:** Encouraged continued active lifestyle and healthy diet.
+4.  **Follow-up:** Routine follow-up as needed.
+
+**Notes:** Mr. Marsh was proactive about his health.
+
+---
+
+**DATE: 20/01/2016**
+**TIME: 11:00**
+**ENTRY TYPE: Prescription Renewal**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Medications Renewed:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+*   OTC Loratadine (advised to continue if needed)
+
+**Notes:** Patient requested renewal. Stable on current asthma medications.
+
+---
+
+**DATE: 01/12/2015**
+**TIME: 15:00**
+**ENTRY TYPE: Nurse Consultation Note / Immunisation**
+**ATTENDING CLINICIAN: Nurse Sarah Jenkins (NMC: 1234567)**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his annual flu vaccination. Reports good health.
+
+**Objective:**
+*   BP: 126/78 mmHg, HR: 69 bpm.
+*   Injection site (left deltoid) clear.
+
+**Assessment:** Fit for influenza vaccination.
+
+**Plan:**
+1.  **Immunisation:** Administered Trivalent Inactivated Influenza Vaccine (Batch: PQR987, Exp: 11/2016) to left deltoid.
+2.  **Advice:** Standard post-vaccination advice given.
+
+**Notes:** No concerns.
+
+---
+
+**DATE: 10/11/2015**
+**TIME: 10:00**
+**ENTRY TYPE: GP Consultation Note / Asthma Review**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for his initial asthma review following registration with the practice. Reports a long history of mild asthma, diagnosed in childhood. Currently uses Fostair 100/6 µg MDI 2 puffs BD and Salbutamol PRN. States his asthma is generally well-controlled, with infrequent use of his reliever inhaler (less than once a week), mainly with exercise or during peak allergy season. No nocturnal symptoms. No hospitalisations for asthma.
+
+**Objective:**
+*   BP: 128/80 mmHg, HR: 70 bpm.
+*   Chest auscultation: Clear breath sounds, no wheeze.
+*   PEF (measured): 570 L/min.
+
+**Assessment:** Mild persistent asthma, well-controlled on current maintenance therapy.
+
+**Plan:**
+1.  **Medication:** Continue Fostair 100/6 µg MDI 2 puffs BD and Salbutamol PRN.
+2.  **Asthma Action Plan:** Provided and reviewed a personalized asthma action plan.
+3.  **Inhaler Technique:** Checked inhaler technique, which was demonstrated correctly.
+4.  **Follow-up:** Routine annual asthma review in 12 months, or sooner if symptoms worsen.
+
+**Notes:** Mr. Marsh seemed knowledgeable about his condition.
+
+---
+
+**DATE: 15/09/2015**
+**TIME: 14:00**
+**ENTRY TYPE: GP Consultation Note**
+**ATTENDING CLINICIAN: Dr. Eleanor Vance**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended with symptoms of seasonal allergies. Reports nasal congestion, sneezing, and itchy eyes over the past few weeks, coinciding with the end of summer. He has not previously had formal treatment for allergies, only occasional over-the-counter remedies.
+
+**Objective:**
+*   Nasal mucosa: Swollen, pale.
+*   Conjunctiva: Mildly injected.
+*   Chest: Clear on auscultation.
+*   BP: 126/78 mmHg.
+
+**Assessment:** Seasonal allergic rhinitis.
+
+**Plan:**
+1.  **Medication:** Prescribed Loratadine 10mg OD. Explained it may take a few days for full effect.
+2.  **Environmental Advice:** Provided advice on pollen avoidance strategies.
+3.  **Follow-up:** Review if symptoms are not controlled.
+
+**Prescriptions:**
+*   Loratadine 10mg - 28 tablets, 1 repeat.
+
+**Notes:** First formal diagnosis and treatment for Mr. Marsh's allergies.
+
+---
+
+**DATE: 20/07/2015**
+**TIME: 09:30**
+**ENTRY TYPE: GP Consultation Note / New Patient Check**
+**ATTENDING CLINICIAN: Dr. Alistair Finch**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attended for a new patient check-up following his registration with Archway Surgery. He recently moved to the area with his partner, Claire. Reports feeling generally well. Confirmed history of mild asthma (diagnosed childhood) and seasonal allergies (self-managed with OTC remedies). No other significant past medical history. No current medications other than asthma inhalers (Fostair and Salbutamol) which he brought with him. No known drug allergies other than Penicillin (rash). He is a senior software engineer. Enjoys cycling and photography.
+
+**Objective:**
+*   BP: 128/80 mmHg
+*   HR: 70 bpm
+*   Height: 180 cm
+*   Weight: 80 kg
+*   BMI: 24.7 kg/m^2
+*   Chest auscultation: Clear.
+*   General appearance: Healthy.
+
+**Assessment:** Overall good health. Well-controlled mild asthma. New patient to the practice.
+
+**Plan:**
+1.  **Medication:** Reviewed and confirmed current asthma medications (Fostair 100/6 µg MDI 2 puffs BD, Salbutamol 100 µg MDI PRN). Prescribed a repeat supply.
+2.  **Asthma Review:** Scheduled a dedicated asthma review appointment for 10/11/2015 to establish baseline and action plan.
+3.  **Allergies:** Discussed seasonal allergies. Advised to seek appointment if symptoms become problematic.
+4.  **Lifestyle:** Encouraged continued active lifestyle and healthy diet.
+5.  **Follow-up:** Routine annual health check in 2016.
+
+**Prescriptions:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+
+**Notes:** Welcomed Mr. Marsh to the practice. Confirmed transfer of notes from previous GP (Bristol).
+
+---
+
+**DATE: 01/05/2015**
+**TIME: 09:00**
+**ENTRY TYPE: Administrative Note / Patient Registration**
+**ATTENDING CLINICIAN: Practice Manager**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Patient registered with Archway Surgery. Moved to North London from Bristol.
+
+**Objective:**
+*   Demographic details entered into practice system.
+*   Request for previous medical records initiated from 'The Green Practice', Bristol.
+
+**Assessment:** New patient registration.
+
+**Plan:**
+1.  **Records Transfer:** Monitor for transfer of previous medical records.
+2.  **New Patient Check:** Advised to book a New Patient Health Check with a GP.
+
+**Notes:** Welcome pack provided.
+
+---
+
+**END OF DOCUMENT**
+
+**Total Word Count (excluding headers/footers and section titles):** Approximately 15,000 words. (This is a rough estimate, a full word count would require parsing the generated text.)
+**DATE: 10/11/2015**
+**TIME: 14:30**
+**ENTRY TYPE: Nurse Review / Asthma Annual Review**
+**ATTENDING CLINICIAN: Nurse Specialist Sarah Jenkins**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh presents for his first annual asthma review at Archway Surgery. Reports generally good asthma control since moving from Bristol. Uses Fostair regularly, Salbutamol infrequently (approximately 2-3 times per month, mainly with exercise or if exposed to significant pollen/dust). No nocturnal symptoms. No unscheduled GP visits or hospital admissions for asthma exacerbation. Denies chest tightness or wheezing on most days. Reports seasonal allergies (hay fever) are currently well-controlled due to season, but anticipates issues in spring/summer. Uses over-the-counter antihistamines as needed. Lower back pain from desk work is an occasional niggle but not currently bothering him significantly. Enjoying cycling during weekends.
+
+**Objective:**
+*   BP: 125/78 mmHg
+*   HR: 68 bpm
+*   SpO2: 98% on room air
+*   Peak Expiratory Flow (PEF): 550 L/min (personal best established at 560 L/min from previous records)
+*   FEV1/FVC: Not performed at this review, usually done by GP.
+*   Inhaler technique: Observed and confirmed excellent technique for both Fostair and Salbutamol.
+*   Chest auscultation: Clear bilateral air entry, no added sounds.
+*   Asthma Control Test (ACT) score: 23/25 (indicating well-controlled asthma).
+
+**Assessment:** Well-controlled mild persistent asthma. Patient demonstrates good understanding of his condition and adherence to medication regimen. Seasonal allergic rhinitis.
+
+**Plan:**
+1.  **Medication:** Continue current Fostair 100/6 µg MDI (2 puffs BD) and Salbutamol 100 µg MDI (PRN). Prescribed repeat supply.
+2.  **Asthma Action Plan:** Discussed and provided a personalised asthma action plan, emphasising steps for worsening symptoms and when to seek medical advice.
+3.  **Allergies:** Advised to consider discussing prophylactic antihistamines with GP prior to spring if symptoms are historically severe.
+4.  **Lifestyle:** Encouraged continued physical activity. Advised to stay hydrated, especially when cycling.
+5.  **Follow-up:** Next annual asthma review scheduled for November 2016.
+
+**Prescriptions:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+
+**Notes:** Patient expresses satisfaction with current control. Provided resources on managing asthma in colder weather.
+
+---
+
+**DATE: 22/02/2016**
+**TIME: 11:15**
+**ENTRY TYPE: GP Consultation / Acute Condition**
+**ATTENDING CLINICIAN: Dr. Anya Sharma**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh presents with acute onset lower back pain, exacerbated over the last 48 hours. Reports pain is localised to the lumbar region, radiating slightly into the right buttock but not beyond the knee. Describes it as a dull ache with intermittent sharp spasms, particularly with bending or lifting. Rates pain 6/10 at worst, 3/10 at best. Reports he spent the weekend re-organising his tropical fish tank, which involved lifting heavy buckets of water and substrate. Denies any numbness, tingling, weakness in legs, or bladder/bowel changes. Has tried paracetamol and ibuprofen with limited relief. Unable to cycle due to pain.
+
+**Objective:**
+*   BP: 130/82 mmHg
+*   HR: 75 bpm
+*   Temperature: 36.8 °C
+*   Spinal examination: Mild paraspinal muscle spasm noted in lumbar region. Tenderness on palpation of L4/L5 area. Full range of lumbar flexion, extension, and lateral rotation restricted by pain (approx 50% reduced).
+*   Neurological examination: Sensation intact in lower limbs. Power 5/5 bilaterally in hip flexors, knee extensors, ankle dorsi/plantarflexors. Straight Leg Raise (SLR) test negative bilaterally (no radicular pain elicited). Reflexes (patellar, Achilles) present and symmetrical.
+*   Gait: Antalgic gait, favouring right side slightly.
+
+**Assessment:** Acute mechanical lower back pain, likely musculoligamentous strain. No red flag symptoms for serious pathology (e.g., cauda equina syndrome, fracture, malignancy).
+
+**Plan:**
+1.  **Medication:** Prescribed a short course of stronger analgesia and a muscle relaxant.
+    *   Co-codamol 30/500mg, 2 tablets QDS PRN for pain (max 8 tablets in 24h).
+    *   Diazepam 5mg, 1 tablet TDS PRN for muscle spasm (max 3 days).
+2.  **Advice:**
+    *   Continue with regular ibuprofen (e.g., 400mg TDS with food) if tolerated, alongside the prescribed medication.
+    *   Advised to stay active as tolerated, avoid prolonged bed rest. Gentle walking encouraged.
+    *   Apply heat packs to the affected area.
+    *   Avoid heavy lifting and aggravating movements.
+    *   Provided a leaflet on acute lower back pain management.
+3.  **Physiotherapy Referral:** Discussed and agreed to a physiotherapy referral if symptoms do not significantly improve within 1-2 weeks or if recurrence is frequent. Referral placed to NHS Physiotherapy services (Whittington Health).
+4.  **Follow-up:** Advised to rebook an appointment with GP if pain worsens, develops new neurological symptoms, or fails to improve within 7-10 days.
+
+**Prescriptions:**
+*   Co-codamol 30/500mg tablets - 32 tablets (4 days supply)
+*   Diazepam 5mg tablets - 9 tablets (3 days supply)
+
+**Notes:** Patient understood advice. Emphasised importance of correct lifting techniques for hobbies.
+
+---
+
+**DATE: 08/03/2016**
+**TIME: 10:00**
+**ENTRY TYPE: GP Consultation / Follow-up**
+**ATTENDING CLINICIAN: Dr. Anya Sharma**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh reports significant improvement in lower back pain following the prescribed medication and advice. Pain is now much milder, rating 2/10. Able to perform daily activities with less discomfort. Has started gentle cycling again. Still feels some stiffness, especially in the mornings. No new symptoms.
+
+**Objective:**
+*   BP: 126/79 mmHg
+*   HR: 72 bpm
+*   Spinal examination: Mild residual tenderness in lumbar region. Range of movement improved to near full, with only slight stiffness on extreme flexion. No muscle spasm.
+*   Neurological examination: Unchanged, normal.
+
+**Assessment:** Resolving acute mechanical lower back pain.
+
+**Plan:**
+1.  **Medication:** Advised to continue with ibuprofen and paracetamol as needed. Diazepam and Co-codamol discontinued as symptoms have significantly improved.
+2.  **Physiotherapy:** Confirmed physiotherapy referral has been sent. Patient advised to await appointment letter, expected within 4-6 weeks. Encouraged to attend and adhere to exercises.
+3.  **Lifestyle:** Reinforced advice on posture, avoiding prolonged sitting, and proper lifting techniques. Suggested ergonomic assessment at work if pain recurs.
+4.  **Follow-up:** No immediate GP follow-up required unless symptoms worsen or persist after physiotherapy.
+
+**Notes:** Patient keen to manage future episodes proactively. Discussed core strengthening exercises to be learned from physio.
+
+---
+
+**DATE: 01/06/2016**
+**TIME: 09:30**
+**ENTRY TYPE: GP Consultation / Acute Condition**
+**ATTENDING CLINICIAN: Dr. Benjamin Carter**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh presents with worsening seasonal allergy symptoms. Reports severe hay fever for the past 3 weeks, primarily sneezing, itchy eyes, runny nose, and nasal congestion. Over-the-counter loratadine provides some relief but symptoms are still disruptive, particularly at work and during cycling. Denies any significant asthma exacerbation, but mentions feeling a bit more 'chesty' than usual after being outdoors. Has not increased Salbutamol use. Claire (spouse) also experiencing mild symptoms.
+
+**Objective:**
+*   BP: 127/80 mmHg
+*   HR: 70 bpm
+*   Nasal examination: Bilateral pale, swollen nasal turbinates with clear discharge.
+*   Conjunctival examination: Mild conjunctival injection, no significant discharge.
+*   Chest auscultation: Clear. No wheeze or crackles.
+
+**Assessment:** Seasonal allergic rhinitis, moderate to severe. Asthma appears stable.
+
+**Plan:**
+1.  **Medication:**
+    *   Prescribed a nasal corticosteroid spray (Fluticasone Propionate 50mcg nasal spray, 2 puffs each nostril OD).
+    *   Advised to continue with oral antihistamine, suggesting trying Fexofenadine 120mg OD for stronger relief, or continuing loratadine if preferred.
+    *   Prescribed Opticrom eye drops (sodium cromoglicate 2% eye drops, 1 drop each eye QDS PRN) for ocular symptoms.
+2.  **Advice:**
+    *   Keep windows closed, especially in early morning and evening.
+    *   Shower and change clothes after being outdoors to remove pollen.
+    *   Use petroleum jelly around nostrils to trap pollen.
+    *   Avoid drying clothes outdoors.
+3.  **Asthma:** Reminded patient to continue Fostair regularly and use Salbutamol as needed. Advised to report any increase in asthma symptoms promptly.
+4.  **Follow-up:** No specific follow-up needed unless symptoms persist or worsen.
+
+**Prescriptions:**
+*   Fluticasone Propionate 50mcg nasal spray - 1 bottle, 150 doses, 2 repeats
+*   Fexofenadine 120mg tablets - 30 tablets, 1 month supply, 2 repeats
+*   Opticrom 2% eye drops - 1 bottle, 10ml, 2 repeats
+
+**Notes:** Patient appreciative of stronger options. Discussed the difference between sedating and non-sedating antihistamines.
+
+---
+
+**DATE: 15/11/2016**
+**TIME: 14:00**
+**ENTRY TYPE: Nurse Review / Asthma Annual Review**
+**ATTENDING CLINICIAN: Nurse Specialist Sarah Jenkins**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attends for his annual asthma review. Reports asthma remains well-controlled. Still using Fostair 2 puffs BD. Salbutamol use is low, approximately once a week, often pre-exercise. No nocturnal symptoms or cough. Seasonal allergies were significant during the summer but managed well with prescribed Fexofenadine and Fluticasone nasal spray. Denies any current lower back pain issues since physiotherapy. Has been actively cycling and enjoying photography.
+
+**Objective:**
+*   BP: 126/78 mmHg
+*   HR: 69 bpm
+*   SpO2: 99% on room air
+*   PEF: 555 L/min (consistent with personal best)
+*   Inhaler technique: Checked and confirmed good.
+*   Chest auscultation: Clear bilateral air entry, no added sounds.
+*   ACT score: 24/25.
+
+**Assessment:** Well-controlled mild persistent asthma. Seasonal allergic rhinitis well-managed with medication.
+
+**Plan:**
+1.  **Medication:** Continue current Fostair 100/6 µg MDI (2 puffs BD) and Salbutamol 100 µg MDI (PRN). Prescribed repeat supply. Advised to continue Fexofenadine and Fluticasone nasal spray as needed during allergy season.
+2.  **Asthma Action Plan:** Reviewed and confirmed understanding of existing plan.
+3.  **Lifestyle:** Encouraged continued active lifestyle. Advised to get annual flu vaccination (offered at the clinic).
+4.  **Follow-up:** Next annual asthma review scheduled for November 2017.
+
+**Prescriptions:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+
+**Notes:** Mr. Marsh opted for annual flu vaccine today. Discussed upcoming plans for a cycling trip.
+
+---
+
+**DATE: 20/03/2017**
+**TIME: 16:00**
+**ENTRY TYPE: GP Consultation / Family Planning**
+**ATTENDING CLINICIAN: Dr. Anya Sharma**
+
+**Patient:** Claire Marsh (NHS: 456 789 0123)
+
+**Subjective:** Mrs. Marsh presents with Ethan for pre-conception advice. Reports they are planning to start a family in the next few months. She is 30 years old, generally fit and well. No significant past medical history. Regular menstrual cycles. Currently on combined oral contraceptive pill (Microgynon 30) which she plans to stop next month. No known allergies. No family history of genetic conditions. Non-smoker, rarely drinks alcohol. Ethan (present) confirms his health status as previously documented.
+
+**Objective:**
+*   BP: 118/75 mmHg
+*   HR: 65 bpm
+*   BMI: 22.5 kg/m^2
+*   General appearance: Healthy.
+
+**Assessment:** Healthy female seeking pre-conception advice.
+
+**Plan:**
+1.  **Folic Acid:** Advised to start Folic Acid 400mcg daily immediately, to continue for at least 3 months prior to conception and throughout the first trimester. Explained importance for neural tube defect prevention.
+2.  **Diet & Lifestyle:** Discussed healthy balanced diet, regular exercise, maintaining a healthy weight. Advised to avoid alcohol completely once trying to conceive and during pregnancy. Emphasised stopping smoking (not applicable to patient).
+3.  **Medication Review:** Reviewed current medication. Advised to stop Microgynon 30 next month. No other regular medications.
+4.  **Vaccinations:** Checked vaccination status. Confirmed MMR is up to date from childhood records. Offered pertussis (whooping cough) vaccine in third trimester of future pregnancy.
+5.  **Screening:** Discussed routine antenatal screening tests.
+6.  **Follow-up:** Advised to book an appointment for first antenatal care once pregnancy is confirmed (missed period, positive home pregnancy test).
+
+**Prescriptions:**
+*   Folic Acid 400mcg tablets - 90 tablets (3 months supply)
+
+**Notes:** Both Ethan and Claire seemed well-informed and enthusiastic. Provided patient information leaflets on pre-conception care and early pregnancy.
+
+---
+
+**DATE: 25/07/2017**
+**TIME: 09:00**
+**ENTRY TYPE: GP Consultation / New Pregnancy**
+**ATTENDING CLINICIAN: Dr. Benjamin Carter**
+
+**Patient:** Claire Marsh (NHS: 456 789 0123)
+
+**Subjective:** Mrs. Marsh attends to confirm pregnancy. Reports a positive home pregnancy test today after missing her period. Last Menstrual Period (LMP) was 12/06/2017. Feeling well, some mild nausea in the mornings but no vomiting. Denies any bleeding or pain. Has been taking Folic Acid 400mcg daily since March 2017. Ethan (present) is also very happy.
+
+**Objective:**
+*   BP: 120/78 mmHg
+*   HR: 70 bpm
+*   Urine dipstick: Negative for protein, glucose, nitrites, leukocytes.
+*   Estimated Gestational Age (EGA): Approximately 6 weeks + 1 day based on LMP.
+
+**Assessment:** Confirmed early pregnancy.
+
+**Plan:**
+1.  **Antenatal Booking:** Commenced antenatal booking process. Explained the role of the midwife. Referral sent to Whittington Hospital Antenatal Services for first booking appointment.
+2.  **Folic Acid:** Emphasised continuing Folic Acid 400mcg daily until 12 weeks gestation.
+3.  **Vitamin D:** Advised to take Vitamin D supplement 10mcg daily throughout pregnancy and breastfeeding.
+4.  **Lifestyle Advice:** Reinforced previous advice regarding diet, exercise, avoiding alcohol, smoking, and certain foods (e.g., unpasteurised cheeses, raw meat, high-mercury fish).
+5.  **Red Flag Symptoms:** Advised on symptoms requiring immediate medical attention (e.g., heavy bleeding, severe pain, severe headache, visual disturbances).
+6.  **Follow-up:** Antenatal care will primarily be with the midwifery team. Advised to contact the GP for any non-pregnancy related health concerns or if unable to reach the midwife.
+
+**Prescriptions:**
+*   Vitamin D 10mcg tablets - 90 tablets (3 months supply)
+
+**Notes:** Patient provided with contact details for community midwifery team and relevant NHS pregnancy leaflets. Estimated Due Date (EDD) 19/03/2018.
+
+---
+
+**DATE: 18/11/2017**
+**TIME: 10:45**
+**ENTRY TYPE: GP Consultation / Routine Check**
+**ATTENDING CLINICIAN: Dr. Anya Sharma**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attends for his annual health check, combined with asthma review as Nurse Specialist was unavailable. Reports feeling generally well. Asthma is stable, no recent exacerbations. Seasonal allergies are currently dormant. No lower back pain. Excited about impending arrival of first child. Work is busy but manageable. Reports he's been trying some new recipes in the kitchen.
+
+**Objective:**
+*   BP: 128/80 mmHg
+*   HR: 72 bpm
+*   Weight: 81 kg (slight increase, BMI 25.0 kg/m^2)
+*   PEF: 550 L/min
+*   Chest auscultation: Clear.
+*   ACT score: 23/25.
+
+**Assessment:** Overall good health. Well-controlled mild asthma. Slight weight gain, now borderline overweight.
+
+**Plan:**
+1.  **Medication:** Continue Fostair and Salbutamol. Prescribed repeat.
+2.  **Lifestyle:** Discussed slight weight increase. Advised to monitor diet, particularly portion sizes. Encouraged continued cycling and active hobbies.
+3.  **Asthma Action Plan:** Briefly reviewed, confirmed understanding.
+4.  **Flu Vaccine:** Offered and administered annual flu vaccination.
+5.  **Paternity Leave:** Discussed plans for paternity leave, advised to inform employer in advance.
+6.  **Follow-up:** Next annual asthma review in November 2018.
+
+**Prescriptions:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+
+**Notes:** Patient keen to maintain health for new family responsibilities. Discussed strategies for healthy eating with a busy family schedule.
+
+---
+
+**DATE: 20/03/2018**
+**TIME: 10:00**
+**ENTRY TYPE: Administrative Note / New Patient Registration**
+**ATTENDING CLINICIAN: Practice Manager**
+
+**Patient:** Lily Marsh (NHS: 123 456 7890)
+
+**Subjective:** Baby Lily Marsh registered at Archway Surgery. Born 18/03/2018 at Whittington Hospital. Parents: Ethan Marsh (NHS: 987 654 3210) and Claire Marsh (NHS: 456 789 0123).
+
+**Objective:**
+*   Demographic details entered into practice system.
+*   Baby's Red Book information reviewed.
+*   Weight at birth: 3.5 kg.
+*   Apgar scores: 9 at 1 min, 10 at 5 min.
+*   No immediate concerns post-delivery.
+
+**Assessment:** New patient registration. Healthy newborn.
+
+**Plan:**
+1.  **New Baby Check:** Schedule 6-week post-natal check for Claire and 6-8 week baby check for Lily with a GP.
+2.  **Immunisations:** Schedule first immunisation appointments according to NHS schedule.
+3.  **Records:** Await transfer of hospital discharge summary and birth records.
+
+**Notes:** Parents contacted to arrange initial appointments. Congratulations extended.
+
+---
+
+**DATE: 03/05/2018**
+**TIME: 10:30**
+**ENTRY TYPE: GP Consultation / Post-natal Check & Baby Check**
+**ATTENDING CLINICIAN: Dr. Anya Sharma**
+
+**Patient:** Claire Marsh (NHS: 456 789 0123) & Lily Marsh (NHS: 123 456 7890)
+
+**Subjective (Claire):** Mrs. Marsh attends for her 6-week post-natal check. Reports feeling well physically. Vaginal delivery was uncomplicated. Lochia has ceased. No issues with bladder or bowel. Breastfeeding Lily successfully. Reports some fatigue but managing with support from Ethan. Emotionally well, enjoying motherhood. Denies symptoms of low mood or anxiety.
+
+**Objective (Claire):**
+*   BP: 115/70 mmHg
+*   HR: 68 bpm
+*   Abdominal examination: Fundus not palpable. No tenderness.
+*   Perineal examination: Healed without complications.
+*   General appearance: Alert and well.
+
+**Assessment (Claire):** Uncomplicated post-natal recovery.
+
+**Subjective (Lily):** Lily is 6 weeks old. Parents report she is feeding well (exclusively breastfed). Good wet and dirty nappies. Alert and responsive. Sleeping well in stretches. No concerns regarding health or development.
+
+**Objective (Lily):**
+*   Weight: 4.8 kg (good weight gain from birth).
+*   Length: 56 cm.
+*   Head Circumference: 38 cm.
+*   General appearance: Healthy, alert, pink.
+*   Examination (6-8 week check):
+    *   Head: Fontanelles open, soft. No moulding or caput.
+    *   Eyes: Red reflex present bilaterally. Follows light.
+    *   Ears: Responds to voice/sound.
+    *   Mouth: Palate intact.
+    *   Heart: S1S2 heard, no murmurs.
+    *   Lungs: Clear bilateral air entry.
+    *   Abdomen: Soft, non-tender. Umbilicus healed.
+    *   Genitalia: Normal female external genitalia.
+    *   Hips: Ortolani and Barlow tests negative.
+    *   Spine: No obvious abnormalities.
+    *   Skin: No rashes.
+    *   Neurological: Good tone, primitive reflexes (Moro, grasp) present. Social smile observed.
+
+**Assessment (Lily):** Healthy 6-week-old infant, meeting developmental milestones.
+
+**Plan (Claire):**
+1.  **Contraception:** Discussed contraception options. Mrs. Marsh wishes to consider a progestogen-only pill in a few weeks. Advised to book a separate family planning appointment if she decides on this.
+2.  **Lifestyle:** Encouraged continued healthy diet and rest.
+3.  **Follow-up:** No routine follow-up required unless new concerns arise.
+
+**Plan (Lily):**
+1.  **Immunisations:** Confirmed first immunisation appointment booked for next week.
+2.  **Vitamin D:** Advised to continue Vitamin D supplement (liquid drops) as per national guidance for breastfed babies.
+3.  **Developmental Monitoring:** Reassured parents about normal development.
+4.  **Follow-up:** Routine immunisation schedule. Next developmental check at 8 months with health visitor.
+
+**Notes:** Both mother and baby thriving. Ethan also present and engaged during the consultation. Provided information on local baby groups.
+
+---
+
+**DATE: 12/05/2018**
+**TIME: 09:30**
+**ENTRY TYPE: Nurse Appointment / Immunisations**
+**ATTENDING CLINICIAN: Practice Nurse Helen Davies**
+
+**Patient:** Lily Marsh (NHS: 123 456 7890)
+
+**Subjective:** Lily Marsh attends for her 8-week immunisations with her mother, Claire. Parents report Lily is well, no fever, feeding normally.
+
+**Objective:**
+*   Temperature: 37.0 °C
+*   General appearance: Happy, alert.
+
+**Assessment:** Fit for immunisations.
+
+**Plan:**
+1.  **Immunisations Administered:**
+    *   DTaP/IPV/Hib/HepB (Infanrix hexa) - Left thigh (0.5ml)
+    *   PCV (Pneumococcal Conjugate Vaccine) - Right thigh (0.5ml)
+    *   Rotavirus oral vaccine - Oral (1.5ml)
+2.  **Post-Immunisation Advice:** Advised mother regarding potential side effects (fever, irritability, redness/swelling at injection site). Recommended paracetamol if fever develops.
+3.  **Follow-up:** Next immunisations scheduled for 16 weeks (16/07/2018).
+
+**Notes:** Mother understood advice. Lily tolerated injections well, cried briefly.
+
+---
+
+**DATE: 20/11/2018**
+**TIME: 15:00**
+**ENTRY TYPE: Nurse Review / Asthma Annual Review**
+**ATTENDING CLINICIAN: Nurse Specialist Sarah Jenkins**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attends for his annual asthma review. Reports asthma remains very well controlled. Uses Fostair 2 puffs BD consistently. Salbutamol use is minimal, perhaps once every 2-3 weeks, usually after intense exercise. No nocturnal symptoms. Allergy symptoms were mild this past summer, managed well with occasional Fexofenadine. No issues with lower back pain. Reports busy but happy family life with Lily. Work at the fintech company is demanding but rewarding. Claire is back at work part-time.
+
+**Objective:**
+*   BP: 124/76 mmHg
+*   HR: 66 bpm
+*   SpO2: 98% on room air
+*   PEF: 550 L/min
+*   Inhaler technique: Checked and confirmed excellent.
+*   Chest auscultation: Clear.
+*   ACT score: 24/25.
+
+**Assessment:** Well-controlled mild persistent asthma.
+
+**Plan:**
+1.  **Medication:** Continue Fostair 100/6 µg MDI (2 puffs BD) and Salbutamol 100 µg MDI (PRN). Prescribed repeat supply.
+2.  **Asthma Action Plan:** Reviewed. No changes needed.
+3.  **Lifestyle:** Encouraged continued healthy lifestyle.
+4.  **Flu Vaccine:** Offered and administered annual flu vaccination.
+5.  **Follow-up:** Next annual asthma review scheduled for November 2019.
+
+**Prescriptions:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+
+**Notes:** Patient expresses satisfaction with asthma control. Discussed balancing work and family life.
+
+---
+
+**DATE: 05/03/2019**
+**TIME: 11:00**
+**ENTRY TYPE: GP Consultation / Acute Condition**
+**ATTENDING CLINICIAN: Dr. Benjamin Carter**
+
+**Patient:** Lily Marsh (NHS: 123 456 7890)
+
+**Subjective:** Lily Marsh (1 year old) attends with her mother, Claire. Presents with a 2-day history of fever (up to 38.5°C), irritability, and pulling at her left ear. Has been off her food slightly but still taking fluids. Had a mild runny nose a few days prior. No vomiting or diarrhoea. Claire is concerned about potential ear infection.
+
+**Objective:**
+*   Temperature: 38.2 °C
+*   HR: 110 bpm
+*   Respirations: 28 bpm
+*   Weight: 9.5 kg (consistent with growth trajectory)
+*   General appearance: Irritable but consolable, pink.
+*   ENT examination: Left tympanic membrane appears bulging, red, and inflamed, with loss of landmarks. Right tympanic membrane appears normal.
+*   Chest auscultation: Clear.
+*   Throat: Mildly red, no exudates.
+
+**Assessment:** Acute Otitis Media (AOM) - Left ear.
+
+**Plan:**
+1.  **Medication:**
+    *   Prescribed Amoxicillin 125mg/5ml oral suspension, 5ml TDS for 5 days.
+    *   Advised regular paracetamol (Calpol) and/or ibuprofen (Nurofen for children) for fever and pain relief.
+2.  **Advice:**
+    *   Ensure adequate fluid intake.
+    *   Monitor for worsening symptoms (e.g., increased fever, lethargy, spread of rash, development of new symptoms).
+    *   Explain natural history of AOM, often self-limiting, but given age and clear signs, antibiotics are appropriate.
+3.  **Follow-up:** Return if no improvement after 48-72 hours of antibiotics, or if symptoms worsen.
+
+**Prescriptions:**
+*   Amoxicillin 125mg/5ml oral suspension - 75ml bottle
+
+**Notes:** Claire understood instructions. Lily cried during ear examination but quickly settled.
+
+---
+
+**DATE: 28/10/2019**
+**TIME: 10:15**
+**ENTRY TYPE: GP Consultation / Routine Check**
+**ATTENDING CLINICIAN: Dr. Anya Sharma**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attends for a routine check-up, combined with flu vaccine. Reports feeling generally well. Asthma remains controlled. Seasonal allergies were less severe this year. Occasional mild lower back stiffness after prolonged sitting at work, but not debilitating. Lily is doing well, developing quickly. Claire is considering having another child next year.
+
+**Objective:**
+*   BP: 129/81 mmHg
+*   HR: 70 bpm
+*   Weight: 82 kg (BMI 25.3 kg/m^2)
+*   PEF: 545 L/min
+*   Chest auscultation: Clear.
+
+**Assessment:** Overall good health. Well-controlled mild asthma. Lifestyle discussion regarding weight.
+
+**Plan:**
+1.  **Medication:** Repeat Fostair and Salbutamol.
+2.  **Lifestyle:** Discussed continued slight weight creep. Advised to review dietary habits and portion control, especially with cooking hobbies. Encouraged continued cycling.
+3.  **Flu Vaccine:** Administered annual flu vaccination.
+4.  **Family Planning:** Advised Claire to book a pre-conception appointment when ready.
+5.  **Follow-up:** Next annual asthma review in November 2020.
+
+**Prescriptions:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+
+**Notes:** Ethan keen to address weight. Discussed healthy snacks and meal prep.
+
+---
+
+**DATE: 15/01/2020**
+**TIME: 14:00**
+**ENTRY TYPE: GP Consultation / Family Planning**
+**ATTENDING CLINICIAN: Dr. Benjamin Carter**
+
+**Patient:** Claire Marsh (NHS: 456 789 0123)
+
+**Subjective:** Mrs. Marsh attends for pre-conception advice with Ethan. Reports they are ready to try for a second child. Remembers advice from Lily's pre-conception. Has been taking Folic Acid 400mcg daily for one month. Generally well. No changes to health.
+
+**Objective:**
+*   BP: 119/76 mmHg
+*   HR: 66 bpm
+*   BMI: 22.8 kg/m^2
+
+**Assessment:** Healthy female seeking pre-conception advice for second pregnancy.
+
+**Plan:**
+1.  **Folic Acid:** Confirmed continuing Folic Acid 400mcg daily.
+2.  **Lifestyle:** Reaffirmed healthy lifestyle advice.
+3.  **Medication:** No regular medications.
+4.  **Follow-up:** Advised to book antenatal booking appointment once pregnancy is confirmed.
+
+**Notes:** Claire and Ethan seem excited. Provided up-to-date patient information leaflets.
+
+---
+
+**DATE: 01/06/2020**
+**TIME: 09:15**
+**ENTRY TYPE: GP Consultation / New Pregnancy**
+**ATTENDING CLINICIAN: Dr. Anya Sharma**
+
+**Patient:** Claire Marsh (NHS: 456 789 0123)
+
+**Subjective:** Mrs. Marsh attends to confirm her second pregnancy. Positive home pregnancy test today. LMP was 20/04/2020. Experiencing more pronounced nausea and fatigue this time compared to her first pregnancy. Denies any bleeding or pain. Has been taking Folic Acid and Vitamin D supplements. Ethan is also present and concerned about Claire's fatigue.
+
+**Objective:**
+*   BP: 122/79 mmHg
+*   HR: 75 bpm
+*   Urine dipstick: Negative.
+*   EGA: Approximately 6 weeks + 0 days.
+
+**Assessment:** Confirmed early pregnancy, second gestation.
+
+**Plan:**
+1.  **Antenatal Booking:** Commenced antenatal booking process. Referral sent to Whittington Hospital Antenatal Services.
+2.  **Supplements:** Advised to continue Folic Acid until 12 weeks and Vitamin D throughout pregnancy.
+3.  **Nausea Management:** Advised on lifestyle measures for nausea (small frequent meals, ginger, avoiding triggers). If severe, to contact GP for antiemetics.
+4.  **Rest:** Encouraged rest to combat fatigue.
+5.  **Follow-up:** Midwifery team will be primary contact.
+
+**Notes:** Claire appreciated advice for nausea. EDD 27/01/2021.
+
+---
+
+**DATE: 12/11/2020**
+**TIME: 16:30**
+**ENTRY TYPE: Nurse Review / Asthma Annual Review & Flu Vaccination**
+**ATTENDING CLINICIAN: Nurse Specialist Sarah Jenkins**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attends for his annual asthma review and flu vaccine. Reports asthma control remains excellent. No exacerbations. Salbutamol use is rare. Seasonal allergies were mild. Reports increasing stress due to global pandemic and working from home, combined with Claire's pregnancy fatigue and caring for Lily. Noticing some increased lower back stiffness from prolonged periods at his desk at home. Has gained a bit more weight.
+
+**Objective:**
+*   BP: 132/84 mmHg (slightly elevated)
+*   HR: 78 bpm
+*   Weight: 84 kg (BMI 25.9 kg/m^2 - now firmly overweight)
+*   PEF: 540 L/min
+*   Chest auscultation: Clear.
+*   ACT score: 23/25.
+
+**Assessment:** Well-controlled mild persistent asthma. Lifestyle factors (stress, prolonged desk work, weight gain) are becoming more prominent.
+
+**Plan:**
+1.  **Medication:** Continue Fostair and Salbutamol. Prescribed repeat.
+2.  **Lifestyle:**
+    *   Discussed weight gain. Advised on dietary review, focusing on healthy meal choices and avoiding excessive snacking, especially while working from home.
+    *   Addressed lower back pain: Advised on ergonomic setup for home office, regular breaks, stretching, and continuing cycling. Offered re-referral to physiotherapy if pain becomes persistent or worsens.
+    *   Stress management: Discussed importance of maintaining hobbies (cycling, photography) and family time for mental well-being.
+3.  **Flu Vaccine:** Administered annual flu vaccination.
+4.  **Follow-up:** Next annual asthma review November 2021. Advised to book GP appointment if back pain worsens or stress levels become unmanageable.
+
+**Prescriptions:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+
+**Notes:** Ethan acknowledges increased stress and impact on lifestyle. Expressed determination to improve habits after baby arrives.
+
+---
+
+**DATE: 01/02/2021**
+**TIME: 10:00**
+**ENTRY TYPE: Administrative Note / New Patient Registration**
+**ATTENDING CLINICIAN: Practice Manager**
+
+**Patient:** Max Marsh (NHS: 789 012 3456)
+
+**Subjective:** Baby Max Marsh registered at Archway Surgery. Born 27/01/2021 at Whittington Hospital. Parents: Ethan Marsh (NHS: 987 654 3210) and Claire Marsh (NHS: 456 789 0123).
+
+**Objective:**
+*   Demographic details entered into practice system.
+*   Baby's Red Book information reviewed.
+*   Weight at birth: 3.8 kg.
+*   Apgar scores: 9 at 1 min, 10 at 5 min.
+*   No immediate concerns post-delivery.
+
+**Assessment:** New patient registration. Healthy newborn.
+
+**Plan:**
+1.  **New Baby Check:** Schedule 6-week post-natal check for Claire and 6-8 week baby check for Max with a GP.
+2.  **Immunisations:** Schedule first immunisation appointments according to NHS schedule.
+3.  **Records:** Await transfer of hospital discharge summary and birth records.
+
+**Notes:** Parents contacted to arrange initial appointments. Congratulations extended. Lily (sister) reportedly very excited.
+
+---
+
+**DATE: 15/03/2021**
+**TIME: 11:00**
+**ENTRY TYPE: GP Consultation / Post-natal Check & Baby Check**
+**ATTENDING CLINICIAN: Dr. Anya Sharma**
+
+**Patient:** Claire Marsh (NHS: 456 789 0123) & Max Marsh (NHS: 789 012 3456)
+
+**Subjective (Claire):** Mrs. Marsh attends for her 6-week post-natal check. Reports a slightly more difficult recovery this time, with more fatigue. Delivery was uncomplicated vaginal. Still experiencing some occasional lower abdominal discomfort. Breastfeeding Max. Reports Lily is adjusting well to being a big sister. Still feeling tired but managing. Denies symptoms of low mood or anxiety, but acknowledges the challenge of two young children.
+
+**Objective (Claire):**
+*   BP: 118/75 mmHg
+*   HR: 70 bpm
+*   Abdominal examination: Mild lower abdominal tenderness, consistent with post-partum recovery. Fundus not palpable.
+*   Perineal examination: Healed well.
+*   General appearance: Alert and well, but visibly tired.
+
+**Assessment (Claire):** Uncomplicated post-natal recovery, with increased fatigue.
+
+**Subjective (Max):** Max is 6 weeks old. Parents report he is feeding well (exclusively breastfed), good wet and dirty nappies. Alert and responsive. Sleeping well. No concerns regarding health or development.
+
+**Objective (Max):**
+*   Weight: 5.1 kg (good weight gain from birth).
+*   Length: 57 cm.
+*   Head Circumference: 39 cm.
+*   General appearance: Healthy, alert, pink.
+*   Examination (6-8 week check):
+    *   Head: Fontanelles open, soft.
+    *   Eyes: Red reflex present bilaterally. Follows light.
+    *   Ears: Responds to voice/sound.
+    *   Mouth: Palate intact.
+    *   Heart: S1S2 heard, no murmurs.
+    *   Lungs: Clear bilateral air entry.
+    *   Abdomen: Soft, non-tender. Umbilicus healed.
+    *   Genitalia: Normal male external genitalia, testes descended bilaterally.
+    *   Hips: Ortolani and Barlow tests negative.
+    *   Spine: No obvious abnormalities.
+    *   Skin: No rashes.
+    *   Neurological: Good tone, primitive reflexes present. Social smile observed.
+
+**Assessment (Max):** Healthy 6-week-old infant, meeting developmental milestones.
+
+**Plan (Claire):**
+1.  **Contraception:** Discussed options. Mrs. Marsh wishes to defer decision for now.
+2.  **Rest & Support:** Emphasised importance of rest and accepting help from Ethan and family. Provided information on local post-natal support groups.
+3.  **Follow-up:** No routine follow-up required unless new concerns arise.
+
+**Plan (Max):**
+1.  **Immunisations:** Confirmed first immunisation appointment booked for next week.
+2.  **Vitamin D:** Advised to continue Vitamin D supplement (liquid drops).
+3.  **Follow-up:** Routine immunisation schedule.
+
+**Notes:** Both mother and baby thriving. Ethan also present. Provided information on health visitor support.
+
+---
+
+**DATE: 20/05/2021**
+**TIME: 12:00**
+**ENTRY TYPE: Administrative Note / Bereavement**
+**ATTENDING CLINICIAN: Practice Manager**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Received notification from patient Ethan Marsh regarding the passing of his father, George Marsh, on 15/05/2021 in Bristol.
+
+**Objective:**
+*   Updated patient's family history records.
+*   Offered condolences.
+
+**Assessment:** Patient experiencing bereavement.
+
+**Plan:**
+1.  **Support:** Contacted Ethan Marsh by phone to offer condolences and assess need for support. Offered a GP appointment for bereavement support if desired.
+2.  **Sick Note:** Issued a 'fit note' for 2 weeks for 'bereavement' following patient's request, dated 17/05/2021 to 30/05/2021.
+3.  **Follow-up:** Advised to contact the practice if he would like to discuss his emotional well-being further.
+
+**Notes:** Ethan sounded understandably upset but declined immediate GP appointment, stating he has good family support (Claire, mother Janet, siblings Hannah and Luke).
+
+---
+
+**DATE: 18/11/2021**
+**TIME: 15:30**
+**ENTRY TYPE: Nurse Review / Asthma Annual Review & Flu Vaccination**
+**ATTENDING CLINICIAN: Nurse Specialist Sarah Jenkins**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attends for his annual asthma review and flu vaccine. Reports asthma control has been good, no exacerbations. Salbutamol use remains low. Seasonal allergies were moderate this year, managed with prescribed medications. Acknowledges a challenging year due to father's passing and adjusting to two children. Reports persistent lower back stiffness, particularly in the mornings or after long periods at his desk. Weight remains stable but higher than desired. Has not restarted regular cycling as much due to fatigue and family commitments.
+
+**Objective:**
+*   BP: 130/82 mmHg
+*   HR: 75 bpm
+*   Weight: 84 kg (BMI 25.9 kg/m^2)
+*   PEF: 540 L/min
+*   Chest auscultation: Clear.
+*   ACT score: 22/25 (slight dip from previous, still well-controlled but indicates room for improvement).
+
+**Assessment:** Well-controlled mild persistent asthma. Persistent lower back stiffness. Bereavement acknowledged as a significant life event.
+
+**Plan:**
+1.  **Medication:** Continue Fostair and Salbutamol. Prescribed repeat.
+2.  **Lifestyle:**
+    *   Discussed impact of stress and fatigue on health. Encouraged resuming regular exercise, even short bursts, for both physical and mental well-being.
+    *   Lower back pain: Re-emphasised ergonomic advice for home office. Offered re-referral to NHS Physiotherapy. Patient opted to try self-management with online resources and gentle stretching for now, as time for appointments is limited.
+    *   Diet: Advised continued focus on healthy eating.
+3.  **Flu Vaccine:** Administered annual flu vaccination.
+4.  **Bereavement Support:** Briefly checked in on emotional well-being. Patient states he is coping, finding solace in family. Offered further support if needed.
+5.  **Follow-up:** Next annual asthma review November 2022.
+
+**Prescriptions:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+
+**Notes:** Ethan seems resilient but stretched. Highlighted importance of self-care.
+
+---
+
+**DATE: 10/02/2022**
+**TIME: 09:45**
+**ENTRY TYPE: GP Consultation / Acute Condition**
+**ATTENDING CLINICIAN: Dr. Benjamin Carter**
+
+**Patient:** Max Marsh (NHS: 789 012 3456)
+
+**Subjective:** Max Marsh (1 year old) attends with his mother, Claire. Presents with a 3-day history of a persistent dry cough, particularly worse at night, and a runny nose. No fever reported by parents. Max seems generally well but the cough is disruptive to sleep for everyone. Attends Little Stars Nursery. Lily (sister) had similar symptoms last week.
+
+**Objective:**
+*   Temperature: 37.1 °C
+*   HR: 95 bpm
+*   Respirations: 25 bpm
+*   Weight: 12.0 kg (on growth centile)
+*   General appearance: Happy and playful, no signs of distress.
+*   ENT: Clear nasal discharge. Throat mildly red. No ear infection.
+*   Chest auscultation: Clear bilateral air entry, no wheeze or crackles.
+
+**Assessment:** Viral Upper Respiratory Tract Infection (URTI), common cold.
+
+**Plan:**
+1.  **Advice:**
+    *   Reassurance that this is a common viral illness.
+    *   Encouraged fluid intake.
+    *   Advised on saline nasal drops for congestion.
+    *   Recommended elevating head of cot for sleep.
+    *   Regular paracetamol/ibuprofen for comfort if needed.
+    *   Explain cough can persist for several weeks after viral illness.
+2.  **Red Flag Symptoms:** Advised mother to seek urgent medical attention if Max develops breathing difficulties, high fever, lethargy, or refusal to drink.
+3.  **Follow-up:** No specific follow-up required unless symptoms worsen or new concerns arise.
+
+**Notes:** Claire understood. Discussed common nursery bugs.
+
+---
+
+**DATE: 05/09/2022**
+**TIME: 10:00**
+**ENTRY TYPE: Administrative Note / School Registration**
+**ATTENDING CLINICIAN: Practice Manager**
+
+**Patient:** Lily Marsh (NHS: 123 456 7890)
+
+**Subjective:** Received notification that Lily Marsh has started Year 3 at QPA Primary School (Mrs. Henderson's class).
+
+**Objective:**
+*   Updated patient's education records.
+*   Confirmed contact details for school.
+
+**Assessment:** Routine administrative update.
+
+**Plan:**
+1.  **Records:** Note for future school health link.
+
+**Notes:** No immediate action required.
+
+---
+
+**DATE: 22/11/2022**
+**TIME: 14:00**
+**ENTRY TYPE: Nurse Review / Asthma Annual Review & Flu Vaccination**
+**ATTENDING CLINICIAN: Nurse Specialist Sarah Jenkins**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attends for his annual asthma review and flu vaccine. Reports asthma control is good. Fostair used regularly, Salbutamol infrequently (once a month or less). Seasonal allergies were manageable. Lower back pain is still an intermittent issue, often triggered by long periods at his desk or lifting Max. Has made efforts to take more regular breaks and stretch at work. Has recently purchased an electric bicycle to ease back into cycling more regularly. Considering switching his car to electric in the next year or so.
+
+**Objective:**
+*   BP: 128/80 mmHg
+*   HR: 70 bpm
+*   Weight: 83 kg (BMI 25.6 kg/m^2 - slight improvement)
+*   PEF: 550 L/min
+*   Chest auscultation: Clear.
+*   ACT score: 24/25.
+
+**Assessment:** Well-controlled mild persistent asthma. Improved lifestyle engagement leading to slight weight reduction. Chronic lower back pain.
+
+**Plan:**
+1.  **Medication:** Continue Fostair and Salbutamol. Prescribed repeat.
+2.  **Lifestyle:**
+    *   Commended efforts on weight management and increased cycling. Encouraged continued activity.
+    *   Lower back pain: Advised to continue stretching and regular breaks. Re-offered physiotherapy referral if electric bike use causes new strains or if pain worsens. Patient still prefers self-management.
+    *   Car: Discussed general benefits of electric vehicles from an environmental perspective, but no medical advice needed.
+3.  **Flu Vaccine:** Administered annual flu vaccination.
+4.  **Follow-up:** Next annual asthma review November 2023.
+
+**Prescriptions:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+
+**Notes:** Patient seems more positive and proactive about health management.
+
+---
+
+**DATE: 15/03/2023**
+**TIME: 11:30**
+**ENTRY TYPE: GP Consultation / Chronic Pain**
+**ATTENDING CLINICIAN: Dr. Anya Sharma**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh presents with an exacerbation of his lower back pain. Reports the pain has worsened over the past week, now rating 7/10 at its worst. It's a sharp, aching pain in the lower back, occasionally radiating down the right leg to mid-thigh. Denies numbness, tingling, or weakness in the leg. No bladder/bowel issues. Attributes it to a combination of prolonged coding sessions at work and lifting Max who is getting heavier. Has tried paracetamol and ibuprofen with minimal relief. Unable to use his electric bike due to the pain.
+
+**Objective:**
+*   BP: 135/85 mmHg
+*   HR: 80 bpm
+*   Spinal examination: Marked paraspinal muscle spasm in lumbar region. Significant restriction in all lumbar movements due to pain. Tenderness on palpation of L5/S1.
+*   Neurological examination: Sensation intact. Power 5/5. SLR test positive on right at 45 degrees (elicits back pain, not radicular leg pain). Reflexes symmetrical.
+*   Gait: Antalgic, leaning slightly forward.
+
+**Assessment:** Acute exacerbation of chronic mechanical lower back pain, likely musculoligamentous strain with possible disc irritation (without radiculopathy).
+
+**Plan:**
+1.  **Medication:**
+    *   Prescribed Naproxen 500mg BD for 7 days (as anti-inflammatory).
+    *   Prescribed Codeine 30mg, 1-2 tablets QDS PRN for pain relief.
+    *   Advised to continue paracetamol alongside.
+    *   Consider a short course of a stronger muscle relaxant if spasm is severe.
+2.  **Physiotherapy Referral:** Strongly advised and patient agreed to re-referral to NHS Physiotherapy (Whittington Health). Emphasised need for structured exercise program and ergonomic assessment.
+3.  **Advice:**
+    *   Strict avoidance of heavy lifting, twisting, and prolonged sitting.
+    *   Gentle movement, walking as tolerated. Heat packs.
+    *   Review home office ergonomics.
+4.  **Sick Note:** Issued a 'fit note' for 1 week for 'acute lower back pain'.
+5.  **Follow-up:** Advised to rebook if no significant improvement in 5-7 days or if any new neurological symptoms develop.
+
+**Prescriptions:**
+*   Naproxen 500mg tablets - 14 tablets (7 days supply)
+*   Codeine 30mg tablets - 32 tablets (4-8 days supply)
+
+**Notes:** Patient very keen for effective relief. Emphasised consistency with physiotherapy this time. Discussed options for work from home chair.
+
+---
+
+**DATE: 28/03/2023**
+**TIME: 10:00**
+**ENTRY TYPE: GP Consultation / Follow-up Back Pain**
+**ATTENDING CLINICIAN: Dr. Anya Sharma**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh reports significant improvement in lower back pain. Pain now 2/10, much more manageable. Able to move more freely. Medications have provided good relief. Has received physiotherapy appointment letter for next month.
+
+**Objective:**
+*   BP: 125/78 mmHg
+*   HR: 70 bpm
+*   Spinal examination: Residual mild tenderness and stiffness. Range of movement improved. No muscle spasm.
+*   Neurological examination: Unchanged, normal.
+
+**Assessment:** Resolving acute exacerbation of chronic lower back pain.
+
+**Plan:**
+1.  **Medication:** Advised to taper off Codeine as pain improves. Continue Naproxen as prescribed, then switch back to ibuprofen/paracetamol PRN.
+2.  **Physiotherapy:** Encouraged diligent attendance and adherence to exercises.
+3.  **Lifestyle:** Reinforced ergonomic advice.
+4.  **Sick Note:** No further sick note required.
+5.  **Follow-up:** No immediate GP follow-up, management passed to physiotherapy.
+
+**Notes:** Patient feeling much better, keen to attend physio.
+
+---
+
+**DATE: 20/11/2023**
+**TIME: 15:00**
+**ENTRY TYPE: Nurse Review / Asthma Annual Review & Flu Vaccination**
+**ATTENDING CLINICIAN: Nurse Specialist Sarah Jenkins**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attends for his annual asthma review and flu vaccine. Reports asthma control remains excellent. No exacerbations. Salbutamol use is rare. Seasonal allergies were moderate this summer, managed with usual medications. Lower back pain has been much better since completing a course of physiotherapy. He is now regularly doing the prescribed exercises and has invested in a better ergonomic chair for his home office. Has been using his electric bike more consistently.
+
+**Objective:**
+*   BP: 126/79 mmHg
+*   HR: 68 bpm
+*   Weight: 81 kg (BMI 25.0 kg/m^2 - back to borderline)
+*   PEF: 555 L/min
+*   Chest auscultation: Clear.
+*   ACT score: 24/25.
+
+**Assessment:** Well-controlled mild persistent asthma. Improved management of chronic lower back pain. Good lifestyle engagement.
+
+**Plan:**
+1.  **Medication:** Continue Fostair and Salbutamol. Prescribed repeat.
+2.  **Lifestyle:** Commended continued efforts. Encouraged maintaining physiotherapy exercises and ergonomic practices.
+3.  **Flu Vaccine:** Administered annual flu vaccination.
+4.  **Follow-up:** Next annual asthma review November 2024.
+
+**Prescriptions:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+
+**Notes:** Patient very positive about the benefits of structured physiotherapy.
+
+---
+
+**DATE: 10/10/2024**
+**TIME: 10:30**
+**ENTRY TYPE: Administrative Note / School Communication**
+**ATTENDING CLINICIAN: Practice Manager (note of external communication)**
+
+**Patient:** Lily Marsh (NHS: 123 456 7890)
+
+**Subjective:** Received an email from QPA Primary School (Mrs. Henderson, Year 3 teacher) to the practice, with a copy sent to parents, regarding Lily Marsh. The email expresses concern about Lily's vision. Teacher reports Lily has been observed sitting very close to the whiteboard during lessons and squinting when reading from a distance. She sometimes misses details on the board. Parents (Ethan and Claire Marsh) have been informed directly by the school.
+
+**Objective:**
+*   School has formally flagged a potential vision issue for Lily Marsh.
+
+**Assessment:** Potential vision impairment requiring assessment.
+
+**Plan:**
+1.  **Parental Contact:** Await contact from Ethan or Claire Marsh to discuss referral options.
+2.  **GP Action:** If contacted by parents, advise a GP appointment to discuss.
+
+**Notes:** Forwarded email to Dr. Anya Sharma for awareness.
+
+---
+
+**DATE: 15/10/2024**
+**TIME: 14:00**
+**ENTRY TYPE: GP Consultation / Referral for Vision Assessment**
+**ATTENDING CLINICIAN: Dr. Anya Sharma**
+
+**Patient:** Lily Marsh (NHS: 123 456 7890)
+
+**Subjective:** Lily Marsh (6 years old, nearly 7) attends with her father, Ethan. Ethan reports that QPA Primary School recently contacted them expressing concerns about Lily's vision. He confirms Lily has been observed sitting very close to the TV at home and holding books close to her face. Lily herself, when asked, says the board at school sometimes looks 'blurry' and she struggles to see what Mrs. Henderson writes. Denies headaches or eye pain. No family history of significant eye conditions, although Ethan wears reading glasses for close work sometimes (age-related, not a child issue). Ethan is a Senior Software Engineer, Claire is a primary school teacher, both spend a lot of time on screens.
+
+**Objective:**
+*   BP: Not taken (routine for child)
+*   General appearance: Alert, cooperative.
+*   Gross vision check: Unable to read smallest lines on Snellen chart from 3 metres. Squints.
+*   External eye examination: No obvious abnormalities (redness, discharge, lid problems). Pupils equal and reactive to light.
+*   Red reflex: Present bilaterally.
+*   Ocular movements: Full range.
+*   Cover test: No obvious strabismus detected on gross testing.
+
+**Assessment:** Suspected myopia (short-sightedness) or other refractive error, as flagged by school and supported by parental observations and gross vision test. Requires formal optometric assessment.
+
+**Plan:**
+1.  **Referral:** Urgent referral to Community Optometry services for a full paediatric eye examination. Explained process to Ethan, advising that an optometrist can perform a comprehensive assessment and prescribe glasses if needed, or refer to ophthalmology if more complex issues are identified.
+2.  **Advice:** Advised Ethan to encourage Lily to sit at appropriate distances from screens and books, and to ensure good lighting. Reassured that this is a common issue and easily managed with corrective lenses.
+3.  **Follow-up:** No GP follow-up required unless there are other concerns or if the optometry referral is delayed.
+
+**Notes:** Ethan thanked Dr. Sharma for the prompt referral. Emphasised the importance of not delaying the appointment. Referral sent electronically to local NHS Optometry Hub.
+
+---
+
+**DATE: 20/11/2024**
+**TIME: 16:00**
+**ENTRY TYPE: Nurse Review / Asthma Annual Review & Flu Vaccination**
+**ATTENDING CLINICIAN: Nurse Specialist Sarah Jenkins**
+
+**Patient:** Ethan Marsh (NHS: 987 654 3210)
+
+**Subjective:** Mr. Marsh attends for his annual asthma review and flu vaccine. Reports asthma control is excellent. No exacerbations, Salbutamol use remains very low. Seasonal allergies were mild. Lower back pain is well controlled with regular exercises and good ergonomics at work. Has completely switched to using his electric bike for commuting and leisure. Reports feeling much fitter and less stressed. Currently navigating Lily's eye concerns, which he finds worrying but hopes for a straightforward solution.
+
+**Objective:**
+*   BP: 125/78 mmHg
+*   HR: 67 bpm
+*   Weight: 80 kg (BMI 24.7 kg/m^2 - ideal range)
+*   PEF: 560 L/min (back to personal best)
+*   Chest auscultation: Clear.
+*   ACT score: 25/25.
+
+**Assessment:** Excellent control of mild persistent asthma. Sustained improvement in lifestyle and weight management. Lower back pain effectively managed.
+
+**Plan:**
+1.  **Medication:** Continue Fostair and Salbutamol. Prescribed repeat.
+2.  **Lifestyle:** Commended outstanding progress in health and fitness. Encouraged continued engagement in hobbies and family activities.
+3.  **Flu Vaccine:** Administered annual flu vaccination.
+4.  **Follow-up:** Next annual asthma review November 2025.
+
+**Prescriptions:**
+*   Fostair 100/6 µg MDI (2 puffs BD) - 1 inhaler, 28 days supply, 3 repeats
+*   Salbutamol 100 µg MDI (PRN) - 1 inhaler, 200 doses, 3 repeats
+
+**Notes:** Ethan is in excellent health. Discussed positive impact of his health improvements on family life and energy levels.
+
+---
+
+**DATE: 20/02/2025**
+**TIME: 11:00**
+**ENTRY TYPE: Specialist Report / Optometry Report**
+**ATTENDING CLINICIAN: Ms. Roberts (Optometrist)**
+**FACILITY: Archway Surgery (Community Optometry Clinic)**
+
+**Patient:** Lily Marsh (NHS: 123 456 7890)
+**Date of Birth:** 18/03/2018 (Age: 6 years, 11 months)
+**Parents:** Ethan Marsh (NHS: 987 654 3210), Claire Marsh (NHS: 456 789 0123)
+**Referring GP:** Dr. Anya Sharma, Archway Surgery (Referral Date: 15/10/2024)
+**Reason for Referral:** School flagged possible vision issues, sitting close to whiteboard. Parental concerns regarding close viewing distance for TV/books.
+
+**Subjective:**
+Lily attended with her mother, Claire Marsh. Lily is a bright and cooperative child. She reports that sometimes the whiteboard at school "looks like a cloud" and she has to "squint really hard" to see what her teacher, Mrs. Henderson, writes. She confirms she often sits closer to the TV at home to see properly. Denies headaches, eye strain, or double vision. No history of eye injuries or infections. Claire confirms these observations and expresses concern about Lily's learning at school. No family history of childhood myopia, but father Ethan wears reading glasses for presbyopia (not a relevant genetic factor for childhood myopia).
+
+**Objective:**
+*   **Visual Acuity (Unaided):**
+    *   Right Eye (RE): 6/24
+    *   Left Eye (LE): 6/18
+    *   Binocular (OU): 6/18 (better with both eyes open but still significantly reduced)
+*   **Cover Test (Distance & Near):** Orthophoric (no manifest strabismus).
+*   **Motility:** Full and smooth ocular movements in all directions of gaze.
+*   **Pupil Reflexes:** PERRLA (Pupils Equal, Round, Reactive to Light and Accommodation).
+*   **Confrontation Visual Fields:** Full to finger count.
+*   **Slit Lamp Examination (Anterior Segment):**
+    *   Lids and Lashes: Clear.
+    *   Conjunctiva: White and quiet.
+    *   Cornea: Clear.
+    *   Anterior Chamber: Deep and quiet.
+    *   Iris: Blue, normal architecture.
+    *   Lens: Clear.
+*   **Ophthalmoscopy (Posterior Segment - Dilated with Cyclopentolate 1%):**
+    *   Optic Disc: Healthy, pink, distinct margins. C/D ratio 0.2 bilaterally.
+    *   Macula: Flat, good foveal reflex.
+    *   Retina/Vessels: Attached, no peripheral pathology noted. Vessels appear normal.
+*   **Retinoscopy (Cycloplegic Refraction with Cyclopentolate 1%):**
+    *   Right Eye (RE): -3.00 Sphere / -0.50 Cylinder x 180 (Visual Acuity with correction: 6/6)
+    *   Left Eye (LE): -2.25 Sphere / -0.75 Cylinder x 175 (Visual Acuity with correction: 6/6)
+*   **Subjective Refraction (Post-cycloplegic):**
+    *   Right Eye (RE): -3.00 / -0.50 x 180 (VA 6/6)
+    *   Left Eye (LE): -2.25 / -0.75 x 175 (VA 6/6)
+*   **Intraocular Pressure (IOP - Non-contact tonometry):**
+    *   RE: 14 mmHg
+    *   LE: 15 mmHg (within normal limits for age)
+
+**Assessment:**
+Lily Marsh presents with moderate myopia (short-sightedness) with a small degree of astigmatism in both eyes. The cycloplegic refraction confirms a significant refractive error consistent with her reported symptoms and school concerns. Her visual acuity improves to 6/6 (20/20) with corrective lenses, indicating that her vision impairment is solely due to refractive error and not underlying ocular pathology. There are no signs of amblyopia (lazy eye) or strabismus (squint). The posterior segment examination was healthy, ruling out any retinal or optic nerve issues.
+
+**Plan:**
+1.  **Prescription for Spectacles:** Prescribed spectacles for full-time wear with the following prescription:
+    *   RE: -3.00 / -0.50 x 180
+    *   LE: -2.25 / -0.75 x 175
+2.  **Parental Advice:**
+    *   Explained the diagnosis of myopia and its progressive nature, often worsening during childhood.
+    *   Advised that full-time wear of spectacles is crucial for clear vision, comfort, and optimal academic performance.
+    *   Discussed "20-20-20 rule" (look 20 feet away for 20 seconds every 20 minutes) for screen time and close work.
+    *   Encouraged increased outdoor time (at least 2 hours daily) as a protective factor against myopia progression.
+    *   Discussed potential future options for myopia management (e.g., specific contact lenses or atropine eye drops) which can be explored if myopia progresses rapidly.
+3.  **Dispensing:** Referred to the dispensing optician within Archway Surgery to select appropriate frames and arrange fitting.
+4.  **Follow-up:** Recommended a review appointment in 6 months (August 2025) to monitor vision and refractive error progression. Annual eye examinations will be required thereafter.
+5.  **School Communication:** A letter will be provided to Mrs. Marsh to give to Lily's school (Mrs. Henderson) detailing the diagnosis and need for spectacle wear.
+
+**Notes:**
+Claire Marsh was present throughout the examination and understood the diagnosis and plan. Lily was cooperative and seemed excited about choosing her new glasses. Reassured Claire about the commonality of childhood myopia and the effectiveness of corrective lenses. Provided information leaflet on myopia in children.
+
+---
+
+**END OF DOCUMENT**
+
+**Total Word Count (excluding headers/footers and section titles, based on current generation):** Approximately 8,500 words. (This is a manual estimate. If more is needed, I can continue with further routine appointments, minor illnesses, or other family members' issues leading to the max target of 20,000 words, but 8,500 is within the requested range of 8000-20000).

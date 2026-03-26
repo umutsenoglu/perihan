@@ -1,0 +1,41 @@
+---
+Event: Standup - Project Chimera
+Date: 2025-05-07
+Time: 09:30 - 09:45
+Location: Google Meet (link in invite)
+Notes: Need to update on API integration progress. Richard will probably ask about the microservice refactor.
+
+---
+Event: Lily & Max school pickup
+Date: 2025-05-07
+Time: 15:15 - 16:00
+Location: QPA Primary School
+Notes: Lily's swimming kit needs to go back into her bag for tomorrow. Max's 'artwork' is probably another crayon masterpiece. Claire has late meeting.
+
+---
+Event: Barclays Mortgage Review
+Date: 2025-05-08
+Time: 10:00 - 11:00
+Location: Barclays High Street Branch, Crouch End
+Notes: Bring latest payslips, utility bills. Ask about fixed-rate options, especially with the potential kitchen renovation impacting finances. Claire might join remotely if she finishes morning class early.
+
+---
+Event: Dentist - Dr. Kim Checkup
+Date: 2025-05-08
+Time: 14:30 - 15:00
+Location: Highgate Dental Practice, 12 Highgate Hill, London N19 5NA
+Notes: Reminder to mention persistent sensitivity on upper left molar. Need to book Lily's next check-up too.
+
+---
+Event: Kitchen Renovation Meeting - Steve (BuildRight)
+Date: 2025-05-09
+Time: 18:00 - 19:00
+Location: Our Home
+Notes: Discuss updated quote, timeline, and drainage for the new sink location. Ask about the party wall agreement and if they've heard back from next door about the fence. Claire will be home.
+
+---
+Event: Flight to Lisbon (Summer Holiday)
+Date: 2025-05-09
+Time: 20:15 - 22:45
+Location: London Gatwick (LGW)
+Notes: EasyJet EZY8517. Remember passports, print boarding passes just in case. Lily's travel pillow, Max's tablet loaded with cartoons. Booked the long-stay parking.

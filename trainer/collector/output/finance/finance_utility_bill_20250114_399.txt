@@ -1,0 +1,197 @@
+**British Gas**
+**Your Home Energy Statement**
+
+**Account Number:** 7019 4583 227X
+**Statement Date:** 14 January 2025
+**Billing Period:** 01 October 2024 – 31 December 2024
+**Next Payment Due:** 28 January 2025
+**Total Amount Due:** £387.65
+
+**Account Holder:** Mr Ethan Marsh
+**Address:** 17 Willowbrook Avenue, North London, N14 6AB
+
+**Contact Us:**
+* Online: britishgas.co.uk/myaccount
+* Phone: 0333 202 9802 (Mon-Fri 8am-8pm, Sat 8am-6pm)
+* Emergency: 0800 111 999 (Gas leaks)
+
+**Page 1 of 4**
+
+---
+
+**Summary of Your Charges**
+
+| Service             | Previous Balance | Payments Received | New Charges     | Total
+| :------------------ | :--------------- | :---------------- | :-------------- | :-------------
+| Electricity         | £0.00            | £110.00           | £215.80         | £105.80 (Cr)
+| Gas                 | £0.00            | £110.00           | £281.85         | £171.85 (Dr)
+| **Total for this period** | **£0.00**        | **£220.00**       | **£497.65**     | **£277.65**
+
+*Cr = Credit, Dr = Debit*
+
+**Your previous balance was £0.00. Thank you for your recent payments totalling £220.00.**
+**Your new charges for this period are £497.65.**
+**Total amount due by 28 January 2025: £387.65**
+
+(Please note: Your monthly Direct Debit payment is £110.00, scheduled for the 1st of each month. We recommend reviewing your payments to ensure they cover your usage, especially with winter approaching. See page 4 for details on adjusting your Direct Debit.)
+
+---
+
+**Personalised Message from British Gas**
+
+Dear Ethan,
+
+We hope you and your family are keeping well. We've noticed a slight increase in your gas usage this quarter, which is common as the weather gets colder and you're keeping the house warm for Lily and Max. We understand energy costs are a concern, and we're committed to helping you manage your bills.
+
+Remember, you can always check your smart meter data in real-time via your British Gas app to see where you're using the most energy. Perhaps consider setting your thermostat a degree lower in the evenings, or making sure those draft excluders are in place, especially near the back door to the garden where Max likes to run in and out!
+
+We also wanted to remind you about our Boiler Care plans. Given your current boiler is now over 8 years old, it might be worth considering. We know you've been busy with work projects at "FinPro Solutions" and Claire's school events, but a quick check can prevent unexpected breakdowns.
+
+Best regards,
+
+The British Gas Team
+
+---
+
+**Page 2 of 4**
+
+**Detailed Electricity Charges (MPAN: 11 000 7019 4583 227X)**
+
+**Meter Serial Number:** G45D7890123L
+**Tariff:** Standard Variable Tariff (SVH) - *Please note: Your tariff has changed slightly from our previous communication due to Ofgem's price cap adjustment effective 01 October 2024.*
+
+**Usage Breakdown:**
+
+| Date From     | Date To       | Reading Type | Current Reading | Previous Reading | Units Used | Unit Rate (p/kWh) | Cost          |
+| :------------ | :------------ | :----------- | :-------------- | :--------------- | :--------- | :---------------- | :------------ |
+| 01 Oct 2024   | 31 Dec 2024   | Smart Meter  | 45873 kWh       | 45055 kWh        | 818 kWh    | 27.89p            | £227.91       |
+
+**Standing Charge:**
+
+* 92 days (01 Oct – 31 Dec 2024) @ 50.12p per day = £46.11
+
+**Total Electricity Charges:** £227.91 (Usage) + £46.11 (Standing Charge) = £274.02
+**Less: Payments/Adjustments:**
+* Payment Received 01 Oct 2024 (Direct Debit) = -£110.00
+* Payment Received 01 Nov 2024 (Direct Debit) = -£110.00
+* Prompt Payment Discount (October usage) = -£0.88
+* **Subtotal Electricity:** £53.14
+
+**VAT (5%):** £2.66
+**Total Electricity Due:** £55.80
+
+---
+
+**Detailed Gas Charges (MPRN: 7019458322)**
+
+**Meter Serial Number:** M3A2B1C4D5E6F7G
+**Tariff:** Standard Variable Tariff (SVG)
+
+**Usage Breakdown:**
+
+| Date From     | Date To       | Reading Type | Current Reading | Previous Reading | Units Used | Conversion Factor | kWh Used | Unit Rate (p/kWh) | Cost          |
+| :------------ | :------------ | :----------- | :--------------- | :--------------- | :--------- | :---------------- | :------- | :---------------- | :------------ |
+| 01 Oct 2024   | 31 Dec 2024   | Smart Meter  | 87453 m³         | 86978 m³         | 475 m³     | 11.1868           | 5313 kWh | 7.23p             | £384.34       |
+
+**Standing Charge:**
+
+* 92 days (01 Oct – 31 Dec 2024) @ 30.01p per day = £27.61
+
+**Total Gas Charges:** £384.34 (Usage) + £27.61 (Standing Charge) = £411.95
+**Less: Payments/Adjustments:**
+* Payment Received 01 Oct 2024 (Direct Debit) = -£110.00
+* Payment Received 01 Nov 2024 (Direct Debit) = -£110.00
+* Prompt Payment Discount (October usage) = -£1.31
+* **Subtotal Gas:** £190.64
+
+**VAT (5%):** £9.53
+**Total Gas Due:** £200.17
+
+---
+
+**Page 3 of 4**
+
+**Your Energy Usage Insights**
+
+**Electricity Usage Trend (kWh)**
+
+* **This Quarter (Oct-Dec 2024):** 818 kWh
+* **Last Quarter (Jul-Sep 2024):** 720 kWh (Increase of 13.6%)
+* **Same Quarter Last Year (Oct-Dec 2023):** 795 kWh (Increase of 2.9%)
+
+*Comments:* The slight increase is expected as daylight hours reduce and you use more lighting and perhaps rely more on indoor entertainment for Lily and Max. We also noted a slight increase in your tropical fish tank heater usage during the colder months, which is a common pattern for hobbyists like yourself.
+
+**Gas Usage Trend (kWh)**
+
+* **This Quarter (Oct-Dec 2024):** 5313 kWh
+* **Last Quarter (Jul-Sep 2024):** 1150 kWh (Significant increase of 362%)
+* **Same Quarter Last Year (Oct-Dec 2023):** 4980 kWh (Increase of 6.7%)
+
+*Comments:* The substantial increase from the previous quarter is due to the heating being on. We can see a noticeable spike in usage during the cold snap in early December, coinciding with Lily's school play rehearsals and the house needing to be extra warm. Compare your usage with similar homes in your area via your online account – you might find some useful tips!
+
+**Carbon Footprint Estimate**
+Based on your usage this quarter, your estimated carbon emissions are:
+* Electricity: 165 kg CO2e
+* Gas: 978 kg CO2e
+* Total: 1143 kg CO2e
+
+*We're actively investing in renewable energy projects to help reduce overall carbon emissions. Find out more at britishgas.co.uk/green-energy.*
+
+---
+
+**Helpful Tips for Managing Your Energy**
+
+*   **Thermostat Settings:** Consider reducing your thermostat by just 1 degree. For example, if you usually have it at 21°C, try 20°C. This can save you around £100 a year. We see your typical setting is 20.5°C when the family is home, perhaps try 19.5°C after the kids are in bed?
+*   **Draft Proofing:** Check for drafts around windows and doors. Even small gaps can let a lot of heat out. We know you're quite handy with DIY, Ethan – a quick check could make a big difference.
+*   **Appliance Use:** When using your washing machine or dishwasher, try to run them on a full load and at a lower temperature setting. Claire mentioned she's been trying to do more laundry in the evenings – remember to check your tariff for off-peak rates if you have an economy 7 meter.
+*   **Boiler Service:** Regular boiler servicing ensures it runs efficiently and safely. Your last service was in March 2023. We recommend an annual check, especially with the kids' asthma.
+*   **Smart Meter:** You're already benefiting from a smart meter, providing accurate bills and real-time usage data. Keep an eye on your in-home display for daily cost tracking.
+
+---
+
+**Page 4 of 4**
+
+**Payment Information**
+
+**Total Amount Due:** £387.65
+**Due Date:** 28 January 2025
+
+**Your Current Direct Debit:** £110.00 per month, collected on the 1st of each month.
+
+**How to Pay:**
+
+*   **Direct Debit (Recommended):** Your next scheduled payment of £110.00 will be taken on 01 February 2025. To cover the outstanding balance, we recommend making a one-off payment or adjusting your Direct Debit.
+*   **Online:** Visit britishgas.co.uk/pay and enter your account number.
+*   **Phone:** Call our automated payment line on 0333 202 9802 (option 1). Please have your account number and payment card ready.
+*   **Bank Transfer:**
+    *   **Bank:** NatWest
+    *   **Sort Code:** 60-00-04
+    *   **Account No:** 12345678
+    *   **Reference:** Your British Gas account number (7019 4583 227X)
+*   **Post Office / PayPoint:** Take this bill to any Post Office or PayPoint outlet.
+
+**Adjusting Your Direct Debit:**
+Given your recent usage, we estimate your monthly payments should be approximately £145.00 to keep your account in credit and avoid a large debit balance. You can adjust your Direct Debit easily online at britishgas.co.uk/myaccount or by calling us. We understand that with Max starting nursery soon, there will be additional costs, so we want to help you manage your budget effectively.
+
+---
+
+**Important Information**
+
+**General Data Protection Regulation (GDPR):**
+British Gas is committed to protecting your privacy. We use your data to provide you with energy services, manage your account, and offer relevant products and services. You can view our full privacy policy at britishgas.co.uk/privacy. We also share limited, anonymised data with QPA Primary School, your children's school, as part of our community energy-saving initiatives, but this does not include personal billing details.
+
+**Complaints:**
+If you have a complaint, please visit britishgas.co.uk/complaints or call us on 0333 202 9802. If you're not satisfied with our resolution, you can contact the Energy Ombudsman.
+
+**Your Energy Rights:**
+As an energy consumer, you have certain rights. For more information, please visit ofgem.gov.uk/consumers.
+
+**Remember to check your meter readings regularly, especially if your smart meter experiences any communication issues, to ensure accurate billing.**
+
+Thank you for being a British Gas customer.
+
+**British Gas is a trading name of British Gas Trading Limited. Registered in England & Wales No. 3078711. Registered office: 100 Thames Valley Park Drive, Reading, RG6 1PT.**
+
+---
+
+**End of Statement**

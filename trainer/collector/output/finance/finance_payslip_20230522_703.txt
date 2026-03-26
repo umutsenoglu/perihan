@@ -1,0 +1,46 @@
+**FinEdge Technologies Ltd - Payslip**
+
+**Employee Name:** Ethan Marsh
+**Employee ID:** FEM00192
+**Pay Period:** 01/05/2023 - 31/05/2023
+**Payment Date:** 22/05/2023
+
+**Address:** 14 Willow Crescent, N12 8AB, London
+**NI Number:** AB123456C
+**Tax Code:** 1257L
+
+**Earnings:**
+*   Basic Salary: £5,500.00
+*   Ad-hoc Bonus (Project Phoenix): £250.00
+*   Total Gross Pay: £5,750.00
+
+**Deductions:**
+*   PAYE Tax: £1,048.80
+*   National Insurance (NI): £487.42
+*   Pension Contribution (Scottish Widows): £275.00
+*   Cycle to Work Scheme: £50.00
+*   Total Deductions: £1,861.22
+
+**Net Pay:** £3,888.78
+
+**Payment Method:** BACS
+**Bank:** Barclays
+**Sort Code:** 20-45-78
+**Account Number:** ********5678
+
+**Year to Date (YTD) Totals:**
+*   Gross Pay YTD: £23,000.00
+*   Tax YTD: £4,195.20
+*   NI YTD: £1,949.68
+*   Pension YTD: £1,100.00
+
+**A brief payment confirmation:**
+
+**Subject:** Payment Confirmation - Your FinEdge Technologies Ltd Salary
+
+Hi Ethan,
+
+Just confirming your salary payment of £3,888.78 has been successfully processed and transferred to your Barclays account (ending 5678) today, 22nd May 2023.
+
+Best regards,
+FinEdge Payroll Team

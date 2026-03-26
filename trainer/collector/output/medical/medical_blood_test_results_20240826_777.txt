@@ -1,0 +1,40 @@
+**WHITTINGTON HOSPITAL**
+**NHS Trust**
+**Laboratory Report**
+
+**Patient Details:**
+Name: Ethan Marsh
+DOB: 15/03/1986 (Age 38)
+NHS No: 123 456 7890
+Address: 27 Willow Creek Lane, North London, N12 0PX
+
+**Referring Clinician:** Dr. Sarah Kim (Dental Surgery)
+**Date of Collection:** 2024-08-26
+**Date of Report:** 2024-08-26
+**Reason for Test:** Routine check-up, monitoring asymptomatic wisdom tooth #48.
+
+**Blood Test Results (Full Blood Count & Inflammatory Markers)**
+
+| Test                   | Result | Reference Range (Adult) | Unit       |
+| :--------------------- | :----- | :---------------------- | :--------- |
+| Haemoglobin (Hb)       | 145    | 130 - 170               | g/L        |
+| White Blood Cell (WBC) | 7.2    | 4.0 - 11.0              | x10^9/L    |
+| Platelets              | 280    | 150 - 400               | x10^9/L    |
+| C-Reactive Protein (CRP)| 1.2    | < 5.0                   | mg/L       |
+| Glucose (Random)       | 4.8    | 3.9 - 7.7               | mmol/L     |
+
+**Interpretation/Comments:**
+All tested parameters are within normal physiological reference ranges. No significant inflammatory markers detected, consistent with no acute infection or systemic inflammation. Results are unremarkable.
+Dr. Kim will discuss these findings at your follow-up appointment regarding wisdom tooth #48. Please ensure Lily and Max's next dental appointments at QPA Primary are booked for March 2025.
+
+**Report Authorised By:** Dr. A. Patel, Clinical Pathologist.
+
+**Whittington
+Hospital
+Magdala Avenue, Highgate, London N19 5NF
+Tel: 020 7272 3070 | Lab Enquiries: 020 7288 5171
+Email: whh-tr.pathologylabs@nhs.net
+
+**Disclaimer:** These results are intended for the referring clinician. Please contact Dr. Sarah Kim's practice for further discussion. For general queries, please contact the laboratory during opening hours. Access to your results via the NHS App may take up to 24 hours.
+
+Document ID: WHH-LAB-BT-EM-20240826 | Version: 1.0 | Page 1 of 1

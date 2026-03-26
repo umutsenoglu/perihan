@@ -1,0 +1,56 @@
+**Oct 16, 2023 – Monday**
+
+Been meaning to properly sit down and write some of this stuff out, not just quick bullet points in Notion or random memos on my phone. The brain just feels… full. And after that call with Mum today, it just feels heavier.
+
+Woke up before the alarm again, just after 6:15. Sky still dark. My lower back was protesting, as usual. Damn desk job. Seriously need to get back to those stretches Dr. Evans recommended, or at least remember to stand up more than once an hour. Rolled out of bed carefully, trying not to wake Claire – she needs her sleep more than me, bless her, with a full day of Year 2s ahead. Max was already doing his little mumble-squeak from his room, so I knew the peace wouldn't last much longer.
+
+Lily was up a few minutes later, bounding into the kitchen. "Daddy, can I have the rainbow cereal?" It's always the rainbow cereal. Or the chocolate one. Anything but the healthy stuff. Claire came down looking tired, "Morning, hon. Did Max just wake up?" Yeah, like clockwork. The usual morning ballet started: Max refusing to wear his socks, Lily fretting about her hair (Mrs. Henderson "likes it tidy"), me making toast and coffee, Claire packing lunchboxes for both herself and Lily. Max's nursery provides lunch, thankfully, one less thing. Just a normal Monday morning, organised chaos, but felt a bit more chaotic than usual. Maybe it was just me.
+
+Got them both out the door eventually. Dropped Max off at Little Stars, he ran in without a backward glance, which is always a mix of relief and a tiny pang of "doesn't he love me anymore?". Then Lily at QPA. Saw Mrs. Henderson briefly, she gave me a quick smile. Lily skipped off, backpack bouncing. She's really settling into Year 3 well. It's funny, sometimes I still see her as this tiny baby, then other times she's almost a little adult, debating the merits of different playground games.
+
+Tube into work was packed, of course. Tried to catch up on some industry news – thought about the current fintech trends, how we could leverage some new AI stuff in our payments platform, but my mind kept drifting to the Portugal holiday. Flights. Need to book those bloody flights. Claire keeps reminding me. Every evening. And she's right. The longer we leave it, the more expensive it'll get, and the worse the flight times. I keep saying "tonight" and then I'm just too knackered or something else comes up.
+
+Got to the office (Canary Wharf feels like a different planet sometimes, all glass and steel). Grabbed a terrible coffee from the machine. Stand-up with James, Priya, and Richard. Standard stuff: James is still battling that integration issue with the new API, Priya's got the UI redesign almost done for the client portal, and Richard's just… Richard, quiet, productive. My turn: "Yep, making good progress on the transaction monitoring engine refactor, should have the first pass of tests ready by end of day." Felt like I was saying that last week too. The refactor is trickier than I thought, a real rabbit hole. The old codebase is a mess, sometimes I wish we could just nuke it and start fresh, but then I remember the budget, the deadlines, the real-world implications of crashing a system that moves millions daily. No pressure.
+
+Spent most of the morning in VS Code, head down, headphones on. The flow state is good when I can get it, just the logic, the code, the problem. But little things kept pulling me out. A slack message from James about a dependency, an email about next quarter's planning. And the flight thought. Portugal. Praia da Luz. Imagining the sun, the quiet, the kids splashing in the pool. A complete change of pace from this.
+
+Lunch was a sorry affair – a pre-packed sandwich from Pret. Ate it at my desk, browsing Flickr, looking at some old landscape shots I took in Scotland a few years back. Miss photography. The Golf's boot is full of my gear, hasn't seen proper use in ages. Maybe in Portugal? Need to remember to pack the wide-angle.
+
+Then the call. Mum. Mid-afternoon. She sounds tired. Really tired. It hit me hard. She was talking about her garden, how the roses aren't doing well this year, and her voice just had this underlying weariness. I asked her if everything was okay. "Oh, yes, darling, just a bit of a hectic week with the new volunteer shift at the hospice, and the boiler's playing up again." The boiler. Of course. And the hospice work, she throws herself into it, but she's not getting any younger. I tried to suggest I could come down next weekend, or maybe Luke or Hannah could pop over from Edinburgh or Manchester, but she brushed it off. "No, no, don't worry, I'm fine. Just one of those days."
+
+But she wasn't fine. I know her. Ever since Dad passed in 2021, she's been so resilient, almost too much so. She just keeps going. And I worry. A lot. I remember Dad always being the one who'd fix the boiler, deal with the house stuff. Now it's all on her. I feel so far away in London. She's still in Bristol, in that house that holds so many memories. I should call Hannah, see if she's heard anything. Or Luke. Just to compare notes. She never tells us the full story. Always tries to protect us. It’s infuriating and heartbreaking all at once.
+
+The rest of the afternoon at work was a blur. My focus was shot. Pushed through the last few tests, committed my code. Made a mental note to check boiler repair services in Bristol from my phone on the commute home.
+
+Commute back was just as crowded. My asthma felt a bit scratchy today, probably the pollen count still high for October, or maybe just the general London grimy air. Took a deeper breath. Portugal. Fresh air.
+
+Picked up Max first, then Lily. Lily had a drawing for me, a picture of our family, with a huge sun and "We are going to Portugal!" scrawled across the top. My heart gave a little lurch. Guilt. Still haven't booked. "Soon, sweetheart, very soon." She smiled, completely oblivious to my internal struggle with airline websites.
+
+Dinner was shepherd's pie, one of Claire's specialties. Always tastes amazing. Kids wolfed it down. Lily told us all about her friend Maya's new hamster. Max just made train noises with his fork. Normal family stuff. It's moments like these, the mundane, the routine, that ground me. Claire looked tired too, I could see it. "Long day?" I asked. "You have no idea, Ethan. Mrs. P. was off, so I had to cover Year 4 for an hour. Chaos." We talked about our days, the usual back-and-forth. I mentioned Mum's call, the tiredness in her voice. Claire's eyebrows furrowed. "Oh, no. Do you want me to call her tomorrow? Sometimes she's more open with me." Good idea. Claire has a way of getting things out of people.
+
+After dinner, it was homework for Lily – some maths problems, then story time. Max demanded "The Gruffalo" for the thousandth time. He fell asleep in my arms, heavy and warm. Carried him to his bed. Lily got her goodnight hug and story from Claire.
+
+Finally, some quiet. Claire and I sat on the sofa for a bit, scrolling through our phones. I pulled up Google Flights again. Dates... Prices... It's going to be around £600-700 for the four of us, even with a budget airline. And then accommodation. Mortgage payment just went out on Friday, another grand gone to Barclays. It's a lot. We need this holiday though. We all do. Lily and Max have been talking about it for weeks.
+
+I went into my study, switched on the light over the fish tank. The dwarf gouramis were chasing each other gently, the neon tetras schooling tightly. It's a little ecosystem, perfectly balanced. Watching them swim, so peaceful, always calms me down. There's a beauty in the simplicity of it. Just life. The water parameters are good, no algae issues. My little escape.
+
+Stared at the tank for a while. Then went back to the holiday flights. Ryanair or EasyJet? The times are so awkward sometimes. Lily and Max aren't great with early morning flights. Maybe Heathrow or Gatwick? Stansted is always a pain to get to. Decisions, decisions.
+
+*   Portugal flights:
+    *   EasyJet (Gatwick) - £680, decent times.
+    *   Ryanair (Stansted) - £590, but 6 AM departure, no thanks.
+    *   British Airways (Heathrow) - £950+, ha, no.
+    *   *Need to decide by tomorrow, before prices jump again.*
+*   Mum's boiler:
+    *   Text Hannah tomorrow.
+    *   Claire to call Mum.
+    *   Look up Bristol boiler repair - maybe a local firm.
+*   Car: Still thinking about an EV. Golf's fine, but with ULEZ expansion, and rising fuel...
+    *   Research charging points near home/work.
+    *   Look at second-hand Polestar/Tesla Model 3?
+*   Back pain exercises – DO THEM.
+*   Asthma inhaler – check expiry.
+
+My head's buzzing. So many plates spinning. Work, kids, money, family worries, the future. Sometimes I just want to pause everything. But then I look at Claire, asleep beside me now, listen to the quiet hum of the fridge, imagine Lily and Max sleeping soundly in their beds, and I know it's all worth it. The pressure is just… life. And Portugal is waiting. Just need to click 'book'. Tomorrow. For sure.
+
+Right. Bed. Tomorrow's another day.

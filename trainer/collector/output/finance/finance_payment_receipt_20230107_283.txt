@@ -1,0 +1,114 @@
+**AquaWorld**
+**Sales Receipt & Order Confirmation**
+
+**Date:** 07 January 2025
+
+**Order Number:** AW2025-01-07-EM001
+**Customer ID:** EM-789-2023
+
+**Customer Details:**
+Ethan Marsh
+Flat 3, 17 Elmwood Close
+North London, NW11 6PQ
+United Kingdom
+**Email:** ethan.marsh@fintechco.co.uk
+**Phone:** 07700 900XXX
+
+**Vendor Details:**
+AquaWorld
+Unit 5, The Aquarium Centre
+Riverside Industrial Park
+Reading, RG1 8AB
+United Kingdom
+**Phone:** 0118 970 XXXX
+**Email:** sales@aquaworld.co.uk
+**Website:** www.aquaworld.co.uk
+
+**Purchase Summary:**
+
+| Item No. | Description                                         | Quantity | Unit Price (GBP) | Total Price (GBP) |
+| :------- | :-------------------------------------------------- | :------- | :--------------- | :---------------- |
+| 1        | Fluval 307 Canister Filter (200-400L Aquariums)     | 1        | 189.00           | 189.00            |
+| 2        | Seachem Flourish Excel Bioavailable Carbon (500ml)  | 1        | 12.99            | 12.99             |
+| 3        | API Freshwater Master Test Kit                      | 1        | 28.50            | 28.50             |
+| 4        | eSHa 2000 - General Tonic for Ornamental Fish (20ml)| 1        | 7.49             | 7.49              |
+| 5        | Dennerle CO2 Bubble Counter                           | 1        | 14.95            | 14.95             |
+| 6        | Aquarium Plant Tongs (Long)                         | 1        | 9.99             | 9.99              |
+| 7        | Replacement Filter Media Kit for Fluval 307 (Foam, Carbon, BioMax)| 1 | 24.50            | 24.50             |
+| 8        | Tropical Fish Flakes (Large Tub, 500g)              | 1        | 15.99            | 15.99             |
+
+**Subtotal:** £307.41
+**Shipping & Handling (Standard UK Delivery):** £6.95
+**VAT (20%):** £62.87
+**Total Amount Paid:** **£377.23**
+
+**Payment Information:**
+**Payment Method:** Visa Debit
+**Card Holder:** Ethan Marsh
+**Card Number:** **** **** **** 1234
+**Transaction ID:** AW-VISA-20250107-123456789
+**Payment Date:** 07 January 2025
+
+**Delivery Information:**
+**Shipping Address:**
+Ethan Marsh
+Flat 3, 17 Elmwood Close
+North London, NW11 6PQ
+United Kingdom
+**Estimated Delivery Date:** 10 January 2025 (Confirmed via email to ethan.marsh@fintechco.co.uk)
+**Shipping Carrier:** Royal Mail Tracked 48
+
+**Notes from AquaWorld:**
+Dear Ethan,
+
+Thank you for your recent order with AquaWorld. We understand the challenges of maintaining a healthy aquatic environment, especially with persistent issues like green algae and fluctuating water parameters. The Fluval 307 canister filter you've chosen is an excellent upgrade for your 200-litre tank and should significantly improve filtration efficiency and water clarity.
+
+We've also included the eSHa 2000, which is a broad-spectrum treatment that can be very effective against common fish ailments, including suspected Columnaris, which you mentioned in your previous query. Remember to follow the dosage instructions carefully.
+
+Regarding your CO2 system, an inconsistent bubble counter often indicates a leak or a blockage. The new Dennerle bubble counter should provide a clearer visual of the flow rate. If issues persist, please check all connections and tubing. We also recommend testing your CO2 diffuser for blockages.
+
+We hope these items help you get your tank back to pristine condition before Claire's mum, Diane, visits for Easter! We've heard Whiskers, your cat, has taken a keen interest in the tank lid – perhaps a deterrent is in order!
+
+Your order has been packed with care by Mark and is now awaiting dispatch. A separate email with tracking information will be sent shortly.
+
+Should you have any further questions or require assistance with installation, please do not hesitate to contact our customer support team at 0118 970 XXXX or sales@aquaworld.co.uk.
+
+Happy fish keeping!
+
+Sincerely,
+The AquaWorld Team
+
+---
+
+**Page 2 of 2**
+
+**Terms and Conditions of Sale (Summary):**
+
+1.  **Returns Policy:** Items can be returned within 30 days of purchase, provided they are unused, in original packaging, and accompanied by this receipt. Live animals and opened medications are non-returnable.
+2.  **Warranty:** All electrical items, including the Fluval 307 filter, come with a manufacturer's warranty. Please retain your receipt as proof of purchase for any warranty claims.
+3.  **Product Information:** AquaWorld strives for accuracy in product descriptions. However, specifications may change without prior notice.
+4.  **Limitation of Liability:** AquaWorld is not responsible for any damage or loss resulting from the improper use or installation of products. Always read and follow manufacturer instructions.
+5.  **Data Protection:** Your personal data is handled in accordance with our Privacy Policy, available on our website. It is used solely for order processing and customer service.
+
+**Customer Support:**
+For order inquiries, technical assistance, or product information, please contact AquaWorld:
+**Phone:** 0118 970 XXXX
+**Email:** sales@aquaworld.co.uk
+**Operating Hours:** Monday - Friday, 9:00 AM - 5:30 PM GMT
+
+**Managing Your Aquarium:**
+Maintaining a healthy tropical fish tank, especially a 200-litre setup, requires consistent monitoring. Given your recent challenges with green algae (since December 2024), high phosphate levels (1.5ppm on 23 February 2025), and the unfortunate loss of two neon tetras and a guppy in January (suspected Columnaris), a comprehensive approach is key.
+
+*   **Filtration:** The Fluval 307 is a robust filter, but ensure you clean the filter media regularly (every 2-4 weeks, depending on bioload) and replace mechanical media (like foam) as needed. Biological media (BioMax) should only be rinsed gently in old tank water to preserve beneficial bacteria.
+*   **Water Changes:** Continue with your 30% water changes twice weekly, especially while battling algae. This helps reduce nitrates (currently 25ppm) and phosphates, which fuel algae growth.
+*   **Lighting:** Reducing light to 6 hours is a good start. Consider a siesta period (e.g., 4 hours on, 2 hours off, 2 hours on) to disrupt algae's photosynthesis cycle.
+*   **Nutrient Control:** The Seachem Flourish Excel provides carbon, but addressing the root cause of high phosphates is crucial. Ensure you're not overfeeding, and consider checking your tap water for phosphates if the problem persists. Removing decaying plant matter and uneaten food promptly is also important.
+*   **CO2 System:** An inconsistent Dennerle CO2 system (irregular bubble counter flow) can impact plant health and contribute to algae. After installing the new bubble counter, carefully check all tubing, connections, and the regulator for leaks. A consistent CO2 supply is vital for healthy plant growth, which in turn competes with algae for nutrients.
+*   **Fish Health:** You treated with eSHa 2000 in January for the suspected Columnaris. Keep a close eye on your current stock of 8 neon tetras, 5 guppies, 4 corydoras, 2 bristlenose plecos, and 6 cherry shrimp for any signs of stress or disease. Good water quality is the best preventative measure.
+
+We hope this information assists you in restoring your tank to its former glory!
+
+**Thank you for your business!**
+**AquaWorld**
+
+***This is a computer-generated receipt. No signature is required.***

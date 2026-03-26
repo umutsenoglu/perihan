@@ -1,0 +1,54 @@
+**BARCLAYS**
+**Your Credit Card Statement**
+
+**Statement Date:** 10 July 2025
+**Account Holder:** Mr Ethan Marsh
+**Address:** 42 Oakwood Drive, Highgate, London N6 5AB
+
+---
+
+**Account Summary**
+
+**Account Number:** **** **** **** 8765
+**Card Number:** **** **** **** 1234
+**Credit Limit:** £8,500.00
+**Available Credit:** £6,712.35
+
+**Previous Balance (as of 10 June 2025):** £1,945.80
+**Payments Received:** -£1,750.00 (Thank you for your payment on 20 June 2025)
+**New Purchases & Other Debits:** £1,787.65
+**Cash Advances:** £0.00
+**Interest Charged:** £15.90
+**New Balance:** **£2,000.35**
+
+**Minimum Payment Due:** **£60.00**
+**Payment Due Date:** **04 August 2025**
+
+---
+
+**Transactions and Activity (11 June 2025 - 10 July 2025)**
+
+| Date       | Description                                        | Reference                  | Amount (GBP) |
+| :--------- | :------------------------------------------------- | :------------------------- | :----------- |
+| 12 Jun     | TESCO STORES, HIGHGATE                             | TRN-001234567890           | 87.45        |
+| 14 Jun     | SHELL SERVICE STN, ARCHWAY                         | TRN-001234567891           | 62.30        |
+| 15 Jun     | AQUAWORLD AQUATICS, ENFIELD                        | TRN-001234567892           | 48.99        |
+| 18 Jun     | AMAZON MKTPLACE UK, LUXEMBOURG                     | TRN-001234567893           | 115.60       |
+| 20 Jun     | THE FAT BADGER, HIGHGATE                           | TRN-001234567894           | 98.50        |
+| 22 Jun     | SAINSBURY'S LOCAL, CROUCH END                      | TRN-001234567895           | 22.10        |
+| 25 Jun     | QPA PRIMARY SCHOOL, LONDON                         | TRN-001234567896           | 15.00        |
+| 28 Jun     | AMAZON MKTPLACE UK, LUXEMBOURG                     | TRN-001234567897           | 175.99       |
+| 01 Jul     | DELIVEROO, LONDON                                  | TRN-001234567898           | 45.75        |
+| 03 Jul     | CYCLE REPUBLIC, ISLINGTON                          | TRN-001234567899           | 79.99        |
+| 05 Jul     | WATERSTONES, HAMPSTEAD                             | TRN-001234567900           | 18.99        |
+| 08 Jul     | BP CONNECT, MUSWELL HILL                           | TRN-001234567901           | 68.20        |
+| 09 Jul     | AMAZON MKTPLACE UK, LUXEMBOURG                     | TRN-001234567902
+| Amount (GBP) |
+| :----------- |
+| 199.99       |
+| 09 Jul     | BOOTS, HIGHGATE                                    | TRN-001234567903           | 12.50        |
+| 09 Jul     | GAIA RESTAURANT, CROUCH END
+| Date       | Description                                        | Reference                  | Amount (GBP) |
+| :--------- | :------------------------------------------------- | :------------------------- | :----------- |
+| 12 Jun     | TESCO STORES, HIGHGATE                             | TRN-001234567890           | 87.45        |
+| 14 Jun

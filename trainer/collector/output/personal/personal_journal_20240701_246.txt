@@ -1,0 +1,166 @@
+**Date:** 2024-07-01
+
+**Subject:** Mum's flights & the usual circus
+
+God, it’s July already. Where did the first half of the year go? Feels like yesterday it was New Year’s, and here we are, half-term done, summer holidays looming. Claire’s already counting down the days until she doesn’t have to deal with Mrs. Henderson’s class for six weeks. Lucky her, I'll be stuck in sprint planning hell, trying to wrestle the latest microservice into submission.
+
+The quiet moments are getting rarer. Just sat here with a cuppa, Max finally asleep (thank god for nap time, even if it’s only an hour on a good day), Lily engrossed in some Roblox world-building, and Claire out for her spin class. This is my 'sacred time', usually for reviewing PRs or trying to wrap my head around this new API integration James is championing at work, but today my brain keeps going back to Mum.
+
+It's been a few days since her last call, which is a worry in itself – usually it’s daily. But the *silence* isn't a good sign, it just means she’s probably stewing over something, or worse, cooking up another logistical nightmare for me. And today, for some reason, my mind keeps replaying the whole April flight booking debacle. It wasn't even that long ago, feels like last week, but it’s been a few months now, and still, the sheer mental gymnastics involved… it still makes me tired just thinking about it.
+
+Her health, bless her, it's a slow slide. She's getting more confused, more forgetful, and certainly more reliant on me for things that used to be second nature. It’s hard, seeing your mum, who was always so sharp and independent, starting to struggle with the simplest things. Like booking a flight. The calls are more frequent, the questions more repetitive, and the planning for any visit to Bristol feels like an exercise in advanced logistics.
+
+I remember thinking at the time, back in March, that I should just write it all down. Like a process document, or a cautionary tale. Maybe then I could just point to it next time. 'See Mum, this is why we can't do it that way.' Fat chance. But here I am, thinking about it again, because I know it’s coming. She'll want to visit Hannah in Manchester next, or maybe us for Christmas. And it'll be exactly the same song and dance. So, let’s get this out, before I forget the finer, more ridiculous details. It feels almost therapeutic to just dump it all here.
+
+***
+
+**Flashback - March 2025. The Great Edinburgh Flight Quest.**
+
+It all started, I think, on **Sunday, March 2nd, 2025**. Sunday afternoon. I was in the shed, finally getting around to servicing the filters on the tropical tank – trying to get the nitrates down a bit, they'd been a bit high lately, getting a bit of algae bloom – when the phone rang. It was Mum. My hands were wet, smelling faintly of pond water and fish food, but I grabbed it.
+
+"Ethan, darling? Are you busy?"
+"Hi Mum. Just, uh, wrestling with some filter media. What's up?"
+"Oh, nothing important, just wondering if you could do me a favour. You know Luke's birthday is coming up in April?"
+"Yeah, April 18th. We sent his card last week, actually. Lily made a fantastic glitter explosion for it."
+"Oh, good. Yes. Well, I thought it would be nice to surprise him. Go up there, see him."
+"That's a lovely idea, Mum. Are you feeling up to it?" Her health has been a real concern, especially after that nasty chest infection in January. She’d been sounding a bit breathless on calls.
+"Oh, I'm fine, darling. Just a bit tired. But Luke would love it. And Hannah said she'd pick me up from Edinburgh airport, she's ever so good, your sister."
+
+Okay, so far, so good. A simple request. Book a flight from Bristol to Edinburgh. I’ve done it before. What could go wrong? I should have known better.
+
+"Right, so what dates are you thinking, Mum?"
+"Well, I thought... Luke said... he said the 18th is his actual birthday, so maybe go up a couple of days before? So I could be there on the 18th. So the 16th?"
+"Okay, 16th April, flying out."
+"And then come back... maybe on the 20th? That would give us a good few days. What do you think?"
+"Sounds reasonable, Mum. So, **16th-20th April**."
+"Perfect, darling. You're a lifesaver. You know I just can't make head nor tail of those computer things. All the different prices and dates, it's too much for my old brain. It just confuses me."
+"No problem, Mum. I'll have a look tonight after the kids are in bed."
+
+Famous last words.
+
+I mentioned it to Claire later that evening while we were batch-cooking some bolognese for the week. Lily was 'helping' by stirring the sauce with a tiny spoon, making a glorious mess. "Mum wants flights to Edinburgh for Luke's birthday. 16th-20th April."
+Claire just gave me 'the look'. That knowing, slightly weary look she reserves for anything related to my mother's logistical demands. "Oh, honey. Remember last time? The one where she insisted on a window seat but then got claustrophobic halfway to Majorca?"
+"Different airline this time, different destination," I mumbled, trying to be optimistic. "Bristol to Edinburgh, easy enough. Direct flights too."
+
+Monday, **March 3rd**. Work was a nightmare. A major production bug with the payment gateway, apparently introduced by a last-minute change James pushed without full integration testing. Priya and Richard were pulling their hair out, constantly pinging me on Slack. I spent most of the day in war room calls, debugging logs, trying to push a hotfix, feeling that familiar desk-induced lower back pain creeping in. Got home knackered. The flight booking was the last thing on my mind. Just wanted to collapse on the sofa with Max watching 'Bluey' and forget about everything.
+
+Tuesday, **March 4th**. Managed to squeeze in half an hour after Max's bedtime stories (he's really into the Gruffalo at the moment, demands all the voices – the deep voice for Gruffalo, the squeaky one for mouse, the whole lot) and before Lily asked me to 'help' her finish her Year 3 maths homework (which usually means doing it for her, Mrs. Henderson is a proper stickler for presentation and showing working out).
+Fired up the laptop, navigated to easyJet and Ryanair. Quick search for Bristol (BRS) to Edinburgh (EDI), 16th-20th April.
+easyJet came up with a respectable **£67 each way**. Not bad for a couple of months out.
+Then Ryanair. Cheaper, as expected, but... "via Stansted". My heart sank already. I knew this was going to be an issue. Ryanair was showing **£52** per leg, but BRS-STN-EDI. A transit flight with a layover near London.
+
+I screenshotted both options, along with the details, and sent them to Mum via WhatsApp. Figured it was easier than trying to explain it all over the phone. I meticulously labelled them: "Option 1: EasyJet, Direct, £134 total" and "Option 2: Ryanair, via Stansted, £104 total". Thought I was being clever.
+
+The next call came on **March 5th**. Wednesday. I was just grabbing a quick coffee between stand-up and a design review for the new compliance module – another headache, making sure we were GDPR compliant on every micro-interaction. My phone buzzed. It was Mum.
+"Ethan, darling? Got your message."
+"Hi Mum. Did you see the flight options?"
+"Yes, I did. The Ryanair one, that's the cheaper one, isn't it?"
+"It is, Mum, but it's got a stopover at Stansted. That means changing planes, waiting around, it'll be a much longer journey. You'd fly Bristol to Stansted, then Stansted to Edinburgh."
+"Oh, I'm not going through London, darling. No, absolutely not. All that hustle and bustle. All those people. I couldn't possibly manage. My back, you know. And all the walking, getting from one terminal to another. No, not London. It's too much."
+"Okay, Mum, understood. So that leaves easyJet, direct flight, £67 each way. Total £134."
+"Hmm. Is that the best you can do? Are you sure you've looked everywhere?"
+"Yes, Mum, for direct flights on those dates, that's what's coming up. If we tried different dates, it might be cheaper, but you wanted 16th-20th."
+"Oh! But Luke rang. He said... he said he actually finishes work a bit earlier on the Tuesday. And he said 'come earlier, Mum!' So maybe the **15th**?"
+"Okay, so 15th April flying out. And back?"
+"Well, if I'm there earlier, I might as well stay a bit longer, don't you think? So maybe... the **21st**? That'd give me a full week almost! What about that?"
+"Right. So now it's **15th-21st April**."
+"Yes, darling. That sounds perfect. You're so good at this, Ethan."
+
+I sighed internally. "Okay, Mum. I'll have another look tonight."
+"Oh, and did I tell you what I cooked for dinner last night? Lovely lamb stew, George's favourite. You always loved your father's lamb stew. And that awful dog next door, he was barking again all afternoon. Honestly, I don't know what Mrs. Henderson does with him, he's such a nuisance."
+I politely pointed out Mrs. Henderson was Lily's Year 3 teacher, not her neighbour. She laughed it off. "Oh, was it? Well, you know what I mean. The neighbour. Mrs. Higgins, that's her name. Anyway, must go, darling. Bye!"
+
+I updated Claire later. "She's changed her mind. Now it's 15th-21st." Claire just rolled her eyes, smiling. "Standard operating procedure for Janet Airways. You should just book the easyJet one she said no to, it'll probably be fine."
+
+Thursday, **March 6th**. Another evening, another flight search. Changed the dates to 15th-21st. The easyJet prices had gone up slightly for the 15th, naturally. Now it was £75 one way for the outbound. And the return on the 21st was also higher. Total closer to £160. Supply and demand. Basic economics that Mum simply refused to grasp.
+I sent another set of screenshots, with the new prices. I started a mental log, or rather, a mental countdown to my inevitable breakdown:
+*   Initial: 16-20 April, easyJet £134, Ryanair via STN £104 (rejected)
+*   New dates: 15-21 April, easyJet ~£160 (potential, but more expensive)
+
+Friday, **March 7th**. Had to go into the office for an all-day planning session for the next quarter. Took the bike, felt good getting some miles in despite the chill and the incessant drizzle. My 2019 VW Golf was staying in the driveway – still considering switching to electric, but the cost and faff of charger installation put me off. Lower back was protesting a bit by the time I sat down though, even with the expensive ergonomic chair. Richard kept droning on about 'synergistic efficiencies' and 'leveraging bandwidth' for the new fintech product we were developing. I mostly just nodded and tried to focus on not spilling my coffee, while simultaneously trying to remember what Mum's latest flight dates were.
+Mum called me on the way home, just as I was locking up my bike in the shed.
+"Ethan? I got your pictures. The prices are going up, aren't they?"
+"Yeah, Mum. A bit. The closer we get to the date, the more they usually go up, especially for popular times around school holidays or bank holidays."
+"Oh, dear. Well, I've been thinking. And I remembered... I have that doctor's appointment on **Monday 21st**."
+"The 21st is when you're supposed to fly back, Mum."
+"Oh! Is it? Oh, dear. No, I can't miss that. It's for my blood pressure, you know. Doctor Patel, he's very good, but you can't be late. So, I'll have to come back earlier. What about the **19th**? That's a Saturday, isn't it?"
+"So, you'd fly out on the 15th, and back on the 19th?"
+"No, no, darling. I think the 16th was better anyway. Gives Luke a bit of time before I arrive. So, **16th-19th April**."
+I pinched the bridge of my nose. Took a deep breath. "Right, Mum. 16th to 19th. Got it."
+"Yes. And do you think you could find me a cheaper one? The easyJet one is getting a bit expensive."
+"Mum, you just rejected the cheaper Ryanair one because it went via Stansted. It was £52."
+"Oh, did I? Well, the Ryanair one *looks* cheaper though. It said £52. Can you just check that one again?"
+I heard Claire snort with laughter from the kitchen, probably overhearing me. She'd clearly been listening in. I gave her a death stare over the top of the phone.
+"Okay, Mum, I'll check *all* the options for **16th-19th April**."
+"Lovely, darling. And how's Lily getting on with her swimming? Did she pass her next stage? And Max, is he still enjoying nursery? Does he tell you what he does there?"
+"Not yet, Mum, she's still practicing her breaststroke. And Max mostly just says 'cars' or 'trucks' when I ask."
+
+Saturday, **March 8th**. Kids' swimming lessons in the morning. Lily was making good progress, Max just mostly splashed and tried to eat the armbands. Then a quick trip to the garden centre for some new substrate for the tank and some spring bulbs for Claire's planters. I needed to get some new photo paper too for my printer; had a few good shots from a recent cycling trip to the Peaks I wanted to print.
+Finally, late afternoon, I sat down again. My shoulders were tight.
+Bristol to Edinburgh, 16th-19th April.
+easyJet: Direct, **£67 each way**. Same as the first time, somehow. Total **£134**.
+Ryanair: Still the same via Stansted, still cheaper at £52. But she'd definitively said no to it.
+I screenshotted it again. I specifically highlighted "Direct Flight" on the easyJet option, added a big red circle around it. I mentally prepared for the next call.
+Then the WhatsApp pinged. It was Mum. A blurry photo of her latest rose in the garden. "Isn't she lovely? What do you think, darling? You always liked my roses." No mention of flights. I just sent back a thumbs up emoji and a brief, non-committal "Looks lovely, Mum."
+
+Sunday, **March 9th**. Another call from Mum. Not about flights, this time about the weather. "It's ever so chilly here in Bristol, darling. Are you wearing enough layers? Don't want you catching a cold in London." I reassured her I was practically hermetically sealed and already battling seasonal allergies. She also wanted to know if I'd spoken to Hannah or Luke recently. "Hannah said she'd pick me up, she's ever so reliable." I confirmed that yes, Hannah had indeed said that. For the fifth time.
+
+Monday, **March 10th**. Work again. Priya was asking me to review some code for an API integration, which was fine, but I kept getting distracted by Mum's flight situation. I had promised I'd book them this week. It was getting silly. The prices wouldn't stay fixed for much longer, and I didn't want to explain another price hike. My mild asthma was acting up a bit, just a tightness in my chest, probably from stress more than anything.
+I decided to just do it. Book the easyJet flights. She'd clearly said no to Stansted multiple times, even if she occasionally forgot. I wasn't going to subject her to that journey.
+After Max was asleep, and Lily was doing her reading (she's really flying through the Harry Potter series, makes me proud, though sometimes I worry about her staying up too late with a flashlight under the duvet), I got on the laptop.
+**easyJet, Bristol to Edinburgh, 16th April to 19th April.**
+**£67 outbound, £67 inbound. Total £134.**
+Clicked through, paid with my Barclays credit card.
+**Booking reference: EZY-8847291.**
+Done. Finally. A huge weight off my shoulders. I sent Mum a message: "Flights booked! EasyJet, direct BRS-EDI. Out 16th April, back 19th April. Total £134. Ref: EZY-8847291." I copied Hannah and Luke in for good measure, just so they knew.
+
+Tuesday, **March 11th**. I woke up feeling oddly light. No flight-booking dread hanging over me. Claire noticed. "You look less stressed. Did you finally sort Janet's flights?"
+"Yep. Done. EasyJet, 16th-19th. No Stansted detours, no more changing her mind. I just pulled the trigger."
+She grinned. "Good man. I overheard her talking about Ryanair again. I thought you were going to lose it."
+"Close. Very close. The mental gymnastics were intense."
+
+Then the inevitable call came later that morning. It's never truly 'done' with Mum.
+"Ethan? Thank you for booking, darling. You're a wonder. So, just a quick question. You know how I always bring a little something for Luke? A few bits of homemade jam, maybe a tin of those shortbreads he likes..."
+"Yes, Mum?"
+"Well, I was wondering, can I bring my small suitcase, you know, the one with the wheels? And also my handbag? As hand luggage?"
+I paused. Another deep breath. "Mum, they usually have a limit. One piece of hand luggage, sometimes a small 'personal item' like a handbag if it fits under the seat. Let me check easyJet's policy again."
+"Oh. I thought you just put them in the overhead locker. It's only a small suitcase, not one of those big ones you check in."
+"I know, Mum. But airlines are strict these days. They charge for everything."
+So, I had to go back to the easyJet website, navigate to their baggage policy. Checked it.
+"Okay, Mum. You can bring one cabin bag (max 45 x 36 x 20cm). If you've booked 'upfront' or 'extra legroom' seats, or have a 'Flexi' fare, you can bring a second, larger bag. Otherwise, just one. A handbag would count as your one cabin bag if it's too big, or if you can squash it into your main bag, that's fine."
+"Oh, this is all so complicated. So, my small suitcase... will that be okay?"
+"What are the dimensions of your small suitcase, Mum? Do you know?"
+Silence. "Oh, I don't know, darling. It's just my small one."
+"Right. Well, if it fits within 45 x 36 x 20cm, it's fine. Otherwise, we'll have to pay for checked luggage at the airport, which is usually more expensive, or you'll have to take less."
+"Oh, dear. Well, I'll just have to pack light then. Luke likes my jam, though. And Hannah always asks for a fresh loaf of my sourdough."
+Another deep breath. "And one more thing, darling. You know with these phone tickets... I don't really trust them. What if my phone runs out of battery? Or I drop it? Or I can't find the app? Can you print the boarding passes for me? The proper paper ones?"
+"Yes, Mum. I can print them and send them to you."
+"Oh, you're a lifesaver, darling. So good of you. You always think of everything."
+Did I? I thought, as I clicked on 'Print Boarding Pass' for a flight that was still a month away. I just wanted it all to be over.
+
+Wednesday, **March 12th**. Printed the boarding passes at work – much better printer there than my creaky inkjet at home – and popped them in the post to Bristol. Sent Mum a quick text to say they were on their way.
+Priya asked me if I could help her with a tricky regex expression later that morning. I just stared blankly for a second, my mind still on cabin bag dimensions and Luke's jam, before snapping back to reality. "Yeah, sure, Priya. Just give me five."
+
+The flights themselves, thankfully, went off without a hitch. Hannah picked her up from Edinburgh airport, as promised. Mum had a lovely time, apparently. Luke called to thank me for sorting it. "She had a great birthday, Ethan. And she actually remembered to bring the jam this year, so thank you for that too, mate."
+
+***
+
+**Back to 2024-07-01.**
+
+So, here I am, months later, July 1st, 2024, and the memory of it all still feels fresh enough to make my shoulders tense. The constant back-and-forth, the changing requirements, the specific details that I *had* to get right, only for them to be contradicted moments later. It's not just the booking itself, it's the mental load. The cognitive overhead of keeping track of it all, while also trying to deliver on the latest sprint at work, helping Lily with her fractions (Mrs. Henderson's class is relentless), making sure Max isn't eating Lego, and trying to find time for Claire.
+
+It’s exhausting. And it’s not just flights. It’s her bills, her appointments, helping her understand new forms, talking her through online banking (a whole other saga of forgotten passwords and 'where is the log in button, darling?'). Sometimes I feel like I'm running a small, inefficient travel agency and personal assistant service on top of my actual job as a senior software engineer at a fintech company. My colleagues, James, Priya, Richard, they're all good, but they don't see this side of my life. They just see "Ethan, always reliable, always delivers." If only they knew what was going on in the background.
+
+Claire is good, she's really supportive. She sees it, she deals with her own parents (who are thankfully a bit more independent, for now), so she understands the 'sandwich generation' squeeze. We try to carve out time for ourselves, for date nights, but it's tough. We tried that new Italian place down the road last month, 'La Famiglia', it was actually really good. Better than that overly-hyped sourdough pizza place we went to the month before. But half the time we're just talking about the kids, or my mum, or her Year 3 class, or the mortgage.
+
+Speaking of the mortgage, Barclays sent us a new rate offer. It's up for renewal early next year. Definitely need to look into that properly, maybe talk to a broker. The variable rates are getting a bit scary. And the car... the 2019 VW Golf is doing fine, but I'm still eyeing up an EV. Charger point installation is a faff, but imagine no more petrol station visits. Claire says it’s a pipe dream, but a man can dream. A long cycle ride down the Thames path might clear my head on the weekend, maybe take some photos of the scenery.
+
+My back is playing up a bit again today. All those hours hunched over a keyboard. I really need to get back into a regular stretching routine. And maybe use that standing desk attachment I bought last year. It’s currently acting as a very expensive hat stand. My asthma hasn't been too bad lately, though the tree pollen count is starting to creep up, so the seasonal allergies will be kicking in soon. Eye drops and antihistamines, my summer essentials, already lining up on the bathroom shelf.
+
+I saw a beautiful Black Phantom Tetra at the aquatic shop last weekend. Just one. He was stunning. Couldn't justify it though, the tank is pretty balanced right now, don't want to upset the ecosystem. Maybe for my birthday. Claire would just roll her eyes. "Another fish, Ethan? Where do you even put them all?"
+
+I should probably call Mum tonight. See if she's alright. Just a quick check-in. Maybe she'll send another blurry photo of her garden. Or ask about Lily's latest school project. Or tell me what she had for lunch. And I'll brace myself. Because I know, inevitably, the next flight request is just around the corner. Probably for Christmas, to come down to London. And then the whole dance will start again. The dates, the prices, the 'via Stansted' refusal, the baggage policy queries, the insistence on paper tickets. All of it.
+
+It’s love, isn't it? It has to be. Because sometimes it feels like a full-time job, just loving your parents through their twilight years. A job you didn’t apply for, didn’t get trained for, and definitely don’t get paid for. But wouldn’t trade for the world. Most days.
+
+Right. Max should be stirring soon. Time to put the journal away and get ready for the afternoon sprint: refereeing Lily and Max, trying to figure out what to make for dinner with whatever sad-looking vegetables are left in the fridge, and then another evening of code reviews after the kids are down. It never stops.

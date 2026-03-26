@@ -1,0 +1,39 @@
+**CITY GENERAL HOSPITAL**
+**SPECIALIST REPORT**
+
+**PATIENT INFORMATION:**
+Patient Name: David Brown
+Date of Birth: 1975-11-22
+Medical Record Number: CGBR751122DB
+
+**ENCOUNTER DETAILS:**
+Date of Service: 2024-04-09
+Attending Physician: Dr. Ahmed, Internal Medicine
+Reason for Visit: Routine Annual Physical Examination
+
+**SUBJECTIVE:**
+Mr. Brown presents for his annual physical examination. He reports feeling generally well with no acute complaints. Denies fever, chills, cough, chest pain, dyspnea, abdominal pain, or changes in bowel habits. Reports regular exercise 3-4 times per week and a balanced diet. No recent travel or sick contacts.
+
+**OBJECTIVE:**
+**Vitals:** BP 128/82 mmHg, HR 72 bpm, RR 16 breaths/min, Temp 37.0°C (oral), SpO2 99% on room air.
+**Anthropometrics:** Height 180 cm, Weight 85 kg, BMI 26.2 kg/m².
+**General:** Alert and oriented x3, no acute distress.
+**HEENT:** Normocephalic, atraumatic. Conjunctivae clear, sclerae anicteric. Pupils equal, round, reactive to light and accommodation (PERRLA). Oropharynx clear.
+**Cardiovascular:** Regular rate and rhythm (RRR), S1/S2 audible. No murmurs, rubs, or gallops.
+**Pulmonary:** Lungs clear to auscultation bilaterally, no wheezes, rales, or rhonchi. Good air entry throughout.
+**Abdominal:** Soft, non-tender, non-distended. Normoactive bowel sounds. No hepatosplenomegaly.
+**Musculoskeletal:** Full range of motion in all major joints. No joint effusion or tenderness.
+**Neurological:** Grossly intact.
+
+**ASSESSMENT:**
+48-year-old male presenting for routine annual physical with no acute concerns. Physical examination findings are largely within normal limits. BMI indicates overweight status.
+
+**PLAN:**
+1.  Continue current healthy lifestyle.
+2.  Discuss dietary modifications to achieve optimal weight; consider referral to dietician.
+3.  Routine labs ordered (CBC, CMP, Lipid Panel, TSH, Urinalysis) - results to be reviewed.
+4.  Return for follow-up as needed or for next annual physical.
+
+**_________________________**
+Dr. Ahmed, MD
+Internal Medicine

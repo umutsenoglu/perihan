@@ -1,0 +1,46 @@
+2023-07-20
+
+Another Thursday. Alarm went off at 6:30, as always. Claire was already up, I could hear her in the kitchen getting breakfast started. Max was still snoring, Lily surprisingly quiet for once. Light starting to filter through the curtains, hazy sun over North London. Summer, supposedly. Feels more like a long, drawn-out spring with these grey mornings. Got up, did the usual stretches for my back – damn desk job, really need to find more time for the cycling, or at least a proper physio. Mild asthma’s been flaring up a bit with the pollen count this week too, stupid allergies. Took my inhaler, felt that familiar burn in my lungs.
+
+Downstairs, the usual morning chaos. Max demanded his "cho-pop" cereal, Lily was fretting about her Year 3 reading book – Mrs. Henderson apparently gives extra points for neat handwriting. Claire, bless her, was already packing lunchboxes and making a cuppa for me. "Morning, sleepyhead," she said, her voice a bit tired. Teaching Year 1s all day takes it out of her.
+
+While Lily wrestled with her socks and Max tried to climb the fridge, my mind drifted. Checked my phone for the usual work emails – nothing urgent from James or Priya, good. Then I saw a notification – Ryan had posted something random on Instagram, another one of those cryptic posts about "new beginnings" and "finding clarity." Ugh.
+
+And just like that, it pulled me in, this nagging feeling about Ryan. It’s been… not right, since the divorce really started to hit him. He tries to put on a brave face, but I know him too well. He’s always been proud, almost to a fault. Never likes to admit he needs help. But he *does* need help. And that’s where things get complicated, always have been with him and money. Remember back at Leeds Uni, he’d always be short, borrowing a tenner here, twenty quid there. Usually paid it back, eventually. But it was always a bit of a dance.
+
+Now, with his ex-wife taking him to the cleaners, it’s a whole different league. He's too proud to talk about it properly, just hints at how tough things are. I've offered, vaguely, to help if he ever needed it, but he just brushed me off. Said he’s "got it covered." I don't believe him for a second. That's what worries me, this whole "thinking about falling out with Ryan" thing that's been bubbling under the surface for a while. Not because I want to, but because I can see it coming. He’s pushing everyone away, isolating himself. And if he ever *does* get desperate enough to ask, I just hope he can be honest.
+
+Anyway, got Lily off to QPA Primary, Max dropped off at Little Stars. The usual school run traffic was a nightmare. Our 2019 VW Golf is doing alright, but I keep thinking about upgrading, maybe to an electric. Claire’s keen. The thought of avoiding the ULEZ charge daily in a few years is definitely appealing. Had to make a mental note to look into that again.
+
+Work was… work. Stack of JIRA tickets waiting for me on the fintech platform. Spent most of the morning trying to debug a weird async issue with the payments API. James kept popping over, asking about timelines. Told him I needed more coffee. Priya and Richard were arguing about code review standards, typical. I just put my headphones on and tried to focus. My tropical fish tank at home is less stressful than this sometimes.
+
+Lunch was a quick sarnie at my desk. Found myself staring blankly at the screen, mind still on Ryan. It’s not just the money, it’s the way he’s been. Distant. Snappy. Like he’s trying to hold it all together with sheer force of will, and he's crumbling underneath. He’ll send a text sometimes, just a meme, or a random link. Never a proper conversation. I miss our pub nights at The Flask in Highgate, just talking bollocks like we used to. Before all this. Before the divorce. Before the silence.
+
+Pulled myself together, managed to push out a few commits. Sent a message to Claire about the Portugal holiday. Need to get those flights booked ASAP before prices go through the roof.
+
+**Portugal Holiday Planning:**
+*   Flights: Book! (EasyJet? BA? Need to compare dates/prices tonight)
+*   Accommodation: Villa in Faro area confirmed.
+*   Car hire: Check.
+*   Kids’ passports: Check.
+*   Lily’s summer reading: pack.
+*   Max’s floaties: don’t forget.
+
+Claire messaged back, "Yes! Flights! Can you check Tuesday to Tuesday in August, first two weeks?"
+Right, so that’ll be my evening. Comparing flight prices is always a joy.
+
+Afternoon blurred into more debugging. My lower back started aching around 3 pm, classic. Stood up, walked around a bit. Thought about grabbing my bike for a quick spin after work, but it’s Thursday, meaning Lily has swimming and Max has his parkour class (yes, seriously). No time.
+
+Got home, the usual rush. Dinner, homework help with Lily, trying to convince Max that bath time is actually fun. Claire looked properly exhausted tonight. We talked briefly about her day, Mrs. Henderson apparently has a new assistant in Year 3 who’s "enthusiastic" (read: annoying).
+
+While the kids were settling down, I finally opened my laptop to tackle the Portugal flights. Found a couple of decent options. Sent them to Claire for approval. Then I scrolled mindlessly through Instagram again. And there it was. Ryan. Another post. This time, a photo of what looked like a new, very expensive mountain bike. A Canyon Spectral, if I’m not mistaken. Or something very similar. Definitely not cheap. My gut clenched.
+
+He's "finding clarity," he's "struggling with divorce," but he's got money for *that*? That’s what makes me worried about this whole friendship. The way he projects one thing, but does another. It’s not even about the money itself, it’s the inconsistency, the lack of transparency. If he’s so hard up, where did that come from? A gift? Maybe. But my cynical brain immediately went to "he's spending money he probably doesn't have."
+
+It's that kind of stuff that makes me think, yeah, a falling out with Ryan is almost inevitable. I’ve always been the sensible one, the one who tried to keep him grounded. My dad, George, God rest his soul, always used to say Ryan was a good lad but "a bit of a dreamer with his feet not quite on the ground." Even Mum, Janet, mentions how she worries about him when I speak to her on Sunday calls. Hannah in Manchester, Luke in Edinburgh, they don't see him much, but they know the score.
+
+I don’t want it to happen. He’s my oldest mate outside of family. We’ve known each other since Freshers’ Week at Leeds in 2006. So many memories. But this pattern, it feels like it’s building to something. A breaking point. Claire said to me a few weeks ago, "You can't keep bailing him out, Ethan, you've got your own family to think of." And she’s right. It’s not fair on her, or Lily, or Max. We’ve got a mortgage with Barclays, two kids, future plans. Can't just throw money at Ryan's problems forever.
+
+Just… I hope he’s okay. Really. But if it comes down to it, if he pulls something again… I don’t know. I really don't know if I have the energy for another one of his dramas. This feeling in my stomach, it's not good. Like I'm waiting for the other shoe to drop.
+I guess I’ll just try and focus on Portugal. That’ll be a nice distraction. If I can get these damn flights booked.
+Right. Back to comparing Tuesday-to-Tuesday flights. Wish I could just book and forget.

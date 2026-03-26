@@ -1,0 +1,624 @@
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<board>
+  <name>Summer Holiday Portugal</name>
+  <exportDate>2024-03-06</exportDate>
+  <members>
+    <member>Ethan Marsh</member>
+    <member>Claire Marsh</member>
+    <member>James Patterson</member>
+  </members>
+  <lists>
+    <list>
+      <name>Flights</name>
+      <cards>
+        <card>
+          <title>Research flight options LHR/LGW to FAO</title>
+          <description>Need to look at British Airways, Ryanair, easyJet. Prioritise direct flights. Consider flying from Gatwick as it's often cheaper for these routes. Check different dates around the last two weeks of July.</description>
+          <labels>
+            <label color="blue">Research</label>
+            <label color="yellow">Budget Impact</label>
+          </labels>
+          <dueDate>2024-03-15</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <checklists>
+            <checklist>
+              <name>Airlines to check</name>
+              <items>
+                <item completed="true">British Airways</item>
+                <item completed="true">Ryanair</item>
+                <item completed="true">easyJet</item>
+                <item completed="false">Jet2 (from Stansted maybe?)</item>
+              </items>
+            </checklist>
+            <checklist>
+              <name>Departure Airports</name>
+              <items>
+                <item completed="true">LHR (Heathrow)</item>
+                <item completed="true">LGW (Gatwick)</item>
+                <item completed="false">LTN (Luton)</item>
+                <item completed="false">STN (Stansted)</item>
+              </items>
+            </checklist>
+          </checklists>
+          <comments>
+            <comment>
+              <author>Ethan Marsh</author>
+              <date>2024-03-01</date>
+              <text>Started looking at Skyscanner, prices seem to be creeping up already. Need to decide on dates soon.</text>
+            </comment>
+            <comment>
+              <author>Claire Marsh</author>
+              <date>2024-03-02</date>
+              <text>Can we aim for the last week of July? My school term finishes on the 24th, so after that would be ideal. Max's nursery is flexible.</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Compare flight prices and times</title>
+          <description>Once we have a few options, compare the pros and cons of each. Consider baggage allowance, seat selection, and flight times with kids in mind (avoiding late nights/early mornings).</description>
+          <labels>
+            <label color="yellow">Budget Impact</label>
+            <label color="green">Decision Required</label>
+          </labels>
+          <dueDate>2024-03-20</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <comments>
+            <comment>
+              <author>Ethan Marsh</author>
+              <date>2024-03-03</date>
+              <text>Ryanair is cheapest but baggage is extra. BA is more expensive but includes bags. EasyJet is somewhere in the middle. Will put a spreadsheet together.</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Book flights for family of 4</title>
+          <description>Confirm dates with Claire's school holidays. Make sure to add Lily and Max's details correctly. Remember to get travel insurance at the same time or shortly after.</description>
+          <labels>
+            <label color="red">Urgent</label>
+            <label color="yellow">Budget Impact</label>
+          </labels>
+          <dueDate>2024-03-25</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <checklists>
+            <checklist>
+              <name>Pre-booking checks</name>
+              <items>
+                <item completed="false">Confirm passport expiry dates (everyone)</item>
+                <item completed="false">Verify holiday dates with Claire</item>
+                <item completed="false">Check baggage policy</item>
+              </items>
+            </checklist>
+          </checklists>
+          <comments>
+            <comment>
+              <author>Claire Marsh</author>
+              <date>2024-03-05</date>
+              <text>My dates are confirmed for end of July. Let's aim for 26th July - 9th August. Lily's passport is valid until 2029, Max's until 2030. Mine and yours are good too.</text>
+            </comment>
+            <comment>
+              <author>Ethan Marsh</author>
+              <date>2024-03-05</date>
+              <text>Okay, will try to get them booked this weekend. Prices might go up if we wait much longer.</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Airport parking / transfer options</title>
+          <description>Need to decide if we drive and park at Gatwick, or get a taxi/minicab. M25 can be a nightmare. Ask Steve for his recommendation for airport taxis.</description>
+          <labels>
+            <label color="blue">Logistics</label>
+            <label color="yellow">Budget Impact</label>
+          </labels>
+          <dueDate>2024-04-10</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <comments>
+            <comment>
+              <author>Ethan Marsh</author>
+              <date>2024-03-06</date>
+              <text>Parking for 2 weeks will be expensive. A cab might be less stressful with the kids and luggage. Will text Steve later.</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Book car hire at Faro Airport (FAO)</title>
+          <description>Need a family-friendly car, maybe an estate or small SUV, with two car seats for Lily and Max. Compare prices between major companies (Hertz, Avis, Europcar) and local ones. Consider full insurance excess waiver.</description>
+          <labels>
+            <label color="blue">Logistics</label>
+            <label color="yellow">Budget Impact</label>
+          </labels>
+          <dueDate>2024-04-15</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <checklists>
+            <checklist>
+              <name>Car Hire Requirements</name>
+              <items>
+                <item completed="false">Two child seats (Lily's booster, Max's infant seat)</item>
+                <item completed="false">Adequate boot space for luggage</item>
+                <item completed="false">Automatic transmission (Claire prefers)</item>
+                <item completed="false">Full insurance coverage (excess waiver)</item>
+              </items>
+            </checklist>
+          </checklists>
+          <comments>
+            <comment>
+              <author>Claire Marsh</author>
+              <date>2024-03-06</date>
+              <text>Definitely an automatic. And make sure the car seats are proper ones, not just boosters for Max please!</text>
+            </comment>
+          </comments>
+        </card>
+      </cards>
+    </list>
+    <list>
+      <name>Accommodation</name>
+      <cards>
+        <card>
+          <title>Research villas/apartments in Algarve region</title>
+          <description>Looking for a 3-bedroom villa with a pool, preferably private. Close to a beach and a small town with amenities. Budget around £2k-£3k for two weeks. Areas to consider: Albufeira, Vilamoura, Lagos, Carvoeiro, Tavira. Check Airbnb, Booking.com, James Villas, local agents.</description>
+          <labels>
+            <label color="blue">Research</label>
+            <label color="yellow">Budget Impact</label>
+          </labels>
+          <dueDate>2024-03-18</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+          <checklists>
+            <checklist>
+              <name>Key Features</name>
+              <items>
+                <item completed="true">3 bedrooms minimum</item>
+                <item completed="true">Private pool</item>
+                <item completed="true">Walking distance to beach/amenities (or short drive)</item>
+                <item completed="false">Air conditioning</item>
+                <item completed="false">Dishwasher/Washing Machine</item>
+              </items>
+            </checklist>
+          </checklists>
+          <comments>
+            <comment>
+              <author>Claire Marsh</author>
+              <date>2024-03-01</date>
+              <text>Found a few promising ones in Carvoeiro on Airbnb. One has a great kids' play area too. Will send you the links.</text>
+            </comment>
+            <comment>
+              <author>Ethan Marsh</author>
+              <date>2024-03-02</date>
+              <text>Brilliant, send them over. Let's make sure the pool is safe for Max, maybe with a fence or shallow end.</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Review shortlisted properties with Ethan</title>
+          <description>Go through the top 3-5 options Claire found. Check reviews, photos, and location on Google Maps. Discuss pros and cons, especially for the kids.</description>
+          <labels>
+            <label color="green">Decision Required</label>
+          </labels>
+          <dueDate>2024-03-22</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+          <comments>
+            <comment>
+              <author>Claire Marsh</author>
+              <date>2024-03-04</date>
+              <text>Okay, I've narrowed it down to three. Two in Carvoeiro, one near Lagos. The Lagos one looks a bit more remote but very private. Let's chat tonight.</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Book chosen villa/apartment</title>
+          <description>Confirm availability for our flight dates. Read through terms and conditions, especially cancellation policy. Pay deposit.</description>
+          <labels>
+            <label color="red">Urgent</label>
+            <label color="yellow">Budget Impact</label>
+          </labels>
+          <dueDate>2024-03-27</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <checklists>
+            <checklist>
+              <name>Booking Checklist</name>
+              <items>
+                <item completed="false">Confirm final price and inclusions</item>
+                <item completed="false">Check payment schedule</item>
+                <item completed="false">Read cancellation policy carefully</item>
+                <item completed="false">Ask about high chair/cot availability</item>
+              </items>
+            </checklist>
+          </checklists>
+          <comments>
+            <comment>
+              <author>Ethan Marsh</author>
+              <date>2024-03-06</date>
+              <text>The Carvoeiro villa 'Casa do Sol' looks like the best bet. It has good reviews for families. I'll email the owner to confirm cot/high chair and then book.</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Final payment for accommodation</title>
+          <description>Usually due 6-8 weeks before arrival. Set a reminder in calendar. Check terms of booking for exact date.</description>
+          <labels>
+            <label color="orange">Financial</label>
+          </labels>
+          <dueDate>2024-06-01</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+        </card>
+        <card>
+          <title>Confirm check-in/check-out procedures</title>
+          <description>Get instructions for key collection, local contact details, and any welcome pack info. Ask about internet access.</description>
+          <labels>
+            <label color="blue">Logistics</label>
+          </labels>
+          <dueDate>2024-07-15</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+        </card>
+        <card>
+          <title>Research local supermarkets/shops</title>
+          <description>Find out where the nearest Pingo Doce or Continente is for groceries. Check opening hours. Maybe a local market too.</description>
+          <labels>
+            <label color="blue">Research</label>
+          </labels>
+          <dueDate>2024-07-01</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+        </card>
+      </cards>
+    </list>
+    <list>
+      <name>Activities</name>
+      <cards>
+        <card>
+          <title>Research best family-friendly beaches</title>
+          <description>Look for beaches with calm waters, soft sand, and perhaps some amenities like cafes or toilets. Praia da Marinha, Praia de Benagil (cave tour?), Praia da Rocha. </description>
+          <labels>
+            <label color="blue">Research</label>
+            <label color="pink">Kids Focused</label>
+          </labels>
+          <dueDate>2024-05-01</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+          <comments>
+            <comment>
+              <author>Claire Marsh</author>
+              <date>2024-03-06</date>
+              <text>My colleague Sarah said Praia da Luz is great for families, very shallow and calm. Will add it to the list.</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Identify water park options</title>
+          <description>Zoomarine, Slide &amp; Splash, Aqualand. Which one is best for a 4 and 7-year-old? Need to check height restrictions and overall value.</description>
+          <labels>
+            <label color="pink">Kids Focused</label>
+            <label color="yellow">Budget Impact</label>
+          </labels>
+          <dueDate>2024-05-15</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <comments>
+            <comment>
+              <author>Ethan Marsh</author>
+              <date>2024-03-06</date>
+              <text>Zoomarine looks good as it has animals too, not just slides. Max might be a bit small for some of the bigger slides at Slide &amp; Splash. Will check websites.</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Boat trip / cave tour (Benagil Cave)</title>
+          <description>Lily would love a boat trip. Look into tours to Benagil Cave. Need to make sure it's safe and suitable for Max too. Maybe a shorter trip.</description>
+          <labels>
+            <label color="pink">Kids Focused</label>
+          </labels>
+          <dueDate>2024-06-01</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+        </card>
+        <card>
+          <title>List potential day trips/towns to visit</title>
+          <description>Silves Castle, Lagos old town, Faro. Maybe a smaller, quieter town for a change of pace. Tavira looks nice.</description>
+          <labels>
+            <label color="blue">Research</label>
+          </labels>
+          <dueDate>2024-06-15</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+        </card>
+        <card>
+          <title>Restaurant recommendations (kid-friendly)</title>
+          <description>Ask for recommendations from friends who've been to the Algarve. Look for places with good seafood but also options for the kids. Maybe a nice ice cream shop!</description>
+          <labels>
+            <label color="purple">Food</label>
+          </labels>
+          <dueDate>2024-07-01</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+          <comments>
+            <comment>
+              <author>Ethan Marsh</author>
+              <date>2024-03-06</date>
+              <text>Richard mentioned a great Piri Piri chicken place in Guia, but it might be a bit far from Carvoeiro. Worth noting though!</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Book tickets for main attractions (if needed)</title>
+          <description>For water parks or specific tours, booking online in advance might save money or guarantee entry.</description>
+          <labels>
+            <label color="orange">Financial</label>
+          </labels>
+          <dueDate>2024-07-10</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+        </card>
+        <card>
+          <title>Plan rough daily itinerary ideas</title>
+          <description>Don't want to over-schedule, but good to have a few ideas each day. Mix of beach, pool, day trips. Leave plenty of downtime for the kids.</description>
+          <labels>
+            <label color="purple">Planning</label>
+          </labels>
+          <dueDate>2024-07-20</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+        </card>
+      </cards>
+    </list>
+    <list>
+      <name>Packing</name>
+      <cards>
+        <card>
+          <title>General packing list for family</title>
+          <description>Start a master list. Include clothes, toiletries, medicines, documents. Remember adapters!</description>
+          <labels>
+            <label color="green">Checklist</label>
+          </labels>
+          <dueDate>2024-07-01</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+          <checklists>
+            <checklist>
+              <name>Essentials</name>
+              <items>
+                <item completed="false">Passports</item>
+                <item completed="false">EHTIC/GHIC cards</item>
+                <item completed="false">Travel insurance details</item>
+                <item completed="false">Flight/Accommodation printouts</item>
+                <item completed="false">Driving licenses</item>
+                <item completed="false">Credit/Debit cards</item>
+                <item completed="false">Euros (small amount of cash)</item>
+                <item completed="false">Phone chargers</item>
+                <item completed="false">European plug adapters</item>
+              </items>
+            </checklist>
+          </checklists>
+        </card>
+        <card>
+          <title>Kids' specific items (Lily &amp; Max)</title>
+          <description>Swimwear, sun hats, rash vests, goggles, armbands/swim aids. Favourite toys, books, comfort items. Small first-aid kit for kids. Snacks for journey.</description>
+          <labels>
+            <label color="pink">Kids Focused</label>
+            <label color="green">Checklist</label>
+          </labels>
+          <dueDate>2024-07-10</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+          <checklists>
+            <checklist>
+              <name>Lily (7)</name>
+              <items>
+                <item completed="false">Swimsuits (x3)</item>
+                <item completed="false">Rash vest</item>
+                <item completed="false">Sun hat</item>
+                <item completed="false">Goggles</item>
+                <item completed="false">Favourite doll</item>
+                <item completed="false">Activity book</item>
+              </items>
+            </checklist>
+            <checklist>
+              <name>Max (4)</name>
+              <items>
+                <item completed="false">Swim shorts (x3)</item>
+                <item completed="false">Rash vest</item>
+                <item completed="false">Sun hat (spare!)</item>
+                <item completed="false">Armbands/swim vest</item>
+                <item completed="false">Dinosaur toy</item>
+                <item completed="false">Colouring book + pencils</item>
+              </items>
+            </checklist>
+          </checklists>
+        </card>
+        <card>
+          <title>Beach/pool gear</title>
+          <description>Beach towels, beach bag, sunscreen (high factor!), after-sun, inflatables, bucket &amp; spade, beach games. UV tent?</description>
+          <labels>
+            <label color="green">Checklist</label>
+          </labels>
+          <dueDate>2024-07-15</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <checklists>
+            <checklist>
+              <name>Beach Gear</name>
+              <items>
+                <item completed="false">Beach towels (x4)</item>
+                <item completed="false">Large beach bag</item>
+                <item completed="false">Sunscreen SPF 50+ (multiple bottles)</item>
+                <item completed="false">After-sun lotion</item>
+                <item completed="false">Bucket &amp; spade set</item>
+                <item completed="false">Small inflatable ball</item>
+                <item completed="false">UV pop-up tent (for Max naps)</item>
+              </items>
+            </checklist>
+          </checklists>
+        </card>
+        <card>
+          <title>First aid kit &amp; medicines</title>
+          <description>Plasters, antiseptic wipes, pain killers (adult/child), antihistamines (for Ethan's allergies), any prescription meds, insect repellent, bite cream. Ethan's asthma inhaler.</description>
+          <labels>
+            <label color="orange">Health</label>
+            <label color="green">Checklist</label>
+          </labels>
+          <dueDate>2024-07-20</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <checklists>
+            <checklist>
+              <name>Medical Supplies</name>
+              <items>
+                <item completed="false">Plasters (various sizes)</item>
+                <item completed="false">Antiseptic wipes</item>
+                <item completed="false">Paracetamol (adult &amp; child liquid)</item>
+                <item completed="false">Ibuprofen (adult &amp; child liquid)</item>
+                <item completed="false">Ethan's antihistamines (Cetirizine)</item>
+                <item completed="false">Ethan's asthma inhaler (Ventolin)</item>
+                <item completed="false">Claire's Hayfever tablets</item>
+                <item completed="false">Insect repellent</item>
+                <item completed="false">Bite/sting cream</item>
+                <item completed="false">Thermometer</item>
+              </items>
+            </checklist>
+          </checklists>
+        </card>
+        <card>
+          <title>Travel entertainment for journey</title>
+          <description>Tablets (pre-loaded with movies/games), headphones, power bank, small activity books, card games. Snacks!</description>
+          <labels>
+            <label color="pink">Kids Focused</label>
+            <label color="green">Checklist</label>
+          </labels>
+          <dueDate>2024-07-22</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+        </card>
+        <card>
+          <title>Camera gear</title>
+          <description>DSLR, spare battery, memory cards, waterproof action cam (for beach/pool). Tripod? Maybe not worth the hassle.</description>
+          <labels>
+            <label color="grey">Ethan's Hobbies</label>
+            <label color="green">Checklist</label>
+          </labels>
+          <dueDate>2024-07-24</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <comments>
+            <comment>
+              <author>Ethan Marsh</author>
+              <date>2024-03-06</date>
+              <text>Don't forget the GoPro! Lily loves taking videos with it in the water. Spare battery is crucial.</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Pack luggage (final check)</title>
+          <description>Weigh bags to avoid excess fees. Distribute heavy items. Make sure essential documents are easily accessible. Do a final walk-through of the house before leaving.</description>
+          <labels>
+            <label color="red">Urgent</label>
+          </labels>
+          <dueDate>2024-07-25</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <assignedTo>Claire Marsh</assignedTo>
+          <checklists>
+            <checklist>
+              <name>Before leaving house</name>
+              <items>
+                <item completed="false">Turn off all lights</item>
+                <item completed="false">Unplug non-essential electronics</item>
+                <item completed="false">Close all windows and lock doors</item>
+                <item completed="false">Set heating to holiday mode</item>
+                <item completed="false">Empty bins</item>
+                <item completed="false">Water houseplants (ask Janet if she can pop over)</item>
+                <item completed="false">Fish tank feeder checked</item>
+              </items>
+            </checklist>
+          </checklists>
+        </card>
+        <card>
+          <title>Confirm pet sitter for tropical fish</title>
+          <description>Ask James Patterson if he's free to pop in every few days to check on the fish, feed them, and make sure the tank is okay. He knows the drill.</description>
+          <labels>
+            <label color="grey">Ethan's Hobbies</label>
+          </labels>
+          <dueDate>2024-07-01</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <comments>
+            <comment>
+              <author>Ethan Marsh</author>
+              <date>2024-03-06</date>
+              <text>Texted James, he said he's usually free in July but will confirm closer to the time. Steve said 3 weeks notice is usually enough for him.</text>
+            </comment>
+          </comments>
+        </card>
+      </cards>
+    </list>
+    <list>
+      <name>Done</name>
+      <cards>
+        <card>
+          <title>Initial discussion about holiday destination</title>
+          <description>Decided on Algarve, Portugal. Good for families, nice beaches, good food, not too long a flight.</description>
+          <labels>
+            <label color="purple">Planning</label>
+          </labels>
+          <dueDate>2024-02-15</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <assignedTo>Claire Marsh</assignedTo>
+          <comments>
+            <comment>
+              <author>Ethan Marsh</author>
+              <date>2024-02-15</date>
+              <text>Claire and I talked it through. Kids loved the idea of a pool and beach. Good choice.</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Set up Trello board</title>
+          <description>Created this board to keep track of all the tasks. Invited Claire and James (for fish-sitting).</description>
+          <labels>
+            <label color="blue">Admin</label>
+          </labels>
+          <dueDate>2024-02-20</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <comments>
+            <comment>
+              <author>Ethan Marsh</author>
+              <date>2024-02-20</date>
+              <text>Done. Hopefully this keeps us organised!</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Check passports validity</title>
+          <description>All passports (Ethan, Claire, Lily, Max) are valid for more than 6 months beyond intended return date. No renewals needed.</description>
+          <labels>
+            <label color="blue">Admin</label>
+          </labels>
+          <dueDate>2024-03-01</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+          <comments>
+            <comment>
+              <author>Claire Marsh</author>
+              <date>2024-03-01</date>
+              <text>Confirmed, all good. No last minute panic this time!</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Discuss potential dates with Claire</title>
+          <description>Agreed on last two weeks of July / first week of August, aligning with Claire's school holidays and Max's nursery availability.</description>
+          <labels>
+            <label color="purple">Planning</label>
+          </labels>
+          <dueDate>2024-03-02</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+          <comments>
+            <comment>
+              <author>Claire Marsh</author>
+              <date>2024-03-02</date>
+              <text>My Headteacher confirmed the term dates. Last day of school is Friday 24th July. So we're good to fly from the 26th onwards.</text>
+            </comment>
+          </comments>
+        </card>
+        <card>
+          <title>Check EHTIC/GHIC card status</title>
+          <description>All family GHIC cards are valid. Ethan's expires Jan 2025, Claire's Nov 2026, Lily's Oct 2027, Max's Sept 2028. No immediate action needed.</description>
+          <labels>
+            <label color="orange">Health</label>
+            <label color="blue">Admin</label>
+          </labels>
+          <dueDate>2024-03-03</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <comments>
+            <comment>
+              <author>Ethan Marsh</author>
+              <date>2024-03-03</date>
+              <text>Checked them online, all active. Will put a reminder for mine for next year though.</text>
+            </comment>
+          </comments>
+        </card>
+      </cards>
+    </list>
+  </lists>
+</board>
+```

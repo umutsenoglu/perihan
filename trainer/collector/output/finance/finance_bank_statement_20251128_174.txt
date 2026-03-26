@@ -1,0 +1,366 @@
+First National Bank
+123 Main Street
+Dublin 2, Ireland
+
+**Annual Statement for Account Holder: John Smith**
+**Account Number: 1234 5678 9012 3456**
+**Statement Period: 2024-11-01 to 2025-10-31**
+**Date Generated: 2025-11-28**
+**Currency: EUR**
+
+---
+
+**Account Summary**
+
+Opening Balance (2024-11-01): EUR 14,235.89
+Total Credits: EUR 78,567.45
+Total Debits: EUR 72,123.90
+Closing Balance (2025-10-31): EUR 20,679.44
+
+---
+
+**Detailed Transaction History**
+
+**November 2024**
+
+2024-11-01 | Debit | Rent Payment - Apt. 4B | REF: RENT1124-JSM | EUR 1,850.00
+2024-11-01 | Credit | Salary - Tech Solutions Ltd. | REF: SALARY1124-TSL | EUR 4,500.00
+2024-11-02 | Debit | SuperMart Grocery Store | REF: GRCSUPER-1102 | EUR 78.34
+2024-11-03 | Debit | Online Subscription - StreamFlix | REF: STRMFLX-MTHLY | EUR 12.99
+2024-11-05 | Debit | Café Mocha - Lunch | REF: CAFE-LUNCH-1105 | EUR 14.50
+2024-11-07 | Debit | Electricity Bill - ESB | REF: ESB-BL-NOV24 | EUR 65.20
+2024-11-08 | Credit | Interest Payment - FN Savings | REF: INT-SAV-NOV24 | EUR 5.12
+2024-11-09 | Debit | Fuel Station - Circle K | REF: FUEL-CK-1109 | EUR 85.00
+2024-11-10 | Debit | Pharmacy - Boots | REF: PHARM-BOOTS-1110 | EUR 23.75
+2024-11-12 | Debit | Restaurant Dinner - The Gilded Spoon | REF: REST-GILD-1112 | EUR 110.50
+2024-11-14 | Credit | Refund - Online Retailer (Returns) | REF: REFUND-OR-1114 | EUR 45.99
+2024-11-15 | Debit | Mobile Phone Bill - Eir | REF: EIR-MOB-NOV24 | EUR 35.00
+2024-11-16 | Debit | Dry Cleaning Services | REF: DRYCLN-SVC-1116 | EUR 18.00
+2024-11-18 | Debit | Gift Purchase - Bookstore | REF: GIFT-BKSTR-1118 | EUR 30.00
+2024-11-20 | Credit | Freelance Income - Web Design | REF: FREELANCE-WD-1120 | EUR 750.00
+2024-11-21 | Debit | Commuter Ticket - Dublin Bus | REF: DBUS-COMM-1121 | EUR 25.00
+2024-11-23 | Debit | Hair Salon - Cut & Style | REF: HAIR-SALON-1123 | EUR 50.00
+2024-11-25 | Debit | Online Shopping - Amazon | REF: AMZN-ORDER-1125 | EUR 120.45
+2024-11-27 | Debit | Charity Donation - Local Shelter | REF: CHARITY-LS-1127 | EUR 50.00
+2024-11-29 | Debit | Cinema Tickets & Snacks | REF: CINEMA-EV-1129 | EUR 32.00
+2024-11-30 | Debit | Bank Service Fee - Monthly | REF: BSF-NOV24 | EUR 5.00
+
+**December 2024**
+
+2024-12-01 | Debit | Rent Payment - Apt. 4B | REF: RENT1224-JSM | EUR 1,850.00
+2024-12-01 | Credit | Salary - Tech Solutions Ltd. | REF: SALARY1224-TSL | EUR 4,500.00
+2024-12-02 | Debit | SuperMart Grocery Store | REF: GRCSUPER-1202 | EUR 92.10
+2024-12-03 | Debit | Online Subscription - Gaming Pass | REF: GAMING-PASS-1203 | EUR 19.99
+2024-12-05 | Debit | Coffee Shop - Morning Brew | REF: COFFEE-MB-1205 | EUR 4.50
+2024-12-07 | Debit | Gas Bill - Bord Gáis | REF: BG-BL-DEC24 | EUR 58.70
+2024-12-08 | Credit | Interest Payment - FN Savings | REF: INT-SAV-DEC24 | EUR 4.98
+2024-12-09 | Debit | Fuel Station - Applegreen | REF: FUEL-APP-1209 | EUR 75.00
+2024-12-10 | Debit | Pharmacy - Boots | REF: PHARM-BOOTS-1210 | EUR 15.20
+2024-12-12 | Debit | Christmas Shopping - Department Store | REF: XMAS-SHOP-1212 | EUR 210.00
+2024-12-14 | Credit | Gift from Family - Bank Transfer | REF: GIFT-FAM-1214 | EUR 100.00
+2024-12-15 | Debit | Internet Bill - Virgin Media | REF: VM-INT-DEC24 | EUR 60.00
+2024-12-16 | Debit | Pet Store - Supplies | REF: PET-STORE-1216 | EUR 40.00
+2024-12-18 | Debit | Restaurant Dinner - Italian Feast | REF: REST-ITAL-1218 | EUR 85.00
+2024-12-20 | Credit | Freelance Income - Content Writing | REF: FREELANCE-CW-1220 | EUR 600.00
+2024-12-21 | Debit | Train Ticket - InterCity | REF: TRAIN-IC-1221 | EUR 30.00
+2024-12-23 | Debit | Christmas Groceries - SuperValu | REF: XMAS-GRC-1223 | EUR 150.75
+2024-12-25 | Debit | Online Shopping - Etsy (Gifts) | REF: ETSY-ORDER-1225 | EUR 75.00
+2024-12-27 | Debit | Takeaway Food - Pizza Palace | REF: TAKEAWAY-PP-1227 | EUR 28.50
+2024-12-29 | Debit | New Year's Eve Tickets | REF: NYE-TIX-1229 | EUR 60.00
+2024-12-31 | Debit | Bank Service Fee - Monthly | REF: BSF-DEC24 | EUR 5.00
+
+**January 2025**
+
+2025-01-01 | Debit | Rent Payment - Apt. 4B | REF: RENT0125-JSM | EUR 1,850.00
+2025-01-01 | Credit | Salary - Tech Solutions Ltd. | REF: SALARY0125-TSL | EUR 4,500.00
+2025-01-02 | Debit | SuperMart Grocery Store | REF: GRCSUPER-0102 | EUR 81.20
+2025-01-03 | Debit | Online Subscription - News Service | REF: NEWS-SVC-0103 | EUR 9.99
+2025-01-05 | Debit | Gym Membership - Monthly | REF: GYM-MEMBER-0105 | EUR 40.00
+2025-01-07 | Debit | Water Bill - Irish Water | REF: IW-BL-JAN25 | EUR 30.00
+2025-01-08 | Credit | Interest Payment - FN Savings | REF: INT-SAV-JAN25 | EUR 5.05
+2025-01-09 | Debit | Fuel Station - Maxol | REF: FUEL-MXL-0109 | EUR 80.00
+2025-01-10 | Debit | Pharmacy - Boots | REF: PHARM-BOOTS-0110 | EUR 12.50
+2025-01-12 | Debit | Clothing Purchase - Zara | REF: CLOTHING-ZARA-0112 | EUR 65.00
+2025-01-14 | Credit | Dividend Payment - InvestCo | REF: DIVIDEND-INVCO-0114 | EUR 120.00
+2025-01-15 | Debit | Mobile Phone Bill - Eir | REF: EIR-MOB-JAN25 | EUR 35.00
+2025-01-16 | Debit | Books & Stationery | REF: BOOKS-ST-0116 | EUR 22.00
+2025-01-18 | Debit | Weekend Trip - Hotel Booking | REF: HOTEL-WKND-0118 | EUR 150.00
+2025-01-20 | Credit | Freelance Income - Graphic Design | REF: FREELANCE-GD-0120 | EUR 550.00
+2025-01-21 | Debit | Public Transport Card Top-up | REF: TPCARD-TOPUP-0121 | EUR 50.00
+2025-01-23 | Debit | Electronics Store - Headphones | REF: ELEC-HP-0123 | EUR 99.00
+2025-01-25 | Debit | Online Course Subscription | REF: ONLINE-CRS-0125 | EUR 75.00
+2025-01-27 | Debit | Takeaway Coffee - Local Cafe | REF: COFFEE-LC-0127 | EUR 3.80
+2025-01-29 | Debit | Event Tickets - Concert | REF: CONCERT-TIX-0129 | EUR 45.00
+2025-01-31 | Debit | Bank Service Fee - Monthly | REF: BSF-JAN25 | EUR 5.00
+
+**February 2025**
+
+2025-02-01 | Debit | Rent Payment - Apt. 4B | REF: RENT0225-JSM | EUR 1,850.00
+2025-02-01 | Credit | Salary - Tech Solutions Ltd. | REF: SALARY0225-TSL | EUR 4,500.00
+2025-02-02 | Debit | SuperMart Grocery Store | REF: GRCSUPER-0202 | EUR 75.90
+2025-02-03 | Debit | Online Subscription - Cloud Storage | REF: CLOUD-STORAGE-0203 | EUR 8.99
+2025-02-05 | Debit | Restaurant Lunch - Work Colleagues | REF: REST-LUNCH-0205 | EUR 25.00
+2025-02-07 | Debit | Electricity Bill - ESB | REF: ESB-BL-FEB25 | EUR 72.10
+2025-02-08 | Credit | Interest Payment - FN Savings | REF: INT-SAV-FEB25 | EUR 5.10
+2025-02-09 | Debit | Fuel Station - Circle K | REF: FUEL-CK-0209 | EUR 88.00
+2025-02-10 | Debit | Pharmacy - Boots | REF: PHARM-BOOTS-0210 | EUR 18.90
+2025-02-12 | Debit | Home Decor Purchase - IKEA | REF: HOME-IKEA-0212 | EUR 110.00
+2025-02-14 | Credit | Refund - Clothing Store (Return) | REF: REFUND-CLO-0214 | EUR 35.00
+2025-02-15 | Debit | Internet Bill - Virgin Media | REF: VM-INT-FEB25 | EUR 60.00
+2025-02-16 | Debit | Car Wash Service | REF: CARWASH-SVC-0216 | EUR 15.00
+2025-02-18 | Debit | Valentine's Dinner - Fine Dining | REF: VALENTINE-DIN-0218 | EUR 130.00
+2025-02-20 | Credit | Freelance Income - Photography | REF: FREELANCE-PHOTO-0220 | EUR 800.00
+2025-02-21 | Debit | Public Transport - Bus Fare | REF: BUS-FARE-0221 | EUR 2.70
+2025-02-23 | Debit | Personal Care Products | REF: PC-PRODUCTS-0223 | EUR 28.00
+2025-02-25 | Debit | Online Shopping - Tech Gadgets | REF: TECH-GADGETS-0225 | EUR 175.00
+2025-02-27 | Debit | Takeaway Food - Sushi | REF: TAKEAWAY-SUSHI-0227 | EUR 35.00
+2025-02-29 | Debit | Bank Service Fee - Monthly | REF: BSF-FEB25 | EUR 5.00
+
+**March 2025**
+
+2025-03-01 | Debit | Rent Payment - Apt. 4B | REF: RENT0325-JSM | EUR 1,850.00
+2025-03-01 | Credit | Salary - Tech Solutions Ltd. | REF: SALARY0325-TSL | EUR 4,500.00
+2025-03-02 | Debit | SuperMart Grocery Store | REF: GRCSUPER-0302 | EUR 98.40
+2025-03-03 | Debit | Online Subscription - Fitness App | REF: FITNESS-APP-0303 | EUR 10.99
+2025-03-05 | Debit | Lunch with Client - Cafe | REF: CLIENT-LUNCH-0305 | EUR 20.00
+2025-03-07 | Debit | Gas Bill - Bord Gáis | REF: BG-BL-MAR25 | EUR 62.50
+2025-03-08 | Credit | Interest Payment - FN Savings | REF: INT-SAV-MAR25 | EUR 5.02
+2025-03-09 | Debit | Fuel Station - Applegreen | REF: FUEL-APP-0309 | EUR 70.00
+2025-03-10 | Debit | Pharmacy - Boots | REF: PHARM-BOOTS-0310 | EUR 20.15
+2025-03-12 | Debit | Software Purchase - Adobe Suite | REF: SW-ADOBE-0312 | EUR 25.00
+2025-03-14 | Credit | Bonus Payment - Tech Solutions Ltd. | REF: BONUS-TSL-0314 | EUR 1,000.00
+2025-03-15 | Debit | Mobile Phone Bill - Eir | REF: EIR-MOB-MAR25 | EUR 35.00
+2025-03-16 | Debit | Home Repair Supplies | REF: HOME-REPAIR-0316 | EUR 45.00
+2025-03-18 | Debit | Restaurant Dinner - Celebration | REF: REST-CELEB-0318 | EUR 95.00
+2025-03-20 | Credit | Freelance Income - Consulting | REF: FREELANCE-CONS-0320 | EUR 900.00
+2025-03-21 | Debit | Bus Ticket - Citylink | REF: CITYLINK-0321 | EUR 15.00
+2025-03-23 | Debit | Gardening Supplies - DIY Store | REF: GARDEN-DIY-0323 | EUR 55.00
+2025-03-25 | Debit | Online Shopping - Fashion | REF: FASHION-ONLINE-0325 | EUR 80.00
+2025-03-27 | Debit | Cinema Tickets | REF: CINEMA-TIX-0327 | EUR 24.00
+2025-03-29 | Debit | Weekend Getaway - Airbnb | REF: AIRBNB-WKND-0329 | EUR 200.00
+2025-03-31 | Debit | Bank Service Fee - Monthly | REF: BSF-MAR25 | EUR 5.00
+
+**April 2025**
+
+2025-04-01 | Debit | Rent Payment - Apt. 4B | REF: RENT0425-JSM | EUR 1,850.00
+2025-04-01 | Credit | Salary - Tech Solutions Ltd. | REF: SALARY0425-TSL | EUR 4,500.00
+2025-04-02 | Debit | SuperMart Grocery Store | REF: GRCSUPER-0402 | EUR 87.60
+2025-04-03 | Debit | Online Subscription - Music Streaming | REF: MUSIC-STREAM-0403 | EUR 9.99
+2025-04-05 | Debit | Coffee Shop - Friends Meetup | REF: COFFEE-FRND-0405 | EUR 10.00
+2025-04-07 | Debit | Water Bill - Irish Water | REF: IW-BL-APR25 | EUR 30.00
+2025-04-08 | Credit | Interest Payment - FN Savings | REF: INT-SAV-APR25 | EUR 5.15
+2025-04-09 | Debit | Fuel Station - Maxol | REF: FUEL-MXL-0409 | EUR 82.00
+2025-04-10 | Debit | Pharmacy - Boots | REF: PHARM-BOOTS-0410 | EUR 16.75
+2025-04-12 | Debit | Sports Equipment Purchase | REF: SPORT-EQ-0412 | EUR 120.00
+2025-04-14 | Credit | Refund - Online Service | REF: REFUND-OS-0414 | EUR 20.00
+2025-04-15 | Debit | Internet Bill - Virgin Media | REF: VM-INT-APR25 | EUR 60.00
+2025-04-16 | Debit | Magazine Subscription | REF: MAG-SUB-0416 | EUR 8.00
+2025-04-18 | Debit | Restaurant Dinner - Seafood | REF: REST-SEAFOOD-0418 | EUR 105.00
+2025-04-20 | Credit | Freelance Income - SEO Services | REF: FREELANCE-SEO-0420 | EUR 700.00
+2025-04-21 | Debit | Public Transport Card Top-up | REF: TPCARD-TOPUP-0421 | EUR 50.00
+2025-04-23 | Debit | Electronics Store - Phone Accessory | REF: ELEC-ACC-0423 | EUR 40.00
+2025-04-25 | Debit | Online Course - Language Learning | REF: ONLINE-LANG-0425 | EUR 60.00
+2025-04-27 | Debit | Takeaway Coffee - Morning Commute | REF: COFFEE-MC-0427 | EUR 4.20
+2025-04-29 | Debit | Theatre Tickets | REF: THEATRE-TIX-0429 | EUR 70.00
+2025-04-30 | Debit | Bank Service Fee - Monthly | REF: BSF-APR25 | EUR 5.00
+
+**May 2025**
+
+2025-05-01 | Debit | Rent Payment - Apt. 4B | REF: RENT0525-JSM | EUR 1,850.00
+2025-05-01 | Credit | Salary - Tech Solutions Ltd. | REF: SALARY0525-TSL | EUR 4,500.00
+2025-05-02 | Debit | SuperMart Grocery Store | REF: GRCSUPER-0502 | EUR 91.50
+2025-05-03 | Debit | Online Subscription - VPN Service | REF: VPN-SVC-0503 | EUR 6.99
+2025-05-05 | Debit | Lunch Out - Deli | REF: DELI-LUNCH-0505 | EUR 12.00
+2025-05-07 | Debit | Electricity Bill - ESB | REF: ESB-BL-MAY25 | EUR 68.30
+2025-05-08 | Credit | Interest Payment - FN Savings | REF: INT-SAV-MAY25 | EUR 5.08
+2025-05-09 | Debit | Fuel Station - Circle K | REF: FUEL-CK-0509 | EUR 78.00
+2025-05-10 | Debit | Pharmacy - Boots | REF: PHARM-BOOTS-0510 | EUR 25.00
+2025-05-12 | Debit | Travel Booking - Weekend Trip | REF: TRAVEL-WKND-0512 | EUR 250.00
+2025-05-14 | Credit | Investment Income - Stocks | REF: INV-INC-STK-0514 | EUR 180.00
+2025-05-15 | Debit | Mobile Phone Bill - Eir | REF: EIR-MOB-MAY25 | EUR 35.00
+2025-05-16 | Debit | Books - Fiction | REF: BOOKS-FICTION-0516 | EUR 20.00
+2025-05-18 | Debit | Restaurant Dinner - Asian Cuisine | REF: REST-ASIAN-0518 | EUR 70.00
+2025-05-20 | Credit | Freelance Income - Social Media Mgmt | REF: FREELANCE-SMM-0520 | EUR 650.00
+2025-05-21 | Debit | Public Transport - Tram Fare | REF: TRAM-FARE-0521 | EUR 3.50
+2025-05-23 | Debit | Clothing Purchase - Summer Wear | REF: CLOTHING-SUM-0523 | EUR 90.00
+2025-05-25 | Debit | Online Shopping - Home Goods | REF: HOME-GOODS-0525 | EUR 115.00
+2025-05-27 | Debit | Takeaway Food - Burgers | REF: TAKEAWAY-BURG-0527 | EUR 22.00
+2025-05-29 | Debit | Museum Entry Tickets | REF: MUSEUM-TIX-0529 | EUR 18.00
+2025-05-31 | Debit | Bank Service Fee - Monthly | REF: BSF-MAY25 | EUR 5.00
+
+**June 2025**
+
+2025-06-01 | Debit | Rent Payment - Apt. 4B | REF: RENT0625-JSM | EUR 1,850.00
+2025-06-01 | Credit | Salary - Tech Solutions Ltd. | REF: SALARY0625-TSL | EUR 4,500.00
+2025-06-02 | Debit | SuperMart Grocery Store | REF: GRCSUPER-0602 | EUR 85.30
+2025-06-03 | Debit | Online Subscription - Productivity Tool | REF: PROD-TOOL-0603 | EUR 14.99
+2025-06-05 | Debit | Coffee Shop - Morning Routine | REF: COFFEE-MR-0605 | EUR 4.00
+2025-06-07 | Debit | Gas Bill - Bord Gáis | REF: BG-BL-JUN25 | EUR 55.40
+2025-06-08 | Credit | Interest Payment - FN Savings | REF: INT-SAV-JUN25 | EUR 5.18
+2025-06-09 | Debit | Fuel Station - Applegreen | REF: FUEL-APP-0609 | EUR 72.00
+2025-06-10 | Debit | Pharmacy - Boots | REF: PHARM-BOOTS-0610 | EUR 17.50
+2025-06-12 | Debit | Concert Tickets - Outdoor Festival | REF: CONCERT-FEST-0612 | EUR 80.00
+2025-06-14 | Credit | Freelance Income - Web Development | REF: FREELANCE-WD-0614 | EUR 1,200.00
+2025-06-15 | Debit | Internet Bill - Virgin Media | REF: VM-INT-JUN25 | EUR 60.00
+2025-06-16 | Debit | Pet Food & Supplies | REF: PET-FOOD-0616 | EUR 30.00
+2025-06-18 | Debit | Restaurant Dinner - Celebration | REF: REST-CELEB-0618 | EUR 120.00
+2025-06-20 | Credit | Tax Refund - Revenue IE | REF: TAX-REFUND-0620 | EUR 350.00
+2025-06-21 | Debit | Train Ticket - Day Trip | REF: TRAIN-DT-0621 | EUR 20.00
+2025-06-23 | Debit | New Shoes - Retail Store | REF: SHOES-RTL-0623 | EUR 95.00
+2025-06-25 | Debit | Online Shopping - Electronics | REF: ELEC-ONLINE-0625 | EUR 210.00
+2025-06-27 | Debit | Takeaway Food - Indian | REF: TAKEAWAY-IND-0627 | EUR 30.00
+2025-06-29 | Debit | Sports Event Tickets | REF: SPORT-EVNT-0629 | EUR 50.00
+2025-06-30 | Debit | Bank Service Fee - Monthly | REF: BSF-JUN25 | EUR 5.00
+
+**July 2025**
+
+2025-07-01 | Debit | Rent Payment - Apt. 4B | REF: RENT0725-JSM | EUR 1,850.00
+2025-07-01 | Credit | Salary - Tech Solutions Ltd. | REF: SALARY0725-TSL | EUR 4,500.00
+2025-07-02 | Debit | SuperMart Grocery Store | REF: GRCSUPER-0702 | EUR 90.10
+2025-07-03 | Debit | Online Subscription - Gaming Service | REF: GAMING-SVC-0703 | EUR 11.99
+2025-07-05 | Debit | Lunch with Friends - Pub | REF: PUB-LUNCH-0705 | EUR 18.00
+2025-07-07 | Debit | Water Bill - Irish Water | REF: IW-BL-JUL25 | EUR 30.00
+2025-07-08 | Credit | Interest Payment - FN Savings | REF: INT-SAV-JUL25 | EUR 5.25
+2025-07-09 | Debit | Fuel Station - Maxol | REF: FUEL-MXL-0709 | EUR 85.00
+2025-07-10 | Debit | Pharmacy - Boots | REF: PHARM-BOOTS-0710 | EUR 14.30
+2025-07-12 | Debit | Holiday Booking - Flights | REF: HOLIDAY-FLT-0712 | EUR 450.00
+2025-07-14 | Credit | Freelance Income - Content Creation | REF: FREELANCE-CC-0714 | EUR 850.00
+2025-07-15 | Debit | Mobile Phone Bill - Eir | REF: EIR-MOB-JUL25 | EUR 35.00
+2025-07-16 | Debit | Travel Insurance | REF: TRAVEL-INS-0716 | EUR 40.00
+2025-07-18 | Debit | Restaurant Dinner - Pre-Holiday | REF: REST-PREHOL-0718 | EUR 75.00
+2025-07-20 | Credit | Dividend Payment - InvestCo | REF: DIVIDEND-INVCO-0720 | EUR 150.00
+2025-07-21 | Debit | Public Transport Card Top-up | REF: TPCARD-TOPUP-0721 | EUR 50.00
+2025-07-23 | Debit | Summer Clothing - Retailer | REF: SUM-CLOTH-0723 | EUR 100.00
+2025-07-25 | Debit | Online Shopping - Travel Accessories | REF: TRAVEL-ACC-0725 | EUR 60.00
+2025-07-27 | Debit | Takeaway Coffee - Airport | REF: COFFEE-AIRPT-0727 | EUR 5.50
+2025-07-29 | Debit | Holiday Spending - Foreign Currency | REF: HOLIDAY-FC-0729 | EUR 200.00
+2025-07-31 | Debit | Bank Service Fee - Monthly | REF: BSF-JUL25 | EUR 5.00
+
+**August 2025**
+
+2025-08-01 | Debit | Rent Payment - Apt. 4B | REF: RENT0825-JSM | EUR 1,850.00
+2025-08-01 | Credit | Salary - Tech Solutions Ltd. | REF: SALARY0825-TSL | EUR 4,500.00
+2025-08-02 | Debit | Holiday Spending - Restaurant | REF: HOLIDAY-REST-0802 | EUR 65.00
+2025-08-03 | Debit | Holiday Spending - Activities | REF: HOLIDAY-ACT-0803 | EUR 80.00
+2025-08-05 | Debit | Holiday Spending - Souvenirs | REF: HOLIDAY-SOUV-0805 | EUR 40.00
+2025-08-07 | Debit | Electricity Bill - ESB | REF: ESB-BL-AUG25 | EUR 60.00
+2025-08-08 | Credit | Interest Payment - FN Savings | REF: INT-SAV-AUG25 | EUR 5.30
+2025-08-09 | Debit | Holiday Spending - Local Transport | REF: HOLIDAY-LT-0809 | EUR 25.00
+2025-08-10 | Debit | Pharmacy - Boots (Abroad) | REF: PHARM-BOOTS-0810 | EUR 10.00
+2025-08-12 | Credit | Freelance Income - Proofreading | REF: FREELANCE-PR-0812 | EUR 400.00
+2025-08-14 | Debit | Holiday Spending - Return Flights | REF: HOLIDAY-RFLT-0814 | EUR 450.00
+2025-08-15 | Debit | Internet Bill - Virgin Media | REF: VM-INT-AUG25 | EUR 60.00
+2025-08-16 | Debit | Post-Holiday Groceries - SuperValu | REF: GRC-POSTHOL-0816 | EUR 110.00
+2025-08-18 | Debit | Restaurant Dinner - Welcome Back | REF: REST-WB-0818 | EUR 90.00
+2025-08-20 | Credit | Freelance Income - Copywriting | REF: FREELANCE-CW-0820 | EUR 700.00
+2025-08-21 | Debit | Fuel Station - Circle K | REF: FUEL-CK-0821 | EUR 70.00
+2025-08-23 | Debit | Home Cleaning Service | REF: HOME-CLN-0823 | EUR 50.00
+2025-08-25 | Debit | Online Shopping - Books | REF: BOOKS-ONLINE-0825 | EUR 30.00
+2025-08-27 | Debit | Takeaway Food - Italian | REF: TAKEAWAY-ITAL-0827 | EUR 25.00
+2025-08-29 | Debit | Hair Salon - Post-Holiday | REF: HAIR-SALON-0829 | EUR 50.00
+2025-08-31 | Debit | Bank Service Fee - Monthly | REF: BSF-AUG25 | EUR 5.00
+
+**September 2025**
+
+2025-09-01 | Debit | Rent Payment - Apt. 4B | REF: RENT0925-JSM | EUR 1,850.00
+2025-09-01 | Credit | Salary - Tech Solutions Ltd. | REF: SALARY0925-TSL | EUR 4,500.00
+2025-09-02 | Debit | SuperMart Grocery Store | REF: GRCSUPER-0902 | EUR 88.90
+2025-09-03 | Debit | Online Subscription - Software License | REF: SW-LIC-0903 | EUR 19.99
+2025-09-05 | Debit | Lunch with Colleagues - Cafe | REF: COLL-LUNCH-0905 | EUR 15.00
+2025-09-07 | Debit | Gas Bill - Bord Gáis | REF: BG-BL-SEP25 | EUR 58.00
+2025-09-08 | Credit | Interest Payment - FN Savings | REF: INT-SAV-SEP25 | EUR 5.35
+2025-09-09 | Debit | Fuel Station - Applegreen | REF: FUEL-APP-0909 | EUR 75.00
+2025-09-10 | Debit | Pharmacy - Boots | REF: PHARM-BOOTS-0910 | EUR 16.20
+2025-09-12 | Debit | Home Appliance Repair | REF: APPLIANCE-REP-0912 | EUR 150.00
+2025-09-14 | Credit | Freelance Income - Project Management | REF: FREELANCE-PM-0914 | EUR 1,100.00
+2025-09-15 | Debit | Mobile Phone Bill - Eir | REF: EIR-MOB-SEP25 | EUR 35.00
+2025-09-16 | Debit | Car Service & Maintenance | REF: CAR-SVC-0916 | EUR 200.00
+2025-09-18 | Debit | Restaurant Dinner - New Place | REF: REST-NEW-0918 | EUR 80.00
+2025-09-20 | Credit | Refund - Online Retailer (Defective) | REF: REFUND-ORD-0920 | EUR 55.00
+2025-09-21 | Debit | Public Transport - Dublin Bus | REF: DBUS-FARE-0921 | EUR 2.70
+2025-09-23 | Debit | Clothing Purchase - Autumn Wear | REF: CLOTHING-AUT-0923 | EUR 130.00
+2025-09-25 | Debit | Online Shopping - Gadgets | REF: GADGETS-ONLINE-0925 | EUR 90.00
+2025-09-27 | Debit | Takeaway Coffee - Weekend Treat | REF: COFFEE-WKND-0927 | EUR 4.50
+2025-09-29 | Debit | Cinema Tickets & Popcorn | REF: CINEMA-EV-0929 | EUR 30.00
+2025-09-30 | Debit | Bank Service Fee - Monthly | REF: BSF-SEP25 | EUR 5.00
+
+**October 2025**
+
+2025-10-01 | Debit | Rent Payment - Apt. 4B | REF: RENT1025-JSM | EUR 1,850.00
+2025-10-01 | Credit | Salary - Tech Solutions Ltd. | REF: SALARY1025-TSL | EUR 4,500.00
+2025-10-02 | Debit | SuperMart Grocery Store | REF: GRCSUPER-1002 | EUR 95.70
+2025-10-03 | Debit | Online Subscription - Streaming Service | REF: STRM-SVC-1003 | EUR 12.99
+2025-10-05 | Debit | Café Lunch - Quick Bite | REF: CAFE-QB-1005 | EUR 10.00
+2025-10-07 | Debit | Water Bill - Irish Water | REF: IW-BL-OCT25 | EUR 30.00
+2025-10-08 | Credit | Interest Payment - FN Savings | REF: INT-SAV-OCT25 | EUR 5.40
+2025-10-09 | Debit | Fuel Station - Maxol | REF: FUEL-MXL-1009 | EUR 80.00
+2025-10-10 | Debit | Pharmacy - Boots | REF: PHARM-BOOTS-1010 | EUR 19.80
+2025-10-12 | Debit | Charity Donation - Annual Drive | REF: CHARITY-AD-1012 | EUR 100.00
+2025-10-14 | Credit | Freelance Income - Tutoring | REF: FREELANCE-TUT-1014 | EUR 500.00
+2025-10-15 | Debit | Internet Bill - Virgin Media | REF: VM-INT-OCT25 | EUR 60.00
+2025-10-16 | Debit | Books & Magazines | REF: BOOKS-MAG-1016 | EUR 25.00
+2025-10-18 | Debit | Restaurant Dinner - Birthday | REF: REST-BTHD-1018 | EUR 110.00
+2025-10-20 | Credit | Refund - Event Tickets (Cancelled) | REF: REFUND-EVT-1020 | EUR 40.00
+2025-10-21 | Debit | Public Transport Card Top-up | REF: TPCARD-TOPUP-1021 | EUR 50.00
+2025-10-23 | Debit | Electronics Store - New Monitor | REF: ELEC-MON-1023 | EUR 250.00
+2025-10-25 | Debit | Online Shopping - Home Office | REF: HOME-OFFICE-1025 | EUR 180.00
+2025-10-27 | Debit | Takeaway Food - Chinese | REF: TAKEAWAY-CHIN-1027 | EUR 28.00
+2025-10-29 | Debit | Halloween Decorations | REF: HALLOWEEN-DEC-1029 | EUR 35.00
+2025-10-31 | Debit | Bank Service Fee - Monthly | REF: BSF-OCT25 | EUR 5.00
+
+---
+
+**Annual Summary by Category (Estimated)**
+
+**Income:**
+*   Salary (Tech Solutions Ltd.): EUR 54,000.00
+*   Freelance Income: EUR 9,700.00
+*   Bonus Payment: EUR 1,000.00
+*   Dividend Payments: EUR 270.00
+*   Interest Payments (FN Savings): EUR 61.24
+*   Refunds: EUR 200.99
+*   Gift from Family: EUR 100.00
+*   Tax Refund: EUR 350.00
+*   Investment Income (Stocks): EUR 180.00
+**Total Estimated Income: EUR 65,862.23**
+
+**Expenses:**
+*   Rent: EUR 22,200.00
+*   Groceries: EUR 1,059.08
+*   Utilities (Electricity, Gas, Water, Internet, Mobile): EUR 1,515.20
+*   Dining Out & Takeaway: EUR 1,512.50
+*   Fuel: EUR 983.00
+*   Online Subscriptions: EUR 164.89
+*   Personal Care (Pharmacy, Hair Salon, etc.): EUR 329.80
+*   Clothing & Accessories: EUR 690.00
+*   Entertainment (Cinema, Concerts, Theatre, Gaming): EUR 579.99
+*   Travel & Transport (Public, Train, Flights, Hotel, Airbnb, Car Maint.): EUR 2,689.70
+*   Home & Garden (Decor, Repair, Supplies): EUR 470.00
+*   Electronics & Gadgets: EUR 1,174.45
+*   Education & Books (Courses, Books, Magazines): EUR 270.00
+*   Pets: EUR 70.00
+*   Gifts & Donations: EUR 225.00
+*   Bank Service Fees: EUR 60.00
+*   Sports & Hobbies (Gym, Equipment): EUR 160.00
+*   Holiday Spending (Foreign Currency, Activities, Souvenirs): EUR 410.00
+**Total Estimated Expenses: EUR 34,653.61**
+
+*Note: The "Annual Summary by Category" is an estimation based on transaction descriptions and may not perfectly align with official accounting categories.*
+
+---
+
+**Important Notices:**
+
+*   **Fraud Prevention:** First National Bank is committed to protecting your account. Please review your statement carefully. If you notice any unauthorized transactions, contact us immediately at our 24/7 fraud hotline: 1800-123-4567.
+*   **Online Security:** Always log in to your online banking through our official website or mobile app. Be wary of suspicious emails or messages asking for your personal or account details. First National Bank will never ask for your full password or PIN via email or phone.
+*   **Interest Rates:** The interest rate applied to your savings account for this period was a variable rate, averaging 0.50% AER.
+*   **Fees:** This statement reflects standard monthly service fees. For a complete list of account fees and charges, please refer to our Terms & Conditions or visit our website.
+*   **Statement Delivery:** You are currently opted in for digital statement delivery. To change your preference to paper statements, please update your settings in your online banking portal or contact customer service.
+*   **Next Statement:** Your next annual statement will be issued around November 2026. Monthly statements are available via your online banking portal.
+
+Thank you for banking with First National Bank.
+
+First National Bank
+Customer Service: 1890-765-432
+Website: www.firstnationalbank.ie
+Regulated by the Central Bank of Ireland.

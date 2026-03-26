@@ -1,0 +1,73 @@
+**EXPENSE REPORT**
+
+**Employee Name:** John Smith
+**Employee ID:** JSMT-8907-GI
+**Department:** Strategic Initiatives
+**Reporting Period:** February 1, 2026 - February 21, 2026
+**Date Submitted:** 2026-02-23
+**Currency:** USD
+
+---
+
+**Company:** Global Industries
+**Project Code:** PRJ-ALPHA-2026-Q1
+**Client/Purpose:** Market Research Trip - Project Chimera Launch Strategy
+
+---
+
+**Summary of Expenses:**
+
+| Date       | Category           | Description                                       | Reference No.    | Amount (USD) |
+|------------|--------------------|---------------------------------------------------|------------------|--------------|
+| 2026-02-03 | Airfare            | Round-trip flight: JFK (NYC) - LHR (London)       | BA-234567890     | 1,250.00     |
+| 2026-02-03 | Accommodation      | Pre-paid 7 nights, The Royal Regency Hotel, London | HRH-1234567      | 1,890.00     |
+| 2026-02-04 | Meals & Entertainment | Client dinner w/ "Innovate UK" team (3 persons) | INV-UK-2026-001  | 285.50       |
+| 2026-02-05 | Local Transportation | Taxi from LHR to Hotel                            | UBR-987654321    | 75.00        |
+| 2026-02-05 | Conference Fee     | "Future of Tech" Industry Summit Registration     | FUT-TECH-2026-A  | 799.00       |
+| 2026-02-06 | Meals              | Lunch during conference (personal)                | MC-XXXX-XXXX-1234| 32.75        |
+| 2026-02-06 | Local Transportation | Tube travel to meeting with "DataStream"         | OYSTR-00010002   | 15.20        |
+| 2026-02-07 | Meals & Entertainment | Business lunch w/ "DataStream" key contacts (2 persons) | DS-ME-2026-002   | 155.00       |
+| 2026-02-08 | Office Supplies    | Printer ink and presentation folders              | OFFC-2026-1122   | 48.99        |
+| 2026-02-09 | Per Diem           | Daily allowance (7 days @ $75/day)                | N/A              | 525.00       |
+| 2026-02-10 | Local Transportation | Taxi to airport for return flight                 | UBR-123456789    | 80.00        |
+| 2026-02-10 | Miscellaneous      | Airport luggage storage (4 hours)                 | AIRPT-LG-003     | 20.00        |
+| 2026-02-11 | Meals              | Dinner post-travel (personal)                     | MC-XXXX-XXXX-5678| 45.00        |
+| 2026-02-15 | Software License   | 1-month subscription for advanced data analytics tool | DA-TOOL-SUB-001  | 199.99       |
+| 2026-02-18 | Professional Dev.  | Online course: "Advanced Market Segmentation"     | EDU-SEG-2026-Q1  | 349.00       |
+| 2026-02-20 | Meals              | Team lunch for Project Chimera review (5 persons) | TRG-LUNCH-2026   | 110.50       |
+
+---
+
+**Total Reimbursable Expenses:** $6,080.93
+
+---
+
+**Payment Details:**
+
+Reimbursement to be processed to employee's direct deposit account.
+**Bank Name:** First National Bank
+**Account Type:** Checking
+**Account Number (masked):** XXXX-XXXX-XXXX-7890
+**Routing Number (masked):** XXXX-XXXXX-123
+
+---
+
+**Approvals:**
+
+**Employee Signature:** John Smith (electronically signed)
+**Date:** 2026-02-23
+
+**Manager Approval:** Jane Doe (electronically signed)
+**Manager ID:** JD-5432-GI
+**Date:** 2026-02-24
+
+**Finance Approval:** [Pending]
+
+---
+
+**Notes:**
+
+*   Original receipts for all expenses over $25 are attached or linked digitally.
+*   Client entertainment expenses include detailed attendee lists and business purpose.
+*   Per Diem covers incidental expenses such as snacks, non-reimbursable local transportation, and minor personal items.
+*   Software license and professional development course are directly relevant to Project Chimera and pre-approved by management.

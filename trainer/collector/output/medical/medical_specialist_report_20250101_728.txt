@@ -1,0 +1,201 @@
+**WHITTINGTON HOSPITAL**
+**Department of Ophthalmology**
+Magdala Avenue, Whittington Park, London N19 5NF
+Tel: 020 7272 3070 | Fax: 020 7288 5555 | Website: www.whittington.nhs.uk
+
+---
+
+**SPECIALIST OPTOMETRIC REPORT**
+
+**PATIENT DETAILS:**
+*   **Name:** Lily Marsh
+*   **Date of Birth:** 15/05/2017
+*   **Age:** 7 years, 7 months
+*   **NHS Number:** 987 654 3210
+*   **Address:** 14 Elmwood Drive, North London, N12 8XY
+*   **Gender:** Female
+*   **GP:** Dr. S. Khan, Highwood Health Centre, N12 7AB
+
+**REFERRING CLINICIAN/SERVICE:**
+*   Initial concern raised by QPA Primary School (Mrs. Henderson, Year 3 teacher), subsequently referred by Dr. S. Khan.
+
+**DATE OF REPORT:** 01 January 2025
+**DATE OF CONSULTATION:** 01 January 2025
+**CONSULTANT/SPECIALIST:** Ms. A. Roberts, BSc (Hons) MCOptom, Prof Cert Glauc, Independent Prescriber (Optometrist)
+
+---
+
+**SUBJECT: Specialist Optometric Assessment for Lily Marsh (DOB 15/05/2017)**
+
+**1. PRESENTING COMPLAINT:**
+Lily Marsh, a 7-year-old female, presented to the Ophthalmology Department at Whittington Hospital accompanied by her parents, Mr. Ethan Marsh and Mrs. Claire Marsh. The primary concern, as relayed by her parents, originated from feedback received from Lily's Year 3 teacher, Mrs. Henderson, at QPA Primary School. Mrs. Henderson noted that Lily has frequently been sitting unusually close to the whiteboard during lessons and appears to struggle occasionally with reading text or identifying images from the back of the classroom. There have been no reports of headaches, eye strain, double vision, or discomfort. Parents report no obvious behavioural changes related to vision at home, although they admit their awareness was heightened by the school's observations.
+
+**2. HISTORY OF PRESENTING COMPLAINT (HPC):**
+Mr. Ethan Marsh, a Senior Software Engineer, and Mrs. Claire Marsh, a primary school teacher, provided a detailed history. The school's observations were first formally communicated during a parent-teacher meeting approximately six weeks prior to this appointment, though Mrs. Henderson mentioned she had noticed a subtle change over the preceding term. Initially, Mr. and Mrs. Marsh attributed any potential difficulties to Lily perhaps being distracted or tired, but the consistency of the feedback prompted them to seek an assessment.
+
+At home, Lily enjoys reading physical books and graphic novels, drawing, and playing with her younger brother, Max (4, currently at Little Stars Nursery). Her parents noted that she tends to hold books at a normal reading distance and has not complained about difficulty with close-up tasks. However, Mr. Marsh recalled that Lily sometimes chooses to watch TV from closer than her brother, Max, or their parents. They have a 2019 VW Golf and are considering switching to electric, but Mr. Marsh hasn't noticed any issues with Lily identifying distant road signs or objects from the car.
+
+Mr. Marsh expressed some concern regarding screen time, acknowledging that both he and Claire work with screens and the children use tablets for educational games and occasional entertainment. They generally adhere to a '20-20-20 rule' (20 seconds break every 20 minutes, looking 20 feet away) and limit daily screen exposure, but Mr. Marsh, given his professional background in fintech, is acutely aware of the potential for digital eye strain. Mrs. Marsh, as a teacher, is familiar with developmental milestones and vision screenings, and indicated that Lily had passed previous routine school vision checks without concern. There has been no reported sudden onset of blurred vision, red eyes, discharge, or photophobia.
+
+**3. PAST OCULAR HISTORY (POH):**
+*   No history of previous eye surgery, trauma, or significant ocular infections.
+*   Routine vision screenings at QPA Primary School in Year 1 and Year 2 were reported as normal, with no concerns raised until recently.
+*   No known amblyopia (lazy eye) or strabismus (squint).
+
+**4. PAST MEDICAL HISTORY (PMH):**
+*   Lily is a generally healthy child.
+*   Full-term birth, normal development.
+*   No history of systemic conditions (e.g., diabetes, hypertension, neurological disorders) that could affect vision.
+*   Up-to-date with all routine childhood vaccinations as per NHS schedule.
+*   No history of significant allergies.
+
+**5. DRUG ALLERGIES / REGULAR MEDICATIONS:**
+*   **Allergies:** None known.
+*   **Medications:** None.
+
+**6. FAMILY HISTORY (FH):**
+*   **Parents:**
+    *   Mr. Ethan Marsh (38): Reports mild myopia, wears spectacles for driving and computer use. Also has mild asthma and seasonal allergies (hayfever). Experiences occasional lower back pain from desk work.
+    *   Mrs. Claire Marsh (37): No known refractive error, does not wear spectacles.
+*   **Siblings:**
+    *   Max Marsh (4): No known vision issues.
+*   **Grandparents:**
+    *   Paternal Grandmother (Janet, Bristol): Wears multifocal spectacles, history of presbyopia and mild cataract development in her 70s.
+    *   Paternal Grandfather (George, deceased 2021): Wore spectacles from childhood for myopia.
+    *   Maternal Grandparents: No significant ocular history.
+*   **Other Family:**
+    *   Paternal Aunt (Hannah, Manchester): Wears spectacles for myopia.
+    *   Paternal Uncle (Luke, Edinburgh): No known vision issues.
+*   No family history of genetic eye conditions, glaucoma, or retinal detachments.
+
+**7. SOCIAL HISTORY (SH):**
+*   Lily resides with her parents, Ethan and Claire, and younger brother Max, in a 3-bedroom semi-detached house in North London. The family has a mortgage with Barclays.
+*   Lily is in Year 3 at QPA Primary School, taught by Mrs. Henderson. She enjoys school and her academic performance is generally good.
+*   She participates in after-school clubs, including an art club and a cycling group (Ethan enjoys cycling too).
+*   Hobbies include reading, drawing, playing board games, and helping her father with their tropical fish tank. She also enjoys photography with a basic digital camera, often accompanying her father on photography outings.
+*   Outdoor play is encouraged daily.
+*   Screen time (tablets, TV) is managed by parents with daily limits and breaks.
+
+**8. OCULAR EXAMINATION FINDINGS (01/01/2025):**
+
+*   **General Appearance:** Alert, cooperative, well-developed for age. No obvious head tilt or facial asymmetry.
+*   **Visual Acuity (VA):**
+    *   **Unaided Distance VA (LogMAR, crowded symbols, 3m):**
+        *   Right Eye (OD): 0.6 (approx. 6/24 Snellen equivalent)
+        *   Left Eye (OS): 0.5 (approx. 6/18 Snellen equivalent)
+        *   Binocular (OU): 0.5
+    *   **Pinhole VA (OD/OS/OU):** Improvement to 0.3 (approx. 6/12 Snellen equivalent) in both eyes, suggesting refractive error as the primary cause of reduced VA.
+    *   **Near VA (N3, reading chart, 40cm):**
+        *   OD: N5 (unhindered)
+        *   OS: N5 (unhindered)
+        *   OU: N5 (unhindered)
+*   **Ocular Motility:** Full and smooth in all diagnostic gazes. No nystagmus or restriction.
+*   **Cover Test (Distance & Near, unaided):** No tropia or phoria detected. Orthophoric.
+*   **Pupils:** Equal, Round, Reactive to Light and Accommodation (PERRLA). No Relative Afferent Pupillary Defect (RAPD).
+*   **Confrontational Visual Fields:** Full to finger counting in all four quadrants for both eyes.
+*   **Stereoacuity (Frisby Stereotest):** 60 seconds of arc, indicating good binocular function.
+*   **Colour Vision (Ishihara Plates):** Normal for age (10/10 plates correctly identified).
+
+*   **Refraction (Post-Cycloplegic with 1% Cyclopentolate):**
+    *   Cyclopentolate administered at 10:30, refraction performed at 11:00.
+    *   **Retinoscopy Findings:**
+        *   OD: -1.75 / -0.50 x 180
+        *   OS: -1.50 / -0.25 x 170
+    *   **Subjective Refinement (using paediatric charts):**
+        *   Right Eye (OD): -1.75 DS / -0.50 DC x 180 VA 0.0 (6/6)
+        *   Left Eye (OS): -1.50 DS / -0.25 DC x 170 VA 0.0 (6/6)
+        *   Binocular VA with correction: 0.0 (6/6)
+*   **Anterior Segment Examination (Slit Lamp):**
+    *   Lids, lashes, conjunctiva, cornea, anterior chamber, iris, and lens appear normal and healthy in both eyes. No signs of inflammation, infection, or structural abnormalities.
+*   **Posterior Segment Examination (Dilated Fundoscopy with 78D lens):**
+    *   Optic discs: Pink, healthy, well-defined margins, physiological cupping (0.3 HxV) in both eyes. No pallor or swelling.
+    *   Macula: Flat, healthy foveal reflex present in both eyes. No drusen, exudates, or haemorrhages.
+    *   Retinal vessels: Normal calibre and tortuosity. No signs of vascular occlusion or retinopathy.
+    *   Retinal periphery: Appears flat and intact in all quadrants, no tears or detachments observed.
+*   **Intraocular Pressure (IOP):** Not performed, as not indicated for a routine paediatric assessment in the absence of risk factors or suspicious findings.
+
+**9. SUMMARY OF FINDINGS:**
+Lily Marsh presents with reduced distance visual acuity in both eyes, significantly improving with pinhole and cycloplegic refraction. Her unaided vision of approximately 6/24 OD and 6/18 OS readily corrects to 6/6 with spectacle lenses. The cycloplegic refraction reveals moderate myopia with a small amount of astigmatism in both eyes, slightly more pronounced in the right eye. Ocular motility, binocular vision, and anterior/posterior segment examinations are all within normal limits for her age. There are no signs of amblyopia, strabismus, or any underlying ocular pathology. The family history is positive for myopia on the paternal side.
+
+**10. DIFFERENTIAL DIAGNOSIS:**
+*   **Myopia (Nearsightedness):** This is the leading diagnosis, strongly supported by the presenting symptoms (difficulty seeing distant objects, sitting close to the whiteboard), the improvement with pinhole, and the clear myopic refractive error found on cycloplegic retinoscopy and subjective refinement. The positive family history also increases the likelihood.
+*   **Hyperopia (Farsightedness):** Less likely, as hyperopia typically causes blurred near vision or eye strain with close work, and would not explain the observed distant vision issues without significant accommodative effort or strabismus, neither of which were present.
+*   **Astigmatism:** Present in small amounts, contributing to the overall blur, but not the primary cause of the significant distance vision reduction. It is corrected effectively by the prescribed lenses.
+*   **Amblyopia (Lazy Eye):** Ruled out as Lily's best-corrected visual acuity is 6/6 in both eyes, and there is no significant difference in refractive error between the two eyes, nor any history of strabismus or other amblyogenic factors.
+*   **Accommodative Spasm/Pseudomyopia:** Considered due to the age group and prolonged near work/screen time, but cycloplegic refraction effectively relaxes accommodation, revealing true refractive error. The stable cycloplegic readings confirm true myopia.
+*   **Convergence Insufficiency:** Ruled out by normal cover test findings and good stereoacuity.
+*   **Ocular Pathology:** Ruled out by the comprehensive anterior and posterior segment examination, which revealed no abnormalities.
+
+**11. DIAGNOSIS:**
+Bilateral Myopia with mild Astigmatism.
+*   Right Eye (OD): Myopia (-1.75 Dioptres Sphere) with Astigmatism (-0.50 Dioptres Cylinder x 180 degrees)
+*   Left Eye (OS): Myopia (-1.50 Dioptres Sphere) with Astigmatism (-0.25 Dioptres Cylinder x 170 degrees)
+
+**12. TREATMENT PLAN:**
+
+**a. Spectacle Prescription:**
+A full-time spectacle prescription has been issued based on the cycloplegic refraction results.
+*   **Right Eye (OD):** -1.75 / -0.50 x 180
+*   **Left Eye (OS):** -1.50 / -0.25 x 170
+*   **Add:** Plano (for distance vision)
+
+**b. Spectacle Dispensing and Advice:**
+*   Parents have been advised to have spectacles dispensed promptly by a qualified optical dispenser.
+*   Emphasis was placed on selecting a robust, well-fitting frame suitable for an active 7-year-old, ensuring the optical centres are correctly aligned with Lily’s pupils.
+*   Discussed appropriate lens materials (e.g., polycarbonate or Trivex for impact resistance and safety).
+*   Lily is to wear her spectacles full-time for all activities, including school, reading, and screen use, to ensure clear vision and prevent progression of symptoms.
+*   Explained that initial adaptation might take a few days, but Lily should experience immediate improvement in distant vision. Mrs. Marsh, as a teacher, understood the importance of consistent wear in the classroom.
+*   Parents were provided with an NHS optical voucher (type D) to assist with the cost of spectacles for children under 16.
+
+**c. Environmental and Lifestyle Advice:**
+*   **Screen Time:** Reaffirmed the importance of continuing good screen hygiene practices, including regular breaks (20-20-20 rule) and ensuring appropriate viewing distances. Mr. Marsh acknowledged this aligns with his existing awareness.
+*   **Outdoor Play:** Encouraged increased time spent outdoors (at least 2 hours daily), as research suggests this can help slow the progression of myopia. This aligns well with Lily's existing hobbies like cycling and photography.
+*   **Reading Habits:** Advised on good posture and lighting for reading, ensuring a comfortable working distance and adequate illumination.
+*   **Awareness:** Parents were encouraged to observe Lily for any signs of discomfort, rubbing eyes, or changes in vision, particularly with the new spectacles.
+
+**d. Myopia Management Discussion:**
+*   Discussed with Mr. and Mrs. Marsh the concept of myopia progression in children and various management strategies beyond conventional spectacles.
+*   Mentioned options such as atropine eye drops, multifocal contact lenses, and orthokeratology, which have shown potential in slowing myopic progression.
+*   Given Lily's current age and the initial diagnosis, we will start with conventional spectacles and monitor her progression closely. Further discussion on these advanced options can be had at subsequent reviews if her myopia shows significant progression. Parents were receptive to this information.
+
+**13. FOLLOW-UP PLAN:**
+*   **Routine Review:** Lily Marsh is scheduled for a follow-up optometric review in **six months (July 2025)** to assess spectacle adaptation, visual acuity with correction, and to monitor for any progression of myopia.
+*   **Earlier Review:** Parents have been advised to return sooner if Lily experiences any issues with her new spectacles, persistent discomfort, headaches, or if they notice any new visual concerns.
+*   **Annual Eye Examinations:** Regular annual comprehensive eye examinations will be crucial for monitoring myopic progression throughout her childhood and adolescence.
+*   **Communication:** A copy of this report will be sent to Dr. S. Khan, her General Practitioner, and a summary provided to QPA Primary School (with parental consent) to inform Mrs. Henderson of the diagnosis and treatment plan.
+
+**14. CONCLUSION:**
+Lily Marsh has been diagnosed with bilateral myopia with mild astigmatism, which is the cause of her reported difficulty with distant vision. A spectacle prescription has been issued, and full-
+--- CONTINUE WRITING FROM HERE, do not repeat what's above ---
+correction is anticipated to significantly improve her visual acuity and alleviate the symptoms reported by her school and parents. Mr. and Mrs. Marsh have been fully counselled regarding Lily's condition, the treatment plan, and the importance of regular follow-up to monitor myopia progression. We anticipate a positive response to the new spectacles, enhancing Lily's quality of life both academically and socially.
+
+**15. DOCTOR'S SIGNATURE:**
+
+_______________________________
+**Ms. Eleanor Roberts (BSc Hons Optometry, MCOptom, Prof Cert Glaucoma)**
+Consultant Optometrist
+GOC Registration Number: 01-23456
+Whittington Health NHS Trust
+
+**16. REPORT ISSUED DATE:**
+2025-01-01
+
+**17. FACILITY DETAILS:**
+
+**Whittington Hospital**
+Magdala Avenue
+London
+N19 5NF
+
+**Department:** Ophthalmology & Optometry
+**Telephone:** 020 7272 3070 (Main Switchboard)
+**Direct Line (Optometry):** 020 7288 5780
+**Website:** www.whittington.nhs.uk
+
+**18. DISCLAIMER:**
+This report contains sensitive patient information and is intended for the recipient named above. Any unauthorised disclosure, copying, or distribution of this information is strictly prohibited. This is a medical record and should be stored securely. All clinical decisions based on this report should be made in conjunction with the patient's full medical history and current clinical presentation. The information provided is accurate to the best of the optometrist's knowledge at the time of examination.
+
+**19. NHS PATIENT INFORMATION:**
+For further information regarding your child's eye health, myopia, or to access support services, please visit the NHS website at www.nhs.uk or contact your GP. You can also manage appointments and view aspects of this report via the NHS App.
+
+**--- END OF REPORT ---**

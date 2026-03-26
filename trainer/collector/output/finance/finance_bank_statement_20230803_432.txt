@@ -1,0 +1,55 @@
+**FIRST NATIONAL BANK**
+
+**ACCOUNT STATEMENT**
+
+**Statement Period: 2023-07-01 to 2023-07-31**
+**Statement Date: 2023-08-03**
+
+**Account Holder:** John Smith
+**Address:** 14 Elm Street, Dublin 2, Ireland
+
+**Account Number:** EUR-123-456-7890 (Current Account)
+**IBAN:** IE99FNBK12345678901234
+**BIC/SWIFT:** FNBKIE22
+
+---
+
+**Summary of Account Activity (EUR)**
+
+*   **Opening Balance (as of 2023-07-01):** 4,891.25 EUR
+*   **Total Credits:** 2,950.00 EUR
+*   **Total Debits:** 1,789.40 EUR
+*   **Closing Balance (as of 2023-07-31):** 6,051.85 EUR
+
+---
+
+**Detailed Transactions**
+
+| Date       | Transaction Type     | Description                                | Reference No.      | Amount (EUR) |
+|:-----------|:---------------------|:-------------------------------------------|:-------------------|-------------:|
+| 2023-07-03 | Direct Debit         | Vodafone Mobile Bill                       | DD0012345678         | -65.00       |
+| 2023-07-05 | POS Purchase         | SuperValu - Groceries                      | POS9876543210        | -48.75       |
+| 2023-07-07 | Bank Transfer IN     | Salary - ABC Solutions Ltd.                | BTX0011223344        | 2,800.00     |
+| 2023-07-08 | Standing Order       | Rent Payment - Landlord                    | SO0012345678         | -1,200.00    |
+| 2023-07-10 | ATM Withdrawal       | First National Bank ATM, O'Connell St.     | ATM765432109         | -100.00      |
+| 2023-07-12 | POS Purchase         | Amazon.ie - Online Order                   | POS1122334455        | -72.30       |
+| 2023-07-15 | Direct Debit         | ESB Electricity Bill                       | DD0098765432         | -89.50       |
+| 2023-07-18 | Bank Transfer OUT    | Friend Repayment - Sarah Kelly             | BTX0055667788        | -50.00       |
+| 2023-07-20 | Interest Credit      | Monthly Interest on Savings                | INT0000000001        | 1.25         |
+| 2023-07-22 | POS Purchase         | Ryanair - Flight booking                   | POS2233445566        | -125.00      |
+| 2023-07-25 | Bank Transfer IN     | Freelance Payment - Global Marketing       | BTX0099887766        | 150.00       |
+| 2023-07-28 | POS Purchase         | Apple Store - Accessories                  | POS3344556677        | -38.85       |
+| 2023-07-30 | Direct Debit         | Gym Membership - Fitness First             | DD0044556677         | -40.00       |
+| 2023-07-31 | Foreign Exchange Fee | EUR to USD Conversion Fee (Amazon)         | FEE000123456         | -0.00*       |
+
+*Note: Foreign exchange fees may be included in the transaction amount or charged separately. For transactions where the fee is 0.00, it indicates the fee was absorbed by the merchant or included in the exchange rate provided at the point of sale.*
+
+---
+
+**Important Information:**
+
+*   Please review this statement carefully and notify us of any discrepancies within 30 days of the statement date.
+*   For inquiries, please contact our customer service line at +353 1 800 123456 or visit your nearest branch.
+*   You can access your account details and statements online at www.firstnationalbank.ie.
+
+**Thank you for banking with First National Bank.**

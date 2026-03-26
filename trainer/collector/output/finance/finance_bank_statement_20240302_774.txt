@@ -1,0 +1,42 @@
+**BARCLAYS BANK PLC**
+**Statement of Account**
+
+**Account Holder:** Mr. Ethan Marsh
+**Address:** 14 Elmwood Close, North London, N12 7AB
+**Statement Date:** 02 March 2025
+**Account Number:** 40-02-17 93XXXXXX
+**Sort Code:** 20-21-34
+
+**Statement Period:** 01 February 2025 to 28 February 2025
+
+**Opening Balance (01 February 2025):** £4,876.55
+
+| Date       | Transaction Type     | Description                                        | Debit (£) | Credit (£) | Balance (£) |
+|------------|----------------------|----------------------------------------------------|-----------|------------|-------------|
+| 03 Feb 2025| Direct Debit         | AQUA FITNESS LTD                                   | 45.00     |            | 4,831.55    |
+| 04 Feb 2025| Debit Card Purchase  | TESCO STORES NW6                                   | 78.32     |            | 4,753.23    |
+| 05 Feb 2025| Standing Order       | BARCLAYS MORTGAGE PAYMENT                          | 1,450.00  |            | 3,303.23    |
+| 07 Feb 2025| Debit Card Purchase  | SAINSBURYS LOCAL N12                               | 12.85     |            | 3,290.38    |
+| 08 Feb 2025| Faster Payment       | CLAIRE MARSH - LILY'S CLASS TRIP                   | 15.00     |            | 3,275.38    |
+| 10 Feb 2025| Salary Credit        | FINTECH SOLUTIONS LTD - FEB SALARY                 |           | 3,850.23   | 7,125.61    |
+| 11 Feb 2025| Debit Card Purchase  | AMAZON.CO.UK - QPA PRIMARY BOOKS                   | 27.99     |            | 7,097.62    |
+| 12 Feb 2025| Direct Debit         | BT BROADBAND & TV                                  | 58.50     |            | 7,039.12    |
+| 14 Feb 2025| Debit Card Purchase  | LITTLE STARS NURSERY - MAX FEB FEES                | 850.00    |            | 6,189.12    |
+| 16 Feb 2025| Debit Card Purchase  | CYCLE REPUBLIC N10 - TUBE & PATCH KIT              | 8.99      |            | 6,180.13    |
+| 18 Feb 2025| Faster Payment       | JANET MARSH - BIRTHDAY GIFT                        | 50.00     |            | 6,130.13    |
+| 19 Feb 2025| Debit Card Purchase  | PETS AT HOME N11 - FISH FOOD                       | 14.25     |            | 6,115.88    |
+| 20 Feb 2025| Direct Debit         | VIRGIN MEDIA MOBILE                                | 18.00     |            | 6,097.88    |
+| 23 Feb 2025| Debit Card Purchase  | WAGAMAMA N12                                       | 62.50     |            | 6,035.38    |
+| 25 Feb 2025| Debit Card Purchase  | AQUAWORLD (MARK) - FLUVAL 307 FILTER               | 189.00    |            | 5,846.38    |
+| 27 Feb 2025| Debit Card Purchase  | SHELL PETROL STATION N12                           | 55.00     |            | 5,791.38    |
+| 28 Feb 2025| Debit Card Purchase  | OAKTREE PHARMACY - ASTHMA INHALER                  | 12.99     |            | 5,778.39    |
+
+**Closing Balance (28 February 2025):** £5,778.39
+
+**Total Debits:** £2,983.40
+**Total Credits:** £3,850.23
+
+**Important Information:**
+* For any queries regarding your statement, please contact us on 0345 734 5345.
+* Your next statement will be issued on or around 02 April 2025.
+* The transaction on 25 Feb 2025 for AquaWorld (Mark) relates to the Fluval 307 canister filter ordered to replace your old internal filter in the 200-litre tropical fish tank. We hope this resolves the ongoing algae issues and makes the tank presentable before Diane's visit at Easter.

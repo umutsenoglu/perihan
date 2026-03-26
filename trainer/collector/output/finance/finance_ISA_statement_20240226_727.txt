@@ -1,0 +1,44 @@
+**Vanguard Investor Platform - Stocks & Shares ISA Statement**
+
+**Statement Period:** 01 February 2023 - 31 January 2024
+**Statement Date:** 26 February 2024
+**Account Holder:** Ethan Marsh
+**Address:** [House Number] Longmeadow Drive, Finchley, London, N3 1AB
+**Vanguard Account Number:** VGD-ISA-EM-XXXX-XXXX
+**National Insurance Number:** QQ 12 34 56 A
+**Tax Year:** 2023/2024
+
+**Summary of your ISA Holdings (as at 31 January 2024)**
+
+| Fund Name | Units Held | Unit Price (GBP) | Market Value (GBP) |
+|---|---|---|---|
+| Vanguard FTSE Global All Cap Index Fund - Accumulation | 12,345.6789 | 2.5890 | 31,989.12 |
+| Vanguard LifeStrategy 80% Equity Fund - Accumulation | 5,678.9012 | 3.1055 | 17,632.78 |
+| **Total ISA Value** | | | **£49,621.90** |
+
+**Contributions & Withdrawals (01 Feb 2023 - 31 Jan 2024)**
+
+*   **Total Contributions:** £15,000.00 (Regular direct debits of £1,250.00 each month)
+*   **Total Withdrawals:** £0.00
+*   **Net Contributions:** £15,000.00
+
+**Performance Overview (01 Feb 2023 - 31 Jan 2024)**
+
+*   **Opening Value (01 Feb 2023):** £36,500.00
+*   **Net Contributions:** £15,000.00
+*   **Investment Growth/Loss:** -£1,878.10
+*   **Closing Value (31 Jan 2024):** £49,621.90
+
+**Important Note:** Your ISA allowance for the current tax year (2023/2024) is £20,000.00. You have contributed £15,000.00, leaving £5,000.00 remaining.
+
+---
+
+**Payment Confirmation**
+
+**Reference:** VGD-TOPUP-20240226-EM
+**Date:** 26 February 2024
+**Amount:** £500.00
+**Description:** ISA Top-up from Barclays Current Account (ending ****6789)
+**Status:** Successful
+
+Your additional payment of £500.00 has been received and will be invested in your chosen funds within 1-2 business days. This contribution has been applied to your 2023/2024 ISA allowance.

@@ -1,0 +1,28 @@
+**To-Do: Oct 10th**
+
+Right. Deep breaths. Lily's birthday party is looming, but Mum... always Mum.
+
+**Work (Fintech grind):**
+*   [ ] 9:30 Stand-up. Need to give a quick update on the `feature/payment-v2` blockers.
+*   [ ] Get James to sign off on my `authentication-service` PR. Been pending too long.
+*   [ ] Review Priya’s ticket for the `reporting-api` bug. Estimate needed by EOD.
+*   [ ] Meeting with Richard 2:30pm about the new `data-governance` policy.
+*   [ ] Send those overdue expenses to HR.
+
+**Home & Family:**
+*   **Lily's 8th Bday (Science!):**
+    *   [ ] Research "easy science experiments for kids party" – safe slime? Colour-changing liquids?
+    *   [ ] Check Amazon for themed party plates/cups (beakers?). Maybe some safety goggles for props.
+    *   [ ] Chat with Claire about the guest list – does Mrs. Henderson have a contact list for Year 3?
+    *   [ ] Cake idea: planet/galaxy or maybe a 'volcano' cake?
+*   **Mum (Bristol situation):**
+    *   [ ] Call Janet tonight. Check if the new care package info arrived.
+    *   [ ] Ring Hannah in Manchester – coordinate details for next weekend's visit. Thinking Friday evening train, back Sunday. Claire okay with Max/Lily?
+    *   [ ] Quick WhatsApp update for Luke.
+*   [ ] Defrost something for dinner – pasta bake ingredients in the fridge?
+*   [ ] Quick tidy of the living room after Max's nursery storm.
+*   [ ] Water the tropical fish tank – levels looked a bit off last night.
+*   [ ] Remember to do those lower back stretches. It's really stiff today.
+*   [ ] Send QPA the consent form for Lily's museum trip next month.
+
+Just get through today. Coffee. Lots of coffee.

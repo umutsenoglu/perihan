@@ -1,0 +1,83 @@
+**British Gas**
+**Your Energy Bill**
+
+**Date:** 19 June 2023
+**Account Number:** 7812-901-5678
+**Bill Period:** 01 March 2023 - 31 May 2023
+
+**Account Holder:** Mr Ethan Marsh
+**Address:** 14 Elmwood Drive, Northwood, London NW6 3PQ
+
+**Your Latest Bill: £215.84**
+
+**Summary of your charges:**
+
+**Electricity:**
+Previous Reading: 34567 kWh (1 March 2023)
+Current Reading: 35123 kWh (31 May 2023)
+Total Usage: 556 kWh
+Unit Rate (Day): £0.34 per kWh
+Unit Rate (Night, after 11 PM): £0.12 per kWh
+Standing Charge: £0.50 per day (92 days)
+**Total Electricity Charge:** £189.04
+
+*Detailed breakdown of Electricity usage:*
+*Daytime (estimated 80%): 445 kWh @ £0.34 = £151.30*
+*Night-time (estimated 20%): 111 kWh @ £0.12 = £13.32*
+*Standing Charge: 92 days x £0.50 = £46.00*
+
+**Gas:**
+Previous Reading: 12345 m3 (1 March 2023)
+Current Reading: 12450 m3 (31 May 2023)
+Total Usage: 105 m3
+Conversion Factor: 11.1868 kWh/m3
+Total Usage (kWh): 1174.61 kWh
+Unit Rate: £0.07 per kWh
+Standing Charge: £0.29 per day (92 days)
+**Total Gas Charge:** £115.65
+
+*Detailed breakdown of Gas usage:*
+*Usage Charge: 1174.61 kWh @ £0.07 = £82.22*
+*Standing Charge: 92 days x £0.29 = £37.28*
+
+**Subtotal before VAT:** £304.69
+**VAT (5%):** £15.23
+**Total Charges This Period:** £319.92
+
+**Previous Balance:**
+Balance from last bill (1 March 2023): £-104.08 (Credit)
+Payment received on 15 March 2023: £104.08
+
+**Payments received this period:**
+Direct Debit received 15 April 2023: £100.00
+Direct Debit received 15 May 2023: £100.00
+**Total Payments:** £200.00
+
+**Total Due:**
+Total Charges This Period: £319.92
+Less Total Payments: -£200.00
+**Your New Balance: £119.92**
+
+**Your Direct Debit for July will be adjusted to £107.97 to help manage your account balance.**
+
+**Payment Due Date: 03 July 2023**
+
+**How to Pay:**
+Your payment of £119.92 will be collected automatically via Direct Debit on or around 03 July 2023.
+
+**Important Information:**
+* **Your Tariff:** Standard Variable Tariff (SVT). We're continually monitoring energy prices. To review other tariffs, please visit britishgas.co.uk/myaccount.
+* **Smart Meter Reading:** Your electricity and gas readings were automatically taken from your smart meter. We encourage you to continue using energy efficiently, especially now Lily is getting older and Max is starting to understand how things work! Remember to switch off lights when leaving a room and keep an eye on the tropical fish tank’s heater usage.
+* **Energy Saving Tips:** For personalised energy-saving advice, including tips for managing your asthma and allergies during warmer months, visit our website. You can also compare your usage with similar homes in your area.
+* **Customer Service:** If you have any questions about your bill, please call us on 0333 202 9802 or visit britishgas.co.uk/contact.
+* **Account Queries:** Remember that time Claire called about the previous bill? We've made some improvements to our online chat.
+* **Green Energy:** We’re committed to sourcing greener energy. Find out more at britishgas.co.uk/green-energy.
+
+**Your Annual Statement:** Your next annual statement will be issued on 19 September 2023.
+
+Thank you for being a British Gas customer.
+
+British Gas is a trading name of British Gas Services Limited. Registered in England & Wales No. 03141243.
+Registered Office: 1 Rivergate, Neville Street, Leeds, LS1 4BT.
+VAT Registration No. 687 2598 01.
+Authorised and regulated by the Financial Conduct Authority.

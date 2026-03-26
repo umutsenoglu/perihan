@@ -1,0 +1,12 @@
+**Archway Surgery - Vaccination Record**
+
+**Patient:** Ethan Marsh (DOB: 1987-03-15)
+**Date:** 2025-08-02
+**Doctor:** Dr. Anand Patel
+
+**Vaccine Administered:** Influenza Vaccine (2025/26 Season)
+**Batch No.:** FLUMAX-2025-A7
+**Site:** Left Deltoid
+
+**Doctor's Notes:**
+Patient reports significant stress, work deadline pressure, and worry over his mother Janet's health in Bristol, contributing to sleep problems for 3 weeks. Symptoms align with Generalised Anxiety Disorder (GAD). Discussed NHS self-help strategies (NHS.uk/GAD) and the option of NHS talking therapies referral if symptoms persist. Encourage talking to Claire.

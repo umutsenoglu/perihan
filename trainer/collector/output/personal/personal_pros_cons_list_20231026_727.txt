@@ -1,0 +1,26 @@
+**Document Title:** Headspace Check-in / Current State (Oct 26)
+
+**Date:** 2023-10-26
+**Written by:** Ethan Marsh
+
+---
+
+**Pros:**
+
+*   **Family bedrock:** Claire is just... amazing. She gets it. Her patience with me being wired/distracted by work stuff, and still managing the kids and her own demanding job at QPA Primary. Seriously don't know what I'd do without her.
+*   **Kids' moments:** Lily came home with another gold star for her reading from Mrs. Henderson today, properly chuffed. And Max at Little Stars Nursery is learning new words every day – hearing him try to say "dinosaur" earlier nearly made me forget the PPM deadline for a minute. That's the real stuff.
+*   **Work progress (tiny wins):** The payment processing migration, despite everything, *is* moving forward. Finally got that pesky API authentication issue sorted with Priya yesterday, after three days of banging my head against the wall. Feels good to tick *something* off, even if Richard immediately piled on more UAT scenarios.
+*   **Small escapes:** Managed a quick half-hour on the bike this morning before the school run. Air was crisp. Felt good, even if my lower back is still a bit stiff. Also, the new Red-Tailed Shark in the tropical tank is settling in beautifully, swimming with the other tetras. Always calms me down just watching them.
+*   **Mum's voice:** Had a decent chat with Mum yesterday. She sounded okay, mostly. Still sounds like *her*. And Hannah called too, said she'd popped round for tea. Good to know Mum's not totally isolated in Bristol.
+
+**Cons:**
+
+*   **Work Hell:** The payment processing migration. It's eating me alive. Deadline for go-live is looming, end of next month, and we're still miles off. James is piling on the pressure, constantly asking for updates, and Richard's scope creep is relentless. Spending late nights in front of the screen, code reviews, debugging. Sleep is a luxury.
+*   **Mum's Health (The constant hum of worry):** Despite the 'decent chat', I picked up on it again. She was a bit confused about the dates for something she mentioned about Dad (George). Just little things, but they're adding up. More frequent memory blanks, seeming a bit more tired lately. It’s making me anxious. Feels like something is shifting. Bristol feels a million miles away when I'm stuck here. Hannah is closer, which helps, but still.
+*   **Physical Toll:** My lower back is absolutely killing me from all the sitting. Need to get back to those exercises the physio gave me. And the mild asthma is flaring up a bit with the colder weather and general stress. Just feel drained.
+*   **Family time deficit:** Feel like I'm a ghost in my own house this week. Missing bedtime stories with Lily, rushing Max through breakfast. Claire's doing the lion's share, and I feel guilty. She's got her own stresses with Year 3 parents.
+*   **Personal Life Neglect:** My camera hasn't been out of its bag in weeks. My cycling is sporadic. Even cooking, which I usually love, feels like another chore right now. Haven't had time to properly research that electric car switch – the VW Golf needs a service soon, another mental load.
+*   **Financial Foreshadowing:** The Barclays mortgage statement just came in. Manageable for now, but the creeping worry about Mum's future, and what that might entail financially, is always at the back of my mind. It's just a vague fear right now, but it's there.
+*   **Mental Drain:** Just feel overwhelmed. Trying to juggle the monumental project at work, the kids' busy schedules, and this growing, insidious worry about Mum. My head feels full of half-finished thoughts and to-do lists. It’s hard to switch off.
+
+---

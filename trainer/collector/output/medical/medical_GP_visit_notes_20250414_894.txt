@@ -1,0 +1,604 @@
+## ARCHWAY SURGERY
+## GP MEDICAL RECORD – PATIENT: MARSH, Ethan (NHS No: 987 654 3210)
+
+---
+
+**Patient Demographics:**
+*   **Name:** Marsh, Ethan
+*   **DOB:** 1986-07-22 (Age: 38)
+*   **Gender:** Male
+*   **Address:** 14 Willow Crescent, North London, N12 0BH
+*   **Contact No:** 07700 900123
+*   **Email:** ethan.marsh@example.com
+*   **NHS No:** 987 654 3210
+*   **GP:** Dr. Anand Patel
+*   **Registered Date:** 2018-03-15
+
+**Next of Kin:**
+*   **Name:** Claire Marsh (Spouse)
+*   **Contact No:** 07700 900124
+*   **Relationship:** Wife
+
+**Social History:**
+*   **Occupation:** Senior Software Engineer (Fintech)
+*   **Marital Status:** Married
+*   **Children:** Lily (7, Year 3 at QPA Primary School), Max (4, Little Stars Nursery)
+*   **Living Situation:** 3-bed semi-detached, North London. Mortgage with Barclays.
+*   **Car:** 2019 VW Golf. Considering electric vehicle switch.
+*   **Hobbies:** Tropical fish keeping, cycling, photography, cooking.
+*   **Smoking Status:** Non-smoker
+*   **Alcohol:** Occasional, 6-8 units/week
+*   **Exercise:** Regular cycling (commuting, weekend rides), occasional gym.
+
+**Past Medical History (PMH):**
+*   Mild Asthma (diagnosed childhood, managed with Salbutamol PRN)
+*   Seasonal Allergic Rhinitis (managed with Loratadine PRN)
+*   Chronic Lower Back Pain (postural, from desk work; intermittent physiotherapy)
+*   No known drug allergies (NKDA)
+
+---
+
+## MEDICAL RECORD ENTRIES
+
+---
+
+### **GP Consultation Notes**
+
+**Date:** 2024-10-02
+**Time:** 10:15
+**Clinician:** Dr. Anand Patel
+**Type:** Routine Annual Health Check / Review
+
+**Subjective (S):**
+Mr. Ethan Marsh, 38, presents for a routine annual health check. Reports feeling generally well. No acute concerns. Mentions current work project at the fintech company is demanding, with tight deadlines, leading to increased screen time and desk hours. This has resulted in a slight increase in his usual lower backache, which he describes as a dull ache in the lumbar region, worse after prolonged sitting. He is managing it with occasional stretching and over-the-counter ibuprofen. Asthma is well-controlled; hasn't used his Salbutamol inhaler in several months. Seasonal allergies have been mild this autumn, not requiring regular medication.
+
+He briefly mentions his mother, Janet Marsh (72), living in Bristol. He states she’s been a bit more forgetful recently, describing it as "just normal aging" or "having her off days." He recalls an instance last month where she forgot a doctor's appointment and another where she misplaced her keys more frequently than usual. He and his siblings (Hannah in Manchester, Luke in Edinburgh) have noticed it, but haven't taken any specific action, attributing it to her age and the recent passing of his father, George, in 2021, which was a difficult time for her. He says he tries to call her every few days and visits Bristol every 2-3 weeks, usually by train (£45 return). He’s been enjoying his tropical fish hobby, finding it relaxing, and recently took Lily and Max on a bike ride in the park. Claire is doing well at her primary school.
+
+**Objective (O):**
+*   **General Appearance:** Well-nourished male, appears comfortable.
+*   **Vital Signs:**
+    *   Blood Pressure (BP): 128/82 mmHg
+    *   Heart Rate (HR): 72 bpm (regular)
+    *   Respiratory Rate (RR): 16 breaths/min
+    *   Temperature (Temp): 36.8 °C
+    *   Oxygen Saturation (SpO2): 98% on room air
+*   **Anthropometrics:**
+    *   Height: 178 cm
+    *   Weight: 84 kg
+    *   BMI: 26.5 kg/m² (Overweight range)
+*   **Physical Examination:**
+    *   **Cardiovascular:** S1 S2 dual, no murmurs. Peripheral pulses palpable and equal.
+    *   **Respiratory:** Clear to auscultation bilaterally, no wheezes or crackles.
+    *   **Abdomen:** Soft, non-tender, no organomegaly.
+    *   **Musculoskeletal:** Lumbar spine range of motion mildly restricted on flexion; mild paraspinal muscle tenderness in lumbar region. No neurological deficits noted in lower limbs.
+    *   **Neurological:** Alert and oriented. Cranial nerves intact. Reflexes normal.
+
+**Assessment (A):**
+1.  **Z00.00 - Routine general medical examination without abnormal findings:** Overall good health.
+2.  **M54.5 - Low back pain:** Chronic lower back pain, likely exacerbated by occupational posture.
+3.  **R45.89 - Other symptoms and signs involving emotional state:** Mild subjective stress noted, likely work-related. Early, non-specific concerns regarding mother's memory.
+
+**Plan (P):**
+1.  **Lifestyle Advice:**
+    *   Encouraged regular stretching and postural breaks during work.
+    *   Advised ergonomic review of workstation setup.
+    *   Recommended maintaining current exercise routine (cycling).
+    *   Discussed healthy eating habits to manage BMI.
+2.  **Back Pain Management:**
+    *   Continue PRN ibuprofen.
+    *   Provided a leaflet on simple back exercises.
+    *   Consider physiotherapy referral if pain worsens or becomes persistent.
+3.  **Stress Management:**
+    *   Advised to continue engaging in hobbies (tropical fish, photography, cycling) as stress outlets.
+    *   Encouraged open communication with spouse, Claire.
+4.  **Mother's Health:**
+    *   Advised Mr. Marsh to monitor his mother's memory concerns. If they become more frequent, impact her daily living, or cause him significant worry, suggest she discusses it with her GP (Dr. Sarah Collins in Bristol).
+5.  **Follow-up:**
+    *   No immediate follow-up required. Advised to book an appointment if any new concerns arise or current symptoms worsen.
+
+---
+
+**Date:** 2024-11-25
+**Time:** 14:30
+**Clinician:** Dr. Anand Patel
+**Type:** Unscheduled Consultation – Acute Stress Response
+
+**Subjective (S):**
+Mr. Marsh presents today looking visibly tired and anxious. Reports significant increase in stress levels following his mother Janet Marsh's fall at home on 2024-11-18. He states she bruised her hip but thankfully sustained no fractures. He immediately travelled to Bristol to be with her, taking the train (£45 return), and helped coordinate her hospital visit and initial home support. He describes feeling "constantly on edge" since the incident.
+He reports difficulty sleeping, waking frequently during the night, often with thoughts racing about his mother's well-being and future care. He estimates he's getting only 4-5 hours of broken sleep per night. This lack of sleep is contributing to persistent tension headaches, localised across his forehead and temples, which are not fully relieved by paracetamol. His lower back pain has worsened considerably, now described as a constant, nagging ache that radiates slightly into his left buttock, making sitting for long periods at work very uncomfortable. He is struggling to concentrate at work, making minor errors in coding, and finding it hard to focus on complex tasks. His appetite has decreased, and he’s been skipping meals. He mentions feeling overwhelmed by the thought of his mother's vulnerability and the potential need for long-term care. He has spoken to Claire, who is also worried but trying to be supportive. He notes Lily and Max have noticed his stress and are asking why Daddy is "grumpy."
+
+**Objective (O):**
+*   **General Appearance:** Appears fatigued and a bit pale. Posture stooped slightly, holding his lower back.
+*   **Vital Signs:**
+    *   BP: 135/88 mmHg
+    *   HR: 85 bpm (slightly elevated, regular)
+    *   RR: 18 breaths/min
+    *   Temp: 37.0 °C
+*   **Anthropometrics:**
+    *   Weight: 83 kg (down 1 kg since last visit)
+*   **Physical Examination:**
+    *   **Cardiovascular:** S1 S2 dual, no murmurs.
+    *   **Respiratory:** Clear.
+    *   **Musculoskeletal:** Marked tenderness over lumbar paraspinal muscles, particularly on the left. Straight leg raise (SLR) test negative bilaterally. Range of motion limited by pain.
+    *   **Neurological:** Alert, oriented. No focal neurological deficits. Mild tremor noted in hands when outstretched, likely physiological due to anxiety.
+    *   **Mental State Exam (MSE):** Affect congruent with reported anxiety. Speech slightly rapid. Thoughts preoccupied with mother's health. No suicidal ideation elicited.
+
+**Assessment (A):**
+1.  **F43.22 - Adjustment disorder with mixed anxiety and depressed mood:** Acute stress reaction following mother's fall and subsequent concerns. Symptoms include insomnia, tension headaches, decreased appetite, difficulty concentrating, and general anxiety.
+2.  **M54.5 - Low back pain:** Exacerbation of chronic lower back pain, likely contributed to by increased tension and stress.
+3.  **R53.81 - Other malaise and fatigue:** Significant fatigue secondary to poor sleep and stress.
+
+**Plan (P):**
+1.  **Immediate Stress Management:**
+    *   **Sleep Hygiene:** Advised strict sleep hygiene practices (consistent bedtime, dark/cool room, avoid screens before bed, limit caffeine/alcohol).
+    *   **Mindfulness/Relaxation:** Recommended using NHS-approved mindfulness apps or guided meditation for 10-15 minutes daily.
+    *   **Stress Reduction:** Encouraged delegating tasks at work where possible and taking short, regular breaks.
+    *   **Open Communication:** Reaffirmed importance of discussing feelings with Claire and siblings (Hannah, Luke).
+2.  **Back Pain Management:**
+    *   Prescribed Co-codamol 30/500mg, 1-2 tablets up to QDS PRN for severe pain, for short-term use (max 5 days).
+    *   **Physiotherapy Referral:** Urgent referral to NHS Physiotherapy for assessment and management of acute lower back pain.
+3.  **General Health Check:**
+    *   **Blood Tests:** Requested routine blood tests to rule out any underlying physical causes for fatigue and weight loss, including:
+        *   Full Blood Count (FBC)
+        *   Urea & Electrolytes (U&Es)
+        *   Liver Function Tests (LFTs)
+        *   Thyroid Function Tests (TFTs)
+        *   Vitamin D levels
+        *   Vitamin B12 levels
+    *   Provided lab request form and instructions for fasting if required.
+4.  **Mother's Care:**
+    *   Advised Mr. Marsh to encourage his mother's GP, Dr. Sarah Collins, to refer Janet Marsh to a neurologist at Bristol Royal Infirmary given the fall and persistent memory concerns.
+5.  **Follow-up:**
+    *   Booked a routine follow-up appointment in 4 weeks to review symptoms, blood test results, and physiotherapy progress. Advised to contact the surgery sooner if symptoms worsen significantly or new concerns arise.
+
+---
+
+**Date:** 2025-01-15
+**Time:** 09:00
+**Clinician:** Dr. Anand Patel
+**Type:** Follow-up Consultation – Escalating Stress and Mood Disturbance
+
+**Subjective (S):**
+Mr. Marsh attends the appointment looking significantly more distressed than at the previous visit. He is tearful during the consultation. Reports his mother, Janet Marsh, was diagnosed with early-stage vascular dementia on 2025-01-12 following her neurologist appointment at Bristol Royal Infirmary. She has been prescribed Donepezil 5mg. He describes feeling "devastated" and "completely overwhelmed" by the news. He states he's struggling to process the diagnosis and the implications for his mother's future and his family.
+He reports a marked worsening of his symptoms:
+*   **Mood:** Experiencing profound sadness, often tearful, feeling "empty" and "hopeless." Guilt about not noticing symptoms earlier, despite reassurance from his siblings and Claire.
+*   **Anxiety:** Constant worry about his mother's safety and care. He describes it as a "knot in his stomach." He is constantly checking his phone for updates from Hannah in Manchester, who is closer and doing more of the day-to-day care.
+*   **Sleep:** Still severely disrupted, often taking hours to fall asleep, waking early (around 4 am) and unable to return to sleep. Feels exhausted all the time.
+*   **Concentration:** Significantly impaired. He's finding it extremely difficult to focus at work, making more frequent errors, and missing details. He's concerned about his job performance.
+*   **Appetite/Weight:** Further decreased appetite. Has lost an additional 2 kg since last visit, now at 81 kg.
+*   **Social Functioning:** Withdrawing from family activities. Claire is trying to be understanding, but he feels distant from her and the children (Lily, Max). He has neglected his hobbies entirely.
+*   **Practical Burden:** Mentions the ongoing need for him to visit Bristol every 2-3 weeks, often taking the train (£45 return). He is coordinating with CarePlus Bristol for a carer to visit 3 times a week (approx. £864/month). Luke is helping financially. This administrative and financial burden adds to his stress.
+
+**Objective (O):**
+*   **General Appearance:** Visibly distressed, tearful, agitated. Clothes appear slightly loose.
+*   **Vital Signs:**
+    *   BP: 142/92 mmHg (elevated)
+    *   HR: 98 bpm (tachycardic)
+    *   RR: 20 breaths/min
+*   **Anthropometrics:**
+    *   Weight: 81 kg (total loss of 3 kg since 2024-10-02)
+*   **Physical Examination:**
+    *   **Cardiovascular:** S1 S2 dual, no murmurs.
+    *   **Respiratory:** Clear.
+    *   **Musculoskeletal:** Lumbar tenderness persists.
+    *   **Neurological:** Alert, oriented. Marked psychomotor agitation (fidgeting, restless hands).
+    *   **Mental State Exam (MSE):** Mood profoundly depressed, affect tearful and anxious. Speech hesitant, then rapid. Thought content preoccupied with mother's condition and future. Expresses feelings of hopelessness, but denies active suicidal ideation, stating his children and Claire are his reason to keep going.
+
+**Laboratory Results (from 2024-12-01):**
+*   **Full Blood Count (FBC):**
+    *   Hb: 14.5 g/dL (13.0-17.0) - Normal
+    *   WBC: 7.2 x 10^9/L (4.0-11.0) - Normal
+    *   Platelets: 280 x 10^9/L (150-400) - Normal
+*   **Urea & Electrolytes (U&Es):**
+    *   Sodium: 140 mmol/L (135-145) - Normal
+    *   Potassium: 4.1 mmol/L (3.5-5.0) - Normal
+    *   Creatinine: 85 µmol/L (60-110) - Normal
+    *   eGFR: >90 mL/min (Normal)
+*   **Liver Function Tests (LFTs):**
+    *   ALT: 30 U/L (5-40) - Normal
+    *   AST: 25 U/L (5-40) - Normal
+    *   ALP: 90 U/L (30-130) - Normal
+    *   Bilirubin: 10 µmol/L (0-20) - Normal
+*   **Thyroid Function Tests (TFTs):**
+    *   TSH: 2.1 mIU/L (0.4-4.0) - Normal
+    *   Free T4: 15.2 pmol/L (10.0-22.0) - Normal
+*   **Vitamin D:** 60 nmol/L (50-200) - Sufficient
+*   **Vitamin B12:** 350 pg/mL (200-900) - Normal
+*   **Conclusion:** All blood tests within normal physiological limits; no organic cause for fatigue/mood disturbance identified.
+
+**Assessment (A):**
+1.  **F43.21 - Adjustment disorder with prolonged depressive reaction:** Significant deterioration in mood and functioning following the diagnosis of parental vascular dementia. Symptoms now meet criteria for a depressive episode, though still primarily in the context of an identifiable stressor.
+2.  **R45.1 - Restlessness and agitation:** Evident psychomotor agitation.
+3.  **R53.81 - Other malaise and fatigue:** Persistent, severe fatigue.
+4.  **Z63.4 - Disappearance and death of family member:** Acute grief reaction (father deceased 2021, now mother's cognitive decline).
+5.  **M54.5 - Low back pain:** Continues, likely exacerbated by overall tension.
+
+**Plan (P):**
+1.  **Mental Health Support:**
+    *   **Counselling/Therapy:** Urgent referral to NHS Talking Therapies (formerly IAPT) for psychological support, specifically focusing on coping strategies for grief, anxiety, and caregiver burden. Emphasised the severity of his symptoms in the referral.
+    *   **Pharmacotherapy Discussion:** Discussed the option of starting antidepressant medication (e.g., an SSRI) given the severity and persistence of depressive symptoms. Mr. Marsh is hesitant but open to considering it if symptoms do not improve rapidly. Offered a short-term prescription for Propranolol 10mg PRN (max TID) for acute anxiety symptoms (e.g., palpitations, tremor), which he accepted.
+    *   **Psychoeducation:** Provided resources on coping with a parent's dementia diagnosis and managing caregiver stress.
+    *   **Time Off Work:** Strongly advised Mr. Marsh to consider taking some sick leave from work to focus on his mental health and recover.
+2.  **Practical Support:**
+    *   **LPA:** Advised Mr. Marsh to ensure Lasting Power of Attorney (LPA) is in place for his mother, or to initiate the process if not already done, to ease future administrative burdens.
+    *   **Family Coordination:** Encouraged continued delegation of tasks among siblings (Hannah for daily care, Luke for financial support) to reduce his personal load.
+3.  **Physical Health:**
+    *   **Nutrition:** Advised small, frequent, nutritious meals.
+    *   **Exercise:** Encouraged gentle exercise, if tolerated, such as short walks.
+    *   **Physiotherapy:** Follow up on existing physiotherapy referral for back pain.
+4.  **Follow-up:**
+    *   Booked a follow-up appointment in 2 weeks to review mood, medication, and engagement with IAPT. Advised to contact the surgery sooner if suicidal thoughts emerge or symptoms significantly worsen.
+
+---
+
+**Date:** 2025-03-05
+**Time:** 11:15
+**Clinician:** Dr. Anand Patel
+**Type:** Follow-up Consultation – Persistent Symptoms, Medication Initiation
+
+**Subjective (S):**
+Mr. Marsh returns, reporting minimal improvement in his overall condition. He states he occasionally uses the Propranolol, which helps with physical anxiety symptoms, but his mood remains low, and he's constantly exhausted. He continues to struggle with concentration at work, describing it as "brain fog." He has not taken time off work, feeling immense pressure from upcoming project deadlines at his fintech company.
+He confirms that he initiated the Lasting Power of Attorney (LPA) process for his mother with solicitor Simon Holt, starting on 2025-02-05. This has added another layer of administrative burden and stress. He reiterates the financial strain of the care costs (£864/month for CarePlus Bristol) and his frequent train journeys to Bristol (£45 return).
+He reports missing two IAPT appointments due to work commitments and travel to Bristol, feeling frustrated that he can't prioritise his own health. His relationship with Claire is strained; she's trying to support him, but he admits he's been withdrawn and irritable. His hobbies remain entirely neglected. He feels a sense of hopelessness about his mother's condition and his own ability to cope. He has not experienced suicidal ideation, but frequently thinks about "just wanting to disappear."
+
+**Objective (O):**
+*   **General Appearance:** Appears fatigued, eyes slightly sunken. Affect is flat.
+*   **Vital Signs:**
+    *   BP: 138/90 mmHg
+    *   HR: 92 bpm
+    *   RR: 18 breaths/min
+*   **Anthropometrics:**
+    *   Weight: 82 kg (slight increase from previous, but still down from baseline)
+*   **Physical Examination:**
+    *   **Musculoskeletal:** Lumbar tenderness persists.
+    *   **Mental State Exam (MSE):** Mood reported as consistently low. Affect constricted. Speech slow, quiet. Thought content preoccupied with caregiver responsibilities and negative self-appraisal. Denies suicidal ideation. Insight into his condition is good, but feels powerless.
+
+**Assessment (A):**
+1.  **F43.21 - Adjustment disorder with prolonged depressive reaction:** Symptoms have persisted and show little sign of resolution, despite initial interventions. High risk of evolving into a major depressive disorder.
+2.  **Z73.0 - Burn-out:** Features of emotional exhaustion, depersonalisation, and reduced personal accomplishment, consistent with caregiver burnout.
+3.  **Z63.4 - Disappearance and death of family member:** Ongoing grief reaction.
+
+**Plan (P):**
+1.  **Pharmacotherapy:**
+    *   Discussed the need for antidepressant medication more thoroughly. Mr. Marsh agreed to start an SSRI.
+    *   Prescribed **Citalopram 10mg OD**, to be taken in the morning. Explained potential side effects (e.g., initial nausea, anxiety, insomnia, sexual dysfunction) and the delayed onset of therapeutic effect (2-4 weeks). Advised to continue Propranolol PRN for breakthrough anxiety if needed.
+    *   Provided patient information leaflet on Citalopram.
+2.  **Mental Health Support:**
+    *   **Re-referral to NHS Talking Therapies:** Emphasised the urgency and the complex stressors in the referral note. Encouraged Mr. Marsh to prioritise these appointments.
+    *   **Workplace Support:** Advised Mr. Marsh to consider discussing his situation with his employer or occupational health department. They may be able to offer temporary adjustments to his workload or provide additional support.
+3.  **Practical Support & Self-Care:**
+    *   Reiterated the importance of delegating tasks and seeking help from siblings (Hannah, Luke) and Claire to manage the practical and emotional load.
+    *   Emphasised that looking after his own health is crucial for him to be able to care for his mother.
+    *   Encouraged even small, achievable self-care activities (e.g., 15 minutes of quiet time, listening to music).
+4.  **Follow-up:**
+    *   Booked a follow-up appointment in 2 weeks to review Citalopram tolerance and initial effect. Advised contact sooner if any adverse effects or worsening of mood.
+
+---
+
+**Date:** 2025-04-14
+**Time:** 10:45
+**Clinician:** Dr. Anand Patel
+**Type:** Follow-up Consultation – Medication Review & Dementia Care Referral (for Ethan)
+
+**Subjective (S):**
+Mr. Marsh attends for a follow-up. He reports that he started Citalopram 10mg OD as prescribed on 2025-03-05. He initially felt a bit worse for the first 5-7 days (increased anxiety, mild nausea), but these side effects have since settled. He states he feels "maybe a tiny bit better, less tearful now," but still experiences significant fatigue and low energy.
+His most pressing concern today is his *own* memory. He reports several instances of subjective cognitive difficulties:
+*   Forgetting appointments (e.g., a dentist appointment last week).
+*   Struggling to recall specific work details or programming syntax, requiring him to re-check documentation more frequently than before.
+*   Misplacing keys, phone, or wallet almost daily, which is unusual for him.
+*   Finding it hard to follow complex conversations or multi-step instructions.
+He expresses significant anxiety about these memory issues, stating, "My mum has dementia, what if I'm getting it too? I'm only 38." He's aware of the potential genetic component of some dementias and is highly distressed by this possibility. He worries about the impact on his job, his children (Lily and Max), and Claire. He hasn't discussed these specific fears with Claire yet, feeling he needs to get a medical opinion first. He notes his mother's condition is stable on Donepezil, but the reality of her decline is ever-present. He is still visiting Bristol regularly.
+
+**Objective (O):**
+*   **General Appearance:** Appears calmer than previous visits, but still looks tired. Maintains eye contact.
+*   **Vital Signs:**
+    *   BP: 132/86 mmHg
+    *   HR: 80 bpm
+    *   RR: 16 breaths/min
+*   **Anthropometrics:**
+    *   Weight: 82.5 kg (stable)
+*   **Physical Examination:**
+    *   **Neurological:** Alert and oriented x3. No focal deficits.
+    *   **Cognitive Screening:** Administered a brief 5-minute cognitive screen (e.g., 3-word recall, clock drawing, serial 7s).
+        *   3-word recall (apple, table, penny) after 1 minute: 3/3. After 5 minutes: 2/3 (forgot 'penny').
+        *   Clock drawing: All numbers present, hands at 10 past 11, but slightly rushed.
+        *   Serial 7s (from 100): Completed with one error (79 instead of 72).
+        *   Overall, the brief screen is within normal limits for his age and education, but his subjective difficulty with 'penny' and the serial 7s error (which he self-corrected) highlights his internal struggle and anxiety impacting performance. He expresses frustration at not performing perfectly.
+    *   **Mental State Exam (MSE):** Mood is improved from previous, but still low. Affect anxious, particularly when discussing memory. Thought content preoccupied with his mother's dementia and his own cognitive function. Denies suicidal ideation.
+
+**Assessment (A):**
+1.  **F43.21 - Adjustment disorder with depressive symptoms:** Mood improving on Citalopram 10mg, but still experiencing significant fatigue and low mood.
+2.  **F45.21 - Health anxiety (Hypochondriasis):** Specific and intense anxiety about developing dementia, exacerbated by his mother's recent diagnosis and his subjective cognitive complaints.
+3.  **R41.81 - Age-related cognitive decline:** Subjective cognitive complaints, likely stress and anxiety-related, but requires thorough evaluation given the strong family history of vascular dementia and the patient's acute distress. While the brief cognitive screen is largely normal, his personal fears warrant further investigation for reassurance and exclusion of early cognitive changes.
+4.  **Z63.4 - Disappearance and death of family member:** Ongoing grief and anticipatory grief for mother.
+
+**Plan (P):**
+1.  **Pharmacotherapy:**
+    *   **Citalopram:** Continue Citalopram. Increase dose to **20mg OD** to address persistent depressive symptoms and anxiety, explaining that 10mg is often a starting dose and 20mg is a common therapeutic dose. Reviewed potential side effects again.
+2.  **Specialist Referral – Dementia Care Referral (for Ethan):**
+    *   **Referral to Memory Clinic:** Urgent referral to an NHS Memory Clinic (e.g., at Royal Free London or Barnet Hospital, given his North London location) for a comprehensive neuropsychological assessment. This referral is explicitly for Mr. Ethan Marsh, to investigate his subjective cognitive complaints, provide reassurance, and rule out any early cognitive impairment, particularly in the context of his family history and significant health anxiety. The referral will highlight his age (38), occupational demands (software engineer), and the acute stressor of his mother's vascular dementia diagnosis. This is the "dementia care referral" as requested in the prompt, focusing on *Ethan's* concerns related to dementia.
+3.  **Mental Health Support:**
+    *   **NHS Talking Therapies:** Re-emphasised the critical importance of engaging with IAPT. Advised to proactively reschedule any missed appointments. Therapy can help address both the adjustment disorder and the health anxiety.
+4.  **Psychoeducation & Coping Strategies:**
+    *   Provided information on stress-related cognitive difficulties, which are common and often reversible.
+    *   Advised practical memory aids: using a diary/calendar, making lists, setting reminders on his phone.
+    *   Encouraged open discussion with Claire about his fears regarding his own memory.
+5.  **Blood Tests (Optional/Considered via Memory Clinic):**
+    *   Discussed the possibility of genetic testing for APOE e4 gene, but advised this would typically be discussed and ordered by the memory clinic specialist after initial assessment, given the complex implications.
+    *   Considered repeat FBC, HbA1c, and lipid panel, but decided against it as previous labs were normal and focus is on mental health/cognitive assessment.
+6.  **Follow-up:**
+    *   Booked a follow-up appointment in 4 weeks to review Citalopram 20mg tolerance and effect, and to discuss the Memory Clinic appointment details.
+
+---
+
+**Date:** 2025-06-03
+**Time:** 16:00
+**Clinician:** Dr. Anand Patel
+**Type:** Follow-up Consultation – Memory Clinic Report Review & Ongoing Management
+
+**Subjective (S):**
+Mr. Marsh presents today with a noticeably improved mood. He reports that increasing Citalopram to 20mg OD has been beneficial, with a significant reduction in his depressive symptoms and anxiety levels. He states he feels "more like myself again." His sleep has improved, now getting 6-7 hours of more consolidated sleep. He still experiences some fatigue, but it is less debilitating.
+He attended his Memory Clinic appointment at Royal Free London on 2025-05-28 and received their report, which he brings today. He describes the assessment as very thorough and, importantly, "reassuring." He has also managed to engage consistently with NHS Talking Therapies, completing 3 CBT sessions so far, which he finds helpful in managing his anxious thoughts and caregiver stress.
+His subjective memory concerns have lessened. While he still occasionally misplaces items, he attributes it more to being busy and distracted rather than a fundamental memory deficit. He's found using a shared digital calendar with Claire helpful. He mentions his mother Janet's condition is stable on Donepezil, and the CarePlus Bristol carers are doing a good job. He feels more equipped to handle the care coordination with Hannah and Luke. He even managed a short bike ride last weekend, his first in months.
+
+**Objective (O):**
+*   **General Appearance:** Looks brighter, less anxious.
+*   **Vital Signs:**
+    *   BP: 125/80 mmHg
+    *   HR: 75 bpm
+*   **Anthropometrics:**
+    *   Weight: 83 kg
+*   **Physical Examination:**
+    *   **Mental State Exam (MSE):** Mood stable, affect appropriate. Speech normal rate and volume. Thought content is less preoccupied with his health concerns, more focused on practical solutions. Denies suicidal ideation.
+
+**Memory Clinic Report (Royal Free London NHS Foundation Trust, Dr. Anya Sharma, Consultant Neurologist):**
+*   **Patient:** Ethan Marsh, DOB 1986-07-22
+*   **Date of Assessment:** 2025-05-28
+*   **Referral Reason:** Subjective cognitive complaints and health anxiety regarding dementia, in the context of mother's recent vascular dementia diagnosis.
+*   **Assessment:** Comprehensive neuropsychological battery including tests of attention, executive function, memory (verbal and visual), language, and visuospatial skills. Standardised tests included MoCA, CVLT-II, Rey-Osterrieth Complex Figure Test, Digit Span, Verbal Fluency.
+*   **Findings:**
+    *   **MoCA:** 29/30 (one point deducted for mild difficulty with delayed recall, which improved with semantic cueing).
+    *   **Memory:** Verbal and visual memory scores were within the high average range for his age and education. Minor fluctuations noted on some memory tasks, but these were inconsistent and attributed to attentional factors and anxiety during testing. No evidence of impaired learning or accelerated forgetting.
+    *   **Executive Function:** Intact, with strong performance on tasks requiring planning and problem-solving.
+    *   **Language and Visuospatial:** Within normal limits.
+    *   **Mood/Affect:** Patient presented with significant anxiety and low mood during the initial stages of assessment, which appeared to impact his subjective confidence in his cognitive abilities.
+*   **Conclusion:** No objective evidence of dementia or significant cognitive impairment identified. Subjective cognitive complaints are most consistent with the impact of significant stress, anxiety, and depression (adjustment disorder) on attention and information processing. The patient's strong health anxiety regarding dementia, driven by his mother's diagnosis, is a primary contributing factor to his concerns.
+*   **Recommendations:**
+    *   Reassurance provided to Mr. Marsh that his cognitive function is currently normal.
+    *   Continue current antidepressant medication (Citalopram 20mg OD).
+    *   Continue engagement with NHS Talking Therapies to address underlying anxiety and depression.
+    *   Lifestyle modifications for stress management.
+    *   No further neurological follow-up required unless new objective symptoms emerge.
+    *   Genetic testing for APOE e4 not recommended at this time, given the absence of objective cognitive impairment and the limited clinical utility for asymptomatic individuals.
+
+**Assessment (A):**
+1.  **F43.21 - Adjustment disorder with depressive symptoms:** Significantly improved on Citalopram 20mg OD and with CBT engagement.
+2.  **F45.21 - Health anxiety (Hypochondriasis):** Substantially reduced following comprehensive negative cognitive assessment and specialist reassurance.
+3.  **Z04.6 - Encounter for examination and observation for suspected disease or condition, not found:** Memory clinic assessment confirmed no objective cognitive impairment.
+
+**Plan (P):**
+1.  **Pharmacotherapy:**
+    *   Continue Citalopram 20mg OD. Reassured Mr. Marsh that he can discuss dose reduction in several months once stable.
+2.  **Mental Health Support:**
+    *   Encouraged continued engagement with NHS Talking Therapies for ongoing coping strategies and to prevent relapse.
+    *   Reiterated the importance of self-care and maintaining open communication with Claire and his siblings.
+3.  **Physical Health:**
+    *   Encouraged re-engagement with hobbies (cycling, tropical fish) and regular exercise.
+    *   Reviewed lower back pain, which is now less severe due to overall stress reduction. Advised continuing physio exercises.
+4.  **Mother's Care:**
+    *   Acknowledged the ongoing challenges of his mother's care but noted Mr. Marsh's improved coping mechanisms.
+    *   Referred to local carer support groups for families of dementia patients, accessible through NHS resources.
+5.  **Follow-up:**
+    *   Routine follow-up in 3 months for medication review and general well-being check. Advised to contact the surgery sooner if any new concerns or worsening of symptoms.
+
+---
+
+**Date:** 2025-08-20
+**Time:** 15:00
+**Clinician:** Dr. Anand Patel
+**Type:** Follow-up Consultation – Ongoing Stability and Care Planning
+
+**Subjective (S):**
+Mr. Marsh reports feeling much better overall. His mood remains stable on Citalopram 20mg OD. He's sleeping well and his energy levels have significantly improved. He has continued with CBT sessions and feels he has developed effective coping mechanisms for managing the stress associated with his mother's care. His health anxiety regarding his own memory is now minimal, following the reassurance from the Memory Clinic.
+He is now actively engaged in his hobbies again, regularly cycling to work and on weekends, and enjoying his tropical fish. He reports a noticeable improvement in his relationship with Claire and is more present with Lily and Max. He's managed to delegate more tasks related to his mother's care to Hannah and Luke, streamlining the process. He mentions that CarePlus Bristol is providing good care, and his mother Janet's condition is stable, though with expected progression of vascular dementia. He and his siblings are now discussing long-term care plans, including the potential for Janet to move to a care home closer to one of them in the future. He still visits Bristol every 2-3 weeks, but the trips are less emotionally draining.
+
+**Objective (O):**
+*   **General Appearance:** Appears well and relaxed.
+*   **Vital Signs:**
+    *   BP: 122/78 mmHg
+    *   HR: 70 bpm
+*   **Anthropometrics:**
+    *   Weight: 84 kg (back to baseline)
+*   **Physical Examination:** Unremarkable.
+*   **Mental State Exam (MSE):** Mood euthymic, affect appropriate. Speech normal. Thought content organised and goal-directed. No signs of anxiety or depression.
+
+**Assessment (A):**
+1.  **F43.21 - Adjustment disorder with depressive symptoms, in remission:** Significant improvement and resolution of symptoms.
+2.  **Z71.9 - Counselling, unspecified:** Patient has benefited greatly from psychological support.
+3.  **Z63.4 - Disappearance and death of family member:** Healthy coping with ongoing grief and anticipatory grief.
+
+**Plan (P):**
+1.  **Pharmacotherapy:**
+    *   Discussed potential for gradual dose reduction of Citalopram. Mr. Marsh prefers to remain on 20mg OD for a few more months to ensure stability, particularly as his mother's condition may progress. Agreed to review in 2-3 months.
+2.  **Mental Health Maintenance:**
+    *   Encouraged continued application of CBT strategies.
+    *   Advised to maintain healthy lifestyle (exercise, hobbies, social connection).
+    *   Provided contact details for local dementia carer support groups if he wishes to join.
+3.  **Physical Health:**
+    *   Lower back pain is now well-managed with regular exercise and stretches.
+    *   Encouraged maintaining healthy diet and exercise to keep BMI in check.
+4.  **Mother's Care:**
+    *   Commended Mr. Marsh on his proactive approach to his mother's care and his self-care efforts.
+    *   Offered to provide letters of support for future care home applications or financial aid if required.
+5.  **Follow-up:**
+    *   Booked an annual review in 2 months (2025-10-10) to discuss Citalopram tapering and general health. Advised to contact the surgery if any concerns arise.
+
+---
+
+**Date:** 2025-10-10
+**Time:** 09:30
+**Clinician:** Dr. Anand Patel
+**Type:** Annual Review & Medication Review
+
+**Subjective (S):**
+Mr. Marsh presents for his annual review. Reports feeling consistently well. Mood is stable, and he feels fully recovered from the period of intense stress and anxiety earlier in the year. He has continued on Citalopram 20mg OD and feels it has been instrumental in his recovery. He is now keen to discuss a gradual reduction of the medication.
+His mother Janet Marsh's condition remains stable, with no acute changes. The Donepezil seems to be managing her symptoms effectively for now. The CarePlus Bristol carers are reliable, and the family coordination (with Hannah for day-to-day, Luke for finances) is working smoothly. He still visits Bristol regularly (£45 return by train), but these visits are now positive rather than draining. The LPA with Simon Holt is fully in place, easing some of the administrative burden.
+He's fully re-engaged with his job as a senior software engineer, finding his concentration and productivity restored. His family life with Claire, Lily, and Max is thriving, and he's actively enjoying his hobbies (tropical fish, cycling, photography, cooking). His lower back pain is minimal and managed with stretching.
+
+**Objective (O):**
+*   **General Appearance:** Appears relaxed, cheerful and healthy.
+*   **Vital Signs:**
+    *   BP: 120/76 mmHg
+    *   HR: 68 bpm
+*   **Anthropometrics:**
+    *   Weight: 84.5 kg
+*   **Physical Examination:** Unremarkable.
+*   **Mental State Exam (MSE):** Mood euthymic, affect bright. No signs of anxiety or depression.
+
+**Assessment (A):**
+1.  **F43.21 - Adjustment disorder with depressive symptoms, in sustained remission:** Patient has maintained remission for several months.
+2.  **Z00.00 - Routine general medical examination without abnormal findings:** Overall good health.
+3.  **Z51.81 - Encounter for therapeutic drug monitoring:** Review of Citalopram therapy.
+
+**Plan (P):**
+1.  **Pharmacotherapy:**
+    *   Discussed a plan for gradual tapering of Citalopram. Advised to reduce to 10mg OD for 4-6 weeks, then to stop. Explained potential withdrawal symptoms and advised to contact the surgery if any issues arise.
+    *   Provided clear instructions for tapering schedule.
+2.  **Mental Health Maintenance:**
+    *   Emphasised continued use of coping strategies learned in CBT.
+    *   Advised to be vigilant for any return of symptoms, particularly during stressful periods.
+    *   Encouraged continued engagement with hobbies and support networks.
+3.  **Physical Health:**
+    *   Reviewed mild asthma and seasonal allergies – both well-controlled. Advised to continue Salbutamol and Loratadine PRN.
+    *   Encouraged maintaining current healthy lifestyle to manage back pain and BMI.
+4.  **Mother's Care:**
+    *   Commended Mr. Marsh on his resilience and effective management of his mother's care, while prioritising his own well-being.
+    *   Offered ongoing support for any future needs related to Janet's care.
+5.  **Follow-up:**
+    *   Booked a follow-up appointment in 3 months (2026-01-10) to review Citalopram withdrawal and overall well-being.
+
+---
+
+### **LABORATORY HISTORY – ETHAN MARSH (NHS No: 987 654 3210)**
+
+**Date: 2024-12-01**
+**Reason:** Fatigue, low mood, rule out organic cause
+**Results:**
+*   **Full Blood Count (FBC):**
+    *   Haemoglobin (Hb): 14.5 g/dL (Ref: 13.0-17.0) – Normal
+    *   White Blood Cell (WBC): 7.2 x 10^9/L (Ref: 4.0-11.0) – Normal
+    *   Platelets: 280 x 10^9/L (Ref: 150-400) – Normal
+*   **Urea & Electrolytes (U&Es):**
+    *   Sodium: 140 mmol/L (Ref: 135-145) – Normal
+    *   Potassium: 4.1 mmol/L (Ref: 3.5-5.0) – Normal
+    *   Creatinine: 85 µmol/L (Ref: 60-110) – Normal
+    *   eGFR: >90 mL/min (Ref: >60) – Normal
+*   **Liver Function Tests (LFTs):**
+    *   ALT: 30 U/L (Ref: 5-40) – Normal
+    *   AST: 25 U/L (Ref: 5-40) – Normal
+    *   ALP: 90 U/L (Ref: 30-130) – Normal
+    *   Bilirubin: 10 µmol/L (Ref: 0-20) – Normal
+*   **Thyroid Function Tests (TFTs):**
+    *   TSH: 2.1 mIU/L (Ref: 0.4-4.0) – Normal
+    *   Free T4: 15.2 pmol/L (Ref: 10.0-22.0) – Normal
+*   **Vitamin D:** 60 nmol/L (Ref: 50-200) – Sufficient
+*   **Vitamin B12:** 350 pg/mL (Ref: 200-900) – Normal
+**Interpretation:** All parameters within normal reference ranges. No evidence of anaemia, infection, renal/hepatic dysfunction, thyroid disorder, or significant vitamin deficiency to account for reported symptoms. Symptoms likely psychosomatic/stress-related.
+
+---
+
+### **SPECIALIST CONSULTATION REPORTS**
+
+**Specialist:** Physiotherapy Department, North London NHS Trust
+**Date of Report:** 2025-01-10
+**Patient:** Ethan Marsh (NHS No: 987 654 3210)
+**Referring GP:** Dr. Anand Patel, Archway Surgery
+**Reason for Referral:** Chronic lower back pain, exacerbated by stress and prolonged sitting.
+
+**Assessment:**
+Mr. Marsh attended initial physiotherapy assessment. Reports low back pain, primarily lumbar region, with occasional radiation to left buttock. Pain is 6/10 at worst, 3/10 at best, exacerbated by prolonged sitting, driving, and stress. Relieved partially by lying down and ibuprofen. Subjective report aligns with physical findings.
+**Objective Findings:**
+*   **Posture:** Mild lumbar hyperlordosis, anterior pelvic tilt.
+*   **Range of Motion (ROM):** Restricted lumbar flexion and extension (approx. 50% of normal), painful at end-range.
+*   **Palpation:** Tenderness over L4/L5 paraspinal muscles bilaterally, more pronounced on left.
+*   **Neurological:** Sensation intact, reflexes normal, negative straight leg raise test.
+*   **Strength:** Normal in lower extremities.
+**Impression:** Mechanical low back pain, likely myofascial in origin, exacerbated by poor posture and muscle tension secondary to psychological stress. No signs of radiculopathy.
+**Plan:**
+1.  **Education:** Postural correction, ergonomic advice for workstation setup.
+2.  **Manual Therapy:** Soft tissue release and joint mobilisations to lumbar spine.
+3.  **Exercise Program:** Core strengthening (Transversus Abdominis, Multifidus), gluteal activation, hamstring and hip flexor stretching.
+4.  **Pain Management:** Advice on heat/cold therapy.
+5.  **Follow-up:** Weekly sessions for 4-6 weeks, then review. Patient encouraged to perform home exercises daily.
+
+---
+
+**Specialist:** NHS Talking Therapies (IAPT), North London Mental Health Trust
+**Therapist:** Ms. Sarah Chen, CBT Therapist
+**Date of Report:** 2025-05-15 (Summary Report after 3 sessions)
+**Patient:** Ethan Marsh (NHS No: 987 654 3210)
+**Referring GP:** Dr. Anand Patel, Archway Surgery
+**Reason for Referral:** Adjustment disorder with prolonged depressive reaction and anxiety, caregiver burden.
+
+**Initial Assessment (2025-03-20):**
+Mr. Marsh presented with significant symptoms of depression and anxiety following his mother's dementia diagnosis. Reported low mood, anhedonia, sleep disturbance, concentration difficulties, and pervasive worry about his mother's well-being and his own ability to cope. Also expressed fears about his own memory. Score on PHQ-9: 21 (Severe Depression), GAD-7: 18 (Severe Anxiety). Identified primary stressors as mother's illness, caregiver responsibilities (LPA, care coordination with CarePlus Bristol, financial burden of £864/month, frequent Bristol train trips), and work pressure.
+
+**Therapeutic Progress (Sessions 1-3):**
+*   **Session 1 (2025-03-20):** Psychoeducation on stress response, adjustment disorder, and the CBT model. Goal setting focused on immediate symptom reduction and re-engagement with self-care.
+*   **Session 2 (2025-04-28):** Focused on behavioural activation. Mr. Marsh struggled initially due to fatigue but identified small, achievable activities (e.g., listening to music for 15 mins, short walk with children). Discussed impact of Citalopram, which he noted was starting to have a positive effect on mood.
+*   **Session 3 (2025-05-15):** Addressed cognitive restructuring around unhelpful thoughts (e.g., "I should have done more," "I can't cope"). Introduced basic relaxation techniques. Patient reported reduced anxiety regarding his own memory after attending his Memory Clinic appointment. Score on PHQ-9: 12 (Moderate Depression), GAD-7: 10 (Moderate Anxiety).
+
+**Current Status & Plan:**
+Mr. Marsh has shown good engagement and significant improvement in both mood and anxiety symptoms. He is now better equipped to challenge negative thoughts and engage in self-care. The reassurance from the Memory Clinic has been crucial in reducing his health anxiety.
+**Recommendations:**
+1.  Continue with CBT sessions, focusing on advanced cognitive restructuring, problem-solving skills for caregiver challenges, and relapse prevention.
+2.  Encourage continued use of behavioural activation strategies and self-care.
+3.  Support ongoing medication adherence.
+4.  Consider referral to a caregiver support group in the future.
+
+---
+
+**Specialist:** Memory Clinic, Royal Free London NHS Foundation Trust
+**Clinician:** Dr. Anya Sharma, Consultant Neurologist
+**Date of Report:** 2025-05-28
+**Patient:** Ethan Marsh (NHS No: 987 654 3210)
+**Referring GP:** Dr. Anand Patel, Archway Surgery
+**Reason for Referral:** Subjective cognitive complaints (memory, concentration difficulties) and significant health anxiety regarding dementia, exacerbated by mother's recent vascular dementia diagnosis. Patient age 38, senior software engineer.
+
+**Clinical History (from referral and patient interview):**
+Mr. Marsh presented with subjective concerns about his own memory and concentration, which he reported worsened significantly after his mother, Janet Marsh, was diagnosed with vascular dementia on 2025-01-12. He described instances of forgetting appointments, struggling with work details, and misplacing items. He has a strong family history (mother with vascular dementia, father deceased 2021). He has been under significant stress due to his mother's care coordination (CarePlus Bristol, LPA with Simon Holt, financial burden, frequent Bristol visits) and his demanding job. He is currently on Citalopram 20mg OD for an adjustment disorder with depressive symptoms.
+
+**Neuropsychological Assessment (details as per GP notes 2025-06-03):**
+A comprehensive battery of neuropsychological tests was administered.
+*   **General Cognitive Function:** Montreal Cognitive Assessment (MoCA) score 29/30, indicating excellent general cognition.
+*   **Memory:** California Verbal Learning Test (CVLT-II) showed immediate and delayed recall within the high average range for his age and education. Recognition memory was intact. Occasional transient difficulties with attention during complex verbal learning tasks were noted but resolved with re-focusing. No evidence of impaired learning or accelerated forgetting.
+*   **Executive Function:** Tests (e.g., Trail Making Test B, Stroop Test) demonstrated intact planning, problem-solving, and cognitive flexibility, consistent with his high-level professional role.
+*   **Language & Visuospatial Function:** All within normal limits.
+*   **Mood & Affect:** Patient displayed signs of mild anxiety during the initial phase of the assessment, which transiently impacted his self-reported confidence and speed on some tasks. This resolved as testing progressed.
+
+**Neuroimaging:** Not deemed necessary at this stage given the clinical and neuropsychological findings.
+
+**Conclusion:**
+Based on comprehensive clinical interview and neuropsychological testing, there is **no objective evidence of dementia or significant cognitive impairment** in Mr. Ethan Marsh. His subjective cognitive complaints are most consistent with the profound impact of chronic stress, anxiety, and depressive symptoms (adjustment disorder) on attention, concentration, and working memory. The patient's strong health anxiety about developing dementia, directly linked to his mother's recent diagnosis, has amplified these subjective experiences. He has responded well to antidepressant medication and is engaging with psychological therapy.
+**Recommendations:**
+1.  **Reassurance:** Provided extensive reassurance to Mr. Marsh that his cognitive function is currently normal and his memory concerns are typical manifestations of stress and anxiety.
+2.  **Ongoing Treatment:** Continue Citalopram 20mg OD and ongoing engagement with NHS Talking Therapies to manage anxiety and depression.
+3.  **Lifestyle:** Encourage continued focus on stress reduction techniques, adequate sleep, regular physical activity, and social engagement.
+4.  **Genetic Testing:** Genetic testing for APOE e4 allele is not clinically indicated for an asymptomatic individual with normal cognitive function. Its predictive value for late-onset sporadic dementia is limited, and it could cause undue distress without clear benefit in this context.
+5.  **Follow-up:** No further Memory Clinic follow-up is required at this time. Should objective cognitive changes emerge in the future, re-referral would be appropriate.
+
+---
+
+### **TREATMENT TIMELINE – ETHAN MARSH (NHS No: 987 654 3210)**
+
+*   **2024-11-25:** Co-codamol 30/500mg (short-term) for acute back pain. Physiotherapy referral initiated.
+*   **2025-01-15:** Propranolol 10mg PRN for acute anxiety symptoms. NHS Talking Therapies (IAPT) referral initiated.
+*   **2025-03-05:** Citalopram 10mg OD started for depressive symptoms and anxiety. IAPT re-referral.
+*   **2025-04-14:** Citalopram dose increased to 20mg OD. Referral to NHS Memory Clinic for comprehensive cognitive assessment (for Ethan).
+*   **2025-05-28:** Attended Memory Clinic; no objective cognitive impairment found. Reassurance provided.
+*   **2025-06-03:** Memory Clinic report reviewed; continued Citalopram 20mg OD. Continued engagement with IAPT (CBT sessions).
+*   **2025-08-20:** Continued Citalopram 20mg OD. Discussion regarding future dose reduction.
+*   **2025-10-10:** Plan initiated for gradual Citalopram tapering: 10mg OD for 4-6 weeks, then cease.
+
+---
+**END OF MEDICAL DOCUMENT**

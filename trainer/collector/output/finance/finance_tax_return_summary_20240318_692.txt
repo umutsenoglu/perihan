@@ -1,0 +1,78 @@
+HMRC Self Assessment Tax Return Summary – Tax Year 06 April 2022 to 05 April 2023
+
+**Account Holder:** Mr Ethan Marsh
+**NI Number:** QM 12 34 56 A
+**UTR:** 12345 67890
+**Address:** 14 Willow Crescent, High Barnet, London, EN5 1AB
+**Date Issued:** 18 March 2024
+**Currency:** GBP
+
+**Section 1: Personal Details**
+
+*   **Full Name:** Ethan Alexander Marsh
+*   **Date of Birth:** 15/07/1985
+*   **Marital Status:** Married (Spouse: Claire Marsh)
+*   **Primary Employer:** FinTech Solutions Ltd
+*   **Secondary Income Source:** Freelance Web Development (Sole Trader)
+
+**Section 2: Income Summary**
+
+| Income Type                      | Amount (GBP) | Notes                                                                                                                                                                                                                                                                     |
+| :------------------------------- | :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Employment Income**            |              |                                                                                                                                                                                                                                                                           |
+| Salary (FinTech Solutions Ltd)   | 85,450.00    | P60 submitted, Tax Code 1257L. Includes annual bonus for Q4 2022.                                                                                                                                                                                                          |
+| Benefits-in-Kind (Company Car)   | 3,200.00     | VW Golf (2019), value adjusted for personal use. Considering switching to electric by next tax year, will need to check the BIK implications.                                                                                                                                 |
+| **Self-Employment Income**       |              |                                                                                                                                                                                                                                                                           |
+| Freelance Web Development        | 7,850.00     | Projects for 'Artful Crafts' (Hannah's friend's pottery business website) and a local plumbing firm.                                                                                                                                                                     |
+| **Other Income**                 |              |                                                                                                                                                                                                                                                                           |
+| Bank Interest (Barclays Current) | 12.50        | Minimal interest, primarily from the joint account savings.                                                                                                                                                                                                               |
+| Dividend Income                  | 150.00       | Small share portfolio, mostly tech stocks. Might review with Luke when he's next down from Edinburgh.                                                                                                                                                                    |
+| **Total Gross Income**           | **96,662.50**|                                                                                                                                                                                                                                                                           |
+
+**Section 3: Allowable Expenses & Reliefs**
+
+| Expense/Relief Type                | Amount (GBP) | Notes                                                                                                                                                                                                                                                                     |
+| :--------------------------------- | :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Self-Employment Expenses**       |              |                                                                                                                                                                                                                                                                           |
+| Home Office Costs (Pro-rata)       | 620.00       | Calculated based on office space in the spare room. Includes electricity, internet, heating. Claire also uses it for lesson planning sometimes.                                                                                                                            |
+| Software & Subscriptions           | 380.00       | Adobe Creative Cloud, domain hosting for personal projects.                                                                                                                                                                                                               |
+| Professional Development           | 250.00       | Online course in Python for data analysis.                                                                                                                                                                                                                                |
+| **Pension Contributions**          |              |                                                                                                                                                                                                                                                                           |
+| Personal Pension (SIPP)            | 4,800.00     | Monthly contributions to Aegon SIPP. Thinking about increasing this, especially with Lily and Max's future.                                                                                                                                                               |
+| **Other Reliefs**                  |              |                                                                                                                                                                                                                                                                           |
+| Gift Aid (Bristol Animal Rescue)   | 100.00       | Annual donation in memory of Dad and for Mum's local charity.                                                                                                                                                                                                             |
+| **Total Allowable Expenses/Reliefs** | **6,150.00** |                                                                                                                                                                                                                                                                           |
+
+**Section 4: Tax Calculation**
+
+| Item                               | Amount (GBP) |
+| :--------------------------------- | :----------- |
+| Total Gross Income                 | 96,662.50    |
+| Less: Total Allowable Expenses     | (6,150.00)   |
+| **Net Taxable Income**             | **90,512.50**|
+|                                    |              |
+| Income Tax Due                     | 19,427.50    |
+| National Insurance Contributions   | 5,618.00     |
+| Less: Tax Already Paid (PAYE)      | (18,980.00)  |
+| **Total Tax Payable**              | **6,065.50** |
+
+**Section 5: Payment Details**
+
+*   **Payment Due Date:** 31 January 2024 (for 2022-23 tax year)
+*   **Amount Paid on Account (Jan 2024):** 3,032.75 GBP
+*   **Remaining Balance Due:** **3,032.75 GBP**
+*   **Payment Reference:** SA-1234567890-EM
+*   **HMRC Bank Details for Payment:**
+    *   **Bank:** HM Revenue & Customs
+    *   **Sort Code:** 08-32-10
+    *   **Account No:** 12345678
+    *   *Please ensure to use your Payment Reference when making a transfer.*
+
+**Notes:**
+
+*   This summary reflects the information submitted in your Self Assessment Tax Return for the 2022-23 tax year.
+*   Your first Payment on Account for the 2023-24 tax year is also due by 31 January 2024, if applicable.
+*   For any queries regarding this summary, please contact HMRC quoting your UTR. We recommend keeping this document alongside your P60 and other financial records.
+*   Remember to keep records of all income and expenses for the current tax year for your next return. Claire reminded me about that spreadsheet for the nursery fees, need to update it.
+
+*This is a system-generated document. No signature is required.*

@@ -1,0 +1,176 @@
+**FINEDGE TECHNOLOGIES LTD.**
+
+**EXPENSE REPORT**
+
+**EMPLOYEE: ETHAN MARSH**
+**EMPLOYEE ID: FM-EM-0112**
+**DEPARTMENT: SOFTWARE ENGINEERING**
+**REPORT PERIOD: 2023-11-01 to 2023-12-14**
+**REPORT DATE: 2023-12-14**
+**CURRENCY: GBP (£)**
+
+---
+
+**EMPLOYEE DETAILS:**
+
+*   **Full Name:** Ethan Marsh
+*   **Employee ID:** FM-EM-0112
+*   **Job Title:** Senior Software Engineer (Tech Lead, PayFlow Migration)
+*   **National Insurance Number:** ***-**-**-M
+*   **Home Address:** 14 Willow Crescent, Northwood, London, NW6 7RT
+*   **Email:** ethan.marsh@finedgetech.co.uk
+*   **Manager:** Richard Clarke (CTO)
+
+---
+
+**PROJECT DETAILS (For Cost Centre Allocation):**
+
+*   **Project Name:** PayFlow Migration
+*   **Project Code:** PAY-001
+*   **Client:** Meridian Bank
+*   **Project Start Date:** 2024-09-01
+*   **Project Deadline:** 2025-04-30
+*   **Legacy System:** PayCore v2
+
+---
+
+**SUMMARY OF EXPENSES:**
+
+| Category                  | Number of Items | Total Amount (GBP) |
+| :------------------------ | :-------------- | :----------------- |
+| Business Meals            | 3               | £187.50            |
+| Travel & Commute          | 2               | £45.80             |
+| Office Supplies           | 1               | £12.99             |
+| Professional Development  | 0               | £0.00              |
+| Client Entertainment      | 1               | £210.00            |
+| **TOTAL REIMBURSEMENT**   | **7**           | **£456.29**        |
+
+---
+
+**DETAILED EXPENSE BREAKDOWN:**
+
+**1. Business Meals**
+
+*   **Date:** 2023-11-06
+*   **Vendor:** The Gherkin Restaurant (Searcys)
+*   **Description:** Lunch meeting with James Patterson (Backend Engineer) and Priya Sharma (QA Engineer) to discuss initial API gateway design for PayFlow. Discussed integration points and potential data schema changes.
+*   **Attendees:** Ethan Marsh, James Patterson, Priya Sharma
+*   **Purpose:** Project planning, architectural discussion for PayFlow Migration.
+*   **Amount:** £75.00
+*   **Receipt Attached:** Yes (Digital Scan - GHR-20231106-003)
+*   **Cost Centre:** PAY-001
+
+*   **Date:** 2023-11-15
+*   **Vendor:** Pret A Manger (Canary Wharf)
+*   **Description:** Working lunch with external contractor, Alex Turner, to onboard him onto the transaction processing module of PayFlow. Reviewed initial tasks for PAY-452 (Implement Transaction Validation Service).
+*   **Attendees:** Ethan Marsh, Alex Turner (Contractor)
+*   **Purpose:** Contractor onboarding, task allocation for PayFlow Migration.
+*   **Amount:** £12.50
+*   **Receipt Attached:** Yes (Digital Scan - PRT-20231115-081)
+*   **Cost Centre:** PAY-001
+
+*   **Date:** 2023-11-28
+*   **Vendor:** Gaucho (Broadgate)
+*   **Description:** Dinner with team leads from infrastructure and security to align on PCI compliance requirements for the PayFlow Migration. Discussed network segmentation and data encryption standards ahead of the planned PCI audit on 2025-03-20.
+*   **Attendees:** Ethan Marsh, Sarah Jenkins (Infra Lead), David Kim (Security Lead)
+*   **Purpose:** Cross-departmental collaboration, PCI compliance planning for PayFlow.
+*   **Amount:** £100.00
+*   **Receipt Attached:** Yes (Digital Scan - GAU-20231128-027)
+*   **Cost Centre:** PAY-001
+
+**2. Travel & Commute**
+
+*   **Date:** 2023-11-09
+*   **Vendor:** Transport for London (Oyster Card Top-up)
+*   **Description:** Travel to client site (Meridian Bank, Canary Wharf) for initial requirements gathering meeting regarding the PayFlow migration data migration strategy. Met with Meridian Bank's technical lead, Emily Carter.
+*   **Purpose:** Client meeting, requirements gathering for PayFlow data migration (2.3 million historical transactions).
+*   **Amount:** £15.80
+*   **Receipt Attached:** Yes (Digital Scan - TFL-20231109-OYS)
+*   **Cost Centre:** PAY-001
+
+*   **Date:** 2023-12-05
+*   **Vendor:** Uber
+*   **Description:** Late night travel home after extended work session on PayFlow reconciliation module. Debugged critical issue with PAY-678 (Reconciliation Discrepancy Reporting Service) that was causing delays. Arrived home after 10 PM.
+*   **Purpose:** Business travel due to late working hours on PayFlow Migration.
+*   **Amount:** £30.00
+*   **Receipt Attached:** Yes (Digital Scan - UBR-20231205-194)
+*   **Cost Centre:** PAY-001
+
+**3. Office Supplies**
+
+*   **Date:** 2023-11-20
+*   **Vendor:** Ryman Stationery
+*   **Description:** Whiteboard markers and sticky notes for sprint planning sessions for PayFlow Migration. Needed for visualising user stories and task breakdowns for PAY-xxx Jira tickets.
+*   **Purpose:** Office supplies for project management and team collaboration.
+*   **Amount:** £12.99
+*   **Receipt Attached:** Yes (Digital Scan - RYM-20231120-055)
+*   **Cost Centre:** PAY-001
+
+**4. Client Entertainment**
+
+*   **Date:** 2023-12-01
+*   **Vendor:** Hawksmoor Borough
+*   **Description:** Dinner with Meridian Bank's Project Manager, Sarah Davies, to strengthen client relationship and provide an update on the PayFlow Migration progress. Discussed risks, particularly data migration and PCI compliance, and reiterated the 2025-05-15 client go-live target.
+*   **Attendees:** Ethan Marsh, Sarah Davies (Meridian Bank)
+*   **Purpose:** Client relationship management, project status update for Meridian Bank.
+*   **Amount:** £210.00
+*   **Receipt Attached:** Yes (Digital Scan - HKS-20231201-012)
+*   **Cost Centre:** PAY-001
+
+---
+
+**REIMBURSEMENT INSTRUCTIONS:**
+
+*   **Payee Name:** Ethan Marsh
+*   **Bank Name:** Barclays Bank Plc
+*   **Account Number:** ***********8765
+*   **Sort Code:** 20-**-**
+*   **Preferred Payment Method:** BACS Transfer
+
+---
+
+**EMPLOYEE DECLARATION:**
+
+I, Ethan Marsh, confirm that all expenses listed above were incurred for legitimate business purposes on behalf of FinEdge Technologies Ltd. and are in accordance with the company's expense policy. I confirm that I have not previously claimed these expenses and that all attached receipts are accurate and genuine. I understand that false claims may result in disciplinary action.
+
+**Employee Signature:** Ethan Marsh (Digital Signature)
+**Date:** 2023-12-14
+
+---
+
+**MANAGER APPROVAL:**
+
+I, Richard Clarke, confirm that I have reviewed this expense report and approve the reimbursement of £456.29 to Ethan Marsh. The expenses are deemed reasonable and necessary for the execution of the PayFlow Migration project and align with FinEdge Technologies Ltd.'s operational objectives, particularly the critical deadline of 2025-04-30 and the client commitment to Meridian Bank.
+
+**Manager Name:** Richard Clarke
+**Job Title:** CTO
+**Approval Date:** 2023-12-15
+**Approval Signature:** Richard Clarke (Digital Signature)
+
+---
+
+**FINANCE DEPARTMENT REVIEW:**
+
+*   **Reviewer Name:** Sarah Chen
+*   **Review Date:** 2023-12-16
+*   **Status:** Approved for Payment
+*   **Payment Date:** 2023-12-18
+*   **Transaction ID:** FINEDGE-EXP-20231218-EM0112
+
+---
+
+**INTERNAL NOTES / AUDIT TRAIL:**
+
+*   **2023-12-14 10:30 AM (EM):** Expense report created. Noted late Uber expense due to critical reconciliation module issue (PAY-678). Reminder to self: need to follow up with Priya Sharma on improved test coverage for reconciliation module ahead of PCI audit.
+*   **2023-12-14 02:15 PM (EM):** Uploaded all digital receipts. Checked against company policy, all within limits.
+*   **2023-12-15 09:00 AM (RC):** Reviewed and approved. Acknowledged importance of client entertainment with Meridian Bank given project criticality. Noted the team's late hours on PayFlow, especially with the upcoming PCI compliance audit (2025-03-20) and the tight deadline.
+*   **2023-12-16 11:30 AM (SC):** Finance received. All receipts present and valid. Cost centre PAY-001 correctly allocated. Payment scheduled for next BACS run.
+*   **2023-12-18 09:00 AM (SC):** Payment processed. Confirmation sent to Ethan Marsh and Richard Clarke.
+
+---
+
+**FINEDGE TECHNOLOGIES LTD.**
+**REGISTERED OFFICE:** 15 Canada Square, Canary Wharf, London, E14 5LB
+**COMPANY REG NO:** 09876543
+**VAT REG NO:** GB123456789
+**WEB:** www.finedgetech.co.uk

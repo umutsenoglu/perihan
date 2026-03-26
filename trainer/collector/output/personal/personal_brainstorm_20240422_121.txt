@@ -1,0 +1,132 @@
+2024-04-22 - Monday. Brainstorm/Journal entry.
+
+Christ. Another Monday. It’s barely 7 AM and my head is already buzzing, a proper ache behind my eyes that feels like it’s been there for weeks. Claire’s still asleep, thank god. Max will be up any minute, though, guaranteed. That little tornado has an internal clock set to 'disrupt'. Lily's usually a bit slower but once Max is going, she’s not far behind.
+
+Just sitting here in the kitchen, tea getting cold. The silence before the storm. Usually I like this bit, the calm before the rush, getting myself together for work. Not today. It’s the fence. Again. Always the fence. And Mum.
+
+Dave Mitchell. What a prick. The nerve of that man. Sandra too, just goes along with it, doesn’t she? September 15th, 2024. That’s the date etched in my mind. The day they took it upon themselves to "replace" the shared fence. "Shared," my arse. They just tore down the old one, a perfectly decent, if slightly weathered, wooden fence that had been there since before we bought the house, and put up their own monstrosity. No discussion. No asking. Just a quick text from Dave on the 14th saying, "Fence guys coming tomorrow to replace the old boundary." I thought, "Okay, good, the old one was getting a bit wobbly." Naive, wasn't I? Stupendously naive.
+
+It wasn't until October 8th, just a few weeks later, when I was finally getting around to planting those spring bulbs Claire bought – the daffs and tulips for the border near the kitchen window – that I noticed it. My spade hit something solid, a concrete post, a good 30 centimetres, maybe even more, inside where I knew the old fence line was. My gut just lurched. I measured it. Twice. Three times. Grabbed the tape measure, checked the old photos of the garden from when we moved in. There was no denying it. The new fence was eating into our property. My property. *Our* property.
+
+I remember my hands shaking as I went over. Claire was inside, probably doing the school run already. I knocked on Dave’s door. He was in his garden, messing with his BBQ. Looked up, a big fake smile. "Morning, Ethan! What do you think of the new fence? Solid, eh?"
+
+"Dave," I said, trying to keep my voice even, "we need to talk about the fence. I think you've moved the boundary."
+
+His smile dropped. "Moved it? Don't be ridiculous, mate. It's exactly where it's always been. The old one was practically falling over into my prize-winning hydrangeas." His 'prize-winning hydrangeas' – the ones he bought from B&Q last week. The nerve.
+
+I tried to explain. "No, Dave, I've checked. The old boundary was further back. I’ve got photos, even the survey from when we bought the house."
+
+He just waved his hand dismissively. "Nah, mate. The guys from 'Fence-It-Right' are professionals. They know what they're doing. Everything's above board. You're imagining things."
+
+Imagining things? Thirty bloody centimetres of my garden? The strip of land where Lily always plays with her sandpit in the summer, where Max kicks his little football? That's not 'imagining things'. That's theft. Pure and simple.
+
+Claire was furious when I told her. "We can't let him get away with it, Ethan! This is our home!" She was right, of course. But the thought of getting into a dispute with a neighbour, especially Dave, who has this weird passive-aggressive streak, filled me with dread. I just want a quiet life. Kids, work, the occasional cycle ride, tend to my fish. Not this.
+
+But we couldn't ignore it. So, after a couple more attempts to reason with Dave – which just ended with him slamming the door in my face, or Sandra giving me dirty looks over the hedge – we decided to call a solicitor. Helen Crawford. Crawford & Associates. Ref: HC/MARSH/2024-1187. I remember the first call, feeling so awkward, like I was reporting a playground bully. She was very professional, though. Listened patiently. Advised we needed a professional land survey. More money. More hassle.
+
+Precision Surveys Ltd came out on November 15th, 2024. A cold, grey day. The surveyor, a quiet chap named Mark, spent a couple of hours with his fancy equipment, poring over our deeds, measuring from various points. I watched him, my stomach in knots. What if I was wrong? What if Dave was actually right? The thought made me feel sick. But then he showed me his preliminary findings on his tablet. Clear as day. The original boundary was indeed where I'd always thought it was. Their report, PS-2024-3892, confirmed it. A huge relief, but also, damn, now we really had to go through with this.
+
+Helen sent the formal letter to Dave on November 28th, 2024. I remember the feeling, a mix of vindication and apprehension. We'd given him a chance. Multiple chances. This was the formal route. It took a while, but eventually, on December 12th, 2024, Dave’s solicitor, Graham Foster from Foster & Webb, responded. Denying the claim. Of course he did. He denied everything. Said the fence was in the correct position, as per "historic usage." Historic usage? The fence had been there two months!
+
+And now… now we're staring down the barrel of a Small Claims Court hearing. March 14th, 2025. Barnet County Court. Claim number: E4KL-2025-00234. It’s looming. It’s just under eleven months away, but it feels like it’s tomorrow. Eleven months of this anxiety, this feeling of injustice festering. Claire and I have talked about it endlessly. What if we lose? What if Dave just digs his heels in further? The money. God, the money. £1,850 in legal fees so far, plus the £420 for the survey. That’s £2,270. For 30 centimetres of garden. It sounds insane, doesn’t it? But it’s not just the land. It’s the principle. It’s the encroachment. It’s the brazen disrespect.
+
+Max is stirring. I hear a little whimper from his room. Showtime. Better get his milk ready. Lily will be up next, asking about her drawing from yesterday. Gotta plaster on the 'happy dad' face.
+
+Later. 8:15 AM.
+Chaos. Controlled chaos, Claire would call it. Max had a minor meltdown over his orange juice not being in his favourite blue cup. Lily was trying to tell me about a dream she had involving a talking badger while also demanding that I check her maths homework one last time. Managed to get them both fed, dressed, teeth brushed. Claire's a saint, honestly. She’s already out the door, her shift starts earlier today. Mrs. Henderson’s Year 3 class awaits Lily. And Max is off to Little Stars Nursery, where he'll probably terrorise Miss Chloe for the day.
+
+I made a mental list on my walk back from dropping them off.
+- [ ] Call Helen Crawford – just a quick check-in. Any updates? Anything new on the Mitchells' side? Probably not, but I need to feel like I’m doing *something*.
+- [ ] Check Barclays mortgage statement online. We’re tight this month with the legal fees. Maybe skip the new photography lens I was eyeing. Stupid thought, obviously.
+- [ ] Cycle home from work today? Or tube? Back pain’s been playing up. Probably the desk work, or maybe the stress making me tense. Cycling usually helps.
+- [ ] Check on the fish tank. Water change due. The rummy-nose tetras looked a bit subdued yesterday. Hope it’s not whitespot.
+
+Back in the house, the quiet is deafening now. A quick tidy-up, then time to log on. James will already be pinging me. Probably about that bug on the payment gateway, or the new feature we’re trying to roll out for the Q3 sprint. Fintech never sleeps.
+
+Mid-morning. Work.
+James just Slack-messaged me. "Morning, Ethan. Got a minute for the sprint review? Priya wants to walk through the KYC workflow updates." KYC – Know Your Customer. The bane of my existence sometimes. Important, vital for a fintech, but so many edge cases.
+
+I’m in the middle of debugging a pesky API integration issue, staring at lines of code, but my mind keeps drifting. The fence. The image of that new, slightly-too-far-forward fence line. It's like a constant irritant, a pebble in my shoe. Dave's smug face. Graham Foster's bland letter. "Without merit." What a load of bollocks.
+
+I keep thinking about the garden. It’s not huge, our North London semi-detached isn't exactly a country estate, but it’s *ours*. It’s where we BBQ, where Lily reads under the old apple tree, where Max learns to ride his scooter. It’s where I try to grow my tomatoes (mostly unsuccessfully) and where I escape to with my photography, trying to capture the bees on the lavender. Every inch counts. And 30cm across the entire length of the garden is not insignificant. It’s enough to mess up the whole flow, to make it feel smaller, tighter.
+
+The cost. £2,270. That's a new electric car down payment. Or a family holiday. Or new double glazing. Or some savings for the kids' university funds. It’s not insignificant. And it could go up. Helen warned me about that. If Dave continues to be unreasonable, if it drags on, if it ends up in a full-blown trial… I try not to think about that. But it's there, lurking.
+
+I should probably ring Mum. I haven't heard from her since Saturday. She called, sounding a bit breathless. "Just a bit tired, love," she said, but I could hear it in her voice. The slow, fading energy. Her health is declining, faster than I thought it would. Bristol feels a million miles away sometimes. Dad – George – passed in 2021, and it’s just been Mum on her own there since. She’s fiercely independent, always has been, but that independence is getting harder to maintain.
+
+Hannah in Manchester calls her every day. Luke in Edinburgh tries to visit once a month. We try to get down every couple of months. Claire is amazing, always reminding me, "She needs you, Ethan." I know she does. But juggling work, the kids, this bloody fence dispute… it feels like I’m being pulled in so many directions.
+
+Need to plan a visit soon. Maybe a long weekend? Next month?
+- [ ] Call Mum during lunch break. Just a quick check-in.
+- [ ] Text Hannah – coordinate Bristol visit? See when she and Luke might be free. Make sure someone is with Mum.
+- [ ] Check train times to Bristol – probably quicker than driving the Golf, given the cost of petrol and my dodgy back.
+
+The problem is, even when I'm there, I'm thinking about here. And when I'm here, I'm thinking about there. This constant mental ping-pong.
+
+Afternoon. 2:45 PM.
+Lunch break was a disaster. Tried to call Mum, went straight to voicemail. Left a message, tried to sound cheerful, asked her to ring me back. Got a text from Hannah ten minutes later: "Mum's fine, Ethan. Just napping. Called her earlier. She sounded a bit tired but okay. Maybe talk later about that Bristol visit. Luke's free first weekend of June, might work for him." June. That’s not too far off. But feels like a lifetime away. Is that soon enough? Guilt. Always guilt.
+
+Then, a ping from Helen Crawford’s assistant. "Mr. Marsh, just confirming receipt of the court hearing notice for March 14th, 2025. We'll be in touch to schedule a preparatory meeting closer to the date. Ref: HC/MARSH/2024-1187."
+The cold, stark reality of it. The court date. Barnet County Court. E4KL-2025-00234. It's happening. No turning back now. This legal dance, this slow, expensive grind. I just want it to be over. I want to win, obviously. But even if we win, what then? Do we put up our own fence? Do Dave and Sandra get penalised? Will our relationship with them ever recover? Not that it’s much of a relationship now, beyond frosty glares and terse nods.
+
+The fish tank… I managed to do a quick water change this morning, before logging on. The rummy-nose tetras are still a bit quiet. Maybe it’s just the stress. Or maybe it’s my fault. I've been so distracted lately, my hobbies are suffering. My photography camera has been gathering dust. Haven't been out on the bike much either, except for the commute, and even that's been sporadic. Cooking is mostly Claire’s domain these days, or quick weeknight meals. It's all just… functional. No joy in it.
+
+The back pain is definitely worse. A dull throb across my lumbar spine. Probably need to stretch more. Or maybe finally book that osteopath appointment Claire’s been nagging me about. "It's not going to get better by itself, Ethan!" she says. She’s right. She’s always right.
+
+What am I even doing today, work-wise?
+- [x] Fix payment gateway bug. (Almost there, just one more edge case.)
+- [ ] Review Priya's KYC workflow updates. (Need to focus on this.)
+- [ ] Sync with Richard about the new API documentation. (He's probably chasing me already.)
+- [ ] Prep for tomorrow's stand-up. (What can I even *say* about my progress when my brain is soup?)
+
+I took a picture of Lily playing in the garden last summer, near where the old fence used to be. She's got her little watering can, trying to water the weeds. Innocent. Blissful. That’s what I want. Just normal, garden life. Not this constant battle.
+
+Evening. 6:30 PM.
+Just picked up Max from nursery. He was covered in paint, beaming, clutching a wonky drawing of what he insisted was "a dinosaur driving a fire engine." Lily was waiting for me at the school gates, Mrs. Henderson giving her usual cheerful wave. "Lily had a wonderful day, Mr. Marsh! Very focused." That's my girl.
+
+Dinner was… something. Pasta with a quickly made tomato sauce. Max refused his broccoli. Lily tried to negotiate a second biscuit. Claire got home looking exhausted, another long day of wrangling Year 2s (she’s covering for a colleague). I gave her a hug. "Rough day?" she asked, already sensing my mood.
+
+We talked, while Max was trying to climb the kitchen cupboards and Lily was recounting her friend Chloe’s latest playground drama. I mentioned Helen’s email, the confirmation of the court date.
+"March 14th, 2025," I repeated, a knot forming in my stomach.
+Claire sighed, kneading her temples. "God, that's just... hanging over us, isn't it? I just wish they'd see sense. Dave always has to win, doesn't he?"
+"Always," I agreed. "It’s not even about the land for him anymore, I think. It’s about pride. About not being told he’s wrong."
+"And us?" Claire asked, looking at me directly. "What about our pride? Our peace of mind?"
+"I know," I said. "I just hate this. The cost, the stress. And with Mum…"
+She nodded, softening. "I know, love. It's a lot. We’ll get through it. We always do." She’s my rock. Honestly, without Claire, I’d be a mess. Probably would have just given up and let Dave have his 30cm. But then, I’d resent him forever. And myself.
+
+The thought of moving the fence back. Physically doing it. Imagine the scene. Me, standing there with a tape measure, Dave shouting from his window, probably recording it on his phone. It’s just so childish. So undignified. But it’s my land. Our land.
+
+Later. 9:45 PM.
+Kids are finally asleep. Max took forever, kept asking for water, then another story, then "one more cuddle, Daddy." Lily was quick tonight, tired from school. Read her a chapter of Harry Potter. She loves those books, just like I did at her age. Good to escape into that world for a bit, where the problems are dragons and dark lords, not neighbours stealing your garden.
+
+Claire and I watched some rubbish on Netflix. Tried to relax. My mind kept whirring.
+- [ ] Check finances again. Really need to cut back. No more Deliveroo. Pack lunches every day.
+- [ ] Think about the VW Golf. It’s a good car, but an EV… the charging, the range, the initial cost. With the legal fees… maybe not now. That was a pipe dream for a bit.
+- [ ] Remember to check the tropical fish again. Hope the rummy-noses are okay. Maybe a bit of stress coat.
+- [ ] Brainstorm arguments for court. Helen said she’d handle most of it, but I need to be ready. Dates, photos, surveyor report (PS-2024-3892). My statement. Dave’s refusal to talk. His solicitor’s denial.
+- [ ] Need to call Mum again tomorrow. Or text Hannah again. This feeling of being torn between two urgent, heavy things.
+
+This whole thing with Dave just feels so petty, yet it's consuming so much of my mental energy. I think about my dad, George. He would have been furious. He was a quiet man, but fiercely protective of his home. He'd have probably just marched over there and dug up the fence posts himself. Not me. I'm more of a 'call the solicitor' kind of guy. Which is why I'm £2,270 out of pocket.
+
+And Mum. Her voice on the phone. The slow decline. I can see it. Remember Dad in his last few months, that same slow fade. It's heartbreaking. And I'm stuck here, fighting over a fence, when I should be in Bristol, spending time with her. This is the worst part. The guilt, the feeling that I'm not doing enough for anyone. Not enough for Claire, for the kids, for Mum. Just enough to keep my job and wage the stupid fence war.
+
+I remember last Christmas. Dave put up these ridiculous flashing reindeer on his side of the fence, directly facing our living room window. So bright. So annoying. Petty, I know. But it just felt like another dig. Another way for him to assert himself. Sandra even waved at us once, with this saccharine-sweet smile that just didn't reach her eyes. They know what they’re doing. They know it’s wrong.
+
+I should probably try and get some sleep. Big day at work tomorrow. More code, more meetings, more pretending everything’s fine while my brain is buzzing with legal references (HC/MARSH/2024-1187, E4KL-2025-00234) and worrying about my mum.
+
+Maybe I’ll try and sneak in a quick bike ride before work tomorrow. Get some fresh air. Clear my head. Cycle past Dave’s house, maybe even see if he’s out. Probably not. He's probably dreaming about expanding his garden further into our property. Bloody hell.
+
+Right. Time to switch off the brain. Or at least try to.
+- [ ] Tomorrow: Early start, maybe a cycle
+- [ ] Call Mum properly.
+- [ ] Focus on work. Stop thinking about Dave. (Yeah, right.)
+- [ ] Ask Claire to re-read the surveyor report (PS-2024-3892) with me again this week. Just to make sure we haven't missed anything.
+
+The costs. The damn costs. It's a small claims court, but it's not small money for us. That £1,850 legal, £420 survey. It's a significant hit. I just hope it's all worth it. I need to believe it's worth it. For Lily, for Max. For our home. For what's right.
+This feels like such a mountain to climb. The fence, Mum’s health. Both huge, both pressing.
+Just need to take it one day at a time. One email. One phone call. One court date preparation meeting.
+
+Ugh. My back is really bothering me now. Maybe a hot bath.
+And the allergies. Feeling a bit sniffly. Could be the stress. Or just the spring pollen. London trees. At least the asthma hasn't flared up recently. Small mercies.
+
+Goodnight, brain. Please shut up for a few hours.

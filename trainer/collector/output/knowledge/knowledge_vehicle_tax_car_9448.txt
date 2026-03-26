@@ -1,0 +1,196 @@
+Okay, here's Ethan Marsh's personal research notes, formatted like a Notion/Evernote page, incorporating all the GOV.UK information and weaving in his personal details and life context.
+
+---
+
+# 🚗 Vehicle Tax & Car Admin – VW Golf e-Switch Prep
+
+**Date:** 2024-10-26 (Saturday afternoon, kids are watching TV, Claire's out with friends)
+**Last Updated:** 2024-10-26
+**Status:** Researching for upcoming VW Golf tax renewal and potential EV switch.
+**Tags:** #Car #VW_Golf #VehicleTax #DVLA #EV_Switch #FuturePlanning #Finance #HouseholdAdmin
+
+---
+
+## 🎯 **Goal:**
+
+*   Understand current vehicle tax renewal process for the VW Golf.
+*   Gather info for when we eventually sell the Golf and buy an EV.
+*   Make sure all car admin is squared away, especially with the upcoming MOT.
+
+---
+
+## **Current Car Details:**
+
+*   **Make/Model:** VW Golf
+*   **Year:** 2019
+*   **Registration:** [Ethan would insert his actual reg here, e.g., "LM19 XYZ"]
+*   **Owner:** Ethan Marsh
+*   **Location:** North London (N12)
+*   **MOT Due:** December 2024 (Need to book this soon – maybe Kwik Fit again or try that local independent garage near the school that Dave from work recommended?)
+*   **Tax Due:** January 2025 (Reminder usually comes end of Dec).
+*   **Insurance:** Admiral (renewal in Feb 2025 – gotta compare prices then).
+
+---
+
+## **Future Car Plans (EV Switch):**
+
+*   **Target:** Full electric (e.g., Tesla Model Y, Hyundai Ioniq 5, Skoda Enyaq – leaning towards the Ioniq 5 for the design and range).
+*   **Timeline:** Aiming for mid-to-late 2025, depending on market, trade-in value of the Golf, and our savings.
+*   **Key Considerations:** Charging at home (need charger installation quote), range for Bristol/Manchester/Edinburgh trips, insurance costs, potential government grants (if any still exist then).
+*   **Financial Impact:** How will this affect our monthly outgoings? Need to factor in electricity costs vs. petrol, potential finance payments, and road tax (or lack thereof for EVs).
+
+---
+
+## 📝 **GOV.UK Info: Tax Your Vehicle - My Notes & Action Items**
+
+**Source:** [https://www.gov.uk/vehicle-tax](https://www.gov.uk/vehicle-tax)
+
+### **Core Process:**
+
+*   **Who:** Me (Ethan Marsh).
+*   **What:** Renewing vehicle tax for the 2019 VW Golf.
+*   **When:** Annually. My tax is due in January. DVLA usually sends a reminder letter a few weeks before.
+*   **How to Tax (Documents I'll need):**
+    1.  **Reminder Letter:** This is what I usually use. It has a reference number.
+    2.  **Vehicle Log Book (V5C):** Must be in *my* name. Mine is. This would be used if I didn't have the reminder letter.
+    3.  **Green 'New Keeper' Slip:** Only if I'd just bought the car. Not applicable here, but good to remember for when we get the EV.
+*   **What if I don't have any documents?**
+    *   Need to apply for a new log book (V5C). Can tax the vehicle at the same time.
+    *   *Note to self:* Keep my V5C safe! It's in the filing cabinet with the house deeds and passports.
+
+### **Payment Options:**
+
+*   **Direct Debit:** This is what I currently use. It's usually quarterly or annually. I think mine is annual. Need to check my bank statements.
+*   **Debit/Credit Card:** One-off payment option.
+*   **Cannot pay by Direct Debit over the phone.** Good to know.
+
+### **Important Reminders:**
+
+*   **Must tax, even if exempt:** Even if a vehicle doesn't *cost* anything to tax (e.g., some EVs are currently exempt), you still *must* go through the process of taxing it. It's a legal obligation.
+    *   *Future EV thought:* This is crucial. Even if the Ioniq 5 has £0 road tax, I'll still need to "tax" it via the DVLA.
+*   **Legal obligations before driving:** Obvious, but worth noting – means valid MOT and insurance. My MOT is due Dec. Insurance is Feb. All in line.
+
+### **Ways to Apply:**
+
+1.  **Online (Preferred!):** Use the GOV.UK service. This is my usual method. Quick and easy.
+2.  **By Phone (DVLA Vehicle Tax Service):**
+    *   **Number:** 0300 123 4321
+    *   **Hours:** 24-hour service.
+    *   **Call Charges:** Need to check these. Usually standard rates for 0300 numbers, included in most mobile plans.
+    *   *Constraint:* Cannot pay by Direct Debit over the phone. Only card. So if I want to keep my DD going, online or Post Office.
+3.  **At a Post Office:**
+    *   **What to take:**
+        *   Payment (cash/card) OR bank details for Direct Debit.
+        *   **Crucially:** My V5C (in my name) OR the green 'new keeper' slip.
+        *   **Potentially:** Evidence of a valid MOT.
+            *   *Example:* Screenshot of MOT history (from GOV.UK check service) or the actual MOT certificate.
+            *   *Heads up:* MOT info can take up to 2 days to update. So, if I get the MOT done on a Monday, I might not be able to tax the car immediately on Monday afternoon at the Post Office. Online might be quicker if the database updates faster.
+
+### **Northern Ireland Specifics:**
+
+*   Not applicable to me (living in London), but good to know for general awareness or if Luke ever moves to NI with his car. They need a paper insurance cert/cover note and an original MOT certificate or TEC evidence.
+
+### **Vehicle Off the Road (SORN):**
+
+*   **What it means:** Registering a vehicle as 'off the road' (Statutory Off Road Notification).
+*   **When:** If I'm keeping it in a garage and not driving it (e.g., if I bought the EV but kept the Golf for a few months before selling).
+*   **Impact:** Don't need to tax it.
+*   *Action:* Need to remember this for when we sell the Golf. If it sits on the drive for more than a few days after the EV arrives, I should probably SORN it to avoid issues.
+
+### **Changing Tax Class (Disabled):**
+
+*   Not applicable to me, but good to know for others. If a car was previously used by a disabled person or if I *were* disabled and taxing for the first time, I'd need to apply at a Post Office.
+
+---
+
+## 🔗 **Related GOV.UK Content (My Takeaways):**
+
+*   **Check if a vehicle is taxed:** [https://www.gov.uk/check-vehicle-tax](https://www.gov.uk/check-vehicle-tax)
+    *   **Why I'd use this:**
+        *   Check my *own* Golf's tax status before renewal to be sure.
+        *   Check the tax status of any used EV I might be interested in buying (though new EVs won't have this history).
+        *   Check if the new EV is actually exempt from tax (or has £0 tax).
+        *   Check if a car I'm buying has a SORN in place.
+    *   *Note:* Can also report untaxed vehicles here (not that I plan to, but good to know).
+
+*   **Get vehicle information from DVLA:** [https://www.gov.uk/get-vehicle-information-from-dvla](https://www.gov.uk/get-vehicle-information-from-dvla)
+    *   **Why I'd use this:**
+        *   Similar to above, but seems more comprehensive. Check details, tax, SORN, and expiry dates.
+        *   This is probably the page I'd screenshot for the Post Office if I needed MOT evidence.
+    *   *Action:* Bookmark both of these pages. They'll be useful for the EV purchase process.
+
+*   **Vehicle tax Direct Debit payments:**
+    *   I'm already on this, but if I wanted to change payment frequency (e.g., from annual to monthly/quarterly), I'd look here. Or if I wanted to set it up for the new EV.
+
+*   **Register your vehicle as off the road (SORN):**
+    *   Crucial for when the Golf is sold, or if there's any gap between getting the EV and selling the Golf.
+
+*   **Check tax rates for new unregistered cars:**
+    *   **VERY important for the EV switch!** This will tell me if the electric vehicles I'm looking at truly have £0 road tax or if there's some change coming.
+    *   *Action:* Look up current EV tax rates.
+
+*   **Cancel your vehicle tax and get a refund:**
+    *   **ESSENTIAL for selling the Golf!** When I sell it, I'll need to cancel the tax and get a refund for any full months remaining. The new owner will then have to tax it themselves.
+
+*   **Driver and vehicles account: sign in or set up:**
+    *   I probably have one of these from my driving licence or previous car admin. Good to check. Could make future admin smoother.
+    *   *Action:* Try logging in/setting this up when I have a spare 10 mins.
+
+---
+
+## 🗓️ **Timeline & Next Steps:**
+
+### **Short-Term (Next 1-2 Months):**
+
+1.  **Book VW Golf MOT:**
+    *   **Target Date:** Early December (before Lily and Max break up from QPA Primary and Little Stars Nursery for Christmas).
+    *   **Options:** Kwik Fit (easy, familiar, but sometimes pricey) or Dave's recommended independent garage near school (need to ask Dave for the name/number next week at work).
+    *   *Reminder:* Check if the garage can do it on a Saturday or late afternoon/early evening so I don't have to take time off work. Claire might be able to drop it off if it's near her primary school.
+2.  **Verify VW Golf Tax Status:**
+    *   Use the GOV.UK "Check if a vehicle is taxed" service. Just to confirm everything is in order before the renewal reminder comes.
+    *   *Action:* Do this tonight or tomorrow.
+3.  **Await DVLA Tax Reminder Letter:**
+    *   Should arrive late Dec / early Jan. Keep an eye out for it.
+4.  **Renew VW Golf Tax:**
+    *   **Target Date:** Early January 2025.
+    *   **Method:** Online, using the reminder letter reference number, maintaining Direct Debit.
+    *   *Double-check:* My bank statements to confirm current DD frequency (annual vs quarterly).
+
+### **Mid-Term (Next 6-12 Months - EV Planning):**
+
+1.  **Research EV Tax Rates:**
+    *   Use the "Check tax rates for new unregistered cars" link to see current/future EV tax implications.
+2.  **Continue EV Research:**
+    *   Focus on specific models (Ioniq 5, Tesla Y, Enyaq).
+    *   Look into home charging options (installer quotes).
+    *   Compare insurance costs for potential EVs.
+3.  **Budgeting for EV:**
+    *   Talk to Claire about the financial implications. Factor into our household budget.
+    *   Need to track current petrol costs vs. estimated electricity costs.
+4.  **Prepare Golf for Sale:**
+    *   Get it professionally valeted.
+    *   Gather all service history, manuals, spare keys.
+    *   Look into trade-in values vs. private sale.
+    *   *Reminder:* When sold, immediately cancel tax for refund and SORN if there's a delay.
+
+### **Long-Term:**
+
+*   Enjoy the new EV (hopefully!).
+*   Keep on top of MOTs, insurance, and the *process* of taxing the EV (even if it's £0).
+
+---
+
+## **Personal Thoughts & Questions:**
+
+*   **Back Pain:** Sitting at the desk for too long researching this isn't helping my lower back. Need to remember to stretch. Maybe a quick cycle later?
+*   **Fish Tank:** The tank lights are on. Need to check the water parameters for the discus later. Distraction from car admin!
+*   **Claire:** She's amazing at keeping track of household bills. I should probably run all this car admin stuff by her, especially the EV budgeting. She'll have good insights on how it impacts our family finances.
+*   **Lily & Max:** Lily's going to be excited about a new car, especially if it's quiet. Max probably won't care as long as he has his car seat!
+*   **Photography:** Need to remember to take some good photos of the Golf for selling it. Good opportunity to use the new lens.
+*   **MOT due date:** December is always busy with Christmas and end-of-year work deadlines. I need to put a firm reminder in my calendar *now* for the MOT booking. Maybe even book it next week.
+*   **DVLA Account:** Setting up that online account seems like a good investment of time. Could streamline future admin.
+*   **Petrol vs. Electric Costs:** This is the biggest unknown. With petrol prices fluctuating, and electricity prices also going up, I need to do a proper comparison. The climate benefits are a big draw for me, but the finance has to work for the family.
+*   **Dad's old car:** George always kept meticulous records. I should probably dig out some of his old car files for inspiration on how he organised things. He'd have loved the idea of an EV.
+
+---
+That's it for now. Time for a cuppa and maybe a quick check on the fish. This car stuff always feels like a mountain of paperwork, but breaking it down helps.

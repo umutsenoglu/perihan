@@ -1,0 +1,221 @@
+**BARCLAYS VISA PLATINUM CREDIT CARD STATEMENT**
+
+**Statement Date: 2025-11-12**
+**Statement Period: 2025-10-13 to 2025-11-12**
+
+**Account Holder:** Mr Ethan Marsh
+**Address:** 14 Elmwood Drive, Northwood, London, NW6 7PQ
+**Card Number:** **** **** **** 7890
+**Contact Number:** 0345 7345 345
+**Website:** www.barclays.co.uk/creditcards
+
+---
+
+**Summary of Your Account**
+
+Previous Balance: £1,285.72
+Payments Received: -£1,285.72
+New Purchases: £1,102.45
+Cash Advances: £0.00
+Interest Charged: £0.00
+Fees Charged: £0.00
+
+**New Balance: £1,102.45**
+
+**Minimum Payment Due: £33.07**
+**Payment Due Date: 2025-12-07**
+
+*Your minimum payment is 3.00% of your new balance or £25.00, whichever is greater.*
+
+---
+
+**Important Information**
+
+*   **Go Paperless:** Switch to online statements today for a greener, more convenient way to manage your account. Visit www.barclays.co.uk/paperless or call us.
+*   **Payment Holiday Reminder:** Your pre-approved payment holiday for December 2025 has been confirmed. Your minimum payment for December will be £0.00. Please note that interest will still accrue on any outstanding balance during this period.
+*   **Exclusive Offers:** Check out your personalised offers in the Barclays app. This month, enjoy 5% cashback on selected DIY stores – perfect for that bathroom renovation you were mentioning, Ethan!
+*   **Security Alert:** We've noticed increased online activity from your account. Please ensure your contact details are up to date and report any suspicious transactions immediately.
+*   **Reward Points Balance:** Current Points: 15,280. Available to redeem against flights, shopping vouchers, or a statement credit. Login to your online banking to explore your options. You're close to that new camera lens you've been eyeing!
+*   **Contact Us:** If you have any queries about your statement, please call us on 0345 7345 345 (available 24/7). For lost or stolen cards, call 0800 111 222 immediately.
+
+---
+
+**Transaction Details**
+
+**Date | Transaction Description | Reference Number | Amount (GBP)**
+---|---|---|---
+2025-10-13 | PAYMENT RECEIVED - THANK YOU | PYMNT-0000012345 | -£1,285.72
+2025-10-13 | AMAZON.CO.UK *MP4N3J6M9 | 8901234567890123 | £12.99
+    *Description: "Lily's Birthday Present - Rainbow Loom Kit"*
+2025-10-14 | TESCO STORE 4567, NORTHWOOD | 8901234567890124 | £78.34
+    *Description: "Weekly grocery shop - dinner ingredients, school packed lunches"*
+2025-10-14 | SHELL SERVICE STATION, EDGWARE RD | 8901234567890125 | £65.50
+    *Description: "Petrol for VW Golf - commute and weekend trip to Bristol"*
+2025-10-15 | LITTLE STARS NURSERY, NORTHWOOD | 8901234567890126 | £450.00
+    *Description: "Max's monthly nursery fees - November"*
+2025-10-15 | AMAZON.CO.UK *H4J8K3L2M | 8901234567890127 | £29.99
+    *Description: "Aquarium filter media - for the 150L tank"*
+2025-10-16 | QPA PRIMARY SCHOOL, NORTHWOOD | 8901234567890128 | £15.00
+    *Description: "Lily's school trip contribution - Science Museum"*
+2025-10-16 | PRET A MANGER, CANARY WHARF | 8901234567890129 | £8.95
+    *Description: "Lunch during work - chicken and avocado wrap"*
+2025-10-17 | AQUAWORLD AQUATICS, UXBRIDGE | 8901234567890130 | £56.75
+    *Description: "New live plants for aquarium, fish food, water conditioner"*
+2025-10-17 | WAGAMAMA, NORTHWOOD | 8901234567890131 | £58.40
+    *Description: "Family dinner out - Claire, Lily, Max and me"*
+2025-10-18 | NATIONAL RAIL, KING'S CROSS | 8901234567890132 | £125.60
+    *Description: "Return train tickets to Bristol - visiting Mum for the weekend"*
+2025-10-19 | BRISTOL ZOO GARDENS, BRISTOL | 8901234567890133 | £52.00
+    *Description: "Family day out with Mum, Lily and Max"*
+2025-10-19 | SAINSBURY'S LOCAL, BRISTOL | 8901234567890134 | £18.70
+    *Description: "Groceries for Mum's house - milk, bread, snacks for kids"*
+2025-10-20 | BRISTOL BUS & COACH STATION | 8901234567890135 | £7.80
+    *Description: "Bus fare in Bristol - visiting Janet"*
+2025-10-21 | AMAZON.CO.UK *F2G5H1J3K | 8901234567890136 | £34.99
+    *Description: "Photography accessory - lens cleaning kit"*
+2025-10-22 | BARCLAYS MORTGAGE PAYMENT | 8901234567890137 | £950.00
+    *Description: "Monthly mortgage payment for 14 Elmwood Drive (auto-debit from current account, manually paid with CC points this month)"*
+2025-10-22 | CYCLE REPUBLIC, ISLINGTON | 8901234567890138 | £12.50
+    *Description: "Inner tube and puncture repair kit for bike"*
+2025-10-23 | NETFLIX.COM | 8901234567890139 | £15.99
+    *Description: "Monthly subscription - premium plan"*
+2025-10-24 | COSTA COFFEE, NORTHWOOD | 8901234567890140 | £4.20
+    *Description: "Coffee on way to work"*
+2025-10-24 | AMAZON.CO.UK *P9Q1R7S3T | 8901234567890141 | £8.99
+    *Description: "Book: 'Advanced Python for Data Science'"*
+2025-10-25 | THE OAK TREE PUB & KITCHEN, NORTHWOOD | 8901234567890142 | £45.60
+    *Description: "Drinks with colleagues after work - Rob, Sarah, David"*
+2025-10-26 | ARGOS, WATFORD | 8901234567890143 | £19.99
+    *Description: "New kettle - old one broke"*
+2025-10-26 | TESCO STORE 4567, NORTHWOOD | 8901234567890144 | £82.10
+    *Description: "Weekly grocery shop - ingredients for Sunday roast"*
+2025-10-27 | LITTLE CHEF, M1 SOUTHBOUND | 8901234567890145 | £28.50
+    *Description: "Breakfast stop on drive back from visiting Hannah in Manchester (forgot to log this as personal expense)"*
+2025-10-27 | M&S FOOD, NORTHWOOD | 8901234567890146 | £14.30
+    *Description: "Treats for kids - Percy Pigs and biscuits"*
+2025-10-28 | AMAZON.CO.UK *W7X9Y2Z4A | 8901234567890147 | £12.99
+    *Description: "Replacement bulb for living room lamp"*
+2025-10-28 | NHS PRESCRIPTION CHARGE, PHARMACY | 8901234567890148 | £9.65
+    *Description: "Asthma inhaler refill"*
+2025-10-29 | THE BIKE SHOP, UXBRIDGE | 8901234567890149 | £35.00
+    *Description: "Annual bike service and gear tune-up for commuting bike"*
+2025-10-30 | GAIL'S BAKERY, CANARY WHARF | 8901234567890150 | £6.70
+    *Description: "Coffee and pastry for breakfast before big meeting"*
+2025-10-30 | AMAZON.CO.UK *B1C3D5E7F | 8901234567890151 | £49.99
+    *Description: "New book for tropical fish keeping - 'Advanced Aquascaping Techniques'"*
+2025-10-31 | HALLOWEEN COSTUMES LTD, ONLINE | 8901234567890152 | £22.50
+    *Description: "Lily's witch costume and Max's pumpkin outfit for school party"*
+2025-11-01 | TESCO STORE 4567, NORTHWOOD | 8901234567890153 | £79.80
+    *Description: "Weekly grocery shop - Halloween sweets and general items"*
+2025-11-02 | LOCAL PARK CAFE, NORTHWOOD | 8901234567890154 | £14.50
+    *Description: "Hot chocolates and cakes after park visit with kids"*
+2025-11-03 | DRURY LANE THEATRE, LONDON | 8901234567890155 | £180.00
+    *Description: "Tickets for 'Matilda the Musical' - birthday treat for Claire"*
+2025-11-04 | BARCLAYS LIFE INSURANCE | 8901234567890156 | £32.00
+    *Description: "Monthly life insurance premium (auto-debit)"*
+2025-11-04 | AMAZON.CO.UK *G8H0I2J4K | 8901234567890157 | £19.99
+    *Description: "Replacement charging cable for phone"*
+2025-11-05 | FIREWORKS DISPLAY ENTRY, NW LONDON | 8901234567890158 | £30.00
+    *Description: "Tickets for local Guy Fawkes Night event"*
+2025-11-06 | COSTA COFFEE, NORTHWOOD | 8901234567890159 | £4.20
+    *Description: "Morning coffee"*
+2025-11-06 | AMAZON.CO.UK *L5M7N9O1P | 8901234567890160 | £24.99
+    *Description: "USB-C adapter for new work laptop"*
+2025-11-07 | THE INDIAN KITCHEN, NORTHWOOD | 8901234567890161 | £62.10
+    *Description: "Takeaway curry for family movie night"*
+2025-11-08 | TESCO STORE 4567, NORTHWOOD | 8901234567890162 | £75.25
+    *Description: "Weekly grocery shop - preparing for weekend visit from Luke"*
+2025-11-09 | EDINBURGH TRAIN TICKETS | 8901234567890163 | £135.50
+    *Description: "Return train tickets to Edinburgh for Luke - paid for his trip down"*
+2025-11-09 | NATIONAL TRUST, CLIVEDEN | 8901234567890164 | £20.00
+    *Description: "Entry for family day out with Luke, Claire, Lily, Max"*
+2025-11-10 | LOCAL PUB, NORTHWOOD | 8901234567890165 | £38.00
+    *Description: "Drinks with Luke before he heads back"*
+2025-11-10 | AMAZON.CO.UK *Q2R4S6T8U | 8901234567890166 | £16.99
+    *Description: "Lily's new school book - 'The Magic Treehouse Series'"*
+2025-11-11 | DELIVEROO, NORTHWOOD | 8901234567890167 | £25.75
+    *Description: "Late night pizza - after a long day at work"*
+2025-11-12 | BARCLAYS CURRENT ACCOUNT DEBIT | 8901234567890168 | £15.00
+    *Description: "Emergency savings transfer - monthly top-up"*
+
+---
+
+**Interest Rates & Charges**
+
+**Purchase Rate (Variable):** 21.9% APR
+**Cash Advance Rate (Variable):** 27.9% APR
+**Promotional Rate (if applicable):** N/A
+**Standard Interest-Free Period on Purchases:** Up to 56 days
+**Late Payment Fee:** £12.00
+**Over-limit Fee:** £12.00
+**Cash Advance Fee:** 3.00% (minimum £3.00)
+
+*Interest is calculated daily on your outstanding balance. To avoid interest charges on purchases, you must pay your full balance by the due date each month.*
+
+---
+
+**Barclays Contact Details**
+
+**Customer Service:** 0345 7345 345 (24 hours a day, 7 days a week)
+**Lost or Stolen Cards:** 0800 111 222 (24 hours a day, 7 days a week)
+**Correspondence Address:** Barclays Bank UK PLC, PO Box 888, Northampton, NN1 1DP
+**Online Banking:** www.barclays.co.uk
+**Barclays App:** Available on iOS and Android app stores.
+
+---
+
+**Your Annual Summary**
+
+**For the period 2024-11-01 to 2025-10-31**
+
+**Total Purchases:** £12,587.30
+**Total Cash Advances:** £0.00
+**Total Payments:** £12,450.00
+**Total Interest Charged:** £158.20
+**Total Fees Charged:** £0.00
+**Average Monthly Balance:** £1,048.94
+**Total Rewards Earned (Points):** 1,258
+
+*This summary is for informational purposes only and covers the previous 12-month period up to the last full statement cycle.*
+
+---
+
+**Financial Health Check**
+
+As a valued Barclays customer, we'd like to offer you a complimentary financial health check. This can help you review your spending habits, explore savings options, and ensure you're getting the most from your accounts. Ethan, we've noticed consistent spending in categories like 'Home & Garden' and 'Travel' over the past year. Perhaps you're still considering that electric car? We have competitive financing options available. Book an appointment with a financial advisor via the Barclays app or by calling us.
+
+---
+
+**About Your Credit Limit**
+
+**Current Credit Limit:** £5,000.00
+**Available Credit:** £3,897.55
+**Last Credit Limit Review Date:** 2025-05-15
+
+*Your credit limit is reviewed periodically. If you wish to request a change to your credit limit, please visit your online banking or contact us directly.*
+
+---
+
+**Fraud Prevention & Security Tips**
+
+*   Always keep your card details secure.
+*   Be wary of unsolicited emails or texts asking for personal or financial information (phishing). Barclays will never ask you for your full PIN or online banking password.
+*   Regularly check your statements for any suspicious activity. If something looks unfamiliar, report it to us immediately.
+*   Use strong, unique passwords for your online accounts.
+*   When shopping online, look for the padlock symbol in the browser address bar and ensure the website address starts with "https://".
+
+---
+
+**Explanation of Terms**
+
+*   **New Balance:** The total amount you owe on your credit card account at the end of this statement period.
+*   **Minimum Payment Due:** The lowest amount you must pay by the due date to avoid late payment fees and maintain good standing on your account.
+*   **Payment Due Date:** The date by which your minimum payment must be received by Barclays.
+*   **APR (Annual Percentage Rate):** The annual rate of interest charged on your credit card balance.
+*   **Interest-Free Period:** The period during which no interest is charged on new purchases, provided you pay your full previous balance by the due date.
+
+---
+
+**Barclays Bank UK PLC is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register No. 759676). Registered in England. Registered No. 9740322. Registered Office: 1 Churchill Place, London, E14 5HP.**
+
+**Thank you for choosing Barclays.**

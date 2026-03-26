@@ -1,0 +1,117 @@
+## Global Industries - Expense Report
+
+**Account Holder:** John Smith
+**Employee ID:** JS-789-23
+**Department:** Strategic Partnerships
+**Reporting Period:** August 1, 2023 - August 15, 2023
+**Date Submitted:** 2023-08-20
+**Currency:** USD
+
+---
+
+**Summary of Expenses:**
+
+| Category             | Amount (USD) |
+| :------------------- | :----------- |
+| Airfare              | 852.20       |
+| Accommodation        | 1,120.00     |
+| Meals & Entertainment | 485.75       |
+| Ground Transportation | 178.50       |
+| Other Business Expenses | 65.00        |
+| **TOTAL**            | **2,701.45** |
+
+---
+
+**Detailed Expense Breakdown:**
+
+**1. Airfare**
+
+*   **Date:** 2023-08-01
+*   **Vendor:** United Airlines
+*   **Description:** Round-trip airfare, ORD (Chicago) to SFO (San Francisco) - Business Class for client meeting.
+*   **Reference No.:** UA2023-JS-789-A1
+*   **Amount:** 852.20
+
+**2. Accommodation**
+
+*   **Date:** 2023-08-01 to 2023-08-05 (4 nights)
+*   **Vendor:** The St. Regis San Francisco
+*   **Description:** Standard King Room, corporate rate.
+*   **Reference No.:** STR-SF-JS-0801
+*   **Amount:** 1,120.00 (4 nights x $280/night)
+
+**3. Meals & Entertainment**
+
+*   **Date:** 2023-08-01
+*   **Vendor:** Foreign Cinema (San Francisco)
+*   **Description:** Dinner with prospective client, Mr. David Chen (Acme Solutions).
+*   **Attendees:** John Smith, David Chen.
+*   **Reference No.:** FC-2023-08-01-01
+*   **Amount:** 185.50
+
+*   **Date:** 2023-08-02
+*   **Vendor:** Boudin Bakery & Cafe (San Francisco)
+*   **Description:** Lunch with internal team members (Sarah Lee, Mark Johnson) to discuss project roadmap.
+*   **Reference No.:** BB-2023-08-02-02
+*   **Amount:** 62.25
+
+*   **Date:** 2023-08-03
+*   **Vendor:** The House (San Francisco)
+*   **Description:** Dinner with existing client, Ms. Emily White (InnovateTech).
+*   **Attendees:** John Smith, Emily White.
+*   **Reference No.:** TH-2023-08-03-03
+*   **Amount:** 238.00
+
+**4. Ground Transportation**
+
+*   **Date:** 2023-08-01
+*   **Vendor:** Lyft
+*   **Description:** Airport transfer (ORD) to home.
+*   **Reference No.:** LYFT-JSM-0801-A
+*   **Amount:** 45.75
+
+*   **Date:** 2023-08-01
+*   **Vendor:** Uber
+*   **Description:** SFO Airport to The St. Regis San Francisco.
+*   **Reference No.:** UBER-JSM-0801-B
+*   **Amount:** 52.00
+
+*   **Date:** 2023-08-05
+*   **Vendor:** Uber
+*   **Description:** The St. Regis San Francisco to SFO Airport.
+*   **Reference No.:** UBER-JSM-0805-C
+*   **Amount:** 50.75
+
+*   **Date:** 2023-08-05
+*   **Vendor:** Lyft
+*   **Description:** Home to ORD Airport (personal vehicle parking reimbursement).
+*   **Reference No.:** LYFT-JSM-0805-D
+*   **Amount:** 30.00
+
+**5. Other Business Expenses**
+
+*   **Date:** 2023-08-02
+*   **Vendor:** FedEx Office
+*   **Description:** Printing of presentation materials for client meeting.
+*   **Reference No.:** FDX-2023-JS-0802
+*   **Amount:** 65.00
+
+---
+
+**Employee Declaration:**
+I hereby certify that all expenses listed above were incurred for legitimate business purposes of Global Industries and are in accordance with company policy. All necessary receipts are attached or uploaded electronically.
+
+**Employee Signature:** John Smith (Electronic)
+**Date:** 2023-08-20
+
+---
+
+**For Internal Use Only:**
+
+**Approver:** Sarah Connor (VP, Strategic Partnerships)
+**Approval Date:** 2023-08-22
+**Approval Status:** Approved
+**Payment Processing ID:** GLB-EXP-JS-2023-08-01-V1
+**GL Account Code:** 5210-SP-TRV
+**Payment Method:** Direct Deposit to account ending in ****1234
+**Notes:** Client meeting with Acme Solutions was successful, potential for Q4 partnership. Presentation materials were well-received.

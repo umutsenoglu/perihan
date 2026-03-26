@@ -1,0 +1,133 @@
+**Invoice**
+
+**Ryan Cooper**
+[Ryan's Fictional Address]
+London, [Fictional Postcode]
+
+**Invoice Number:** INV-RC-20241110-001
+**Date:** 2024-08-08
+**Due Date:** 2025-01-10
+**Currency:** GBP
+
+**To: Ethan Marsh**
+[Ethan's Fictional Address]
+North London, [Fictional Postcode]
+
+**Description of Services/Items:**
+
+This invoice details the outstanding amount owed by Ryan Cooper to Ethan Marsh, primarily related to a personal loan provided by Ethan to Ryan.
+
+---
+
+**Page 1 of 3**
+
+**Summary of Account Activity**
+
+| Date         | Description                                        | Debit (GBP) | Credit (GBP) | Balance (GBP) |
+| :----------- | :------------------------------------------------- | :---------- | :----------- | :------------ |
+| 2024-11-10   | Personal Loan - Flat Deposit Assistance            | 3,000.00    |              | 3,000.00      |
+| 2025-03-05   | Partial Repayment - As per agreement               |             | 1,500.00     | 1,500.00      |
+| **Current Outstanding Balance** | | | | **1,500.00** |
+
+---
+
+**Detailed Breakdown of Transactions**
+
+**Transaction 1: Personal Loan - Flat Deposit Assistance**
+
+*   **Date:** 2024-11-10
+*   **Description:** Funds transferred from Ethan Marsh (Sort Code: 20-35-67, Account: XXXXXX7890) to Ryan Cooper (Sort Code: 40-12-34, Account: XXXXXX5678) to assist with a flat deposit following the finalisation of Ryan's divorce. This loan was provided on the understanding that it would be repaid in full by 2025-01-10.
+*   **Amount:** £3,000.00
+*   **Reference:** MARSH-COOPER-LOAN-NOV24
+
+**Transaction 2: Partial Repayment**
+
+*   **Date:** 2025-03-05
+*   **Description:** Partial repayment received from Ryan Cooper to Ethan Marsh. This payment was made via cheque following a discussion at The Flask, Highgate, where an agreement was reached for the remaining balance to be paid by April 2025.
+*   **Amount:** £1,500.00
+*   **Reference:** COOPER-MARSH-REPAY-MAR25
+
+---
+
+**Payment Terms and Notes:**
+
+*   **Original Due Date for Full Repayment:** 2025-01-10
+*   **Revised Agreement for Remaining Balance:** £1,500.00 to be paid by April 2025.
+*   **Payment Method:** Bank transfer preferred. Please use the reference INV-RC-20241110-001.
+
+**Bank Details for Payment (Ethan Marsh):**
+*   **Bank Name:** Barclays
+*   **Account Name:** E Marsh
+*   **Sort Code:** 20-35-67
+*   **Account Number:** [Masked for privacy] XXXXXX7890
+
+---
+
+**Page 2 of 3**
+
+**Communication Log & Key Dates Relevant to This Invoice:**
+
+*   **2024-11-10:** Loan of £3,000.00 initiated by Ethan Marsh to Ryan Cooper. Agreement for repayment by January 2025.
+*   **2025-01-10:** Original repayment due date. No payment received.
+*   **2025-01-28:** Ethan casually mentioned the outstanding loan to Ryan. Ryan responded defensively, stating "I thought friends don't keep score."
+*   **2025-02-15:** Ethan observed Ryan had purchased a new Canyon Spectral mountain bike (estimated value £3,500) via Instagram.
+*   **2025-02-15 (Evening):** Ethan sent a text to Ryan: "nice bike, must be nice to afford that."
+*   **2025-02-18:** Ryan replied to Ethan's text, stating the bike was a gift from his brother and accusing Ethan of being unfair.
+*   **2025-03-05:** Ryan visited Ethan's home in North London, presenting a cheque for £1,500.00. They subsequently met at The Flask, Highgate, to discuss the situation. Ryan admitted financial difficulties due to his divorce and embarrassment. An agreement was reached for the remaining £1,500.00 to be paid by April 2025.
+
+---
+
+**Additional Details for Ethan Marsh's Records:**
+
+**Personal Information (Ethan Marsh):**
+*   **Date of Birth:** [Fictional DOB]
+*   **National Insurance Number:** [Masked for privacy] AB123456C
+*   **Tax Code:** 1257L
+*   **Spouse:** Claire Marsh (Teacher, QPA Primary School)
+*   **Children:** Lily Marsh (7, Year 3 at QPA Primary School - Mrs. Henderson's class), Max Marsh (4, Little Stars Nursery)
+*   **Home Address:** [Ethan's Fictional Address], North London, [Fictional Postcode]
+*   **Mortgage Provider:** Barclays
+*   **Vehicle:** 2019 VW Golf
+
+**Family Contacts:**
+*   **Mother:** Janet Marsh, Bristol
+*   **Father:** George Marsh (Deceased 2021)
+*   **Sister:** Hannah Marsh, Manchester
+*   **Brother:** Luke Marsh, Edinburgh
+
+**Hobbies/Interests:**
+*   Tropical fish keeping, cycling, photography, cooking.
+
+**Health Notes:**
+*   Mild asthma, seasonal allergies, occasional lower back pain (from desk work).
+
+---
+
+**Page 3 of 3**
+
+**Statement of Outstanding Balance**
+
+**To Ryan Cooper,**
+
+This invoice serves as a formal record of the financial transaction and subsequent partial repayment between yourself and Ethan Marsh. As per our most recent agreement on 2025-03-05, a remaining balance is outstanding.
+
+**Original Loan Amount:** £3,000.00
+**Partial Repayment Received (2025-03-05):** £1,500.00
+
+**Total Remaining Balance Due:** £1,500.00
+
+**Expected Repayment Date for Remaining Balance:** April 2025
+
+We appreciate your commitment to resolving this matter. Should you require any further clarification or wish to discuss alternative repayment arrangements, please contact Ethan Marsh directly.
+
+---
+
+**Contact Information:**
+**Ethan Marsh**
+[Ethan's Fictional Mobile Number]
+[Ethan's Fictional Email Address]
+
+Thank you for your prompt attention to this matter.
+
+---
+**END OF INVOICE**

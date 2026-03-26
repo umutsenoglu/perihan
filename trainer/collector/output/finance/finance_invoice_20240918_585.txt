@@ -1,0 +1,147 @@
+**INVOICE**
+
+**TechCorp Solutions**
+123 Innovation Drive
+Silicon Valley, CA 94000
+Phone: (555) 123-4567
+Email: billing@techcorpsolutions.com
+Website: www.techcorpsolutions.com
+
+**INVOICE NUMBER:** TCS-2024-09-18-001
+**INVOICE DATE:** 2024-09-18
+**DUE DATE:** 2024-10-18
+
+**BILL TO:**
+John Smith
+456 Enterprise Lane
+Anytown, USA 12345
+Client ID: JS-2023-007
+
+**CURRENCY:** USD
+
+---
+
+**PAGE 1 OF 3**
+
+**SUMMARY OF CHARGES**
+
+| Service Category                 | Total Amount (USD) |
+|----------------------------------|--------------------|
+| Cloud Infrastructure Services    | $3,250.00          |
+| Software Development & Licensing | $1,800.00          |
+| Consulting & Support Services    | $950.00            |
+| Data Analytics & Reporting       | $600.00            |
+| **SUBTOTAL**                     | **$6,600.00**      |
+| Applicable Taxes (8.5%)          | $561.00            |
+| **TOTAL AMOUNT DUE**             | **$7,161.00**      |
+
+---
+
+**DETAILED BREAKDOWN OF CHARGES**
+
+**I. Cloud Infrastructure Services**
+
+| Date       | Service Description                       | Reference ID       | Quantity | Unit Price (USD) | Line Total (USD) |
+|------------|-------------------------------------------|--------------------|----------|------------------|------------------|
+| 2024-08-01 | AWS EC2 Instance (t3.medium) - August      | AWS-EC2-JS-08-01   | 744 hrs  | $0.05 / hr       | $37.20           |
+| 2024-08-01 | AWS S3 Storage (Standard) - August        | AWS-S3-JS-08-01    | 500 GB   | $0.023 / GB      | $11.50           |
+| 2024-08-05 | Azure Virtual Network Gateway - August     | AZ-VNET-JS-08-05   | 1 unit   | $125.00 / mo     | $125.00          |
+| 2024-08-08 | Google Cloud SQL (PostgreSQL) - August    | GCP-SQL-JS-08-08   | 30 days  | $15.00 / day     | $450.00          |
+| 2024-08-15 | AWS Lambda Function Invocations - August   | AWS-LAM-JS-08-15   | 250,000  | $0.0000002 / inv | $0.05            |
+| 2024-08-20 | Azure App Service Plan (P1V2) - August    | AZ-ASP-JS-08-20    | 1 unit   | $73.00 / mo      | $73.00           |
+| 2024-08-25 | Google Kubernetes Engine (GKE) Cluster    | GCP-GKE-JS-08-25   | 1 cluster| $0.10 / hr       | $74.40           |
+| 2024-09-01 | AWS EC2 Instance (t3.medium) - September   | AWS-EC2-JS-09-01   | 744 hrs  | $0.05 / hr       | $37.20           |
+| 2024-09-01 | AWS S3 Storage (Standard) - September     | AWS-S3-JS-09-01    | 550 GB   | $0.023 / GB      | $12.65           |
+| 2024-09-05 | Azure Virtual Network Gateway - September  | AZ-VNET-JS-09-05   | 1 unit   | $125.00 / mo     | $125.00          |
+| 2024-09-08 | Google Cloud SQL (PostgreSQL) - September | GCP-SQL-JS-09-08   | 18 days  | $15.00 / day     | $270.00          |
+| 2024-09-10 | AWS RDS Instance (db.t3.medium) - August   | AWS-RDS-JS-08-10   | 744 hrs  | $0.115 / hr      | $85.56           |
+| 2024-09-10 | AWS RDS Instance (db.t3.medium) - September| AWS-RDS-JS-09-10   | 432 hrs  | $0.115 / hr      | $49.68           |
+| 2024-09-12 | Azure Blob Storage (Hot Tier) - August    | AZ-BLB-JS-08-12    | 200 GB   | $0.02 / GB       | $4.00            |
+| 2024-09-12 | Azure Blob Storage (Hot Tier) - September | AZ-BLB-JS-09-12    | 210 GB   | $0.02 / GB       | $4.20            |
+| 2024-09-15 | Google Cloud CDN - Data Transfer - August | GCP-CDN-JS-08-15   | 100 GB   | $0.08 / GB       | $8.00            |
+| 2024-09-15 | Google Cloud CDN - Data Transfer - September| GCP-CDN-JS-09-15   | 60 GB    | $0.08 / GB       | $4.80            |
+| 2024-09-17 | AWS Elastic Load Balancer - August         | AWS-ELB-JS-08-17   | 744 hrs  | $0.025 / hr      | $18.60           |
+| 2024-09-17 | AWS Elastic Load Balancer - September      | AWS-ELB-JS-09-17   | 432 hrs  | $0.025 / hr      | $10.80           |
+| 2024-09-18 | AWS Reserved Instance Purchase (1-Year, No Upfront) | AWS-RI-JS-09-18-001 | 1 unit | $1,500.00        | $1,500.00        |
+| **TOTAL**  |                                           |                    |          |                  | **$3,250.00**    |
+
+---
+
+**PAGE 2 OF 3**
+
+**II. Software Development & Licensing**
+
+| Date       | Service Description                       | Reference ID       | Quantity | Unit Price (USD) | Line Total (USD) |
+|------------|-------------------------------------------|--------------------|----------|------------------|------------------|
+| 2024-08-01 | Custom API Integration (Phase 1 Completion) | SD-API-JS-08-01    | 1 project| $750.00          | $750.00          |
+| 2024-08-10 | Database Optimization Script Development  | SD-DB-JS-08-10     | 8 hrs    | $75.00 / hr      | $600.00          |
+| 2024-09-01 | Enterprise Software License Renewal (Annual) | LIC-ENT-JS-09-01   | 1 year   | $300.00 / year   | $300.00          |
+| 2024-09-05 | Frontend UI Enhancement (initial commit)  | SD-UI-JS-09-05     | 2 hrs    | $75.00 / hr      | $150.00          |
+| **TOTAL**  |                                           |                    |          |                  | **$1,800.00**    |
+
+---
+
+**III. Consulting & Support Services**
+
+| Date       | Service Description                       | Reference ID       | Quantity | Unit Price (USD) | Line Total (USD) |
+|------------|-------------------------------------------|--------------------|----------|------------------|------------------|
+| 2024-08-03 | Technical Consultation - Cloud Strategy   | CON-CS-JS-08-03    | 3 hrs    | $150.00 / hr     | $450.00          |
+| 2024-08-15 | Priority Support Ticket Resolution (P1)   | SUP-P1-JS-08-15    | 1 ticket | $200.00          | $200.00          |
+| 2024-09-07 | System Performance Review Meeting         | CON-SPR-JS-09-07   | 2 hrs    | $150.00 / hr     | $300.00          |
+| **TOTAL**  |                                           |                    |          |                  | **$950.00**      |
+
+---
+
+**IV. Data Analytics & Reporting**
+
+| Date       | Service Description                       | Reference ID       | Quantity | Unit Price (USD) | Line Total (USD) |
+|------------|-------------------------------------------|--------------------|----------|------------------|------------------|
+| 2024-08-22 | Monthly Performance Report Generation     | DAR-MPR-JS-08-22   | 1 report | $350.00          | $350.00          |
+| 2024-09-10 | Custom Data Visualization Development     | DAR-CDV-JS-09-10   | 2 hrs    | $125.00 / hr     | $250.00          |
+| **TOTAL**  |                                           |                    |          |                  | **$600.00**      |
+
+---
+
+**PAGE 3 OF 3**
+
+**PAYMENT INFORMATION**
+
+**TOTAL AMOUNT DUE:** $7,161.00
+
+**Payment Methods:**
+
+1.  **Bank Transfer:**
+    *   Bank Name: Global Trust Bank
+    *   Account Name: TechCorp Solutions Inc.
+    *   Account Number: 987654XXXXXX (last 6 digits masked)
+    *   SWIFT/BIC: GTRUUS33
+    *   Routing Number: 012345678
+
+2.  **Credit Card:**
+    *   We accept Visa, MasterCard, American Express, and Discover.
+    *   Please visit our secure payment portal at: www.techcorpsolutions.com/pay/JS-2023-007
+
+**Payment Terms:**
+Payment is due within 30 days of the invoice date. A late fee of 1.5% per month (or the maximum allowed by law) may be applied to overdue balances.
+
+**Customer Support:**
+For any questions regarding this invoice, please contact our billing department:
+Email: billing@techcorpsolutions.com
+Phone: (555) 123-4567 (ext. 2)
+
+**Thank you for your business!**
+
+---
+
+**NOTES:**
+
+*   Cloud infrastructure charges are based on actual usage during the billing period (August 1st, 2024 - September 18th, 2024 for usage-based services, and full monthly charges for subscription services where applicable).
+*   The AWS Reserved Instance (RI) purchase on 2024-09-18 is a one-year commitment with no upfront payment, billed monthly. The $1,500.00 represents the full value of the first monthly installment for this RI.
+*   Software development hours are tracked and verified against project milestones.
+*   Consulting and support hours are billed at our standard hourly rates.
+*   All prices are in USD.
+
+**CONFIDENTIALITY NOTICE:** This invoice contains proprietary information of TechCorp Solutions and financial details pertaining to John Smith's account. It is intended solely for the recipient named above. Any unauthorized use, disclosure, distribution, or copying is strictly prohibited.
+
+---
+**END OF INVOICE**

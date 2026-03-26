@@ -1,0 +1,61 @@
+## Sterling Bank - Account Statement
+
+**Account Holder:** Mr Ethan Marsh
+**Address:** 14 Elmwood Drive, North London, NW3 5AB
+**Statement Date:** 06 August 2023
+**Account Number:** ************7890
+**Sort Code:** 20-45-78
+**Currency:** GBP (£)
+
+---
+
+**Summary of Account Activity**
+
+**Previous Balance (as of 06 July 2023):** £4,872.15
+**Total Debits:** £3,125.80
+**Total Credits:** £5,980.50
+**New Balance (as of 06 August 2023):** £7,726.85
+
+---
+
+**Transactions for the Period 07 July 2023 - 06 August 2023**
+
+| Date       | Transaction Type | Description                                   | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :--------------- | :-------------------------------------------- | :-------- | :--------- | :---------- |
+| 07 Jul     | Direct Debit     | Barclays Mortgage Payment                     | 1,250.00  |            | 3,622.15    |
+| 08 Jul     | Debit Card       | Sainsbury's Supermarket                       | 78.45     |            | 3,543.70    |
+| 09 Jul     | Bank Transfer    | Janet Marsh - Birthday Gift                   |           | 50.00      | 3,593.70    |
+| 10 Jul     | Direct Debit     | Sky Broadband & TV                            | 65.00     |            | 3,528.70    |
+| 12 Jul     | Debit Card       | QPA Primary School - Lily School Trip         | 25.00     |            | 3,503.70    |
+| 14 Jul     | Bank Transfer    | Luke Marsh - Contribution to Father's Memorial Bench | 150.00    |            | 3,353.70    |
+| 15 Jul     | Salary           | FINTECH SOLUTIONS LTD                         |           | 3,850.25   | 7,204.05    |
+| 15 Jul     | Standing Order   | Claire Marsh - Household Contribution         | 500.00    |            | 6,704.05    |
+| 16 Jul     | Debit Card       | Little Stars Nursery - Max Fees               | 850.00    |            | 5,854.05    |
+| 18 Jul     | Direct Debit     | EDF Energy - Utilities                        | 112.30    |            | 5,741.75    |
+| 20 Jul     | Debit Card       | London Cycle Shop - New Helmet                | 89.99     |            | 5,651.76    |
+| 22 Jul     | Debit Card       | Amazon UK - Tropical Fish Supplies            | 42.50     |            | 5,609.26    |
+| 24 Jul     | Bank Transfer    | Hannah Brooks - Share of Mum's Gift           | 25.00     |            | 5,584.26    |
+| 25 Jul     | Debit Card       | Tesco Express                                 | 15.65     |            | 5,568.61    |
+| 28 Jul     | Bank Transfer    | Refund - Chess.com Annual Membership          |           | 29.99      | 5,598.60    |
+| 30 Jul     | Direct Debit     | Virgin Media - Mobile Phone                   | 28.00     |            | 5,570.60    |
+| 01 Aug     | Bank Transfer    | HMRC - Tax Credit (Child Benefit)             |           | 1,050.26   | 6,620.86    |
+| 02 Aug     | Debit Card       | Waitrose Supermarket                          | 95.78     |            | 6,525.08    |
+| 03 Aug     | ATM Withdrawal   | Cash Withdrawal                               | 100.00    |            | 6,425.08    |
+| 04 Aug     | Bank Transfer    | Luke Marsh - Payment for George's House Upkeep | 150.00    |            | 6,275.08    |
+| 05 Aug     | Debit Card       | Halfords - Car Maintenance Wipes              | 12.50     |            | 6,262.58    |
+| 06 Aug     | Bank Transfer    | Janet Marsh - Contribution towards kitchen renovation planning |           | 1,050.00   | 7,312.58    |
+| 06 Aug     | Bank Transfer    | Claire Marsh - Shared Expenses for Holiday    |           | 414.27     | 7,726.85    |
+
+---
+
+**Important Information**
+
+*   **Your NI Number:** JR123456D
+*   **Your Tax Code:** 1257L
+*   **Customer Service:** For any queries regarding your statement, please call us on 0345 678 9012 or visit your local branch.
+*   **Online Banking:** Access your account 24/7 at www.sterlingbank.co.uk
+*   **Security Alert:** Please be aware of phishing scams. Sterling Bank will never ask for your full password or PIN via email or text message.
+
+---
+
+*This is a fictional document for illustrative purposes only.*

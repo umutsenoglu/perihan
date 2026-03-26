@@ -1,0 +1,9 @@
+GLOBAL INDUSTRIES
+Expense Report Confirmation - [GR2024-10-30-001]
+
+Date: 2024-10-30
+Account Holder: John Smith
+Account Masked: **** **** 1234
+Total Reimbursement: EUR 475.50
+
+This confirms the successful processing of your expense report. Funds are expected to be deposited into your designated account within 3-5 business days. For detailed breakdown, please refer to the attached report.

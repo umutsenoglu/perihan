@@ -1,0 +1,143 @@
+---
+Event: Sunday Roast at Mum's (Bristol)
+Date: 2025-08-10
+Time: 12:30 - 17:00
+Location: Janet Marsh's House, Bristol
+Notes: Drive down Saturday night. Remember Lily's new drawing to show Gran. Pick up some flowers for Mum on the way. Check traffic on M4. Claire wants to stop at that antique shop near Bath if we have time.
+---
+Event: Return to London
+Date: 2025-08-10
+Time: 17:00 - 19:30
+Location: M4 Motorway
+Notes: Try to leave Bristol by 5 PM to miss peak Sunday traffic. Dinner is probably just leftovers.
+---
+Event: Work: Daily Standup
+Date: 2025-08-11
+Time: 09:30 - 10:00
+Location: Remote (Google Meet)
+Notes: Prepare updates for the Payment Gateway Refactor project. Need to follow up on the API documentation with Ben.
+---
+Event: Lily — QPA Primary School pickup
+Date: 2025-08-11
+Time: 15:15 - 15:45
+Location: QPA Primary School, North London N6
+Notes: Mrs. Henderson's class. Claire has a staff meeting, so it's my turn.
+---
+Event: Max — Little Stars Nursery pickup
+Date: 2025-08-11
+Time: 16:30 - 17:00
+Location: Little Stars Nursery, North London N6
+Notes: Ask about Max's nap schedule today. Remember his comfort blanket.
+---
+Event: Work: Quarterly Review with Richard
+Date: 2025-08-12
+Time: 10:00 - 11:00
+Location: Remote (Google Meet)
+Attendees: Ethan Marsh, Richard Davies
+Notes: Prepare points on Q2 achievements (Auth service migration, new feature rollout). Discuss career development, specifically the Senior Tech Lead path. Bring up potential for a new project around AI integration.
+---
+Event: Lily — Swimming Lesson
+Date: 2025-08-12
+Time: 16:00 - 16:45
+Location: Highgate Leisure Centre, North London N6
+Notes: Remember her swim bag, goggles, and towel. Claire will take her this week.
+---
+Event: Claire's Birthday Dinner
+Date: 2025-08-12
+Time: 19:30 - 22:00
+Location: The Orange Tree Pub, Highgate Village, N6
+Attendees: Ethan Marsh, Claire Marsh, [Babysitter arranged for kids]
+Notes: Booked table for 7:30 PM. Her present is hidden in the wardrobe. Got the card ready.
+---
+Event: Work: Daily Standup
+Date: 2025-08-13
+Time: 09:30 - 10:00
+Location: Remote (Google Meet)
+Notes: Need to chase Sarah on the database schema changes.
+---
+Event: Freelance Project: "EcoTracker" Deadline
+Date: 2025-08-13
+Time: 17:00 - 18:00
+Location: Home Office
+Notes: Final code review and deployment for the client's new sustainability reporting module. Payment due by end of month.
+---
+Event: Max's 4-year Vaccination - Dr. Patel
+Date: 2025-08-14
+Time: 10:15 - 10:45
+Location: Highgate Medical Centre, North London N6
+Notes: Bring his red book. Claire will take him. Might need to get some Calpol afterwards.
+---
+Event: Hannah visiting from Manchester
+Date: 2025-08-15
+Time: 14:00 - 14:30
+Location: Kings Cross Station, London
+Notes: Pick her up from the train. She's on the 13:45 service from Piccadilly. Will probably stay until Sunday. Get some extra groceries.
+---
+Event: Groceries — Tesco Extra
+Date: 2025-08-15
+Time: 17:00 - 18:00
+Location: Tesco Extra, Finsbury Park N4
+Notes: Need to stock up for Hannah's visit. List: milk, bread, fruit, snacks, ingredients for Friday night curry. Don't forget the cat food for next door's cat (they're on holiday).
+---
+Event: Work: Sprint Review - Payment Gateway Refactor
+Date: 2025-08-16
+Time: 10:00 - 11:30
+Location: Remote (Google Meet)
+Attendees: Ethan Marsh, Dev Team, Product Team
+Notes: Present progress on the refactor. Highlight completed user stories and any blockers. Prepare demo of new authentication flows.
+---
+Event: Cycling with Marcus — Hampstead Heath
+Date: 2025-08-17
+Time: 09:00 - 11:30
+Location: Hampstead Heath, meet at Parliament Hill Café
+Notes: Plan for a longer ride today, maybe 2-3 hours. Check tyre pressure tonight. Marcus wanted to discuss the new e-bike models. Bring water and a snack.
+---
+Event: Family Dinner with Hannah
+Date: 2025-08-17
+Time: 19:00 - 21:00
+Location: Home (North London)
+Notes: Cooking Claire's famous lasagna. Ask Hannah about her new job.
+---
+Event: Work: Daily Standup
+Date: 2025-08-18
+Time: 09:30 - 10:00
+Location: Remote (Google Meet)
+Notes: Follow up on the sprint review feedback. Start planning for next sprint.
+---
+Event: Lily — QPA Primary School pickup
+Date: 2025-08-18
+Time: 15:15 - 15:45
+Location: QPA Primary School, North London N6
+Notes: Ask Lily if she needs any new art supplies for school.
+---
+Event: Max — Little Stars Nursery pickup
+Date: 2025-08-18
+Time: 16:30 - 17:00
+Location: Little Stars Nursery, North London N6
+Notes: Need to sign him up for the autumn term activity club.
+---
+Event: Physiotherapy for back pain
+Date: 2025-08-19
+Time: 11:00 - 11:45
+Location: Muswell Hill Physio Clinic, N10
+Notes: Session 3 of 6. Remember to do the exercises Dr. Miller gave me. Ask about stretches for long desk sessions.
+---
+Event: Work: 1:1 with Ben (Junior Dev)
+Date: 2025-08-19
+Time: 14:00 - 14:30
+Location: Remote (Google Meet)
+Attendees: Ethan Marsh, Ben Carter
+Notes: Discuss his progress on the smaller tasks. Offer mentorship on best practices for clean code. Ask about any challenges he's facing.
+---
+Event: Lily — Swimming Lesson
+Date: 2025-08-19
+Time: 16:00 - 16:45
+Location: Highgate Leisure Centre, North London N6
+Notes: My turn to take her. Check if her goggles are still fitting properly.
+---
+Event: Aquatics Centre - Fish Food & Supplies
+Date: 2025-08-20
+Time: 18:00 - 18:45
+Location: The Aquarium Shop, Camden Town NW1
+Notes: Need new filter media for the main tank. Also, running low on flake food and brine shrimp for the angelfish. Check if they have those new plant weights.
+---

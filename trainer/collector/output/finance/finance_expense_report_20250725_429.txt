@@ -1,0 +1,8 @@
+**Expense Report Confirmation - Global Industries**
+
+**Account Holder:** John Smith
+**Company:** Global Industries
+**Date:** 2025-07-25
+**Currency:** EUR
+
+This confirms the processing of Expense Report #GR-2025-07-25-001 for John Smith. A total of EUR 78.50 has been disbursed to account ending ****5678 on 2025-07-25. Reference: PAYMENT-7890123.

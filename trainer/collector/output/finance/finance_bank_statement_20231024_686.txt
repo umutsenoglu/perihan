@@ -1,0 +1,33 @@
+**Barclays Bank Statement**
+
+**Account Holder:** Mr. Ethan Marsh
+**Address:** 14 Elmwood Close, North London, N12 9YZ
+**Statement Date:** 24 October 2023
+**Account Number:** *******8765
+**Sort Code:** 20-45-78
+**Currency:** GBP
+
+**Summary of Account Activity**
+
+**Previous Balance (23 September 2023):** £3,450.88
+**Deposits:** £5,200.00
+**Withdrawals/Payments:** £4,895.30
+**Current Balance (24 October 2023):** £3,755.58
+
+**Recent Transactions**
+
+**Date** | **Description** | **Amount (GBP)**
+--- | --- | ---
+01 Oct | Mortgage Payment - Barclays | -£1,550.00
+03 Oct | Sainsburys Local | -£45.20
+05 Oct | QPA Primary School - Lunch Money Top-up (Lily) | -£30.00
+08 Oct | Salary Deposit - FinTech Solutions Ltd | +£5,200.00
+10 Oct | Amazon.co.uk - Fish Tank Filter | -£28.99
+12 Oct | Little Stars Nursery - Max Fees | -£780.00
+15 Oct | Bus Pass Top-up - TFL | -£85.00
+18 Oct | Cycle Republic - New Tyre | -£32.50
+20 Oct | Direct Debit - British Gas | -£110.00
+22 Oct | Waitrose & Partners | -£78.45
+
+For any queries regarding your account, please visit your local branch or call us on 0345 7345 345.
+Your money is protected by the Financial Services Compensation Scheme (FSCS).

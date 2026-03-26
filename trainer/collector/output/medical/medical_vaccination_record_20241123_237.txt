@@ -1,0 +1,28 @@
+**North London Medical Centre**
+12 Highgate Road, London NW5 1PB
+NHS Provider ID: NLM001
+Tel: 020 7XXX XXXX
+
+---
+
+**PATIENT VISIT NOTE**
+
+**Patient:** Ethan Marsh
+**NHS Number:** 123 456 7890
+**Date of Birth:** 
+**Date of Birth:** 15/07/1986
+**Address:** 42 Willow Lane, London NW5 2CD
+**GP:** Dr. Sarah Kim
+**Attending Physician:** Dr. Sarah Kim
+**Date of Visit:** 2024-11-23
+**Type of Visit:** Routine Dental Check-up
+
+
+**PATIENT VISIT NOTE**
+
+**Patient:** Ethan Marsh
+**NHS Number:** 123 456 7890
+**Date of Birth:** 15/07/1986
+**Address:** 42 Willow Lane, London NW5 2CD
+**GP:** Dr. Sarah Kim
+**Attending Physician:** Dr. Sarah Kim

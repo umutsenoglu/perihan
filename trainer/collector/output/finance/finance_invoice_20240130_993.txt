@@ -1,0 +1,39 @@
+**TechCorp Solutions**
+14 Innovation Drive, London, SW1A 0AA
+Phone: +44 (0)20 7946 0123 | Email: billing@techcorpsolutions.com
+VAT Reg No: GB123 4567 89
+
+**INVOICE**
+
+**Invoice No:** TCS-2024-01-00123
+**Invoice Date:** 2024-01-30
+**Due Date:** 2024-02-29
+**Customer ID:** JS-00987
+
+**BILL TO:**
+John Smith
+Apartment 4B, 22 Park Avenue
+London, NW1 6XP
+
+**DESCRIPTION OF SERVICES**
+----------------------------------------------------------------------
+| Item                                | Qty | Unit Price (GBP) | Total (GBP) |
+----------------------------------------------------------------------
+| Monthly Managed IT Support (Feb 2024) | 1   | 150.00           | 150.00      |
+| Cloud Storage Upgrade (1TB)         | 1   | 50.00            | 50.00       |
+| On-site Consultancy (2 hours)       | 2   | 75.00            | 150.00      |
+----------------------------------------------------------------------
+
+**SUBTOTAL:** GBP 350.00
+**VAT (20%):** GBP 70.00
+**TOTAL AMOUNT DUE:** GBP 420.00
+
+**PAYMENT INFORMATION:**
+Please make payment by 29 February 2024.
+Bank: Fictional Bank PLC
+Account Name: TechCorp Solutions Ltd
+Account No: *********7890
+Sort Code: 40-01-02
+Reference: TCS-2024-01-00123
+
+Thank you for your business. For any queries regarding this invoice, please contact our billing department.

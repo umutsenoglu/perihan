@@ -1,0 +1,58 @@
+**Payment Receipt**
+
+**Date:** 2024-05-08
+
+**From:**
+Ethan Marsh
+17 Willow Crescent
+North London
+N12 8AB
+
+**To:**
+Janet Marsh
+[Janet's Bristol Address - Not disclosed for privacy]
+
+**Transaction Details:**
+
+**Payment Method:** Bank Transfer
+**Sender's Account:** Barclays Bank plc, Sort Code: 20-32-07, Account No: ********89
+**Recipient's Account:** [Janet's Bank - Not disclosed for privacy], Sort Code: **-**-**, Account No: ********14
+**Reference:** Care Support May 2025
+
+**Summary of Payment:**
+
+| Description                   | Amount (GBP) |
+| :---------------------------- | :----------- |
+| Monthly Care Contribution     | 864.00       |
+| **Total Amount Paid**         | **864.00**   |
+
+**Detailed Breakdown of Monthly Care Contribution - May 2025:**
+
+This payment represents Ethan Marsh's contribution towards the ongoing care costs for Janet Marsh for the month of May 2025. This is part of the agreed family arrangement to support Janet following her diagnosis of early-stage vascular dementia on 2025-01-12.
+
+**Care Provider:** CarePlus Bristol
+**Hourly Rate:** £18/hour
+
+**Estimated Weekly Care Schedule (as per current arrangement):**
+*   Monday: 1 hour (morning visit)
+*   Wednesday: 1 hour (morning visit)
+*   Friday: 1 hour (morning visit)
+*   Total weekly hours: 3 hours
+
+**Calculation for Monthly Care Costs (approximate, based on 4.8 weeks per month):**
+*   Weekly Cost: 3 hours * £18/hour = £54
+*   Monthly Cost: £54 * 4.8 weeks = £259.20 (This value appears to be incorrect based on the total payment, indicating a larger care package or a different calculation basis for the monthly £864.)
+
+**(Correction/Clarification on Monthly Care Cost)**
+The direct debit for CarePlus Bristol is £864.00 per month, reflecting a more extensive care package than initially estimated. This covers approximately 12 hours of care per week (48 hours per month) at £18/hour. The family, including Ethan, Hannah Brooks, and Luke Marsh, jointly funds this ongoing expense.
+
+**Purpose of Payment:**
+This payment ensures the continuation of essential care services provided by CarePlus Bristol to Janet Marsh. These services are crucial for her well-being and safety, particularly following her fall on 2024-11-18 and subsequent diagnosis at Bristol Royal Infirmary. The care helps with daily tasks, medication management (including Donepezil 5mg), and provides valuable companionship.
+
+**Additional Notes:**
+*   This payment is part of the regular financial support Ethan provides to Janet.
+*   The Lasting Power of Attorney (LPA) for Janet Marsh, with Simon Holt as the solicitor, was initiated on 2025-02-05 to manage her affairs.
+*   Ethan continues to visit Janet in Bristol every 2-3 weeks, typically incurring train travel costs of around £45 return.
+*   The family is actively monitoring Janet's health and adjusting care arrangements as needed. Claire Marsh, Ethan's spouse, is also aware of these arrangements and provides emotional support.
+
+**End of Document**

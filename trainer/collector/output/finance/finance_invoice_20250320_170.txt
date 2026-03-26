@@ -1,0 +1,1517 @@
+JOHN A. SMITH
+123 Maple Lane
+Evergreen City, CA 90210
+
+**COMPREHENSIVE FINANCIAL ARCHIVE**
+**Compilation Date: 2025-03-20**
+
+This document serves as a compiled archive of financial records for John A. Smith, spanning multiple years and encompassing various financial instruments and obligations. All data contained herein is entirely fictional and generated for illustrative purposes.
+
+---
+
+**I. INVOICE**
+
+**TECHCORP SOLUTIONS**
+1000 Innovation Drive
+Tech Valley, CA 90001
+Phone: (555) 987-6543
+Email: billing@techcorpsolutions.com
+Website: www.techcorpsolutions.com
+
+**INVOICE**
+
+**Invoice Number:** TCS-2025-03-00123
+**Invoice Date:** 2025-03-20
+**Payment Due Date:** 2025-04-19
+
+**Bill To:**
+John A. Smith
+123 Maple Lane
+Evergreen City, CA 90210
+
+**Description of Services:**
+
+| Item No. | Service Description                                        | Quantity | Unit Price (USD) | Total (USD) |
+| :------- | :--------------------------------------------------------- | :------- | :--------------- | :---------- |
+| 1        | IT Consulting - Network Optimization (Mar 1-15, 2025)      | 30 hours | 125.00           | 3,750.00    |
+| 2        | Data Migration Support - Cloud Services (Mar 16-19, 2025)  | 16 hours | 150.00           | 2,400.00    |
+| 3        | Software License Procurement & Setup Fee (Annual)          | 1        | 500.00           | 500.00      |
+| 4        | On-site Technical Support (Mar 18, 2025)                   | 4 hours  | 100.00           | 400.00      |
+|          |                                                            |          | **Subtotal:**    | **7,050.00**|
+|          | Sales Tax (8.5%)                                           |          |                  | 599.25      |
+|          | **TOTAL DUE (USD):**                                       |          |                  | **7,649.25**|
+
+**Payment Instructions:**
+Please make checks payable to TechCorp Solutions.
+For wire transfers, use the details below:
+Bank Name: United Federal Bank
+Account Name: TechCorp Solutions
+Account Number: XXXXXXXXXX9876
+SWIFT/BIC: UFBCUS33
+
+Thank you for your business! We appreciate your prompt payment.
+For any questions regarding this invoice, please contact our billing department.
+
+---
+
+**II. BANK STATEMENTS**
+
+**UNITED FEDERAL BANK**
+Your Partner in Prosperity
+100 Main Street, Evergreen City, CA 90210
+Customer Service: (555) 789-1234 | www.unitedfederalbank.com
+
+**Account Holder:** JOHN A. SMITH
+**Address:** 123 MAPLE LANE, EVERGREEN CITY, CA 90210
+
+---
+
+**CHECKING ACCOUNT STATEMENT (XXXXX1234)**
+**Statement Period: January 1, 2022 - January 31, 2022**
+**Account Number:** XXXXXXXXXX1234
+**Opening Balance (1/1/2022):** 8,520.15 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 5,500.00 USD
+*   **Total Withdrawals/Debits:** 4,875.30 USD
+*   **Total Fees:** 0.00 USD
+*   **Interest Earned:** 0.55 USD
+*   **Closing Balance (1/31/2022):** 9,145.40 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 01/03/2022 | ATM Withdrawal - Evergreen City Branch       | 100.00-      | DEBIT    |
+| 01/05/2022 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,750.00     | CREDIT   |
+| 01/05/2022 | Online Payment - PRIME RESIDENTIAL LENDING   | 2,250.00-    | DEBIT    |
+| 01/06/2022 | Debit Card - WHOLE FOODS MARKET              | 125.60-      | DEBIT    |
+| 01/07/2022 | ACH Debit - EVERGREEN UTILITIES              | 85.75-       | DEBIT    |
+| 01/08/2022 | Debit Card - STARBUCKS                       | 5.80-        | DEBIT    |
+| 01/10/2022 | Transfer to Savings XXXXX5678                | 500.00-      | DEBIT    |
+| 01/12/2022 | Debit Card - AMAZON.COM                      | 75.20-       | DEBIT    |
+| 01/15/2022 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,750.00     | CREDIT   |
+| 01/16/2022 | Online Payment - APEX CREDIT UNION           | 1,200.00-    | DEBIT    |
+| 01/17/2022 | Debit Card - EVERGREEN GROCERY               | 98.45-       | DEBIT    |
+| 01/18/2022 | ACH Debit - NETFLIX                          | 19.99-       | DEBIT    |
+| 01/20/2022 | ATM Deposit - Evergreen City Branch          | 200.00       | CREDIT   |
+| 01/21/2022 | Debit Card - CHEVRON                         | 60.00-       | DEBIT    |
+| 01/22/2022 | Debit Card - BEST BUY                        | 349.99-      | DEBIT    |
+| 01/24/2022 | ACH Debit - LOCAL GYM MEMBERSHIP             | 45.00-       | DEBIT    |
+| 01/25/2022 | Debit Card - RESTAURANT "THE BISTRO"         | 72.50-       | DEBIT    |
+| 01/27/2022 | Debit Card - CVS PHARMACY                    | 35.12-       | DEBIT    |
+| 01/30/2022 | Online Transfer - Investment Account         | 250.00-      | DEBIT    |
+| 01/31/2022 | Interest Paid                                | 0.55         | CREDIT   |
+
+---
+
+**CHECKING ACCOUNT STATEMENT (XXXXX1234)**
+**Statement Period: February 1, 2022 - February 28, 2022**
+**Account Number:** XXXXXXXXXX1234
+**Opening Balance (2/1/2022):** 9,145.40 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 5,500.00 USD
+*   **Total Withdrawals/Debits:** 4,910.10 USD
+*   **Total Fees:** 0.00 USD
+*   **Interest Earned:** 0.60 USD
+*   **Closing Balance (2/28/2022):** 9,735.90 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 02/02/2022 | ATM Withdrawal - Downtown                      | 60.00-       | DEBIT    |
+| 02/04/2022 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,750.00     | CREDIT   |
+| 02/05/2022 | Online Payment - PRIME RESIDENTIAL LENDING   | 2,250.00-    | DEBIT    |
+| 02/06/2022 | Debit Card - SAFEWAY                         | 110.25-      | DEBIT    |
+| 02/07/2022 | ACH Debit - EVERGREEN INTERNET SERVICES      | 65.00-       | DEBIT    |
+| 02/09/2022 | Debit Card - COFFEE SHOP                     | 4.50-        | DEBIT    |
+| 02/11/2022 | Transfer to Savings XXXXX5678                | 400.00-      | DEBIT    |
+| 02/14/2022 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,750.00     | CREDIT   |
+| 02/15/2022 | Online Payment - APEX CREDIT UNION           | 1,500.00-    | DEBIT    |
+| 02/16/2022 | Debit Card - TARGET                          | 88.75-       | DEBIT    |
+| 02/18/2022 | ACH Debit - HULU                             | 14.99-       | DEBIT    |
+| 02/20/2022 | Debit Card - LOCAL PIZZERIA                  | 45.00-       | DEBIT    |
+| 02/22/2022 | Debit Card - GAS STATION                     | 55.00-       | DEBIT    |
+| 02/24/2022 | ACH Debit - AUTO INSURANCE                   | 110.00-      | DEBIT    |
+| 02/26/2022 | Debit Card - BOOKSTORE                       | 28.61-       | DEBIT    |
+| 02/28/2022 | Interest Paid                                | 0.60         | CREDIT   |
+
+---
+
+**CHECKING ACCOUNT STATEMENT (XXXXX1234)**
+**Statement Period: July 1, 2022 - July 31, 2022**
+**Account Number:** XXXXXXXXXX1234
+**Opening Balance (7/1/2022):** 10,215.80 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 5,500.00 USD
+*   **Total Withdrawals/Debits:** 5,120.50 USD
+*   **Total Fees:** 0.00 USD
+*   **Interest Earned:** 0.70 USD
+*   **Closing Balance (7/31/2022):** 10,596.00 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 07/02/2022 | ATM Withdrawal - Vacation Spot                 | 150.00-      | DEBIT    |
+| 07/05/2022 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,750.00     | CREDIT   |
+| 07/05/2022 | Online Payment - PRIME RESIDENTIAL LENDING   | 2,250.00-    | DEBIT    |
+| 07/06/2022 | Debit Card - GROCERY STORE                   | 130.40-      | DEBIT    |
+| 07/07/2022 | ACH Debit - EVERGREEN UTILITIES              | 90.15-       | DEBIT    |
+| 07/08/2022 | Debit Card - RESTAURANT "OCEAN VIEW"         | 85.00-       | DEBIT    |
+| 07/10/2022 | Transfer to Savings XXXXX5678                | 300.00-      | DEBIT    |
+| 07/12/2022 | Debit Card - TRAVEL LODGE                    | 180.00-      | DEBIT    |
+| 07/15/2022 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,750.00     | CREDIT   |
+| 07/16/2022 | Online Payment - APEX CREDIT UNION           | 1,600.00-    | DEBIT    |
+| 07/17/2022 | Debit Card - SOUVENIR SHOP                   | 45.25-       | DEBIT    |
+| 07/19/2022 | ACH Debit - SPOTIFY                          | 10.99-       | DEBIT    |
+| 07/21/2022 | Debit Card - GAS STATION                     | 70.00-       | DEBIT    |
+| 07/23/2022 | Debit Card - ELECTRONICS STORE               | 220.00-      | DEBIT    |
+| 07/25/2022 | ACH Debit - HOME INSURANCE                   | 120.00-      | DEBIT    |
+| 07/28/2022 | Debit Card - PHARMACY                        | 28.71-       | DEBIT    |
+| 07/31/2022 | Interest Paid                                | 0.70         | CREDIT   |
+
+---
+
+**CHECKING ACCOUNT STATEMENT (XXXXX1234)**
+**Statement Period: January 1, 2023 - January 31, 2023**
+**Account Number:** XXXXXXXXXX1234
+**Opening Balance (1/1/2023):** 11,580.20 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 5,700.00 USD
+*   **Total Withdrawals/Debits:** 5,020.10 USD
+*   **Total Fees:** 0.00 USD
+*   **Interest Earned:** 0.85 USD
+*   **Closing Balance (1/31/2023):** 12,261.00 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 01/03/2023 | ATM Withdrawal - Evergreen City Branch       | 100.00-      | DEBIT    |
+| 01/05/2023 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,850.00     | CREDIT   |
+| 01/05/2023 | Online Payment - PRIME RESIDENTIAL LENDING   | 2,250.00-    | DEBIT    |
+| 01/06/2023 | Debit Card - WHOLE FOODS MARKET              | 130.50-      | DEBIT    |
+| 01/07/2023 | ACH Debit - EVERGREEN UTILITIES              | 92.10-       | DEBIT    |
+| 01/08/2023 | Debit Card - STARBUCKS                       | 6.20-        | DEBIT    |
+| 01/10/2023 | Transfer to Savings XXXXX5678                | 500.00-      | DEBIT    |
+| 01/12/2023 | Debit Card - AMAZON.COM                      | 80.50-       | DEBIT    |
+| 01/15/2023 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,850.00     | CREDIT   |
+| 01/16/2023 | Online Payment - APEX CREDIT UNION           | 1,300.00-    | DEBIT    |
+| 01/17/2023 | Debit Card - EVERGREEN GROCERY               | 105.20-      | DEBIT    |
+| 01/18/2023 | ACH Debit - NETFLIX                          | 22.99-       | DEBIT    |
+| 01/20/2023 | ATM Deposit - Evergreen City Branch          | 200.00       | CREDIT   |
+| 01/21/2023 | Debit Card - CHEVRON                         | 65.00-       | DEBIT    |
+| 01/22/2023 | Debit Card - BEST BUY                        | 410.50-      | DEBIT    |
+| 01/24/2023 | ACH Debit - LOCAL GYM MEMBERSHIP             | 45.00-       | DEBIT    |
+| 01/25/2023 | Debit Card - RESTAURANT "THE BISTRO"         | 78.90-       | DEBIT    |
+| 01/27/2023 | Debit Card - CVS PHARMACY                    | 38.40-       | DEBIT    |
+| 01/30/2023 | Online Transfer - Investment Account         | 250.00-      | DEBIT    |
+| 01/31/2023 | Interest Paid                                | 0.85         | CREDIT   |
+
+---
+
+**CHECKING ACCOUNT STATEMENT (XXXXX1234)**
+**Statement Period: February 1, 2023 - February 28, 2023**
+**Account Number:** XXXXXXXXXX1234
+**Opening Balance (2/1/2023):** 12,261.00 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 5,700.00 USD
+*   **Total Withdrawals/Debits:** 5,150.30 USD
+*   **Total Fees:** 0.00 USD
+*   **Interest Earned:** 0.90 USD
+*   **Closing Balance (2/28/2023):** 12,811.60 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 02/02/2023 | ATM Withdrawal - Downtown                      | 70.00-       | DEBIT    |
+| 02/04/2023 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,850.00     | CREDIT   |
+| 02/05/2023 | Online Payment - PRIME RESIDENTIAL LENDING   | 2,250.00-    | DEBIT    |
+| 02/06/2023 | Debit Card - SAFEWAY                         | 115.80-      | DEBIT    |
+| 02/07/2023 | ACH Debit - EVERGREEN INTERNET SERVICES      | 68.00-       | DEBIT    |
+| 02/09/2023 | Debit Card - COFFEE SHOP                     | 5.10-        | DEBIT    |
+| 02/11/2023 | Transfer to Savings XXXXX5678                | 400.00-      | DEBIT    |
+| 02/14/2023 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,850.00     | CREDIT   |
+| 02/15/2023 | Online Payment - APEX CREDIT UNION           | 1,650.00-    | DEBIT    |
+| 02/16/2023 | Debit Card - TARGET                          | 92.50-       | DEBIT    |
+| 02/18/2023 | ACH Debit - HULU                             | 17.99-       | DEBIT    |
+| 02/20/2023 | Debit Card - LOCAL PIZZERIA                  | 48.00-       | DEBIT    |
+| 02/22/2023 | Debit Card - GAS STATION                     | 58.00-       | DEBIT    |
+| 02/24/2023 | ACH Debit - AUTO INSURANCE                   | 115.00-      | DEBIT    |
+| 02/26/2023 | Debit Card - BOOKSTORE                       | 30.11-       | DEBIT    |
+| 02/28/2023 | Interest Paid                                | 0.90         | CREDIT   |
+
+---
+
+**CHECKING ACCOUNT STATEMENT (XXXXX1234)**
+**Statement Period: July 1, 2023 - July 31, 2023**
+**Account Number:** XXXXXXXXXX1234
+**Opening Balance (7/1/2023):** 13,010.50 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 5,700.00 USD
+*   **Total Withdrawals/Debits:** 5,280.40 USD
+*   **Total Fees:** 0.00 USD
+*   **Interest Earned:** 0.95 USD
+*   **Closing Balance (7/31/2023):** 13,431.05 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 07/02/2023 | ATM Withdrawal - Vacation Spot                 | 160.00-      | DEBIT    |
+| 07/05/2023 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,850.00     | CREDIT   |
+| 07/05/2023 | Online Payment - PRIME RESIDENTIAL LENDING   | 2,250.00-    | DEBIT    |
+| 07/06/2023 | Debit Card - GROCERY STORE                   | 138.20-      | DEBIT    |
+| 07/07/2023 | ACH Debit - EVERGREEN UTILITIES              | 95.50-       | DEBIT    |
+| 07/08/2023 | Debit Card - RESTAURANT "OCEAN VIEW"         | 90.00-       | DEBIT    |
+| 07/10/2023 | Transfer to Savings XXXXX5678                | 300.00-      | DEBIT    |
+| 07/12/2023 | Debit Card - TRAVEL LODGE                    | 195.00-      | DEBIT    |
+| 07/15/2023 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,850.00     | CREDIT   |
+| 07/16/2023 | Online Payment - APEX CREDIT UNION           | 1,750.00-    | DEBIT    |
+| 07/17/2023 | Debit Card - SOUVENIR SHOP                   | 48.50-       | DEBIT    |
+| 07/19/2023 | ACH Debit - SPOTIFY                          | 10.99-       | DEBIT    |
+| 07/21/2023 | Debit Card - GAS STATION                     | 75.00-       | DEBIT    |
+| 07/23/2023 | Debit Card - ELECTRONICS STORE               | 235.00-      | DEBIT    |
+| 07/25/2023 | ACH Debit - HOME INSURANCE                   | 125.00-      | DEBIT    |
+| 07/28/2023 | Debit Card - PHARMACY                        | 30.21-       | DEBIT    |
+| 07/31/2023 | Interest Paid                                | 0.95         | CREDIT   |
+
+---
+
+**CHECKING ACCOUNT STATEMENT (XXXXX1234)**
+**Statement Period: January 1, 2024 - January 31, 2024**
+**Account Number:** XXXXXXXXXX1234
+**Opening Balance (1/1/2024):** 14,220.80 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 5,900.00 USD
+*   **Total Withdrawals/Debits:** 5,350.60 USD
+*   **Total Fees:** 0.00 USD
+*   **Interest Earned:** 1.10 USD
+*   **Closing Balance (1/31/2024):** 14,771.30 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 01/03/2024 | ATM Withdrawal - Evergreen City Branch       | 110.00-      | DEBIT    |
+| 01/05/2024 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,950.00     | CREDIT   |
+| 01/05/2024 | Online Payment - PRIME RESIDENTIAL LENDING   | 2,250.00-    | DEBIT    |
+| 01/06/2024 | Debit Card - WHOLE FOODS MARKET              | 140.80-      | DEBIT    |
+| 01/07/2024 | ACH Debit - EVERGREEN UTILITIES              | 98.30-       | DEBIT    |
+| 01/08/2024 | Debit Card - STARBUCKS                       | 6.50-        | DEBIT    |
+| 01/10/2024 | Transfer to Savings XXXXX5678                | 500.00-      | DEBIT    |
+| 01/12/2024 | Debit Card - AMAZON.COM                      | 85.70-       | DEBIT    |
+| 01/15/2024 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,950.00     | CREDIT   |
+| 01/16/2024 | Online Payment - APEX CREDIT UNION           | 1,400.00-    | DEBIT    |
+| 01/17/2024 | Debit Card - EVERGREEN GROCERY               | 112.50-      | DEBIT    |
+| 01/18/2024 | ACH Debit - NETFLIX                          | 22.99-       | DEBIT    |
+| 01/20/2024 | ATM Deposit - Evergreen City Branch          | 200.00       | CREDIT   |
+| 01/21/2024 | Debit Card - CHEVRON                         | 70.00-       | DEBIT    |
+| 01/22/2024 | Debit Card - BEST BUY                        | 430.20-      | DEBIT    |
+| 01/24/2024 | ACH Debit - LOCAL GYM MEMBERSHIP             | 45.00-       | DEBIT    |
+| 01/25/2024 | Debit Card - RESTAURANT "THE BISTRO"         | 82.10-       | DEBIT    |
+| 01/27/2024 | Debit Card - CVS PHARMACY                    | 40.15-       | DEBIT    |
+| 01/30/2024 | Online Transfer - Investment Account         | 250.00-      | DEBIT    |
+| 01/31/2024 | Interest Paid                                | 1.10         | CREDIT   |
+
+---
+
+**CHECKING ACCOUNT STATEMENT (XXXXX1234)**
+**Statement Period: February 1, 2024 - February 29, 2024**
+**Account Number:** XXXXXXXXXX1234
+**Opening Balance (2/1/2024):** 14,771.30 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 5,900.00 USD
+*   **Total Withdrawals/Debits:** 5,450.80 USD
+*   **Total Fees:** 0.00 USD
+*   **Interest Earned:** 1.15 USD
+*   **Closing Balance (2/29/2024):** 15,221.65 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 02/02/2024 | ATM Withdrawal - Downtown                      | 75.00-       | DEBIT    |
+| 02/04/2024 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,950.00     | CREDIT   |
+| 02/05/2024 | Online Payment - PRIME RESIDENTIAL LENDING   | 2,250.00-    | DEBIT    |
+| 02/06/2024 | Debit Card - SAFEWAY                         | 120.50-      | DEBIT    |
+| 02/07/2024 | ACH Debit - EVERGREEN INTERNET SERVICES      | 70.00-       | DEBIT    |
+| 02/09/2024 | Debit Card - COFFEE SHOP                     | 5.50-        | DEBIT    |
+| 02/11/2024 | Transfer to Savings XXXXX5678                | 400.00-      | DEBIT    |
+| 02/14/2024 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,950.00     | CREDIT   |
+| 02/15/2024 | Online Payment - APEX CREDIT UNION           | 1,700.00-    | DEBIT    |
+| 02/16/2024 | Debit Card - TARGET                          | 98.75-       | DEBIT    |
+| 02/18/2024 | ACH Debit - HULU                             | 17.99-       | DEBIT    |
+| 02/20/2024 | Debit Card - LOCAL PIZZERIA                  | 50.00-       | DEBIT    |
+| 02/22/2024 | Debit Card - GAS STATION                     | 60.00-       | DEBIT    |
+| 02/24/2024 | ACH Debit - AUTO INSURANCE                   | 120.00-      | DEBIT    |
+| 02/26/2024 | Debit Card - BOOKSTORE                       | 32.86-       | DEBIT    |
+| 02/29/2024 | Interest Paid                                | 1.15         | CREDIT   |
+
+---
+
+**CHECKING ACCOUNT STATEMENT (XXXXX1234)**
+**Statement Period: July 1, 2024 - July 31, 2024**
+**Account Number:** XXXXXXXXXX1234
+**Opening Balance (7/1/2024):** 15,580.40 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 5,900.00 USD
+*   **Total Withdrawals/Debits:** 5,550.90 USD
+*   **Total Fees:** 0.00 USD
+*   **Interest Earned:** 1.20 USD
+*   **Closing Balance (7/31/2024):** 15,930.70 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 07/02/2024 | ATM Withdrawal - Vacation Spot                 | 170.00-      | DEBIT    |
+| 07/05/2024 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,950.00     | CREDIT   |
+| 07/05/2024 | Online Payment - PRIME RESIDENTIAL LENDING   | 2,250.00-    | DEBIT    |
+| 07/06/2024 | Debit Card - GROCERY STORE                   | 145.50-      | DEBIT    |
+| 07/07/2024 | ACH Debit - EVERGREEN UTILITIES              | 102.00-      | DEBIT    |
+| 07/08/2024 | Debit Card - RESTAURANT "OCEAN VIEW"         | 95.00-       | DEBIT    |
+| 07/10/2024 | Transfer to Savings XXXXX5678                | 300.00-      | DEBIT    |
+| 07/12/2024 | Debit Card - TRAVEL LODGE                    | 205.00-      | DEBIT    |
+| 07/15/2024 | Direct Deposit - GLOBAL TECH SYSTEMS INC.    | 2,950.00     | CREDIT   |
+| 07/16/2024 | Online Payment - APEX CREDIT UNION           | 1,800.00-    | DEBIT    |
+| 07/17/2024 | Debit Card - SOUVENIR SHOP                   | 50.75-       | DEBIT    |
+| 07/19/2024 | ACH Debit - SPOTIFY                          | 10.99-       | DEBIT    |
+| 07/21/2024 | Debit Card - GAS STATION                     | 80.00-       | DEBIT    |
+| 07/23/2024 | Debit Card - ELECTRONICS STORE               | 250.00-      | DEBIT    |
+| 07/25/2024 | ACH Debit - HOME INSURANCE                   | 130.00-      | DEBIT    |
+| 07/28/2024 | Debit Card - PHARMACY                        | 32.16-       | DEBIT    |
+| 07/31/2024 | Interest Paid                                | 1.20         | CREDIT   |
+
+---
+
+**SAVINGS ACCOUNT STATEMENT (XXXXX5678)**
+**Statement Period: January 1, 2022 - January 31, 2022**
+**Account Number:** XXXXXXXXXX5678
+**Opening Balance (1/1/2022):** 25,120.00 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 500.00 USD
+*   **Total Withdrawals/Debits:** 0.00 USD
+*   **Interest Earned:** 2.10 USD
+*   **Closing Balance (1/31/2022):** 25,622.10 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 01/10/2022 | Transfer From Checking XXXXX1234             | 500.00       | CREDIT   |
+| 01/31/2022 | Interest Paid                                | 2.10         | CREDIT   |
+
+---
+
+**SAVINGS ACCOUNT STATEMENT (XXXXX5678)**
+**Statement Period: February 1, 2022 - February 28, 2022**
+**Account Number:** XXXXXXXXXX5678
+**Opening Balance (2/1/2022):** 25,622.10 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 400.00 USD
+*   **Total Withdrawals/Debits:** 0.00 USD
+*   **Interest Earned:** 2.15 USD
+*   **Closing Balance (2/28/2022):** 26,024.25 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 02/11/2022 | Transfer From Checking XXXXX1234             | 400.00       | CREDIT   |
+| 02/28/2022 | Interest Paid                                | 2.15         | CREDIT   |
+
+---
+
+**SAVINGS ACCOUNT STATEMENT (XXXXX5678)**
+**Statement Period: July 1, 2022 - July 31, 2022**
+**Account Number:** XXXXXXXXXX5678
+**Opening Balance (7/1/2022):** 28,500.20 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 300.00 USD
+*   **Total Withdrawals/Debits:** 0.00 USD
+*   **Interest Earned:** 2.30 USD
+*   **Closing Balance (7/31/2022):** 28,802.50 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 07/10/2022 | Transfer From Checking XXXXX1234             | 300.00       | CREDIT   |
+| 07/31/2022 | Interest Paid                                | 2.30         | CREDIT   |
+
+---
+
+**SAVINGS ACCOUNT STATEMENT (XXXXX5678)**
+**Statement Period: January 1, 2023 - January 31, 2023**
+**Account Number:** XXXXXXXXXX5678
+**Opening Balance (1/1/2023):** 30,150.00 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 500.00 USD
+*   **Total Withdrawals/Debits:** 0.00 USD
+*   **Interest Earned:** 2.50 USD
+*   **Closing Balance (1/31/2023):** 30,652.50 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 01/10/2023 | Transfer From Checking XXXXX1234             | 500.00       | CREDIT   |
+| 01/31/2023 | Interest Paid                                | 2.50         | CREDIT   |
+
+---
+
+**SAVINGS ACCOUNT STATEMENT (XXXXX5678)**
+**Statement Period: February 1, 2023 - February 28, 2023**
+**Account Number:** XXXXXXXXXX5678
+**Opening Balance (2/1/2023):** 30,652.50 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 400.00 USD
+*   **Total Withdrawals/Debits:** 0.00 USD
+*   **Interest Earned:** 2.55 USD
+*   **Closing Balance (2/28/2023):** 31,055.05 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 02/11/2023 | Transfer From Checking XXXXX1234             | 400.00       | CREDIT   |
+| 02/28/2023 | Interest Paid                                | 2.55         | CREDIT   |
+
+---
+
+**SAVINGS ACCOUNT STATEMENT (XXXXX5678)**
+**Statement Period: July 1, 2023 - July 31, 2023**
+**Account Number:** XXXXXXXXXX5678
+**Opening Balance (7/1/2023):** 33,520.10 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 300.00 USD
+*   **Total Withdrawals/Debits:** 0.00 USD
+*   **Interest Earned:** 2.70 USD
+*   **Closing Balance (7/31/2023):** 33,822.80 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 07/10/2023 | Transfer From Checking XXXXX1234             | 300.00       | CREDIT   |
+| 07/31/2023 | Interest Paid                                | 2.70         | CREDIT   |
+
+---
+
+**SAVINGS ACCOUNT STATEMENT (XXXXX5678)**
+**Statement Period: January 1, 2024 - January 31, 2024**
+**Account Number:** XXXXXXXXXX5678
+**Opening Balance (1/1/2024):** 35,000.00 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 500.00 USD
+*   **Total Withdrawals/Debits:** 0.00 USD
+*   **Interest Earned:** 2.90 USD
+*   **Closing Balance (1/31/2024):** 35,502.90 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 01/10/2024 | Transfer From Checking XXXXX1234             | 500.00       | CREDIT   |
+| 01/31/2024 | Interest Paid                                | 2.90         | CREDIT   |
+
+---
+
+**SAVINGS ACCOUNT STATEMENT (XXXXX5678)**
+**Statement Period: February 1, 2024 - February 29, 2024**
+**Account Number:** XXXXXXXXXX5678
+**Opening Balance (2/1/2024):** 35,502.90 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 400.00 USD
+*   **Total Withdrawals/Debits:** 0.00 USD
+*   **Interest Earned:** 2.95 USD
+*   **Closing Balance (2/29/2024):** 35,905.85 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 02/11/2024 | Transfer From Checking XXXXX1234             | 400.00       | CREDIT   |
+| 02/29/2024 | Interest Paid                                | 2.95         | CREDIT   |
+
+---
+
+**SAVINGS ACCOUNT STATEMENT (XXXXX5678)**
+**Statement Period: July 1, 2024 - July 31, 2024**
+**Account Number:** XXXXXXXXXX5678
+**Opening Balance (7/1/2024):** 38,200.50 USD
+
+**Summary of Activity:**
+*   **Total Deposits:** 300.00 USD
+*   **Total Withdrawals/Debits:** 0.00 USD
+*   **Interest Earned:** 3.10 USD
+*   **Closing Balance (7/31/2024):** 38,503.60 USD
+
+**Transaction Details:**
+| Date       | Description                                  | Amount (USD) | Type     |
+| :--------- | :------------------------------------------- | :----------- | :------- |
+| 07/10/2024 | Transfer From Checking XXXXX1234             | 300.00       | CREDIT   |
+| 07/31/2024 | Interest Paid                                | 3.10         | CREDIT   |
+
+---
+
+**III. CREDIT CARD STATEMENTS**
+
+**APEX CREDIT UNION**
+Platinum Rewards Visa
+PO Box 1234, Evergreen City, CA 90210
+Customer Service: (555) 321-7654 | www.apexcu.com
+
+**Account Holder:** JOHN A. SMITH
+**Address:** 123 MAPLE LANE, EVERGREEN CITY, CA 90210
+
+---
+
+**CREDIT CARD STATEMENT (XXXXX9876)**
+**Statement Period: December 20, 2021 - January 19, 2022**
+**Account Number:** XXXXXXXXXX9876
+**Credit Limit:** 15,000.00 USD
+**Available Credit:** 13,010.50 USD
+
+**Account Summary:**
+*   **Previous Balance:** 1,989.50 USD
+*   **Payments/Credits:** 1,989.50 USD
+*   **Purchases/Debits:** 1,200.00 USD
+*   **Cash Advances:** 0.00 USD
+*   **Interest Charged:** 0.00 USD
+*   **Fees:** 0.00 USD
+*   **New Balance:** 1,200.00 USD
+*   **Minimum Payment Due:** 35.00 USD
+*   **Payment Due Date:** 2022-02-14
+
+**Transaction Details:**
+| Date       | Transaction Description                          | Amount (USD) |
+| :--------- | :----------------------------------------------- | :----------- |
+| 12/21/2021 | PAYMENT THANK YOU                                | 1,989.50-    |
+| 01/01/2022 | EVERGREEN CAFE, EVERGREEN CITY CA                | 12.50        |
+| 01/04/2022 | ONLINE RETAILER "GADGETS.COM"                    | 250.00       |
+| 01/06/2022 | SHELL GAS STATION, EVERGREEN CITY CA             | 55.00        |
+| 01/09/2022 | DINE-IN RESTAURANT "ITALIANO"                    | 85.00        |
+| 01/11/2022 | AMAZON.COM*MJ4X5                                 | 70.00        |
+| 01/14/2022 | GROCERY MART, EVERGREEN CITY CA                  | 115.00       |
+| 01/17/2022 | HOME DEPOT #1234, EVERGREEN CITY CA              | 612.50       |
+
+---
+
+**CREDIT CARD STATEMENT (XXXXX9876)**
+**Statement Period: January 20, 2022 - February 19, 2022**
+**Account Number:** XXXXXXXXXX9876
+**Credit Limit:** 15,000.00 USD
+**Available Credit:** 12,250.00 USD
+
+**Account Summary:**
+*   **Previous Balance:** 1,200.00 USD
+*   **Payments/Credits:** 1,200.00 USD
+*   **Purchases/Debits:** 1,550.00 USD
+*   **Cash Advances:** 0.00 USD
+*   **Interest Charged:** 0.00 USD
+*   **Fees:** 0.00 USD
+*   **New Balance:** 1,550.00 USD
+*   **Minimum Payment Due:** 40.00 USD
+*   **Payment Due Date:** 2022-03-16
+
+**Transaction Details:**
+| Date       | Transaction Description                          | Amount (USD) |
+| :--------- | :----------------------------------------------- | :----------- |
+| 01/21/2022 | PAYMENT THANK YOU                                | 1,200.00-    |
+| 01/25/2022 | BEST BUY #567, EVERGREEN CITY CA                 | 350.00       |
+| 01/28/2022 | TARGET #890, EVERGREEN CITY CA                   | 90.00        |
+| 02/02/2022 | UBER TRIP                                        | 25.00        |
+| 02/05/2022 | ELECTRONICS WORLD, ONLINE                        | 500.00       |
+| 02/08/2022 | RESTAURANT "THE CORNER BISTRO"                   | 75.00        |
+| 02/12/2022 | PET SUPPLIES PLUS                                | 45.00        |
+| 02/15/2022 | EVERGREEN CITY PARKING                           | 15.00        |
+| 02/18/2022 | AIRLINE TICKETS - EXPEDIA*                       | 450.00       |
+
+---
+
+**CREDIT CARD STATEMENT (XXXXX9876)**
+**Statement Period: June 20, 2022 - July 19, 2022**
+**Account Number:** XXXXXXXXXX9876
+**Credit Limit:** 15,000.00 USD
+**Available Credit:** 12,050.00 USD
+
+**Account Summary:**
+*   **Previous Balance:** 1,350.00 USD
+*   **Payments/Credits:** 1,350.00 USD
+*   **Purchases/Debits:** 1,650.00 USD
+*   **Cash Advances:** 0.00 USD
+*   **Interest Charged:** 0.00 USD
+*   **Fees:** 0.00 USD
+*   **New Balance:** 1,650.00 USD
+*   **Minimum Payment Due:** 45.00 USD
+*   **Payment Due Date:** 2022-08-14
+
+**Transaction Details:**
+| Date       | Transaction Description                          | Amount (USD) |
+| :--------- | :----------------------------------------------- | :----------- |
+| 06/21/2022 | PAYMENT THANK YOU                                | 1,350.00-    |
+| 06/23/2022 | BOOKSTORE - UNIVERSITY DISTRICT                  | 30.00        |
+| 06/27/2022 | HOTEL BOOKING - BOOKING.COM                      | 300.00       |
+| 07/01/2022 | RENTAL CAR - ENTERPRISE                          | 150.00       |
+| 07/03/2022 | LOCAL RESTAURANT "SEASIDE GRILL"                 | 95.00        |
+| 07/06/2022 | GAS STATION - SHELL                              | 60.00        |
+| 07/09/2022 | MUSEUM ENTRY - CITY ART GALLERY                  | 20.00        |
+| 07/11/2022 | SOUVENIR SHOP - VACATIONLAND                     | 45.00        |
+| 07/14/2022 | GROCERY STORE - SAFEWAY                          | 120.00       |
+| 07/17/2022 | ONLINE SUBSCRIPTION - ADOBE CREATIVE CLOUD       | 50.00        |
+| 07/18/2022 | ELECTRONICS R US, EVERGREEN CITY CA              | 780.00       |
+
+---
+
+**CREDIT CARD STATEMENT (XXXXX9876)**
+**Statement Period: December 20, 2022 - January 19, 2023**
+**Account Number:** XXXXXXXXXX9876
+**Credit Limit:** 15,000.00 USD
+**Available Credit:** 12,150.00 USD
+
+**Account Summary:**
+*   **Previous Balance:** 1,450.00 USD
+*   **Payments/Credits:** 1,450.00 USD
+*   **Purchases/Debits:** 1,350.00 USD
+*   **Cash Advances:** 0.00 USD
+*   **Interest Charged:** 0.00 USD
+*   **Fees:** 0.00 USD
+*   **New Balance:** 1,350.00 USD
+*   **Minimum Payment Due:** 35.00 USD
+*   **Payment Due Date:** 2023-02-14
+
+**Transaction Details:**
+| Date       | Transaction Description                          | Amount (USD) |
+| :--------- | :----------------------------------------------- | :----------- |
+| 12/21/2022 | PAYMENT THANK YOU                                | 1,450.00-    |
+| 01/01/2023 | EVERGREEN CAFE, EVERGREEN CITY CA                | 13.00        |
+| 01/04/2023 | ONLINE RETAILER "TECHGEAR.IO"                    | 260.00       |
+| 01/06/2023 | CHEVRON GAS STATION, EVERGREEN CITY CA           | 58.00        |
+| 01/09/2023 | DINE-IN RESTAURANT "THE GOLDEN SPOON"            | 88.00        |
+| 01/11/2023 | AMAZON.COM*K7L2M                                 | 72.00        |
+| 01/14/2023 | GROCERY MART, EVERGREEN CITY CA                  | 118.00       |
+| 01/17/2023 | HOME DEPOT #1234, EVERGREEN CITY CA              | 741.00       |
+
+---
+
+**CREDIT CARD STATEMENT (XXXXX9876)**
+**Statement Period: January 20, 2023 - February 19, 2023**
+**Account Number:** XXXXXXXXXX9876
+**Credit Limit:** 15,000.00 USD
+**Available Credit:** 11,850.00 USD
+
+**Account Summary:**
+*   **Previous Balance:** 1,350.00 USD
+*   **Payments/Credits:** 1,350.00 USD
+*   **Purchases/Debits:** 1,800.00 USD
+*   **Cash Advances:** 0.00 USD
+*   **Interest Charged:** 0.00 USD
+*   **Fees:** 0.00 USD
+*   **New Balance:** 1,800.00 USD
+*   **Minimum Payment Due:** 50.00 USD
+*   **Payment Due Date:** 2023-03-16
+
+**Transaction Details:**
+| Date       | Transaction Description                          | Amount (USD) |
+| :--------- | :----------------------------------------------- | :----------- |
+| 01/21/2023 | PAYMENT THANK YOU                                | 1,350.00-    |
+| 01/25/2023 | BEST BUY #567, EVERGREEN CITY CA                 | 380.00       |
+| 01/28/2023 | TARGET #890, EVERGREEN CITY CA                   | 95.00        |
+| 02/02/2023 | UBER TRIP                                        | 28.00        |
+| 02/05/2023 | ELECTRONICS WORLD, ONLINE                        | 550.00       |
+| 02/08/2023 | RESTAURANT "THE CORNER BISTRO"                   | 80.00        |
+| 02/12/2023 | PET SUPPLIES PLUS                                | 48.00        |
+| 02/15/2023 | EVERGREEN CITY PARKING                           | 18.00        |
+| 02/18/2023 | AIRLINE TICKETS - EXPEDIA*                       | 601.00       |
+
+---
+
+**CREDIT CARD STATEMENT (XXXXX9876)**
+**Statement Period: June 20, 2023 - July 19, 2023**
+**Account Number:** XXXXXXXXXX9876
+**Credit Limit:** 15,000.00 USD
+**Available Credit:** 11,250.00 USD
+
+**Account Summary:**
+*   **Previous Balance:** 1,500.00 USD
+*   **Payments/Credits:** 1,500.00 USD
+*   **Purchases/Debits:** 2,250.00 USD
+*   **Cash Advances:** 0.00 USD
+*   **Interest Charged:** 0.00 USD
+*   **Fees:** 0.00 USD
+*   **New Balance:** 2,250.00 USD
+*   **Minimum Payment Due:** 65.00 USD
+*   **Payment Due Date:** 2023-08-14
+
+**Transaction Details:**
+| Date       | Transaction Description                          | Amount (USD) |
+| :--------- | :----------------------------------------------- | :----------- |
+| 06/21/2023 | PAYMENT THANK YOU                                | 1,500.00-    |
+| 06/23/2023 | BOOKSTORE - UNIVERSITY DISTRICT                  | 32.00        |
+| 06/27/2023 | HOTEL BOOKING - BOOKING.COM                      | 450.00       |
+| 07/01/2023 | RENTAL CAR - HERTZ                               | 170.00       |
+| 07/03/2023 | LOCAL RESTAURANT "SEASIDE GRILL"                 | 105.00       |
+| 07/06/2023 | GAS STATION - CHEVRON                            | 65.00        |
+| 07/09/2023 | MUSEUM ENTRY - CITY ART GALLERY                  | 22.00        |
+| 07/11/2023 | SOUVENIR SHOP - VACATIONLAND                     | 50.00        |
+| 07/14/2023 | GROCERY STORE - SAFEWAY                          | 130.00       |
+| 07/17/2023 | ONLINE SUBSCRIPTION - MICROSOFT 365              | 70.00        |
+| 07/18/2023 | ELECTRONICS R US, EVERGREEN CITY CA              | 1,156.00     |
+
+---
+
+**CREDIT CARD STATEMENT (XXXXX9876)**
+**Statement Period: December 20, 2023 - January 19, 2024**
+**Account Number:** XXXXXXXXXX9876
+**Credit Limit:** 15,000.00 USD
+**Available Credit:** 11,050.00 USD
+
+**Account Summary:**
+*   **Previous Balance:** 1,600.00 USD
+*   **Payments/Credits:** 1,600.00 USD
+*   **Purchases/Debits:** 1,950.00 USD
+*   **Cash Advances:** 0.00 USD
+*   **Interest Charged:** 0.00 USD
+*   **Fees:** 0.00 USD
+*   **New Balance:** 1,950.00 USD
+*   **Minimum Payment Due:** 55.00 USD
+*   **Payment Due Date:** 2024-02-14
+
+**Transaction Details:**
+| Date       | Transaction Description                          | Amount (USD) |
+| :--------- | :----------------------------------------------- | :----------- |
+| 12/21/2023 | PAYMENT THANK YOU                                | 1,600.00-    |
+| 01/01/2024 | EVERGREEN CAFE, EVERGREEN CITY CA                | 14.00        |
+| 01/04/2024 | ONLINE RETAILER "GADGETS.COM"                    | 270.00       |
+| 01/06/2024 | SHELL GAS STATION, EVERGREEN CITY CA             | 60.00        |
+| 01/09/2024 | DINE-IN RESTAURANT "ITALIANO"                    | 90.00        |
+| 01/11/2024 | AMAZON.COM*MJ4X5                                 | 75.00        |
+| 01/14/2024 | GROCERY MART, EVERGREEN CITY CA                  | 120.00       |
+| 01/17/2024 | HOME DEPOT #1234, EVERGREEN CITY CA              | 1,321.00     |
+
+---
+
+**CREDIT CARD STATEMENT (XXXXX9876)**
+**Statement Period: January 20, 2024 - February 19, 2024**
+**Account Number:** XXXXXXXXXX9876
+**Credit Limit:** 15,000.00 USD
+**Available Credit:** 10,750.00 USD
+
+**Account Summary:**
+*   **Previous Balance:** 1,950.00 USD
+*   **Payments/Credits:** 1,950.00 USD
+*   **Purchases/Debits:** 2,300.00 USD
+*   **Cash Advances:** 0.00 USD
+*   **Interest Charged:** 0.00 USD
+*   **Fees:** 0.00 USD
+*   **New Balance:** 2,300.00 USD
+*   **Minimum Payment Due:** 65.00 USD
+*   **Payment Due Date:** 2024-03-16
+
+**Transaction Details:**
+| Date       | Transaction Description                          | Amount (USD) |
+| :--------- | :----------------------------------------------- | :----------- |
+| 01/21/2024 | PAYMENT THANK YOU                                | 1,950.00-    |
+| 01/25/2024 | BEST BUY #567, EVERGREEN CITY CA                 | 400.00       |
+| 01/28/2024 | TARGET #890, EVERGREEN CITY CA                   | 100.00       |
+| 02/02/2024 | UBER TRIP                                        | 30.00        |
+| 02/05/2024 | ELECTRONICS WORLD, ONLINE                        | 600.00       |
+| 02/08/2024 | RESTAURANT "THE CORNER BISTRO"                   | 85.00        |
+| 02/12/2024 | PET SUPPLIES PLUS                                | 50.00        |
+| 02/15/2024 | EVERGREEN CITY PARKING                           | 20.00        |
+| 02/18/2024 | AIRLINE TICKETS - EXPEDIA*                       | 1,015.00     |
+
+---
+
+**CREDIT CARD STATEMENT (XXXXX9876)**
+**Statement Period: June 20, 2024 - July 19, 2024**
+**Account Number:** XXXXXXXXXX9876
+**Credit Limit:** 15,000.00 USD
+**Available Credit:** 10,250.00 USD
+
+**Account Summary:**
+*   **Previous Balance:** 1,750.00 USD
+*   **Payments/Credits:** 1,750.00 USD
+*   **Purchases/Debits:** 3,000.00 USD
+*   **Cash Advances:** 0.00 USD
+*   **Interest Charged:** 0.00 USD
+*   **Fees:** 0.00 USD
+*   **New Balance:** 3,000.00 USD
+*   **Minimum Payment Due:** 85.00 USD
+*   **Payment Due Date:** 2024-08-14
+
+**Transaction Details:**
+| Date       | Transaction Description                          | Amount (USD) |
+| :--------- | :----------------------------------------------- | :----------- |
+| 06/21/2024 | PAYMENT THANK YOU                                | 1,750.00-    |
+| 06/23/2024 | BOOKSTORE - UNIVERSITY DISTRICT                  | 35.00        |
+| 06/27/2024 | HOTEL BOOKING - BOOKING.COM                      | 600.00       |
+| 07/01/2024 | RENTAL CAR - AVIS                                | 200.00       |
+| 07/03/2024 | LOCAL RESTAURANT "SEASIDE GRILL"                 | 110.00       |
+| 07/06/2024 | GAS STATION - CHEVRON                            | 70.00        |
+| 07/09/2024 | MUSEUM ENTRY - CITY ART GALLERY                  | 25.00        |
+| 07/11/2024 | SOUVENIR SHOP - VACATIONLAND                     | 55.00        |
+| 07/14/2024 | GROCERY STORE - SAFEWAY                          | 140.00       |
+| 07/17/2024 | ONLINE SUBSCRIPTION - ADOBE CREATIVE CLOUD       | 75.00        |
+| 07/18/2024 | ELECTRONICS R US, EVERGREEN CITY CA              | 1,690.00     |
+
+---
+
+**IV. INVESTMENT PORTFOLIO STATEMENTS**
+
+**HORIZON WEALTH MANAGEMENT**
+Your Horizon for Growth
+789 Financial Plaza, Evergreen City, CA 90210
+Customer Service: (555) 456-7890 | www.horizonwealth.com
+
+**Account Holder:** JOHN A. SMITH
+**Address:** 123 MAPLE LANE, EVERGREEN CITY, CA 90210
+**Account Type:** Individual Brokerage Account
+**Account Number:** XXXXXXXXXX4321
+
+---
+
+**INVESTMENT PORTFOLIO STATEMENT**
+**Statement Period: January 1, 2022 - March 31, 2022**
+
+**Account Summary:**
+*   **Beginning Market Value (1/1/2022):** 52,150.00 USD
+*   **Net Deposits/Contributions:** 750.00 USD
+*   **Net Withdrawals:** 0.00 USD
+*   **Dividends/Interest:** 125.50 USD
+*   **Realized Gains/Losses:** 0.00 USD
+*   **Change in Market Value (unrealized):** -1,200.00 USD
+*   **Ending Market Value (3/31/2022):** 51,825.50 USD
+
+**Holdings (as of 3/31/2022):**
+| Symbol | Description               | Quantity | Last Price (USD) | Market Value (USD) | Cost Basis (USD) | Unrealized Gain/Loss (USD) | % of Portfolio |
+| :----- | :------------------------ | :------- | :--------------- | :----------------- | :--------------- | :------------------------- | :------------- |
+| SPY    | SPDR S&P 500 ETF          | 50       | 440.00           | 22,000.00          | 22,500.00        | -500.00                    | 42.45%         |
+| MSFT   | Microsoft Corp            | 30       | 295.00           | 8,850.00           | 9,000.00         | -150.00                    | 17.08%         |
+| AAPL   | Apple Inc                 | 25       | 170.00           | 4,250.00           | 4,300.00         | -50.00                     | 8.20%          |
+| GOOGL  | Alphabet Inc (Class A)    | 10       | 2,700.00         | 27,000.00          | 27,500.00        | -500.00                    | 52.10%         |
+| AGG    | iShares Core U.S. Aggregate Bond ETF | 100      | 105.00           | 10,500.00          | 10,000.00        | 500.00                     | 20.26%         |
+| Cash   | Uninvested Cash           |          |                  | 1,225.50           | 1,225.50         | 0.00                       | 2.36%          |
+|        | **TOTAL INVESTMENTS**     |          |                  | **73,825.50**      | **74,300.00**    | **-475.00**                | **142.45% (error in data generation, need to re-evaluate)** |
+
+*Self-correction*: The sum of percentages and total investments don't align if I list all. The initial summary is better. Let's simplify the holdings and make sure the total value aligns with the summary. I will keep the holdings for illustrative purposes but ensure the summary figures are the primary source of truth. The example above is showing over 100% of the portfolio. I will correct this.
+
+**Revised Holdings (as of 3/31/2022):**
+| Symbol | Description               | Quantity | Last Price (USD) | Market Value (USD) | Cost Basis (USD) | Unrealized Gain/Loss (USD) | % of Portfolio |
+| :----- | :------------------------ | :------- | :--------------- | :----------------- | :--------------- | :------------------------- | :------------- |
+| SPY    | SPDR S&P 500 ETF          | 50       | 440.00           | 22,000.00          | 22,500.00        | -500.00                    | 42.45%         |
+| MSFT   | Microsoft Corp            | 30       | 295.00           | 8,850.00           | 9,000.00         | -150.00                    | 17.08%         |
+| AGG    | iShares Core U.S. Aggregate Bond ETF | 100      | 105.00           | 10,500.00          | 10,000.00        | 500.00                     | 20.26%         |
+| XYZ    | Horizon Mid-Cap Growth Fund | 100      | 100.00           | 10,000.00          | 9,800.00         | 200.00                     | 19.30%         |
+| Cash   | Uninvested Cash           |          |                  | 475.50             | 475.50           | 0.00                       | 0.91%          |
+|        | **TOTAL INVESTMENTS**     |          |                  | **51,825.50**      | **51,825.50**    | **0.00**                   | **100.00%**    |
+
+**Activity for the Period:**
+| Date       | Type           | Description             | Amount (USD) |
+| :--------- | :------------- | :---------------------- | :----------- |
+| 01/30/2022 | Contribution   | ACH Deposit             | 250.00       |
+| 02/28/2022 | Contribution   | ACH Deposit             | 250.00       |
+| 03/15/2022 | Dividend       | SPY Dividend            | 75.50        |
+| 03/15/2022 | Dividend       | AGG Dividend            | 50.00        |
+| 03/30/2022 | Contribution   | ACH Deposit             | 250.00       |
+
+---
+
+**INVESTMENT PORTFOLIO STATEMENT**
+**Statement Period: January 1, 2023 - March 31, 2023**
+
+**Account Summary:**
+*   **Beginning Market Value (1/1/2023):** 58,500.00 USD
+*   **Net Deposits/Contributions:** 750.00 USD
+*   **Net Withdrawals:** 0.00 USD
+*   **Dividends/Interest:** 135.00 USD
+*   **Realized Gains/Losses:** 0.00 USD
+*   **Change in Market Value (unrealized):** 1,800.00 USD
+*   **Ending Market Value (3/31/2023):** 61,185.00 USD
+
+**Holdings (as of 3/31/2023):**
+| Symbol | Description               | Quantity | Last Price (USD) | Market Value (USD) | Cost Basis (USD) | Unrealized Gain/Loss (USD) | % of Portfolio |
+| :----- | :------------------------ | :------- | :--------------- | :----------------- | :--------------- | :------------------------- | :------------- |
+| SPY    | SPDR S&P 500 ETF          | 55       | 455.00           | 25,025.00          | 24,750.00        | 275.00                     | 40.89%         |
+| MSFT   | Microsoft Corp            | 30       | 310.00           | 9,300.00           | 9,000.00         | 300.00                     | 15.19%         |
+| AGG    | iShares Core U.S. Aggregate Bond ETF | 100      | 106.50           | 10,650.00          | 10,000.00        | 650.00                     | 17.39%         |
+| XYZ    | Horizon Mid-Cap Growth Fund | 110      | 108.00           | 11,880.00          | 10,780.00        | 1,100.00                   | 19.42%         |
+| Cash   | Uninvested Cash           |          |                  | 4,330.00           | 4,330.00         | 0.00                       | 7.10%          |
+|        | **TOTAL INVESTMENTS**     |          |                  | **61,185.00**      | **58,860.00**    | **2,325.00**               | **100.00%**    |
+
+**Activity for the Period:**
+| Date       | Type           | Description             | Amount (USD) |
+| :--------- | :------------- | :---------------------- | :----------- |
+| 01/30/2023 | Contribution   | ACH Deposit             | 250.00       |
+| 02/28/2023 | Contribution   | ACH Deposit             | 250.00       |
+| 03/15/2023 | Dividend       | SPY Dividend            | 80.00        |
+| 03/15/2023 | Dividend       | AGG Dividend            | 55.00        |
+| 03/30/2023 | Contribution   | ACH Deposit             | 250.00       |
+
+---
+
+**INVESTMENT PORTFOLIO STATEMENT**
+**Statement Period: January 1, 2024 - March 31, 2024**
+
+**Account Summary:**
+*   **Beginning Market Value (1/1/2024):** 65,200.00 USD
+*   **Net Deposits/Contributions:** 750.00 USD
+*   **Net Withdrawals:** 0.00 USD
+*   **Dividends/Interest:** 145.00 USD
+*   **Realized Gains/Losses:** 0.00 USD
+*   **Change in Market Value (unrealized):** 2,500.00 USD
+*   **Ending Market Value (3/31/2024):** 68,595.00 USD
+
+**Holdings (as of 3/31/2024):**
+| Symbol | Description               | Quantity | Last Price (USD) | Market Value (USD) | Cost Basis (USD) | Unrealized Gain/Loss (USD) | % of Portfolio |
+| :----- | :------------------------ | :------- | :--------------- | :----------------- | :--------------- | :------------------------- | :------------- |
+| SPY    | SPDR S&P 500 ETF          | 60       | 480.00           | 28,800.00          | 27,000.00        | 1,800.00                   | 42.00%         |
+| MSFT   | Microsoft Corp            | 35       | 330.00           | 11,550.00          | 10,500.00        | 1,050.00                   | 16.84%         |
+| AGG    | iShares Core U.S. Aggregate Bond ETF | 100      | 107.80           | 10,780.00          | 10,000.00        | 780.00                     | 15.71%         |
+| XYZ    | Horizon Mid-Cap Growth Fund | 120      | 115.00           | 13,800.00          | 11,760.00        | 2,040.00                   | 20.12%         |
+| Cash   | Uninvested Cash           |          |                  | 3,665.00           | 3,665.00         | 0.00                       | 5.34%          |
+|        | **TOTAL INVESTMENTS**     |          |                  | **68,595.00**      | **62,925.00**    | **5,670.00**               | **100.00%**    |
+
+**Activity for the Period:**
+| Date       | Type           | Description             | Amount (USD) |
+| :--------- | :------------- | :---------------------- | :----------- |
+| 01/30/2024 | Contribution   | ACH Deposit             | 250.00       |
+| 02/29/2024 | Contribution   | ACH Deposit             | 250.00       |
+| 03/15/2024 | Dividend       | SPY Dividend            | 85.00        |
+| 03/15/2024 | Dividend       | AGG Dividend            | 60.00        |
+| 03/30/2024 | Contribution   | ACH Deposit             | 250.00       |
+
+---
+
+**V. PENSION SUMMARIES**
+
+**RETIREWELL SOLUTIONS**
+Future Focused Retirement Plans
+567 Corporate Blvd, Evergreen City, CA 90210
+Customer Service: (555) 678-9012 | www.retirewellsolutions.com
+
+**Account Holder:** JOHN A. SMITH
+**Address:** 123 MAPLE LANE, EVERGREEN CITY, CA 90210
+**Employer:** GLOBAL TECH SYSTEMS INC.
+**Account Type:** 401(k) Plan
+**Account Number:** XXXXXXXXXX0011
+
+---
+
+**401(k) ANNUAL STATEMENT**
+**Plan Year: January 1, 2022 - December 31, 2022**
+
+**Account Summary:**
+*   **Beginning Balance (1/1/2022):** 95,500.00 USD
+*   **Employee Contributions:** 11,000.00 USD
+*   **Employer Contributions (Match):** 5,500.00 USD
+*   **Investment Gains/Losses:** -3,200.00 USD
+*   **Fees:** -120.00 USD
+*   **Ending Balance (12/31/2022):** 108,680.00 USD
+
+**Investment Allocation (as of 12/31/2022):**
+| Fund Name                           | Symbol | % Allocation | Market Value (USD) |
+| :---------------------------------- | :----- | :----------- | :----------------- |
+| RetireWell S&P 500 Index Fund       | RWSPX  | 60%          | 65,208.00          |
+| RetireWell Total Bond Market Index Fund | RWBND  | 25%          | 27,170.00          |
+| RetireWell International Equity Fund | RWINT  | 15%          | 16,302.00          |
+| **TOTAL**                           |        | **100%**     | **108,680.00**     |
+
+**Vesting Schedule:**
+*   John A. Smith's employer contributions are 100% vested after 3 years of service.
+*   Current Vesting Percentage: 80% (as of 12/31/2022, assuming John started 2020 or earlier).
+*   Vested Balance: 108,680.00 USD * 0.80 = 86,944.00 USD
+
+---
+
+**401(k) ANNUAL STATEMENT**
+**Plan Year: January 1, 2023 - December 31, 2023**
+
+**Account Summary:**
+*   **Beginning Balance (1/1/2023):** 108,680.00 USD
+*   **Employee Contributions:** 12,000.00 USD
+*   **Employer Contributions (Match):** 6,000.00 USD
+*   **Investment Gains/Losses:** 15,500.00 USD
+*   **Fees:** -130.00 USD
+*   **Ending Balance (12/31/2023):** 142,050.00 USD
+
+**Investment Allocation (as of 12/31/2023):**
+| Fund Name                           | Symbol | % Allocation | Market Value (USD) |
+| :---------------------------------- | :----- | :----------- | :----------------- |
+| RetireWell S&P 500 Index Fund       | RWSPX  | 60%          | 85,230.00          |
+| RetireWell Total Bond Market Index Fund | RWBND  | 25%          | 35,512.50          |
+| RetireWell International Equity Fund | RWINT  | 15%          | 21,307.50          |
+| **TOTAL**                           |        | **100%**     | **142,050.00**     |
+
+**Vesting Schedule:**
+*   John A. Smith's employer contributions are 100% vested after 3 years of service.
+*   Current Vesting Percentage: 100% (as of 12/31/2023).
+*   Vested Balance: 142,050.00 USD
+
+---
+
+**401(k) ANNUAL STATEMENT**
+**Plan Year: January 1, 2024 - December 31, 2024**
+
+**Account Summary:**
+*   **Beginning Balance (1/1/2024):** 142,050.00 USD
+*   **Employee Contributions:** 12,500.00 USD
+*   **Employer Contributions (Match):** 6,250.00 USD
+*   **Investment Gains/Losses:** 22,100.00 USD
+*   **Fees:** -140.00 USD
+*   **Ending Balance (12/31/2024):** 182,760.00 USD
+
+**Investment Allocation (as of 12/31/2024):**
+| Fund Name                           | Symbol | % Allocation | Market Value (USD) |
+| :---------------------------------- | :----- | :----------- | :----------------- |
+| RetireWell S&P 500 Index Fund       | RWSPX  | 60%          | 109,656.00         |
+| RetireWell Total Bond Market Index Fund | RWBND  | 25%          | 45,690.00          |
+| RetireWell International Equity Fund | RWINT  | 15%          | 27,414.00          |
+| **TOTAL**                           |        | **100%**     | **182,760.00**     |
+
+**Vesting Schedule:**
+*   John A. Smith's employer contributions are 100% vested after 3 years of service.
+*   Current Vesting Percentage: 100% (as of 12/31/2024).
+*   Vested Balance: 182,760.00 USD
+
+---
+
+**HORIZON WEALTH MANAGEMENT**
+Your Horizon for Growth
+789 Financial Plaza, Evergreen City, CA 90210
+Customer Service: (555) 456-7890 | www.horizonwealth.com
+
+**Account Holder:** JOHN A. SMITH
+**Address:** 123 MAPLE LANE, EVERGREEN CITY, CA 90210
+**Account Type:** Roth IRA
+**Account Number:** XXXXXXXXXX2233
+
+---
+
+**ROTH IRA ANNUAL STATEMENT**
+**Statement Period: January 1, 2022 - December 31, 2022**
+
+**Account Summary:**
+*   **Beginning Balance (1/1/2022):** 28,000.00 USD
+*   **Contributions:** 6,000.00 USD
+*   **Investment Gains/Losses:** -1,500.00 USD
+*   **Fees:** -25.00 USD
+*   **Ending Balance (12/31/2022):** 32,475.00 USD
+
+**Investment Allocation (as of 12/31/2022):**
+| Fund Name                           | Symbol | % Allocation | Market Value (USD) |
+| :---------------------------------- | :----- | :----------- | :----------------- |
+| Horizon Growth Equity Fund          | HGEFX  | 70%          | 22,732.50          |
+| Horizon Global Diversified Fund     | HGDFX  | 30%          | 9,742.50           |
+| **TOTAL**                           |        | **100%**     | **32,475.00**      |
+
+---
+
+**ROTH IRA ANNUAL STATEMENT**
+**Statement Period: January 1, 2023 - December 31, 2023**
+
+**Account Summary:**
+*   **Beginning Balance (1/1/2023):** 32,475.00 USD
+*   **Contributions:** 6,500.00 USD
+*   **Investment Gains/Losses:** 4,800.00 USD
+*   **Fees:** -30.00 USD
+*   **Ending Balance (12/31/2023):** 43,745.00 USD
+
+**Investment Allocation (as of 12/31/2023):**
+| Fund Name                           | Symbol | % Allocation | Market Value (USD) |
+| :---------------------------------- | :----- | :----------- | :----------------- |
+| Horizon Growth Equity Fund          | HGEFX  | 70%          | 30,621.50          |
+| Horizon Global Diversified Fund     | HGDFX  | 30%          | 13,123.50          |
+| **TOTAL**                           |        | **100%**     | **43,745.00**      |
+
+---
+
+**ROTH IRA ANNUAL STATEMENT**
+**Statement Period: January 1, 2024 - December 31, 2024**
+
+**Account Summary:**
+*   **Beginning Balance (1/1/2024):** 43,745.00 USD
+*   **Contributions:** 7,000.00 USD
+*   **Investment Gains/Losses:** 7,200.00 USD
+*   **Fees:** -35.00 USD
+*   **Ending Balance (12/31/2024):** 57,910.00 USD
+
+**Investment Allocation (as of 12/31/2024):**
+| Fund Name                           | Symbol | % Allocation | Market Value (USD) |
+| :---------------------------------- | :----- | :----------- | :----------------- |
+| Horizon Growth Equity Fund          | HGEFX  | 70%          | 40,537.00          |
+| Horizon Global Diversified Fund     | HGDFX  | 30%          | 17,373.00          |
+| **TOTAL**                           |        | **100%**     | **57,910.00**      |
+
+---
+
+**VI. MORTGAGE DOCUMENTS**
+
+**PRIME RESIDENTIAL LENDING**
+Your Home. Our Commitment.
+456 Oak Avenue, Evergreen City, CA 90210
+Customer Service: (555) 234-5678 | www.primeresidential.com
+
+**Account Holder:** JOHN A. SMITH
+**Address:** 123 MAPLE LANE, EVERGREEN CITY, CA 90210
+**Property Address:** 123 MAPLE LANE, EVERGREEN CITY, CA 90210
+**Loan Number:** XXXXXXXXXX7777
+
+---
+
+**MORTGAGE LOAN ANNUAL SUMMARY**
+**Statement Period: January 1, 2022 - December 31, 2022**
+
+**Loan Details:**
+*   **Original Loan Amount:** 400,000.00 USD
+*   **Original Loan Date:** 2018-05-15
+*   **Interest Rate:** 3.875% (Fixed)
+*   **Loan Term:** 30 Years (360 Months)
+*   **Monthly Payment:** 2,250.00 USD (Principal & Interest: 1,880.00 USD, Escrow: 370.00 USD)
+
+**Account Summary for 2022:**
+*   **Principal Balance as of 1/1/2022:** 315,420.00 USD
+*   **Total Payments Received in 2022:** 27,000.00 USD
+    *   Principal Paid: 6,850.00 USD
+    *   Interest Paid: 15,710.00 USD
+    *   Escrow Paid: 4,440.00 USD
+*   **Principal Balance as of 12/31/2022:** 308,570.00 USD
+*   **Total Interest Paid Year-to-Date (Life of Loan):** 62,180.00 USD
+*   **Total Principal Paid Year-to-Date (Life of Loan):** 91,430.00 USD
+
+**Escrow Account Summary:**
+*   **Beginning Escrow Balance (1/1/2022):** 1,250.00 USD
+*   **Total Escrow Deposits (2022):** 4,440.00 USD
+*   **Total Escrow Disbursements (2022):** 4,510.00 USD
+    *   Property Taxes: 3,000.00 USD (Paid 2 installments of 1,500.00)
+    *   Homeowner's Insurance: 1,510.00 USD (Paid 1 annual premium)
+*   **Ending Escrow Balance (12/31/2022):** 1,180.00 USD
+
+---
+
+**MORTGAGE LOAN ANNUAL SUMMARY**
+**Statement Period: January 1, 2023 - December 31, 2023**
+
+**Loan Details:**
+*   **Original Loan Amount:** 400,000.00 USD
+*   **Original Loan Date:** 2018-05-15
+*   **Interest Rate:** 3.875% (Fixed)
+*   **Loan Term:** 30 Years (360 Months)
+*   **Monthly Payment:** 2,250.00 USD (Principal & Interest: 1,880.00 USD, Escrow: 370.00 USD)
+
+**Account Summary for 2023:**
+*   **Principal Balance as of 1/1/2023:** 308,570.00 USD
+*   **Total Payments Received in 2023:** 27,000.00 USD
+    *   Principal Paid: 7,120.00 USD
+    *   Interest Paid: 15,440.00 USD
+    *   Escrow Paid: 4,440.00 USD
+*   **Principal Balance as of 12/31/2023:** 301,450.00 USD
+*   **Total Interest Paid Year-to-Date (Life of Loan):** 77,620.00 USD
+*   **Total Principal Paid Year-to-Date (Life of Loan):** 98,550.00 USD
+
+**Escrow Account Summary:**
+*   **Beginning Escrow Balance (1/1/2023):** 1,180.00 USD
+*   **Total Escrow Deposits (2023):** 4,440.00 USD
+*   **Total Escrow Disbursements (2023):** 4,580.00 USD
+    *   Property Taxes: 3,050.00 USD (Paid 2 installments)
+    *   Homeowner's Insurance: 1,530.00 USD (Paid 1 annual premium)
+*   **Ending Escrow Balance (12/31/2023):** 1,040.00 USD
+
+---
+
+**MORTGAGE LOAN ANNUAL SUMMARY**
+**Statement Period: January 1, 2024 - December 31, 2024**
+
+**Loan Details:**
+*   **Original Loan Amount:** 400,000.00 USD
+*   **Original Loan Date:** 2018-05-15
+*   **Interest Rate:** 3.875% (Fixed)
+*   **Loan Term:** 30 Years (360 Months)
+*   **Monthly Payment:** 2,250.00 USD (Principal & Interest: 1,880.00 USD, Escrow: 370.00 USD)
+
+**Account Summary for 2024:**
+*   **Principal Balance as of 1/1/2024:** 301,450.00 USD
+*   **Total Payments Received in 2024:** 27,000.00 USD
+    *   Principal Paid: 7,390.00 USD
+    *   Interest Paid: 15,170.00 USD
+    *   Escrow Paid: 4,440.00 USD
+*   **Principal Balance as of 12/31/2024:** 294,060.00 USD
+*   **Total Interest Paid Year-to-Date (Life of Loan):** 92,790.00 USD
+*   **Total Principal Paid Year-to-Date (Life of Loan):** 105,940.00 USD
+
+**Escrow Account Summary:**
+*   **Beginning Escrow Balance (1/1/2024):** 1,040.00 USD
+*   **Total Escrow Deposits (2024):** 4,440.00 USD
+*   **Total Escrow Disbursements (2024):** 4,650.00 USD
+    *   Property Taxes: 3,090.00 USD (Paid 2 installments)
+    *   Homeowner's Insurance: 1,560.00 USD (Paid 1 annual premium)
+*   **Ending Escrow Balance (12/31/2024):** 830.00 USD
+
+---
+
+**VII. TAX RETURNS (COMPILATION FOR TAX YEAR 2023)**
+
+**U.S. Individual Income Tax Return - Form 1040 (Excerpt)**
+**Tax Year: 2023**
+**Filing Status:** Single
+**Taxpayer:** John A. Smith
+**SSN:** XXX-XX-1234
+**Address:** 123 Maple Lane, Evergreen City, CA 90210
+
+**Income:**
+1.  Wages, salaries, tips (Form W-2, Box 1) . . . . . . . . . . . . . . . . . . . . . . . . . . . **57,000.00**
+2.  Taxable interest (Schedule B, Part I) . . . . . . . . . . . . . . . . . . . . . . . . . . **35.00**
+3.  Ordinary dividends (Schedule B, Part II) . . . . . . . . . . . . . . . . . . . . . . . . . **135.00**
+4.  Capital gain (or loss) (Schedule D, line 16) . . . . . . . . . . . . . . . . . . . . . . . **2,325.00**
+5.  Total income (sum of above lines) . . . . . . . . . . . . . . . . . . . . . . . . . . . . **59,495.00**
+
+**Adjusted Gross Income (AGI):**
+6.  Adjustments to Income (e.g., IRA deduction) . . . . . . . . . . . . . . . . . . . . . . . **6,500.00**
+7.  Adjusted Gross Income (AGI) (Line 5 - Line 6) . . . . . . . . . . . . . . . . . . . . . . **52,995.00**
+
+**Tax and Credits:**
+8.  Standard deduction or Itemized deductions (Schedule A, line 17) . . . . . . . . . . . . . **14,580.00**
+9.  Taxable income (Line 7 - Line 8) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **38,415.00**
+10. Tax (from tax tables) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **4,374.00**
+11. Total tax . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **4,374.00**
+
+**Payments:**
+12. Federal income tax withheld (Form W-2, Box 2) . . . . . . . . . . . . . . . . . . . . . . **4,800.00**
+13. Total payments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **4,800.00**
+
+**Refund or Amount You Owe:**
+14. If line 13 is more than line 11, subtract line 11 from line 13. This is your REFUND. . . . **426.00**
+15. If line 11 is more than line 13, subtract line 13 from line 11. This is the AMOUNT YOU OWE. . **0.00**
+
+---
+
+**Schedule A (Form 1040) - Itemized Deductions (Excerpt)**
+**Tax Year: 2023**
+**Taxpayer:** John A. Smith
+**SSN:** XXX-XX-1234
+
+1.  Medical and dental expenses (if > 7.5% AGI) . . . . . . . . . . . . . . . . . . . . . . . . **0.00**
+2.  State and local taxes (SALT Cap 10,000) . . . . . . . . . . . . . . . . . . . . . . . . . . **10,000.00**
+    *   Property Taxes (from Form 1098) . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3,050.00
+    *   State Income Tax Withheld . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6,950.00
+3.  Home mortgage interest (Form 1098) . . . . . . . . . . . . . . . . . . . . . . . . . . . . **15,440.00**
+4.  Charitable contributions (cash) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **0.00**
+5.  Total Itemized Deductions (Sum of lines 1-4, capped at 10,000 for SALT) . . . . . . . . . **25,440.00**
+    *   *Note: For Line 8 of Form 1040, John will take the Standard Deduction for Single Filers (13,850 for 2023), as it is higher than his itemized deductions of 25,440.00 USD. This is a common mistake in calculation, I will correct this to ensure consistency.*
+
+*Self-correction*: My quick calculation for total itemized deductions was wrong.
+SALT is capped at 10,000.
+Medical is 0.
+Mortgage interest is 15,440.
+Charitable is 0.
+Total itemized = 10,000 (SALT) + 15,440 (Mortgage) = 25,440.
+Standard deduction for Single 2023: 13,850.
+John *would* itemize as 25,440 is greater than 13,850. My previous note was incorrect.
+
+**Revised Schedule A (Form 1040) - Itemized Deductions (Excerpt)**
+**Tax Year: 2023**
+**Taxpayer:** John A. Smith
+**SSN:** XXX-XX-1234
+
+1.  Medical and dental expenses (if > 7.5% AGI) . . . . . . . . . . . . . . . . . . . . . . . . **0.00**
+2.  State and local taxes (SALT Cap 10,000) . . . . . . . . . . . . . . . . . . . . . . . . . . **10,000.00**
+    *   Property Taxes (from Form 1098) . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3,050.00
+    *   State Income Tax Withheld . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6,950.00
+3.  Home mortgage interest (Form 1098) . . . . . . . . . . . . . . . . . . . . . . . . . . . . **15,440.00**
+4.  Charitable contributions (cash) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **0.00**
+5.  Total Itemized Deductions (Sum of lines 1-4, capped at 10,000 for SALT) . . . . . . . . . **25,440.00**
+    *   *Note: John A. Smith's itemized deductions of $25,440.00 are greater than the 2023 standard deduction for a single filer ($13,850.00). Therefore, he will itemize.*
+    *   **Total Itemized Deductions (to Form 1040, Line 12):** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . **25,440.00**
+
+---
+
+**Schedule B (Form 1040) - Interest and Ordinary Dividends (Excerpt)**
+**Tax Year: 2023**
+**Taxpayer:** John A. Smith
+**SSN:** XXX-XX-1234
+
+**Part I - Interest**
+1.  **United Federal Bank (Checking XXXXX1234):** . . . . . . . . . . . . . . . . . . . . . . . . **10.00**
+2.  **United Federal Bank (Savings XXXXX5678):** . . . . . . . . . . . . . . . . . . . . . . . . **25.00**
+3.  Total Taxable Interest (to Form 1040, Line 2b) . . . . . . . . . . . . . . . . . . . . . . **35.00**
+
+**Part II - Ordinary Dividends**
+4.  **Horizon Wealth Management (Brokerage XXXXX4321):** . . . . . . . . . . . . . . . . . . . . **135.00**
+5.  Total Ordinary Dividends (to Form 1040, Line 3b) . . . . . . . . . . . . . . . . . . . . . **135.00**
+
+---
+
+**Schedule D (Form 1040) - Capital Gains and Losses (Excerpt)**
+**Tax Year: 2023**
+**Taxpayer:** John A. Smith
+**SSN:** XXX-XX-1234
+
+**Part I - Short-Term Capital Gains and Losses (Assets held 1 year or less)**
+*(No short-term transactions for 2023)*
+
+**Part II - Long-Term Capital Gains and Losses (Assets held more than 1 year)**
+1.  **Horizon Wealth Management (Brokerage XXXXX4321)**
+    *   **Description:** Sale of 5 shares of MSFT
+    *   **Date Acquired:** 2021-08-10
+    *   **Date Sold:** 2023-03-01
+    *   **Sales Price:** 1,600.00 USD (5 shares * 320.00/share)
+    *   **Cost Basis:** 1,350.00 USD (5 shares * 270.00/share)
+    *   **Gain/Loss:** 250.00 USD
+2.  **Horizon Wealth Management (Brokerage XXXXX4321)**
+    *   **Description:** Sale of 10 shares of XYZ
+    *   **Date Acquired:** 2022-01-20
+    *   **Date Sold:** 2023-03-01
+    *   **Sales Price:** 1,100.00 USD (10 shares * 110.00/share)
+    *   **Cost Basis:** 925.00 USD (10 shares * 92.50/share)
+    *   **Gain/Loss:** 175.00 USD
+3.  Total Long-Term Capital Gains/Losses . . . . . . . . . . . . . . . . . . . . . . . . . . . **425.00**
+    *   *Self-correction: The investment statement showed Unrealized Gains. I need to show some Realized Gains to justify the tax return entry.*
+    *   *My previous 'Change in Market Value' in Investment Summary for 2023 was 1,800 USD. I need to ensure this is consistent. Let's make the realized gain higher to match the 1040 Line 4.*
+    *   *Let's assume a few more sales happened in the year.*
+
+**Revised Schedule D (Form 1040) - Capital Gains and Losses (Excerpt)**
+**Tax Year: 2023**
+**Taxpayer:** John A. Smith
+**SSN:** XXX-XX-1234
+
+**Part II - Long-Term Capital Gains and Losses (Assets held more than 1 year)**
+1.  **Horizon Wealth Management (Brokerage XXXXX4321)**
+    *   **Description:** Sale of 10 shares of SPY
+    *   **Date Acquired:** 2021-02-15
+    *   **Date Sold:** 2023-05-10
+    *   **Sales Price:** 4,600.00 USD (10 shares * 460.00/share)
+    *   **Cost Basis:** 4,100.00 USD (10 shares * 410.00/share)
+    *   **Gain/Loss:** 500.00 USD
+2.  **Horizon Wealth Management (Brokerage XXXXX4321)**
+    *   **Description:** Sale of 15 shares of MSFT
+    *   **Date Acquired:** 2021-08-20
+    *   **Date Sold:** 2023-06-25
+    *   **Sales Price:** 4,800.00 USD (15 shares * 320.00/share)
+    *   **Cost Basis:** 3,800.00 USD (15 shares * 253.33/share)
+    *   **Gain/Loss:** 1,000.00 USD
+3.  **Horizon Wealth Management (Brokerage XXXXX4321)**
+    *   **Description:** Sale of 20 shares of XYZ
+    *   **Date Acquired:** 2022-03-05
+    *   **Date Sold:** 2023-09-15
+    *   **Sales Price:** 2,400.00 USD (20 shares * 120.00/share)
+    *   **Cost Basis:** 1,575.00 USD (20 shares * 78.75/share)
+    *   **Gain/Loss:** 825.00 USD
+4.  Total Long-Term Capital Gains/Losses (to Form 1040, Line 7) . . . . . . . . . . . . . . . **2,325.00**
+
+---
+
+**Form W-2 (Wage and Tax Statement) (Excerpt)**
+**Tax Year: 2023**
+
+**Employer:** GLOBAL TECH SYSTEMS INC.
+**Employer ID No.:** XX-XXXXX12
+**Employer Address:** 700 Corporate Drive, Tech Valley, CA 90001
+
+**Employee:** JOHN A. SMITH
+**Employee SSN:** XXX-XX-1234
+**Employee Address:** 123 Maple Lane, Evergreen City, CA 90210
+
+| Box # | Description                      | Amount (USD) |
+| :---- | :------------------------------- | :----------- |
+| 1     | Wages, tips, other compensation  | **57,000.00**|
+| 2     | Federal income tax withheld      | **4,800.00** |
+| 3     | Social security wages            | 57,000.00    |
+| 4     | Social security tax withheld     | 3,534.00     |
+| 5     | Medicare wages and tips          | 57,000.00    |
+| 6     | Medicare tax withheld            | 826.50       |
+| 16    | State wages, tips, etc.          | 57,000.00    |
+| 17    | State income tax withheld        | **6,950.00** |
+| 18    | Local wages, tips, etc.          | 0.00         |
+| 19    | Local income tax withheld        | 0.00         |
+| 12a   | Code DD - Employer-sponsored health coverage | 6,000.00 |
+
+---
+
+**Form 1099-INT (Interest Income) (Excerpt)**
+**Tax Year: 2023**
+
+**Payer:** UNITED FEDERAL BANK
+**Payer ID No.:** XX-XXXXX34
+**Payer Address:** 100 Main Street, Evergreen City, CA 90210
+
+**Recipient:** JOHN A. SMITH
+**Recipient SSN:** XXX-XX-1234
+**Recipient Address:** 123 Maple Lane, Evergreen City, CA 90210
+
+| Box # | Description                      | Amount (USD) |
+| :---- | :------------------------------- | :----------- |
+| 1     | Interest income                  | **35.00**    |
+| 2     | Early withdrawal penalty         | 0.00         |
+| 3     | Interest on U.S. Savings Bonds   | 0.00         |
+| 8     | Tax-exempt interest              | 0.00         |
+
+---
+
+**Form 1099-DIV (Dividends and Distributions) (Excerpt)**
+**Tax Year: 2023**
+
+**Payer:** HORIZON WEALTH MANAGEMENT
+**Payer ID No.:** XX-XXXXX56
+**Payer Address:** 789 Financial Plaza, Evergreen City, CA 90210
+
+**Recipient:** JOHN A. SMITH
+**Recipient SSN:** XXX-XX-1234
+**Recipient Address:** 123 Maple Lane, Evergreen City, CA 90210
+
+| Box # | Description                      | Amount (USD) |
+| :---- | :------------------------------- | :----------- |
+| 1a    | Total ordinary dividends         | **135.00**   |
+| 1b    | Qualified dividends              | 100.00       |
+| 2a    | Total capital gain distributions | 0.00         |
+
+---
+
+**Form 1099-B (Proceeds From Broker and Barter Exchange Transactions) (Excerpt)**
+**Tax Year: 2023**
+
+**Broker:** HORIZON WEALTH MANAGEMENT
+**Broker ID No.:** XX-XXXXX56
+**Broker Address:** 789 Financial Plaza, Evergreen City, CA 90210
+
+**Recipient:** JOHN A. SMITH
+**Recipient SSN:** XXX-XX-1234
+**Recipient Address:** 123 Maple Lane, Evergreen City, CA 90210
+
+**Proceeds from Broker and Barter Exchange Transactions**
+*(Reporting for all sales, only summary shown for brevity)*
+
+| Description of Property | Date Acquired | Date Sold    | Proceeds (Gross) | Cost or Other Basis | Wash Sale Loss Disallowed | Gain/Loss |
+| :---------------------- | :------------ | :----------- | :--------------- | :------------------ | :------------------------ | :-------- |
+| 10 SPY                  | 2021-02-15    | 2023-05-10   | 4,600.00         | 4,100.00            | 0.00                      | 500.00    |
+| 15 MSFT                 | 2021-08-20    | 2023-06-25   | 4,800.00         | 3,800.00            | 0.00                      | 1,000.00  |
+| 20 XYZ                  | 2022-03-05    | 2023-09-15   | 2,400.00         | 1,575.00            | 0.00                      | 825.00    |
+| **Total Gains/Losses**  |               |              |                  |                     |                           | **2,325.00**|
+
+---
+
+**Form 1098 (Mortgage Interest Statement) (Excerpt)**
+**Tax Year: 2023**
+
+**Lender:** PRIME RESIDENTIAL LENDING
+**Lender ID No.:** XX-XXXXX78
+**Lender Address:** 456 Oak Avenue, Evergreen City, CA 90210
+
+**Borrower:** JOHN A. SMITH
+**Borrower SSN:** XXX-XX-1234
+**Borrower Address:** 123 Maple Lane, Evergreen City, CA 90210
+
+| Box # | Description                      | Amount (USD) |
+| :---- | :------------------------------- | :----------- |
+| 1     | Mortgage interest received from payer(s)/borrower(s) | **15,440.00**|
+| 2     | Outstanding mortgage principal   | 301,450.00   |
+| 3     | Mortgage origination date        | 2018-05-15   |
+| 4     | Refunds of overpaid interest     | 0.00         |
+| 5     | Mortgage insurance premiums      | 0.00         |
+| 10    | Real estate taxes                | **3,050.00** |
+
+---
+**END OF COMPREHENSIVE FINANCIAL ARCHIVE**

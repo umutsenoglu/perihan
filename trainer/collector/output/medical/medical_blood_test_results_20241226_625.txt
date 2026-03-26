@@ -1,0 +1,110 @@
+**WHITTINGTON HOSPITAL**
+Magdala Avenue, London N19 5NF
+Tel: 020 7272 3070 | www.whittington.nhs.uk
+
+---
+
+**BLOOD TEST RESULTS**
+
+**Patient Details:**
+*   **Name:** Marsh, Max
+*   **Date of Birth:** 14/07/2020 (4 years old)
+*   **NHS Number:** 987 654 3210
+*   **Address:** [Patient's Residential Address, North London]
+*   **Parent/Guardian:** Mr. Ethan Marsh (Father)
+
+**Consultant/Requesting Doctor:** Dr. S. Patel
+**Department:** Paediatrics / General Practice (referring)
+**Date of Sample Collection:** 2024-12-24
+**Date of Report:** 2024-12-26 10:30 GMT
+
+---
+
+**Reason for Test:**
+Blood tests requested following presentation with symptoms indicative of recurrent acute otitis media (ear infection), including fever, ear pain, and irritability. This is Max's third reported ear infection episode this winter season, raising concerns regarding persistent or underlying issues. Initial treatment with Amoxicillin commenced on 2024-12-24.
+
+---
+
+**FINDINGS (Haematology & Biochemistry)**
+
+| Test Name                 | Result        | Reference Range                      | Unit   | Interpretation                               |
+| :------------------------ | :------------ | :----------------------------------- | :----- | :------------------------------------------- |
+| White Blood Cell Count    | **14.8**      | 4.0 – 10.0                           | x10^9/L | Mildly elevated, consistent with infection   |
+| Neutrophils               | **9.5**       | 2.0 – 7.5                            | x10^9/L | Elevated, suggestive of bacterial infection  |
+| Lymphocytes               | 3.8           | 1.5 – 6.0                            | x10^9/L | Within normal limits                         |
+| Haemoglobin               | 12.8          | 11.5 – 13.5 (age-dependent)          | g/dL   | Within normal limits                         |
+| C-Reactive Protein (CRP)  | **45.2**      | < 5.0                                | mg/L   | Markedly elevated, indicative of inflammation |
+| Erythrocyte Sedimentation Rate (ESR) | **28** | < 15                                 | mm/hr  | Elevated, non-specific inflammatory marker   |
+
+*Note: All other parameters within the Full Blood Count and Electrolytes were within normal reference ranges and are not listed here.*
+
+---
+
+**ASSESSMENT**
+
+The blood test results for Max Marsh show clear indicators of an active inflammatory process, consistent with an acute bacterial infection. The elevated White Blood Cell Count, particularly the neutrophils, along with the significantly raised C-Reactive Protein (CRP) and ESR, support the clinical diagnosis of acute otitis media. While these findings confirm the presence of an infection, they do not indicate any unusual or severe systemic involvement beyond what would be expected for a typical ear infection. Max's Haemoglobin levels are normal, suggesting no underlying anaemia.
+
+Given the history provided by Mr. Ethan Marsh, detailing this as the third ear infection episode for Max this winter, there is
+**WHITTINGTON HOSPITAL**
+**Department of Clinical Pathology**
+Magdala Avenue, London N19 5NF
+Tel: 020 7288 5000
+
+---
+
+**PATIENT BLOOD TEST RESULTS**
+
+**Patient Name:** Max Marsh
+**Date of Birth:** 15/05/2020 (Age: 4 years)
+**NHS Number:** 123 456 7890
+**Gender:** Male
+**Referral Source:** Whittington Health Centre (Dr. Patel)
+**Date of Collection:** 2024-12-26 09:30
+**Date of Report:** 2024-12-26 14:15
+**Clinical Indication:** Recurrent Otitis Media; Fever; Parental Concern (Mr. Ethan Marsh)
+
+---
+
+**FINDINGS**
+
+| Test Name                 | Result        | Reference Range                      | Unit   | Interpretation                               |
+| :------------------------ | :------------ | :----------------------------------- | :----- | :------------------------------------------- |
+| White Blood Cell Count    | **14.8**      | 4.0 – 10.0                           | x10^9/L | Mildly elevated, consistent with infection   |
+| Neutrophils               | **9.5**       | 2.0 – 7.5                            | x10^9/L | Elevated, suggestive of bacterial infection  |
+| Lymphocytes               | 3.8           | 1.5 – 6.0                            | x10^9/L | Within normal limits                         |
+| Haemoglobin               | 12.8          | 11.5 – 13.5 (age-dependent)          | g/dL   | Within normal limits                         |
+| C-Reactive Protein (CRP)  | **45.2**      | < 5
+| Test Name                 | Result        | Reference Range                      | Unit   | Interpretation                               |
+| :------------------------ | :------------ | :----------------------------------- | :----- | :------------------------------------------- |
+| White Blood Cell Count    | **14.8**      | 4.0 – 10.0                           | x10^9/L | Mildly elevated, consistent with infection   |
+| Neutrophils               | **9.5**       | 2.0 – 7.5                            | x10^9/L | Elevated, suggestive of bacterial infection  |
+| Lymphocytes               | 3.8           | 1.5 – 6.0                            | x10^9/L | Within normal limits                         |
+| Haemoglobin               | 12.8          | 11.5 – 13.5 (age-dependent)          | g/dL   | Within normal limits                         |
+| C-Reactive Protein (CRP)  | **45.2**      | < 5.0                                | mg/L   | Significantly elevated, indicates acute inflammation/infection |
+| Erythrocyte Sedimentation Rate (ESR) | **28**        | 0 – 10 (age-dependent)               | mm/hr  | Elevated, consistent with inflammatory process |
+| Platelets                 | 310           | 150 – 450                            | x10^9/L | Within normal limits                         |
+
+---
+
+**ASSESSMENT**
+
+The blood test results confirm the presence of an acute inflammatory/infectious process, consistent with the clinical diagnosis of acute otitis media. The elevated White Blood Cell Count (WBC), particularly the neutrophil count, along with the significantly raised C-Reactive Protein (CRP) and Erythrocyte Sedimentation Rate (ESR), are indicative of a bacterial infection. Other parameters, including Haemoglobin and Platelet count, are within normal limits, suggesting no evidence of anaemia or other significant haematological abnormalities at this time.
+
+Max's recurrent ear infections, as detailed by Mr. Ethan Marsh (third episode this winter, following previous episodes in November and early December), are a concern. While this current infection appears typical in its presentation and inflammatory markers, the frequency warrants further investigation to prevent potential complications and improve Max's quality of life. The impact on his attendance at Little Stars Nursery and Lily's school schedule is also noted.
+
+---
+
+**PLAN**
+
+1.  **Continue Current Management:** Max should continue his prescribed course of Amoxicillin (250mg/5ml, 5ml three times daily) for a full 7-day course. Continue with regular paracetamol or ibuprofen as needed for pain relief and fever management, as discussed with Claire Marsh yesterday.
+2.  **Clinical Review:** A follow-up appointment with Dr. Patel at Whittington Health Centre is recommended in 5-7 days (around 02/01/2025) to assess clinical response to antibiotics and ensure resolution of symptoms. Mr. Marsh can book this via the NHS App or by calling the surgery.
+3.  **ENT Referral Pathway:** Given the recurrent nature of Max's otitis media, a referral to the Ear, Nose, and Throat (ENT) department at Whittington Hospital will be initiated. Dr. Patel will discuss this further with Mr. and Mrs. Marsh at the upcoming review appointment. The referral will assess for underlying factors contributing to the recurrence, such as adenoid hypertrophy or Eustachian tube dysfunction, and consider interventions like grommet insertion.
+4.  **Parental Advice:** Mr. and Mrs. Marsh should monitor Max closely for any worsening symptoms (e.g., increasing pain, high fever, lethargy, new rash, or any signs of spreading infection like swelling behind the ear). If symptoms worsen significantly before the planned review, please contact Whittington Health Centre or NHS 111 for urgent advice.
+5.  **Documentation:** These results will be uploaded to Max's digital health record, accessible via the NHS App, for Mr. and Mrs. Marsh's reference.
+
+---
+**Report Author:** Dr. S. Kaur (Consultant Haematologist, Whittington Hospital)
+**Reviewed By:** Dr. A. Patel (GP, Whittington Health Centre)
+**Date of Review:** 2024-12-26 16:30
+
+*(This document is for informational purposes and should be discussed with a healthcare professional.)*

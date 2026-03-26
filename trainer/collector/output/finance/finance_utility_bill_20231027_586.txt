@@ -1,0 +1,10 @@
+**Thames Water Payment Confirmation**
+
+**Account Holder:** Mr E Marsh
+**Account Number:** 0123456789
+**Payment Date:** 27 October 2023
+**Amount Paid:** £48.50
+**Payment Method:** Direct Debit (XXXX-XXXX-XX56)
+**Reference:** TW-SM23Q4-EM
+
+Thank you for your recent payment. Your Thames Water account, for the property at 14 Elmwood Drive, N12, is now up to date. The next payment is scheduled for January 2024. For queries, please visit thameswater.co.uk/myaccount.

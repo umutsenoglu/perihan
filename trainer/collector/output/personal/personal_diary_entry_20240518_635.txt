@@ -1,0 +1,105 @@
+May 18, 2024
+
+God, I’m so utterly knackered. It’s 1:47 AM, Saturday, officially, but it feels like it’s still yesterday, just a really, really long one. Should probably just write this down, get it out of my head before I try to sleep again. If I try to sleep again.
+
+The bloody server. At 11 PM. Of course. It’s always 11 PM, isn’t it? Never 2 PM when James is actually in the office and could just walk over to the rack. No, it’s 11 PM on a Friday night, just as I’d finally managed to drift off. I swear I heard the ping, that specific high-pitched whine from the monitoring tool, even through my sleep-haze. Didn’t even need to look at the phone, just *knew*.
+
+Claire was already deep asleep next to me, thankfully. The kids too, obviously. Lily probably dreaming about unicorns or something Mrs. Henderson read them today, and Max… Max is probably just dreaming about more mud. And maybe diggers. So I slipped out of bed, carefully, the old floorboards groaning under my weight like they always do. That one by the wardrobe is the worst. Don’t want to wake anyone, especially not Max, because once that little monster is up, everyone’s up. And then it’s 2 AM and I’m making toast.
+
+Laptop open on the kitchen island. Felt a proper chill in the air, the kind that London gets even in May, just before summer actually properly decides to arrive. Pulled on my old university hoodie, the one with the faded UoB logo. Made a cuppa – proper builder’s tea, black as sin, no milk, no sugar. Need that jolt. The steam was almost comforting in the quiet kitchen, only the hum of the fridge and the gurgle of the tropical fish tank for company. My clown loaches were just swimming around, oblivious, not a care in the world. Wish I was a fish sometimes. Just eat, swim, maybe a bit of breeding, no critical production environments to worry about.
+
+`ssh root@prod-node-03.fintechco.london`
+Enter password.
+Wait.
+`kubectl get pods -A`
+Shit. A whole bunch of CrashLoopBackOffs. And some Pending. Looks like the database pod went down first, then everything else started falling over like dominoes. Classic. Why, oh why, did we decide to put the primary read-replica on the same node as the analytics service? Richard’s bright idea, "to optimize resource utilization." Optimise for what, exactly? Optimise for my Friday nights getting screwed?
+
+Pinged James on Teams. He’s usually good for a late-night response, even if it’s just a "fml, looking into it."
+`Me: Prod-node-03 down. DB pod crashed. Everything else cascading. On it now. FML.`
+`James: Ugh. Saw the alerts. On my way to the laptop. Good luck, mate.`
+Cheers, James. Real helpful. At least he’s acknowledging it. Priya, our resident database guru, would probably be offline. She’s strict about her after-hours. Can’t blame her, really. She’s got two little ones even younger than Max.
+
+So it was just me. Tracing logs, checking disk space, memory usage. `df -h`, `free -h`. Nothing obvious. No full disks, no runaway processes. It was just… gone. Like it committed suicide. Restarted the DB pod first. Watched it come up, then immediately CrashLoopBackOff again. Error message: `DB connection refused`. Of course it was. It wasn’t the pod, it was the underlying database.
+
+SSHed into the DB server directly. `sudo systemctl status postgresql`. Inactive. Dead. What the hell? It just… died? No warning? No OOM killer message, no segfault in the logs. Just stopped. This is why I have trust issues with servers. They lull you into a false sense of security for weeks, sometimes months, then BAM, 11 PM on a Friday, they decide they’ve had enough.
+
+Spent a good twenty minutes trying to restart it, checking config files, looking for corrupted data. Nothing. It just wouldn’t start. Postgres logs were empty, like it hadn’t even tried. My back was starting to ache, that familiar dull throb just above my hips. Probably from hunching over the laptop on the kitchen counter, not designed for ergonomic midnight coding. Should probably do more of those stretches my physio recommended, the ones for desk workers. But who has time for that?
+
+Eventually, I just bit the bullet. Reboot the whole damn node. Sometimes that’s all you can do. The nuclear option. Sent a quick message to James: `Me: Tried everything. Going for a full reboot of prod-node-03. Should be back up in 5-10.`
+`James: Do it. Tell me when it’s green.`
+The wait was agonizing. Just staring at the terminal, watching the pings come back, then the services slowly, agonizingly, starting up one by one. The `kubectl get pods -A` command slowly turning from red to yellow to green. The relief when the database pod finally came up and stayed up was immense. Like I could finally breathe again. Then came the frantic checking of our main services, hitting endpoints, making sure everything was responding correctly. It seemed okay. Green across the board.
+
+Checked the clock. 1:30 AM. Two and a half hours. For a server that just decided to off itself. This job, I swear. It’s got a special kind of love-hate relationship going on. The satisfaction when you fix something, when you bring order back to chaos, that’s great. It’s a rush. But the sheer drain, the constant on-call anxiety, the feeling that you’re always just one bad commit or one dying server away from a full-blown meltdown… that’s less great.
+
+I closed the laptop, put the tea mug in the sink. The clown loaches were still swimming. The house was still silent. The adrenaline was still pumping, making sleep feel like a distant dream. Might as well just jot down today. This whole week, really. Been a blur.
+
+The day started early, as usual. 6:30 AM. Alarm goes off, Claire usually groans, I usually hit snooze once, then drag myself up. Managed to get downstairs before the kids this morning, which is a rare win. Emptied the dishwasher from last night, made the coffee. Lily was down by 7:15, Max a few minutes later, already covered in something sticky from his face-plant into the floor. He's such a whirlwind. "Daddy! Want toast! Want Peppa Pig!" The usual battle for the remote. Claire was trying to get Lily to finish her cornflakes, talking about something that happened in Mrs. Henderson's Year 3 class yesterday, some project about Roman mosaics. Lily seemed excited. I just nod, half-listening, half-thinking about the stand-up meeting at work.
+
+Breakfast was a blur of spilled milk, negotiations over screen time, and my attempt to quickly check my emails on my phone. Nothing critical, thankfully. James had sent a funny meme about a bug someone introduced. Made me smile.
+
+School run was its usual chaos. Lily insisting on wearing her favourite mismatched socks – one unicorn, one stripey – and Max refusing to put on his wellies despite the lingering dampness from yesterday’s rain. Claire took them, as she usually does on Tuesdays and Fridays, since her school starts a bit later. QPA Primary, then Little Stars Nursery for Max. She’s a saint, she really is. I don't know how she manages to teach all day, then come home and still have the patience for their energy. I just about manage my coding and my fish.
+
+My commute to Canary Wharf isn’t terrible, but it’s not exactly pleasant. Fifteen minutes walk to the tube, then the Jubilee Line. Always packed. I usually try to grab a seat and read something – an article, a chapter of a book, sometimes just doomscroll. Today I was mostly thinking about the Portugal trip. We *really* need to book those flights. Claire’s been on my case about it for weeks. "Ethan, the prices are just going to go up!" She’s right, of course. She always is. Summer holidays are coming up fast. July, two weeks in Portugal. Been dreaming about it since Christmas. Somewhere warm, by the sea. Just need to pin down the dates and commit.
+
+Got into the office around 8:45 AM. Usual buzz. The fintech company, "Nexus Payments," is a pretty decent place to work, all things considered. Good team, interesting challenges. We’re working on this new distributed ledger project, trying to integrate blockchain tech into our payment processing. It’s complex, a bit bleeding edge, and definitely pushes my brain. My brain, which currently feels like a scrambled egg.
+
+Morning stand-up with the team – Richard, Priya, James, and a couple of the junior devs. Richard, our tech lead, was going on about the latest sprint goals. My tasks for the day: finish the API endpoint for the new merchant onboarding flow, and review some of James’s pull requests. James is good, but sometimes he forgets edge cases, the kind of things that can blow up production environments at 11 PM on a Friday. Foreshadowing, much?
+
+Sat down at my desk, tried to focus. The office chairs are actually decent, but my lower back still grumbles by midday. I try to get up and walk around every hour, but sometimes I just get in the zone, staring at lines of code, and hours pass. Today was one of those days. Got stuck on a particularly tricky bug in the merchant onboarding flow. It was an async issue, race condition, the kind that only pops up once in a blue moon but completely screws up data integrity. Took me a good two hours of debugging, stepping through the code, trying to recreate it. Finally found it. Felt good. Small victories.
+
+Lunch was a quick sandwich from Pret. Ate it at my desk, scrolling through flight options on Skyscanner and Google Flights. Claire had sent me a text earlier: `Don’t forget Portugal flights! BA looking pricey. Check EasyJet?`
+Checked EasyJet. Still not great. Flights for four, especially during school holidays, are eye-watering. Looking at Lisbon, Faro, Porto. Lisbon seems the easiest, lots of direct flights. We want something self-catering, maybe a villa with a pool. Max loves pools. Lily too. They’re both little water babies. Last year we did Cornwall, which was lovely, but it rained half the time. Sun is a non-negotiable this year.
+Found a few options, but nothing felt *right*. Either the timings were terrible, or the price was extortionate, or the reviews for the airline were awful. It’s a gamble, isn't it? Book now and risk prices dropping, or wait and risk them skyrocketing? I hate this part of holiday planning. Claire’s good at finding accommodation, I’m supposed to be the flight guy. And I’m failing. Must get this sorted. Before she dispatches me to live in the garden shed.
+
+Afternoon at work was mostly code review. James’s PRs were okay, just a few comments about variable naming and error handling. Sent them back. Then dove back into the blockchain integration. It’s fascinating, honestly. The potential for secure, transparent transactions. But the implementation challenges are immense. Richard is pushing for a release by the end of Q3. It feels ambitious, but we’re making progress.
+
+Got home around 6 PM. London traffic was a nightmare, as always. The VW Golf, our trusty 2019 model, felt a bit sluggish today. I’ve been thinking about switching to an electric car, maybe a Tesla Model 3 or a Polestar. Claire thinks it’s a good idea, but the upfront cost is huge, even with the government incentives. Plus, our mortgage with Barclays is still substantial, and every penny counts. It’s a future Ethan problem. For now, the Golf gets me from A to B.
+
+Walked in to the usual cacophony. Lily was doing her homework at the kitchen table, drawing something elaborate with glitter glue. Max was playing with his wooden train set, making train noises that could shatter glass. Claire was prepping dinner – spaghetti bolognese, always a winner.
+"How was your day?" she asked, without looking up, stirring the pan.
+"Long. Got stuck on a bug. And the flights are still stressing me out."
+She just sighed. "I know. I looked again too. It's just so much money. Maybe we should consider just staying home?"
+"No!" I said quickly. "We need this. We both do. Kids too. We’ll find something. I promise."
+She gave me a tired smile. "Okay. Spaghetti’s nearly ready. Can you get the table?"
+
+Dinner was the usual mix of laughter, Max spitting out a pea he found offensive, and Lily telling us about a new friend at school. "Her name’s Chloe, and she has a guinea pig, and her mum drives a pink car!"
+"A pink car, really?" I asked, trying to sound interested.
+"Yes! I want a pink car!"
+"Maybe when you’re older," Claire said, winking at me over Lily’s head.
+
+After dinner, it was Lily’s turn for bath and bedtime. I usually do Max, but Claire had a pile of marking to get through for her Year 2 class. So Lily and I went upstairs. We talked about her Roman mosaic project, and she showed me some of her drawings. She's got such a creative imagination. Read her a chapter of Roald Dahl’s *Matilda*. She loves it. Tucked her in, gave her a kiss. "Love you, Daddy." "Love you too, sweet pea." Those moments, they make everything else worth it. The server crashes, the work stress, the financial worries, all of it.
+
+Downstairs, Claire was still hunched over her marking. I checked on Max, who was already out cold, sprawled in his cot, clutching his worn-out teddy bear. He makes these little snuffles when he sleeps, so endearing. I gave him a quick kiss on his forehead. Went to the fish tank, fed the fish their evening flakes. The neons shimmered under the blue light. It's oddly calming, watching them glide around. My little underwater world. My own personal therapy.
+
+Tried to relax for a bit. Caught up on the news – more depressing political stuff, soaring inflation, the usual. Did a quick tidy of the living room, put away Max’s train set. My back was really playing up by this point. Should have gone for a cycle today. I usually try to get out on the weekend, or an evening spin around Ally Pally, but this week has just been… packed. Photos, cycling, cooking – all my hobbies have been neglected. Even the camera hasn't come out of its bag in weeks.
+
+We watched some rubbish TV with Claire, one of those detective shows she likes. I drifted in and out of consciousness, my head feeling heavy. We talked a bit more about Portugal.
+"Maybe we could compromise?" Claire suggested. "Go for a week instead of two? Then maybe a long weekend somewhere closer in August?"
+"No, two weeks," I insisted. "We need a proper break. I’ll keep looking. I’ll stay up tonight if I have to, to find something. Before the prices completely explode."
+She just gave me a look that said, "Good luck with that, mate."
+
+Finally crawled into bed around 10:30 PM. Feeling utterly exhausted. Just as I was about to drift off, maybe dreaming about sunny beaches and no deadlines… *ping*. My phone. The server.
+
+So here I am. 1:53 AM. Still wide awake. Adrenaline crashing, leaving behind this hollow ache of exhaustion. The irony isn’t lost on me that I was just thinking about staying up to book flights, and instead I stayed up fixing a server. That’s my life, isn’t it? Responsibility. Always.
+
+The server is up, the world is saved, for now. But the thoughts just keep churning.
+Portugal. Need to book those flights. Tomorrow. Or later today. Must set a reminder.
+- Check Skyscanner again
+- EasyJet / BA / Ryanair
+- Lisbon / Faro
+- Specific dates – maybe push it back a week into July?
+- Consult Claire (obv.)
+
+And work. This server thing. We need better redundancy. Why did it just die like that? I’ll raise it with Richard on Monday. We need to invest more in our infrastructure, not just new features. Or I’ll be doing this every Friday night. My mild asthma usually acts up when I’m stressed or sleep-deprived, and I can already feel a slight tightness in my chest. And my back, oh my back. Seasonal allergies too, the pollen count has been high this week, and my eyes feel gritty.
+
+I should probably call Mum tomorrow, Janet. Haven’t spoken to her properly since last Sunday. She’ll ask about the kids, about work. I won’t tell her about the server. No point worrying her. She still misses Dad, George, a lot, especially on the weekends. Passed away in 2021, and it still feels raw sometimes. I miss him too. He would have found this whole tech thing hilarious. "What's a server, Ethan?" he'd say. "Is it like a fancy toaster?"
+
+My sister Hannah in Manchester, my brother Luke in Edinburgh – we’re all so spread out now. Maybe a big family gathering later in the year? Christmas in Bristol with Mum?
+
+Right. Gotta try and sleep. My head is pounding. This is the glamorous life of a Senior Software Engineer. Saving the world, one crashed server at a time, from my bed. Or my kitchen island, more accurately. Hope Claire doesn’t find this diary. She’d probably just laugh. Or give me that "I told you so" look. God, I love her. I really do.
+
+Good night, world. Or good morning, I guess. Please let Saturday be peaceful. No more pings. No more crashing servers. Just sleep. And maybe some cheap flights to Portugal.
+
+Ethan.
+1:59 AM. May 18th (technically 19th).
+London. Utterly exhausted.

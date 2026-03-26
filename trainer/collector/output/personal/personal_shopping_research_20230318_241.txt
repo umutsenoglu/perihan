@@ -1,0 +1,21 @@
+**2025-03-18. Tuesday.**
+
+Ugh. Another day, another mountain of JIRA tickets. This payment processing migration is going to be the death of me. James is pushing hard for that end-of-week deadline, and honestly, the dev ops team are swamped. Spent most of the morning with Priya debugging that weird latency issue in UAT
+**2025-03-18. Tuesday.**
+
+Ugh. Another day, another mountain of JIRA tickets. This payment processing migration is going to be the death of me. James is pushing hard for that end-of-week deadline, and honestly, the dev ops team are swamped. Spent most of the morning with Priya debugging that weird latency issue in UAT. Richard
+**2025-03-18. Tuesday.**
+
+Ugh. Another day, another mountain of JIRA tickets. This payment processing migration is going to be the death of me. James is pushing hard for that end-of-week deadline, and honestly, the dev ops team are swamped. Spent most of the morning with Priya debugging that weird latency issue in UAT. Richard keeps asking for updates on the "critical path dependencies" like I have a crystal ball. My back is killing me, probably from hunching over this screen for 10 hours straight yesterday. Need to do some stretches later, maybe try that new cycling route this weekend if the weather holds. Allergies are already starting to kick in too – bloody London plane trees.
+
+Mum called again lunchtime. Classic Janet. After all the back and forth for weeks – 16-20 April, then 15-21 because "Luke said come earlier," then back to 16-19 for her doctor's on Monday 21st – I finally booked the easyJet flights on the 12th. Bristol to Edinburgh, departing 2025-04-16, returning 2025-04-19. Total cost £134. Booking ref EZY-8847291. It was such a relief to just get it done. Remembered Claire laughing when Mum said the Ryanair one looked cheaper *after* she’d explicitly refused it because it went via Stansted. "I'm not going through London," she said. Bless her.
+
+Anyway, today she called to ask if she can bring a small suitcase *and* a handbag as hand luggage. Like, *literally* minutes after I’d messaged her a screenshot of the easyJet baggage policy. Had to explain it again. She just gets so confused with anything online. Then she asked me to print the boarding passes for her, "because I don't trust phone tickets." She thinks I can magically print them from here and send them by carrier pigeon, I swear. I told her I’d email them to Hannah, since Hannah’s picking her up from Edinburgh airport anyway. She just said, "Oh, alright then." Like it was my idea.
+
+Lily had a note in her bag from Mrs. Henderson about a school trip next month. Need to check consent forms. And Max apparently painted himself green at nursery again. Little monkey. Claire looked exhausted when she got home. Think I'll cook something easy tonight, maybe that prawn linguine. Haven't checked the fish tank in a couple of days either, hope the gouramis are still happy.
+
+This whole flight thing just reminds me how much Dad handled for Mum. She’s been so lost since he passed in 2021. Just another thing to juggle with work and the kids. Need to remember to breathe. And maybe invest in one of those electric cars soon. Could do with less stress, not more.
+
+**To-do (personal):**
+- [x] Reply to Mum about boarding passes (email Hannah)
+- [ ] Check Lily

@@ -1,0 +1,310 @@
+**Workout Log & Personal Notes – Ethan Marsh**
+
+**Monday, 15 September 2025**
+
+6:00 AM – Alarm. FFS. Why does 6 am hit harder on a Monday than any other day? Another week. Already thinking about that sprint review on Friday. My eyes feel gritty. Max was up twice last night – just restless, no fever thankfully. Claire was a saint, handled both times. I just groaned. Bad start to the week already feeling like a selfish git.
+
+Workout: Gym – Chest & Triceps
+Warmup: 10 mins elliptical (HR up to 130)
+*   Bench Press: 3x8 @ 70kg. Last set was a grind. Form felt a bit off. Right shoulder twinge. Not good. Maybe too much keyboard warrior-ing today.
+*   Incline Dumbbell Press: 3x10 @ 22kg. Felt better, good squeeze at the top.
+*   Cable Crossover: 3x12. Light weight, focusing on contraction.
+*   Overhead Triceps Extension (cable): 3x12.
+*   Skullcrushers (EZ bar): 3x10. Had to drop the weight a bit. Elbows are getting cranky.
+*   Push-ups: 3 sets to failure (15, 12, 10).
+
+Cardio: 15 mins steady state on stationary bike (HR 140-145). Not really feeling it today. Just wanted to get out.
+
+Notes:
+Back felt okay during the workout, which is a minor miracle. The stretches Dr. Khan gave me seem to be helping, at least for now. Still, need to be mindful of deadlifts tomo. Maybe switch to RDLs for a bit. The chest pump was decent but I'm just… flat. Drained before the day even properly starts.
+
+Fish tank algae problem. Green dust algae all over the front glass. It's been building up for a few days but this morning it’s properly noticeable. Looks awful. *Need to check water parameters tonight.* Especially nitrates and phosphates. Could be overfeeding, but I'm pretty strict with that. Or maybe just too much light? Timer set for 8 hours, usually fine. Substrate looking a bit dark too. Ugh. Just another thing on the mental to-do list. The Neons don't seem bothered, still schooling tightly, but the Pearl Gourami looks a bit… sluggish?
+
+7:45 AM – Quick shower, inhaled a protein shake. Lily was already at the breakfast bar, diligently drawing something elaborate. Claire was making toast for Max who was still rubbing sleep from his eyes. "Morning, slugger," she said, giving me a quick peck. Max just grunted and tried to steal Lily's crayon. Typical.
+
+The nursery fees. That conversation with Claire last night still buzzing. Little Stars emailed on Friday – a 7% increase starting next term. Seven percent! For Max, that’s another £70 a month. Adds up. We’re already stretching it. Claire’s teacher salary, my software engineer pay… it’s good, but London good is different. We barely save anything meaningful after mortgage, bills, childcare, and just… existing. Claire mentioned looking at alternatives, maybe a childminder. But Max loves Little Stars. He’s made his little friends. And the routine is good for him. Is it selfish to want that stability for him even if it means us eating beans on toast for a month? We need to sit down properly and go through the budget again. Maybe cut back on takeaways? My photography gear? My bike upgrades? Fuck.
+
+8:30 AM – Out the door. Kissed Claire and the kids goodbye. Traffic on the A1 was already building. Podcasts for the commute. Listened to that new episode of "The Daily" – something about US politics, felt miles away from my immediate London money worries. James pinged me about the sprint backlog. Already.
+
+Work:
+*   Stand-up: James (PM) looking stressed. Priya (QA) found a bug in the payments flow again. Richard (backend) is blocked on a dependency. My own tickets seem manageable for now. Working on that new API integration for the partner portal. It's fiddly. Lots of edge cases.
+*   Code review with Richard: His new service looks solid. Gave him a few suggestions on error handling. He’s sharp, good to work with.
+*   Dev meeting: Discussed options for migrating our legacy auth system. Big project. Not looking forward to the headaches. Another several months of "technical debt" talks.
+
+Lunch: Pret sandwich, ate at my desk. Tried to focus on the API docs.
+
+Afternoon: Got stuck on a tricky data mapping issue. Spent a good hour just staring at JSON payloads, tracing through logs. Felt that familiar dull ache starting in my lower back from sitting so long. Stood up, stretched. Did a few cat-cow poses in my office chair (discreetly, hopefully).
+
+6:15 PM – Picked up Max from nursery. He was covered in paint and beaming. "Daddy! Look! A dinosaur!" He showed me a blob of green and yellow. My heart just melts when he’s happy like that. Smallest joys.
+6:45 PM – Home. Claire and Lily were already there. Lily was doing her homework, meticulously writing out "The quick brown fox..." in her neatest handwriting. Mrs. Henderson is a stickler for presentation.
+7:00 PM – Dinner: Claire made a fantastic chicken and broccoli stir-fry. So good. Max ate his, then tried to feed a piece of broccoli to his toy dinosaur. Lily told us about a new girl in her class.
+7:45 PM – Lily to bed, story time. Max played with his cars.
+8:30 PM – Max to bed, a slightly longer battle tonight. He was still buzzing from nursery.
+
+Evening:
+*   Finally got round to the fish tank. Tested the water: pH 7.2 (normal), Ammonia 0 (good), Nitrite 0 (good). *Nitrates: 40 ppm*. Shit. That’s high. Usually aim for <20. *Phosphates: 0.5 ppm*. Also high. No wonder the algae is rampant. Definitely overfeeding or not enough water changes. Or both.
+    *   **Action:** 50% water change immediately. Scraped the front glass. Looks better already.
+    *   **Action for tomo:** Reduce feeding by half. Add some Seachem Purigen to the filter for nutrient export. Maybe shorten the light cycle by an hour.
+    *   **Observation:** Pearl Gourami seems a bit more active after the water change. Good.
+
+*   Sat on the sofa with Claire. We talked about Max's nursery again. "I just don't know, Eth. We can't keep absorbing these increases. Maybe we should seriously look at Sarah's childminder? She raves about her."
+    *   I nodded. "I know. It's just… he's so settled. And changing might mean he gets upset again, like when he first started."
+    *   "He's resilient, you know that. He’d adjust. We'd save almost £400 a month."
+    *   £400 a month. That’s huge. That’s a chunk of the mortgage. Or a proper saving for the future. Or even just a bit more breathing room.
+    *   "Okay," I said. "Let's call her tomorrow. Sarah's childminder. See if she has space, what her rates are. No harm in looking."
+    *   Claire squeezed my hand. "Thanks, Eth. I know it’s a big deal. Just feels like we’re always playing catch-up."
+    *   Yeah, always playing catch-up. Feels like the story of our lives sometimes.
+
+10:30 PM – Bed. Read a few pages of "Project Hail Mary" (fantastic so far). Mind still buzzing with numbers and algae and data mappings. Sleep, please.
+
+**Tuesday, 16 September 2025**
+
+6:00 AM – Alarm. Less of a shock today. Max actually slept through! Small mercies. Woke up feeling slightly more refreshed.
+
+Workout: Gym – Legs & Shoulders
+Warmup: 10 mins stationary bike. Foam rolled my hamstrings and glutes. My lower back definitely prefers foam rolling.
+*   Squats (Goblet): 3x12 @ 20kg. No barbell today. Back felt a bit iffy with the idea of heavy back squats. Goblet squats felt good though, really focused on depth and glute activation.
+*   Leg Press: 3x10 @ 100kg. Standard.
+*   Leg Extensions: 3x12.
+*   Hamstring Curls: 3x12.
+*   Overhead Press (Dumbbell): 3x10 @ 18kg. Felt strong here.
+*   Lateral Raises: 3x15.
+*   Face Pulls (cable): 3x15. Good for shoulder health, apparently. My physio swears by them.
+
+Cardio: 20 mins walking on treadmill (inclined walk). Listened to a podcast about EVs. The Polestar 2 looks pretty sharp. Still torn between that and a Model 3. Charger installation at home would be a pain, but the fuel savings would be huge over time. Plus, ULEZ. The Golf is getting old.
+
+Notes: Good session today. Back felt stable. Proud of myself for not pushing the squats and listening to my body. Consistency over ego. Always.
+
+7:40 AM – Home. Lily practicing her recorder – sounds like a dying cat. Bless her. Claire was on the phone, probably with her mum. Max was meticulously sorting his Lego by colour. "He's having a quiet morning," Claire mouthed. "Thank god."
+
+8:30 AM – Commute. More podcasts. Heard about a new phishing scam doing the rounds, reminded me to tell Mum to be extra careful with emails.
+
+Work:
+*   Stand-up: Priya found *another* bug. This time in the reporting dashboard. James looks like he’s aged 5 years overnight. My API integration is going well, finished the first draft of the user story for it.
+*   Meetings:
+    *   Project sync with the commercial team. They're keen for a faster rollout. Typical. My team is already stretched. Pushed back gently. "Quality over speed, guys. No point rushing something that breaks." James backed me up, thankfully.
+    *   1:1 with James. He’s concerned about Priya's bug-finding streak – not that she's finding them, but that the dev team is introducing so many. Asked me to do some deeper code reviews. Also, he brought up the junior dev, Ben. "He's struggling a bit, Eth. Can you mentor him more closely? Maybe pair with him on some tickets?" Sure, more work for me. But I remember being a junior dev. It’s tough. Agreed.
+
+Lunch: Leftover stir-fry. Actually quite good cold.
+
+Afternoon: Paired with Ben for an hour. He’s trying to fix a complex caching issue. His approach was a bit convoluted. Walked him through a simpler way using a decorator pattern. He seemed to grasp it. Good kid, just needs guidance. Felt a pang of nostalgia for my early coding days. Simpler times. Now it’s all microservices and kubernetes and cloud-native-whatever.
+
+5:30 PM – Finished up a bit early to head home. Claire messaged: "Got Sarah's childminder's number. She's called Maria. Sounds lovely. Space for Max, too. Emailing you her rates now. Big difference!" My stomach did a little flip. Good big difference or bad big difference? The money part is good, but the emotional part…
+
+6:00 PM – Home. Lily was doing her reading. Max was building a tower out of cushions. The usual chaos. Claire greeted me with a look that said "stressed but relieved."
+"The rates from Maria are really good," she said quietly while Lily was absorbed in her book. "Almost £450 less than Little Stars for Max."
+My jaw dropped. £450. A month. That's incredible. "Wow. That's… that's amazing. But… what about Max?"
+Claire sighed. "I know. It's the only thing stopping me from just signing him up tomorrow. She only takes 3 kids, all mixed ages. Max would be the youngest. And it's a bit further away, so the commute for drop-off/pickup is maybe 15 minutes longer each way."
+"Okay. Let's talk about it properly tonight. What are the pros and cons?"
+"Tonight. After they’re in bed."
+
+7:00 PM – Dinner: Tacos. Lily loaded hers with cheese and salsa. Max just ate the mince and some corn. He still won't eat anything green.
+7:45 PM – Lily bedtime routine. Read her a chapter of Harry Potter. She's loving it.
+8:30 PM – Max bedtime. A bit easier tonight. He was tired after his cushion tower adventures.
+
+Evening:
+*   Sat down with Claire. We made a list:
+    *   **Little Stars Nursery:**
+        *   Pros: Max loves it, settled, friends, good facilities, close, structured learning.
+        *   Cons: EXPENSIVE (esp. with new increase), 20+ kids, less individual attention.
+    *   **Maria (childminder):**
+        *   Pros: Much cheaper (£450/month saving!), smaller group (3 kids), home environment, flexible hours (Claire liked this idea for school holidays).
+        *   Cons: Max would be new, new environment, new people, further commute, less formal "learning" (but more play-based which could be good too).
+*   Claire's mum, Janet, called. Quick chat. She's fine. Still complaining about her neighbour's hedge. Told her about the nursery situation. She just said, "Do what's best for you two, love. Max will be fine wherever he is, as long as he's loved." Wise words from Mum, as always.
+*   The fish tank: Parameters were better after the water change. Nitrates down to 20 ppm. Phosphates still 0.3 ppm. Added the Purigen. Shortened light cycle by 30 mins. Fingers crossed.
+
+The nursery decision weighs heavily. It’s not just money, it's Max’s happiness. His sense of routine. But £450 a month could mean so much. A decent family holiday next year? Or actually building up an emergency fund. We have to make a decision by the end of the week, Little Stars need to know if he’s continuing.
+
+10:45 PM – Bed. My head is spinning. Why is parenting so many financial decisions? Used to think it was just "love them and feed them." Turns out it’s "love them and feed them and pay for everything always forever and also worry about their emotional development."
+
+**Wednesday, 17 September 2025**
+
+6:00 AM – Alarm. Another decent night’s sleep. Max woke once for water, but went straight back down. Feeling cautiously optimistic today.
+
+Workout: Gym – Back & Biceps
+Warmup: 10 mins elliptical. More foam rolling, especially my lats and upper back.
+*   Pull-ups: 3 sets to failure (8, 6, 5). Still trying to get back to my pre-George’s passing strength. Grief hit my fitness hard.
+*   Bent-Over Rows (Barbell): 3x8 @ 50kg. Felt good. Kept my back straight, good activation.
+*   Lat Pulldown (cable): 3x10.
+*   Seated Cable Rows: 3x10.
+*   Dumbbell Curls: 3x10 @ 15kg.
+*   Hammer Curls: 3x10 @ 15kg.
+
+Cardio: 15 mins step machine. Listened to a tech podcast. Something about AI in healthcare. Fascinating and terrifying in equal measure.
+
+Notes: Solid session. Back felt strong, no twinges. The stretching and mindful form seems to be paying off. Energy levels were good. Maybe I'm actually getting over this mental hump.
+
+7:45 AM – Home. Max was unusually quiet, playing with his cars again. Lily was reading to him. Claire was sorting out school bags. "Morning, super dad," she said, winking. "Max was actually quite easy this morning." Nice.
+
+8:30 AM – Commute. Called Hannah, my sister in Manchester. She's good, busy with her new marketing job. Asked about the kids. Told her about the nursery fees dilemma. "Oh god, tell me about it," she said. "Childcare is a scam. It's like paying a second mortgage. You've got to do what's best for your family's financial stability, Eth. Max will adapt." It's good to hear it from someone else, even if it doesn't make the decision easier. She also reminded me about Mum's birthday next month. "Don't forget the card, she'll send you an invoice." Ha. I always forget.
+
+Work:
+*   Stand-up: Priya found *another* bug. But this time, it was a data integrity issue caused by an external dependency. Not our fault directly! Small victory for dev team morale. James looked slightly less stressed.
+*   Paired with Ben for another hour. We were working on a logging framework. He’s definitely picking things up quickly. Good to see.
+*   Code review for Richard. Clean code as usual. Approved it with minor comments.
+*   Got my API integration pushed to UAT. Fingers crossed for the QA team.
+
+Lunch: Salad from the local deli. Trying to be healthier.
+
+Afternoon: Deep dive into the legacy auth system. So much spaghetti code. Found a few potential vulnerabilities. Need to schedule a separate meeting about this with James and the security team. This is a ticking time bomb.
+
+5:45 PM – Left work. Felt productive today. Even the commute was smooth.
+
+6:15 PM – Home. Claire was looking at listings for a used EV online. "Look at this Kona, Eth. Decent range, 2022 plate. Only £22k." She’s serious about this. And I like the idea. Lower running costs, less pollution.
+7:00 PM – Dinner: I made my famous lentil shepherd's pie. Lily picked out the carrots. Max surprisingly ate most of his. Claire complimented my cooking. Always a win.
+7:45 PM – Lily story time. She asked about grandpa George tonight. "Was Grandpa George a good swimmer, Daddy?" Made me pause. "He was the best, darling. He taught me to swim." Miss him. Still.
+8:30 PM – Max to bed. Reading a tractor book for the hundredth time.
+
+Evening:
+*   Fish tank: Algae is noticeably less. Front glass still clean. Nitrates still 20 ppm. Phosphates down to 0.2 ppm. Purigen is doing its job. Good. Happy fish, happy life (for me).
+*   Claire and I discussed Maria vs. Little Stars again. We're leaning towards Maria. The financial relief is just too significant to ignore. "We can use the savings to get Max some really good educational toys," Claire suggested. "And we can spend more quality time with him in the evenings."
+*   "Okay," I said, a knot in my stomach. "Let's call Little Stars tomorrow and give notice. And then call Maria and confirm."
+*   "Are you sure?" Claire asked, her eyes searching mine.
+*   "Yeah. It feels… responsible. And we can make it work for Max. He'll be fine. He’s a resilient little guy." It’s still a huge leap of faith, but the numbers just make sense.
+
+10:30 PM – Bed. Finished "Project Hail Mary." So good. Recommend. My mind feels a bit lighter now that the nursery decision is more or less made. Still a pang of guilt, but it’s mixed with relief.
+
+**Thursday, 18 September 2025**
+
+6:00 AM – Alarm. Urgh. Woke up with a dull ache in my lower back. Must have slept funny. The decision to call Little Stars is sitting heavy.
+
+Workout: Active Recovery – Cycling
+Warmup: Dynamic stretches, focus on hip mobility.
+*   30 mins moderate pace on the Peloton. Resisted the urge to push it hard. Just wanted to get the blood flowing. My lower back felt a bit stiff at first, but loosened up after 15 minutes. Good.
+
+Notes: Light session. Focused on mobility and gentle movement. Listened to a cycling podcast about gravel biking in the Peaks. Tempted to plan a trip with Luke sometime next year. My old Cannondale is getting restless.
+
+7:45 AM – Home. Max was already dressed, bouncing around, demanding a biscuit. Lily was carefully plaiting her doll's hair. Claire was sorting out Max's bag for nursery. "I'll call Little Stars this morning," she said, a slight tremor in her voice. "And then Maria." I gave her a hug. "It’s the right thing, honey."
+
+8:30 AM – Commute. Felt a bit sluggish. The thought of Max leaving Little Stars feels… final. Like a chapter closing. But a financially sensible chapter.
+
+Work:
+*   Stand-up: James looked tired. "Another production issue overnight, guys. Not critical, but still." We're stretched. My API integration is still in UAT, no major bugs reported yet, which is good.
+*   Mentored Ben for an hour. He's struggling with a database query performance issue. Walked him through indexing and query optimization. He’s bright, just needs more practical experience.
+*   Met with the security team about the legacy auth system. They were horrified. "Ethan, this needs to be prioritised. Immediately." James is going to have to find some resource for it. It's a huge undertaking. Another project on top of everything else.
+
+Lunch: Leftover lentil shepherd's pie. Not as good cold.
+
+Afternoon: Started planning the legacy auth migration. It's a massive architectural shift. Drew up some high-level diagrams. This is going to be complex. The kind of challenge I usually enjoy, but right now, it just feels like more weight. My back pain is definitely worse.
+
+5:30 PM – Left work. My lower back is properly complaining now. Maybe I overdid it on Tuesday, even if it felt okay then. Or maybe it's the stress. Probably both.
+
+6:00 PM – Home. Claire was making dinner. Max was showing Lily a drawing of a rocket ship. Lily was patiently explaining about gravity. "They know," Claire said, a bit choked up. "I called Little Stars. They were… understanding. Said they’d miss him. And I spoke to Maria, Max starts in October."
+I hugged her. "It's done then." Relief washed over me, immediately followed by that familiar guilt. Max is oblivious right now. He’ll miss his friends.
+"I took Lily to Mrs. Henderson's after school," Claire added. "She had a little chat about Lily's reading. Says she's doing really well." Good to hear.
+
+7:00 PM – Dinner: Baked salmon, potatoes, and green beans. Max surprisingly ate the green beans! Small victory.
+7:45 PM – Lily bedtime. Read "The Worst Witch." She loves the idea of magic.
+8:30 PM – Max bedtime. He asked for a story about his friends at nursery. My heart broke a little. I made up a story about him and his friend Leo going on an adventure. He fell asleep eventually.
+
+Evening:
+*   Fish tank: Algae almost gone. Water parameters looking good. Nitrates 15 ppm, Phosphates 0.1 ppm. The Purigen and reduced feeding really worked. Good. One less thing to worry about.
+*   Tried to do some photography editing – a few shots from our trip to Richmond Park last month. But my back was too sore to sit for long. Stretched on the floor for 10 minutes. Felt a little better.
+*   Claire and I discussed the EV again. "Let's schedule a test drive for that Kona next Saturday," she said. "If it means we can save £450 on childcare AND save on fuel, we have to at least try." Agreed.
+
+10:00 PM – Bed. Took an ibuprofen for my back. The nursery decision is made. Max will transition. It’s hard, but it’s done. One step at a time.
+
+**Friday, 19 September 2025**
+
+6:00 AM – Alarm. Back still stiff, but not as bad as yesterday. The ibuprofen helped.
+
+Workout: Gym – Full Body (light)
+Warmup: 10 mins cross-trainer, emphasis on gentle movement for my back.
+*   Deadlifts (Romanian): 3x8 @ 40kg. Very light, focus on form and hamstring stretch. Felt okay, no sharp pain. Good.
+*   Push Press (Dumbbell): 3x8 @ 15kg.
+*   Inverted Rows: 3x10.
+*   Plank: 3x60s. Core work, essential for the back.
+*   Bird-dog: 3x10 each side.
+
+Cardio: 10 mins steady row.
+
+Notes: Really focused on listening to my body today. Didn't push anything. Just wanted to get movement in. Lower back feels a bit better for it.
+
+7:45 AM – Home. Lily already dressed, arguing with Max about whose turn it was on the swing in the garden. Claire was making coffee. "Morning, Eth. You look a bit more human today."
+"Barely. Back's still complaining."
+"Did you take your pills?"
+"Yeah."
+
+8:30 AM – Commute. Friday commute. The traffic always feels worse on a Friday. But the weekend is almost here.
+
+Work:
+*   Stand-up: James looked exhausted. The overnight production issue was more persistent than initially thought. Richard spent half the night debugging. We’re all a bit frazzled.
+*   Sprint Review: Presented my API integration. Went well, stakeholders seemed happy. Priya confirmed no major bugs found in UAT. Good. Small wins.
+*   Met with James about the legacy auth project. We mapped out a rough timeline. It's going to be a 6-month beast, minimum. He wants me to lead the technical side. Exciting, but also… so much work.
+
+Lunch: Fish and chips from the place down the road. Friday treat. It was glorious.
+
+Afternoon: Started drafting a technical spec for the auth migration. Getting into the details, architecting the solution. This is the stuff I really enjoy, when I can actually *build* things. The problem-solving, the design. It's a good counterpoint to the family stress and back pain.
+
+5:00 PM – Finished work. Logged off. The relief of Friday evening.
+
+5:45 PM – Picked up Max. He was a bit subdued today. "My friend Leo went home early," he explained. My heart. "You'll see Leo another time, mate."
+6:15 PM – Home. Claire and Lily were already back. Lily was excitedly telling us about a painting she did in art class.
+7:00 PM – Dinner: Pizza night! Family tradition. We ordered from our usual place. Max had pepperoni, Lily had ham and pineapple. I had a bit of both.
+7:45 PM – Lily bedtime. She wanted an extra story tonight. "Because it's Friday, Daddy!" Can't argue with that.
+8:30 PM – Max bedtime. A bit tearful tonight. "I'll miss my friends, Daddy," he whispered. My stomach clenched. "I know, mate. But you'll make new friends at Maria's. And you can still see Leo at the park sometimes." He nodded, snuggled into me. This is going to be harder for him than I thought.
+
+Evening:
+*   Fish tank: Looking pristine. No algae. Happy fish. One constant.
+*   Sat with Claire. We watched a terrible rom-com. It was nice to just switch off. "It's a big change, isn't it?" she said, referring to Max.
+*   "Yeah," I replied. "But we'll make it work. He’s tough. And we'll be there for him."
+*   "And the money will help," she added. "So much."
+*   "So much."
+*   My back is still a bit stiff, but manageable. The thought of a weekend off work is a good painkiller.
+*   Luke called from Edinburgh. He's coming down next month for Mum's birthday. Good. A family get-together will be nice.
+
+10:45 PM – Bed. Exhausted, but in a good way. The week is done. Max’s future is set in motion. The auth migration is planned. The fish tank is clean. Small victories. Big decisions. Always.
+
+**Saturday, 20 September 2025**
+
+7:30 AM – Woke up naturally. Bliss. No alarm. Back still a little stiff, but nothing major. Max was already up, watching cartoons downstairs with Lily. The sound of happy kids on a Saturday morning.
+
+Workout: Family Cycle
+*   Took Lily and Max out on their bikes. Max on his balance bike, Lily on her proper pedal bike. Cycled around Hampstead Heath for about an hour. Max loved it, Lily loved zooming ahead.
+*   My lower back definitely preferred the gentle movement. Fresh air was good.
+
+Notes: Not a "workout log" in the traditional sense, but still active. Family time is important. My bike definitely needs a service. Chain is clunky.
+
+Morning:
+*   Breakfast: Pancakes! My specialty. Everyone loaded up on syrup.
+*   Supermarket run: Claire, Lily, and I went. Max stayed home with his iPad (a rare treat). Stocked up for the week. Claire was very mindful of the budget. No impulse buys. "We're saving for Max's future," she reminded me, gently.
+*   Fish tank maintenance: Full gravel vacuum, 30% water change, filter clean. Everything looking good. The Neons are schooling beautifully.
+
+Afternoon:
+*   Park trip: Max needed to burn off some energy. We went to the local park. Swings, slide, running around. He found some new kids to play with. Always makes me wonder about the nursery decision.
+*   EV test drive research: Claire and I spent an hour looking at different EV models for next week's test drive. The Kona and the Model 3 are still top contenders. Also looked at the MG4. Reviews look surprisingly good for the price.
+*   A friend, Dave, from my cycling club messaged me. He’s got an old film camera he wants to sell. A Contax G2. Legend. Price seems good. My photography hobby is calling. But do I *need* another camera? Probably not. Do I *want* one? Absolutely.
+
+Evening:
+*   Dinner: Claire made a fantastic roast chicken. Max even ate some carrots. Miracles happen.
+*   Kids to bed early after a busy day.
+*   Claire and I watched a proper movie, not a rom-com. Something dark and Danish. Good.
+*   Talked more about Max. "He seemed so happy with those kids in the park today," Claire mused. "He'll be fine at Maria's. He adapts so well." I hope so. My heart still aches a bit.
+*   Lower back still a bit stiff. Did some gentle stretches. Might need to see Dr. Khan again soon if it doesn't ease off. Seasonal allergies are starting to kick in too – my nose is a bit runny, and my eyes are itchy. Ugh.
+
+10:30 PM – Bed. Felt like a good, productive, family-oriented day. The weight of the nursery decision is starting to settle into a new normal.
+
+**Sunday, 21 September 2025**
+
+8:00 AM – Woke up. Last day of the weekend. That familiar Sunday dread for the week ahead, but mixed with a sense of accomplishment. Back feels much better today. Thank god.
+
+Workout: Rest Day
+*   Just some light stretching and mobility work. Focused on my hips and hamstrings.
+
+Morning:
+*   Breakfast: Cereal and fruit. Lazy Sunday.
+*   Family outing: We went to the Science Museum. Lily loved the space exhibits. Max was fascinated by the old steam engines. It’s expensive for parking and food, but worth it for their faces.
+*   Lunch: Sandwiches we packed from home. Saved some money. The new budget-consciousness is already ingrained.
+
+Afternoon:
+*   Home. Kids played in the garden. Max tried to build a 'worm hotel' in the mud. Lily was reading her book in the sun.
+*   Claire and I planned out the week ahead. Work schedules, school pickups, Lily’s after-school club, Max’s last week at Little Stars. It's going to be a busy one.
+*   Checked my email. James sent an update on the auth migration project. Looks like it's officially on the roadmap for Q4. I need to get ready.
+*   Thought about Dave's Contax G2. It's a gorgeous camera. But the kids' needs first. Maybe after we've paid off some more of the mortgage. Or when Max's childcare is truly stable. Selfish to even think about it right now.
+
+Evening:
+*   Dinner: I cooked a big pasta bake. Always a crowd-pleaser.
+*   Kids to bed. Max was a bit sad tonight, knowing it’s his last week at Little Stars. "I'll miss my teachers," he said, tearfully. Claire comforted him. "We'll go visit them sometimes, darling." My heart just aches. We made the right decision financially, but emotionally, it's tough.
+*   My asthma felt a bit tight tonight, probably the seasonal allergies flaring up again. Had to use my inhaler. Hate that feeling.
+
+10:00 PM – Bed. Read some technical docs for the auth migration. My mind is already spinning with the architecture. Big week ahead. Big changes for Max. Big challenges at work. But we’ll face them. We always do. Feeling tired but ready. Just need to keep moving forward. One sprint, one family decision, one day at a time.

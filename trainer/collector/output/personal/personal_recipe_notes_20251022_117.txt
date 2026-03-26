@@ -1,0 +1,498 @@
+**Ethan Marsh's Recipe & Life Notes - October/November 2025**
+
+**2025-10-22 - Wednesday**
+
+Right, so that Moroccan Lamb Tagine. Been thinking about it since Claire mentioned wanting something 'different' last week, something hearty now the evenings are drawing in. Ottolenghi's *Simple* book has a good version, the one with apricots and preserved lemon. Always a winner, and relatively low fuss once it’s in the oven.
+
+*   **Ingredients Checklist for Tagine:**
+    *   Lamb shoulder, diced (need about 1kg) – *Butcher on Saturday? Or Tesco online delivery, but quality…*
+    *   Tinned chopped tomatoes (2 cans)
+    *   Chickpeas (1 can, drained)
+    *   Dried apricots (approx 100g)
+    *   Preserved lemons (2-3 halves, chopped) – *Check cupboard, think we have some from that chicken dish in August.*
+    *   Onions (2 large)
+    *   Garlic (4-5 cloves)
+    *   Ginger (fresh, thumb-sized piece)
+    *   Ras el hanout (2 tbsp) – *Crucial. Running low, add to shop list.*
+    *   Ground cumin, coriander, turmeric (1 tsp each)
+    *   Paprika (smoked, 1 tsp)
+    *   Saffron (pinch) – *Optional, but good if we have it. Probably not.*
+    *   Chicken stock (500ml)
+    *   Couscous/Rice for serving
+    *   Fresh coriander/parsley for garnish
+
+*   **Method (Mental rehearsal):**
+    1.  Brown lamb in batches. Set aside.
+    2.  Sauté onions, garlic, ginger.
+    3.  Add spices, toast for a minute.
+    4.  Return lamb, add tomatoes, chickpeas, apricots, preserved lemon, stock. Bring to simmer.
+    5.  Cover tightly. Oven 160C for 2.5-3 hours until tender.
+    6.  Check seasoning, serve with couscous.
+
+Okay, planning out a meal felt good for about ten minutes. Then that *thing* flashed back. The letter. Helen Crawford. Actually landed this morning, mixed in with the usual junk mail and Lily's school newsletter. "Notice of Intent to Commence Legal Proceedings." An actual court date. My stomach dropped like a stone reading that. Claire found it when she got home, after I'd already read it three times trying to make sense of it. She was incandescent.
+
+"This is ridiculous, Ethan! She's completely lost her mind!" she kept saying, pacing the kitchen. I just felt… numb. And utterly drained. This has been going on for two years now, the fence. Or what Helen *claims* is *our* fence, encroaching on *her* land. The previous owners put it up almost twenty years ago, and we’ve lived here for eight. Never a problem until Helen and Mark moved in next door five years ago. First, it was the "overhanging branches" from our acer, then the "noise" from the kids, then the "view obstruction" from the shed. Now this. The fence. The bloody six-foot panel fence that separates our gardens.
+
+She's trying to claim a strip of land, maybe a foot wide, along the entire length of the boundary. Says the original survey when she bought the house shows it. We have our own survey, from when we bought. It shows it's ours. It's a classic neighbour dispute, but she's taken it to a whole new level.
+
+Work was a blur. James (my counterpart on the payments migration project) sent another 'urgent' email about the API docs for the legacy system. Still finding edge cases with the integration. It's like peeling an onion, every layer reveals another problem. Richard (my manager) wants an update by end of day. There's no way I'll have a coherent one. Just a list of new issues. The deadline for the first phase is next Friday, and we're not even close to UAT readiness for the merchants. The stress is insane. My back's screaming from hunching over the keyboard for 10 hours straight. Need to stretch more. And stop slouching. Claire keeps telling me.
+
+Lily was quiet at breakfast. Said Mrs. Henderson gave them a big project on local history. Probably tired, or intimidated by the scope. She gets like that. Max, on the other hand, was full of beans, covered himself in porridge again. Classic Max. I think he thinks it’s face paint. Claire had to wrestle him into his nursery clothes. I barely made it to my stand-up.
+
+Need to call Mr. Davies' office tomorrow morning. He was our solicitor when we bought the house. Maybe he still has the original deeds/survey info on file. What a mess. This is going to cost a fortune, I can feel it. Just what we need, with the mortgage payment going up next year and Max starting primary school.
+
+Did I remember to feed the tetras this morning? Yes, just before Lily’s meltdown over her hairband. The Albino Corydoras seem happy enough, sifting through the sand. A small, peaceful ecosystem, utterly oblivious to human nonsense. Wish I could be a fish sometimes.
+
+**2025-10-23 - Thursday**
+
+*   **Recipe Note (Lunch Prep Idea): Lentil Soup**
+    *   Been thinking about more economical lunches lately, especially with the potential solicitor fees looming. Lentil soup is cheap, hearty, and freezes well.
+    *   *Ingredients:* Red lentils, carrot, celery, onion, garlic, vegetable stock, tin of chopped tomatoes, bay leaf, dash of smoked paprika.
+    *   *Method:* Sauté veg, add lentils, stock, tomatoes, seasoning. Simmer until lentils are soft. Blend some of it for creaminess if Lily might eat it. Max definitely won't. Claire would probably like a bit of chilli in hers.
+    *   *Action:* Check pantry for lentils. Add to next week's shopping list.
+
+Woke up feeling like I'd slept on a bed of nails. That letter is just… hanging over everything. Claire was already up, making tea, looking equally grim. We talked, or rather, we went over the same ground again. "What right does she have? We've lived here for eight years! It's our fence, our land!" Her frustration is palpable. And mine. But also a deep weariness. This kind of petty dispute, escalated to this level, it's just draining.
+
+I managed to call Mr. Davies' office at 9:05 AM. Spoke to a new junior paralegal, who sounded a bit overwhelmed. Explained the situation. She said Mr. Davies is in court all day but she'd flag it for him to call me back tomorrow. Asked me to email over the details of the letter from Helen, plus any previous correspondence. I don't even know where all that stuff is. The old files are probably in a dusty box in the loft, under Lily's old baby clothes and my photography gear. Great. Another task for a weekend I don't have.
+
+Work was relentless. The payment gateway migration is hitting snag after snag. Spent the entire morning debugging a race condition in the async transaction processing module. Priya (one of the junior devs) was struggling with it, so I took it on. Ended up finding a subtle concurrency bug that only manifested under specific load conditions. Felt good to squash it, but it's like plugging one hole only for three more to appear. James messaged me on Teams at 5:30 PM, asking if I'd "had a chance to look at the merchant config schema validation yet." No, James, I've been wrestling with a ghost in the machine all day. Told him I'd pick it up tomorrow.
+
+Got home late. Claire was understandably frazzled. Max had apparently painted the kitchen floor with finger paint during "creative time" after nursery. Lily had a minor meltdown about her local history project – she's convinced her chosen topic (the old Hornsey waterworks) is "boring" and "everyone else has better ones." My back was screaming.
+
+We ordered a pizza. Didn't even pretend to cook. Max inhaled his pepperoni. Lily picked at hers. Claire and I barely spoke beyond the practicalities of dinner and bedtime. The elephant in the room was the fence, stomping around. I went to bed feeling utterly defeated.
+
+The tropical fish tank offered a moment of calm. The Neon Tetras darted through the plants, the Cherry Barbs looked vibrant. Did a quick water parameter check – ammonia zero, nitrites zero, nitrates low. All good. At least something in my life is stable and predictable.
+
+**2025-10-24 - Friday**
+
+*   **Recipe Note (Weekend Baking): Sourdough Starter Feed/Maintenance**
+    *   Been neglecting the starter (named "Bubbles") for a week. Needs a good feed. Want to try making a sourdough loaf this weekend, or at least some crumpets.
+    *   *Ratios:* 1:2:2 (starter:water:flour). Usually 50g starter, 100g warm water, 100g strong white flour.
+    *   *Schedule:* Feed tonight. Let it double. Maybe mix dough tomorrow morning for a Sunday bake.
+    *   *Goal:* Try a higher hydration dough this time for a lacier crumb.
+
+Mr. Davies called back this morning. Much quicker than I expected. He remembered us, thankfully. Said he'd check his archives for our survey report and deeds. He sounded a bit weary himself. "Ah, the joys of boundary disputes, Mr. Marsh. Can be quite nasty. What exactly is Mrs. Crawford claiming?" I explained the situation, the alleged foot-wide strip. He sighed. "Well, let's see what our records show. Send over her letter, and any photos you have of the fence, any historical context."
+
+So, another task for the weekend: loft diving for old documents and photo archives. Just what I wanted to do after a hellish week at work.
+
+The merchant config schema validation for the payment gateway. Oh, the joys. It's an absolute mess of nested JSON objects, and the documentation (written by some contractor a year ago who has since vanished) is incomplete. Spent the morning wrestling with regex patterns and conditional logic. James was breathing down my neck, asking for an ETA. "It's complex, James. It'll take what it takes." He didn't look happy. I don't care.
+
+Richard called me into his office for a "quick chat" around 3 PM. It wasn't quick. He basically laid out the criticality of hitting the next migration milestone. "Ethan, we *need* this phase to go live on time. Investors are watching. Head office is watching. Any delays will be reflected in Q4 projections, and frankly, our bonuses." He gave me "the look." The one that says, "I understand you're busy, but just get it done." Like I'm not already working 10-hour days. He "suggested" I might want to put in some weekend hours. I just nodded. What else can you do?
+
+Lily brought home her local history project topic research. She wants to focus on the area around Ally Pally. She found some old photos of the original palace fire and the Victorian park. Actually quite interesting. Maybe I can help her with some photography tips for her presentation board. Claire seemed pleased she'd found something she was genuinely engaged with. Max brought home a clay monstrosity that he declared was a "dinosaur-car." Claire put it on the fridge.
+
+We had Friday night fish and chips. A small treat. Claire and I tried to have a "no work, no fence talk" dinner, for the kids' sake. It mostly worked. Lily was buzzing about her project. Max just wanted to know if he could have another chip.
+
+Tried to relax in the evening, but my mind kept drifting to the court date. What if we lose? What if she forces us to move the fence? The cost alone would be crippling. And the principle of it... it's just wrong. I feel a knot of anxiety in my stomach that won't go away.
+
+Fed Bubbles. She's looking active. Maybe I'll make a sourdough focaccia instead of a loaf. Less commitment.
+
+**2025-10-26 - Sunday**
+
+*   **Recipe Note (Weekend Brunch): Shakshuka**
+    *   Always a hit. Quick, flavourful, uses up eggs and some tinned tomatoes.
+    *   *Ingredients:* Onions, garlic, peppers (red, yellow), tinned chopped tomatoes, tomato paste, eggs, cumin, paprika, chilli flakes, fresh parsley/coriander.
+    *   *Method:* Sauté veg, add spices, tomatoes, simmer. Make wells, crack in eggs. Cover, cook until eggs are set. Garnish.
+    *   *Consideration:* Max doesn't like runny yolks, so maybe cook his eggs in a separate pan or poach them fully. Lily loves it.
+
+Saturday was a blur. Woke up early, still feeling the pressure from Richard. Claire was amazing, bless her. "You go work, I'll handle the kids today. Just try to keep it to the morning." So I spent four hours locked in the home office, deep diving into the API validation rules. Managed to get a decent chunk done, but it's still not as robust as I'd like. The problem is the sheer number of permutations. It's like whack-a-mole. Every time you fix one scenario, another pops up.
+
+After lunch, Claire suggested we tackle the loft. "The sooner we find those documents for Mr. Davies, the better." So up we went, into the dusty, cramped space. Two hours of rummaging through old boxes, photo albums, Christmas decorations, Max's old baby swing, Lily's first school drawings. Found the original folder! Marked "House Purchase 2017." Inside, the survey report, the deeds, even some photos we took right after we moved in. The fence is clearly visible, exactly where it is now. And the boundary lines on the survey match. A small victory, but it felt huge. Emailed everything to Mr. Davies’ office. Hopefully, this will be enough to shut Helen down.
+
+Then came the cycling. Claire insisted I get some fresh air. It was a beautiful crisp autumn afternoon. Rode out towards Epping Forest. The colours were incredible. The smell of damp leaves and woodsmoke. Felt a momentary sense of peace. My legs were burning, but it was a good burn. Came back feeling a bit more centred.
+
+This morning, Sunday. Shakshuka for brunch was great. Kids actually ate it without too much fuss. Max still complained about the 'bits' in the tomato sauce but eventually conceded it was 'okay'.
+
+Claire spent the afternoon helping Lily with her Ally Pally project. They found some fantastic old maps online showing how the area developed. Lily's actually quite excited about it now. She's going to draw a historical timeline.
+
+I did a full clean of the tropical fish tank. Siphon out detritus, prune plants, wipe down glass, clean filter media. It's a meditative process. The fish seem to appreciate it – more active afterwards. My Dwarf Gourami, Gordon, was looking particularly vibrant.
+
+Later this afternoon, the anxiety crept back. What if Helen's survey is different? What if there's some obscure clause we missed? The thought of going to court, of the legal fees, the stress of facing a neighbour in a courtroom... it's just unbearable. Claire tried to reassure me. "We have the evidence, Ethan. Mr. Davies will sort it." I hope so. Just hope so.
+
+Didn't manage the sourdough, Bubbles is still in the fridge. Will try for next weekend. Just too much else going on.
+
+**2025-10-28 - Tuesday**
+
+*   **Recipe Note (Dinner Idea): Sheet Pan Chicken Fajitas**
+    *   Quick, minimal washing up. Good for busy weeknights.
+    *   *Ingredients:* Chicken breast (sliced), bell peppers (various colours, sliced), onion (sliced), fajita seasoning, oil. Tortillas, salsa, sour cream, guacamole for serving.
+    *   *Method:* Toss chicken and veg with oil and seasoning on a baking sheet. Roast at high temp (200C) for 20-25 mins until cooked through and slightly charred.
+    *   *Consideration:* Max is wary of peppers. Maybe roast a separate tray for him with just plain chicken strips and some carrot sticks. Lily loves them.
+
+Mr. Davies called. Good news. Or, at least, "we have a strong case" news. Our survey clearly shows the boundary where the fence stands. His office has sent a formal reply to Helen Crawford's solicitor, reiterating our position and enclosing a copy of our survey. He also advised us to ignore any further direct communication from Helen or Mark and route it all through him. "Let us handle it, Mr. Marsh. That's what you pay us for." It was a relief, but also, it's not over. I know Helen. She's tenacious. And frankly, a bit unhinged.
+
+Work was a complete nightmare. Richard pushed the deadline for the merchant config validation to *this Friday*. He said "senior management has decided we need to accelerate UAT." Accelerate? We're already behind. This means even more late nights. James is panicking. Priya looks utterly overwhelmed. I tried to delegate some of the simpler validation checks to her, explaining the logic, but she's still quite junior and this system is complex. I'm effectively doing the work of two people. My head is throbbing.
+
+Came home to chaos. Lily had forgotten her homework (a maths worksheet on fractions) and Mrs. Henderson had sent a note home. Claire was trying to cook dinner – a pasta dish – and Max had decided to use the dog's water bowl as a swimming pool for his toy boat. The kitchen was a soggy mess. I just slumped onto the sofa for a few minutes, staring blankly at the wall.
+
+After dinner, I helped Lily with her fractions. She's struggling a bit with visualising them. Tried using chocolate bars as an example. 1/2 a Kit Kat, 1/4 of a Dairy Milk. That seemed to click. We made it through. Max, thankfully, was asleep early after his watery adventures.
+
+Claire and I talked. Or rather, I vented about work. She listened patiently. She gets it. Her job as a primary school teacher has its own unique stresses, especially with Year 3 parents. "Just breathe, Ethan. We'll get through it." She's always the rock.
+
+Still, the pit in my stomach about Helen Crawford is there. What if Mr. Davies' letter isn't enough? What if she escalates further? I don't trust her to back down easily. And the thought of that court date just looms. It's like a dark cloud over everything.
+
+Checked the fish tank. One of the Harlequin Rasboras looks a bit pale. Maybe stress? Or just a bit hungry. Fed them a small amount of spirulina flakes. Hopefully nothing serious. I can't deal with a fish emergency right now.
+
+**2025-10-30 - Thursday**
+
+*   **Recipe Note (Halloween Treat Idea - but for the kids, not me): Spooky Spider Cookies**
+    *   Lily asked if we could make something for Halloween party at school tomorrow. Simple cookies would be easiest.
+    *   *Base:* Standard chocolate chip cookie dough.
+    *   *Decor:* After baking, melt some dark chocolate for the 'spider' body, add pretzel sticks for legs, and candy eyes (got some in the cupboard from last year).
+    *   *Action:* Check for chocolate chips. Need to buy more flour and sugar.
+    *   *Constraint:* Max will definitely try to eat all the candy eyes. Lily will want to do all the decorating.
+
+Richard is still pushing. He had another team meeting this morning, emphasizing the "critical importance" of the payment processing migration. "We *must* hit the UAT deadline. Any slippage will result in disciplinary action for those responsible." He looked directly at me when he said "those responsible." The passive-aggressive bullshit is exhausting. I spent another evening last night, until nearly 1 AM, trying to iron out the last few merchant config validation issues. I'm running on fumes.
+
+Priya is trying, bless her, but she's just not experienced enough for this level of complexity. She came to me today with a stack of error logs, completely lost. I had to walk her through the debugging process step by step, which ate up another hour of my already stretched day. I don't mind mentoring, I actually enjoy it, but not when the fate of a multi-million dollar project (and my job) is hanging by a thread.
+
+Helen Crawford. Didn't hear anything new from Mr. Davies, which I suppose is good news, in a way. No reply from her solicitor yet. But I saw Mark (Helen's husband) cutting his hedge this evening. He looked over, our eyes met, and he just glowered. No smile, no nod, just pure hostility. It was unsettling. We used to exchange pleasantries, talk about the weather. Now, it's like we're strangers, or worse, enemies. This is really poisoning the atmosphere of living here.
+
+Lily is beyond excited about Halloween tomorrow. She's planned her witch costume down to the last detail – her old black dress, a pointy hat we bought last year, and she wants green face paint. Max, of course, wants to be a superhero. A "robot-superhero," specifically. Claire has found an old silver cardboard box for his 'robot' part. It's sweet, but also a logistical challenge getting them ready for school/nursery.
+
+My back pain is flaring up again. I tried some stretches, but it just feels stiff and knotted. And the lack of sleep isn't helping. I need to get back to cycling regularly, but when? The days are short, and I'm either at work or too exhausted to do anything but collapse on the sofa.
+
+Claire reminded me we need to buy more tea bags. And milk. And the kids need new wellies, apparently. A never-ending list.
+
+**2025-11-01 - Friday (Halloween)**
+
+*   **Recipe Note (Halloween Dinner): Pumpkin & Sage Risotto**
+    *   Instead of carving pumpkins, we used the flesh for a risotto last year. It was surprisingly good. Comfort food for a busy night.
+    *   *Ingredients:* Arborio rice, butternut squash (easier than pumpkin flesh, less stringy), onion, garlic, white wine, vegetable stock, sage (fresh if possible), Parmesan.
+    *   *Method:* Sauté onion/garlic, add rice, toast. Deglaze with wine. Add roasted squash. Ladle in hot stock slowly, stirring until absorbed. Finish with sage, Parmesan.
+    *   *Consideration:* Max will probably refuse this. Maybe make him some plain pasta with butter. Lily might try it if it's not too 'chunky'. Claire loves it.
+
+Happy Halloween. Or rather, stressful Halloween. The spider cookies were a minor success. Lily loved decorating them, though she managed to get melted chocolate on her face and hair. Max ate three cookies before I could even assemble them into spiders. He just picked off the candy eyes. Of course.
+
+Got up at 6 AM to try and get ahead on work, but the kids were up at 6:30 AM, buzzing with excitement. Lily insisted on putting on her witch costume before breakfast. Max ran around in his pajamas with the silver box on his head. Getting them ready for school/nursery was a chaotic sprint. Dropped them off, Lily looking very proud of her green face paint, Max stumbling slightly in his 'robot' box.
+
+Then straight to work, another barrage of emails from Richard and James. "Status update?" "Any blockers?" "Confident for UAT Monday?" The pressure is relentless. I think I finally cracked the last major config validation issue around lunchtime, a subtle interaction between two different rule sets. It's a hack, but it works. I'm too tired to care about elegance. I just need it to work. Sent a triumphant (but exhausted) message to James and Richard.
+
+No word from Mr. Davies, no reply from Helen's solicitor. It's a weird limbo. On the one hand, I'm glad it's quiet. On the other, the uncertainty is gnawing at me. Claire thinks no news is good news. I'm less optimistic.
+
+Claire had a busy day at school with the Year 3 Halloween party. She sent me a photo of Lily, beaming, holding a spider cookie. It made me smile. Max had apparently insisted on wearing his robot box all day at nursery, occasionally crashing into things.
+
+The pumpkin risotto was actually quite nice. Max had his buttered pasta, Lily tried a few spoonfuls of the risotto and declared it "a bit green, but yummy." A small win.
+
+Later, we took the kids trick-or-treating around our street. Lily ran ahead, bag open, shouting "Trick or Treat!" Max toddled along, still mostly interested in jumping in puddles. We avoided Helen and Mark's house. I didn't want to risk an encounter, especially with the kids there. It felt pathetic, avoiding my own neighbours on my own street, but it felt necessary. The whole situation is just… wrong. It's poisoning our home life.
+
+Collapsing into bed. My head feels fuzzy. I think I need a proper break. But there's no sign of that happening soon.
+
+**2025-11-03 - Sunday**
+
+*   **Recipe Note (Comfort Food Bake): Apple Crumble**
+    *   Claire loves apple crumble. Plus, it uses up some apples we have, and it's classic autumn comfort food.
+    *   *Ingredients:* Apples (Braeburn or Cox's), sugar, cinnamon, flour, butter, oats (for crunch). Maybe a few sultanas.
+    *   *Method:* Peel, core, slice apples. Toss with sugar/cinnamon. Make crumble topping with flour, butter, sugar, oats. Bake until golden and bubbly.
+    *   *Serving:* With custard or vanilla ice cream. Max will only eat the topping. Lily will eat the apples, but maybe not the topping.
+
+UAT is scheduled for tomorrow. Monday. The entire weekend has been a frantic scramble. Richard called me at 8 AM Saturday, wanting to "run through the UAT scenarios" with me. I was still half asleep. Spent 3 hours on a call, going over every possible test case, every edge scenario. My eyes were burning.
+
+Then, straight to the laptop, fixing a few minor bugs I'd found during the scenario walkthrough. Ended up working most of Saturday, much to Claire's quiet frustration. She didn't say anything directly, but her sighs were loud. She took the kids to the park, then to the library. I felt guilty, but what choice did I have?
+
+Sunday, today, I tried to make it up to them. We went for a family bike ride along the Parkland Walk, from Highgate to Finsbury Park. Lily managed most of it on her own, a few wobbles but no falls. Max was in his trailer, pointing at every dog we passed. The fresh air was good, the exercise was good. My lower back still twinged, but it felt better than being hunched over a keyboard.
+
+Afterwards, we made the apple crumble. Max, as predicted, picked off the topping. Lily was surprisingly good, ate a decent portion of apple. Claire loved it, said it was "just what she needed." Small moments of normal life.
+
+But the anxiety is still there, humming under the surface. The UAT tomorrow. What if something breaks? What if we've missed a critical bug? My reputation, the project, everything feels precarious. And then there's Helen. Still no word from Mr. Davies, which means no reply from her solicitor. Is she just biding her time? Is this the calm before the storm?
+
+I spent some time looking at my tropical fish tank. The Harlequin Rasbora is back to its normal colour. Good. The little world inside the glass is a nice contrast to the chaos outside it.
+
+Claire and I had a long talk tonight after the kids were asleep. She's worried about me. "You look exhausted, Ethan. You're barely sleeping. This isn't sustainable." I know. I completely know. But what can I do? The project is critical. The fence dispute is critical. It feels like I'm stuck in a never-ending cycle. I tried to explain the pressure from Richard, the fear of losing my job, the fear of losing money to Helen Crawford. She held my hand. "We'll figure it out, love. We always do." I hope so. God, I hope so.
+
+**2025-11-05 - Tuesday**
+
+*   **Recipe Note (Quick Dinner for UAT Week): Tomato and Basil Pasta**
+    *   No energy for anything complex. Simple, fresh, quick.
+    *   *Ingredients:* Good quality pasta, ripe tomatoes (cherry or plum), fresh basil, garlic, olive oil, Parmesan.
+    *   *Method:* Cook pasta. Sauté garlic, add chopped tomatoes, simmer briefly. Toss with pasta, fresh basil, olive oil. Top with Parmesan.
+    *   *Consideration:* Max will eat this. Lily will pick out the tomatoes if they're too big, so chop them fine.
+
+UAT Day 1. It was… okay. Stressful. Exhausting. But not a disaster. Yet. We found a few minor bugs – edge cases around specific payment card types that weren't being handled correctly by the new API. James, Priya, and I spent the afternoon triaging them. Richard was hovering, looking stern. He wants "daily reports of all bugs found and resolutions by 6 PM." This means more late nights. I don't know how much more I can take.
+
+The biggest relief was seeing the core payment flow actually working through the new system. It felt like a small miracle. But there's still a long way to go. The merchants are starting to run their own tests tomorrow. That's when the real fun begins.
+
+Still no word on the fence dispute. Mr. Davies hasn't called, no reply from Helen's solicitor. It's unsettling. Claire is convinced that means Helen has backed down, that our survey evidence was conclusive. I'm more cynical. I think she's plotting her next move. She's not the type to give up easily. I keep envisioning her lawyers drafting some new, even more aggressive letter. It's making me jumpy every time the post drops.
+
+Lily came home with a story about a fight in the playground. Two boys, apparently, over a football. Mrs. Henderson had to intervene. Lily was a bit shaken by it. Max, on the other hand, spent the day trying to climb everything in nursery, according to his key worker. He's a little ball of energy.
+
+My back is still aching. I really need to get my bike out again, or at least start doing those online physio exercises Claire found for me. But I just get home, eat dinner, help with bedtime, and collapse. There's no time, no energy.
+
+Claire surprised me with a foot rub tonight. It was heavenly. "You work too hard, Ethan," she said, her hands kneading my sore arches. "I know," I replied, my voice thick with tiredness. We talked about her day, the kids. Small talk, which felt good. Just normal conversation, not work, not fences. A brief respite.
+
+**2025-11-07 - Thursday**
+
+*   **Recipe Note (Batch Cooking for Work Lunches): Chicken and Veggie Stir-fry**
+    *   Need to get back to packed lunches instead of buying sandwiches. Healthier, cheaper. Stir-fry is good because it reheats well.
+    *   *Ingredients:* Chicken breast, mixed stir-fry veg (peppers, broccoli, mangetout, carrots), soy sauce, ginger, garlic, sesame oil, rice noodles.
+    *   *Method:* Cook noodles. Stir-fry chicken, then add veg. Add sauce (soy, ginger, garlic, splash of water). Combine.
+    *   *Consideration:* Max hates 'green bits' so I'll need to pick out some chicken for him before adding all the veg. Lily loves stir-fry.
+
+UAT Day 3. The merchants started testing in earnest today. And the bugs are rolling in. Nothing absolutely catastrophic (yet), but a steady stream of "minor" issues that quickly add up. A specific payment method not displaying correctly on one merchant's checkout page. A timeout error occurring intermittently on another's transaction history. Each one requires investigation, diagnosis, and a fix. Priya is doing her best, but I'm basically reviewing all her code. James is managing the bug backlog, but he's also fielding calls from angry merchant reps.
+
+Richard is "concerned." His words, not mine. He called a meeting with the whole team at 4 PM today, just to "reiterate the importance of attention to detail and swift resolution." It felt like a thinly veiled threat. The atmosphere is tense. I feel like I'm permanently walking on eggshells.
+
+The fence. A letter arrived today. From Mr. Davies. Helen's solicitor has replied. And it's exactly what I feared. They are disputing our survey. Claiming it's "outdated" or "inaccurate." And they are pushing for the court date. Helen means business. Claire was furious when she read it. "Outdated? It's from eight years ago, when we bought the house! It's legally binding!" She's right, of course. But this is going to be a protracted legal battle, I can feel it. Mr. Davies suggested a mediation session first. "It's always better to try and resolve these things amicably, Mr. Marsh, before court costs really start to mount." Amicably with Helen Crawford? I laughed, a bitter, humourless sound.
+
+Lily had her Year 3 class photo today. She was very excited about it. Claire said she spent twenty minutes trying to get her hair just right this morning. Max, meanwhile, discovered how to unlock the front door latch at nursery. His key worker called Claire, sounding a mix of exasperated and amused. Another escape artist in the making.
+
+I'm utterly drained. Physically, mentally, emotionally. My fish tank is the only thing offering any peace. Watched the Cardinal Tetras school beautifully for a while. The vibrant colours are a small distraction from the grey reality.
+
+I tried to get on my bike, just for 30 minutes, but it started raining heavily as I was about to head out. Just my luck. Back to the sofa, with a hot water bottle for my back. And a glass of red wine, which I know isn't helping with the sleep, but I needed something.
+
+**2025-11-09 - Saturday**
+
+*   **Recipe Note (Comfort Baking for the soul): Chocolate Brownies**
+    *   Just need something rich, decadent, and easy. A proper pick-me-up.
+    *   *Ingredients:* Dark chocolate, butter, sugar (caster/light brown), eggs, flour, cocoa powder, pinch of salt. Maybe some walnuts.
+    *   *Method:* Melt chocolate and butter. Whisk in sugar, then eggs. Fold in flour/cocoa/salt. Pour into tin, bake until just set around edges but fudgy in middle.
+    *   *Action:* Check for dark chocolate. Max will love these. Lily will too. Claire too. Everyone needs a treat.
+
+The UAT bugs are still coming in, but we're managing to fix them. Just. The sprint review for this phase is on Monday. Richard wants me to present the "overall technical health" of the migration. Which basically means I need to make everything sound perfectly fine and on track, even though I'm secretly terrified of what might still be lurking in the code. I spent most of yesterday, and then late into the night, preparing my slides. It's a performance.
+
+Mr. Davies sent over the details for the mediation session. It's scheduled for two weeks from now, 23rd November. A Sunday. That's a whole Sunday lost. At a neutral venue in Islington. Helen and Mark will be there, with their solicitor. And us, with Mr. Davies. A professional mediator. Claire is dreading it. So am I. The idea of sitting in a room with Helen and Mark, trying to "amicably" resolve this, feels completely impossible. It just feels like another step towards court, another layer of stress and expense.
+
+Saturday was supposed to be a relaxing family day. It started okay. We made the chocolate brownies. They were glorious. Fudgy, rich, just what I needed. Max was covered in chocolate in about five minutes. Lily helped measure ingredients, which she loves.
+
+Then, around lunchtime, I got a call from Mum. Janet. She sounded upset. She'd been feeling a bit unwell, a persistent cough, and had been to the GP. They want her to have some tests. Nothing definitive yet, but the worry in her voice was clear. And it brought up all the fear from when Dad (George) was ill. He passed away in 2021, suddenly, from an unexpected heart attack. It was still so raw. I tried to reassure her, told her to call me after her tests. But the conversation left me feeling hollow. Just when I thought things couldn't get more stressful. Now Mum.
+
+Lily's local history project is really coming along. She spent the afternoon drawing a fantastic detailed map of the Alexandra Palace area from 1900. Her art teacher would be proud. Max, meanwhile, tried to 'help' by drawing on the living room wall with a crayon. Claire nearly had a fit. Luckily, it was washable.
+
+Tried to go for a cycle ride this afternoon, to clear my head. The weather was damp and gloomy, but I needed it. Rode around Highgate Woods. Felt good to push myself, to feel my lungs working. But even on the bike, my mind kept churning. Work, Helen, Mum. It's a relentless assault.
+
+Claire saw I was struggling. She gave me a hug. "We'll get through this, Ethan. One thing at a time." But it feels like everything is hitting at once.
+
+**2025-11-12 - Tuesday**
+
+*   **Recipe Note (Experimental Baking): Gluten-Free Sourdough Starter**
+    *   Luke (my brother in Edinburgh) mentioned he's gone gluten-free. Thinking of trying to make a gluten-free sourdough starter for him for Christmas. An ambitious project.
+    *   *Ingredients:* Gluten-free flour blend (rice, sorghum, tapioca?), warm water, a tiny bit of active starter from 'Bubbles' (to kickstart).
+    *   *Method:* Similar to regular starter but potentially trickier hydration and feeding schedule. Might be very sticky.
+    *   *Action:* Research gluten-free starter recipes. Order specialist flours online. This is a long-term project.
+
+Monday's sprint review for the payments migration. It went… surprisingly well. I presented my slides, highlighting the successes, downplaying the challenges, and attributing any "minor areas for improvement" to the complexity of the legacy system. Richard actually smiled. James gave me a thumbs up. The overall sentiment from management was positive. A huge weight lifted, temporarily. The UAT is still ongoing, of course, but the critical path looks good. I even managed to leave the office before 7 PM for the first time in weeks.
+
+But then, the mediation. Mr. Davies called again today. He wants us to prepare a brief statement of our position for the mediator. He said it’s not for Helen, but for the mediator to understand our perspective going into the session. Just thinking about writing it makes my blood pressure rise. It's not just about the fence; it's about the years of petty grievances, the feeling of being harassed in our own home. How do I put that into a formal statement without sounding emotional?
+
+And Mum. She called after her first round of tests. They found a "shadow" on her lung. They want more tests. A biopsy. She's trying to be brave, but I can hear the fear in her voice. My stomach is in knots. I tried to call Hannah (my sister in Manchester) and Luke (my brother in Edinburgh) but only got hold of Hannah. She was equally worried. Luke still hasn't called me back. Probably busy with work. I need to push him.
+
+Lily had a school trip to the Science Museum today. She came home buzzing, full of stories about the space rockets and the dinosaurs. Max got a 'star of the day' sticker at nursery for "excellent sharing." Small moments of joy.
+
+Claire is being amazing, as always. She's worried about Mum too. We talked about it for ages after the kids were asleep. "Just need to take it one step at a time, Ethan. Don't catastrophise." She's right. But it's hard not to. It's George all over again. The fear is a cold, creeping thing.
+
+My back pain is a constant companion now. It just seems to settle in during the day, a dull ache that sharpens if I move suddenly. Need to book a physio appointment. But again, where does the time come from?
+
+I spent an hour just staring at my fish tank tonight. It's a comfort. The gentle hum of the filter, the quiet movement of the fish. Gordon, my Dwarf Gourami, was particularly active. I think I will try and make that gluten-free starter. A challenge, but a distraction. A positive one.
+
+**2025-11-14 - Thursday**
+
+*   **Recipe Note (Dinner Party Idea): Coq au Vin**
+    *   Claire's birthday is coming up (next month). Thinking of cooking something special for her, maybe inviting Hannah and Luke down if Mum is stable. Coq au Vin is a classic.
+    *   *Ingredients:* Chicken thighs/drumsticks, smoked bacon lardons, button mushrooms, small onions (shallots), garlic, red wine (Burgundy), chicken stock, brandy (optional), flour, herbs (thyme, bay).
+    *   *Method:* Brown chicken, bacon. Sauté veg. Deglaze with brandy/wine. Add stock, herbs. Simmer for ages.
+    *   *Consideration:* Max won't eat this. Lily might try the chicken. Would need a separate kid-friendly meal.
+
+Mum's biopsy is scheduled for next week. She sounded surprisingly calm today when she called. Said she's trying to keep busy, focusing on her garden. But I know she's terrified. And I am too. Luke finally called me back. He sounded preoccupied, but promised to call Mum properly tonight. Hannah is planning to visit Mum next weekend, to be with her before the biopsy. I wish I could go too, but with the mediation and work, it's impossible. Guilt. A heavy, familiar weight.
+
+The fence mediation statement. I've been trying to draft it. It's harder than I thought. How do you summarise years of stress and a feeling of violation into dry, legalistic language? I keep writing things like "Helen Crawford has demonstrated a pattern of aggressive and vexatious behaviour" and then having to delete it because it's too emotional. Mr. Davies said "stick to the facts." But the facts don't convey the emotional toll this has taken.
+
+Work is still… work. UAT continues, but the major issues are mostly resolved. We're now dealing with smaller, cosmetic bugs, or very niche edge cases. The pressure has eased slightly, which is a huge relief. I actually left the office at 6 PM today and felt like I had a bit of an evening.
+
+Lily got her Year 3 class photo today. She looks adorable, right in the front row, with a big grin. Max came home from nursery with paint on his nose and a story about 'Mr. Bear' who got lost and then found. He has such an imagination.
+
+We had a relatively peaceful evening. Claire cooked a simple roasted salmon and veg. We talked about Lily's day, Max's nursery antics. I managed to avoid talking about work, Mum, or the fence. Just for an hour. It felt like a luxury.
+
+I decided to try starting the gluten-free sourdough starter tonight. Mixed some rice flour, tapioca flour, and water. Added a tiny bit of my regular 'Bubbles' starter. It looks like a thick paste. Will see how it goes. A small project to focus on, something positive and creative.
+
+**2025-11-16 - Saturday**
+
+*   **Recipe Note (Experiment): GF Sourdough Loaf (First Attempt)**
+    *   The GF starter ("Glutena") is actually bubbling! Not as vigorously as Bubbles, but it's alive. Thinking of trying a small test loaf.
+    *   *Ingredients:* Glutena (starter), GF flour blend (same as starter), water, salt.
+    *   *Method:* Standard sourdough method, but I anticipate it will be much stickier and less elastic. Maybe higher hydration?
+    *   *Expectation:* A dense, maybe slightly gummy loaf. But a learning experience. Don't expect perfection.
+
+Another weekend. And another layer of stress added. Mum called this morning. Her biopsy is on Monday. Hannah is already with her. They've been trying to keep busy, going through old photo albums. It's bringing back a lot of memories for Mum, both good and bad. She sounded strong, but I can hear the fragility in her voice. I wish I could be there. I feel useless being so far away.
+
+The mediation statement. I finally managed to draft something that sounds suitably formal, but still conveys our frustration. Mr. Davies reviewed it and said it was "perfectly acceptable." Good. One less thing to worry about. But the actual mediation session on the 23rd still looms large. The thought of sitting across a table from Helen and Mark, discussing our property line through a mediator, feels absurd and deeply uncomfortable. Claire is worried about losing her temper. I'm worried about saying the wrong thing.
+
+Today was supposed to be a photography day. I had planned to take Lily and Max to Richmond Park to try and get some photos of the deer, the autumn colours. But the weather was absolutely grim – pouring rain all morning. So we stayed in. Lily did some amazing drawings of mythical creatures. Max built a towering structure of Duplo that actually lasted for more than five minutes.
+
+I spent some time with my tropical fish. Noticed some green spot algae on the glass, so did a quick scrub. The Dwarf Gourami, Gordon, is still looking good. The Cherry Barbs are always chasing each other around. A little bit of controlled chaos.
+
+Tried a test GF sourdough loaf with Glutena. As expected, it was very sticky. Almost impossible to knead. Tried a 'no-knead' method. It's currently proving. My expectations are low.
+
+Claire and I talked about Mum again. She's been a bit withdrawn since Mum called. She's so empathetic, it hits her hard. "It's just not fair, Ethan. Your mum has been through enough." I agree. It feels like a cruel twist of fate, after losing Dad so recently.
+
+I'm exhausted, but my mind won't shut off. The fear for Mum, the dread of the mediation. And even though work is a bit calmer, the underlying stress of the 'migration' still hums in the background. My lower back pain is a dull throb. I need to force myself to book that physio appointment.
+
+**2025-11-18 - Monday**
+
+*   **Recipe Note (Quick Weeknight Meal): Pesto Chicken and Veggie Tray Bake**
+    *   Simple, minimal mess. Uses up leftover pesto.
+    *   *Ingredients:* Chicken pieces (thighs/drumsticks), mixed vegetables (courgettes, cherry tomatoes, broccoli florets), red onion, green pesto, olive oil, lemon.
+    *   *Method:* Toss chicken and veg with pesto, olive oil, and lemon zest. Roast on a tray at 190C for 30-35 mins.
+    *   *Consideration:* Max will eat the chicken. Lily will eat the broccoli and tomatoes. Claire and I will enjoy the whole thing.
+
+Mum's biopsy. It happened today. She called us this evening, sounding tired, but said it went okay. Now the excruciating wait for the results. She's staying with Hannah for a few days. We talked for a long time. She's trying to remain positive, but I could hear the fear. I told her I loved her. This is unbearable. The feeling of helplessness is immense.
+
+The GF sourdough loaf. It was... surprisingly edible! Dense, yes, and not much of an open crumb, but it tasted good, slightly tangy. Claire tried a slice and said it was "impressive for a first attempt." I sent a photo to Luke. He was impressed. Small victory. Maybe I can actually make a GF sourdough for him for Christmas.
+
+Work was relatively calm today. The UAT is winding down, most major issues are resolved. Just some final reporting and handover documents to complete. I actually feel like I can breathe a little. Richard even gave me a "well done, Ethan, excellent work getting us over the line." It felt good, after weeks of relentless pressure. But the relief is fleeting, overshadowed by Mum.
+
+Lily came home from school with a drawing she'd done of our family. It's absolutely adorable. Max, meanwhile, discovered the joys of mud at nursery. Claire had to hose him down in the garden before letting him in the house. Typical Max.
+
+Claire and I spent the evening talking about Mum. We went over every possible scenario, every 'what if'. It's draining. But we have to face it. This is a far bigger deal than the fence, than any work project. Family. That's what truly matters.
+
+I finally booked a physio appointment for my lower back. Next Tuesday afternoon. It's a small step, but a necessary one. I can't keep living with this constant ache.
+
+Tried to distract myself by tidying the fish tank again. Re-arranged a few plants. It's good to have a project, however small, that I can control.
+
+**2025-11-20 - Wednesday**
+
+*   **Recipe Note (Dinner Idea for Max): Mini Chicken and Sweetcorn Muffins**
+    *   Max has been a bit fussy with dinner lately. These are good for little hands, can be packed with hidden veg, and he usually likes muffins.
+    *   *Ingredients:* Cooked chicken (shredded), sweetcorn, grated courgette/carrot, flour, egg, milk, baking powder, cheese.
+    *   *Method:* Mix wet and dry. Add chicken, sweetcorn, veg, cheese. Spoon into muffin tins. Bake until golden.
+    *   *Consideration:* Lily might like these too. Good for lunchboxes.
+
+Another day of waiting for Mum's biopsy results. The silence is deafening. Every time the phone rings, my heart leaps into my throat. Claire is trying to keep things normal for the kids, but I can see the worry etched on her face.
+
+The mediation is on Sunday. Just a few days away. Mr. Davies called to confirm. He reiterated his advice: "Be polite, stick to the facts, don't get drawn into an argument. Let the mediator do their job." Easier said than done when you're dealing with Helen Crawford. I've re-read our statement multiple times. It feels solid. But I still dread the confrontation. It just feels like such a waste of energy and emotion.
+
+Work is officially calmer. The payments migration UAT is wrapping up successfully. Final sign-off is expected by end of week. The pressure is finally off. It's an odd feeling, almost unsettling after weeks of high-octane stress. I actually finished my tasks by 5:30 PM today and didn't feel guilty logging off. It feels like a chapter is closing.
+
+Lily's local history project on Ally Pally is almost done. She's so proud of her timeline and her drawings. She has to present it to her class on Friday. Max had a 'show and tell' at nursery today. He brought in his favourite dinosaur toy and proceeded to make roaring noises for ten minutes straight. His key worker said it was "very enthusiastic."
+
+I went for a short cycle ride after work. Just 45 minutes around the local streets. The air was cold and crisp. Felt good to get the blood pumping. My back still twinged, but it felt better than it has in weeks. The physio appointment tomorrow will hopefully help.
+
+Claire suggested we watch a movie tonight, just the two of us, after the kids are asleep. Something light. I think we both need it. Just to escape, for a little while, from the constant hum of worry.
+
+**2025-11-22 - Friday**
+
+*   **Recipe Note (Weekend Treat): Banana Bread**
+    *   Got some very ripe bananas in the fruit bowl. Perfect for banana bread. Easy, comforting, smells amazing.
+    *   *Ingredients:* Ripe bananas (mashed), flour, sugar, eggs, butter, baking powder, vanilla. Maybe some chocolate chips for the kids.
+    *   *Method:* Cream butter/sugar. Add eggs, vanilla. Mix in mashed bananas. Fold in flour/baking powder. Bake until golden.
+    *   *Consideration:* Max loves this. Lily too. Good with a cup of tea.
+
+Today was Lily's presentation for her local history project. Claire and I both managed to go, squeezing it in before work. She was fantastic! Stood up in front of her class, holding her timeline, and spoke clearly and confidently about Alexandra Palace. She even managed to answer a couple of questions from Mrs. Henderson. We were so proud. She beamed when we told her how well she'd done. It was a lovely, bright moment in a very anxious week.
+
+Then, at 11 AM, the call came. From Hannah. Mum's biopsy results are back. It's cancer. Lung cancer. My world just tilted. Hannah was crying, trying to be strong for Mum. Mum was… quiet. Devastated. But also, ready to fight. They've scheduled an appointment with an oncologist next week to discuss treatment options. It's early stage, Hannah said. Small cell. But still. Cancer.
+
+I feel numb. A cold dread has settled deep in my chest. George's death, the shock of it, the feeling of losing a parent. Now this. It's like a punch to the gut. Claire held me for a long time. She's crying too. "We'll get through this, Ethan. We will."
+
+Work was irrelevant after that. I just… stared at my screen. Tried to focus, but my mind was blank, then racing. James noticed I was off. "Everything okay, mate?" I just shook my head. "Family stuff." He just nodded, gently. "Take care, whatever it is."
+
+Tonight was supposed to be a good night. Lily's presentation, the end of the work project. Instead, it's just… this. The banana bread I was planning for tomorrow feels trivial.
+
+The mediation is tomorrow. Sunday. How am I supposed to sit there, calmly discussing a fence, when my mother has just been diagnosed with cancer? It feels like a sick joke. I called Mr. Davies. Briefly explained the situation. He was sympathetic. "Mr. Marsh, I understand entirely. But the session is booked, the mediator is confirmed. We need to go through with it if at all possible. It might even be a welcome distraction." A distraction? He doesn't know Helen Crawford. This will be anything but. I told him I'd be there. I have to be. For Mum, for Claire, for the kids. I have to put on a brave face, somehow.
+
+I'm utterly exhausted. My head is spinning. The fish tank seems so far away.
+
+**2025-11-24 - Sunday**
+
+*   **Recipe Note (Reflections on Cooking): Something Simple, Nourishing, and Healing.**
+    *   No specific recipe today. Just the idea of food as comfort.
+    *   *Consideration:* Broth, gentle soups, easily digestible. Maybe a congee or a simple lentil dhal. What can I make for Mum when she starts treatment?
+    *   *Action:* Research cancer-friendly recipes. Something that can be frozen and sent to Bristol.
+
+The mediation session. It was hell.
+
+I went into it feeling completely detached, numb from the news about Mum. Claire was there, Mr. Davies too. Helen and Mark arrived, looking stern, accompanied by their slick-suited solicitor. The mediator was a calm, professional woman, tried to set a neutral tone.
+
+It started with our side, Mr. Davies laying out our case, referencing our survey, the historic evidence. I managed to read my statement, my voice surprisingly steady, despite the tremor in my hands. I focused on the wall behind Helen, trying not to make eye contact. Claire was quiet, but I could feel her tension beside me.
+
+Then Helen's solicitor spoke. And then Helen. She launched into a tirade about "encroachment" and "lost land" and even "our children's disrespectful noise." She brought up other petty grievances, the acer tree again, the shed. It quickly devolved into personal attacks, accusations. Mark just sat there, stony-faced, occasionally nodding.
+
+The mediator tried to steer it back, but Helen was relentless. Claire eventually snapped, her voice rising, "This isn't about the fence, Helen! You've had a problem with us since the day you moved in!" Mr. Davies had to intervene, gently pull Claire back.
+
+It was awful. Two hours of accusations, recriminations, and absolutely no progress. Helen refused to concede anything. She wouldn't even consider a compromise. Her solicitor kept repeating, "My client is simply seeking to reclaim what is rightfully hers."
+
+In the end, the mediator concluded that we were at an impasse. "I'm afraid we haven't been able to find a mutually agreeable solution today." No shit. It ended with Helen declaring, "We'll see you in court, then." Mark just smirked.
+
+I walked out feeling utterly defeated, emotionally drained, and still reeling from Mum's news. Claire was shaking with anger and frustration. "I can't believe her, Ethan. She's a monster." Mr. Davies tried to be reassuring. "We did everything we could, Mr. Marsh. This simply confirms her intent to litigate. We now prepare for court."
+
+Prepare for court. Just what I needed. More stress, more expense, when Mum is facing cancer.
+
+The rest of the day was a blur. The kids tried to cheer us up. Lily brought us drawings, Max kept asking for cuddles. We tried to put on a brave face, but it was hard.
+
+I called Mum. She was home from Hannah's, sounded a bit stronger. We talked about her oncologist appointment next week, the next steps. It sounds like there are options. Chemotherapy, possibly radiotherapy. It's a long road. A very long road.
+
+I tried to escape into my tropical fish tank for a while. It usually calms me. But tonight, even that felt too much. The fish just swam, oblivious. I envied them their simplicity.
+
+No cooking today. Just ordered a takeaway. Anything to avoid having to think about food.
+
+**2025-11-26 - Tuesday**
+
+*   **Recipe Note (Meal for Mum - Phase 1): Gentle Chicken & Noodle Soup**
+    *   Mum starts chemo soon. Need something light, nourishing, easy to swallow.
+    *   *Ingredients:* Chicken breast, good quality chicken stock, thin egg noodles, ginger, spring onions, a little bit of finely shredded carrot.
+    *   *Method:* Simmer chicken until cooked, shred. Add noodles, veg to hot stock, cook until tender. Combine.
+    *   *Consideration:* Avoid strong spices, anything too acidic. Focus on easily digestible protein and carbs.
+
+Mum's oncologist appointment was today. She called us afterwards. It's adenocarcinoma, stage I, meaning it's relatively localised. That's a huge relief, relatively speaking. The plan is a course of chemotherapy, followed by potentially radiotherapy. It's going to be tough, but she has a good prognosis. The fear is still there, but now there's also a path forward, a sense of direction. It's not the shock of George's sudden passing. We have a chance to fight this.
+
+I've already started researching recipes for her. Things that are easy to eat, nourishing, and can be frozen and sent down to Bristol. This chicken and noodle soup is a first thought. I want to feel useful, to do something tangible.
+
+The fence dispute. Mr. Davies called today. He's preparing the necessary court documents. He mentioned that Helen's solicitor is still being aggressive, but that's to be expected. He's confident in our case. It's going to cost a significant amount, though. He's given us an estimate for the initial stages. It's grim. We'll have to dip into our savings. The savings we were putting aside for Max's school fees, or maybe even a deposit for an electric car. Now it's just going to legal fees.
+
+Today was my physio appointment. It was actually really helpful. The physio identified that my desk setup is partly to blame, but also that I have very tight hip flexors and weak core muscles (no surprise there). Gave me a series of stretches and exercises to do daily. It's going to be a commitment, but I need to do it. The relief after the session was palpable.
+
+Work is officially complete on the payment processing migration for this phase. Signed off. Project success! There was even a small team celebration (virtual drinks). It feels good to have that pressure off, even if it's been replaced by other, far more serious worries.
+
+Lily came home with a story about a new girl in her class. Max tried to feed his toy car a biscuit at nursery. Kids are a wonderful anchor in the storm.
+
+Claire is feeling a bit more positive about Mum's prognosis. "She's a fighter, Ethan. She'll get through this." I hope so. We all hope so.
+
+I spent some time with my tropical fish, feeling a little more centred. The tank is peaceful. The Dwarf Gourami, Gordon, is still the star. I'll need to remember to order more frozen bloodworms for them soon.
+
+**2025-11-28 - Thursday**
+
+*   **Recipe Note (Dinner Party Idea for Claire's Birthday): Beef Wellington**
+    *   Still thinking about Claire's birthday in a few weeks. Beef Wellington would be a showstopper. High effort, but worth it for her.
+    *   *Ingredients:* Beef fillet, puff pastry, mushrooms (duxelles), parma ham, Dijon mustard, egg wash.
+    *   *Method:* Sear beef, cool. Make mushroom duxelles. Wrap beef in parma ham, then duxelles, then pastry. Bake until golden and beef medium-rare.
+    *   *Consideration:* Requires precision, good temperature control. Max and Lily will NOT eat this. Need a backup for them. Might need to practice the duxelles.
+
+The court date for the fence dispute has been formally set. January 15th, 2026. Family court, North London. It's real now. There's no turning back. Mr. Davies sent over the paperwork, the schedule. It feels overwhelming. The thought of standing in court, giving evidence, being cross-examined by Helen's solicitor… it's terrifying. But we have to do it. We can't let her bully us out of what's ours.
+
+Mum called today. She's decided she wants to stay in Bristol for her treatment, close to her friends and her own home. Hannah will visit regularly, and Luke and I will try to get down as much as we can. We're setting up a rota. My first visit will be mid-December, after this initial court prep is done. It's going to be hard, juggling everything.
+
+I actually managed to get on my bike for a longer ride today, after work. An hour and a half, through Hampstead Heath. The weather was cold but clear. Felt amazing to push myself, to feel strong again, even for a short while. The physio exercises are definitely helping my back. Small win.
+
+Lily is already planning Christmas. She's decided she wants to write a letter to Santa detailing exactly what Max wants too, because "he's too little to write properly." It's sweet how she looks out for him. Max, meanwhile, told Claire today that he's going to "marry Mrs. Henderson" when he grows up. Claire just laughed.
+
+Claire and I spent the evening looking at our finances. The legal fees are going to be a real stretch. We'll have to cut back on some things, maybe put off that holiday we were planning next year. And the electric car will have to wait. It's frustrating, but it's what we have to do. "At least Mum's prognosis is good," Claire reminded me. "That's what really matters." She's right, of course.
+
+I'm feeling a bit more in control of things, strangely. The definite court date, the treatment plan for Mum. It's still incredibly stressful, but at least there's a path forward, decisions made. Less of the terrifying uncertainty.
+
+Started looking up recipes for Beef Wellington. It's going to be a challenge. But Claire deserves something special for her birthday. She's been my rock through all of this.
+
+**2025-11-30 - Saturday**
+
+*   **Recipe Note (Weekend Baking): Classic Scones**
+    *   Simple, comforting. Perfect for a chilly Saturday afternoon with a cup of tea.
+    *   *Ingredients:* Self-raising flour, butter, milk, a pinch of salt, sugar.
+    *   *Method:* Rub butter into flour. Add sugar, salt. Mix in milk to form soft dough. Cut out rounds. Bake until golden.
+    *   *Serving:* With clotted cream and jam. Max loves these. Lily too.
+
+Last day of November. What a month. Feels like a lifetime.
+
+Today started with making scones. The kids helped. Lily loves cutting out the rounds with the cookie cutter. Max mostly just ate the raw dough. The smell of fresh-baked scones filled the kitchen, a small, domestic comfort amidst everything. We sat down, buttered scones, jam, a pot of tea. For a moment, it felt normal.
+
+Mr. Davies sent over the court bundle details. It's massive. Photos, surveys, statements, correspondence. Our life, distilled into legal documents. I spent an hour going through it, trying to familiarise myself with everything. It's all there, our entire case. I just hope the judge sees it.
+
+Called Mum. She's doing okay, feeling a bit tired but otherwise stable. Her first chemo session is scheduled for the week after next. She's scared, but resolute. We talked about her treatment, about what she might need. She seemed happy that I'd been researching gentle recipes for her.
+
+Claire and I went for a walk on the Heath this afternoon. Lily and Max were with Claire's sister, Sarah, for a few hours. We talked about Mum, about the court case, about the upcoming Christmas. It's going to be a strange Christmas this year, with Mum starting treatment, and the court case looming. But we'll make the best of it. We always do.
+
+I told Claire I was thinking of starting to write down some of George's old family recipes. The ones he used to make. His steak and kidney pudding, his Sunday roast potatoes. A way to remember him, and to pass them on to the kids. Claire thought it was a wonderful idea. "He'd love that, Ethan."
+
+My back is feeling much better with the physio exercises. And the regular cycling is definitely helping clear my head. Even the fish tank got a proper clean today. It's the small things, the routines, that keep you going.
+
+This month has been a brutal lesson in how quickly life can change. The fence dispute, the work pressure, and now Mum's cancer diagnosis. It's been a relentless wave, one after another. But we're still standing. We're a family. And we'll face whatever comes next, together.
+
+The kitchen is quiet now. The kids are asleep. Claire is reading in bed. I'm just here, typing this, trying to process everything. The recipe notes started as a cooking diary, a distraction. They've become something more. A record of a incredibly tough, stressful, and yet, somehow, resilient month.
+
+Now, to plan December. And Beef Wellington. Claire deserves it.

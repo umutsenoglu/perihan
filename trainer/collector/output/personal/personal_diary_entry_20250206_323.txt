@@ -1,0 +1,68 @@
+**2025-02-06**
+
+God, what a day. Started with a bang, literally. Woke up to the distinct clatter of plastic hitting glass, then water splashing onto the floor. Whiskers. AGAIN. Seriously, that cat has a vendetta against the fish tank light. Must have been 5:45 AM, still dark out, and there she was, perched on top of the tank, looking utterly innocent, while the Fluval LED unit lay half-submerged, half-hanging, water dripping onto the oak floorboards. *Again*.
+
+I swear, if she wasn't so damn cute, I'd... well, I wouldn't do anything, she's family, but my blood pressure definitely spiked. Jumped out of bed, nearly tripped over a stray Lego brick (Max, naturally). Claire was already stirring, mumbling something about "what now?" as I fumbled for the main power switch for the tank. First things first: get the light out before it fries anything or electrocutes a guppy. The water was still warm, thankfully, no immediate shock to the system for the fish. Pulled the light out, dripping everywhere. Then started the familiar process of mopping up the floor around the stand, checking the filter intake for debris, and peering anxiously at the Neons and Guppies. They seemed fine, just a bit spooked, darting around. Whiskers, meanwhile, had hopped down and was now rubbing against my legs, purring like a rusty engine. The audacity!
+
+"She did it again, didn't she?" Claire asked, rubbing her eyes as she came into the living room.
+"Yep. Little menace. This is the third time this month. I swear I've secured it every conceivable way."
+"Maybe it's a sign they want to be free-range fish," she joked, but I could tell she was tired. Teacher life starts early.
+
+Managed to get the old spare light (a cheap backup from Amazon) clipped on, not ideal, but at least the tank wasn't plunged into darkness. The Fluval will need drying out properly, see if it still works. If not, another sixty quid down the drain. For a cat that costs nothing but food and vet bills, Whiskers is an expensive pet.
+
+The rest of the morning was a blur of chaos, as usual. Lily complaining her toast was "too crunchy," Max attempting to feed his cereal to Whiskers (who, surprisingly, wasn't interested in soggy Cheerios), getting everyone dressed. Claire and I had a quick tag-team operation: she supervised breakfast while I tried to re-secure the now-dry Fluval light with more cable ties than strictly necessary, muttering under my breath.
+
+"Did you check flights last night?" Claire asked as I wrestled Max's arm into his jumper.
+"Briefly. EasyJet prices for Faro are still ridiculous for mid-August. And those morning BA flights are eye-watering."
+"We *have* to get them booked soon, Ethan. Mrs. Henderson already sent out the term dates for next year – can't miss the first week of Year 4 for Lily."
+"I know, I know. I'll have another proper look tonight. Promise." The words felt hollow as the sheer volume of tasks for the day already felt overwhelming.
+
+Dropped Lily at QPA, managed to catch Mrs. Henderson for a quick wave – Lily's been doing well in Year 3. Max was ecstatic to get to Little Stars Nursery, practically ran off without a goodbye. Bless his little heart. Commute in the Golf was standard London traffic – M25 was a car park, then Finchley Road just crawled. Heard on the radio about some new ULEZ expansion plans. Still thinking about switching to electric. My 2019 Golf is solid, but the thought of charging it every night feels like another chore. Maybe next year.
+
+Got to the office (Canary Wharf) around 8:40 AM. Grabbed a coffee, strong and black, absolutely needed it. First thing, checked my inbox: a cascade of emails. James from the back-end team had flagged an issue with the new API integration we're rolling out for the wealth management platform. "Urgent" obviously. Priya needed a code review done by lunch. Richard was hassling me for the sprint planning agenda. Standard Tuesday.
+
+Sat down, fired up VS Code. My lower back twinged a bit – probably from hunching over the fish tank this morning. Switched to the standing desk for the first hour, that usually helps. Diving into James's issue felt good, though. It's that familiar feeling of unraveling a complex knot. Identifying the root cause, tracing the data flow, seeing the fix. That's why I do this, honestly. It's satisfying. The fintech world is high-pressure, but I like the challenge.
+
+Snuck a quick look at Skyscanner during lunch. Still no joy. Flights for two adults, two kids to Faro in August... £1800 minimum for EasyJet economy, for decent times. BA was pushing £2.5k. That's before accommodation, car hire, spending money. We'd budgeted around £4k total for a good two weeks. This is going to eat into it significantly. Texted Claire: "Flights still crazy. Will try again tonight." Got back a single '😡' emoji. Fair enough.
+
+Afternoon was a blur of meetings – sprint planning with Richard (ended up doing most of the agenda on the fly), a quick stand-up with my team, then some deep-focus time on the API fix. Managed to get a PR submitted for James, which felt like a win. My asthma was a bit noticeable today, probably the damp air from the fish tank incident earlier, or just the stale office air conditioning. Took a puff of my inhaler, felt better.
+
+Left work a little late, around 5:45 PM. The thought of getting home, picking up the kids, then dinner, then *still* having to tackle flights... it was draining. Called Claire on the way home, she'd picked up Max from nursery, and Lily from QPA.
+"How was your day?" I asked.
+"Busy. Max drew a picture of a dinosaur with three heads, and Lily's class is learning about Ancient Egypt. And Mrs. Henderson asked me about the school fete." Typical teacher's day, packed.
+"Any luck on the flights?"
+"No, I haven't had a chance to look properly! I'm making pasta bake, so no excuses about cooking tonight."
+"Understood. I'll get on it."
+
+Got home, house was, predictably, a lively disaster zone. Max was running laps around the sofa, Lily was attempting to teach Whiskers how to sit (Whiskers was, predictably, just batting at Lily's hair tie). The fish tank looked okay, at least. Claire was already in the kitchen, bless her. "Kitchen duties?" she asked, without looking up. "Chopping veg for a salad, please." My cooking hobby mostly translates to chopping onions these days, or weekend experiments.
+
+Dinner was good, though Max somehow managed to get pasta bake in his ear. We talked about Lily's day, Max's dinosaurs. They’re growing up so fast. Seven and four. It feels like only yesterday we brought them home. Makes you want to make these summer holidays perfect, you know?
+
+After getting the kids bathed and into bed – Max resisted, of course, "just five more minutes, Daddy!" – Claire and I finally sat down, exhausted, on the sofa.
+"Right," she said, pulling out her iPad. "Let's do this. Portugal flights."
+We spent the next hour trawling through sites. Tried different airports (Gatwick, Stansted, Heathrow). Different days, pushing it back, bringing it forward. It's just not budging much. We found a Ryanair flight that was *just* about acceptable at £1500, but it meant a 6 AM departure from Stansted and then a ridiculous connection time in Porto. And the thought of doing that with Max and Lily...
+"No," I said, rubbing my temples. "Absolutely not. That's a holiday-ruiner before we even get there."
+Claire nodded, defeated. "So what do we do? Book the expensive ones? Or change dates completely?"
+"Changing dates is tricky with your school year, and Lily starting Year 4."
+
+We talked through the finances. The Barclays mortgage is steady, but London life isn't cheap. My fintech salary is decent, but two kids and a teacher's salary means we're comfortable, not rolling in it. £2k on flights feels like a punch to the gut.
+"Maybe we look at different destinations?" Claire suggested, tentatively.
+"I really had my heart set on Portugal, though. The Algarve, the beaches for the kids..."
+We agreed to sleep on it. I'd check again first thing in the morning, sometimes prices fluctuate overnight.
+
+After Claire went to bed, I stayed up a bit, just unwinding. Checked on the fish tank again. The spare light looks really dim, the fish look a bit subdued without the full spectrum. Gotta fix the Fluval tomorrow.
+Whiskers jumped onto my lap, purring. I stroked her soft fur. Even though she's a nightmare, she's family. A furry, light-destroying part of our chaotic life.
+
+Thought about Mum in Bristol. Must call her this weekend. See how she’s doing. She's still getting used to things without Dad. And Hannah in Manchester, Luke in Edinburgh. We all try to keep in touch, but life gets in the way.
+
+Tomorrow:
+*   ✅ Check Fluval light: try to dry it out properly, test. If not, order new one.
+*   ✅ One more check on Portugal flights – Faro (EasyJet/BA/Ryanair). Set price alerts.
+*   ✅ James's follow-up on API.
+*   ✅ Richard – finalise sprint planning for next week.
+*   ✅ Email Mrs. Henderson about Lily’s reading progress.
+*   ✅ Remember to stretch back.
+
+The never-ending to-do list of adulting. But nestled in all the stress and the mundane, there were good moments today. Lily's drawing of an Egyptian pyramid. Max's giggling when Whiskers chased a dust bunny. Claire's pasta bake. And the quiet hum of the fish filter, even if the light situation is still a pain. It's all part of it, I guess. Just wish those flight prices would drop.
+
+It's nearly midnight. Time to try and sleep. Maybe Whiskers won't feel the urge to redecorate the living room before dawn tomorrow. Fingers crossed.

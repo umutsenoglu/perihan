@@ -1,0 +1,48 @@
+---
+**HIGHGATE FAMILY PRACTICE**
+14 Elmwood Road, Highgate, London, N6 5RA
+Tel: 020 8123 4567 | Fax: 020 8123 4568
+
+**DISCHARGE SUMMARY**
+
+**Patient Name:** Mr. Ethan Marsh
+**Date of Birth:** 19/07/1985 (38 years old)
+**NHS Number:** [Fictional - e.g., 123 456 7890]
+**Address:** 12 Willow Crescent, North London, N12 0AP
+**Date of Visit:** 2023-03-19
+**Consulting Doctor:** Dr. Anand Patel
+
+**Reason for Visit:**
+Mr. Ethan Marsh presented today with a flare-up of his recurring lower back pain, which has worsened over the past two weeks. The pain is primarily located in the lumbar region, central to slightly left-sided, occasionally radiating into his left gluteal area but not extending below the knee. He describes the pain as a dull ache, with intermittent sharp twinges upon certain movements or prolonged sitting.
+
+**Findings & History:**
+Mr. Marsh, a 38-year-old Senior Software Engineer at a fintech company, reports that his lower back pain is a chronic issue, often exacerbated by long hours spent at his desk. He works from his 3-bed semi-detached home in North London, which he shares with his wife Claire (a primary school teacher) and children Lily (7, Year 3 at QPA Primary) and Max (4, at Little Stars Nursery).
+
+He states the current episode began insidiously but has become more bothersome, affecting his daily activities. He finds it difficult to sustain positions for long periods, impacting his ability to cycle, pursue his photography hobby, or even comfortably manage his tropical fish tank. Playing with Lily and Max, particularly active games, has become challenging. He reports that the pain is worse when sitting for prolonged periods, and sometimes when coughing or sneezing, but improves with gentle movement and short walks. He has been trying self-management with over-the-counter ibuprofen and heat packs, but the pain has not resolved adequately after a few weeks, prompting this
+visit today. He denies any recent falls or trauma. He has a past medical history of mild asthma and seasonal allergies, both well-controlled. There are no 'red flag' symptoms such as unexplained weight loss, fever, changes in bladder or bowel function, numbness or weakness in both legs, or saddle anaesthesia. He reports no pain radiating below the knee.
+
+**Assessment:**
+Based on Mr. Marsh's clinical presentation, history, and absence of 'red flag' symptoms, his lower back pain is assessed as mechanical in nature, likely a muscular strain or minor ligamentous sprain exacerbated by prolonged desk work and lack of specific back care. This is a common presentation for lower back pain, which usually improves within a few weeks, though it can recur. There is no indication of a serious underlying condition such as a slipped disc, sciatica, or a more serious issue like infection or fracture at this time.
+
+**Plan:**
+
+1.  **Reassurance & Activity:** Mr. Marsh was reassured that his symptoms are consistent with common lower back pain and are expected to improve. He was advised to continue staying as active as possible and avoid prolonged periods of rest or staying in bed, as this can worsen recovery. Gentle walks around the park with Claire and the children, or short breaks from his desk, were encouraged.
+2.  **Pain Management:**
+    *   Continue with over-the-counter anti-inflammatory medication such as Ibuprofen (e.g., 400mg three times a day with food, if no contraindications) as needed, noting that paracetamol alone is not recommended for back pain but can be used in combination.
+    *   Continue using heat packs (e.g., a hot water bottle wrapped in a tea towel) to help relieve muscle spasms and stiffness, particularly after his early morning cycle or when his back feels stiff.
+    *   Consider using an ice pack (e.g., a bag of frozen peas wrapped in a tea towel) for 15-20 minutes at a time to help reduce pain and swelling, especially after any new activity or if the pain flares up.
+3.  **Physiotherapy Referral:** A formal referral has been made to NHS Community Musculoskeletal (MSK) Services for physiotherapy. Mr. Marsh will receive details on how to book his first appointment. He was informed that he can also self-refer to these services directly if preferred. Physiotherapy will provide tailored exercises, stretches, and advice on posture and workstation ergonomics, which should be beneficial given his profession. Specific exercises like those shown in the NHS back pain pilates video workout or from the Chartered Society of Physiotherapy were recommended for him to try at home, stopping if pain worsens. Activities like swimming or yoga were also suggested as potential long-term benefits.
+4.  **Lifestyle Modifications:** Discussed the importance of regular breaks from his desk setup at home, perhaps incorporating some standing work or short stretching routines every hour. Reviewing his workstation ergonomics was also suggested. Given his hobbies, he was encouraged to modify activities like cycling or photography if they exacerbate pain, focusing on gentle movements and increasing intensity gradually under physiotherapy guidance.
+5.  **Follow-up & Red Flags:** Mr. Marsh was advised to return to the GP if his pain:
+    *   Does not improve after several more weeks despite following advice and physiotherapy.
+    *   Worsens significantly or changes character.
+    *   Develops any new 'red flag' symptoms such as unexplained weight loss, fever, severe pain that starts suddenly or gets worse quickly, or any of the urgent symptoms mentioned on the NHS website (e.g., loss of feeling around genitals/anus, difficulty peeing, or weakness in both legs). For urgent concerns, contact NHS 111. For immediate, severe concerns (e.g., after a serious accident, chest pain with back pain), call 999 or go to A&E.
+
+**Discharge Medications:** None prescribed today. Continue current over-the-counter regimen as advised.
+
+**Next Review:** As needed, or following completion of physiotherapy course if symptoms persist.
+
+---
+**Dr. Anand Patel**
+Highgate Family Practice
+2023-03-19

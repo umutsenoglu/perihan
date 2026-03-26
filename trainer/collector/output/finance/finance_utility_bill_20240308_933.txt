@@ -1,0 +1,1462 @@
+This document compiles the financial records of Ethan Marsh, designed to present a comprehensive, realistic, and entirely fictional archive of his personal finances. It includes various statements, bills, and summaries spanning multiple years, reflecting the life and financial activities of a 38-year-old Senior Software Engineer living in North London with his family.
+
+***
+
+**ETHAN MARSH - FINANCIAL ARCHIVE**
+**COMPILATION DATE: 2024-03-08**
+
+---
+
+### **1. BRITISH GAS - GAS & ELECTRICITY BILL**
+**Period: 01 December 2023 - 29 February 2024**
+**Issue Date: 08 March 2024**
+
+---
+
+**British Gas**
+PO Box 227
+Rotherham
+S98 1ST
+
+**Account Holder:** Mr Ethan Marsh
+**Account Number:** 9XXXXXXXXXX7
+**Supply Address:**
+47 Maplewood Drive
+High Barnet
+London
+N20 9AB
+
+**Billing Period:** 01 December 2023 - 29 February 2024 (91 days)
+**Bill Issue Date:** 08 March 2024
+**Payment Due Date:** 22 March 2024
+**Amount Due:** £387.65
+
+---
+
+**Summary of Your Bill**
+
+Previous Balance: £45.21 CR (Credit)
+Payments Received: -£150.00 (05 Dec 2023 - Direct Debit)
+                       -£150.00 (05 Jan 2024 - Direct Debit)
+                       -£150.00 (05 Feb 2024 - Direct Debit)
+Total Payments: £450.00
+
+Gas Charges This Period: £215.88
+Electricity Charges This Period: £216.98
+Subtotal for this period: £432.86
+
+VAT (5%): £21.64
+**Total New Charges:** £454.50
+
+**Total Amount Due:** £387.65
+
+---
+
+**Your Gas Charges**
+**Supply Address:** 47 Maplewood Drive, High Barnet, N20 9AB
+**MPRN:** 7XXXXXXXXX85
+**Tariff:** British Gas Green Future Fixed 24 (Expires 30 Nov 2024)
+**Payment Method:** Direct Debit
+
+| Reading Type | Reading Date | Meter Reading | Units Used |
+| :----------- | :----------- | :------------ | :--------- |
+| Current Smart | 29 Feb 2024  | 24567         |            |
+| Previous Smart | 01 Dec 2023  | 23982         | 585        |
+
+**Calculation of your Gas usage:**
+Units used: 585 kWh
+Correction Factor (volume to energy): 1.02264
+Calorific Value: 39.8
+Conversion Factor (m3 to kWh): 11.27
+Volume used in m3: 585 / 11.27 = 51.91 m3 (approx)
+
+**Energy Used:** 585 kWh
+
+**Gas Unit Rate:** 7.50p per kWh
+**Standing Charge:** 29.50p per day
+
+**Gas Costs:**
+Energy Charge: 585 kWh x £0.0750 = £43.88
+Standing Charge: 91 days x £0.2950 = £26.85
+Subtotal Gas Costs: £70.73
+
+**Government Environmental Levy (CCL):** £0.00 (Domestic usage exempt)
+**VAT (5%):** £3.54
+**Total Gas Charges:** £74.27
+
+*Note: Smart meter readings ensure accurate billing. If you believe there's an error, please contact us.*
+
+---
+
+**Your Electricity Charges**
+**Supply Address:** 47 Maplewood Drive, High Barnet, N20 9AB
+**MPAN:** 1XXXXXXXXXXX345
+**Tariff:** British Gas Green Future Fixed 24 (Expires 30 Nov 2024)
+**Payment Method:** Direct Debit
+
+| Reading Type | Reading Date | Meter Reading | Units Used |
+| :----------- | :----------- | :------------ | :--------- |
+| Current Smart | 29 Feb 2024  | 58123         |            |
+| Previous Smart | 01 Dec 2023  | 56897         | 1226       |
+
+**Energy Used:** 1226 kWh
+
+**Electricity Unit Rate:** 32.00p per kWh (Day Rate)
+**Standing Charge:** 48.00p per day
+
+**Electricity Costs:**
+Energy Charge: 1226 kWh x £0.3200 = £392.32
+Standing Charge: 91 days x £0.4800 = £43.68
+Subtotal Electricity Costs: £436.00
+
+**Government Environmental Levy (CCL):** £0.00 (Domestic usage exempt)
+**VAT (5%):** £21.80
+**Total Electricity Charges:** £457.80
+
+*Note: You are currently on a single-rate meter. If you'd like to explore time-of-use tariffs, please visit our website.*
+
+---
+
+**Energy Saving Tips for Winter**
+
+*   **Insulation Check:** Ensure your loft and walls are adequately insulated to prevent heat loss.
+*   **Thermostat Settings:** Lower your thermostat by just 1 degree Celsius – it could save you up to 10% on your heating bill. Ethan, we notice your average indoor temperature was 20.5°C this period.
+*   **Boiler Service:** Regular boiler servicing helps maintain efficiency and prevents breakdowns. Claire mentioned the boiler was serviced last autumn, good job!
+*   **Draft Proofing:** Seal gaps around windows and doors.
+*   **Appliance Use:** Use energy-intensive appliances like washing machines and dishwashers during off-peak hours if you have a time-of-use tariff (though you're currently on a single rate).
+
+**Your Annual Consumption**
+(Based on the last 12 months)
+Gas: 5,120 kWh
+Electricity: 4,890 kWh
+
+**Your Tariff Details at a Glance**
+Product Name: British Gas Green Future Fixed 24
+End Date: 30 November 2024
+Early Exit Fee: £75 per fuel (if you switch before the end date)
+Estimated Annual Cost: £2,150 (based on your consumption over the last 12 months)
+
+**Payment Information**
+Your current Direct Debit is £150.00 per month, taken on the 5th of each month.
+Based on your recent usage, we recommend increasing your Direct Debit to £165.00 per month to help keep your account in credit. We will adjust this automatically for you next month unless you contact us.
+
+To make an additional payment or change your Direct Debit, please visit britishgas.co.uk/myaccount or call us on 0333 202 9802.
+
+**Customer Service:**
+Online: britishgas.co.uk/myaccount
+Phone: 0333 202 9802 (Mon-Fri 8am-6pm, Sat 9am-2pm)
+Emergency: 0800 111 999 (Gas leaks) or 105 (Power cuts)
+
+**Important Information**
+If you are having difficulty paying your bill, please contact us immediately. We can offer advice and support, including setting up a payment plan.
+Remember, energy prices can change. Your fixed tariff protects you from price increases until 30 November 2024. We will contact you before your tariff ends to discuss your options.
+
+**Thank you for choosing British Gas.**
+British Gas is a trading name of British Gas Services Limited, registered in England and Wales No. 03141243. Registered office: 100 Thames Valley Park Drive, Reading, RG6 1PT.
+
+---
+---
+
+### **2. BARCLAYS JOINT CURRENT ACCOUNT STATEMENTS**
+**Account Holders: Mr E Marsh & Mrs C Marsh**
+**Account Number: 20-55-XX 9XXX78XX**
+**Sort Code: 20-55-XX**
+**Product: Barclays Premier Current Account**
+
+---
+
+#### **2.1 BARCLAYS BANK STATEMENT - JOINT CURRENT ACCOUNT**
+**Period: 01 January 2024 - 31 March 2024**
+**Statement Date: 01 April 2024**
+
+**Account Holders:** Mr Ethan Marsh & Mrs Claire Marsh
+**Address:** 47 Maplewood Drive, High Barnet, London, N20 9AB
+
+**Account Number:** 20-55-XX 9XXX78XX
+**Sort Code:** 20-55-XX
+**Opening Balance (01 Jan 2024):** £4,879.12 CR
+
+| Date       | Description                                                 | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :---------------------------------------------------------- | :-------- | :--------- | :---------- |
+| 01 Jan     | AMAZON UK - Kindle for Lily's birthday                      | 79.99     |            | 4,799.13    |
+| 02 Jan     | TFL TRAVEL - Contactless payment                            | 3.40      |            | 4,795.73    |
+| 02 Jan     | SAINSBURY'S - Weekly shop (online delivery)                 | 112.50    |            | 4,683.23    |
+| 03 Jan     | Transfer from E Marsh - Personal Savings (ISA top-up)     |           | 250.00     | 4,933.23    |
+| 04 Jan     | WATERSTONES - Books for school holiday                      | 28.75     |            | 4,904.48    |
+| 05 Jan     | Direct Debit - British Gas (Energy Bill)                    | 150.00    |            | 4,754.48    |
+| 05 Jan     | Direct Debit - Thames Water (Water Bill)                    | 42.00     |            | 4,712.48    |
+| 05 Jan     | Transfer to H Marsh - Birthday gift for Hannah              | 50.00     |            | 4,662.48    |
+| 08 Jan     | QPA PRIMARY SCHOOL - Lily's After School Club Fee           | 75.00     |            | 4,587.48    |
+| 09 Jan     | LITTLE STARS NURSERY - Max's January Fees                   | 850.00    |            | 3,737.48    |
+| 10 Jan     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 3,730.68    |
+| 11 Jan     | PAYPOINT - TV Licence renewal                               | 159.00    |            | 3,571.68    |
+| 12 Jan     | WAITROSE - Weekend treats                                   | 35.80     |            | 3,535.88    |
+| 15 Jan     | Salary - ETHAN MARSH (Fintech Solutions Ltd)                |           | 4,875.25   | 8,411.13    |
+| 15 Jan     | Salary - CLAIRE MARSH (QPA Primary School)                  |           | 2,450.80   | 10,861.93   |
+| 16 Jan     | Direct Debit - Barclays Mortgage Payment                    | 1,650.00  |            | 9,211.93    |
+| 17 Jan     | Transfer to Vanguard - Monthly ISA Contribution             | 500.00    |            | 8,711.93    |
+| 17 Jan     | Transfer to Barclays Savings - Emergency Fund Top-up        | 200.00    |            | 8,511.93    |
+| 18 Jan     | PETS AT HOME - Fish food & filter media for tank            | 42.99     |            | 8,468.94    |
+| 19 Jan     | COSTA COFFEE - Coffee with Claire                             | 8.50      |            | 8,460.44    |
+| 20 Jan     | TESCO - Weekly shop                                         | 98.70     |            | 8,361.74    |
+| 22 Jan     | Direct Debit - Vodafone (Mobile Phone Bill - Ethan)         | 38.00     |            | 8,323.74    |
+| 22 Jan     | Direct Debit - O2 (Mobile Phone Bill - Claire)              | 25.00     |            | 8,298.74    |
+| 23 Jan     | WICKES - DIY supplies for bathroom fix                      | 65.40     |            | 8,233.34    |
+| 24 Jan     | TFL TRAVEL - Contactless payment                            | 3.40      |            | 8,229.94    |
+| 25 Jan     | CYCLE REPUBLIC - Bike service for Ethan                     | 75.00     |            | 8,154.94    |
+| 26 Jan     | PIZZA EXPRESS - Family dinner (Lily's choice)               | 62.50     |            | 8,092.44    |
+| 27 Jan     | M&S FOOD - Groceries                                        | 45.60     |            | 8,046.84    |
+| 29 Jan     | Transfer to J Marsh - Contribution for Mum's birthday gift  | 30.00     |            | 8,016.84    |
+| 30 Jan     | Direct Debit - Netflix Subscription                         | 17.99     |            | 7,998.85    |
+| 31 Jan     | GREGGS - Lunch near office                                  | 4.50      |            | 7,994.35    |
+| 01 Feb     | SAINSBURY'S - Weekly shop                                   | 105.20    |            | 7,889.15    |
+| 02 Feb     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 7,882.35    |
+| 03 Feb     | NATIONAL TRUST - Annual membership renewal                  | 120.00    |            | 7,762.35    |
+| 05 Feb     | Direct Debit - British Gas (Energy Bill)                    | 150.00    |            | 7,612.35    |
+| 05 Feb     | Direct Debit - Sky (Broadband & TV)                         | 68.00     |            | 7,544.35    |
+| 06 Feb     | LITTLE STARS NURSERY - Max's February Fees                  | 850.00    |            | 6,694.35    |
+| 07 Feb     | AMAZON UK - Books for Max, new fish tank decor              | 45.70     |            | 6,648.65    |
+| 08 Feb     | WAITROSE - Weekend groceries                                | 72.30     |            | 6,576.35    |
+| 09 Feb     | Direct Debit - LV= (Car Insurance - VW Golf)                | 55.00     |            | 6,521.35    |
+| 12 Feb     | Direct Debit - Council Tax (Barnet Council)                 | 220.00    |            | 6,301.35    |
+| 13 Feb     | TFL TRAVEL - Contactless payment                            | 3.40      |            | 6,297.95    |
+| 14 Feb     | M&S FOOD - Valentine's dinner ingredients                   | 58.60     |            | 6,239.35    |
+| 15 Feb     | Salary - ETHAN MARSH (Fintech Solutions Ltd)                |           | 4,875.25   | 11,114.60   |
+| 15 Feb     | Salary - CLAIRE MARSH (QPA Primary School)                  |           | 2,450.80   | 13,565.40   |
+| 16 Feb     | Direct Debit - Barclays Mortgage Payment                    | 1,650.00  |            | 11,915.40   |
+| 17 Feb     | Transfer to Vanguard - Monthly ISA Contribution             | 500.00    |            | 11,415.40   |
+| 17 Feb     | Transfer to Barclays Savings - Emergency Fund Top-up        | 200.00    |            | 11,215.40   |
+| 19 Feb     | THE PHOTOGRAPHY SHOW - Tickets for Ethan (NEC Birmingham)   | 35.00     |            | 11,180.40   |
+| 20 Feb     | SAINSBURY'S - Weekly shop                                   | 118.90    |            | 11,061.50   |
+| 21 Feb     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 11,054.70   |
+| 22 Feb     | NHS PRESCRIPTIONS - Ethan's asthma inhaler                  | 9.65      |            | 11,045.05   |
+| 23 Feb     | ZIZZI - Dinner with friends (Sarah & Tom)                   | 85.00     |            | 10,960.05   |
+| 24 Feb     | ARGOS - New kettle and toaster                              | 79.99     |            | 10,880.06   |
+| 26 Feb     | Direct Debit - Gym Membership (Ethan)                       | 45.00     |            | 10,835.06   |
+| 27 Feb     | Direct Debit - Spotify Premium                              | 10.99     |            | 10,824.07    |
+| 28 Feb     | B&Q - Garden supplies, compost                              | 32.50     |            | 10,791.57   |
+| 29 Feb     | GREGGS - Lunch near office                                  | 4.50      |            | 10,787.07   |
+| 01 Mar     | SAINSBURY'S - Weekly shop                                   | 120.30    |            | 10,666.77   |
+| 02 Mar     | TFL TRAVEL - Contactless payment                            | 3.40      |            | 10,663.37   |
+| 04 Mar     | Direct Debit - British Gas (Energy Bill, adjusted)          | 165.00    |            | 10,498.37   |
+| 05 Mar     | Direct Debit - Thames Water (Water Bill)                    | 42.00     |            | 10,456.37   |
+| 06 Mar     | LITTLE STARS NURSERY - Max's March Fees                     | 850.00    |            | 9,606.37    |
+| 07 Mar     | THE FISH PLACE - New fish for tank, plants                  | 65.00     |            | 9,541.37    |
+| 08 Mar     | British Gas - Quarterly Bill Payment (via DD adjustment)    | 387.65    |            | 9,153.72    |
+| 08 Mar     | BARCLAYS - Mortgage Overpayment (Ad-hoc)                    | 500.00    |            | 8,653.72    |
+| 09 Mar     | TESCO - Weekly shop                                         | 102.50    |            | 8,551.22    |
+| 11 Mar     | QPA PRIMARY SCHOOL - Lily's School Trip (Science Museum)    | 15.00     |            | 8,536.22    |
+| 12 Mar     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 8,529.42    |
+| 13 Mar     | AMZMK.COM - Birthday present for Claire                     | 55.00     |            | 8,474.42    |
+| 14 Mar     | NHS DENTAL - Claire's check-up                              | 25.80     |            | 8,448.62    |
+| 15 Mar     | Salary - ETHAN MARSH (Fintech Solutions Ltd)                |           | 4,875.25   | 13,323.87   |
+| 15 Mar     | Salary - CLAIRE MARSH (QPA Primary School)                  |           | 2,450.80   | 15,774.67   |
+| 16 Mar     | Direct Debit - Barclays Mortgage Payment                    | 1,650.00  |            | 14,124.67   |
+| 17 Mar     | Transfer to Vanguard - Monthly ISA Contribution             | 500.00    |            | 13,624.67   |
+| 17 Mar     | Transfer to Barclays Savings - Emergency Fund Top-up        | 200.00    |            | 13,424.67   |
+| 18 Mar     | Direct Debit - Life Insurance (Aviva)                       | 65.00     |            | 13,359.67   |
+| 19 Mar     | M&S FOOD - Groceries for weekend                            | 48.90     |            | 13,310.77   |
+| 20 Mar     | TFL TRAVEL - Contactless payment                            | 3.40      |            | 13,307.37   |
+| 21 Mar     | CINEMA ODEON - Family movie night                           | 38.00     |            | 13,269.37   |
+| 22 Mar     | Direct Debit - British Gas (Energy Bill, Quarterly Payment) | 387.65    |            | 12,881.72   |
+| 23 Mar     | JOHN LEWIS - New bed linen                                  | 95.00     |            | 12,786.72   |
+| 25 Mar     | Direct Debit - Apple Music                                  | 10.99     |            | 12,775.73   |
+| 26 Mar     | WAITROSE - Easter chocolates & essentials                   | 62.10     |            | 12,713.63   |
+| 27 Mar     | Transfer to L Marsh - Contribution for Luke's housewarming  | 40.00     |            | 12,673.63   |
+| 28 Mar     | GREGGS - Lunch near office                                  | 4.50      |            | 12,669.13   |
+| 29 Mar     | Direct Debit - AA Breakdown Cover                           | 12.00     |            | 12,657.13   |
+| 30 Mar     | PARK PLAZA HOTEL - Deposit for family Bristol trip          | 150.00    |            | 12,507.13   |
+| 31 Mar     | TESCO - Easter Sunday shop                                  | 88.40     |            | 12,418.73   |
+
+**Closing Balance (31 Mar 2024): £12,418.73 CR**
+
+**Summary of Activity:**
+Total Debits: £10,140.39
+Total Credits: £17,679.99
+Opening Balance: £4,879.12
+Closing Balance: £12,418.73
+
+**Average Daily Balance:** £8,745.20
+**Interest Paid This Period:** £0.00 (Current account does not accrue interest)
+
+**Important Information:**
+*   **Fraud Prevention:** We will never ask for your full PIN or online banking password. If you receive a suspicious call or message, please contact us immediately.
+*   **Direct Debits:** Review your Direct Debits regularly to ensure they are still active and correct.
+*   **Statement Frequency:** You receive quarterly statements for this account. You can view your transactions online at any time via Barclays Online Banking or the Barclays app.
+
+Barclays Bank UK PLC. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register No. 759676). Registered in England. Registered no. 9740322. Registered office: 1 Churchill Place, London E14 5HP.
+
+---
+
+#### **2.2 BARCLAYS BANK STATEMENT - JOINT CURRENT ACCOUNT**
+**Period: 01 October 2023 - 31 December 2023**
+**Statement Date: 01 January 2024**
+
+**Account Holders:** Mr Ethan Marsh & Mrs Claire Marsh
+**Address:** 47 Maplewood Drive, High Barnet, London, N20 9AB
+
+**Account Number:** 20-55-XX 9XXX78XX
+**Sort Code:** 20-55-XX
+**Opening Balance (01 Oct 2023):** £3,512.60 CR
+
+| Date       | Description                                                 | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :---------------------------------------------------------- | :-------- | :--------- | :---------- |
+| 01 Oct     | TESCO - Weekly shop                                         | 105.80    |            | 3,406.80    |
+| 02 Oct     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 3,400.00    |
+| 03 Oct     | Direct Debit - Spotify Premium                              | 10.99     |            | 3,389.01    |
+| 04 Oct     | LITTLE STARS NURSERY - Max's October Fees                   | 850.00    |            | 2,539.01    |
+| 05 Oct     | Direct Debit - British Gas (Energy Bill)                    | 150.00    |            | 2,389.01    |
+| 05 Oct     | Direct Debit - Thames Water (Water Bill)                    | 42.00     |            | 2,347.01    |
+| 06 Oct     | QPA PRIMARY SCHOOL - Lily's Half Term Activities            | 40.00     |            | 2,307.01    |
+| 07 Oct     | WAGAMAMA - Family lunch                                     | 55.00     |            | 2,252.01    |
+| 09 Oct     | AMAZON UK - School supplies, fish tank maintenance          | 72.30     |            | 2,179.71    |
+| 10 Oct     | TFL TRAVEL - Contactless payment                            | 3.40      |            | 2,176.31    |
+| 11 Oct     | SAINSBURY'S - Weekly shop                                   | 98.60     |            | 2,077.71    |
+| 12 Oct     | Direct Debit - Council Tax (Barnet Council)                 | 220.00    |            | 1,857.71    |
+| 13 Oct     | Transfer from E Marsh - Personal Savings (Ad-hoc)         |           | 300.00     | 2,157.71    |
+| 15 Oct     | Salary - ETHAN MARSH (Fintech Solutions Ltd)                |           | 4,790.15   | 6,947.86    |
+| 15 Oct     | Salary - CLAIRE MARSH (QPA Primary School)                  |           | 2,410.60   | 9,358.46    |
+| 16 Oct     | Direct Debit - Barclays Mortgage Payment                    | 1,650.00  |            | 7,708.46    |
+| 17 Oct     | Transfer to Vanguard - Monthly ISA Contribution             | 500.00    |            | 7,208.46    |
+| 17 Oct     | Transfer to Barclays Savings - Emergency Fund Top-up        | 200.00    |            | 7,008.46    |
+| 18 Oct     | Direct Debit - Vodafone (Mobile Phone Bill - Ethan)         | 38.00     |            | 6,970.46    |
+| 18 Oct     | Direct Debit - O2 (Mobile Phone Bill - Claire)              | 25.00     |            | 6,945.46    |
+| 19 Oct     | Halfords - Bike accessories for Ethan                       | 45.00     |            | 6,900.46    |
+| 20 Oct     | M&S FOOD - Groceries for weekend                            | 52.10     |            | 6,848.36    |
+| 23 Oct     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 6,841.56    |
+| 24 Oct     | Direct Debit - Netflix Subscription                         | 17.99     |            | 6,823.57    |
+| 25 Oct     | ZOO LONDON - Half term family trip                          | 95.00     |            | 6,728.57    |
+| 26 Oct     | GREGGS - Lunch near office                                  | 4.50      |            | 6,724.07    |
+| 27 Oct     | SAINSBURY'S - Weekly shop                                   | 110.20    |            | 6,613.87    |
+| 30 Oct     | PAYPAL *MARSHPHOTOGRAPHY* - Sale of old camera lens         |           | 120.00     | 6,733.87    |
+| 31 Oct     | Direct Debit - Gym Membership (Ethan)                       | 45.00     |            | 6,688.87    |
+| 01 Nov     | TESCO - Halloween sweets & treats                           | 35.00     |            | 6,653.87    |
+| 02 Nov     | TFL TRAVEL - Contactless payment                            | 3.40      |            | 6,650.47    |
+| 03 Nov     | LITTLE STARS NURSERY - Max's November Fees                  | 850.00    |            | 5,800.47    |
+| 05 Nov     | Direct Debit - British Gas (Energy Bill)                    | 150.00    |            | 5,650.47    |
+| 05 Nov     | Direct Debit - Sky (Broadband & TV)                         | 68.00     |            | 5,582.47    |
+| 06 Nov     | AMAZON UK - Christmas gifts starting                        | 85.00     |            | 5,497.47    |
+| 07 Nov     | Direct Debit - LV= (Car Insurance - VW Golf)                | 55.00     |            | 5,442.47    |
+| 08 Nov     | WICKES - DIY supplies for kitchen                           | 48.90     |            | 5,393.57    |
+| 09 Nov     | WAITROSE - Weekend groceries                                | 68.70     |            | 5,324.87    |
+| 10 Nov     | Direct Debit - Life Insurance (Aviva)                       | 65.00     |            | 5,259.87    |
+| 13 Nov     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 5,253.07    |
+| 14 Nov     | Direct Debit - AA Breakdown Cover                           | 12.00     |            | 5,241.07    |
+| 15 Nov     | Salary - ETHAN MARSH (Fintech Solutions Ltd)                |           | 4,790.15   | 10,031.22   |
+| 15 Nov     | Salary - CLAIRE MARSH (QPA Primary School)                  |           | 2,410.60   | 12,441.82   |
+| 16 Nov     | Direct Debit - Barclays Mortgage Payment                    | 1,650.00  |            | 10,791.82   |
+| 17 Nov     | Transfer to Vanguard - Monthly ISA Contribution             | 500.00    |            | 10,291.82   |
+| 17 Nov     | Transfer to Barclays Savings - Emergency Fund Top-up        | 200.00    |            | 10,091.82   |
+| 20 Nov     | SAINSBURY'S - Weekly shop                                   | 115.00    |            | 9,976.82    |
+| 21 Nov     | TFL TRAVEL - Contactless payment                            | 3.40      |            | 9,973.42    |
+| 22 Nov     | THE GROVE - Dinner with Janet (Mum visiting)                | 70.00     |            | 9,903.42    |
+| 23 Nov     | NEXT - Kids' winter clothes                                 | 95.00     |            | 9,808.42    |
+| 24 Nov     | JOHN LEWIS - Christmas decorations                          | 60.00     |            | 9,748.42    |
+| 27 Nov     | Direct Debit - NHS Prescription Prepayment Certificate      | 11.65     |            | 9,736.77    |
+| 28 Nov     | ROYAL MAIL - Christmas card postage                         | 25.00     |            | 9,711.77    |
+| 29 Nov     | GREGGS - Lunch near office                                  | 4.50      |            | 9,707.27    |
+| 30 Nov     | Direct Debit - Amazon Prime                                 | 8.99      |            | 9,698.28    |
+| 01 Dec     | TESCO - Christmas food planning                             | 130.00    |            | 9,568.28    |
+| 02 Dec     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 9,561.48    |
+| 04 Dec     | LITTLE STARS NURSERY - Max's December Fees                  | 850.00    |            | 8,711.48    |
+| 05 Dec     | Direct Debit - British Gas (Energy Bill)                    | 150.00    |            | 8,561.48    |
+| 06 Dec     | QPA PRIMARY SCHOOL - Lily's Christmas Party contribution    | 10.00     |            | 8,551.48    |
+| 07 Dec     | AMAZON UK - More Christmas gifts                            | 120.00    |            | 8,431.48    |
+| 08 Dec     | WAITROSE - Weekend treats                                   | 45.00     |            | 8,386.48    |
+| 11 Dec     | Direct Debit - RSPB Donation (Ethan's choice)               | 10.00     |            | 8,376.48    |
+| 12 Dec     | TFL TRAVEL - Contactless payment                            | 3.40      |            | 8,373.08    |
+| 13 Dec     | ARGOS - Kids' Christmas presents                            | 150.00    |            | 8,223.08    |
+| 14 Dec     | Direct Debit - Disney+                                      | 10.99     |            | 8,212.09    |
+| 15 Dec     | Salary - ETHAN MARSH (Fintech Solutions Ltd)                |           | 4,790.15   | 13,002.24   |
+| 15 Dec     | Salary - CLAIRE MARSH (QPA Primary School)                  |           | 2,410.60   | 15,412.84   |
+| 16 Dec     | Direct Debit - Barclays Mortgage Payment                    | 1,650.00  |            | 13,762.84   |
+| 17 Dec     | Transfer to Vanguard - Monthly ISA Contribution             | 500.00    |            | 13,262.84   |
+| 17 Dec     | Transfer to Barclays Savings - Emergency Fund Top-up        | 200.00    |            | 13,062.84   |
+| 18 Dec     | SAINSBURY'S - Christmas food prep                           | 180.00    |            | 12,882.84   |
+| 19 Dec     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 12,876.04   |
+| 20 Dec     | THE TOY SHOP - Last minute gifts                            | 75.00     |            | 12,801.04   |
+| 21 Dec     | Transfer to J Marsh - Christmas gift for Mum                | 100.00    |            | 12,701.04   |
+| 22 Dec     | Transfer to H Marsh - Christmas gift for Hannah             | 50.00     |            | 12,651.04   |
+| 22 Dec     | Transfer to L Marsh - Christmas gift for Luke               | 50.00     |            | 12,601.04   |
+| 23 Dec     | M&S FOOD - Christmas Eve essentials                         | 60.00     |            | 12,541.04   |
+| 24 Dec     | CHRISTMAS EVE - Family activities                           | 40.00     |            | 12,501.04   |
+| 25 Dec     | CHRISTMAS DAY - No transactions                             |           |            | 12,501.04   |
+| 26 Dec     | BOXING DAY - Sales shopping (online)                        | 120.00    |            | 12,381.04   |
+| 27 Dec     | TESCO - Post-Christmas food shop                            | 90.00     |            | 12,291.04   |
+| 28 Dec     | NATIONAL RAIL - Train tickets to Bristol (Janet's visit)    | 75.00     |            | 12,216.04   |
+| 29 Dec     | ZIZZI - Dinner with Janet                                   | 60.00     |            | 12,156.04   |
+| 30 Dec     | CINEMA ODEON - Family trip (Boxing Day release)             | 38.00     |            | 12,118.04   |
+| 31 Dec     | SAINSBURY'S - New Year's Eve supplies                       | 75.00     |            | 12,043.04   |
+
+**Closing Balance (31 Dec 2023): £12,043.04 CR**
+
+**Summary of Activity:**
+Total Debits: £10,140.39
+Total Credits: £17,679.99
+Opening Balance: £3,512.60
+Closing Balance: £12,043.04
+
+**Average Daily Balance:** £7,890.15
+**Interest Paid This Period:** £0.00
+
+---
+
+#### **2.3 BARCLAYS BANK STATEMENT - JOINT CURRENT ACCOUNT**
+**Period: 01 January 2023 - 31 March 2023**
+**Statement Date: 01 April 2023**
+
+**Account Holders:** Mr Ethan Marsh & Mrs Claire Marsh
+**Address:** 47 Maplewood Drive, High Barnet, London, N20 9AB
+
+**Account Number:** 20-55-XX 9XXX78XX
+**Sort Code:** 20-55-XX
+**Opening Balance (01 Jan 2023):** £2,987.55 CR
+
+| Date       | Description                                                 | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :---------------------------------------------------------- | :-------- | :--------- | :---------- |
+| 01 Jan     | SAINSBURY'S - New Year's Day shop                           | 85.00     |            | 2,902.55    |
+| 02 Jan     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 2,895.75    |
+| 03 Jan     | Direct Debit - Spotify Premium                              | 9.99      |            | 2,885.76    |
+| 04 Jan     | LITTLE STARS NURSERY - Max's January Fees                   | 800.00    |            | 2,085.76    |
+| 05 Jan     | Direct Debit - British Gas (Energy Bill)                    | 180.00    |            | 1,905.76    |
+| 05 Jan     | Direct Debit - Thames Water (Water Bill)                    | 39.00     |            | 1,866.76    |
+| 06 Jan     | QPA PRIMARY SCHOOL - Lily's School Lunch Payments           | 30.00     |            | 1,836.76    |
+| 07 Jan     | AMAZON UK - Books for kids                                  | 45.00     |            | 1,791.76    |
+| 09 Jan     | PETS AT HOME - Fish tank supplies                           | 38.50     |            | 1,753.26    |
+| 10 Jan     | TFL TRAVEL - Contactless payment                            | 3.40      |            | 1,749.86    |
+| 11 Jan     | TESCO - Weekly shop                                         | 92.00     |            | 1,657.86    |
+| 12 Jan     | Direct Debit - Council Tax (Barnet Council)                 | 205.00    |            | 1,452.86    |
+| 13 Jan     | Transfer from E Marsh - Personal Savings                    |           | 200.00     | 1,652.86    |
+| 15 Jan     | Salary - ETHAN MARSH (Fintech Solutions Ltd)                |           | 4,550.00   | 6,202.86    |
+| 15 Jan     | Salary - CLAIRE MARSH (QPA Primary School)                  |           | 2,300.00   | 8,502.86    |
+| 16 Jan     | Direct Debit - Barclays Mortgage Payment                    | 1,580.00  |            | 6,922.86    |
+| 17 Jan     | Transfer to Vanguard - Monthly ISA Contribution             | 400.00    |            | 6,522.86    |
+| 17 Jan     | Transfer to Barclays Savings - Emergency Fund Top-up        | 150.00    |            | 6,372.86    |
+| 18 Jan     | Direct Debit - Vodafone (Mobile Phone Bill - Ethan)         | 35.00     |            | 6,337.86    |
+| 18 Jan     | Direct Debit - O2 (Mobile Phone Bill - Claire)              | 22.00     |            | 6,315.86    |
+| 19 Jan     | WATERSTONES - Books for Ethan & Claire                      | 30.00     |            | 6,285.86    |
+| 20 Jan     | M&S FOOD - Weekend groceries                                | 48.00     |            | 6,237.86    |
+| 23 Jan     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 6,231.06    |
+| 24 Jan     | Direct Debit - Netflix Subscription                         | 15.99     |            | 6,215.07    |
+| 25 Jan     | NATIONAL RAIL - Train tickets to Manchester (Hannah visit)  | 65.00     |            | 6,150.07    |
+| 26 Jan     | GREGGS - Lunch near office                                  | 4.00      |            | 6,146.07    |
+| 27 Jan     | SAINSBURY'S - Weekly shop                                   | 100.00    |            | 6,046.07    |
+| 30 Jan     | Direct Debit - Gym Membership (Ethan)                       | 40.00     |            | 6,006.07    |
+| 31 Jan     | Direct Debit - Amazon Prime                                 | 7.99      |            | 5,998.08    |
+| 01 Feb     | TESCO - Weekly shop                                         | 95.00     |            | 5,903.08    |
+| 02 Feb     | TFL TRAVEL - Contactless payment                            | 3.40      |            | 5,899.68    |
+| 03 Feb     | LITTLE STARS NURSERY - Max's February Fees                  | 800.00    |            | 5,099.68    |
+| 05 Feb     | Direct Debit - British Gas (Energy Bill)                    | 180.00    |            | 4,919.68    |
+| 05 Feb     | Direct Debit - Sky (Broadband & TV)                         | 65.00     |            | 4,854.68    |
+| 06 Feb     | AMAZON UK - Kids' craft supplies                            | 28.00     |            | 4,826.68    |
+| 07 Feb     | Direct Debit - LV= (Car Insurance - VW Golf)                | 50.00     |            | 4,776.68    |
+| 08 Feb     | WICKES - DIY supplies for garden                            | 35.00     |            | 4,741.68    |
+| 09 Feb     | WAITROSE - Weekend groceries                                | 60.00     |            | 4,681.68    |
+| 10 Feb     | Direct Debit - Life Insurance (Aviva)                       | 60.00     |            | 4,621.68    |
+| 13 Feb     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 4,614.88    |
+| 14 Feb     | M&S FOOD - Valentine's treats                               | 30.00     |            | 4,584.88    |
+| 15 Feb     | Salary - ETHAN MARSH (Fintech Solutions Ltd)                |           | 4,550.00   | 9,134.88    |
+| 15 Feb     | Salary - CLAIRE MARSH (QPA Primary School)                  |           | 2,300.00   | 11,434.88   |
+| 16 Feb     | Direct Debit - Barclays Mortgage Payment                    | 1,580.00  |            | 9,854.88    |
+| 17 Feb     | Transfer to Vanguard - Monthly ISA Contribution             | 400.00    |            | 9,454.88    |
+| 17 Feb     | Transfer to Barclays Savings - Emergency Fund Top-up        | 150.00    |            | 9,304.88    |
+| 20 Feb     | SAINSBURY'S - Weekly shop                                   | 105.00    |            | 9,199.88    |
+| 21 Feb     | TFL TRAVEL - Contactless payment                            | 3.40      |            | 9,196.48    |
+| 22 Feb     | NHS PRESCRIPTIONS - Ethan's asthma inhaler                  | 9.65      |            | 9,186.83    |
+| 23 Feb     | ZIZZI - Dinner with Claire                                  | 55.00     |            | 9,131.83    |
+| 24 Feb     | ARGOS - Small appliance replacement                         | 45.00     |            | 9,086.83    |
+| 27 Feb     | Direct Debit - NHS Prescription Prepayment Certificate      | 11.65     |            | 9,075.18    |
+| 28 Feb     | B&Q - Garden tools                                          | 25.00     |            | 9,050.18    |
+| 01 Mar     | SAINSBURY'S - Weekly shop                                   | 110.00    |            | 8,940.18    |
+| 02 Mar     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 8,933.38    |
+| 03 Mar     | LITTLE STARS NURSERY - Max's March Fees                     | 800.00    |            | 8,133.38    |
+| 05 Mar     | Direct Debit - British Gas (Energy Bill)                    | 180.00    |            | 7,953.38    |
+| 05 Mar     | Direct Debit - Thames Water (Water Bill)                    | 39.00     |            | 7,914.38    |
+| 06 Mar     | THE FISH PLACE - New fish & food                            | 50.00     |            | 7,864.38    |
+| 07 Mar     | QPA PRIMARY SCHOOL - Lily's School Trip (Farm Visit)        | 12.00     |            | 7,852.38    |
+| 08 Mar     | BARCLAYS - Mortgage Overpayment (Ad-hoc)                    | 300.00    |            | 7,552.38    |
+| 09 Mar     | TESCO - Weekly shop                                         | 98.00     |            | 7,454.38    |
+| 10 Mar     | Direct Debit - AA Breakdown Cover                           | 12.00     |            | 7,442.38    |
+| 13 Mar     | TFL TRAVEL - Contactless payment                            | 3.40      |            | 7,438.98    |
+| 14 Mar     | NHS DENTAL - Claire's check-up                              | 23.80     |            | 7,415.18    |
+| 15 Mar     | Salary - ETHAN MARSH (Fintech Solutions Ltd)                |           | 4,550.00   | 11,965.18   |
+| 15 Mar     | Salary - CLAIRE MARSH (QPA Primary School)                  |           | 2,300.00   | 14,265.18   |
+| 16 Mar     | Direct Debit - Barclays Mortgage Payment                    | 1,580.00  |            | 12,685.18   |
+| 17 Mar     | Transfer to Vanguard - Monthly ISA Contribution             | 400.00    |            | 12,285.18   |
+| 17 Mar     | Transfer to Barclays Savings - Emergency Fund Top-up        | 150.00    |            | 12,135.18    |
+| 18 Mar     | Direct Debit - Life Insurance (Aviva)                       | 60.00     |            | 12,075.18    |
+| 20 Mar     | M&S FOOD - Groceries for weekend                            | 45.00     |            | 12,030.18    |
+| 21 Mar     | TFL TRAVEL - Contactless payment                            | 6.80      |            | 12,023.38    |
+| 22 Mar     | CINEMA ODEON - Family movie night                           | 35.00     |            | 11,988.38    |
+| 23 Mar     | JOHN LEWIS - New towels                                     | 70.00     |            | 11,918.38    |
+| 24 Mar     | WAITROSE - Easter chocolates & essentials                   | 55.00     |            | 11,863.38    |
+| 27 Mar     | Transfer to J Marsh - Contribution for Mum's garden project | 25.00     |            | 11,838.38    |
+| 28 Mar     | GREGGS - Lunch near office                                  | 4.00      |            | 11,834.38    |
+| 29 Mar     | Direct Debit - AA Breakdown Cover                           | 12.00     |            | 11,822.38    |
+| 30 Mar     | TESCO - Easter Sunday shop                                  | 80.00     |            | 11,742.38    |
+| 31 Mar     | QPA PRIMARY SCHOOL - Lily's Easter Holiday Club             | 60.00     |            | 11,682.38    |
+
+**Closing Balance (31 Mar 2023): £11,682.38 CR**
+
+**Summary of Activity:**
+Total Debits: £9,605.18
+Total Credits: £17,300.00
+Opening Balance: £2,987.55
+Closing Balance: £11,682.38
+
+**Average Daily Balance:** £7,350.20
+**Interest Paid This Period:** £0.00
+
+---
+---
+
+### **3. BARCLAYS MORTGAGE STATEMENT**
+**For the period: 01 March 2023 - 29 February 2024**
+**Statement Date: 08 March 2024**
+
+---
+
+**Barclays Mortgages**
+PO Box 10220
+Braintree
+CM77 9ES
+
+**Account Holders:** Mr Ethan Marsh & Mrs Claire Marsh
+**Property Address:** 47 Maplewood Drive, High Barnet, London, N20 9AB
+
+**Mortgage Account Number:** 7XXXXXXX1234
+**Mortgage Product:** Barclays Fixed Rate Mortgage (expires 30/06/2025)
+**Interest Rate:** 3.19% fixed until 30/06/2025
+**Remaining Term:** 22 years 4 months (as of 29 Feb 2024)
+
+**Opening Balance (01 March 2023): £345,678.90**
+
+**Summary of Activity this Period:**
+
+| Date       | Description                                                 | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :---------------------------------------------------------- | :-------- | :--------- | :---------- |
+| 01 Mar 2023 | Opening Balance                                             |           |            | 345,678.90  |
+| 16 Mar 2023 | Payment Received - Direct Debit                             |           | 1,580.00   | 344,098.90  |
+|            | *Interest Accrued (01-16 Mar)*                              | 480.12    |            | 344,579.02  |
+| 16 Mar 2023 | Capital Repaid                                              |           | 1,099.88   | 343,479.14  |
+| 08 Mar 2023 | Overpayment - Faster Payment from Joint Current Account     |           | 300.00     | 343,179.14  |
+| 16 Apr 2023 | Payment Received - Direct Debit                             |           | 1,580.00   | 341,599.14  |
+|            | *Interest Accrued (17 Mar-16 Apr)*                          | 910.87    |            | 342,510.01  |
+| 16 Apr 2023 | Capital Repaid                                              |           | 669.13     | 341,840.88  |
+| 16 May 2023 | Payment Received - Direct Debit                             |           | 1,580.00   | 340,260.88  |
+|            | *Interest Accrued (17 Apr-16 May)*                          | 908.11    |            | 341,168.99  |
+| 16 May 2023 | Capital Repaid                                              |           | 671.89     | 340,497.10  |
+| 16 Jun 2023 | Payment Received - Direct Debit                             |           | 1,580.00   | 338,917.10  |
+|            | *Interest Accrued (17 May-16 Jun)*                          | 878.02    |            | 339,795.12  |
+| 16 Jun 2023 | Capital Repaid                                              |           | 701.98     | 339,093.14  |
+| 16 Jul 2023 | Payment Received - Direct Debit                             |           | 1,580.00   | 337,513.14  |
+|            | *Interest Accrued (17 Jun-16 Jul)*                          | 874.88    |            | 338,388.02  |
+| 16 Jul 2023 | Capital Repaid                                              |           | 705.12     | 337,682.90  |
+| 16 Aug 2023 | Payment Received - Direct Debit                             |           | 1,580.00   | 336,102.90  |
+|            | *Interest Accrued (17 Jul-16 Aug)*                          | 871.74    |            | 336,974.64  |
+| 16 Aug 2023 | Capital Repaid                                              |           | 708.26     | 336,266.38  |
+| 16 Sep 2023 | Payment Received - Direct Debit                             |           | 1,580.00   | 334,686.38  |
+|            | *Interest Accrued (17 Aug-16 Sep)*                          | 868.61    |            | 335,554.99  |
+| 16 Sep 2023 | Capital Repaid                                              |           | 711.39     | 334,843.60  |
+| 16 Oct 2023 | Payment Received - Direct Debit                             |           | 1,650.00   | 333,193.60  |
+|            | *Interest Accrued (17 Sep-16 Oct)*                          | 865.49    |            | 334,059.09  |
+| 16 Oct 2023 | Capital Repaid                                              |           | 784.51     | 333,274.58  |
+| 16 Nov 2023 | Payment Received - Direct Debit                             |           | 1,650.00   | 331,624.58  |
+|            | *Interest Accrued (17 Oct-16 Nov)*                          | 857.08    |            | 332,481.66  |
+| 16 Nov 2023 | Capital Repaid                                              |           | 792.92     | 331,688.74  |
+| 16 Dec 2023 | Payment Received - Direct Debit                             |           | 1,650.00   | 330,038.74  |
+|            | *Interest Accrued (17 Nov-16 Dec)*                          | 853.86    |            | 330,892.60  |
+| 16 Dec 2023 | Capital Repaid                                              |           | 796.14     | 330,096.46  |
+| 16 Jan 2024 | Payment Received - Direct Debit                             |           | 1,650.00   | 328,446.46  |
+|            | *Interest Accrued (17 Dec-16 Jan)*                          | 845.54    |            | 329,292.00  |
+| 16 Jan 2024 | Capital Repaid                                              |           | 804.46     | 328,487.54  |
+| 16 Feb 2024 | Payment Received - Direct Debit                             |           | 1,650.00   | 326,837.54  |
+|            | *Interest Accrued (17 Jan-16 Feb)*                          | 842.34    |            | 327,679.88  |
+| 16 Feb 2024 | Capital Repaid                                              |           | 807.66     | 326,872.22  |
+| 08 Mar 2024 | Overpayment - Faster Payment from Joint Current Account     |           | 500.00     | 326,372.22  |
+
+**Closing Balance (29 February 2024): £326,372.22**
+
+**Summary of Payments Made:**
+Total Direct Debit Payments: £19,640.00
+Total Overpayments: £800.00
+Total Payments: £20,440.00
+
+Total Interest Paid: £10,105.86
+Total Capital Repaid: £10,334.14
+
+**Your Mortgage Details:**
+Original Loan Amount: £360,000.00
+Start Date of Mortgage: 10/01/2021
+Original Term: 25 years
+Current Monthly Payment: £1,650.00 (increased from £1,580.00 in Oct 2023 due to rate adjustment)
+
+**Early Repayment Charges:**
+There are no early repayment charges applicable to overpayments up to 10% of the outstanding balance per anniversary year. You have made overpayments of £800.00 this year, well within your allowance.
+
+**Important Information:**
+*   Your current fixed rate expires on 30 June 2025. We will contact you approximately 6 months before this date to discuss your options.
+*   You can view your mortgage account details and make additional payments online via Barclays Online Banking or the Barclays app.
+*   Making regular overpayments can reduce your overall interest payments and the term of your mortgage.
+*   If you are experiencing financial difficulties, please contact us as soon as possible to discuss how we can help.
+
+Barclays Bank UK PLC. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register No. 759676). Registered in England. Registered no. 9740322. Registered office: 1 Churchill Place, London E14 5HP.
+
+---
+---
+
+### **4. VANGUARD INVESTOR - INDIVIDUAL SAVINGS ACCOUNT (ISA) STATEMENT**
+**Account Holder: Mr Ethan Marsh**
+**For the period: 01 March 2023 - 29 February 2024**
+**Statement Date: 08 March 2024**
+
+---
+
+**Vanguard Investor UK Limited**
+PO Box 10220
+Chelmsford
+CM99 2FD
+
+**Account Holder:** Mr Ethan Marsh
+**Address:** 47 Maplewood Drive, High Barnet, London, N20 9AB
+
+**Account Type:** Stocks & Shares ISA
+**Account Number:** VGX-XXXX-XXXX-XX87
+**National Insurance Number:** JJ DD MM YY M
+
+**Opening Value (01 March 2023): £58,450.22**
+
+**Summary of Your ISA Activity:**
+
+| Date       | Transaction Type      | Fund Name                                   | Units   | Price (£) | Value (£) |
+| :--------- | :-------------------- | :------------------------------------------ | :------ | :-------- | :-------- |
+| 01 Mar 2023 | Opening Balance       |                                             |         |           | 58,450.22 |
+| 17 Mar 2023 | Contribution          | Vanguard Global All Cap Index Fund Acc      | 1.689   | 236.71    | 400.00    |
+| 17 Apr 2023 | Contribution          | Vanguard Global All Cap Index Fund Acc      | 1.670   | 239.52    | 400.00    |
+| 17 May 2023 | Contribution          | Vanguard Global All Cap Index Fund Acc      | 1.698   | 235.57    | 400.00    |
+| 17 Jun 2023 | Contribution          | Vanguard Global All Cap Index Fund Acc      | 1.650   | 242.42    | 400.00    |
+| 17 Jul 2023 | Contribution          | Vanguard Global All Cap Index Fund Acc      | 1.640   | 243.90    | 400.00    |
+| 17 Aug 2023 | Contribution          | Vanguard Global All Cap Index Fund Acc      | 1.666   | 240.09    | 400.00    |
+| 28 Aug 2023 | Dividend Reinvestment | Vanguard Global All Cap Index Fund Acc      | 0.082   | 243.85    | 20.00     |
+| 17 Sep 2023 | Contribution          | Vanguard Global All Cap Index Fund Acc      | 2.000   | 250.00    | 500.00    |
+| 17 Oct 2023 | Contribution          | Vanguard Global All Cap Index Fund Acc      | 2.050   | 243.90    | 500.00    |
+| 17 Nov 2023 | Contribution          | Vanguard Global All Cap Index Fund Acc      | 1.980   | 252.52    | 500.00    |
+| 17 Dec 2023 | Contribution          | Vanguard Global All Cap Index Fund Acc      | 1.950   | 256.41    | 500.00    |
+| 17 Jan 2024 | Contribution          | Vanguard Global All Cap Index Fund Acc      | 1.920   | 260.42    | 500.00    |
+| 17 Feb 2024 | Contribution          | Vanguard Global All Cap Index Fund Acc      | 1.900   | 263.16    | 500.00    |
+| 29 Feb 2024 | Valuation             | Vanguard Global All Cap Index Fund Acc      | 249.789 | 265.00    | 66,194.09 |
+
+**Closing Value (29 February 2024): £66,194.09**
+
+**Breakdown of Your Holdings:**
+
+| Fund Name                               | Type | Units Held | Current Price (£) | Market Value (£) | % of Portfolio |
+| :-------------------------------------- | :--- | :--------- | :---------------- | :--------------- | :------------- |
+| Vanguard Global All Cap Index Fund Acc  | OEIC | 249.789    | 265.00            | 66,194.09        | 100.00%        |
+| **Total Holdings**                      |      |            |                   | **66,194.09**    | **100.00%**    |
+
+**Performance Summary (01 March 2023 - 29 February 2024):**
+
+Opening Value: £58,450.22
+Contributions this period: £5,500.00 (£400 x 6 months, then £500 x 7 months)
+Dividend Reinvestments: £20.00
+Closing Value: £66,194.09
+
+**Total Growth this period (excluding contributions):** £66,194.09 - £58,450.22 - £5,500.00 - £20.00 = £2,223.87
+**Percentage Growth (excluding contributions):** 3.80%
+
+**Annual ISA Allowance:**
+Your ISA allowance for the 2023/2024 tax year (06 Apr 2023 - 05 Apr 2024) is £20,000.
+Contributions made since 06 April 2023: £4,500.00
+Remaining allowance for 2023/2024: £15,500.00
+
+**Important Information:**
+*   The value of investments can go down as well as up, and you may get back less than you invested.
+*   Past performance is not a reliable indicator of future results.
+*   This statement is for informational purposes only. You can access up-to-date valuations and transaction history via your online account at vanguardinvestor.co.uk.
+*   Vanguard does not provide financial advice. If you are unsure about the suitability of an investment, you should seek independent financial advice.
+
+Vanguard Investor UK Limited is authorised and regulated by the Financial Conduct Authority. Registered in England and Wales. Registered no. 10085185. Registered office: 4th Floor, The Walbrook Building, 25 Walbrook, London EC4N 8AF.
+
+---
+---
+
+### **5. SCOTTISH WIDOWS - PENSION PLAN STATEMENT**
+**Account Holder: Mr Ethan Marsh**
+**For the period: 06 April 2023 - 05 April 2024**
+**Statement Date: 08 April 2024**
+
+---
+
+**Scottish Widows Plc**
+PO Box 199
+Leeds
+LS1 1PL
+
+**Account Holder:** Mr Ethan Marsh
+**Address:** 47 Maplewood Drive, High Barnet, London, N20 9AB
+
+**Plan Type:** Workplace Pension (Defined Contribution)
+**Employer:** Fintech Solutions Ltd
+**Plan Number:** SWP-XXXX-XXXX-XX45
+**National Insurance Number:** JJ DD MM YY M
+
+**Opening Value (06 April 2023): £112,580.45**
+
+**Summary of Your Plan Activity:**
+
+| Date       | Transaction Type       | Fund Name                                   | Units   | Price (£) | Value (£) |
+| :--------- | :--------------------- | :------------------------------------------ | :------ | :-------- | :-------- |
+| 06 Apr 2023 | Opening Balance        |                                             |         |           | 112,580.45|
+| 15 Apr 2023 | Employer Contribution  | Scottish Widows Global Equity Index Fund    | 1.890   | 105.82    | 200.00    |
+| 15 Apr 2023 | Employee Contribution  | Scottish Widows Global Equity Index Fund    | 2.363   | 105.82    | 250.00    |
+| 15 May 2023 | Employer Contribution  | Scottish Widows Global Equity Index Fund    | 1.880   | 106.38    | 200.00    |
+| 15 May 2023 | Employee Contribution  | Scottish Widows Global Equity Index Fund    | 2.350   | 106.38    | 250.00    |
+| 15 Jun 2023 | Employer Contribution  | Scottish Widows Global Equity Index Fund    | 1.860   | 107.53    | 200.00    |
+| 15 Jun 2023 | Employee Contribution  | Scottish Widows Global Equity Index Fund    | 2.325   | 107.53    | 250.00    |
+| 15 Jul 2023 | Employer Contribution  | Scottish Widows Global Equity Index Fund    | 1.850   | 108.10    | 200.00    |
+| 15 Jul 2023 | Employee Contribution  | Scottish Widows Global Equity Index Fund    | 2.315   | 108.10    | 250.00    |
+| 15 Aug 2023 | Employer Contribution  | Scottish Widows Global Equity Index Fund    | 1.870   | 106.95    | 200.00    |
+| 15 Aug 2023 | Employee Contribution  | Scottish Widows Global Equity Index Fund    | 2.338   | 106.95    | 250.00    |
+| 15 Sep 2023 | Employer Contribution  | Scottish Widows Global Equity Index Fund    | 1.865   | 107.24    | 200.00    |
+| 15 Sep 2023 | Employee Contribution  | Scottish Widows Global Equity Index Fund    | 2.331   | 107.24    | 250.00    |
+| 15 Oct 2023 | Employer Contribution  | Scottish Widows Global Equity Index Fund    | 2.100   | 109.52    | 230.00    |
+| 15 Oct 2023 | Employee Contribution  | Scottish Widows Global Equity Index Fund    | 2.625   | 109.52    | 287.50    |
+| 15 Nov 2023 | Employer Contribution  | Scottish Widows Global Equity Index Fund    | 2.080   | 110.58    | 230.00    |
+| 15 Nov 2023 | Employee Contribution  | Scottish Widows Global Equity Index Fund    | 2.600   | 110.58    | 287.50    |
+| 15 Dec 2023 | Employer Contribution  | Scottish Widows Global Equity Index Fund    | 2.070   | 111.11    | 230.00    |
+| 15 Dec 2023 | Employee Contribution  | Scottish Widows Global Equity Index Fund    | 2.587   | 111.11    | 287.50    |
+| 15 Jan 2024 | Employer Contribution  | Scottish Widows Global Equity Index Fund    | 2.060   | 111.65    | 230.00    |
+| 15 Jan 2024 | Employee Contribution  | Scottish Widows Global Equity Index Fund    | 2.571   | 111.65    | 287.50    |
+| 15 Feb 2024 | Employer Contribution  | Scottish Widows Global Equity Index Fund    | 2.050   | 112.19    | 230.00    |
+| 15 Feb 2024 | Employee Contribution  | Scottish Widows Global Equity Index Fund    | 2.556   | 112.19    | 287.50    |
+| 05 Apr 2024 | Valuation              | Scottish Widows Global Equity Index Fund    | 1150.87 | 113.50    | 130,173.25|
+
+*Note: Employee contributions are shown before tax relief is added. We claim 20% basic rate tax relief from HMRC and add it to your pension. Higher rate taxpayers need to claim additional relief via their Self Assessment.*
+
+**Closing Value (05 April 2024): £130,173.25**
+
+**Breakdown of Your Holdings:**
+
+| Fund Name                               | Type | Units Held | Current Price (£) | Market Value (£) | % of Portfolio |
+| :-------------------------------------- | :--- | :--------- | :---------------- | :--------------- | :------------- |
+| Scottish Widows Global Equity Index Fund| Unit | 1150.87    | 113.50            | 130,173.25       | 100.00%        |
+| **Total Holdings**                      |      |            |                   | **130,173.25**   | **100.00%**    |
+
+**Contributions this period:**
+Total Employee Contributions: £3,125.00
+Total Employer Contributions: £2,690.00
+Total Contributions: £5,815.00
+
+**Performance Summary (06 April 2023 - 05 April 2024):**
+
+Opening Value: £112,580.45
+Total Contributions: £5,815.00
+Closing Value: £130,173.25
+
+**Total Growth this period (excluding contributions):** £130,173.25 - £112,580.45 - £5,815.00 = £11,777.80
+**Percentage Growth (excluding contributions):** 10.46%
+
+**Retirement Age:** 68 (Current State Pension Age)
+**Projected Retirement Income:**
+Based on current contributions and growth rates, your pension could provide an income of approximately £18,500 per year at age 68 (in today's money). This is an illustration and not a guarantee.
+
+**Important Information:**
+*   The value of your pension can go down as well as up.
+*   Your employer contributes to this pension plan on your behalf.
+*   You can change your investment choices or contribution levels by logging into your online account.
+*   Remember to nominate a beneficiary for your pension. This ensures your pension goes to the people you choose in the event of your death.
+
+Scottish Widows Plc is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority. Registered in Scotland No. SC145169. Registered office: 25 Gresham Street, London EC2V 7HN.
+
+---
+
+### **6. TEACHERS' PENSIONS - ANNUAL BENEFIT STATEMENT**
+**Account Holder: Mrs Claire Marsh**
+**For the period: 01 April 2023 - 31 March 2024**
+**Statement Date: 01 May 2024**
+
+---
+
+**Teachers' Pensions**
+Mowden Hall
+Staindrop Road
+Darlington
+DL3 9EE
+
+**Account Holder:** Mrs Claire Marsh
+**Address:** 47 Maplewood Drive, High Barnet, London, N20 9AB
+
+**Employer:** QPA Primary School
+**Teachers' Pension Reference:** TPF-XXXX-XX45
+**National Insurance Number:** QQ DD MM YY M
+
+**Scheme:** Teachers' Pension Scheme (Career Average Revalued Earnings - CARE)
+**Pension Type:** Defined Benefit
+
+**Summary of Your Teachers' Pension**
+
+This statement shows the pension benefits you have built up in the Teachers' Pension Scheme as of 31 March 2024.
+
+**Accrued Benefits to 31 March 2024:**
+
+*   **Alpha Scheme Pension:** £4,850.00 per year
+    *   This is the annual pension you have built up in the Alpha Scheme, revalued each year in line with the Consumer Price Index (CPI) plus 1.6%.
+*   **Final Salary Scheme Pension (for service prior to 01 April 2015):** £1,200.00 per year
+    *   This is the annual pension based on your service before 01 April 2015, calculated on your final average salary.
+
+**Total Accrued Annual Pension (payable at Normal Pension Age): £6,050.00 per year**
+
+**Your Normal Pension Age (NPA):** 68 years
+
+**Summary of Contributions during 2023/2024:**
+
+| Category          | Amount (£) |
+| :---------------- | :--------- |
+| Gross Pensionable Earnings | 36,000.00  |
+| Employee Contributions | 2,700.00   |
+| Employer Contributions | 4,320.00   |
+
+*Note: The employee contribution rate for your salary band during this period was 7.5% of your pensionable earnings.*
+
+**Death Benefits:**
+In the event of your death, a lump sum of approximately £72,000 (2x your final salary) and a dependant's pension may be payable. Please ensure your Expression of Wish form is up to date.
+
+**Important Information:**
+*   Your pension is revalued annually to protect its value against inflation.
+*   You can access more detailed information about your pension, including retirement options, via the Teachers' Pensions Member Portal at www.teacherspensions.co.uk.
+*   This statement is a summary. Full details of the scheme rules are available on the Teachers' Pensions website.
+*   If you are considering retirement or have questions about your benefits, please contact Teachers' Pensions directly.
+
+Teachers' Pensions is a statutory public service pension scheme administered by the Department for Education.
+
+---
+---
+
+### **7. NATWEST CREDIT CARD STATEMENT**
+**Account Holder: Mr Ethan Marsh**
+**For the period: 01 December 2023 - 29 February 2024**
+**Statement Date: 08 March 2024**
+
+---
+
+**NatWest Credit Cards**
+PO Box 1000
+Newcastle upon Tyne
+NE85 1AF
+
+**Account Holder:** Mr Ethan Marsh
+**Address:** 47 Maplewood Drive, High Barnet, London, N20 9AB
+
+**Card Type:** NatWest Reward Credit Card
+**Card Number:** 4929 XXXX XXXX 1234
+**Account Number:** 05-60-XX 9XXX56XX
+**Credit Limit:** £8,000.00
+**Available Credit:** £7,125.50
+
+**Opening Balance (01 December 2023): £350.20**
+
+**Summary of Your Transactions:**
+
+| Date       | Description                                                 | Debit (£) | Credit (£) |
+| :--------- | :---------------------------------------------------------- | :-------- | :--------- |
+| 01 Dec     | Payment Received - Thank You (DD)                           |           | 350.20     |
+| 02 Dec     | AMAZON UK - Kids Christmas Books                            | 45.00     |            |
+| 04 Dec     | SAINSBURY'S - Weekly Shop                                   | 120.50    |            |
+| 06 Dec     | JOHN LEWIS - Christmas Presents                             | 85.00     |            |
+| 08 Dec     | COSTA COFFEE - Coffee with Claire                           | 7.80      |            |
+| 09 Dec     | ARGOS - Lily's Main Christmas Gift                          | 65.00     |            |
+| 11 Dec     | TFL TRAVEL - Daily Commute                                  | 3.40      |            |
+| 12 Dec     | M&S FOOD - Christmas Delicacies                             | 55.00     |            |
+| 14 Dec     | THE TOY SHOP - Max's Christmas Present                      | 35.00     |            |
+| 16 Dec     | TESCO - Christmas Food Shop                                 | 180.00    |            |
+| 18 Dec     | WATERSTONES - Books for Claire                              | 28.00     |            |
+| 20 Dec     | CYCLE REPUBLIC - New Bike Helmet (Ethan)                    | 60.00     |            |
+| 22 Dec     | NEXT - Kids' Party Clothes                                  | 40.00     |            |
+| 24 Dec     | GREGGS - Christmas Eve Treats                               | 9.50      |            |
+| 26 Dec     | BOXING DAY SALES - Online clothing                          | 75.00     |            |
+| 28 Dec     | NATIONAL RAIL - Train to Bristol (Janet's visit)            | 75.00     |            |
+| 30 Dec     | CINEMA ODEON - Family Film                                  | 38.00     |            |
+| 03 Jan     | SAINSBURY'S - New Year Stock Up                             | 115.00    |            |
+| 05 Jan     | COSTA COFFEE - Quick Lunch                                  | 9.20      |            |
+| 08 Jan     | TFL TRAVEL - Daily Commute                                  | 3.40      |            |
+| 10 Jan     | AMAZON UK - Fish Tank Heater                                | 28.00     |            |
+| 12 Jan     | WICKES - DIY Supplies                                       | 42.00     |            |
+| 15 Jan     | TESCO - Weekly Shop                                         | 98.00     |            |
+| 18 Jan     | PETS AT HOME - Fish Food & Decorations                      | 32.00     |            |
+| 20 Jan     | ZIZZI - Dinner with Friends                                 | 85.00     |            |
+| 22 Jan     | M&S FOOD - Weekend Groceries                                | 48.00     |            |
+| 24 Jan     | TFL TRAVEL - Daily Commute                                  | 3.40      |            |
+| 26 Jan     | CURRYS PC WORLD - New Printer for Home                      | 99.00     |            |
+| 29 Jan     | GREGGS - Lunch                                              | 4.50      |            |
+| 01 Feb     | SAINSBURY'S - Weekly Shop                                   | 110.00    |            |
+| 03 Feb     | COSTA COFFEE - Coffee with Claire                           | 7.80      |            |
+| 06 Feb     | TFL TRAVEL - Daily Commute                                  | 3.40      |            |
+| 08 Feb     | AMAZON UK - Photography Filters                             | 55.00     |            |
+| 10 Feb     | WAITROSE - Special Dinner Ingredients                       | 65.00     |            |
+| 13 Feb     | M&S FOOD - Valentine's Day Chocolates                       | 20.00     |            |
+| 15 Feb     | TESCO - Weekly Shop                                         | 105.00    |            |
+| 18 Feb     | THE PHOTOGRAPHY SHOW - Entry Fee for Ethan                  | 35.00     |            |
+| 20 Feb     | SAINSBURY'S - Weekly Shop                                   | 95.00     |            |
+| 22 Feb     | NHS PRESCRIPTIONS - Ethan's seasonal allergy medication     | 9.65      |            |
+| 24 Feb     | ZIZZI - Dinner for Two                                      | 50.00     |            |
+| 26 Feb     | JOHN LEWIS - New Pillow                                     | 45.00     |            |
+| 28 Feb     | GREGGS - Lunch                                              | 4.50      |            |
+
+**Total Debits:** £2,372.45
+**Total Credits:** £350.20
+
+**New Balance (29 February 2024): £2,022.25**
+
+**Minimum Payment Due:** £60.00
+**Payment Due Date:** 22 March 2024
+**Interest Rate:** 22.9% p.a. (variable)
+**Interest Charged This Period:** £0.00 (as previous balance was cleared)
+
+**Reward Points Summary:**
+Points brought forward: 1,850
+Points earned this period: 2,372 (1 point per £1 spent)
+Points redeemed: 0
+Points carried forward: 4,222
+
+**Important Information:**
+*   You will earn 1% cashback on purchases for every £1 spent. This will be automatically credited to your account when you reach 5000 points.
+*   To avoid interest charges, please pay your full balance by the due date.
+*   Making only the minimum payment will increase the total cost of your borrowing and the time it takes to repay your balance.
+*   You can manage your credit card, view transactions, and make payments via NatWest Online Banking or the NatWest app.
+
+National Westminster Bank Plc. Registered in England and Wales No. 929027. Registered Office: 250 Bishopsgate, London EC2M 4AA. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority.
+
+---
+---
+
+### **8. BARNET COUNCIL - COUNCIL TAX BILL**
+**Period: 01 April 2024 - 31 March 2025**
+**Issue Date: 15 March 2024**
+
+---
+
+**Barnet Council**
+Council Tax Services
+PO Box 237
+Barnet
+EN5 5DN
+
+**Account Holder:** Mr Ethan Marsh
+**Property Address:** 47 Maplewood Drive, High Barnet, London, N20 9AB
+
+**Council Tax Account Number:** BAX-XXXX-XX-123456
+**Property Band:** Band D
+**Billing Period:** 01 April 2024 to 31 March 2025
+
+**Council Tax Charge for 2024/2025:**
+
+| Service Component     | Amount (£) |
+| :-------------------- | :--------- |
+| Barnet Council        | 1,280.50   |
+| Greater London Authority | 450.20     |
+| **Total Council Tax** | **1,730.70** |
+
+**Your Instalments:**
+You have chosen to pay by Direct Debit in 10 monthly instalments from April to January.
+
+| Instalment No. | Payment Due Date | Amount Due (£) |
+| :------------- | :--------------- | :------------- |
+| 1              | 05 April 2024    | 173.07         |
+| 2              | 05 May 2024      | 173.07         |
+| 3              | 05 June 2024     | 173.07         |
+| 4              | 05 July 2024     | 173.07         |
+| 5              | 05 August 2024   | 173.07         |
+| 6              | 05 September 2024| 173.07         |
+| 7              | 05 October 2024  | 173.07         |
+| 8              | 05 November 2024 | 173.07         |
+| 9              | 05 December 2024 | 173.07         |
+| 10             | 05 January 2025  | 173.07         |
+| **Total**      |                  | **1,730.70**   |
+
+**Previous Balance:** £0.00 (Account in credit/cleared)
+**Total Amount Due for 2024/2025:** £1,730.70
+
+**Council Tax Discounts and Exemptions:**
+No discounts or exemptions are currently applied to your account.
+If you believe you may be eligible for a discount (e.g., single person discount, student exemption) or support (e.g., Council Tax Support), please visit barnet.gov.uk/counciltax for more information or contact us.
+
+**How Your Council Tax is Spent:**
+*   **Police & Fire Services:** 12%
+*   **Education:** 28% (Funding for schools like QPA Primary, where Claire works)
+*   **Social Care (Adults & Children):** 35%
+*   **Environmental Services (Waste, Parks):** 10%
+*   **Highways & Transport:** 8%
+*   **Planning & Other Services:** 7%
+
+**Important Information:**
+*   If you miss an instalment, you will receive a reminder notice. If you fail to pay again, you may lose the right to pay by instalments and the full amount will become due.
+*   To change your payment method or instalment plan, please contact us at least 14 days before your next payment is due.
+*   You can view your Council Tax account online at barnet.gov.uk/myaccount.
+
+Barnet Council. Registered Office: 2 Bristol Avenue, Colindale, London NW9 4EW.
+
+---
+---
+
+### **9. THAMES WATER - WATER & WASTEWATER BILL**
+**Period: 01 April 2024 - 31 March 2025**
+**Issue Date: 20 March 2024**
+
+---
+
+**Thames Water**
+PO Box 286
+Southend-on-Sea
+SS99 1PL
+
+**Account Holder:** Mr Ethan Marsh
+**Property Address:** 47 Maplewood Drive, High Barnet, London, N20 9AB
+
+**Account Number:** TWX-XXXX-XX-7890
+**Billing Period:** 01 April 2024 to 31 March 2025
+
+**Your Charges for 2024/2025:**
+
+| Service Component       | Annual Charge (£) |
+| :---------------------- | :---------------- |
+| Water Supply            | 165.00            |
+| Wastewater (Sewerage)   | 335.00            |
+| **Total Annual Charge** | **500.00**        |
+
+**Your Instalments:**
+You have chosen to pay by Direct Debit in 12 monthly instalments.
+
+| Instalment No. | Payment Due Date | Amount Due (£) |
+| :------------- | :--------------- | :------------- |
+| 1              | 05 April 2024    | 41.67          |
+| 2              | 05 May 2024      | 41.67          |
+| 3              | 05 June 2024     | 41.67          |
+| 4              | 05 July 2024     | 41.67          |
+| 5              | 05 August 2024   | 41.67          |
+| 6              | 05 September 2024| 41.67          |
+| 7              | 05 October 2024  | 41.67          |
+| 8              | 05 November 2024 | 41.67          |
+| 9              | 05 December 2024 | 41.67          |
+| 10             | 05 January 2025  | 41.67          |
+| 11             | 05 February 2025 | 41.67          |
+| 12             | 05 March 2025    | 41.69          |
+| **Total**      |                  | **500.00**     |
+
+**Your Meter Reading:**
+Your property is currently unmetered. Charges are based on the rateable value of your property.
+Considering your growing family, have you thought about switching to a water meter? This could save you money, especially if you're mindful of water usage (e.g., shorter showers, efficient appliances). Visit thameswater.co.uk/meter for a free home assessment.
+
+**Previous Balance:** £0.00 (Account in credit/cleared)
+**Total Amount Due for 2024/2025:** £500.00
+
+**Water Saving Tips:**
+*   Fix dripping taps – a single dripping tap can waste hundreds of litres a year.
+*   Take shorter showers (aim for 4 minutes) – Max and Lily love playing in the bath, but keep an eye on water levels!
+*   Use a watering can for your garden instead of a hosepipe.
+*   Only run your washing machine and dishwasher when they're full.
+
+**Important Information:**
+*   If you are having difficulty paying your bill, please contact us immediately on 0800 009 3658. We can offer support and payment plans.
+*   This bill reflects the charges for the upcoming financial year. Any changes to charges will be communicated in advance.
+*   You can manage your account and view your bills online at thameswater.co.uk/myaccount.
+
+Thames Water Utilities Limited. Registered in England and Wales. Company No. 02366661. Registered office: Clearwater Court, Vastern Road, Reading, Berkshire RG1 8DB.
+
+---
+---
+
+### **10. LV= (LIVERPOOL VICTORIA) - CAR INSURANCE POLICY SUMMARY**
+**Policy Holder: Mr Ethan Marsh**
+**For the period: 09 February 2024 - 08 February 2025**
+**Issue Date: 20 January 2024**
+
+---
+
+**LV= General Insurance**
+Frizzell House
+Bournemouth
+BH1 2BU
+
+**Policy Holder:** Mr Ethan Marsh
+**Address:** 47 Maplewood Drive, High Barnet, London, N20 9AB
+
+**Policy Number:** LVG-XXXX-XX-6789
+**Vehicle:** 2019 VW Golf 1.5 TSI Match, Registration: LP19 XZX
+**Annual Premium:** £660.00
+**Payment Method:** Monthly Direct Debit (£55.00 per month)
+
+**Cover Details:**
+**Type of Cover:** Comprehensive
+**Start Date:** 09 February 2024
+**End Date:** 08 February 2025
+
+**Drivers Covered:**
+*   Mr Ethan Marsh (Main Driver) - Full UK Licence
+*   Mrs Claire Marsh - Full UK Licence
+
+**Excesses:**
+*   Standard Accident Damage Excess: £350.00
+*   Voluntary Excess: £100.00
+*   Windscreen Excess: £75.00
+
+**Key Benefits Included:**
+*   **No Claims Discount (NCD):** 8 years
+*   **Courtesy Car:** Included (subject to availability for approved repairs)
+*   **Personal Accident Cover:** Up to £5,000
+*   **Uninsured Driver Promise:** Your NCD won't be affected and your excess will be reimbursed if you're hit by an uninsured driver and it's not your fault.
+*   **Breakdown Cover:** Not included (Ethan has separate AA cover).
+*   **Legal Expenses Cover:** Included (up to £100,000 for legal costs to recover uninsured losses).
+
+**Optional Extras:**
+*   **Enhanced Courtesy Car:** Not selected
+*   **Key Cover:** Not selected
+*   **Protected No Claims Discount:** Selected (£25.00 additional premium) - This allows for two at-fault claims in a five-year period without affecting your NCD.
+
+**Mileage:** Declared Annual Mileage: 8,000 miles (Ethan mostly cycles, Claire drives the kids)
+
+**Current Vehicle Details:**
+Make: Volkswagen
+Model: Golf 1.5 TSI Match
+Year: 2019
+Fuel Type: Petrol (Ethan is considering an electric car for the next renewal)
+Value: £15,000 (estimated)
+
+**Important Information:**
+*   It is your responsibility to ensure all information provided is accurate and up to date. Failure to do so may invalidate your policy.
+*   If you need to make a claim, please call our 24-hour claims line on 0345 678 9012.
+*   You can access your policy documents and manage your policy online at www.lv.com/myaccount.
+*   This summary does not replace your full policy booklet, which contains all terms and conditions.
+
+LV= and Liverpool Victoria are registered trademarks of Liverpool Victoria Friendly Society Limited and LV= and Liverpool Victoria are trading styles of the Liverpool Victoria group of companies. LV= General Insurance is a trading style of Liverpool Victoria Insurance Company Limited. Registered in England and Wales No. 3232514. Registered office: Frizzell House, County Gates, Bournemouth BH1 2BU.
+
+---
+---
+
+### **11. PAYSLIPS & P60s**
+
+---
+
+#### **11.1 ETHAN MARSH - PAYSLIP (FEBRUARY 2024)**
+
+**Fintech Solutions Ltd**
+15 Canada Square
+Canary Wharf
+London
+E14 5AA
+
+**Employee Name:** Mr Ethan Marsh
+**Employee Number:** FS-EM-4567
+**Job Title:** Senior Software Engineer
+**Department:** Product Development
+**Pay Period:** February 2024
+**Pay Date:** 15 February 2024
+
+**National Insurance Number:** JJ DD MM YY M
+**Tax Code:** 1257L
+**Payroll Reference:** P2402EM
+
+**Earnings:**
+
+| Description          | Current (£) | Year to Date (£) |
+| :------------------- | :---------- | :--------------- |
+| Basic Salary         | 4,500.00    | 54,000.00        |
+| London Weighting     | 175.00      | 2,100.00         |
+| Performance Bonus    | 200.00      | 800.00           |
+| **Gross Pay**        | **4,875.00**| **56,900.00**    |
+
+**Deductions:**
+
+| Description               | Current (£) | Year to Date (£) |
+| :------------------------ | :---------- | :--------------- |
+| Income Tax (PAYE)         | 685.50      | 8,226.00         |
+| National Insurance (Cat A)| 320.70      | 3,848.40         |
+| Employee Pension Cont.    | 287.50      | 3,125.00         |
+| Student Loan Repayment    | 85.00       | 1,020.00         |
+| **Total Deductions**      | **1,378.70**| **16,219.40**    |
+
+**Net Pay:** £3,496.30
+
+**Employer Contributions:**
+
+| Description             | Current (£) | Year to Date (£) |
+| :---------------------- | :---------- | :--------------- |
+| Employer Pension Cont.  | 230.00      | 2,690.00         |
+| Employer NI Cont.       | 380.50      | 4,566.00         |
+| **Total Employer Cont.**| **610.50**  | **7,256.00**     |
+
+**Payment Method:** Bank Transfer
+**Bank Account:** Barclays 20-55-XX 9XXX78XX
+
+**Messages:**
+*   Your annual salary review is scheduled for April.
+*   Remember to claim your professional development allowance by end of March.
+*   Fintech Solutions Ltd is an equal opportunities employer.
+
+---
+
+#### **11.2 CLAIRE MARSH - PAYSLIP (FEBRUARY 2024)**
+
+**QPA Primary School**
+Park Road
+High Barnet
+London
+N20 9AL
+
+**Employee Name:** Mrs Claire Marsh
+**Employee Number:** QPA-CM-0123
+**Job Title:** Year 3 Teacher
+**Department:** Key Stage 2
+**Pay Period:** February 2024
+**Pay Date:** 15 February 2024
+
+**National Insurance Number:** QQ DD MM YY M
+**Tax Code:** 1257L
+**Payroll Reference:** P2402CM
+
+**Earnings:**
+
+| Description          | Current (£) | Year to Date (£) |
+| :------------------- | :---------- | :--------------- |
+| Basic Salary         | 2,800.00    | 33,600.00        |
+| Teaching & Learning Resp.| 150.00      | 1,800.00         |
+| **Gross Pay**        | **2,950.00**| **35,400.00**    |
+
+**Deductions:**
+
+| Description               | Current (£) | Year to Date (£) |
+| :------------------------ | :---------- | :--------------- |
+| Income Tax (PAYE)         | 340.00      | 4,080.00         |
+| National Insurance (Cat A)| 199.20      | 2,390.40         |
+| Teachers' Pension Cont.   | 221.25      | 2,700.00         |
+| **Total Deductions**      | **760.45**  | **9,170.40**     |
+
+**Net Pay:** £2,189.55
+
+**Employer Contributions:**
+
+| Description             | Current (£) | Year to Date (£) |
+| :---------------------- | :---------- | :--------------- |
+| Employer Teachers' Pension| 354.00      | 4,320.00         |
+| Employer NI Cont.       | 250.00      | 3,000.00         |
+| **Total Employer Cont.**| **604.00**  | **7,320.00**     |
+
+**Payment Method:** Bank Transfer
+**Bank Account:** Barclays 20-55-XX 9XXX78XX
+
+**Messages:**
+*   Reminder: Parents' Evening for Year 3 is on 5th March.
+*   Your CPD training days are scheduled for the Easter break.
+*   Thank you for your hard work this term!
+
+---
+
+#### **11.3 ETHAN MARSH - P60 (TAX YEAR 06 APRIL 2023 - 05 APRIL 2024)**
+
+**P60 - End of Year Certificate**
+**For the tax year 06 April 2023 to 05 April 2024**
+
+**Employer:** Fintech Solutions Ltd
+**Employer PAYE Reference:** 123/FS4567
+
+**Employee Name:** Mr Ethan Marsh
+**National Insurance Number:** JJ DD MM YY M
+**Tax Code:** 1257L
+**Payroll Number:** FS-EM-4567
+
+**Your Pay and Tax Details:**
+
+| Description             | Amount (£) |
+| :---------------------- | :--------- |
+| **Total Pay in Year**   | **58,000.00** |
+| - Pay from this employment| 58,000.00  |
+| **Total Tax in Year**   | **8,600.00** |
+| - Tax deducted          | 8,600.00   |
+
+**National Insurance Contributions:**
+
+| Category | Earnings at LEL (£) | Earnings from LEL to PT (£) | Earnings from PT to UEL (£) | Employee's NIC (£) | Employer's NIC (£) |
+| :------- | :------------------ | :-------------------------- | :-------------------------- | :----------------- | :----------------- |
+| A        | 6,396.00            | 12,570.00                   | 39,034.00                   | 4,050.00           | 4,800.00           |
+
+**Pension Contributions:**
+Gross Employee Contributions: £3,412.50
+Employer Contributions: £2,920.00
+
+**Student Loan Deductions:** £1,080.00
+
+**Important Information:**
+*   This P60 shows your earnings and the tax you paid from this employment only.
+*   Keep this document safe as you may need it if you fill in a Self Assessment tax return or apply for tax credits.
+*   If you think these figures are incorrect, please contact your employer's payroll department.
+
+HMRC. This P60 is issued by your employer to confirm your pay and the tax you paid in the tax year.
+
+---
+
+#### **11.4 CLAIRE MARSH - P60 (TAX YEAR 06 APRIL 2023 - 05 APRIL 2024)**
+
+**P60 - End of Year Certificate**
+**For the tax year 06 April 2023 to 05 April 2024**
+
+**Employer:** QPA Primary School
+**Employer PAYE Reference:** 456/QPA7890
+
+**Employee Name:** Mrs Claire Marsh
+**National Insurance Number:** QQ DD MM YY M
+**Tax Code:** 1257L
+**Payroll Number:** QPA-CM-0123
+
+**Your Pay and Tax Details:**
+
+| Description             | Amount (£) |
+| :---------------------- | :--------- |
+| **Total Pay in Year**   | **36,000.00** |
+| - Pay from this employment| 36,000.00  |
+| **Total Tax in Year**   | **4,200.00** |
+| - Tax deducted          | 4,200.00   |
+
+**National Insurance Contributions:**
+
+| Category | Earnings at LEL (£) | Earnings from LEL to PT (£) | Earnings from PT to UEL (£) | Employee's NIC (£) | Employer's NIC (£) |
+| :------- | :------------------ | :-------------------------- | :-------------------------- | :----------------- | :----------------- |
+| A        | 6,396.00            | 12,570.00                   | 17,034.00                   | 2,470.00           | 3,100.00           |
+
+**Pension Contributions:**
+Gross Employee Contributions (Teachers' Pension): £2,700.00
+Employer Contributions (Teachers' Pension): £4,320.00
+
+**Important Information:**
+*   This P60 shows your earnings and the tax you paid from this employment only.
+*   Keep this document safe as you may need it if you fill in a Self Assessment tax return or apply for tax credits.
+*   If you think these figures are incorrect, please contact your employer's payroll department.
+
+HMRC. This P60 is issued by your employer to confirm your pay and the tax you paid in the tax year.
+
+---
+---
+
+### **12. TAX YEAR SUMMARY - 2023/2024 (FICTIONAL)**
+
+---
+
+**Ethan Marsh - Personal Tax Summary**
+**Tax Year: 06 April 2023 - 05 April 2024**
+**Issued: 15 April 2024 (for informational purposes)**
+
+**Personal Details:**
+Name: Mr Ethan Marsh
+Date of Birth: 12/07/1985
+National Insurance Number: JJ DD MM YY M
+Address: 47 Maplewood Drive, High Barnet, London, N20 9AB
+
+**Income Summary:**
+
+| Income Source                 | Amount (£) |
+| :---------------------------- | :--------- |
+| Employment Income (Fintech Solutions Ltd) | 58,000.00  |
+| Bank Interest (Barclays Savings)        | 120.00     |
+| Investment Income (Vanguard ISA Dividends - Reinvested) | 20.00      |
+| **Total Gross Income**        | **58,140.00** |
+
+**Allowances and Reliefs:**
+
+| Description                   | Amount (£) |
+| :---------------------------- | :--------- |
+| Personal Allowance            | 12,570.00  |
+| Pension Contributions (Grossed Up) | 3,412.50   |
+| **Total Allowances & Reliefs**| **15,982.50** |
+
+**Taxable Income:**
+Total Gross Income: £58,140.00
+Less: Total Allowances & Reliefs: £15,982.50
+**Net Taxable Income:** £42,157.50
+
+**Income Tax Calculation:**
+
+| Tax Band           | Taxable Income (£) | Rate (%) | Tax Due (£) |
+| :----------------- | :----------------- | :------- | :---------- |
+| Basic Rate (up to £37,700) | 37,700.00          | 20%      | 7,540.00    |
+| Higher Rate (over £37,700) | 4,457.50           | 40%      | 1,783.00    |
+| **Total Income Tax** |                    |          | **9,323.00** |
+
+**Tax Paid Summary:**
+Tax deducted via PAYE (from P60): £8,600.00
+Tax on Savings Interest (not deducted at source): £0.00 (within Personal Savings Allowance)
+*Note: As a higher rate taxpayer, some savings interest may be taxable. Ethan's interest is below the £500 Higher Rate Personal Savings Allowance.*
+
+**National Insurance Contributions:** £4,050.00 (from P60)
+
+**Student Loan Repayments:** £1,080.00 (from Payslips/P60)
+
+**Overall Tax Position:**
+Ethan may have a small underpayment of tax due to his higher rate pension contributions not being fully claimed at source (PAYE only provides basic rate relief). He will need to file a Self Assessment tax return to claim the additional 20% relief on his gross pension contributions (20% of £3,412.50 = £682.50). This would reduce his tax liability to £8,640.50.
+
+**Action Required:**
+*   Ethan should complete a Self Assessment tax return for the 2023/2024 tax year to reclaim the higher rate tax relief on his personal pension contributions.
+*   He should also consider reporting any investment gains if he had sold any investments outside of his ISA in the year. (No sales this year).
+
+**Claire Marsh - Personal Tax Summary**
+**Tax Year: 06 April 2023 - 05 April 2024**
+**Issued: 15 April 2024 (for informational purposes)**
+
+**Personal Details:**
+Name: Mrs Claire Marsh
+Date of Birth: 05/11/1986
+National Insurance Number: QQ DD MM YY M
+Address: 47 Maplewood Drive, High Barnet, London, N20 9AB
+
+**Income Summary:**
+
+| Income Source                 | Amount (£) |
+| :---------------------------- | :--------- |
+| Employment Income (QPA Primary School) | 36,000.00  |
+| Child Benefit                 | 2,212.80   |
+| **Total Gross Income**        | **38,212.80** |
+
+**Allowances and Reliefs:**
+
+| Description                   | Amount (£) |
+| :---------------------------- | :--------- |
+| Personal Allowance            | 12,570.00  |
+| Pension Contributions (Teachers' Pension) | 2,700.00   |
+| **Total Allowances & Reliefs**| **15,270.00** |
+
+**Taxable Income:**
+Total Gross Income: £38,212.80
+Less: Total Allowances & Reliefs: £15,270.00
+**Net Taxable Income:** £22,942.80
+
+**Income Tax Calculation:**
+
+| Tax Band           | Taxable Income (£) | Rate (%) | Tax Due (£) |
+| :----------------- | :----------------- | :------- | :---------- |
+| Basic Rate (up to £37,700) | 22,942.80          | 20%      | 4,588.56    |
+| **Total Income Tax** |                    |          | **4,588.56** |
+
+**Tax Paid Summary:**
+Tax deducted via PAYE (from P60): £4,200.00
+*Note: Claire's effective tax liability is £4,588.56, but PAYE deducted £4,200.00. This discrepancy could be due to small variations in tax-free allowances being applied through the year or pension contribution adjustments. She also receives Child Benefit.*
+
+**National Insurance Contributions:** £2,470.00 (from P60)
+
+**High Income Child Benefit Charge (HICBC):**
+Claire's individual income is below £50,000, so she is not subject to the HICBC.
+Ethan's individual income is above £50,000 but below £60,000. He will need to declare the Child Benefit on his Self Assessment tax return and pay back a portion of it.
+Child Benefit received for Lily (7) and Max (4) is £2,212.80 annually.
+Ethan's adjusted net income is £58,000 - £3,412.50 (gross pension) = £54,587.50.
+The charge starts at £50,000 and is 1% for every £100 over.
+Amount over £50,000 = £4,587.50.
+Charge percentage = 45.875%
+HICBC = 45.875% of £2,212.80 = £1,015.02.
+
+**Action Required:**
+*   Ethan MUST complete a Self Assessment tax return to declare the Child Benefit and pay the High Income Child Benefit Charge. This will also allow him to claim his higher rate pension relief.
+*   Claire does not need to file a Self Assessment return unless she has other undeclared income or wants to check her tax position.
+
+**General Disclaimer:** This summary is a fictional representation for illustrative purposes and does not constitute financial or tax advice. Always consult with a qualified financial advisor or HMRC for personal financial and tax planning.
+
+---
+---
+
+This concludes the compiled financial archive for Ethan Marsh.

@@ -1,0 +1,382 @@
+**Type: brainstorm**
+**Written by: Ethan Marsh**
+**Date: 2025-04-04**
+**Today's moment: fish tank algae problem — need to check water parameters**
+**Ongoing situation: Thinking about getting a dog — Claire wants a labrador**
+
+---
+
+**2025-04-04 - Friday**
+
+Right, Friday. End of the week, thank god. Been a pretty mad one. First thing though, gotta deal with this bloody algae. Woke up this morning and the Anubias in the main tank looked like it had grown a beard of green fuzz overnight. Not good. I knew it was coming, noticed a slight greenish tint to the water yesterday but thought maybe it was just the light. Nope. Full-blown outbreak.
+
+Checked the lighting timer this morning – still on 8 hours. Maybe I need to drop it to 6 for a bit. Water change yesterday wasn't enough clearly. I should have done a proper parameter check then. Rookie error. Grabbed the API Master Test Kit before I properly woke up.
+
+*   pH: 7.4 (stable, good)
+*   Ammonia: 0 ppm (as expected, tank's well-cycled)
+*   Nitrite: 0 ppm (same)
+*   Nitrate: *Whoa*. 40 ppm. That's definitely higher than I'd like. Been slipping on the water changes, haven't I? Max was sick last week, then Lily had that school project, and work's been mental with the Kestrel project deadline looming. No excuses though, my poor Neons.
+
+So, high nitrates. Classic algae fuel. Explains it. Also, probably slightly overfeeding the little guys. Max tends to get a bit enthusiastic with the flakes when he "helps" me. Need to get a handle on that. Another 30% water change is on the cards for this evening. And probably again on Sunday. Less food, more frequent small water changes. Maybe add a few more fast-growing plants like Cabomba to outcompete the algae for nutrients, or a couple of Amano shrimp. Always wanted Amanos. Might be the excuse I need. The Otos are doing their best but they can only do so much. The bristlenose pleco just kinda hangs out on the bogwood, looking zen. Wish I could be that chill.
+
+Work today was… fine. Another retrospective on Kestrel Sprint 3. James was trying to be upbeat, but you could tell everyone's knackered. Priya looked like she'd been up all night coding – probably was. My module for the real-time transaction processing pipeline seems solid, passed all the integration tests, but I’m still worried about the edge cases. Always the edge cases. Richard from the compliance team had a minor meltdown about some logging requirements, but we talked him down. Just standard fintech stuff, layers upon layers of bureaucracy on top of complex code. At least I was WFH today. Didn't have to face the Northern line at rush hour. Still, the back's a bit stiff from sitting at the desk. Need to remember to stand more often, maybe use the standing desk attachment Claire got me for my birthday. It's just... it's rarely convenient when I'm deep in thought or a meeting.
+
+Lunch was leftover pasta. Nothing inspiring. Then a quick cycle around the block to clear my head before the afternoon meetings. Felt good, even if it was just 15 minutes. London roads are always a bit insane, but the quiet residential streets near us are decent.
+
+Picked up Lily from QPA. She was buzzing about something Mrs. Henderson said about "star writers." Max was at Little Stars Nursery, drawing aliens again. His aliens look like lumpy potatoes with too many eyes. Adorable. Claire got home a bit later, looked shattered. Teaching Year 3s all day can't be easy. She had a parent-teacher conference for one of her trickier kids. Said it went okay, but she needed a glass of wine.
+
+That's when the "dog talk" started again. Of course it did. We were making dinner – I was chopping onions for a chilli, she was wrestling a grumpy Max into the high chair.
+"You know," she said, leaning against the counter, watching me almost chop my finger off, "Sarah from school just got a puppy. Golden Retriever. Absolute fluffball. Lily would love one, Ethan."
+Here we go. The dog campaign. It's been rumbling for months now. Lily is fully onboard, Max thinks "doggy" is just another word for "toy."
+"A fluffball that needs training, walks in the rain, vets bills, and will probably eat my bike tires," I countered, perhaps a little unfairly. I'm not *against* the idea, not really. It's just the logistics of it. We're both working, the kids are still little, the house isn't huge.
+"It'd be amazing for them, though. Imagine Lily taking it for walks in the park. Teach them responsibility."
+"And who'll be doing those walks at 6 am on a freezing January morning?"
+She gave me *the look*. "We'd share. And Labradors are so good with kids. You know how much I've always wanted a Lab."
+Yeah, I know. Since before we even met, probably. She grew up with a Collie, I think. I had a goldfish when I was a kid. Different scales, literally.
+"I've been looking at some local breeders," she continued, undeterred. "And rescue centres. There's a lovely Labrador cross at the Battersea Dogs & Cats Home website. He's called 'Barnaby.'"
+Barnaby. Already got a name. This is serious.
+"Okay, okay," I said, putting down the knife. "Let's talk properly about it over the weekend. What's the realistic time commitment? The cost? What about when we go on holiday? Who looks after it? What about the algae in my fish tank, Claire? I have a crisis right here."
+She just laughed. "Priorities, Ethan. Prior-it-ies."
+She's right, partly. It's a huge decision. My mum, Janet, would probably love having a dog around when she visits from Bristol, but she's not here often enough to be a daily help. Hannah in Manchester has her two cats, definitely not a dog person. Luke in Edinburgh... well, Luke would probably offer to "dog-sit" then hand it off to his girlfriend.
+
+Dinner was good though. Lily helped me stir the chilli. Max mostly just played with his spoon.
+Later, after Lily was in bed (reading *Harry Potter and the Chamber of Secrets* again, she's obsessed) and Max was finally asleep after fighting it for an hour, I did the water change. Dosed with a bit of flourish Excel to try and nuke the algae. Fingers crossed. Also spent some time scrolling through Labrador pictures online. They *are* cute. Big, floppy ears. Those earnest eyes. Oh god, I'm weakening, aren't I?
+Need to make a list of pros and cons. A proper, engineer's list.
+
+**To do:**
+- [x] Check fish tank parameters
+- [x] 30% water change
+- [ ] Research algae solutions (Amano shrimp? Faster growing plants?)
+- [ ] Research Labrador dog ownership (time, cost, training, holiday care)
+- [ ] Talk to Claire about dog plan (pros/cons)
+- [ ] Buy more fish food (smaller flakes, maybe a feeding ring?)
+- [ ] Stretch/back exercises (desk posture!)
+- [ ] Prep for Kestrel stand-up Monday morning
+
+---
+
+**2025-04-05 - Saturday**
+
+Morning. Woke up to Lily jumping on my head demanding pancakes. Claire was already downstairs, probably making coffee. Max was surprisingly quiet, playing with his duplo in the living room. Small mercies.
+First thing, of course, was checking the fish tank. Still a bit green on the Anubias, but the water itself looks a touch clearer. Progress, maybe. Dosed a tiny bit more Excel. Will re-test nitrates tomorrow before the next planned water change. I'm telling myself it's under control.
+
+Pancakes were a success. Lily wanted chocolate chips, Max wanted blueberries, so we had a mix. Claire makes the best pancakes. Mine always come out a bit lopsided.
+After breakfast, we headed out. Decided to tackle the dog thing head-on, at least the research part. Claire suggested we visit our friends, the Harrisons, who have a Golden Retriever. Not a Lab, but similar energy and size. Good idea, I thought. Practical research.
+
+The Harrisons live in Hampstead, lovely big house with a huge garden. Their dog, Monty, is a fluffy, enthusiastic menace. He jumped all over us when we arrived, licked Lily almost to death, then stole Max's biscuit. Lily thought it was hilarious. Max was a bit intimidated at first, clung to Claire, but by the end of the afternoon, he was tentatively stroking Monty's head. Monty's shedding was... significant. There was dog hair on my trousers, on my jacket, probably in my coffee. And the smell. Not *bad*, just distinct. Very *dog*.
+
+Over tea, we grilled Sarah Harrison.
+"So, honestly, how much work is he?" Claire asked, straight up.
+Sarah laughed. "Oh, tons! He needs at least two decent walks a day, rain or shine. And training was a nightmare for the first year. Chewed through three pairs of shoes, ate half a sofa cushion, and we lost count of the 'accidents' in the house."
+My eyebrows were probably halfway up my forehead. Claire just nodded thoughtfully.
+"But," Sarah continued, looking at Monty who was now snoozing under the table, "he's worth it. The kids adore him. He's such a comforting presence. Always happy to see you. Forces us to get outside. Our mental health is definitely better."
+Their son, Liam, who's a year older than Lily, came in then and threw a ball for Monty. The dog instantly sprang to life, tail thumping, goofy grin. Liam and Monty have this amazing bond. It was pretty clear how much they loved that dog.
+
+On the way home, Claire was quiet for a bit. Then, "See? They said it's hard, but they also said it's worth it. And Monty is lovely."
+"He *is* lovely," I conceded. "But also a walking fur factory who clearly cost them a small fortune in destroyed furniture and vet visits. And those walks. Do we have time for two decent walks a day?"
+"We'd make time," she said firmly. "We take the kids to the park anyway. We could combine it."
+"And the holidays? Who looks after it?"
+"We could use a kennel, or Sarah said her sister sometimes takes Monty. Or we could get a house-sitter."
+Hmm. Options. More questions than answers, but at least we're moving past "if" to "how."
+
+Spent the evening cooking up a storm. Made a big batch of chicken curry and a lentil dal for the week. Love cooking, especially when I have time to really get into it, listen to a podcast or some music. Good way to de-stress after a week of staring at code. Lily "helped" me stir the curry, almost splashed turmeric all over the white kitchen cupboards. Max was already in bed, thankfully.
+
+After dinner, Claire and I sat down with a glass of wine.
+"Okay," I started, pulling out my phone and opening a new note. "Dog brainstorm. Let's list it out. Pros and cons. Be honest."
+
+**Dog Discussion - Pros & Cons (Claire & Ethan)**
+
+**PROS:**
+- [x] Companionship for kids (and us!)
+- [x] Responsibility for Lily & Max
+- [x] Encourage more outdoor activity / exercise for whole family
+- [x] Emotional support / comfort (Sarah Harrison mentioned this)
+- [x] Labs are good family dogs, generally friendly
+- [x] Claire's always wanted one
+- [x] Makes the house feel more 'alive' (Ethan's thought - maybe?)
+- [x] Security (minor deterrent, at least)
+
+**CONS:**
+- [ ] Time commitment (daily walks, feeding, training)
+- [ ] Financial cost (food, vet bills, insurance, training, toys, destroyed stuff)
+- [ ] Holiday logistics (kennels, sitter?)
+- [ ] Damage to house / garden (puppy phase especially)
+- [ ] Shedding / cleaning (Monty was proof)
+- [ ] Allergies? (Ethan's mild asthma/seasonal stuff might flare up, though usually only environmental, not pet dander. Still, a risk.)
+- [ ] Impact on existing pets (fish! Will a dog stress them out? Or try to drink from the tank? Need a lid.)
+- [ ] Our existing schedules are already packed
+- [ ] Puppy training is tough - early mornings, patience
+
+We ended up with a pretty balanced list. The cons are significant. But the pros are also pretty compelling, especially for the kids. Claire was beaming by the end of it. "See? It's not impossible."
+"No, not impossible," I agreed. "Just... a lot. We need to think about a specific breed or a rescue. And where it'll sleep. And where we'll walk it. And what about the garden?" Our garden is decent, but not massive. And it's Lily's 'fairy garden' too. A digger dog might be an issue.
+"Maybe we could foster first?" I suggested. "See if it's really for us, without the full, long-term commitment."
+Claire paused. "That's actually... a really good idea, Ethan. I hadn't thought of that. Let me look into fostering programmes for Labs."
+This is progress. Fostering feels like a sensible, engineering-style approach. Test the waters before deployment.
+
+Later, I scrolled through some photography forums. Saw some stunning shots of birds in flight. Made me want to dust off my telephoto lens and go down to the wetlands reserve next weekend. That could be a good family outing. Get some fresh air, get away from screens for a bit.
+
+Back still a bit twingy. Need to do those stretches. Maybe a hot bath. It's not serious, just constant low-level ache from too much desk time and not enough core strength. Getting old, I guess. Or just lazy.
+
+**To do:**
+- [x] Visit Harrisons (dog research)
+- [x] Family time
+- [x] Cook meals for the week
+- [x] Create dog pros/cons list
+- [ ] Claire to research dog fostering programmes (Labradors)
+- [ ] Re-test fish tank nitrates tomorrow
+- [ ] Next fish tank water change tomorrow
+- [ ] Look at local walking routes for dogs
+- [ ] Research dog-friendly holidays
+
+---
+
+**2025-04-06 - Sunday**
+
+A slightly slower start today. Woke up before anyone else, which is a rare luxury. Made myself a strong coffee and spent some time just watching the fish. The water looks noticeably clearer. The algae on the Anubias is still there, but less prominent, not as fuzzy. Seems the Excel and the water change are doing their job.
+
+*   pH: 7.4 (stable)
+*   Ammonia: 0 ppm
+*   Nitrite: 0 ppm
+*   Nitrate: 20 ppm. Excellent! Down by half. That's a definite improvement. Looks like I was right, just needed to be more consistent with the maintenance. Will do another 30% water change later today just to bring it down further, maybe to 10 ppm. I like to aim for 10-20.
+
+Breakfast was toast and scrambled eggs. Lily was drawing pictures of Monty the dog. Max was attempting to eat his toast with a fork. It's never dull.
+After breakfast, Claire and I sat down with our coffees again.
+"So, the fostering idea," she began. "I found a few places. There's 'Labrador Rescue UK' and 'Dogs Trust.' Both have foster programmes. They cover food and vet bills, usually. You just provide the home and the love. And the training."
+"That sounds… manageable," I admitted. "Still a commitment, but not as final as adoption. Gives us a chance to see how a dog fits into our lives. And if Lily's asthma or my allergies actually flare up. Though I've never reacted to dogs before." My asthma is usually pollen-related.
+"Exactly," she said, tapping her phone. "I'll fill out an inquiry form for both. No harm in it, right?"
+"No harm at all."
+So, it looks like "Barnaby" or another dog might be entering our lives sooner than I thought. A trial period. I can get behind that.
+
+The rest of the morning was spent on chores. Claire did laundry – mountains of it. I tackled the garden. Weed control. Pruning the rose bush that's trying to take over the fence. Lily "helped" me by collecting dandelions for a "magic potion." Max just tried to eat the soil. Good fun.
+Then, the second fish tank water change. Took about an hour, including cleaning the filter sponges slightly. The tank looks really good now. Crystal clear water, fish are active. That's satisfying. It's funny how something so small can bring such a sense of accomplishment.
+
+Around lunchtime, Mum called from Bristol. Standard catch-up. She's doing well, still volunteering at the local library. Asked about the kids, asked about my work. "How's Claire?" she asked. "And are you two still talking about getting a dog? I saw a lovely Lab puppy on a TV show the other day, reminded me of when your Uncle David had that spaniel." Mum's good at subtly pushing her agenda. I told her about the fostering idea. She thought it was "very sensible, Ethan." High praise from Janet Marsh. We chatted about Dad for a bit too. It's been over three years since he passed, and sometimes it still feels like yesterday. Especially when I'm trying to figure something out, I still instinctively think, "What would Dad have done?" He was always so practical.
+
+After lunch, we took the kids to the park. Swings, slide, football. Classic Sunday afternoon. Lily was surprisingly good at passing the ball. Max just ran around in circles until he collapsed in a heap. The dog topic came up again. Lily asked, "When are we getting our dog, Daddy? Can it be called Sparky?" Claire raised an eyebrow at me. "Still brainstorming names, sweetie."
+"Sparky's pretty good, actually," I mumbled, half-joking.
+Claire gave me a mock glare. "No. No Sparky. If it's a boy, Barnaby. If it's a girl… maybe Daisy."
+We walked past another family with a big, lumbering Labrador. It was retrieving a stick with immense enthusiasm. They really do look like happy, friendly dogs.
+
+Later in the afternoon, I did some prep for work tomorrow. Looked over the Kestrel project plan again. Sprint 4 starts, so new tasks, new challenges. There’s a tricky integration with the legacy FX system coming up. That’s going to be a headache. Need to schedule a quick sync with James and Priya first thing to make sure we're all aligned on the API specs.
+
+Also spent some time looking at electric cars. Our 2019 VW Golf is perfectly fine, but I'm constantly seeing more EVs on the road. Range anxiety is my main concern for longer trips to see Mum in Bristol or Hannah in Manchester, but charging infrastructure is getting better. The upfront cost is still a barrier. Plus, finding a reliable home charger installation. Claire isn't as fussed; she just wants something that's safe and reliable for the school run. Maybe I'll do some proper research on the new ID.7 or a Tesla Model 3. Or even one of the Korean brands, they seem to be leading the way.
+
+Evening was chill. Kids to bed. Read Lily another chapter of Harry Potter. Max resisted sleep for a solid hour again, demanding "more stories." Eventually gave in and read him a few more picture books until he finally conked out. Claire and I watched something bland on TV, too tired for anything mentally taxing. Had another quick check on the fish tank – nitrates still at 20ppm. Good. I think I've averted a full-blown crisis. Just need to keep up the routine.
+
+Fostering a dog. This is actually happening, isn't it? My life is about to get a lot hairier.
+
+**To do:**
+- [x] Fish tank nitrate re-test
+- [x] Second 30% water change for fish tank
+- [x] Garden maintenance
+- [x] Call Mum Janet
+- [x] Park with kids
+- [ ] Claire to follow up on Labrador fostering applications
+- [ ] Research electric car options (ID.7, Model 3, Hyundai Ioniq 6)
+- [ ] Review Kestrel Sprint 4 plan
+- [ ] Schedule sync with James & Priya for Monday morning
+
+---
+
+**2025-04-07 - Monday**
+
+Monday. Alarm went off at 6:30. Dragged myself out of bed. Shower, coffee, toast. Same old routine. Claire was already up and sorting out breakfast for the kids. She's a machine on a Monday morning.
+
+Quick look at the fish tank before I started work. Still clear. Nitrates look good. The Anubias is still green, but not as aggressively fuzzy. The Excel seems to be working. Small victory.
+
+WFH today. Jumped on the Kestrel stand-up at 9 am. James was looking slightly more awake than Friday, Priya still seemed like she’d been coding all night. We talked through the new sprint tasks. My plate is full with the FX system integration – it's a proper beast, ancient codebase, poorly documented. Rich from compliance jumped in with a bunch of questions about data retention on the new microservice. Classic Rich. Always worried about audit trails. We'll need a specific session for him later this week.
+
+Had my sync with James and Priya. The API contract for the FX system is, as expected, a bit ambiguous. We spent a good hour just dissecting the requirements document and cross-referencing it with the old system's behaviour. It's like archaeological excavation sometimes, trying to figure out why something was built a certain way twenty years ago. Priya thinks we might need a wrapper service to abstract away some of the legacy complexity. Good idea, but more work. I'll start prototyping that today.
+
+Lunch was my chicken curry from Saturday. Delicious. Ate it while watching a YouTube video on proper cycling cadence – trying to improve my efficiency for the longer weekend rides. My knee has been bothering me a bit after a particularly hilly ride last month. Small adjustments might help.
+
+Afternoon was head-down coding. Trying to get a good chunk of the FX wrapper done. It's satisfying when the pieces start to fit, even if it's slow going. Lost track of time a bit.
+
+Claire called at 3:15. "Ethan, could you pick up Lily today? Mrs. Henderson sent an email about her needing some extra help with her times tables. I'm tied up with a staff meeting until at least 4:30."
+"No problem," I said, logging off. "Need to stretch my legs anyway."
+Grabbed my keys, walked to QPA Primary. It's only about 15 minutes, good exercise. Saw Mrs. Henderson briefly. She said Lily was just a bit slow on her 7 and 8 times tables, nothing to worry about, just needs practice. Lily seemed a bit down about it, so I reassured her it's totally normal and we'd practice together.
+Then to Little Stars to get Max. He was covered in paint. Again. His alien phase is still going strong.
+
+Got home, helped Lily with her 7x and 8x tables. We used some online games, which she loved. She got a few wrong but definitely improved. Max tried to "help" by shouting random numbers. Chaos, but good chaos.
+Claire got home around 5:30. Looked completely drained. Said the staff meeting was interminable. "Another push on 'mindfulness' for the kids," she sighed. "While we're all pulling our hair out trying to catch up on curriculum after the Covid years."
+We had dal for dinner. Quick and easy.
+
+After dinner, Claire checked her emails. "Good news! Labrador Rescue UK got back to me already. They've sent through an application form and want to schedule an initial phone chat. And they've got a couple of Labs in foster care now, one's a 3-year-old called 'Buster' and another's a younger girl, 'Nellie', about 18 months."
+Buster and Nellie. Names already. This is getting real.
+"Wow, that was fast," I said. "Okay, so what does the form ask? Can I help?"
+"Mostly about our living situation, our work, experience with dogs, garden size, that kind of thing. And why we want to foster. I'll fill most of it out, but you might need to add some bits about your work schedule."
+I felt a mix of excitement and mild panic. This could happen within weeks. A dog. In *our* house. My carefully managed routines.
+I mean, it's a foster. It's a trial. That's the sensible way. Still, it's a huge shift.
+
+Before bed, did some more research on the FX system integration. Found a very old, obscure forum post from a former employee that shed some light on one of the trickier data transformation rules. Gold. Pure gold. Sometimes, the internet is truly a magical place.
+
+Called Hannah briefly. She's busy with her new art exhibition prep in Manchester. Didn't have much time to chat, but I mentioned the potential dog situation. She just grunted something about "more mess." Not exactly enthusiastic, but then she's a cat person through and through.
+
+Back's still nagging. Need to do the stretches religiously. Maybe book a physio appointment.
+
+**To do:**
+- [x] Kestrel stand-up
+- [x] Sync with James & Priya re: FX API
+- [x] Prototype FX wrapper service
+- [x] Pick up Lily & Max
+- [x] Help Lily with times tables
+- [x] Discuss Labrador Rescue UK application with Claire
+- [x] Call Hannah
+- [ ] Book physio appointment for back
+- [ ] Review FX system forum post notes
+- [ ] Prep for tomorrow's coding
+
+---
+
+**2025-04-08 - Tuesday**
+
+Another WFH day. Started with a quick check on the fish tank. Everything stable. Nitrates holding steady at 20ppm. Good. Decided against adding Amano shrimp just yet, want to see how the current regimen works out for another week. Patience, Ethan, patience.
+
+Work was intense. Spent the entire morning deep in the FX wrapper code. Ran into a subtle bug where certain currency pairs weren't being correctly mapped due to a case sensitivity issue in the legacy system. Took me a solid two hours to track down. Felt like a detective. Finally fixed it, deployed to dev, and ran a battery of tests. Passed. Satisfying. These are the moments I actually enjoy about my job – the problem-solving, the hunt for the elusive bug.
+
+Lunch was more curry. Read an article about smart home security systems. Thinking about upgrading our current setup, especially if we're going to have a dog. Remote monitoring, pet cams... could be useful.
+
+Afternoon was meetings. A project planning meeting for the *next* big thing after Kestrel – "Phoenix." Seems like we're never not starting a new mythological bird project. Heard the whispers about potential redundancies post-Kestrel. Hope not. Our team is good. James is a solid manager, and Priya is indispensable. Richard from compliance was there, of course, asking his usual penetrating questions.
+
+Claire called during my last meeting – "Ethan, Mrs. Henderson wants to talk to us quickly after school. Nothing bad, just a quick chat about Lily's concentration in class. Can you make it?"
+"Yeah, I think so. My last meeting wraps at 4."
+So, another school run, another parent-teacher mini-conference.
+Walked to QPA. Saw Mrs. Henderson. She was very nice, said Lily is a bright girl, but sometimes her mind wanders, especially during quieter individual work. "She's very imaginative, which is wonderful, but sometimes her thoughts take her a bit far afield from her maths worksheet." Suggested perhaps trying to channel that imagination into creative writing or drawing at home, and just gentle reminders at school. Nothing major, thankfully. Just Lily being Lily.
+Then to Little Stars. Max was in full superhero mode, cape made of a tea towel, chasing other kids. The usual.
+
+Got home, Lily was a bit deflated about the "concentration" talk. We talked about it. I told her it's okay, everyone's mind wanders sometimes, and her imagination is a superpower. We decided to draw a detailed map of her imaginary kingdom (she has one, complete with dragons and talking squirrels) to harness that creativity. She brightened up considerably.
+
+Claire got back later, also looking tired. She'd been dealing with a particularly challenging parent all afternoon. "Some people just expect miracles," she muttered, kicking off her shoes. "And don't get me started on the new curriculum changes for phonics. It's madness."
+We talked about the Labrador Rescue UK application. Claire spent some time filling it out this evening. She's got a phone interview scheduled for Thursday afternoon. "They'll ask about our routine, the kids, our home, everything," she said, looking a bit nervous. "I'll need to make sure I sound competent." I offered to sit with her during the call, just in case, but she said she'd prefer to do it alone initially. "It's my dream dog, I want to show I'm serious."
+
+I also spent some time researching dog food brands. Hypoallergenic options, grain-free, wet vs dry. It's a minefield. So many choices. And the cost! Definitely a significant line item in the budget.
+
+My back is really aching tonight. Did some stretches, but it feels deeper than just surface muscle tension. I should really call the physio. I keep putting it off. The phone is literally right there.
+*   **Reminder:** Call physio first thing tomorrow.
+
+Had a quick chat with Luke in Edinburgh via WhatsApp. He's still doing well, working on some new graphic design projects. I mentioned the dog fostering idea. His response: "A dog? You? You're going soft, Marsh. Next thing you know you'll be buying a minivan." Which, actually, is probably on the horizon if we keep talking about electric cars and bigger families. Not a minivan, no. A big SUV maybe. But not a minivan.
+
+Dinner was leftover dal. Tucked the kids into bed. Lily wanted another Harry Potter chapter, Max wanted his usual litany of "five more minutes." The usual parental negotiation.
+
+Sat down with my camera. Been meaning to go through some of my landscape shots from our trip to Scotland last year. Found a few really good ones, started editing them in Lightroom. The light on the Isle of Skye was just incredible. A nice, calming way to end the day after all the coding and meetings.
+
+**To do:**
+- [x] Fix FX wrapper case sensitivity bug
+- [x] Phoenix project planning meeting
+- [x] Pick up Lily & Max
+- [x] Mrs. Henderson chat re: Lily
+- [x] Help Lily channel imagination (drawing map)
+- [x] Claire to complete Labrador Rescue UK application
+- [x] Research dog food brands
+- [x] Chat with Luke (WhatsApp)
+- [ ] Call physio for back appointment (urgent!)
+- [ ] Prep for tomorrow's coding on FX wrapper
+- [ ] Finalize plan for Claire's phone interview (offer support)
+
+---
+
+**2025-04-09 - Wednesday**
+
+Woke up feeling a bit better, back-wise. Maybe the stretches are finally starting to make a difference. Still, definitely need to book that physio appointment. It's ridiculous how long I've put it off. Made a mental note to do it before 9 am.
+
+Fish tank: still good. My little ecosystem is thriving again. Nitrates stable. I feel like a proud fish parent.
+
+Today was an office day. Drove the Golf in. Traffic wasn't too bad, but the Tube strike threat for next week is already causing ripples of panic. If that happens, my WFH days will be even more critical.
+Got into the office, grabbed a coffee. Had a quick chat with James. He's cautiously optimistic about the FX wrapper I'm building. "Looks promising, Ethan. Just be mindful of the performance implications with the legacy system's latency." Always the performance. It's a valid point though.
+
+First thing: called the physio. Got an appointment for next Tuesday afternoon. Finally. About time. Hopefully they can give me some proper exercises and not just tell me to "sit up straight."
+
+Meetings, meetings, meetings. Had a design review for the FX wrapper. Walked through the architecture, the integration points, the error handling. Richard from compliance made an appearance, mostly just nodding and taking notes. Priya asked some sharp questions about scalability, which I addressed by explaining the planned distributed architecture. Overall, it went well. Got the green light to proceed with full implementation. Good.
+
+Lunch in the office canteen – bland sandwich, but at least I got out from behind my desk. Walked around the block a couple of times. London air always feels a bit… dense.
+
+Afternoon, started coding the actual integration logic for the FX system. It's tedious, mapping all the fields, handling data types, error codes. Feels like plumbing sometimes, not glorious software engineering. But it's essential. Put on some trance music to keep me focused.
+
+Claire called around 3. "Just confirming Lily's after-school club today, she's with Sarah Harrison's daughter, Liam, for art club. I'll pick her up directly. Can you get Max from nursery?"
+"Yep, on it," I said, logging off a bit early.
+Walked to Little Stars. Max was playing with a toy train set, making train noises. He was surprisingly clean today. Must have been a calm afternoon.
+
+Got home with Max. Played with his trains for a bit. He made me be the "bad monster" who tried to eat the trains, and he was the "superhero train driver" saving them. His imagination is incredible.
+Claire arrived with Lily. Lily was proudly showing off a brightly coloured clay dinosaur she'd made at art club. "It's a Brachiosaurus, Daddy!" she announced.
+"Fantastic, Lily-bug! Did you have fun with Liam?"
+"Yes! He said he wants a dog, too. Like Monty." Oh, great. Another dog advocate.
+
+Dinner was pasta with a simple tomato sauce. Quick and easy after a long day.
+After dinner, Claire was prepping for her phone interview tomorrow with Labrador Rescue UK. She'd printed out her application form and was making notes. "What do you think they'll ask about our daily routine with a dog?"
+"Probably when it would be walked, when it would be fed, how long it would be left alone, who's responsible for what. Just be honest about our schedule, but also show you've thought about how to integrate a dog into it. Emphasise the fostering aspect – that we're serious about giving a temporary home and assessing suitability."
+She looked a bit less nervous after that. "Okay, good point. I'll make sure to mention that."
+
+I also spent a bit of time browsing electric car forums again. The new ID.7 Tourer looks promising for family space, but the range isn't quite up to Tesla or Hyundai. It's always a compromise, isn't it? Cost, range, space, charging time. No perfect car.
+
+Did my back stretches. It still aches, but less intensely. Physio next week should hopefully provide some relief.
+Checked the fish tank. Still perfectly fine. My little aquatic friends are oblivious to the looming dog-related changes in our household. Or maybe they sense it. Do fish get stressed by dogs? Probably not, as long as the tank is secure.
+
+Before bed, Lily asked, "If we get a dog, Daddy, can it swim in the fish tank?"
+"Absolutely not, sweetie," I said, suppressing a shudder. "Fish tanks are for fish. And maybe some very tiny, special shrimp. Not for dogs."
+She seemed disappointed. "Oh. Okay."
+Future challenges, right there.
+
+**To do:**
+- [x] Call physio (appointment set for next Tuesday)
+- [x] Office day (drive in)
+- [x] Design review for FX wrapper
+- [x] Start FX system integration coding
+- [x] Pick up Max from nursery
+- [x] Help Lily with Brachiosaurus
+- [x] Prep Claire for Labrador Rescue UK phone interview
+- [ ] Continue FX system integration coding tomorrow
+- [ ] Research dog-proofing the house (especially fish tank!)
+- [ ] Look into dog training classes (basic puppy obedience)
+
+---
+
+**2025-04-10 - Thursday**
+
+Almost the weekend again. This week has flown by, probably because of the Kestrel push and the looming dog situation.
+
+Fish tank: All clear. Nitrates holding steady. I think the algae situation is definitely under control. I'll do a small water change this weekend just to keep on top of it. Maybe research those Amano shrimp properly. They eat algae, don't they? And they're peaceful. Could be a good addition.
+
+WFH today. Dive back into the FX system integration. It's slow going, very repetitive, but I'm making progress. Found another obscure error code in the legacy API documentation that wasn't fully explained. Had to ping a colleague from the older team, Mark, who's been here for like 15 years. He remembered it instantly. "Oh, that's the 'invalid header checksum' error. Happens sometimes if the upstream system sends a malformed packet. Just retry the transaction a few times, usually clears itself up." Classic. So, more retry logic to implement.
+
+Lunch was my lentil dal. Took it easy. Did some light stretching for my back, focusing on core engagement. Felt a little better.
+
+Claire's phone interview with Labrador Rescue UK was at 2 pm. She'd found a quiet spot upstairs in our bedroom to take the call. I could hear her voice, muffled, for about 45 minutes. When she came downstairs, she had a huge smile on her face.
+"It went really well, Ethan! She was lovely. We talked about everything. Our routine, the kids, the garden. She seemed really impressed with the fostering idea. Said it shows we're thinking responsibly."
+"That's great, honey! So, what's next?"
+"They want to do a home visit. Probably sometime next week or the week after. To check the house is suitable, that the garden is secure, all that. Then, if that goes well, they'll match us with a dog. She mentioned Buster, the 3-year-old Lab, as a potential match."
+Buster. The name again. My heart did a little flutter. This is really happening. A dog in our house. A dog named Buster.
+"Okay, so home visit. We need to make sure the garden gate is really secure. And maybe tidy up a bit more than usual," I joked.
+"Definitely tidy," she said, eyeing the piles of Max's toys. "And show them we've thought about things like where the dog will sleep, where it'll eat. We need a dog bed, food bowls. And a secure lid for the fish tank!"
+Right. My fish tank. Better get on that. Don't want Buster drinking the water or worse, trying to eat a Neon Tetra.
+
+Afternoon, finished up a major chunk of the FX integration. Got it to a point where I can hand it over for initial peer review tomorrow. Feels good to wrap up a big task.
+
+Picked up Max from nursery. He was happily building a tower of blocks that was taller than him. Lily was already home, practicing her times tables with a friend over video call. Such different worlds, these two.
+
+Dinner was pizza tonight. It's Thursday, almost the weekend, we earned it. Lily helped me make it, adding way too much cheese. Max just ate the crusts.
+
+After the kids were in bed, Claire and I sat down to discuss the home visit.
+"We need to think about the garden. The fence is okay, but that back gate sometimes doesn't latch properly," I pointed out. "I can fix that this weekend. Put a proper bolt on it."
+"And the living room," Claire said. "It needs to be a 'dog-friendly' zone. Maybe move some of Lily's smaller toys out of reach. And Max's crayons."
+"And my bike trainer," I added. "Don't want Buster chewing on my expensive Wahoo Kickr."
+"Definitely not," she agreed, laughing.
+We talked about where Buster would sleep. "The kitchen probably," Claire suggested. "Plenty of space, easy to clean. We could get one of those soft crates."
+It's all becoming very concrete. Less hypothetical, more practical.
+
+I also spent some time today browsing pet insurance policies. Another significant cost to factor in. It's a never-ending list of considerations.
+
+Before bed, I took a moment to reflect on everything. My dad, George, always said "a good dog is a man's best friend." He never had one himself, growing up in London, but he always admired them. I remember him telling me stories about the dogs he saw on his paper round as a boy. I wish he was here to see this. He'd probably have a thousand practical questions, and then be totally smitten with Buster.
+
+My back still aches, but it feels manageable. Physio next week. The fish tank is good. Work is progressing. And soon, maybe, a dog. Our lives are about to change in a big, furry, wonderful, and chaotic way. And for some reason, I'm actually looking forward to it. Even the early morning walks. Maybe.
+
+**To do:**
+- [x] Complete major chunk of FX system integration
+- [x] Home visit discussion with Claire
+- [x] Pick up Max
+- [ ] Fix garden gate latch/bolt this weekend
+- [ ] Dog-proof living areas (move toys, secure anything chewable)
+- [ ] Research secure lid for fish tank
+- [ ] Buy dog bowls, dog bed (crate?)
+- [ ] Research dog insurance policies
+- [ ] Prepare for FX code peer review tomorrow
+- [ ] Schedule weekend activities (bike ride, photography?)

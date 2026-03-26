@@ -1,0 +1,53 @@
+First National Bank
+123 Main Street
+Anytown, USA 12345
+
+**STATEMENT OF ACCOUNT**
+
+**Account Holder:** John Smith
+**Account Type:** Checking Account
+**Account Number:** XXXXXXXXXX1234
+**Statement Period:** December 16, 2024 - January 15, 2025
+**Statement Date:** January 18, 2025
+**Currency:** USD
+
+**Summary of Account Activity**
+
+| Description                        | Amount (USD) |
+|------------------------------------|--------------|
+| Beginning Balance (12/16/2024)     | $4,123.87    |
+| Total Deposits & Credits           | $6,500.00    |
+| Total Withdrawals & Debits         | $3,876.54    |
+| **Ending Balance (01/15/2025)**    | **$6,747.33**|
+
+**Detailed Account Activity**
+
+| Date       | Transaction Type | Description                                        | Reference Number       | Amount (USD) |
+|------------|------------------|----------------------------------------------------|------------------------|--------------|
+| 2024-12-16 | Debit            | Rent Payment - Apartment Complex A                 | RENT-20241216-9876     | -$1,850.00   |
+| 2024-12-17 | Debit            | Groceries - SuperMart                              | POS-SM-1217-5432       | -$125.78     |
+| 2024-12-18 | Credit           | Payroll Deposit - Employer Solutions Inc.          | PAY-ESI-1218-001       | $3,250.00    |
+| 2024-12-19 | Debit            | Utility Bill - Power & Light Co.                   | UTIL-PL-1219-6789      | -$78.15      |
+| 2024-12-20 | Debit            | Online Purchase - TechGadgets.com                  | WEB-TG-1220-1122       | -$450.99     |
+| 2024-12-22 | Debit            | ATM Withdrawal - First National Bank               | ATM-FNB-1222-3344      | -$200.00     |
+| 2024-12-23 | Debit            | Coffee Shop - Daily Grind                          | POS-DG-1223-9988       | -$5.50       |
+| 2024-12-26 | Credit           | Freelance Income - Creative Designs LLC            | INV-CD-1226-002        | $1,500.00    |
+| 2024-12-27 | Debit            | Restaurant - The Bistro                            | POS-TB-1227-7766       | -$85.25      |
+| 2024-12-28 | Debit            | Movie Tickets - Cineplex Cinema                    | POS-CC-1228-5544       | -$32.00      |
+| 2024-12-29 | Credit           | Tax Refund (Estimated) - IRS                       | REF-IRS-1229-ABC       | $1,750.00    |
+| 2024-12-30 | Debit            | Subscription Service - StreamFlix                  | SUB-SF-1230-XYZ        | -$15.99      |
+| 2025-01-02 | Debit            | Pharmacy Purchase - HealthMart                     | POS-HM-0102-1234       | -$45.67      |
+| 2025-01-03 | Debit            | Gas Station - Speedy Fuels                         | POS-SF-0103-5678       | -$60.00      |
+| 2025-01-05 | Debit            | Car Payment - Auto Finance Corp.                   | CAR-AFC-0105-9012      | -$350.00     |
+| 2025-01-06 | Debit            | Online Purchase - Bookseller.com                   | WEB-BS-0106-3456       | -$28.99      |
+| 2025-01-08 | Debit            | Dinner with Friends - Pizzeria Luigi               | POS-PL-0108-7890       | -$55.80      |
+| 2025-01-10 | Debit            | Bank Service Fee - Monthly Maintenance             | FEE-MM-0110-001        | -$10.00      |
+| 2025-01-12 | Debit            | Public Transport - Metro Transit                   | POS-MT-0112-1122       | -$8.50       |
+| 2025-01-14 | Debit            | Groceries - SuperMart                              | POS-SM-0114-3344       | -$98.08      |
+
+**Important Information:**
+* Please examine this statement carefully and report any discrepancies within 30 days of the statement date.
+* For account inquiries, please visit our website at www.firstnationalbank.com or call us at 1-800-555-1234.
+* Your current interest rate for this checking account is 0.05% APY.
+
+Thank you for banking with First National Bank.

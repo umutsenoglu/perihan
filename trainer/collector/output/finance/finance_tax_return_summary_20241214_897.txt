@@ -1,0 +1,47 @@
+**HMRC Self Assessment Tax Return Summary - Tax Year 2023/2024**
+
+**For the period: 6 April 2023 to 5 April 2024**
+**Date Issued: 14 December 2024**
+**Reference: SA2023/24-EM77341B**
+
+**Account Holder: Mr. Ethan Marsh**
+**National Insurance Number: AB123456C**
+**Address: [House Number] The Ridgeway, North London, N12 7AB**
+**Date of Birth: 17/08/1986**
+
+**Summary of Income:**
+
+*   **Employment Income (Fintech Company):**
+    *   Gross Pay: £85,500.00
+    *   PAYE Tax Paid: £18,100.00
+    *   Employer's Pension Contributions (via payroll): £4,275.00
+    *   Tax Code: 1257L
+*   **Freelance Income (Web Development - "CodeCraft Solutions"):**
+    *   Gross Earnings: £6,850.00
+    *   Allowable Expenses (Software subscriptions, home office allowance, professional development course on Python): £1,120.00
+    *   Net Freelance Profit: £5,730.00
+*   **Interest from Savings (Barclays Instant Saver):** £85.20 (Gross)
+
+**Total Taxable Income:** £91,315.20
+
+**Tax Calculation:**
+
+*   Total Income Tax Due: £19,645.80
+*   Less: PAYE Tax Already Paid: (£18,100.00)
+*   **Outstanding Tax Liability for 2023/2024:** £1,545.80
+
+**Payment Details:**
+
+Please pay the outstanding amount of **£1,545.80** by **31 January 2025**.
+
+*   **Payment Reference:** SA-EM77341B
+*   **HMRC Bank Details:**
+    *   Account Name: HMRC Main Account
+    *   Sort Code: 07-00-93
+    *   Account Number: 12345678
+
+For queries regarding your Self Assessment, please contact us quoting your reference. We recommend reviewing this summary alongside your P60 from your primary employer and records for "CodeCraft Solutions".
+
+**HMRC Digital Services:** Access your full tax account and make payments securely via your Government Gateway account.
+
+*This is a summary of your Self Assessment for the 2023/2024 tax year. Please retain this for your records.*

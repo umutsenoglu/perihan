@@ -1,0 +1,66 @@
+**BARCLAYS BANK PLC**
+
+**Statement for Current Account**
+
+**Account Holder:** Mr. Ethan J. Marsh
+**Address:** 14 Elmwood Drive, Highgate, London, N6 5AB
+
+**Account Number:** ************6789
+**Sort Code:** 20-45-78
+**Statement Period:** 28 October 2025 - 27 November 2025
+**Statement Date:** 28 November 2025
+
+**National Insurance Number:** QQ 12 34 56 A
+**Tax Code:** 1257L
+
+---
+
+**Summary**
+
+**Opening Balance (28 Oct 2025):** £4,875.22
+**Total Debits:** £4,987.95
+**Total Credits:** £6,530.00
+**Closing Balance (27 Nov 2025):** £6,417.27
+
+---
+
+**Transactions**
+
+| Date         | Transaction Type                  | Details                                                                    | Debit (£) | Credit (£) | Balance (£) |
+| :----------- | :-------------------------------- | :------------------------------------------------------------------------- | :-------- | :--------- | :---------- |
+| 28 Oct 2025  | Balance Brought Forward           |                                                                            |           |            | 4,875.22    |
+| 29 Oct 2025  | Direct Debit                      | BARCLAYS MORTGAGE - Payment Ref: MRG00123456789                           | 1,850.00  |            | 3,025.22    |
+| 29 Oct 2025  | Debit Card Payment                | TESCO STORES 4012 - HIGHGATE                                               | 87.45     |            | 2,937.77    |
+| 30 Oct 2025  | Faster Payment In                 | Salary - FINTECH SOLUTIONS LTD - Ref: OCT25PAY                             |           | 4,250.00   | 7,187.77    |
+| 31 Oct 2025  | Debit Card Payment                | AMAZON UK - Order #7890123456 (Lily's birthday present)                    | 45.99     |            | 7,141.78    |
+| 01 Nov 2025  | Direct Debit                      | LITTLE STARS NURSERY - Max's Fees - Ref: MAXMARSHNOV                       | 850.00    |            | 6,291.78    |
+| 01 Nov 2025  | Standing Order                    | CLAIRE MARSH - Joint Account Transfer - Ref: JOINTACCNOV                   | 1,200.00  |            | 5,091.78    |
+| 03 Nov 2025  | Debit Card Payment                | SHELL SERVICE STN - A406 NORTH CIRCULAR                                    | 55.00     |            | 5,036.78    |
+| 05 Nov 2025  | Faster Payment In                 | CLAIRE MARSH - Salary - QPA PRIMARY SCHOOL - Ref: NOV25SAL                 |           | 2,280.00   | 7,316.78    |
+| 07 Nov 2025  | Debit Card Payment                | WATER GARDEN WAREHOUSE - New filter for fish tank                          | 32.50     |            | 7,284.28    |
+| 09 Nov 2025  | Debit Card Payment                | SAINSBURY'S LOCAL - HIGHGATE (milk & bread)                                | 8.75      |            | 7,275.53    |
+| 12 Nov 2025  | Debit Card Payment                | COSTA COFFEE - ARCHWAY (morning commute)                                   | 3.80      |            | 7,271.73    |
+| 15 Nov 2025  | Faster Payment Out                | JANET MARSH - Birthday Gift (Mum's 65th) - Ref: MUMBDAY                     | 100.00    |            | 7,171.73    |
+| 17 Nov 2025  | Direct Debit                      | BRITISH GAS - Utilities - Ref: BGAS00987654                                | 115.00    |            | 7,056.73    |
+| 19 Nov 2025  | Debit Card Payment                | QPA PRIMARY SCHOOL - School Trip Lily - Ref: LILYTRIP                      | 15.00     |            | 7,041.73    |
+| 20 Nov 2025  | Debit Card Payment                | CYCLE REPUBLIC - Inner tube & puncture repair kit                          | 12.99     |            | 7,028.74    |
+| 22 Nov 2025  | Debit Card Payment                | TESCO STORES 4012 - HIGHGATE                                               | 92.50     |            | 6,936.24    |
+| 24 Nov 2025  | Debit Card Payment                | NETFLIX.COM - Monthly Subscription                                         | 10.99     |            | 6,925.25    |
+| 25 Nov 2025  | Direct Debit                      | VIRGIN MEDIA - Broadband & TV - Ref: VMEDIA00123                           | 65.00     |            | 6,860.25    |
+| 26 Nov 2025  | Faster Payment Out                | HANNAH MARSH - Shared meal out (Manchester visit)                          | 45.00     |            | 6,815.25    |
+| 27 Nov 2025  | Debit Card Payment                | Boots Pharmacy - Prescriptions (asthma inhaler)                            | 9.90      |            | 6,805.35    |
+| 27 Nov 2025  | ATM Withdrawal                    | BARCLAYS HIGHGATE BRANCH                                                   | 200.00    |            | 6,605.35    |
+| 27 Nov 2025  | Debit Card Payment                | LONDON CAMERA EXCHANGE - Lens filter (photography hobby)                   | 88.08     |            | 6,517.27    |
+| 27 Nov 2025  | Debit Card Payment                | GREGGS - HIGHGATE (lunch)                                                  | 4.00      |            | 6,513.27    |
+| 27 Nov 2025  | Faster Payment Out                | LUKE MARSH - Football tickets (repayment)                                  | 96.00     |            | 6,417.27    |
+
+---
+
+**Important Information**
+
+*   **Need to talk?** You can find answers to common questions, view your statements online, and manage your accounts by logging into your Barclays Mobile Banking app or visiting barclays.co.uk.
+*   **Lost or Stolen Card?** Please call us immediately on 0345 7345 345.
+*   **Overdraft Facility:** You currently have an arranged overdraft limit of £1,000.00.
+*   **Interest Earned:** No interest was earned on this account during this statement period.
+
+Barclays Bank PLC. Registered in England. Registered no. 1026167. Registered office: 1 Churchill Place, London E14 5HP. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register No. 122702).

@@ -1,0 +1,39 @@
+**WHITTINGTON HOSPITAL NHS TRUST**
+
+**Patient Consultation Summary & Blood Test Results**
+
+**Patient Name:** Mr. Ethan Marsh
+**NHS Number:** [Fictional NHS Number e.g., 123 456 7890]
+**Date of Birth:** DD/MM/1988 (Age 38)
+**Address:** [Ethan's North London address]
+**GP:** Dr. Anand Patel
+**Date of Consultation:** 2026-02-02
+
+---
+
+**Reason for Consultation:**
+Mr. Marsh presented today reporting persistent feelings of stress and anxiety over the last 3 weeks, significantly impacting his daily life. Symptoms include difficulty sleeping, feeling restless and irritable, and finding it hard to concentrate at work (current fintech project deadline). He also noted ongoing worry about his mother, Janet, in Bristol, and general fatigue.
+
+**Clinical Impression:**
+Based on your reported symptoms – persistent worry about a wide range of things (work, family), sleep disturbance, restlessness, and fatigue – these align with the diagnostic criteria for Generalised Anxiety Disorder (GAD), a common mental health condition as described by the NHS. The anxiety is affecting your daily life and you are finding it hard to control these feelings.
+
+**Blood Test Results (Reviewed 2026-02-02):**
+Routine bloods (Full Blood Count, Thyroid Function Tests, Urea & Electrolytes, Liver Function Tests, Vitamin D) were ordered to rule out any underlying physical causes for your symptoms, a standard step in assessing anxiety.
+
+*   **All results are within normal physiological limits.**
+
+This indicates no immediate physiological explanation for your current presentation of anxiety.
+
+**Recommendations & Management Plan:**
+1.  **Generalised Anxiety Disorder (GAD):** Your symptoms are consistent with GAD. It's important to remember that most people feel anxious sometimes, but with GAD, it affects everyday life persistently.
+2.  **Talking Therapies:** As discussed, the NHS recommends talking therapies, such as Cognitive Behavioural Therapy (CBT), as a primary treatment. You can self-refer directly to an NHS talking therapies service online (search "NHS talking therapies for anxiety and depression").
+3.  **Self-Help Strategies:**
+    *   **Sleep Hygiene:** Continue efforts to improve sleep (e.g., winding down before bed, limiting screen time, ensuring a cool, dark room).
+    *   **Physical Activity:** Regular exercise, like your cycling hobby, can significantly reduce anxiety and improve sleep.
+    *   **Diet & Caffeine:** Maintain a healthy diet. Consider reducing caffeine intake, especially given your difficulty sleeping.
+    *   **Open Communication:** Talk about your feelings with your wife, Claire, or other trusted family members (e.g., your sister Hannah).
+    *   **Focus on what you *can* change:** Try to focus energy on self-care rather than things outside your control (e.g., mother's health, though support for her is important).
+4.  **Follow-up:** Please book a follow-up appointment with me in 4-6 weeks to review your progress and discuss further options. If symptoms worsen or become unmanageable, please contact the surgery sooner.
+
+---
+*This document is for informational purposes related to your health and is accessible via the NHS App or your GP records.*

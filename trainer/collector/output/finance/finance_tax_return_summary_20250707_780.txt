@@ -1,0 +1,66 @@
+**HM Revenue & Customs**
+PAYE & Self Assessment
+BX9 1AS
+United Kingdom
+
+**Your Self Assessment Tax Calculation Summary for the 2024-25 Tax Year**
+
+Date Issued: 07 July 2025
+Tax Year: 06 April 2024 to 05 April 2025
+
+**Ethan Marsh**
+14 Maple Drive
+Islington
+N1 9XX
+
+Unique Taxpayer Reference (UTR): 12345 67890
+National Insurance Number: AB123456C
+
+Dear Mr Marsh,
+
+This is a summary of your Self Assessment tax calculation for the tax year ending 05 April 2025.
+
+**Your Income Summary:**
+*   Employment Income (Fintech Company): £85,200.00
+*   Freelance Consulting Income: £14,850.00
+*   Bank Interest (Gross): £185.00
+**Total Income:** £100,235.00
+
+**Your Tax and National Insurance Calculation:**
+*   Total Income Tax due: £27,458.20
+*   Total National Insurance Contributions due (Class 2 & 4): £1
+*   Total National Insurance Contributions due (Class 2 & 4): £316.20
+
+**Total Tax & National Insurance Payable:** £27,774.40
+
+**Less Tax Already Paid:**
+*   Tax deducted through PAYE: (£21,512.00)
+*   Payments on Account for 2024-
+**Less Tax Already Paid:**
+*   Tax deducted through PAYE: (£21,512.00)
+*   Payments on Account for 2024-25: (£3,162.30)
+
+**Total Tax Still Due for 2024-25:** £3,090.10
+
+This amount is due by **31 January 2026**.
+
+**Your First Payment on Account for the 2025-26 Tax Year:**
+Your first payment on account for the tax year ending 05 April 2026 is also due by 31 January 2026: £1,545.05
+
+**Total Payment Required by 31 January 2026:** £4,635.15
+
+**How to Pay:**
+Please pay online via your HMRC online account, or by bank transfer.
+Your payment reference is: **EM1234567890A**
+
+For bank transfers, use the following details:
+Bank: HMRC Cumbernauld
+Sort Code: 08-32-10
+Account No: *********778
+
+Please ensure your payment reference is correct to avoid delays. If you've been considering setting up a standing order for your Class 2 NI, now might be a good time to review your options.
+
+Yours sincerely,
+
+HM Revenue & Customs
+Self Assessment Department

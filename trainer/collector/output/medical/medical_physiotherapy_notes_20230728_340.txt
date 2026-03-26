@@ -1,0 +1,474 @@
+**CITY GENERAL HOSPITAL**
+**DEPARTMENT OF PHYSIOTHERAPY**
+
+**PHYSIOTHERAPY INITIAL ASSESSMENT REPORT**
+
+---
+
+**Patient Demographics:**
+*   **Patient Name:** John Wilson
+*   **Date of Birth:** 1985-03-15 (Age: 38 years)
+*   **Medical Record Number (MRN):** CGH-JW-12345
+*   **Date of Service:** 2023-07-28
+*   **Clinician:** Dr. E. Kovacs, PT, DPT
+*   **Referring Physician:** Dr. S. Patel, MD, Neurology
+*   **Reason for Referral:** Physiotherapy assessment and management for chronic migraine headaches with suspected cervicogenic contribution.
+
+---
+
+**SUBJECTIVE (History)**
+
+**Chief Complaint:**
+"I get these debilitating headaches, usually on one side, with pulsing pain, nausea, and I'm very sensitive to light and sound. They've been getting worse over the past year, especially with all the stress at work. My neck often feels stiff and tight before, during, and after an attack."
+
+**History of Present Illness (HPI):**
+Mr. John Wilson is a 38-year-old male presenting with a 5-year history of migraine headaches. He reports that the headaches typically manifest as a unilateral, throbbing, or pulsating pain, often retro-orbital or temporo-parietal, and can alternate sides. The intensity is severe, rating 7-9/10 on a Visual Analogue Scale (VAS) during an attack, significantly impacting his daily function.
+
+Initially, migraines occurred 1-2 times per month, but over the last 12 months, the frequency has escalated to 3-4 times per week, with some periods experiencing daily prodromal or postdromal symptoms. Attacks typically last between 4 and 72 hours if untreated. Associated symptoms include significant photophobia, phonophobia, and nausea, occasionally leading to emesis. He reports visual aura (e.g., zigzag lines, scintillating scotomas) preceding approximately 20% of his attacks, lasting 15-30 minutes.
+
+Aggravating factors identified by Mr. Wilson include high stress levels (particularly work-related), sleep deprivation, certain foods (chocolate, aged cheese), bright lights, loud noises, strong odors, and sustained poor neck posture during computer work. He notes that increased neck stiffness and tension often precede the onset of a migraine. Relieving factors include retreating to a dark, quiet room, sleep, ice packs to the neck/head, and his abortive medication (sumatriptan).
+
+The migraines significantly interfere with his quality of life, leading to missed workdays (averaging 2-3 days per month), reduced social engagement, and an inability to participate in his previous hobby of running. He describes a constant underlying anxiety about when the next attack will strike.
+
+**Past Medical History (PMH):**
+*   Diagnosed with chronic migraine headaches by a neurologist approximately 5 years ago.
+*   Mild essential hypertension, diagnosed 2 years ago, well-controlled with medication.
+*   Previous whiplash injury from a motor vehicle accident (MVA) approximately 10 years ago, which resolved with conservative management (physiotherapy). No residual neck pain or headaches from this incident until the onset of migraines.
+*   No history of seizures, stroke, or other significant neurological conditions.
+*   No significant head trauma since the MVA.
+
+**Past Surgical History (PSH):**
+*   None.
+
+**Medications:**
+*   Lisinopril 10mg orally once daily (for hypertension).
+*   Sumatriptan 50mg orally as needed for migraine attack (max 2 doses/24hrs).
+*   Naproxen 500mg orally as needed for migraine or associated neck pain.
+*   Occasional paracetamol/acetaminophen for milder headaches.
+    *   *Note:* Has tried propranolol in the past for prophylaxis but discontinued due to side effects (fatigue, bradycardia). No current CGRP inhibitors or Botox injections.
+
+**Allergies:**
+*   Penicillin (rash).
+
+**Social History:**
+*   **Occupation:** Software developer, working full-time. Primarily desk-based work, often involving prolonged computer use and high cognitive demands, contributing to increased stress levels.
+*   **Living Situation:** Lives with his spouse and two children in a suburban home.
+*   **Hobbies:** Formerly an avid recreational runner (3-4 times per week, ~5-7km per run), but has significantly reduced activity due to migraine frequency and postdrome fatigue. Enjoys reading and board games.
+*   **Smoking/Alcohol/Recreational Drugs:** Non-smoker. Consumes alcohol socially (1-2 units/week). Denies recreational drug use.
+*   **Exercise:** Currently sedentary, occasional short walks.
+
+**Family History:**
+*   Mother and maternal grandmother both have a history of chronic migraine headaches, suggesting a strong genetic predisposition.
+
+**Review of Systems (ROS):**
+*   **General:** Denies recent weight loss, fever, chills, or night sweats. Reports chronic fatigue related to migraine attacks.
+*   **Neurological:** As described in HPI. Denies focal neurological deficits, numbness, tingling, or weakness in limbs. No recent changes in vision or hearing (other than photophobia/phonophobia during attacks).
+*   **Musculoskeletal:** Reports chronic neck and upper back stiffness and tension, particularly on the left side, which he feels is often linked to his headaches. No significant joint pain elsewhere.
+*   **Cardiovascular/Respiratory/Gastrointestinal/Genitourinary:** All systems reviewed and reported as stable and non-contributory to the current complaint.
+
+---
+
+**OBJECTIVE (Examination)**
+
+**General Observation:**
+Mr. Wilson presented with a slightly guarded demeanor, appearing alert but fatigued. He demonstrated good functional mobility upon entering the clinic. Posture in sitting revealed a mild forward head posture (FHP) and protracted scapulae, with a subtle increase in thoracic kyphosis. He intermittently shifted posture during the interview, rubbing his left suboccipital region.
+
+**Cervical Spine Assessment:**
+*   **Posture:** Marked forward head posture (CVA approx 45 degrees), rounded shoulders, and mild thoracic kyphosis. Scapulae appeared protracted and slightly depressed.
+*   **Active Range of Motion (AROM):**
+    *   Flexion: 45° (Normal: 50°) - full, pain-free.
+    *   Extension: 50° (Normal: 60°) - mild restriction, end-range stiffness.
+    *   Lateral Flexion Right: 35° (Normal: 45°) - mild restriction.
+    *   Lateral Flexion Left: 30° (Normal: 45°) - moderate restriction with end-range stiffness and mild pain (2/10 VAS) in left suboccipital region.
+    *   Rotation Right: 70° (Normal: 80°) - mild restriction.
+    *   Rotation Left: 60° (Normal: 80°) - moderate restriction, end-range stiffness and mild pain (2/10 VAS) in left suboccipital and upper trapezius region.
+*   **Passive Range of Motion (PROM):**
+    *   Confirmed AROM findings, with firm capsular end-feels noted at end-range left lateral flexion and rotation.
+*   **Palpation:**
+    *   **Tenderness:** Moderate-to-severe tenderness over bilateral suboccipital muscles (rectus capitis posterior major/minor, obliquus capitis superior/inferior), more pronounced on the left. Moderate tenderness over upper trapezius (bilateral), levator scapulae (left), and sternocleidomastoid (SCM) (left).
+    *   **Muscle Tone:** Significant hypertonicity and taut bands palpable in the aforementioned muscles.
+    *   **Trigger Points:** Active trigger points identified in:
+        *   Left upper trapezius, referring pain to the left temporo-parietal region.
+        *   Left SCM (clavicular head), referring pain to the ipsilateral forehead and orbital region.
+        *   Bilateral suboccipital muscles, referring diffuse pain to the vertex and retro-orbital areas.
+*   **Joint Play (PAVMs - Posteroanterior Vertebral Mobilizations):**
+    *   Hypomobility noted at C1/C2 (rotation left), C2/C3 (unilateral PA left), and C4/C5 (central PA). Tenderness with palpation and mobilization of these segments.
+*   **Neurological Assessment (Upper Quarter Screen):**
+    *   **Sensation:** Intact to light touch in C2-T1 dermatomes bilaterally.
+    *   **Motor:** 5/5 strength in all myotomes (C5-T1) bilaterally.
+    *   **Reflexes:** Biceps (C5), Triceps (C7), Brachioradialis (C6) 2+ bilaterally and symmetrical.
+    *   **Special Tests:**
+        *   Spurling's Test (Compression): Negative bilaterally.
+        *   Cervical Distraction Test: Negative.
+        *   Vertebral Artery Test: Negative (no dizziness, nystagmus, or nausea).
+        *   Cranial Nerve Screen: Intact (CN I-XII).
+        *   Flexion-Rotation Test: Limited to 35 degrees to the left (normal >44 degrees), indicating left C1-C2 dysfunction.
+
+**Thoracic Spine Assessment:**
+*   **Posture:** Mild increase in thoracic kyphosis.
+*   **AROM:** Reduced thoracic extension and rotation (especially left rotation).
+*   **Palpation:** Tenderness and stiffness over T1-T4 paraspinal musculature.
+*   **Joint Play:** Hypomobility noted at T1-T4 segments with central and unilateral PA glides.
+
+**Shoulder Girdle Assessment:**
+*   **Scapular Position/Movement:** Scapular dyskinesis observed with arm elevation, characterized by inferior angle prominence and early protraction.
+*   **Muscle Length:** Tightness in pectoralis minor/major bilaterally (pectoralis minor length test positive bilaterally).
+*   **Muscle Strength:** Mild weakness (4-/5) in lower trapezius and serratus anterior bilaterally on manual muscle testing.
+
+**Upper Limb Neurodynamics:**
+*   Upper Limb Neurodynamic Test 1 (Median Nerve bias): Negative bilaterally.
+*   Upper Limb Neurodynamic Test 2 (Radial Nerve bias): Negative bilaterally.
+*   Upper Limb Neurodynamic Test 3 (Ulnar Nerve bias): Negative bilaterally.
+
+**Craniofacial Assessment:**
+*   **Temporomandibular Joint (TMJ):** Full, symmetrical opening (45mm). No significant deviation on opening/closing. Mild tenderness to palpation of left masseter and temporalis muscles. No crepitus or clicking sounds.
+*   **Cervical Flexor Endurance Test:** Unable to maintain craniocervical flexion for longer than 20 seconds before SCM activation (normal >38 seconds).
+
+**Functional Tests:**
+*   **Postural Endurance:** Unable to maintain optimal sitting posture for more than 5 minutes without reported discomfort/stiffness in the neck and shoulders, leading to slouching.
+*   **Ergonomic Simulation:** During a simulated desk task, demonstrated a tendency to adopt a forward head posture, shoulders protracted, and monitor placed too low. Mouse and keyboard positioning contributed to wrist extension and forearm pronation.
+
+---
+
+**ASSESSMENT (Physiotherapy Diagnosis & Contributing Factors)**
+
+**Physiotherapy Diagnosis:**
+Chronic episodic migraine headaches with a significant cervicogenic component and associated myofascial pain syndrome involving the cervical and upper thoracic spine. This presentation is further compounded by poor postural mechanics and ergonomic stressors.
+
+**Contributing Factors (Hypothesized):**
+1.  **Cervicogenic Factors:**
+    *   **Upper Cervical Joint Dysfunction:** Hypomobility noted at C1/C2 (left rotation) and C2/C3, which can directly contribute to headache pain via convergence of trigeminal and upper cervical afferents (trigeminocervical nucleus).
+    *   **Myofascial Trigger Points (MTrPs):** Active MTrPs in suboccipital muscles, upper trapezius, and SCM are referring pain patterns consistent with Mr. Wilson's headache distribution and are a significant source of peripheral nociceptive input.
+    *   **Muscle Imbalances:** Hypertonicity and tightness in posterior cervical muscles (suboccipitals, upper trape
+pezius, levator scapulae) along with weakness/poor endurance in deep cervical flexors (as evidenced by the Craniofacial Flexor Endurance Test result). This imbalance contributes to forward head posture and increased mechanical stress on cervical structures.
+    *   **Poor Postural Control:** Inability to maintain optimal craniocervical and thoracic posture, leading to sustained tension in neck and shoulder musculature.
+
+2.  **Ergonomic and Lifestyle Factors:**
+    *   **Suboptimal Workstation Ergonomics:** Identified issues with monitor height, keyboard/mouse positioning, and prolonged static postures, which perpetuate sustained muscle tension and mechanical loading on the cervical spine.
+    *   **Sedentary Habits:** Prolonged sitting during work and leisure time contributes to muscle deconditioning, poor postural endurance, and increased stiffness.
+    *   **Stress:** Patient reports increased stress levels coinciding with headache exacerbations, which can heighten muscle tension and pain perception.
+    *   **Sleep Quality:** While not explicitly detailed as a primary trigger, poor sleep quality can lower pain thresholds and impede recovery.
+
+3.  **Migraine-Specific Factors:**
+    *   **Central Sensitization:** Chronic nociceptive input from cervicogenic sources and sustained muscle tension can contribute to central sensitization, lowering the headache trigger threshold and increasing the severity and frequency of migraine attacks.
+    *   **Sensory Hypersensitivity:** Patient reports photophobia and phonophobia during attacks, classic migraine features indicative of altered central pain processing.
+
+---
+
+**DIFFERENTIAL DIAGNOSIS (Physiotherapy Perspective)**
+
+While the primary diagnosis is migraine, from a physiotherapy perspective, the differential diagnosis considers conditions that mimic or co-exist with migraines and are amenable to physiotherapy intervention.
+
+*   **Cervicogenic Headache (CEH):** Highly suspected due to the clear cervical involvement (ROM deficits, tenderness, positive cervical provocation tests, historical response to manual therapy), and the unilaterality often starting in the neck/suboccipital region. It is plausible that CEH triggers or significantly contributes to Mr. Wilson's migraine attacks, or that there is a co-existence of both headache types. The convergence of trigeminal and upper cervical afferents in the trigeminocervical nucleus provides a neuroanatomical basis for this interaction.
+
+*   **Tension-Type Headache (TTH):** The widespread myofascial tenderness and muscle tightness, particularly in the suboccipital, upper trapezius, and SCM muscles, are characteristic of TTH. It is common for TTH and migraine to co-exist, with TTH potentially acting as a prodrome or postdrome, or simply as a background headache that exacerbates the overall burden.
+
+*   **Temporomandibular Disorder (TMD):** While no significant TMJ dysfunction was found (full, symmetrical opening, no clicking/crepitus), the mild tenderness to palpation of the left masseter and temporalis muscles warrants consideration. These muscles can refer pain to the head and neck. However, given the lack of other cardinal TMD signs, it is less likely to be the primary driver of his headaches but may contribute to overall head and neck tension.
+
+*   **Postural Headache:** Related to sustained poor posture and muscle fatigue, aligning with findings of poor postural endurance and the tendency to adopt a forward head posture. This type of headache often improves with changes in posture and can contribute to muscle tension that triggers other headache types.
+
+*   **Occipital Neuralgia:** Less likely as there is no clear report of paroxysmal, lancinating pain following a specific nerve distribution (e.g., greater or lesser occipital nerve). However, chronic tightness in the suboccipital region can irritate the occipital nerves, potentially causing referred pain or contributing to existing headache patterns.
+
+---
+
+**PROGNOSIS**
+
+*   **Good for improvement in headache frequency, intensity, and duration:** Given the identifiable and modifiable cervicogenic and ergonomic contributing factors, Mr. Wilson is likely to respond well to a comprehensive physiotherapy program. His motivation to engage in self-management strategies and his past positive response to manual therapy are positive prognostic indicators.
+*   **Good for reduction in associated symptoms:** Expected improvements in neck pain, stiffness, and postural endurance are anticipated with targeted intervention.
+*   **Fair for complete resolution of migraines:** While physiotherapy can significantly reduce the impact and frequency of migraines, complete resolution might be challenging given the chronic nature and potential genetic predisposition for migraine. The aim is to significantly reduce triggers, empower self-management, improve headache threshold, and enhance overall quality of life. Long-term adherence to self-management strategies will be crucial for sustained benefits.
+
+---
+
+**TREATMENT PLAN (Intervention Strategy)**
+
+**Overall Goals:**
+1.  Reduce frequency, intensity, and duration of migraine headaches by 50% within 12 weeks (as measured by headache diary and NPRS).
+2.  Decrease neck pain and stiffness to an average of < 2/10 on the Numeric Pain Rating Scale (NPRS) consistently.
+3.  Improve cervical range of motion (all planes) by at least 20% and restore normal end-feel to restricted segments.
+4.  Enhance deep cervical flexor endurance to > 38 seconds on the Craniofacial Flexor Endurance Test.
+5.  Improve postural endurance and control, enabling maintenance of optimal sitting posture for > 30 minutes without discomfort.
+6.  Empower Mr. Wilson with effective self-management strategies for headache prevention and acute management.
+7.  Educate on optimal ergonomics, pain science, and the benefits of regular physical activity.
+
+**Phase 1: Acute Symptom Management & Mobility Restoration (Weeks 1-4)**
+
+*   **Frequency:** 2 times per week for the first 2 weeks, then 1-2 times per week as clinically indicated.
+*   **Manual Therapy:**
+    *   **Upper Cervical Mobilization/Manipulation:** Graded mobilization techniques (e.g., Posteroanterior (PA) glides at C1-C3, rotation glides at C1-C2 left) to address identified hypomobilities and reduce nociceptive input to the trigeminocervical nucleus. High-velocity low-amplitude thrust techniques may be considered if appropriate and consented to, for persistent restrictions.
+    *   **Soft Tissue Release:** Myofascial release, sustained pressure, or ischemic compression to active myofascial trigger points in suboccipital muscles, upper trapezius, levator scapulae, sternocleidomastoid (SCM), and masseter/temporalis muscles. Techniques aimed at deactivating MTrPs and reducing muscle hypertonicity.
+    *   **Thoracic Mobilization:** Graded mobilization (PA glides, transverse glides) to T1-T4 to improve thoracic extension and rotation, thereby reducing compensatory loading on the cervical spine and promoting a more upright posture.
+*   **Therapeutic Exercise (Home Exercise Program - HEP):**
+    *   **Deep Cervical Flexor Strengthening:** Craniocervical flexion exercises ('chin tucks') with biofeedback (e.g., pressure biofeedback unit) to improve motor control and endurance of the deep cervical flexors. Progress from 3 sets of 10-15 repetitions with 5-second holds, gradually increasing hold time to 10-15 seconds. (2x/day).
+    *   **Cervical Mobility:** Gentle active range of motion exercises for cervical flexion, extension, rotation, and lateral flexion within pain-free limits to maintain joint health and reduce stiffness (3 sets of 10 repetitions each, 2x/day).
+    *   **Scapular Stabilization:** Exercises targeting lower trapezius and serratus anterior (e.g., wall slides, prone Ys, Ts, Is) to improve scapular control, reduce upper trapezius overuse, and promote better thoracic posture (3 sets of 12-15 repetitions, 1x/day).
+    *   **Stretching:** Static stretches for identified tight muscles including suboccipitals, upper trapezius, levator scapulae, and pectoralis minor (hold 30 seconds, 3 repetitions, 2x/day).
+*   **Education:**
+    *   **Pain Neuroscience Education (PNE):** Explain the chronic pain cycle, central sensitization, the role of the nervous system in headache experience, and the concept of referred pain. Aim to reduce fear-avoidance behaviors and empower active engagement in recovery.
+    *   **Postural Re-education:** Guidance on achieving and maintaining a neutral spine posture, scapular retraction, and optimal head positioning during various activities.
+    *   **Ergonomics:** Initial assessment and practical recommendations for workstation setup (monitor height, keyboard/mouse position, chair support, frequent micro-breaks).
+    *   **Headache Triggers:** Discuss common non-cervical triggers (diet, stress, sleep, hydration, caffeine) and emphasize the importance of maintaining a detailed headache diary to identify individual patterns.
+
+**Phase 2: Endurance, Strengthening & Self-Management (Weeks 5-8)**
+
+*   **Frequency:** 1 time per week, or bi-weekly depending on progress.
+*   **Progressive Therapeutic Exercise:**
+    *   **Advanced Deep Cervical Flexor Endurance:** Increase hold times and repetitions for chin tucks, progress to functional positions and integration into daily tasks.
+    *   **Full Cervical & Scapular Strengthening:** Incorporate resistance bands for cervical isometric exercises (e.g., multi-directional neck strengthening), further progress scapular stabilization exercises with light weights or increased repetitions.
+    *   **Postural Endurance Training:** Integrate exercises that promote sustained upright posture and core stability (e.g., seated rows, standing wall angels, planks with good cervical alignment).
+    *   **Thoracic Mobility:** Introduce self-mobilization techniques using a foam roller or theracane for thoracic extension and rotation.
+*   **Manual Therapy:** Continue as needed based on ongoing joint restrictions and MTrP activity. Transition focus to reinforcing self-mobilization techniques and independent soft tissue release.
+*   **Education:**
+    *   **Stress Management Techniques:** Introduce and practice relaxation techniques such as diaphragmatic breathing, progressive muscle relaxation, or mindfulness exercises.
+    *   **Sleep Hygiene:** Reinforce principles of good sleep hygiene and its impact on pain and recovery.
+    *   **Independent Ergonomic Modification:** Encourage Mr. Wilson to independently implement recommended ergonomic changes and troubleshoot issues, with ongoing guidance.
+    *   **Pacing Strategies:** Educate on balancing activity and rest to prevent symptom exacerbations and promote consistent progress.
+
+**Phase 3: Functional Integration & Long-Term Prevention (Weeks 9-12+)**
+
+*   **Frequency:** Bi-weekly or monthly, transitioning to as-needed basis.
+*   **Functional Integration:**
+    *   Integrate learned postural and movement strategies into all daily activities, work tasks, and recreational exercise routines.
+    *   Progress to more complex exercises that mimic functional movements, ensuring maintenance of good form and spinal alignment.
+    *   Recommend and guide general aerobic conditioning (e.g., brisk walking, cycling, swimming 3-5 times/week for 30 minutes) to improve overall health, reduce stress, and enhance pain modulation.
+*   **Self-Management Emphasis:**
+    *   Transition Mr. Wilson to a fully independent home exercise program for ongoing maintenance and prevention.
+    *   Empower him to identify early warning signs of headache onset and implement acute self-management strategies (e.g., gentle stretches, relaxation techniques, positional relief, ergonomic adjustments).
+    *   Regularly review the headache diary for long-term patterns and reinforce self-efficacy.
+*   **Discharge Planning:**
+    *   Discuss long-term strategies for managing triggers, maintaining physical gains, and promoting a healthy lifestyle.
+    *   Provide clear instructions on when to seek further physiotherapy review or medical consultation.
+    *   Reinforce the importance of consistency in ergonomic setup and adherence to the maintenance exercise program.
+
+---
+
+**INTERDISCIPLINARY REFERRALS (as needed)**
+
+*   **Neurologist:** For ongoing pharmacological management of migraine, if current regimen is insufficient, requires adjustment, or if prophylactic medications need to be initiated or optimized.
+*   **General Practitioner (GP):** For overall medical management, monitoring of co-morbidities, and medication review.
+*   **Occupational Therapist:** For a comprehensive on-site workplace ergonomic assessment, if the initial recommendations are insufficient or if Mr. Wilson's work environment is particularly complex.
+*   **Psychologist/Cognitive Behavioral Therapist (CBT):** If significant stress, anxiety, or depression are identified as persistent barriers to pain management or recovery, or if coping strategies need further development.
+
+---
+
+**FOLLOW-UP PLAN**
+
+*   **Initial Review:** 1 week from the initial assessment to review understanding of the Home Exercise Program (HEP), assess initial response to manual therapy, and address any immediate concerns or questions.
+*   **Regular Reviews:** Weekly for the first 4 weeks to closely monitor progress, refine techniques, and progress the HEP. Then bi-weekly for weeks 5-8, and monthly for weeks 9-12, or as clinically indicated by symptom response and adherence.
+*   **Objective Reassessment:**
+    *   **Subjective Measures:** Regular reassessment of headache frequency, intensity (NPRS), duration, associated symptoms, and impact on daily activities (e.g., Headache Impact Test (HIT-6) or Migraine Disability Assessment Scale (MIDAS) scores to track disability).
+    *   **Objective Measures:** Reassess cervical range of motion, joint mobility, deep cervical flexor endurance (Craniofacial Flexor Endurance Test), postural endurance, myofascial trigger point activity, and functional tests (e.g., simulated desk task).
+*   **Discharge:** Aim for discharge after 12-16 weeks if Mr. Wilson's stated goals are met, he demonstrates confidence in self-management, and his symptoms are well-controlled. A clear plan for maintenance and criteria for seeking review will be provided.
+*   **Contingency:** Instruct Mr. Wilson to contact Dr. Kovacs or his General Practitioner if there is a significant worsening of symptoms, development of new neurological symptoms, or no improvement despite consistent adherence to the treatment plan.
+
+---
+
+**COMMUNICATION WITH OTHER HEALTHCARE PROFESSIONALS**
+
+A summary of this assessment, physiotherapy diagnosis, and proposed treatment plan will be forwarded to Mr. Wilson's General Practitioner, Dr. Alice Chen, for her information and to ensure a collaborative and coordinated approach to his overall care. A copy will also be sent to his Neurologist, Dr. Mark
+**CITY GENERAL HOSPITAL**
+**Department of Physiotherapy**
+**Physiotherapy Initial Assessment Report**
+
+**Patient:** John Wilson
+**Date of Birth:** 1985-04-12 (Age: 38)
+**MRN:** CGH-JW-001458
+**Address:** 12 Elm Street, Cityville, CA 90210
+**Contact:** (555) 123-4567
+
+**Physiotherapist:** Dr. Kovacs, DPT
+**Referring Physician:** Dr. Alice Chen (General Practitioner)
+**Consulting Neurologist:** Dr. Mark Johnson
+
+**Date of Assessment:** 2023-07-28
+**Condition:** Chronic Migraine Headaches
+
+---
+
+**SUBJECTIVE HISTORY**
+
+Mr. John Wilson presents with a primary complaint of chronic migraine headaches, which have significantly worsened in frequency and intensity over the past 6-8 months. He reports experiencing migraines since his early 20s, but they were historically infrequent (approx. 1-2 per month) and typically responsive to over-the-counter analgesics.
+
+**Current Symptoms:**
+*   **Headache Frequency:** Currently experiencing 3-4 migraine attacks per week, often lasting 24-48 hours if untreated or poorly managed. He also reports daily low-grade tension-type headaches (NPRS 2-3/10) that can escalate into full migraines.
+*   **Headache Intensity:** Migraine intensity typically rates 7-9/10 on the Numeric Pain Rating Scale (NPRS) at its peak, often rendering him unable to perform daily activities.
+*   **Location:** Predominantly unilateral, retro-orbital, and temporal, often shifting sides but more commonly right-sided (approx. 70% of attacks). Occipital and neck pain often precede or accompany the headaches.
+*   **Character:** Described as throbbing, pulsating, or pounding.
+*   **Associated Symptoms:**
+    *   **Prodrome:** Often experiences neck stiffness, fatigue, mood changes (irritability), and lightheadedness 12-24 hours prior to an attack.
+    *   **Aura:** Reports visual aura in approximately 50% of attacks, characterized by shimmering lights, zig-zag lines, or blind spots, lasting 15-30 minutes before headache onset.
+    *   **During Attack:** Severe photophobia, phonophobia, and osmophobia are consistent. Nausea (occasionally with vomiting) is present in most severe attacks. Allodynia (scalp tenderness) is sometimes reported.
+    *   **Postdrome:** Fatigue, difficulty concentrating, and general malaise lasting up to 24 hours.
+*   **Aggravating Factors:** Stress, lack of sleep, strong odors (perfumes, cleaning products), bright/flickering lights, specific foods (chocolate, aged cheese, red wine – though inconsistent triggers), prolonged computer use, poor posture, and physical exertion can sometimes trigger or worsen an attack. He notes that prolonged desk work (he works as a software developer) significantly exacerbates his neck and occipital pain, often leading to a migraine.
+*   **Alleviating Factors:** Lying down in a dark, quiet room; cold compresses to the forehead/neck; caffeine (early in an attack); triptans (when taken promptly).
+
+**Impact on Daily Life:**
+Mr. Wilson reports significant functional impairment. He has missed 2-3 days of work per month due to migraines in the last six months, impacting his professional performance and causing anxiety about job security. His social life has diminished, as he often cancels plans due to fatigue or active headaches. Exercise capacity is limited during prodrome or postdrome phases, and he fears triggering an attack during physical activity. Sleep is frequently disrupted by pain or anxiety about impending attacks. His Headache Impact Test (HIT-6) score is 68, indicating severe impact.
+
+**Current Management:**
+*   **Medications:**
+    *   Acute: Sumatriptan 50mg PRN (takes 2-3 times per week), Ibuprofen 400mg PRN.
+    *   Preventative: Propranolol 20mg BID (started 3 months ago, with mild reduction in frequency but no change in intensity).
+    *   Other: Multivitamin daily.
+*   **Non-Pharmacological:** Attempts to manage stress through mindfulness apps (inconsistent use), tries to maintain a regular sleep schedule, avoids known food triggers when possible. Uses heat packs for neck stiffness.
+
+**Past Medical History:**
+*   Childhood asthma (resolved).
+*   Occasional lower back pain (episodic, no current complaint).
+*   No history of head trauma, seizures, or significant neurological events.
+*   No significant psychiatric history.
+
+**Surgical History:**
+*   Appendectomy (age 10).
+
+**Social History:**
+*   **Occupation:** Software Developer, works primarily at a desk, 8-10 hours/day, frequent computer use. Reports poor ergonomic setup and infrequent breaks.
+*   **Family History:** Mother and maternal grandmother both suffer from migraines.
+*   **Lifestyle:** Non-smoker. Occasional alcohol consumption (socially, 1-2 drinks/week, avoids red wine). Consumes 2-3 cups of coffee daily. Exercises inconsistently (swimming 1-2 times/week when well).
+*   **Stressors:** High job demands, financial strain, impact of migraines on family life.
+
+**Red Flags Screen:**
+*   No history of sudden onset "thunderclap" headache.
+*   No focal neurological deficits reported (e.g., weakness, numbness, speech disturbance beyond aura).
+*   No fever, rash, or unexplained weight loss.
+*   No significant change in headache pattern (other than increased frequency/intensity over time).
+*   No headache associated with exertion, coughing, or Valsalva maneuver.
+*   No history of malignancy or immunocompromise.
+*   No visual changes beyond typical aura.
+*   No recent head trauma.
+*   Overall, no immediate red flags suggestive of a secondary headache disorder were identified from subjective report.
+
+---
+
+**OBJECTIVE EXAMINATION (2023-07-28)**
+
+**General Observation:**
+Mr. Wilson presented alert and oriented, appearing fatigued. Posture observed was slumped sitting, with protracted shoulders, forward head posture (FHP), and increased thoracic kyphosis. Appears to carry tension in his upper traps and levator scapulae.
+
+**Cervical Spine Assessment:**
+*   **Posture:** Significant forward head posture (CVA approx. 45 degrees), rounded shoulders, increased thoracic kyphosis.
+*   **Range of Motion (AROM):**
+    *   Flexion: 40° (normal 50°) – feels tight in posterior neck.
+    *   Extension: 45° (normal 60°) – feels restricted, slight discomfort in upper cervical region.
+    *   Rotation (R): 60° (normal 80°) – tight in left upper traps/scalenes.
+    *   Rotation (L): 65° (normal 80°) – tight in right upper traps/scalenes.
+    *   Lateral Flexion (R): 30° (normal 45°) – tight on left.
+    *   Lateral Flexion (L): 30° (normal 45°) – tight on right.
+    *   Reports mild associated headache symptoms (NPRS 2/10) with end-range cervical flexion and extension.
+*   **Palpation:**
+    *   **Upper Cervical:** Significant tenderness and hypertonicity noted in suboccipital muscles (rectus capitis posterior major/minor, obliquus capitis superior/inferior) bilaterally, more pronounced on the right. C2-3 facet joint tenderness bilaterally.
+    *   **Mid-Lower Cervical:** Tenderness and taut bands in upper trapezius, levator scapulae, sternocleidomastoid (SCM), and scalenes bilaterally, with active trigger points (TrPs) in upper trapezius (right > left) referring pain to the temple/occipital region.
+    *   **Thoracic:** Hypertonicity and tenderness in rhomboids and erector spinae T1-T5.
+*   **Joint Mobility (Passive Physiological Intervertebral Motion - PPIVM/PAIVM):**
+    *   **Upper Cervical:** Hypomobility noted at C0-C1 (extension/rotation), C1-C2 (rotation), and C2-C3 (flexion/extension/rotation) bilaterally.
+    *   **Mid-Lower Cervical:** Hypomobility at C4-C5 and C5-C6 (unilateral PAIVM R/L) with restricted accessory movements.
+    *   **Upper Thoracic:** Hypomobility at T1-T3 (extension/rotation) with stiff costo-vertebral joints.
+*   **Muscle Length/Strength:**
+    *   **Shortened:** Upper trapezius, levator scapulae, SCM, pectoralis minor, suboccipital muscles.
+    *   **Weak/Inhibited:** Deep cervical flexors (DCF), lower trapezius, serratus anterior.
+    *   **Deep Cervical Flexor Endurance Test:** Holds for 18 seconds (normative >38 seconds for males). Demonstrates superficial muscle substitution.
+*   **Neurological Screen:**
+    *   **Cranial Nerves:** Intact, gross assessment.
+    *   **Motor:** 5/5 bilateral upper extremities (C5-T1 myotomes).
+    *   **Sensory:** Intact light touch and pinprick in C2-T1 dermatomes.
+    *   **Reflexes:** Biceps, Triceps, Brachioradialis 2+ bilaterally (normal).
+    *   **Neurodynamics:** Upper Limb Neurodynamic Test 1 (Median Nerve) negative bilaterally.
+    *   **Vertebral Artery Test:** Negative (no dizziness, nystagmus, speech disturbance).
+
+**Other Assessments:**
+*   **Posture Endurance:** Unable to maintain corrected posture for more than 2 minutes without significant fatigue and increased cervical discomfort.
+*   **Breathing Pattern:** Predominantly apical/thoracic breathing, with reduced diaphragmatic contribution.
+
+---
+
+**PHYSIOTHERAPY IMPRESSION / DIFFERENTIAL DIAGNOSIS**
+
+**Primary Diagnosis:**
+**Chronic Migraine (ICD-10 G43.109)** with significant cervicogenic contribution.
+Mr. Wilson's presentation strongly aligns with chronic migraine criteria (headache on 15 or more days/month for >3 months, with at least 8 days fulfilling migraine criteria). The subjective history of unilateral throbbing pain, associated photophobia, phonophobia, nausea/vomiting, and visual aura are classic migraine features. The exacerbation by stress, sleep disruption, and sensory stimuli further supports this.
+
+**Contributing Factors (Cervicogenic Headache Overlap):**
+Objective findings indicate significant musculoskeletal dysfunction in the cervical and upper thoracic spine, which is a common comorbidity and potential trigger for migraine attacks, often termed "cervicogenic migraine" or "transformed migraine" with cervicogenic components.
+*   **Evidence for Cervicogenic Contribution:**
+    *   Pre-headache neck pain and stiffness.
+    *   Restricted cervical ROM, particularly in extension and rotation.
+    *   Palpable muscle hypertonicity and active trigger points in cervical and suboccipital muscles referring to typical migraine sites.
+    *   Hypomobility of upper cervical (C0-C3) and upper thoracic joints.
+    *   Weakness of deep cervical flexors and poor postural endurance.
+    *   Aggravation of headaches with sustained poor posture or neck movements.
+    These findings suggest that musculoskeletal dysfunction in the cervical spine acts as a significant perpetuating and possibly triggering factor for Mr. Wilson's migraines, influencing both frequency and intensity.
+
+**Differential Diagnosis Considered and Ruled Out (or less likely as primary):**
+1.  **Tension-Type Headache (ICD-10 G44.2):** While Mr. Wilson reports daily low-grade headaches, these are distinct from his severe migraine attacks. The episodic tension-type headaches likely coexist and may contribute to the cervicogenic component, but do not explain the full symptom complex (pulsating pain, aura, nausea, severe photophobia/phonophobia).
+2.  **Cervicogenic Headache (ICD-10 G44.849):** Although a significant contributor, pure cervicogenic headache typically lacks aura, severe photophobia/phonophobia, and nausea/vomiting. The throbbing nature and strong family history also point away from it being the sole diagnosis. However, the objective findings are highly indicative of a cervicogenic component that warrants specific physiotherapy intervention.
+3.  **Hemicrania Continua (ICD-10 G44.80):** Characterized by strictly unilateral, continuous headache with superimposed exacerbations, often accompanied by autonomic features and absolute response to indomethacin. While unilateral, Mr. Wilson's headaches are not continuous between severe attacks, making this less likely.
+4.  **Cluster Headache (ICD-10 G44.0):** Typically presents with severe, strictly unilateral pain around the orbit/temple, often with associated ipsilateral autonomic symptoms (lacrimation, conjunctival injection, nasal congestion, ptosis). Attacks are usually shorter (15-180 min) and occur in clusters. Mr. Wilson's duration, associated symptoms, and lack of distinct clustering pattern make this unlikely.
+5.  **Secondary Headache Disorders:** Red flag screening was negative. No signs of increased intracranial pressure, infection, vascular issues (e.g., temporal arteritis), or space-occupying lesions. Neurological assessment was benign. Given Mr. Wilson's long-standing history of migraines and the recent increase in frequency/intensity, a primary headache disorder with exacerbating factors is most probable. The recent neurology consult also likely ruled out more sinister causes.
+
+**Prognosis:**
+Guarded but fair. While chronic migraines are challenging to manage, Mr. Wilson's responsiveness to triptans and the identifiable musculoskeletal contributors suggest that a multimodal approach combining pharmacological management with targeted physiotherapy can significantly improve his headache frequency, intensity, and functional capacity. Adherence to HEP and lifestyle modifications will be key.
+
+---
+
+**TREATMENT PLAN**
+
+The treatment plan will adopt a multi-faceted approach, targeting both the direct musculoskeletal contributors to his headache and providing Mr. Wilson with education and self-management strategies for his chronic migraine condition. The overarching goals are to reduce headache frequency and intensity, improve cervical spine function, decrease pain medication reliance, and improve overall quality of life.
+
+**Phase 1: Acute Pain Management & Education (Weeks 1-2)**
+*   **Manual Therapy:**
+    *   **Soft Tissue Release:** Myofascial release, sustained pressure, and ischemic compression to hypertonic and tender muscles: suboccipitals, upper trapezius, levator scapulae, SCM, scalenes, and pectoralis minor.
+    *   **Joint Mobilization:** Gentle sustained natural apophyseal glides (SNAGs) and posterior-anterior (PA) glides to hypomobile segments (C0-C1, C1-C2, C2-C3, C4-C5, T1-T3) to restore joint play and reduce afferent nociceptive input.
+*   **Modalities:**
+    *   **Heat/Cold:** Application of heat to cervical/upper thoracic musculature prior to manual therapy; instruction on cold pack use during acute headache.
+    *   **TENS:** Consideration of Transcutaneous Electrical Nerve Stimulation (TENS) for acute pain relief in the cervical or occipital region, if deemed beneficial during a headache episode.
+*   **Education:**
+    *   **Pain Neuroscience Education (PNE):** Explain the neurobiological mechanisms of chronic pain and migraine, emphasizing the role of central sensitization and the interplay between cervical dysfunction and headache.
+    *   **Posture & Ergonomics:** Detailed assessment and advice on optimal workstation setup for his software development role. Instruction on regular micro-breaks (every 20-30 minutes) and movement strategies.
+    *   **Activity Modification:** Advise on pacing activities, avoiding sustained aggravating positions, and gradual return to exercise.
+    *   **Headache Diary:** Encourage meticulous tracking of headache frequency, intensity, duration, triggers, associated symptoms, and medication use to identify patterns and assess treatment efficacy.
+*   **Home Exercise Program (HEP):**
+    *   **Deep Cervical Flexor Strengthening:** Craniocervical flexion exercises (e.g., 'chin tucks' in supine) focusing on activation and endurance (initially 3x10 reps, 5-second holds; progress to 10-15 second holds).
+    *   **Scapular Retraction/Depression:** Exercises to strengthen lower trapezius and serratus anterior (e.g., wall slides, scapular squeezes) to address protracted shoulders (3x10-15 reps).
+    *   **Gentle Cervical AROM:** Pain-free range of motion exercises (flexion, extension, rotation, lateral flexion) to maintain mobility.
+    *   **Stretching:** Gentle stretches for suboccipitals, upper trapezius, levator scapulae, and pectorals (e.g., door frame stretch) held for 30 seconds, 2-3 repetitions.
+    *   **Diaphragmatic Breathing:** Instruction on proper diaphragmatic breathing techniques to reduce accessory muscle use and promote relaxation.
+
+**Phase 2: Restoration of Function & Endurance (Weeks 3-6)**
+*   **Progression of Manual Therapy:** Increase intensity and duration of joint mobilizations and soft tissue techniques as tolerated. Introduce Grade III-IV mobilizations as appropriate.
+*   **Advanced Exercise Progression:**
+    *   **Cervical Stability:** Progress DCF endurance with resistance, prone cervical extension with chin tuck, and dynamic stability exercises in sitting/standing.
+    *   **Postural Endurance:** Introduce exercises for thoracic extension and scapular stability in functional positions. Integrate exercises with resistance bands.
+    *   **Rotator Cuff Strengthening:** Light strengthening for rotator cuff muscles to support shoulder girdle stability.
+    *   **Yoga/Pilates Principles:** Introduce foundational exercises incorporating core stability and mindful movement, if appropriate.
+*   **Self-Management Strategies:**
+    *   **Stress Management:** Discuss and explore specific stress reduction techniques beyond basic mindfulness, such as progressive muscle relaxation or guided imagery.
+    *   **Sleep Hygiene:** Reinforce optimal sleep practices.
+    *   **Trigger Identification & Avoidance:** Further analysis of headache diary for specific triggers and strategies for avoidance or mitigation.
+    *   **Aerobic Exercise:** Gradually introduce low-impact aerobic exercise (e.g., walking, cycling, swimming) 3-4 times per week for 20-30 minutes, ensuring it does not trigger headaches. This will be crucial for overall health and migraine management.
+
+**Phase 3: Maintenance & Prevention (Weeks 7-12+)**
+*   **Independent Management:** Transition Mr. Wilson to a largely independent home exercise and self-management program.
+*   **Advanced Functional Training:** Integrate specific exercises mimicking work tasks or recreational activities, ensuring proper biomechanics.
+*   **Coping Strategies:** Reinforce and refine coping strategies for managing acute headache episodes and preventing escalation.
+*   **Monitoring:** Continued use of headache diary and regular self-assessment of cervical symptoms.
+*   **Referral Consideration:** If significant psychosocial barriers or persistent pain behaviors emerge, consider ref
+ers to pain management or recovery, or if coping strategies need further development.
+
+---
+
+**FOLLOW-UP PLAN**
+
+*   **Initial Review:** 1 week from the initial assessment to review understanding of the Home Exercise Program (HEP), assess initial response to manual therapy, and address any immediate concerns or questions.
+*   **Regular Reviews:** Weekly for the first 4 weeks to closely monitor progress, refine techniques, and progress the HEP. Then bi-weekly for weeks 5-8, and monthly for weeks 9-12, or as clinically indicated by symptom response and adherence.
+*   **Objective Reassessment:**
+    *   **Subjective Measures:** Regular reassessment of headache frequency, intensity (NPRS), duration, associated symptoms, and impact on daily activities (e.g., Headache Impact Test (HIT-6) or Migraine Disability Assessment Scale (MIDAS) scores to track disability).
+    *   **Objective Measures:** Reassess cervical range of motion, joint mobility, deep cervical flexor endurance (Craniofacial Flexor Endurance Test), postural endurance, myofascial trigger point activity, and functional tests (e.g., simulated desk task).
+*   **Discharge:** Aim for discharge after 12-16 weeks if Mr. Wilson's stated goals are met, he demonstrates confidence in self-management, and his symptoms are well-controlled. A clear plan for maintenance and criteria for seeking review will be provided.
+*   **Contingency:** Instruct Mr. Wilson to contact Dr. Kovacs or his General Practitioner if there is a significant worsening of symptoms, development of new neurological symptoms, or no improvement despite consistent adherence to the treatment plan.
+
+---
+
+**COMMUNICATION WITH OTHER HEALTHCARE PROFESSIONALS**
+
+A summary of this assessment, physiotherapy diagnosis, and proposed treatment plan will be forwarded to Mr. Wilson's General Practitioner, Dr. Alice Chen, for her information and to ensure a collaborative and coordinated approach to his overall care. A copy will also be sent to his Neurologist, Dr. Mark Johnson, to keep him informed of the physiotherapy intervention and to facilitate discussion regarding concurrent pharmacological management and the potential for a combined approach to his migraine care. Communication will be maintained throughout Mr. Wilson's treatment course to optimize outcomes and address any interdisciplinary concerns.
+
+---

@@ -1,0 +1,56 @@
+**Aquarium Algae Control - Research Notes (Ethan Marsh)**
+
+**Date:** Sunday, 17th March, 2024
+**Time:** 21:45 (after Lily and Max finally asleep, Claire watching something on Netflix)
+**Location:** Study desk, North London
+
+**Current Situation:**
+Algae blooming in the 125L community tank again. Not a full-blown green soup yet, but definitely getting worse. Filamentous green stuff on the fake wood and some of the plant leaves, and brown diatom-like film on the glass near the back. Water parameters seem fine (checked last Saturday: Ammonia 0, Nitrite 0, Nitrate ~15ppm). Fish look healthy (tetras, a few guppies, corys, pleco). Pleco (Barnaby) isn't keeping up.
+
+**Initial Thoughts/Observations:**
+*   **Lighting:** Could be the main culprit. Running the LED lights for about 10 hours a day. Maybe too long? Or too intense? Remember reading something about light spectrum too. Current schedule: 09:00-19:00. Should I reduce it? Maybe 8 hours?
+*   **Nutrients:** Is there too much food going in? Claire sometimes overfeeds the guppies, especially if I’m out cycling. Need to remind her again about the tiny pinch rule. Could also be nitrates building up faster than water changes can handle. I do 25% weekly. Is that enough?
+*   **CO2/Plants:** My plants aren't super dense. Vallisneria and Anubias. Maybe not enough plant mass to outcompete the algae for nutrients. Don't have a CO2 system, wasn't planning on it for this tank, but maybe something to consider down the line if it gets really bad. For now, focus on basics.
+*   **Water Source:** Tap water here is hard. Could be contributing. Should I consider an RO filter? Too much faff and expense probably for a 125L.
+
+**Possible Solutions/Actions to Investigate:**
+
+1.  **Reduce Lighting Period:**
+    *   Try reducing to 8 hours daily. Maybe 10:00-18:00? Or even 7 hours for a week as an experiment.
+    *   Need to check the light intensity setting on the timer. Is it dimmable? (Pretty sure it is, just haven't messed with it).
+    *   *Need to check:* Specific recommendations for LED lighting duration for low-tech tanks.
+
+2.  **Nutrient Control:**
+    *   **Feeding:** Strict one small pinch a day, skip one day a week. Remind Claire, Lily even tries to feed them sometimes.
+    *   **Water Changes:** Increase frequency or volume? Maybe 30-35% weekly? Or 20% twice a week? Might be too much disruption for the fish.
+    *   **Filter Maintenance:** When did I last clean the filter media? Probably a month or so ago. Need to clean the sponges this weekend. Don't touch the bio-media too much.
+
+3.  **Physical Removal:**
+    *   Manual scraping the glass – already doing this with the magnetic cleaner.
+    *   Siphoning gravel more thoroughly during water changes to remove detritus.
+    *   Physically remove the filamentous algae from plants and decor during water changes. Tedious.
+
+4.  **Algae Eaters:**
+    *   Barnaby the pleco is doing his best, but clearly not enough.
+    *   Could I add more? Otocinclus? They're quite sensitive.
+    *   Snails? Assassin snails if I get too many pest snails, but I don't really have a major snail issue right now. Nerite snails are good algae eaters but can lay ugly eggs everywhere.
+    *   *Need to check:* Compatibility with current fish stock and tank size for any new algae eaters. Don't want to overstock.
+
+5.  **Chemical Treatments (Last Resort):**
+    *   Heard about Excel (liquid carbon) acting as an algaecide. But it can be harmful to some plants/fish if dosed incorrectly. Not keen to go down this route unless desperate.
+    *   Blackout period? Turn lights off for 3 days. Might stress the fish.
+
+**Other things to consider:**
+*   Could the new fertiliser I tried a few weeks ago be contributing? Only used a tiny bit, but maybe it's unbalanced.
+*   The shared fence issue with the neighbour is still draining my mental energy. Solicitor's letter went out last week. Need to follow up on that tomorrow during my lunch break. This algae problem feels minor in comparison, but it's still an annoying chore.
+*   Need to remember to pick up Lily from Mrs. Henderson's class on Wednesday, Claire has a staff meeting.
+*   Max drew on the wall in the living room today. Distraction.
+
+**Next Steps:**
+1.  Reduce lighting to 8 hours daily starting tomorrow.
+2.  Strict feeding schedule. Talk to Claire again.
+3.  Thorough filter clean this weekend.
+4.  More aggressive manual algae removal and gravel vacuuming during Saturday's water change.
+5.  Monitor results for a week.
+
+Hope this works. Don't want my peaceful tank turning into a green swamp.

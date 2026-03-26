@@ -1,0 +1,38 @@
+**FIRST NATIONAL BANK**
+Head Office: 1 Fictional Square, London, SW1A 1AA
+
+**Account Statement**
+
+**Statement Date:** 17 October 2023
+**Account Holder:** Mr John Smith
+**Address:** 123 Fictional Lane
+Anytown
+AB1 2CD
+
+**Account Number:** *********1234
+**Sort Code:** 10-20-30
+**Product:** Everyday Current Account
+
+---
+
+**Account Summary**
+
+Opening Balance as of 17 September 2023: £1,543.21
+Total Credits this period: £2,950.00
+Total Debits this period: £1,334.79
+**Closing Balance as of 17 October 2023: £3,158.42**
+
+---
+
+**Transaction Details**
+
+| Date         | Description                                     | Reference Number       | Debit (GBP) | Credit (GBP) | Balance (GBP) |
+| :----------- | :---------------------------------------------- | :--------------------- | :---------- | :----------- | :------------ |
+| 17 Sep 2023  | BALANCE BROUGHT FORWARD                         |                        |             |              | 1,543.21      |
+| 18 Sep 2023  | Salary Payment - Fictional Corp Ltd             | SALARY-JS-SEP23        |             | 2,850.00     | 4,393.21      |
+| 19 Sep 2023  | Direct Debit - Landlord Property Management     | RENT-
+LPM-SEPT          | 850.00      |              | 3,543.21      |
+| 19 Sep 2023  | Debit Card Purchase - BigSave Supermarket       | DC-010923-100234       | 45.78       |              | 3,4
+97.43      |
+| 20 Sep 2023  | Direct Debit - Fictional Energy Co.             | DD-ENGY-0923           | 78.50       |              | 3,418.93      |
+| 21 Sep 2023  | Faster Payment In

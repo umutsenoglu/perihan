@@ -1,0 +1,35 @@
+**MEMORIAL MEDICAL CENTER**
+**VACCINATION RECORD**
+
+**PATIENT INFORMATION:**
+Name: John Wilson
+Date of Birth: 1970-07-20
+Medical Record Number (MRN): MW0012345
+
+**VISIT DETAILS:**
+Date of Visit: 2025-04-11
+Attending Physician: Dr. Ahmed
+Reason for Visit: Routine follow-up for Type 2 Diabetes Mellitus management; vaccination update.
+
+**VACCINATIONS ADMINISTERED ON 2025-04-11:**
+
+1.  **Influenza Vaccine (Quadrivalent)**
+    *   Product: Fluzone Quadrivalent (2024-2025 Formula)
+    *   Dose: 0.5 mL
+    *   Route: Intramuscular (IM)
+    *   Site: Left Deltoid
+    *   Lot Number: A1B2C3D4
+    *   Expiration Date: 2026-06-30
+    *   Administered By: Dr. Ahmed
+
+2.  **Pneumococcal Polysaccharide Vaccine (PPSV23)**
+    *   Product: Pneumovax 23
+    *   Dose: 0.5 mL
+    *   Route: Intramuscular (IM)
+    *   Site: Right Deltoid
+    *   Lot Number: P9Q8R7S6
+    *   Expiration Date: 2027-03-15
+    *   Administered By: Dr. Ahmed
+
+**NOTES/RECOMMENDATIONS:**
+Mr. Wilson, a 54-year-old male with Type 2 Diabetes Mellitus, received his annual influenza vaccine and a booster dose of PPSV23 as per ACIP guidelines for adults with chronic medical conditions. Patient tolerated both injections well with no immediate adverse reactions observed. Education provided regarding potential local site soreness and fever. Recommended continued adherence to diabetes management plan. Future vaccination schedule will be reviewed at his next scheduled visit.

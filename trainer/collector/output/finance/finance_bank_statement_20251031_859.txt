@@ -1,0 +1,134 @@
+**BARCLAYS**
+Your everyday banking statement
+
+**Statement of Account**
+
+**Account Holder:**
+Mr Ethan Marsh
+Flat 2, 14 Elmwood Gardens
+Highgate
+London
+N6 5AB
+
+**Your Account Details:**
+Account Name: Mr Ethan Marsh
+Account Type: Barclays Bank Account
+Sort Code: 20-29-37
+Account Number: *********789
+Statement Period: 01 October 2025 - 31 October 2025
+Statement Date: 31 October 2025
+Page: 1 of 3
+
+---
+
+**Account Summary**
+
+Opening Balance as at 01 October 2025: **£4,500.78**
+Total Debits for this period: £4,554.15
+Total Credits for this period: £4,200.00
+Closing Balance as at 31 October 2025: **£4,146.63**
+
+**Interest Information:**
+No interest is paid on this account.
+
+**Need help with your banking?**
+Visit us at barclays.co.uk/help or call us on 0345 734 5345.
+(Lines open 24 hours a day, 7 days a week. Call charges may apply.)
+
+---
+
+**Transactions for 01 October 2025 - 31 October 2025**
+
+| Date       | Transaction Type | Description                                  | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :--------------- | :------------------------------------------- | :-------- | :--------- | :---------- |
+| 01 Oct     | DIRECT DEBIT     | BARCLAYS MORTGAGE ACCT *******567           | 1,850.00  |            | 2,650.78    |
+| 01 Oct     | DIRECT DEBIT     | ISLINGTON COUNCIL TAX                      | 195.50    |            | 2,455.28    |
+| 01 Oct     | DIRECT DEBIT     | LITTLE STARS NURSERY LTD - MAX MARSH         | 985.00    |            | 1,470.28    |
+| 01 Oct     | DIRECT DEBIT     | E.ON ENERGY - GAS & ELECTRIC               | 155.00    |            | 1,315.28    |
+| 01 Oct     | DIRECT DEBIT     | VIRGIN MEDIA - BROADBAND & TV               | 62.50     |            | 1,252.78    |
+| 01 Oct     | DIRECT DEBIT     | O2 MOBILE - ETHAN MARSH                      | 38.00     |            | 1,214.78    |
+| 02 Oct     | DEBIT CARD       | TESCO STORES LTD, HIGHGATE N6                | 78.95     |            | 1,135.83    |
+| 02 Oct     | FASTER PAYMENT   | CLAIRE MARSH - HOUSEHOLD EXPENSES           | 450.00    |            | 685.83      |
+| 03 Oct     | DEBIT CARD       | ESSO SERVICE STATION, HIGHGATE               | 48.70     |            | 637.13      |
+| 03 Oct     | STANDING ORDER   | HL ISA FUND TRANSFER - OCTOBER CONTRIBUTION  | 250.00    |            | 387.13      |
+| 04 Oct     | DEBIT CARD       | AMAZON UK MARKETPLACE, ORDER #202-6789012-3 | 22.99     |            | 364.14      |
+| 06 Oct     | DEBIT CARD       | QPA PRIMARY SCHOOL - LILY Y3 TRIP           | 18.50     |            | 345.64      |
+| 07 Oct     | DIRECT DEBIT     | ADOBE CREATIVE CLOUD SUBSCRIPTION           | 19.99     |            | 325.65      |
+| 08 Oct     | DEBIT CARD       | M&S FOOD, HIGHGATE                           | 35.70     |            | 289.95      |
+| 09 Oct     | DEBIT CARD       | CYCLE SURGERY, CROUCH END                    | 110.00    |            | 179.95      |
+
+---
+**BARCLAYS**
+Your everyday banking statement
+
+**Statement of Account (Continued)**
+
+**Your Account Details:**
+Account Name: Mr Ethan Marsh
+Account Type: Barclays Bank Account
+Sort Code: 20-29-37
+Account Number: *********789
+Statement Period: 01 October 2025 - 31 October 2025
+Statement Date: 31 October 2025
+Page: 2 of 3
+
+---
+
+**Transactions for 01 October 2025 - 31 October 2025 (Continued)**
+
+| Date       | Transaction Type | Description                                  | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :--------------- | :------------------------------------------- | :-------- | :--------- | :---------- |
+| 10 Oct     | FASTER PAYMENT   | LUKE MARSH - BIRTHDAY GIFT                   | 50.00     |            | 129.95      |
+| 11 Oct     | DEBIT CARD       | PRET A MANGER, FINSBURY PARK                 | 12.85     |            | 117.10      |
+| 13 Oct     | DEBIT CARD       | WATERSTONES, MUSWELL HILL                    | 15.00     |            | 102.10      |
+| 15 Oct     | DIRECT DEBIT     | BRITISH GAS - HOMECARE COVER                 | 18.00     |            | 84.10       |
+| 16 Oct     | DEBIT CARD       | THE FISH TANK EMPORIUM, ENFIELD              | 65.00     |            | 19.10       |
+| 17 Oct     | BACS CREDIT      | SALARY - FINTECH SOLUTIONS LTD, REF: OCT25 |           | 4,200.00   | 4,219.10    |
+| 17 Oct     | DEBIT CARD       | WAITROSE, HIGHGATE                           | 89.20     |            | 4,129.90    |
+| 18 Oct     | DEBIT CARD       |
+**
+---
+**BARCLAYS**
+Your everyday banking statement
+
+**Statement of Account (Continued)**
+
+**Your Account Details:**
+Account Name: Mr Ethan Marsh
+Account Type: Barclays Bank Account
+Sort Code: 20-29-37
+Account Number: *********789
+Statement Period: 01 October 2025 - 31 October 2025
+Statement Date: 31 October 2025
+Page: 2 of 3
+
+---
+
+**Transactions for 01 October 2025 - 31 October 2025 (Continued)**
+
+| Date       | Transaction Type | Description                                  | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :--------------- | :------------------------------------------- | :-------- | :--------- | :---------- |
+| 06 Oct     | DEBIT CARD       | QPA PRIMARY SCHOOL - LILY Y3 TRIP           | 18.50     |            | 267.75      |
+| 07 Oct     | DIRECT DEBIT
+**BARCLAYS**
+Your everyday banking statement
+
+**Statement of Account (Continued)**
+
+**Your Account Details:**
+Account Name: Mr Ethan Marsh
+Account Type: Barclays Bank Account
+Sort Code: 20-29-37
+Account Number: *********789
+Statement Period: 01 October 2025 - 31 October 2025
+Statement Date: 31 October 2025
+Page: 2 of 3
+
+---
+
+**Transactions for 01 October 2025 - 31 October 2025 (Continued)**
+
+| Date       | Transaction Type | Description                                  | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :--------------- | :------------------------------------------- | :-------- | :--------- | :---------- |
+| 10 Oct     | FASTER PAYMENT   | LUKE MARSH - BIRTHDAY GIFT                   | 50.00     |            | 129.95      |
+| 11 Oct     | DEBIT CARD       | PRET A MANGER,

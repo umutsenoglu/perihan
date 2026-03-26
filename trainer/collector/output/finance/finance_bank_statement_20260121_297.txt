@@ -1,0 +1,216 @@
+```
+HSBC Bank Statement
+Account Holder: Mr. Ethan Marsh
+Statement Period: 21 December 2025 - 20 January 2026
+Date Issued: 21 January 2026
+Page 1 of 4
+
+HSBC UK Bank plc
+PO Box 7100
+Birmingham
+B32 9AE
+
+Account Number: **-**-** 1234
+Sort Code: 40-05-**
+Currency: GBP
+
+Opening Balance (21 December 2025): £12,458.92
+
+Date        Transaction Details                                         Debit (£)   Credit (£)   Balance (£)
+-----------------------------------------------------------------------------------------------------------
+21 Dec 25   DEBIT CARD PAYMENT - Sainsbury's Local, N. London           -45.78                   12,413.14
+            *Groceries for weekend, Lily's favourite yoghurt*
+22 Dec 25   STANDING ORDER - Barclays Mortgage - Ref: MARSHHOME2026     -1,850.00                10,563.14
+            *Monthly mortgage payment*
+22 Dec 25   DEBIT CARD PAYMENT - Amazon.co.uk - Ref: 9876-AMZ           -34.99                   10,528.15
+            *Max's new dinosaur book, Claire mentioned he loved it*
+23 Dec 25   DIRECT DEBIT - EDF Energy - Ref: ELEC-MARSHDEC25            -112.50                  10,415.65
+            *Monthly electricity bill, higher due to winter*
+23 Dec 25   DEBIT CARD PAYMENT - Cycle Republic - Ref: BIKE-MAINT       -75.00                   10,340.65
+            *Service for my road bike, gears were clunky*
+24 Dec 25   DEBIT CARD PAYMENT - Waitrose, Islington                    -98.70                   10,241.95
+            *Christmas Eve essentials, nice cheese for Claire*
+24 Dec 25   DEBIT CARD PAYMENT - Royal Mail - Ref: PARCEL-DELIV         -5.99                    10,235.96
+            *Postage for Mum's Christmas gift to Bristol*
+25 Dec 25   DEBIT CARD PAYMENT - Steam Games - Ref: GAMING-XMAS         -19.99                   10,215.97
+            *Small treat for myself, new strategy game*
+26 Dec 25   ATM WITHDRAWAL - High Street, N. London                     -50.00                   10,165.97
+            *Cash for Lily & Max's Christmas money, small toys*
+27 Dec 25   DEBIT CARD PAYMENT - London Aquarium - Ref: FAMILY-TRIP     -68.00                   10,097.97
+            *Treat for the kids, they loved the sharks*
+28 Dec 25   DEBIT CARD PAYMENT - Deliveroo - Ref: WEEKEND-TAKEAWAY      -38.50                   10,059.47
+            *Indian takeaway, Claire was too tired to cook*
+29 Dec 25   CREDIT - Salary - FINTECH SOLUTIONS LTD - Ref: JAN26SALARY              4,500.00     14,559.47
+            *My monthly salary. Phew.*
+29 Dec 25   CREDIT - Claire's Salary - QPA PRIMARY SCHOOL - Ref: DEC25SALARY        2,200.00     16,759.47
+            *Claire's monthly salary.*
+30 Dec 25   DEBIT CARD PAYMENT - Pet Supermarket - Ref: FISH-SUPPLIES   -22.45                   16,737.02
+            *New filter media for the tropical fish tank*
+31 Dec 25   DEBIT CARD PAYMENT - Tesco Extra - Ref: NYE-SUPPLIES        -72.10                   16,664.92
+            *New Year's Eve snacks and drinks*
+01 Jan 26   DEBIT CARD PAYMENT - Sky TV - Ref: JAN26SUBS                -62.00                   16,602.92
+            *Monthly Sky Q subscription*
+02 Jan 26   DEBIT CARD PAYMENT - Nespresso - Ref: COFFEE-PODS           -35.00                   16,567.92
+            *Restock of coffee pods, Claire's favourite blend*
+03 Jan 26   DEBIT CARD PAYMENT - QPA Primary School - Ref: MAXNURSERY   -750.00                  15,817.92
+            *Max's nursery fees for January. It adds up!*
+04 Jan 26   DEBIT CARD PAYMENT - PureGym - Ref: JAN26MEMB               -26.99                   15,790.93
+            *My monthly gym membership, need to go more often*
+05 Jan 26   DEBIT CARD PAYMENT - WHSmith - Ref: LILY-BOOK               -8.99                    15,781.94
+            *Lily's new reading book for school, Mrs. Henderson recommended*
+06 Jan 26   DEBIT CARD PAYMENT - TfL - Ref: OYSTER-TOPUP                -40.00                   15,741.94
+            *Oyster card top-up, back to work commute*
+07 Jan 26   DIRECT DEBIT - Thames Water - Ref: WATER-JAN26              -42.00                   15,699.94
+            *Monthly water bill*
+08 Jan 26   DEBIT CARD PAYMENT - Boots Pharmacy - Ref: MEDS-ETHAN       -12.50                   15,687.44
+            *Asthma inhaler refill and allergy meds*
+09 Jan 26   DEBIT CARD PAYMENT - Rachel's Kitchen (Local Cafe)          -15.50                   15,671.94
+            *Lunch with Rachel Green, discussing school stuff. She mentioned Karen Briggs again.*
+10 Jan 26   DEBIT CARD PAYMENT - VW Dealership - Ref: CAR-SERVICE       -280.00                  15,391.94
+            *Annual service for the VW Golf. Considering electric options for next year.*
+11 Jan 26   DEBIT CARD PAYMENT - Amazon.co.uk - Ref: 1234-AMZ           -5.99                    15,385.95
+            *Replacement phone charger, Max bit through the old one*
+12 Jan 26   DEBIT CARD PAYMENT - Papa John's - Ref: SUNDAY-PIZZA        -28.00                   15,357.95
+            *Family pizza night, Lily's choice*
+13 Jan 26   DEBIT CARD PAYMENT - QPA Primary School - Ref: LILY-TRIP    -15.00                   15,342.95
+            *Contribution for Lily's Year 3 school trip to the Science Museum*
+14 Jan 26   DEBIT CARD PAYMENT - National Express - Ref: BRISTOL-TICKET -32.00                   15,310.95
+            *Coach ticket to Bristol to visit Mum next month*
+15 Jan 26   DEBIT CARD PAYMENT - Sainsbury's Online - Ref: GROC-WKLY    -85.30                   15,225.65
+            *Weekly online grocery shop*
+16 Jan 26   DEBIT CARD PAYMENT - The Photography Show (Online)          -18.00                   15,207.65
+            *Early bird ticket for the photography exhibition in March*
+17 Jan 26   DEBIT CARD PAYMENT - Starbucks - Ref: COFFEE-TREAT          -4.20                    15,203.45
+            *Coffee on the way to work, needed a pick-me-up*
+18 Jan 26   DEBIT CARD PAYMENT - DIY Superstore - Ref: SHELF-MAXROOM    -25.00                   15,178.45
+            *Materials for the new shelf in Max's room, for his growing dinosaur collection*
+19 Jan 26   DEBIT CARD PAYMENT - Deliveroo - Ref: SUNDAY-EASY           -25.50                   15,152.95
+            *Claire was really stressed about Karen Briggs after a parent meeting. Ordered her favourite Thai.*
+20 Jan 26   DEBIT CARD PAYMENT - NEU Membership - Ref: CLAIRE-UNION     -16.00                   15,136.95
+            *Claire's monthly NEU union membership. She said Sarah Langley advised her to keep documenting everything.*
+
+Closing Balance (20 January 2026): £15,136.95
+
+This statement is for information purposes only. Please check all transactions carefully and report any discrepancies immediately.
+For assistance, please visit hsbc.co.uk/help or call us on 03457 404 404.
+
+---
+
+HSBC Bank Statement
+Account Holder: Mr. Ethan Marsh
+Statement Period: 21 December 2025 - 20 January 2026
+Date Issued: 21 January 2026
+Page 2 of 4
+
+Summary of Account Activity:
+Total Debits: £4,103.55
+Total Credits: £6,700.00
+
+Average Daily Balance for the period: £13,547.88
+
+Your Account Details:
+Account Name: Mr. Ethan Marsh
+Account Number: **-**-** 1234
+Sort Code: 40-05-**
+Bank: HSBC UK Bank plc
+
+Contact Information:
+Email: ethan.marsh@email.com
+Phone: 07*** *** 1234
+Address: 12 Elmwood Avenue, North London, N12 7AB
+
+Important Information:
+If you need to report a lost or stolen card, please call us immediately on 0800 085 2400 (available 24/7).
+For general enquiries or to discuss your account, please call us on 03457 404 404 (lines open 8am-8pm, Mon-Sat).
+
+Tips for managing your money:
+*   Set up budgeting categories in your online banking to track spending.
+*   Review your direct debits and standing orders annually to ensure they are still relevant.
+*   Consider setting up a savings goal for larger purchases or emergencies.
+
+---
+
+HSBC Bank Statement
+Account Holder: Mr. Ethan Marsh
+Statement Period: 21 December 2025 - 20 January 2026
+Date Issued: 21 January 2026
+Page 3 of 4
+
+Transaction Breakdown by Category (Estimated):
+
+Housing (Mortgage, Utilities, Home Maintenance):
+Barclays Mortgage: £1,850.00
+EDF Energy: £112.50
+Thames Water: £42.00
+DIY Superstore: £25.00
+Total Housing: £2,029.50 (Approx. 49.46% of total debits)
+
+Food & Drink:
+Sainsbury's Local: £45.78
+Waitrose: £98.70
+Tesco Extra: £72.10
+Deliveroo (29 Dec): £38.50
+Nespresso: £35.00
+Papa John's: £28.00
+Sainsbury's Online: £85.30
+Starbucks: £4.20
+Deliveroo (19 Jan): £25.50
+Total Food & Drink: £433.08 (Approx. 10.55% of total debits)
+
+Children's Expenses:
+Amazon.co.uk (Max's book): £34.99
+London Aquarium: £68.00
+QPA Primary School (Max's nursery): £750.00
+WHSmith (Lily's book): £8.99
+QPA Primary School (Lily's trip): £15.00
+Total Children's Expenses: £876.98 (Approx. 21.37% of total debits)
+
+Transport:
+Cycle Republic: £75.00
+TfL Oyster Top-up: £40.00
+VW Dealership (Car Service): £280.00
+National Express (Bristol): £32.00
+Total Transport: £427.00 (Approx. 10.40% of total debits)
+
+Personal & Miscellaneous:
+Amazon.co.uk (charger): £5.99
+Boots Pharmacy: £12.50
+Steam Games: £19.99
+Royal Mail: £5.99
+ATM Withdrawal: £50.00
+Sky TV: £62.00
+PureGym: £26.99
+Rachel's Kitchen: £15.50
+Pet Supermarket: £22.45
+The Photography Show: £18.00
+NEU Membership: £16.00
+Total Personal & Misc: £255.00 (Approx. 6.21% of total debits)
+
+This breakdown is an estimate based on transaction descriptions and may not be fully exhaustive or accurate for all spending categories.
+
+---
+
+HSBC Bank Statement
+Account Holder: Mr. Ethan Marsh
+Statement Period: 21 December 2025 - 20 January 2026
+Date Issued: 21 January 2026
+Page 4 of 4
+
+Important Communications & Notes:
+
+Mortgage Update:
+Your next Barclays mortgage payment (Ref: MARSHHOME2026) is due on 22 February 2026. Please ensure sufficient funds are available.
+
+Family & Personal Notes:
+*   Claire's situation at QPA Primary: The NEU membership payment on 20 Jan reminds me about Claire's ongoing issues with Karen Briggs. She spoke to her union rep, Sarah Langley, back on 24 February 2025. The union advised her to document everything, which she's been doing. I remember she came home in tears on 20 February 2025 after Karen told a parent Claire "doesn't differentiate enough for SEN children." I was so angry, wanted to email Mr. Robinson, the head teacher, but Claire insisted on handling it professionally. They had that mediation meeting with Mr. Robinson on 3 March 2025. Karen was passive-aggressive, but agreed to "respect boundaries." Things did improve slightly, but Claire still comes home stressed 2-3 times a week. I try to be supportive, make her tea, listen, but sometimes I'm distracted by my own work stress, which she notices. Rachel Green, a school parent, even mentioned to Claire that "everyone prefers you to Karen." It's good to know others see it too.
+*   Lily's School: Lily is back in Year 3 with Mrs. Henderson. Her reading book purchase on 05 Jan was for a new one Mrs. Henderson recommended. The school trip payment on 13 Jan is for the Science Museum, she's very excited.
+*   Max's Nursery: Max is settling well back at Little Stars Nursery. The nursery fees on 03 Jan are a big chunk, but he loves it there. He told us a funny story about a pretend dinosaur fight yesterday.
+*   My Health: Reminder to book that physiotherapy for my lower back pain. Desk work is not helping. The Boots Pharmacy payment on 08 Jan was for my asthma and allergies.
+*   Upcoming: Coach ticket to Bristol on 14 Jan for visiting Mum next month. I need to coordinate with Hannah and Luke to see when they might visit too. Photography Show ticket on 16 Jan, looking forward to that.
+
+Future Financial Planning:
+*   Considering switching to an electric car next year, need to start researching models and charging options. The car service payment on 10 Jan highlights the ongoing costs of the Golf.
+*   Review savings for upcoming family holiday in summer.
+
+Thank you for banking with HSBC. We appreciate your continued custom.
+```

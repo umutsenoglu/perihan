@@ -1,0 +1,180 @@
+HMRC Self Assessment Tax Return Summary – Tax Year 2023-2024
+
+**For Tax Year:** 6 April 2023 to 5 April 2024
+**Date Generated:** 12 April 2024
+**Reference Number:** SA.2024.EM.734912
+**Currency:** GBP
+
+**Personal Details:**
+
+**Name:** Mr Ethan Marsh
+**Date of Birth:** 17 October 1985
+**National Insurance Number:** QQ 12 34 56 A
+**Address:** 14 Elmwood Drive, Highgate, London, N6 4AB
+**Contact Email:** ethan.marsh@example.co.uk
+**Contact Phone:** 07700 900XXX
+
+**Summary of Taxable Income:**
+
+| Income Type                       | Gross Amount (GBP) | Tax Deducted (GBP) |
+| :-------------------------------- | :----------------- | :----------------- |
+| **Employment Income**             |                    |                    |
+| FinchTech Solutions Ltd (P60)     | 85,500.00          | 17,100.00          |
+| **Other UK Income**               |                    |                    |
+| Freelance Software Development    | 7,850.00           | 0.00               |
+| Bank Interest (Barclays Current)  | 18.50              | 0.00               |
+| Bank Interest (Nationwide Savings)| 125.75             | 0.00               |
+| **Total Gross Income**            | **93,494.25**      | **17,100.00**      |
+
+**Summary of Allowances and Deductions:**
+
+| Deduction Type                                    | Amount (GBP) | Notes                                                                          |
+| :------------------------------------------------ | :----------- | :----------------------------------------------------------------------------- |
+| Personal Allowance                                | 12,570.00    | Standard UK Personal Allowance                                                 |
+| Private Pension Contributions (SIPP)              | 3,600.00     | Via Vanguard Investor, includes basic rate tax relief                          |
+| Professional Subscriptions (BCS)                  | 144.00       | British Computer Society membership                                            |
+| Home Office Expenses (Freelance)                  | 425.00       | Agreed percentage of utilities and internet for dedicated workspace            |
+| Equipment Purchase (Freelance)                    | 850.00       | New monitor for coding, purchased 23/11/2023                                   |
+| Cycle to Work Scheme (FinchTech)                  | 520.00       | Deducted from salary pre-tax                                                   |
+| **Total Deductions & Allowances**                 | **18,109.00**|                                                                                |
+
+**Tax Calculation:**
+
+| Tax Band                    | Income in Band (GBP) | Rate   | Tax Due (GBP) |
+| :-------------------------- | :------------------- | :----- | :------------ |
+| **Net Taxable Income:**     | **75,385.25**        |        |               |
+| Basic Rate (up to £37,700)  | 37,700.00            | 20%    | 7,540.00      |
+| Higher Rate (over £37,700)  | 37,685.25            | 40%    | 15,074.10     |
+| Additional Rate             | 0.00                 | 45%    | 0.00          |
+| **Total Income Tax Due**    |                      |        | **22,614.10** |
+
+**National Insurance Contributions (NICs):**
+
+| NIC Type                      | Amount (GBP) | Notes                                                                          |
+| :---------------------------- | :----------- | :----------------------------------------------------------------------------- |
+| Class 1 NICs (Employment)     | 5,028.00     | Deducted via PAYE by FinchTech Solutions Ltd                                   |
+| Class 2 NICs (Self-Employment)| 179.40       | Flat rate for self-employed individuals (52 weeks x £3.45)                     |
+| Class 4 NICs (Self-Employment)| 688.00       | 9% on profits between £12,570 and £50,270 (7,850 - 12,570 = 0 for this band, so 9% on 7,850 after personal allowance applied elsewhere) - re-calc                                                                     |
+| **Total NICs Due**            | **5,895.40** |                                                                                |
+
+*Self-employment profit for Class 4 NICs calculation is based on your freelance income minus eligible expenses (£7,850 - £425 - £850 = £6,575). Therefore Class 4 NICs are 9% of £6,575 = £591.75. This has been updated in the system.*
+
+**Total Tax and NICs Liability:**
+
+| Item                      | Amount (GBP)   |
+| :------------------------ | :------------- |
+| Total Income Tax Due      | 22,614.10      |
+| Total NICs Due            | 5,895.40       |
+| **Grand Total Liability** | **28,509.50**  |
+
+**Payments Made to Date:**
+
+| Payment Type                      | Date         | Amount (GBP) |
+| :-------------------------------- | :----------- | :----------- |
+| PAYE Tax Deducted (FinchTech)     | Throughout FY| 17,100.00    |
+| PAYE NICs Deducted (FinchTech)    | Throughout FY| 5,028.00     |
+| **Total Payments Made**           |              | **22,128.00**|
+
+**Balance Due / Refund:**
+
+| Item                   | Amount (GBP) |
+| :--------------------- | :----------- |
+| Grand Total Liability  | 28,509.50    |
+| Less: Total Payments Made | 22,128.00    |
+| **Balance Due**        | **6,381.50** |
+
+**Payment Instructions:**
+
+A payment of **GBP 6,381.50** is due by **31 January 2025**.
+You can pay online via:
+*   **Faster Payments (Online Banking):**
+    *   Account Name: HMRC
+    *   Sort Code: 08-32-04
+    *   Account Number: 12345678
+    *   Reference: QQ123456A (Your NI Number)
+*   **Debit Card:** Via the HMRC website: www.gov.uk/pay-self-assessment-tax
+*   **Direct Debit:** Set up via your online HMRC account.
+
+Please ensure your National Insurance Number (QQ123456A) is used as the payment reference to avoid delays in processing.
+
+---
+
+**Detailed Breakdown of Income and Deductions:**
+
+**I. Employment Income - FinchTech Solutions Ltd**
+
+*   **Employer Name:** FinchTech Solutions Ltd
+*   **Employer PAYE Reference:** 123/FT45678
+*   **Tax Year:** 2023-2024
+*   **Gross Salary:** £85,500.00
+*   **Benefits in Kind:**
+    *   Private Medical Insurance (Vitality Health, family cover for you, Claire, Lily, Max): £1,200.00 (P11D value)
+    *   Company Mobile Phone (for work use): £0.00 (exempt)
+*   **Total Taxable Pay:** £86,700.00
+*   **Tax Code:** 1257L
+*   **Income Tax Deducted:** £17,100.00
+*   **Employee NICs Deducted:** £5,028.00
+*   **Pension Contributions (Workplace Scheme - NEST):** £4,275.00 (deducted pre-tax, employer contributes 3%)
+*   **Cycle to Work Scheme Deduction:** £520.00 (for the new hybrid bike, perfect for the commute to the office near London Bridge)
+*   **Gift Aid Donations (Payroll Giving):** £120.00 (to RSPCA, as discussed with Claire after seeing that documentary)
+
+**II. Other UK Income - Freelance Software Development**
+
+*   **Nature of Business:** Ad-hoc Python scripting and database optimisation for small businesses.
+*   **Clients:**
+    *   **Client A (GreenLeaf Organics, Bristol):** £4,500.00 (Invoice dated 15/07/2023, for inventory system integration. Spoke to Mum, Janet, about their new online shop and she mentioned GreenLeaf needed tech help.)
+    *   **Client B (FutureFoundations Education, London):** £3,350.00 (Invoice dated 01/11/2023, for website backend improvements. Found them through a local North London tech forum.)
+*   **Total Gross Freelance Income:** £7,850.00
+*   **Allowable Expenses:**
+    *   **Home Office Utilities (Estimated):** £250.00 (Based on a percentage of electricity, gas, and broadband for the dedicated study space – where I do all my fish tank maintenance too!)
+    *   **Broadband (Business Use Percentage):** £175.00 (Proportionate cost of our Virgin Media package)
+    *   **Software Licences:** £120.00 (PyCharm Professional, Sublime Text)
+    *   **New Equipment:** £850.00 (Dell UltraSharp U2723QE monitor, purchased from PC World on 23/11/2023, much better for complex coding and editing photos)
+    *   **Professional Development (Online Courses):** £300.00 (Udemy course on advanced React.js, crucial for staying current in fintech)
+    *   **Business Insurance (Self-Employed Liability):** £85.00 (Policy with Hiscox, renewed 01/09/2023)
+    *   **Travel Expenses:** £0.00 (All work done remotely this year)
+*   **Total Allowable Freelance Expenses:** £1,780.00
+*   **Net Freelance Profit:** £6,070.00
+
+**III. Bank Interest**
+
+*   **Barclays Current Account:**
+    *   Account Number: **xx-xx-xx 12345678**
+    *   Interest Received: £18.50 (This is from the small amount I keep in there before transferring to savings – not much to report!)
+*   **Nationwide e-Savings Account:**
+    *   Account Number: **xx-xx-xx 87654321**
+    *   Interest Received: £125.75 (Where we stash the emergency fund and money for Lily and Max's activities, like Lily's swimming lessons and Max's Little Stars Nursery fees.)
+
+**IV. Private Pension Contributions (SIPP)**
+
+*   **Provider:** Vanguard Investor UK
+*   **Account Number:** 00123456789
+*   **Gross Contributions:** £4,500.00
+*   **Net Contributions (paid by you):** £3,600.00
+*   **Basic Rate Tax Relief:** £900.00 (claimed by Vanguard)
+*   **Additional Higher Rate Tax Relief Claimed:** £900.00 (This is the portion you are claiming back via your Self Assessment for the 20% higher rate relief on the £4,500 gross contribution. Claire keeps reminding me to maximise this!)
+
+**V. Other Deductions / Reliefs**
+
+*   **Professional Subscriptions:**
+    *   British Computer Society (BCS) Membership: £144.00 (Annual fee, renewed 01/04/2023. Essential for my job role at FinchTech and for keeping up my professional accreditation.)
+*   **Gift Aid Donations (Direct):** £50.00 (One-off donation to the North London Hospice, in memory of Dad, George. Made on 21/09/2023.)
+
+---
+
+**Notes and Reminders for Ethan Marsh:**
+
+*   **Future Tax Payments:** Remember to budget for your payment on account due on **31 January 2025** and **31 July 2025**. Based on this year's liability, your first payment on account for the 2024-2025 tax year will be approximately £3,190.75.
+*   **Pension Review:** Consider increasing your SIPP contributions, especially with the current tax relief benefits. We discussed this briefly at the last family budget meeting with Claire.
+*   **Freelance Record Keeping:** Continue to maintain meticulous records of your freelance income and expenses. This year's records were very clear, particularly the invoices for GreenLeaf Organics and FutureFoundations Education.
+*   **Benefits in Kind:** Your P11D for FinchTech Solutions Ltd includes the Private Medical Insurance. Ensure you review this annually as it contributes to your taxable income. Claire appreciated the family cover when Lily had that ear infection last winter.
+*   **Mortgage Interest:** As a reminder, residential mortgage interest is not tax deductible. Your Barclays mortgage payments are factored into your personal budget.
+*   **Car Expenses:** No car expenses were claimed this year. If you do switch to an electric vehicle, remember to explore any potential tax benefits or grants available for EV purchases. We looked at the new VW ID.3 last month, didn't we?
+*   **Health Expenses:** Medical expenses for your asthma, seasonal allergies, or lower back pain are generally not tax deductible unless directly related to a specific employment requirement and not reimbursed by your employer or private health insurance.
+*   **Childcare Costs:** While Max's nursery fees at Little Stars Nursery and Lily's QPA Primary School costs are not tax deductible, ensure Claire is claiming any eligible tax-free childcare or universal credit if applicable to your household.
+
+Thank you for submitting your Self Assessment Tax Return.
+
+**HM Revenue & Customs**
+**Online Services**
+**www.gov.uk/hmrc**

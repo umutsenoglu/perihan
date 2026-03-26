@@ -1,0 +1,34 @@
+**Royal Free London NHS Foundation Trust**
+Pathology Laboratory Results
+
+**Patient Details:**
+*   **Name:** Marsh, Max
+*   **Date of Birth:** 15/05/2019
+*   **NHS Number:** 123 456 7890
+*   **Gender:** Male
+*   **Address:** 14
+Willow Creek Lane, North London, N12 7AB
+
+**Requesting Clinician:** Dr. S. Patel
+**Facility:** Royal Free Hospital
+**Date of Sample Collection:** 2023-02-07
+**Date of Report:** 2023-02-09
+**Reason for Test:** Recurrent Otitis Media (R). Rule out underlying inflammatory process.
+
+**Haematology Results:**
+*   **Test:** Full Blood Count (FBC)
+    *   **White Blood Cell Count (WBC):** 14.5 x 10^9/L (Ref: 5.0 - 12.0 x 10^9/L) **[HIGH]**
+    *   **Neutrophils:** 9.8 x 10^9/L (Ref: 2.0 - 8.0 x 10^9/L) **[HIGH]**
+    *   **Lymph
+ocytes:** 3.5 x 10^9/L (Ref: 2.0 - 5.0 x 10^9/L)
+    *   **Haemoglobin:** 128 g/L (Ref: 110 - 140 g/L)
+    *   **Platelets:** 345 x 10^9/L (Ref: 150 - 450 x 10^9/L)
+
+**Inflammatory Markers:**
+*   **Test:** C-Reactive Protein (CRP)
+    *   **CRP:** 52 mg/L (Ref: <5 mg/L) **[HIGH]**
+
+**Comments from Requesting Clinician (Dr. S. Patel):**
+Results indicate significant leukocytosis with neutrophilia and markedly elevated C-Reactive Protein, consistent with an acute bacterial inflammatory process. These findings strongly correlate with Max's ongoing clinical presentation of recurrent otitis media. Please arrange a follow-up appointment for Max to discuss these results with his parents, Ethan and Claire Marsh, and to plan the next steps. Given this is the third episode of ear infection this winter, we need to actively consider initiating the referral pathway to ENT for further assessment.
+
+**End of Report**

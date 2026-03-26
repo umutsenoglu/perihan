@@ -1,0 +1,110 @@
+```
+--------------------------------------------------------------------------------
+                         TECHCORP SOLUTIONS
+                      123 Innovation Drive
+                      Silicon Valley, CA 94085
+                      Phone: (555) 123-4567
+                      Email: billing@techcorpsolutions.com
+                      Website: www.techcorpsolutions.com
+--------------------------------------------------------------------------------
+
+                           STATEMENT OF ACCOUNT / INVOICE
+
+INVOICE NUMBER:   TCS-INV-20230507-001
+INVOICE DATE:     2023-05-07
+ACCOUNT NUMBER:   JS-87654321
+BILLING PERIOD:   April 1, 2023 - April 30, 2023
+PAYMENT DUE DATE: 2023-05-22
+
+BILL TO:
+John Smith
+456 Oak Avenue
+Anytown, CA 90210
+USA
+
+ACCOUNT SUMMARY:
+----------------------------------------------
+Previous Balance (as of 2023-03-31)    $1,250.00
+Payments & Credits Applied            -$1,250.00
+New Charges This Period               $24,857.37
+Sales Tax (7.25%)                       $203.65
+----------------------------------------------
+TOTAL AMOUNT DUE                      $25,061.02
+----------------------------------------------
+
+Dear John Smith,
+
+Thank you for your continued partnership with TechCorp Solutions. This statement details the services rendered and expenses incurred for your account (JS-87654321) during the billing period of April 1, 2023, through April 30, 2023.
+
+Please review the detailed breakdown on the following pages. Your prompt payment by May 22, 2023, is appreciated. Should you have any questions regarding this invoice, please do not hesitate to contact our billing department at (555) 123-4567 or billing@techcorpsolutions.com.
+
+Thank you,
+The TechCorp Solutions Team
+
+Page 1 of 4
+
+--------------------------------------------------------------------------------
+                         TECHCORP SOLUTIONS
+                      123 Innovation Drive
+                      Silicon Valley, CA 94085
+--------------------------------------------------------------------------------
+
+INVOICE NUMBER: TCS-INV-20230507-001
+ACCOUNT NUMBER: JS-87654321
+INVOICE DATE:   2023-05-07
+
+DETAIL OF CHARGES
+
+SECTION 1: PROFESSIONAL SERVICES
+--------------------------------------------------------------------------------
+Date       Description                               Ref. No.     Units/Hours Rate       Amount
+--------------------------------------------------------------------------------
+04/03/2023 Project Management - Q2 Planning Session   PROJ-TS-001  8.0       $180.00/hr  $1,440.00
+           Facilitation of strategic planning meeting for the "Titan" project,
+           including agenda preparation, stakeholder coordination, and initial
+           risk assessment.
+04/05/2023 Project Management - Weekly Sync & Reporting PROJ-TS-001  4.0       $180.00/hr    $720.00
+           Weekly project status review, progress tracking, and report generation
+           for key deliverables.
+04/12/2023 Project Management - Vendor Coordination   PROJ-TS-001  4.
+.65
+----------------------------------------------
+TOTAL AMOUNT DUE                      $25,061.02
+----------------------------------------------
+
+Dear John Smith,
+
+Thank you for your continued partnership with TechCorp Solutions. This statement details the services rendered and expenses incurred for your account (JS-87654321) during the billing period of April 1, 2023, through April 30, 2023.
+
+Please review the detailed breakdown on the following pages. Your prompt payment by May 22, 2023, is appreciated. Should you have any questions regarding this invoice, please do not hesitate to contact our billing department at (555) 123-4567 or billing@techcorpsolutions.com.
+
+Thank you,
+The TechCorp Solutions Team
+
+Page 1 of 4
+
+--------------------------------------------------------------------------------
+                         TECHCORP SOLUTIONS
+                      123 Innovation Drive
+                      Silicon Valley, CA 94085
+--------------------------------------------------------------------------------
+
+INVOICE NUMBER: TCS-INV-20230507-
+TCS-INV-20230507-001
+
+--------------------------------------------------------------------------------
+ACCOUNT HOLDER: John Smith                                      INVOICE DATE: 2023-05-07
+COMPANY: TechCorp Solutions                                     ACCOUNT NUMBER: JS-87654321
+--------------------------------------------------------------------------------
+
+DETAIL OF CHARGES - Billing Period: April 1, 2023 - April 30, 2023
+
+SECTION 1: PROFESSIONAL SERVICES
+--------------------------------------------------------------------------------
+Date       Description                               Ref. No.     Units/Hours Rate       Amount
+--------------------------------------------------------------------------------
+04/03/2023 Project Management - Q2 Planning Session   PROJ-TS-001  8.0       $180.00/hr  $1,440.00
+           Facilitation of strategic planning meeting for the "Titan" project,
+           including agenda preparation, stakeholder coordination, and initial
+           risk assessment.
+04/05/2023 Project Management - Weekly

@@ -1,0 +1,68 @@
+HMRC Self Assessment: SA302 Tax Calculation Summary 2022-2023
+
+**Issued To:**
+Mr. Ethan Marsh
+14 Willowbrook Drive
+N12 8AB
+London
+
+**Date Issued:** 27 April 2023
+**UTR:** 12345 67890
+**NI Number:** AB123456C
+**Tax Year:** 06 April 2022 to 05 April 2023
+
+---
+
+**Summary of Income**
+
+*   **Employment Income (FinTech Solutions Ltd):** £92,500.00
+    *   *PAYE Tax Deducted:* £20,150.00
+*   **Freelance Income (Web Development - via Marsh Digital):** £8,750.00
+    *   *Expenses Claimed (Software, Hosting, Home Office Allowance):* £1,280.00
+    *   *Net Freelance Profit:* £7,470.00
+*   **Bank Interest (Barclays Instant Saver):** £85.00
+*   **Dividend Income (UK Equities):** £210.00
+
+**Total Taxable Income:** £100,265.00
+
+---
+
+**Tax Calculation**
+
+*   **Personal Allowance:** £12,570.00
+*   **Taxable Income after Personal Allowance:** £87,695.00
+
+*   **Income Tax Due:**
+    *   Basic Rate (20% on £37,700): £7,540.00
+    *   Higher Rate (40% on £49,995): £19,998.00
+    *   *Total Income Tax:* £27,538.00
+
+*   **Class 2 National Insurance:** £174.20 (for 52 weeks)
+*   **Class 4 National Insurance (on Freelance Profit):** £681.30
+
+**Total Tax & NI Liability:** £28,393.50
+
+---
+
+**Payment Summary**
+
+*   **Tax Already Paid via PAYE:** £20,150.00
+
+**Outstanding Payment Due:** £8,243.50
+
+**Payment on Account for 2023-2024:**
+*   First Payment (due 31 Jan 2024): £4,121.75
+*   Second Payment (due 31 Jul 2024): £4,121.75
+
+---
+
+**Next Steps:**
+Please pay the outstanding balance of £8,243.50 by 31 January 2024.
+You can pay online via your Government Gateway account or by bank transfer using the details below:
+
+**HMRC Bank Details:**
+Sort Code: 60-00-04
+Account No: 12345678
+Payment Reference: SA.1234567890.M
+
+*For any queries regarding this calculation, please quote your UTR and reference SA.1234567890.M.*

@@ -1,0 +1,186 @@
+**Goal Setting / Reflection - Ethan Marsh**
+**Date: 2024-10-12**
+
+Right. Saturday morning. Kids are watching some cartoon nonsense, Claire’s still asleep – rare treat for her to get a lie-in, but she really needs it. Yesterday was… a day. Another one. She came home just looking utterly drained, slumped onto the sofa and barely registered the kids climbing all over her. I know it’s not right, she shouldn’t be this stressed all the time. Her job used to be so rewarding, mostly. Now it feels like a constant battle against… something. Politics? Lack of resources? Difficult parents, difficult colleagues.
+
+It was what she said after Lily and Max were finally in bed, over a mug of camomile tea, that really stuck with me. "It just feels like I'm constantly being undermined, Ethan. Like I'm back to being a NQT sometimes, but with 12 years' experience." She wasn't talking about any specific person, just a general feeling of being scrutinised, challenged, sometimes by newer staff who don't have the classroom management skills or the sheer experience she does. And the lack of respect from some of them… it just gets to her. She didn't name anyone specific, and I didn't push it, but I could tell it was eating at her. Made me think about what I can actually *do*, beyond just making tea and listening.
+
+This feeling of helplessness, it's not great. I've been mulling it over since. And with the news about Max's nursery fees for next year, it just feels like everything's piling up. Little Stars sent out the letter earlier this week – another 8% hike. Eight percent! Max is happy there, which is the main thing, and it's so convenient for Claire on her way to QPA. But £1,450 a month for part-time? It's just getting ridiculous. That's almost another mortgage payment, for Christ's sake. We can *just* absorb it, I think, but it eats into any wiggle room we have, any savings we might actually build up. And with Lily going to secondary school in a few years, god knows what that'll cost in terms of trips, uniforms, whatever.
+
+So, here I am, tapping away on my phone notes, trying to get some kind of handle on things. It's not a diary, not really. More like… a brain dump to try and organise the chaos. Need to get some goals down, some concrete actions, instead of just letting it all swirl around.
+
+**Current State of Play (aka The Swirl):**
+
+**Claire & Work Stress:**
+*   She’s exhausted. Emotionally and physically. It's not just the kids, it's the constant pressure, the admin, the *people*.
+*   Hearing her talk about feeling undermined… it really pisses me off. She’s so good at what she does, dedicated. Why can't everyone see that?
+*   Need to find ways to support her more proactively. Not just "be there," but actual solutions, or at least distractions.
+
+**Max's Nursery Fees:**
+*   £1,450/month from September next year. Ouch.
+*   Alternatives:
+    *   Childminder? Could be cheaper, but quality varies so much. And less structured for him.
+    *   Another nursery further away? Would add a nightmare commute for Claire.
+    *   Grandparents? Mum Janet’s in Bristol, Hannah’s in Manchester, Luke’s in Edinburgh. Not practical for daily pickups. Maybe for holidays.
+*   This is a big financial hit. Need to crunch numbers properly.
+
+**My Work (Fintech, Senior SE):**
+*   Project X is still a beast. The migration to Azure is taking longer than anyone anticipated. Richard is being his usual passive-aggressive self about deadlines.
+*   Team is stretched. James is good, but Priya’s been struggling with the new GraphQL stuff. Need to carve out time to mentor her more.
+*   Performance review coming up end of year. Want to push for that Principal role. Means demonstrating leadership, mentoring, architectural thinking. Am I doing enough?
+*   Work-life balance is always a knife-edge. Long hours mean less time for family, less time for myself.
+
+**Kids:**
+*   Lily (7, Year 3, Mrs. Henderson): Doing well, loves reading, but sometimes struggles with the maths homework. Needs more dedicated time with me. Saw her struggling with fractions last night.
+*   Max (4, Nursery, Little Stars): Energetic, funny, a total whirlwind. Developing so quickly. Always bringing home new words and stories. So much joy. But the fees…
+*   General logistics: pickups, school runs, clubs, playdates. It's a constant juggle. Claire bears the brunt of it most days.
+
+**Finances (beyond Max's fees):**
+*   Mortgage with Barclays: still feels like a mountain. We're on a fixed rate for another 2 years. What then?
+*   Savings: barely ticking over. Emergency fund is okay, but not growing enough for things like new car, holidays, unexpected expenses.
+*   Pension: need to look at mine, check Claire’s too.
+*   Car: 2019 VW Golf. Reliable, but starting to think about an EV. Range anxiety still a thing? Charging infrastructure in North London? Would save on fuel, but capital outlay is huge. Is it worth it financially in the long run vs. just keeping the Golf till it dies?
+
+**Home:**
+*   3-bed semi: good, but feels like it needs constant maintenance. Guttering needs sorting before winter. That damp patch in the spare room…
+*   Garden is a bit of a wilderness. Needs proper attacking.
+
+**Personal (Ethan):**
+*   Health:
+    *   Lower back pain: desk job curse. Need to stick with the stretches, maybe get back to reformer pilates or something similar. Sitting hunched over a laptop is not helping.
+    *   Mild asthma, seasonal allergies: pretty standard, just need to remember my inhaler and antihistamines.
+    *   Sleep: could be better. Too much screen time before bed, brain buzzing with code or worries.
+*   Hobbies:
+    *   Tropical fish: my peaceful escape. The community tank is thriving. Need to do a proper water test this weekend and maybe re-scape the nano tank.
+    *   Cycling: haven’t been out properly in weeks. The daily commute doesn't count. Need to plan a longer weekend ride, maybe up to Epping Forest. Good for clearing the head.
+    *   Photography: my camera's gathering dust. Used to love just wandering around with it.
+    *   Cooking: still enjoy it, but often defaults to quick meals during the week. Want to try some new recipes, make more interesting family dinners.
+
+**Family (Extended):**
+*   Mum Janet in Bristol: doing okay, but I worry about her living alone since Dad George passed in 2021. Need to call her more regularly, not just rely on WhatsApp.
+*   Hannah (Manchester) & Luke (Edinburgh): good for a catch-up call soon, see how they're doing. Everyone's busy.
+
+---
+
+**Okay, Goal Setting Time. Let’s try to chunk this down.**
+
+**I. Supporting Claire:**
+*   **Immediate (Next 1-2 weeks):**
+    *   Talk to her *properly* about the work stress, not just a quick chat before bed. Ask open questions. Listen without trying to solve everything instantly.
+    *   Propose a "stress-busting" evening once a week. My turn for everything - kids, dinner, chores - she just gets to *be*. Maybe a bath, a book, uninterrupted TV.
+    *   Suggest we schedule a specific "date night" at home (once kids are asleep) to reconnect, watch a film, cook something nice together. Been too long.
+    *   Help her find resources if she wants them - mental health support for teachers? Union resources beyond just official complaints?
+    *   **Action:**
+        *   [] Mon evening: Chat with Claire after kids are asleep. No distractions.
+        *   [] Plan for "stress-busting" evening - aim for Thursday next week.
+        *   [] Look up local therapists / wellbeing coaches who work with teachers, just in case she expresses interest. Discreetly, don't just dump info on her.
+*   **Mid-term (Next 1-3 months):**
+    *   Encourage her to take a proper break over half-term. Plan something for the family, even if it's just a couple of days away in the UK.
+    *   Take on more of the school run burden where possible to give her an extra 30-60 mins in the morning/afternoon. Especially during high-stress periods.
+    *   Monitor her workload. Help her identify areas she can delegate or push back on if necessary. (Tricky, she's very conscientious).
+    *   **Action:**
+        *   [] Research UK half-term breaks (Oct/Nov). Cottages? Holiday parks?
+        *   [] Map out my calendar for potential school run swaps.
+*   **Long-term (6+ months):**
+    *   Explore ways to financially de-stress our household, so she doesn't feel the pressure to stay in a job that's burning her out if things don't improve. (Links to Max's fees, my career progression).
+    *   Help her explore *her* long-term career goals. Does she still want to teach? Other options?
+
+**II. Max's Nursery Fees & Family Finances:**
+*   **Immediate (Next 1-2 weeks):**
+    *   Detailed budget breakdown: current income/outgoings vs. projected with new nursery fees.
+    *   Research childminder costs and availability in N. London. Call a few.
+    *   Look into other nurseries in the area, check their fees and availability. Even if it's less convenient, it's worth knowing the options.
+    *   **Action:**
+        *   [] Create new budget spreadsheet.
+        *   [] Google "North London childminders" & "Nurseries near QPA Primary". Make 3-4 calls.
+*   **Mid-term (Next 1-3 months):**
+    *   If current nursery is the only viable option, adjust spending habits. Where can we cut back? Subscriptions? Eating out?
+    *   Review all direct debits and standing orders. Cancel anything we don't truly use.
+    *   Check if we're maximising any tax credits/childcare vouchers. Claire's school might have a scheme.
+    *   **Action:**
+        *   [] Go through bank statements, identify potential cuts.
+        *   [] Ask Claire to check with school admin about childcare schemes.
+*   **Long-term (6+ months):**
+    *   Increase emergency savings by £X/month. Automate this.
+    *   Revisit pension contributions. Max out ISA contributions.
+    *   Car: Start serious research into EVs. Total cost of ownership, grants, insurance, charging. Don't want to rush into it, but need a plan for when the Golf starts becoming a money pit. Maybe a second-hand EV?
+
+**III. My Career & Personal Growth:**
+*   **Immediate (Next 1-2 weeks):**
+    *   Schedule 1:1 with Richard about Project X blockers. Get clarity on expectations, push back where necessary with realistic timelines.
+    *   Dedicate 30 mins a day (first thing or last thing) to focused mentoring with Priya on GraphQL/Azure.
+    *   Update my personal dev blog with some recent tech insights from Project X. Good for profile building.
+    *   **Action:**
+        *   [] Book Richard meeting for Tuesday. Prep talking points.
+        *   [] Schedule recurring daily slot with Priya.
+        *   [] Draft blog post.
+*   **Mid-term (Next 1-3 months):**
+    *   Prepare properly for year-end performance review. Document achievements, contributions to team, leadership examples. Articulate Principal aspirations.
+    *   Look for internal or external training opportunities related to architecture, cloud security.
+    *   **Action:**
+        *   [] Start keeping a running log of achievements for review.
+        *   [] Browse internal training portal & LinkedIn Learning for courses.
+*   **Long-term (6+ months):**
+    *   Achieve Principal Engineer role.
+    *   Explore speaking opportunities at meetups or conferences.
+    *   Stay current with new tech, especially AI/ML, which is becoming huge in fintech.
+
+**IV. Health & Well-being (Me):**
+*   **Immediate (Next 1-2 weeks):**
+    *   Consistent back stretches every morning and evening. Set a reminder.
+    *   Swap one lunch during the week for a proper walk outside, away from the screen.
+    *   Plan a proper cycle ride for Sunday (Epping Forest).
+    *   **Action:**
+        *   [] Set phone reminders for stretches.
+        *   [] Pack walking shoes for work.
+        *   [] Check weather for Sunday, prep bike.
+*   **Mid-term (Next 1-3 months):**
+    *   Investigate ergonomic chair/standing desk for home office. Or a better external monitor setup. My neck and back will thank me.
+    *   Rejoin a local gym or class (pilates/yoga) once a week.
+    *   Reduce evening screen time by 30 mins. Read a book instead.
+    *   **Action:**
+        *   [] Research standing desks / ergonomic chairs online.
+        *   [] Look up local pilates classes.
+*   **Long-term (6+ months):**
+    *   Maintain good physical health.
+    *   Prioritise mental breaks and downtime. Don't let work consume everything.
+
+**V. Home & Hobbies:**
+*   **Immediate (Next 1-2 weeks):**
+    *   Fish tank: water test & change, check parameters. Re-scape nano.
+    *   Guttering: get up ladder, clear out leaves. Or call a local handyman if it looks tricky.
+    *   Dinner plan: try one new recipe this week. Maybe that Massaman curry Claire mentioned.
+    *   **Action:**
+        *   [] Fish stuff (Sunday afternoon).
+        *   [] Guttering inspection (Sunday morning).
+        *   [] Find Massaman recipe, add ingredients to shopping list.
+*   **Mid-term (Next 1-3 months):**
+    *   Address damp patch in spare room. Identify source. Repair. Paint.
+    *   Garden: dedicate one Saturday morning to a proper clear-out and tidy.
+    *   Photography: take camera out for a walk around the local park with the kids. Just snap away.
+    *   **Action:**
+        *   [] Research damp proofing solutions.
+        *   [] Block out Saturday morning for garden.
+*   **Long-term (6+ months):**
+    *   Make home feel like a sanctuary, not a chore list.
+    *   Re-engage with photography, maybe even take a workshop.
+
+**VI. Extended Family:**
+*   **Immediate (Next 1-2 weeks):**
+    *   Call Mum Janet on Sunday.
+    *   WhatsApp Hannah and Luke, suggest a group video call next week.
+    *   **Action:**
+        *   [] Call Janet (Sunday evening).
+        *   [] Message Hannah & Luke.
+
+---
+
+That’s… a lot. More than I thought, writing it all down. But it feels good to get it out of my head. It’s not just one thing, is it? It’s all connected. Claire being stressed means I’m stressed, means I’m less patient, means I’m not focusing on work, which then feeds into financial worries. Max’s fees mean less for other things, which could impact family holidays, or our ability to help Claire if she wants to retrain or take a break.
+
+The common thread here, if I’m honest, is about balance and resilience. For Claire, for me, for us as a family. Need to build up our collective 'bandwidth' for dealing with life's inevitable curveballs, like an annoying colleague or rising nursery costs. If Claire is drained, she has less capacity for other things. If I'm worried about money, I'm less present.
+
+Okay, Ethan. Take a deep breath. One step at a time. The first few things are already on the list for this weekend or early next week. The coffee's probably gone cold now. Time to go check on the kids, maybe make Claire some breakfast in bed. Small wins. Always start with the small wins.
+
+I hope this helps. I need to revisit this regularly, maybe weekly or monthly, and see what's actually getting done, and what needs adjusting. It's too easy to let things slide, then suddenly it's a year later and nothing's changed. Not this time.
+
+Right. Kitchen.

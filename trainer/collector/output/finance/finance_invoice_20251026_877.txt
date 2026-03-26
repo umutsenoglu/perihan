@@ -1,0 +1,32 @@
+TECHCORP SOLUTIONS
+14 Innovation Drive, Cyberpark Business Centre, Manchester, M1 7AB, United Kingdom
+VAT Reg No: GB123456789
+Email: billing@techcorpsolutions.co.uk | Phone: +44 (0)161 987 6543
+Website: www.techcor
+psolutions.co.uk
+
+INVOICE
+
+Invoice No: TCS-2025-10-00123
+Invoice Date: 2025-10-26
+Payment Due Date: 2025-11-25
+Client ID: JS-TCS-007
+Reference: Project Alpha-Q4-2
+Bill To:
+John Smith
+Flat 3B, Regent's Court
+10 Victoria Street
+Manchester, M2 5AD
+United Kingdom
+
+Services Rendered for the period: 2025-09-01 to 2025-09-30
+
+| Item Code     | Description                                                                                             | Quantity | Unit Price (GBP) | Amount (GBP) |
+| :------------ | :------------------------------------------------------------------------------------------------------ | :------- | :--------------- | :----------- |
+| TCS-CON-001   | Senior Technical Consultancy (Project Alpha Phase 2 - Requirement gathering, architecture review, and solution design sessions) | 45 hours | £120.00          | £5,400.00    |
+| TCS-DEV-005   | Custom API Integration Development (Module X - Development and initial testing of bespoke integration layer for third-party CRM system) | 1 unit   | £3,500.00        | £3,500.00    |
+| TCS-PMF-003   | Project Management Fee (Q3 2025 - Oversight, coordination, and progress reporting for Project Alpha deliverables) | 1 month  | £850.00          | £850.00      |
+| TCS-LIC-012   | Cloud Infrastructure & Software Licensing (Monthly - Access to dedicated cloud development environment and essential software tool licenses) | 1 month  | £450.00          | £450.00      |
+| TCS-SUP-007   | Premium Support & Maintenance Package (Monthly - 24/7 technical assistance, proactive system monitoring, and critical bug fixes) | 1 month  | £300.00          | £300.00      |
+|               |                                                                                                         |          |                  |              |
+|               | **Sub

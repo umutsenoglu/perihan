@@ -1,0 +1,129 @@
+**HMRC Self Assessment Tax Return Summary - Tax Year 2023/2024 (Draft)**
+
+**For: Ethan Marsh**
+**UTR: 12345 67890**
+**NI Number: AB 12 34 56 C**
+**Date Generated: 02 March 2024**
+**Currency: GBP (£)**
+
+---
+
+**Personal Details:**
+
+**Name:** Mr. Ethan Marsh
+**Date of Birth:** 15/07/1985
+**Address:** 14 Willowbrook Avenue, N12 8XY, North London
+**Spouse/Civil Partner:** Mrs. Claire Marsh
+**Primary Contact Email:** ethan.marsh@example.com
+**Primary Contact Phone:** 07700 900XXX
+
+---
+
+**Income Summary:**
+
+**1. Employment Income (FinTech Solutions Ltd - P60 Data)**
+   * Gross Pay: £82,500.00
+   * Tax Deducted (PAYE): £19,800.00
+   * National Insurance Contributions: £6,530.00
+   * Employee Pension Contributions (NEST): £3,300.00
+
+**2. Other UK Income (Freelance Software Consultancy - 'CodeCraft Solutions')**
+   * Gross Revenue: £7,850.00
+   * Allowable Expenses:
+     * Software Licenses: £450.00
+     * Home Office Utilities (Pro-rata): £320.00 (Excluding personal use)
+     * Professional Development Course (Advanced Python): £600.00 (Receipt Ref: PYTH-23-001)
+     * Business Broadband (Pro-rata): £180.00
+     * Marketing & Website Hosting: £110.00
+     * **Total Allowable Expenses:** £1,660.00
+   * **Net Freelance Profit:** £6,190.00
+
+**3. UK Interest Income (Barclays Instant Saver - Account ending 4567)**
+   * Gross Interest Received: £185.50
+
+**4. Dividends from UK Companies (Investment Portfolio - Hargreaves Lansdown)**
+   * Gross Dividends: £420.00
+
+---
+
+**Deductions & Reliefs:**
+
+**1. Personal Allowance:** £12,570.00 (Standard UK Allowance)
+
+**2. Pension Contributions (SIPP - Vanguard - Account ending 8901)**
+   * Gross Contributions: £4,000.00 (Net paid: £3,200.00, basic rate tax relief claimed at source)
+     * *Note: Additional higher rate relief to be claimed via Self Assessment.*
+
+**3. Professional Subscriptions (IEEE Membership):** £120.00
+
+**4. Gift Aid Donations (Local Food Bank - Donation Ref: MSH002/23):** £250.00
+
+---
+
+**Tax Calculation Summary (Estimated):**
+
+**Total Taxable Income:**
+* Employment Income: £82,500.00
+* Net Freelance Profit: £6,190.00
+* UK Interest (Taxable portion after Personal Savings Allowance): £185.50
+* UK Dividends (Taxable portion after Dividend Allowance): £420.00
+* **Sub-total:** £89,295.50
+
+**Less: Personal Allowance** £12,570.00
+**Less: Gross SIPP Contributions** £4,000.00
+**Less: Professional Subscriptions** £120.00
+**Less: Gift Aid (Grossed Up)** £312.50 (250 / 0.8)
+
+**Adjusted Net Income for Tax Calculation:** £72,293.00
+
+**Tax Due on Income:**
+* Basic Rate (20%) on £37,700: £7,540.00
+* Higher Rate (40%) on £34,593: £13,837.20
+* **Sub-total Income Tax:** £21,377.20
+
+**Tax Due on Dividends:**
+* Basic Rate (8.75%) on £0 (covered by allowance)
+* Higher Rate (33.75%) on £420: £141.75
+* **Sub-total Dividend Tax:** £141.75
+
+**Total Income Tax & Dividend Tax Due (Before Credits):** £21,518.95
+
+**Less: Tax Already Deducted (PAYE):** £19,800.00
+**Less: Basic Rate Tax Relief on SIPP Contributions (already claimed at source):** £800.00
+
+**Total Tax Owed (Before Class 2 & 4 NICs):** £918.95
+
+---
+
+**National Insurance Contributions (NICs):**
+
+**Class 2 NICs (Self-Employment):**
+* Flat rate for 52 weeks (2023/24 rate £3.45/week): £179.40
+
+**Class 4 NICs (Self-Employment):**
+* On profits between £12,570 and £50,270 (9%): £0 (Ethan's freelance profit is below this threshold for Class 4)
+* On profits above £50,270 (2%): £0
+
+**Total NICs Owed:** £179.40
+
+---
+
+**Total Tax & NICs Payable:**
+
+**Income Tax & Dividend Tax Payable:** £918.95
+**National Insurance Contributions Payable:** £179.40
+
+**TOTAL AMOUNT DUE TO HMRC:** **£1,098.35**
+
+---
+
+**Payment Details:**
+
+**Payment Deadline:** 31 January 2025 (for tax year 2023/24)
+**HMRC Bank Account:**
+* **Bank:** Citibank
+* **Sort Code:** 12-34-56
+* **Account No:** 12345678
+* **Payment Reference:** Your UTR (12345 67890) followed by 'K' (e.g., 1234567890K)
+
+**Note:** This is a draft summary based on the information provided to date. A final calculation will be available upon submission of your full Self Assessment tax return. Please review all details carefully. If you have any questions, particularly regarding the deductibility of expenses for your freelance work, or the higher rate tax relief for your SIPP, please contact HMRC or your tax advisor. Remember to include any nursery fees paid for Max, though these are not typically tax deductible in the UK. Hope Lily is enjoying Year 3 with Mrs. Henderson!

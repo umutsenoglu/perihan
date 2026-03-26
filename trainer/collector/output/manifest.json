@@ -1,0 +1,1316 @@
+[
+  {
+    "filename": "personal_grocery_list_20250809_271.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal grocery list - Lily brought home a painting from school [tiny]",
+    "storyline": null,
+    "generated_at": "2026-03-17T13:16:17.942061",
+    "path": "personal/personal_grocery_list_20250809_271.txt"
+  },
+  {
+    "filename": "personal_grocery_list_20250106_699.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal grocery list - tried a new pasta recipe for dinner, kid [tiny]",
+    "storyline": null,
+    "generated_at": "2026-03-17T13:16:20.318818",
+    "path": "personal/personal_grocery_list_20250106_699.txt"
+  },
+  {
+    "filename": "personal_brainstorm_20250404_358.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal brainstorm - fish tank algae problem — need to check  [huge]",
+    "storyline": null,
+    "generated_at": "2026-03-17T13:17:29.801880",
+    "path": "personal/personal_brainstorm_20250404_358.txt"
+  },
+  {
+    "filename": "personal_gratitude_journal_20240409_195.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal gratitude journal - kitchen renovation quote came in way ove [short]",
+    "storyline": null,
+    "generated_at": "2026-03-17T13:18:11.938750",
+    "path": "personal/personal_gratitude_journal_20240409_195.txt"
+  },
+  {
+    "filename": "personal_recipe_notes_20240706_883.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal recipe notes - thinking about growing distance with bro [short]",
+    "storyline": "brother_estranged",
+    "generated_at": "2026-03-17T13:18:46.162835",
+    "path": "personal/personal_recipe_notes_20240706_883.txt"
+  },
+  {
+    "filename": "personal_goal_setting_20231019_310.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal goal setting - thinking about marcus's cycling accident [huge]",
+    "storyline": "marcus_accident",
+    "generated_at": "2026-03-17T13:19:17.701196",
+    "path": "personal/personal_goal_setting_20231019_310.txt"
+  },
+  {
+    "filename": "personal_brainstorm_20241229_540.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal brainstorm - back pain flaring up, need to book physi [short]",
+    "storyline": null,
+    "generated_at": "2026-03-17T13:20:00.899095",
+    "path": "personal/personal_brainstorm_20241229_540.txt"
+  },
+  {
+    "filename": "personal_to_do_list_20231010_994.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal to do list - planning Lily's 8th birthday party, she  [short]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:24:24.484272",
+    "path": "personal/personal_to_do_list_20231010_994.txt"
+  },
+  {
+    "filename": "personal_shopping_research_20231117_685.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal shopping research - thinking about kitchen renovation [long]",
+    "storyline": "kitchen_reno",
+    "generated_at": "2026-03-18T23:24:35.546673",
+    "path": "personal/personal_shopping_research_20231117_685.txt"
+  },
+  {
+    "filename": "personal_grocery_list_20230709_675.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal grocery list - thinking about mum's health decline [long]",
+    "storyline": "mums_health",
+    "generated_at": "2026-03-18T23:24:57.920351",
+    "path": "personal/personal_grocery_list_20230709_675.txt"
+  },
+  {
+    "filename": "personal_phone_memo_20251130_631.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal phone memo - planning Lily's 8th birthday party, she  [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:25:56.781068",
+    "path": "personal/personal_phone_memo_20251130_631.txt"
+  },
+  {
+    "filename": "personal_recipe_notes_20240926_167.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal recipe notes - had a long call with mum in Bristol, she [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:26:11.971057",
+    "path": "personal/personal_recipe_notes_20240926_167.txt"
+  },
+  {
+    "filename": "personal_diary_entry_20230116_466.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal diary entry - had a long call with mum in Bristol, she [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:26:11.977488",
+    "path": "personal/personal_diary_entry_20230116_466.txt"
+  },
+  {
+    "filename": "personal_workout_log_20250430_800.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal workout log - argument with Dave next door about the f [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:26:52.634395",
+    "path": "personal/personal_workout_log_20250430_800.txt"
+  },
+  {
+    "filename": "personal_gratitude_journal_20230817_782.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal gratitude journal - tried a new pasta recipe for dinner, kid [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:27:03.195218",
+    "path": "personal/personal_gratitude_journal_20230817_782.txt"
+  },
+  {
+    "filename": "personal_diary_entry_20240518_635.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal diary entry - server went down at work at 11pm, had to [huge]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:27:11.882871",
+    "path": "personal/personal_diary_entry_20240518_635.txt"
+  },
+  {
+    "filename": "personal_diary_entry_20240603_649.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal diary entry - thinking about growing distance with bro [medium]",
+    "storyline": "brother_estranged",
+    "generated_at": "2026-03-18T23:27:52.092959",
+    "path": "personal/personal_diary_entry_20240603_649.txt"
+  },
+  {
+    "filename": "personal_personal_note_20230528_160.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal personal note - sister Hannah called about choosing a la [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:27:53.719100",
+    "path": "personal/personal_personal_note_20230528_160.txt"
+  },
+  {
+    "filename": "personal_reflection_20231208_779.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal reflection - thinking about message from an old flame [short]",
+    "storyline": "old_flame",
+    "generated_at": "2026-03-18T23:28:12.349228",
+    "path": "personal/personal_reflection_20231208_779.txt"
+  },
+  {
+    "filename": "personal_goal_setting_20231014_211.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal goal setting - had a long call with mum in Bristol, she [short]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:28:51.803008",
+    "path": "personal/personal_goal_setting_20231014_211.txt"
+  },
+  {
+    "filename": "personal_pros_cons_list_20240101_867.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal pros cons list - rainy Sunday, watched a film with Claire [huge]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:29:20.649477",
+    "path": "personal/personal_pros_cons_list_20240101_867.txt"
+  },
+  {
+    "filename": "personal_workout_log_20250227_212.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal workout log - thinking about tropical fish tank proble [massive]",
+    "storyline": "fish_tank",
+    "generated_at": "2026-03-18T23:29:26.534743",
+    "path": "personal/personal_workout_log_20250227_212.txt"
+  },
+  {
+    "filename": "personal_personal_note_20251208_499.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal personal note - tried a new pasta recipe for dinner, kid [tiny]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:30:03.054358",
+    "path": "personal/personal_personal_note_20251208_499.txt"
+  },
+  {
+    "filename": "personal_book_notes_20240125_209.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal book notes - thinking about falling out with best fri [short]",
+    "storyline": "ryan_fallout",
+    "generated_at": "2026-03-18T23:30:15.232851",
+    "path": "personal/personal_book_notes_20240125_209.txt"
+  },
+  {
+    "filename": "personal_recipe_notes_20260211_195.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal recipe notes - thinking about falling out with best fri [short]",
+    "storyline": "ryan_fallout",
+    "generated_at": "2026-03-18T23:30:17.760090",
+    "path": "personal/personal_recipe_notes_20260211_195.txt"
+  },
+  {
+    "filename": "personal_book_notes_20231118_984.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal book notes - had a long call with mum in Bristol, she [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:31:08.078254",
+    "path": "personal/personal_book_notes_20231118_984.txt"
+  },
+  {
+    "filename": "personal_brainstorm_20230322_911.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal brainstorm - thinking about falling out with best fri [medium]",
+    "storyline": "ryan_fallout",
+    "generated_at": "2026-03-18T23:31:19.833273",
+    "path": "personal/personal_brainstorm_20230322_911.txt"
+  },
+  {
+    "filename": "personal_journal_20240701_246.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal journal - thinking about mum needs flight tickets  [huge]",
+    "storyline": "mum_flights",
+    "generated_at": "2026-03-18T23:31:50.482436",
+    "path": "personal/personal_journal_20240701_246.txt"
+  },
+  {
+    "filename": "personal_personal_note_20240521_153.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal personal note - rainy Sunday, watched a film with Claire [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:32:39.652503",
+    "path": "personal/personal_personal_note_20240521_153.txt"
+  },
+  {
+    "filename": "personal_grocery_list_20260110_350.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal grocery list - got freelance project offer, decent mone [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:32:46.589327",
+    "path": "personal/personal_grocery_list_20260110_350.txt"
+  },
+  {
+    "filename": "personal_book_notes_20250406_510.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal book notes - thinking about mum's health decline [huge]",
+    "storyline": "mums_health",
+    "generated_at": "2026-03-18T23:32:47.751519",
+    "path": "personal/personal_book_notes_20250406_510.txt"
+  },
+  {
+    "filename": "personal_personal_note_20240418_933.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal personal note - argument with Dave next door about the f [short]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:33:25.488934",
+    "path": "personal/personal_personal_note_20240418_933.txt"
+  },
+  {
+    "filename": "personal_book_notes_20231016_652.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal book notes - had a long call with mum in Bristol, she [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:33:36.179238",
+    "path": "personal/personal_book_notes_20231016_652.txt"
+  },
+  {
+    "filename": "personal_shopping_research_20230318_241.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal shopping research - thinking about mum needs flight tickets  [medium]",
+    "storyline": "mum_flights",
+    "generated_at": "2026-03-18T23:33:47.022627",
+    "path": "personal/personal_shopping_research_20230318_241.txt"
+  },
+  {
+    "filename": "personal_reflection_20251009_369.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal reflection - thinking about tropical fish tank proble [tiny]",
+    "storyline": "fish_tank",
+    "generated_at": "2026-03-18T23:34:32.041333",
+    "path": "personal/personal_reflection_20251009_369.txt"
+  },
+  {
+    "filename": "personal_gratitude_journal_20240708_841.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal gratitude journal - argument with Dave next door about the f [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:34:40.478858",
+    "path": "personal/personal_gratitude_journal_20240708_841.txt"
+  },
+  {
+    "filename": "personal_reflection_20230720_838.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal reflection - thinking about falling out with best fri [long]",
+    "storyline": "ryan_fallout",
+    "generated_at": "2026-03-18T23:35:14.559100",
+    "path": "personal/personal_reflection_20230720_838.txt"
+  },
+  {
+    "filename": "personal_to_do_list_20241227_204.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal to do list - thinking about message from an old flame [massive]",
+    "storyline": "old_flame",
+    "generated_at": "2026-03-18T23:36:04.542815",
+    "path": "personal/personal_to_do_list_20241227_204.txt"
+  },
+  {
+    "filename": "personal_recipe_notes_20240516_946.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal recipe notes - thinking about electric car purchase [medium]",
+    "storyline": "ev_purchase",
+    "generated_at": "2026-03-18T23:36:10.587482",
+    "path": "personal/personal_recipe_notes_20240516_946.txt"
+  },
+  {
+    "filename": "personal_pros_cons_list_20231026_727.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal pros cons list - thinking about mum's health decline [massive]",
+    "storyline": "mums_health",
+    "generated_at": "2026-03-18T23:36:25.544367",
+    "path": "personal/personal_pros_cons_list_20231026_727.txt"
+  },
+  {
+    "filename": "personal_shopping_research_20260122_728.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal shopping research - lovely cycling ride with Marcus through  [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:37:12.444938",
+    "path": "personal/personal_shopping_research_20260122_728.txt"
+  },
+  {
+    "filename": "personal_personal_note_20240426_524.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal personal note - got freelance project offer, decent mone [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:37:13.355279",
+    "path": "personal/personal_personal_note_20240426_524.txt"
+  },
+  {
+    "filename": "personal_brainstorm_20241208_685.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal brainstorm - thinking about tropical fish tank proble [huge]",
+    "storyline": "fish_tank",
+    "generated_at": "2026-03-18T23:37:29.986717",
+    "path": "personal/personal_brainstorm_20241208_685.txt"
+  },
+  {
+    "filename": "personal_dream_log_20230520_333.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal dream log - lovely cycling ride with Marcus through  [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:38:22.335252",
+    "path": "personal/personal_dream_log_20230520_333.txt"
+  },
+  {
+    "filename": "personal_shopping_research_20240129_975.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal shopping research - thinking about mum needs flight tickets  [long]",
+    "storyline": "mum_flights",
+    "generated_at": "2026-03-18T23:38:24.211613",
+    "path": "personal/personal_shopping_research_20240129_975.txt"
+  },
+  {
+    "filename": "personal_goal_setting_20230706_924.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal goal setting - thinking about marriage tension over wor [massive]",
+    "storyline": "marriage_tension",
+    "generated_at": "2026-03-18T23:41:12.050797",
+    "path": "personal/personal_goal_setting_20230706_924.txt"
+  },
+  {
+    "filename": "personal_diary_entry_20250701_443.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal diary entry - thinking about mum needs flight tickets  [short]",
+    "storyline": "mum_flights",
+    "generated_at": "2026-03-18T23:42:02.430077",
+    "path": "personal/personal_diary_entry_20250701_443.txt"
+  },
+  {
+    "filename": "personal_workout_log_20241226_111.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal workout log - thinking about mum's health decline [medium]",
+    "storyline": "mums_health",
+    "generated_at": "2026-03-18T23:42:09.745010",
+    "path": "personal/personal_workout_log_20241226_111.txt"
+  },
+  {
+    "filename": "personal_goal_setting_20250901_888.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal goal setting - back pain flaring up, need to book physi [huge]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:42:12.543964",
+    "path": "personal/personal_goal_setting_20250901_888.txt"
+  },
+  {
+    "filename": "personal_shopping_research_20240610_546.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal shopping research - got the letter from Helen Crawford about [tiny]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:42:49.141735",
+    "path": "personal/personal_shopping_research_20240610_546.txt"
+  },
+  {
+    "filename": "personal_personal_note_20230411_971.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal personal note - lovely cycling ride with Marcus through  [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:43:11.066828",
+    "path": "personal/personal_personal_note_20230411_971.txt"
+  },
+  {
+    "filename": "personal_personal_note_20250914_935.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal personal note - thinking about falling out with best fri [medium]",
+    "storyline": "ryan_fallout",
+    "generated_at": "2026-03-18T23:43:11.703795",
+    "path": "personal/personal_personal_note_20250914_935.txt"
+  },
+  {
+    "filename": "personal_shopping_research_20241023_449.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal shopping research - thinking about tropical fish tank proble [short]",
+    "storyline": "fish_tank",
+    "generated_at": "2026-03-18T23:43:59.765319",
+    "path": "personal/personal_shopping_research_20241023_449.txt"
+  },
+  {
+    "filename": "personal_to_do_list_20230528_654.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal to do list - argument with Dave next door about the f [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:44:03.983604",
+    "path": "personal/personal_to_do_list_20230528_654.txt"
+  },
+  {
+    "filename": "personal_brainstorm_20240226_513.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal brainstorm - stressful day at work — payment migratio [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:44:08.058912",
+    "path": "personal/personal_brainstorm_20240226_513.txt"
+  },
+  {
+    "filename": "personal_journal_20241128_607.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal journal - rainy Sunday, watched a film with Claire [short]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:44:47.020418",
+    "path": "personal/personal_journal_20241128_607.txt"
+  },
+  {
+    "filename": "personal_goal_setting_20231204_250.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal goal setting - fish tank algae problem — need to check  [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:45:00.123945",
+    "path": "personal/personal_goal_setting_20231204_250.txt"
+  },
+  {
+    "filename": "personal_reflection_20230930_701.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal reflection - Whiskers (cat) knocked over the fish tan [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:45:00.955255",
+    "path": "personal/personal_reflection_20230930_701.txt"
+  },
+  {
+    "filename": "personal_goal_setting_20250713_354.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal goal setting - Max said the funniest thing at nursery t [short]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:45:40.232549",
+    "path": "personal/personal_goal_setting_20250713_354.txt"
+  },
+  {
+    "filename": "personal_workout_log_20250915_421.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal workout log - fish tank algae problem — need to check  [huge]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:46:21.768863",
+    "path": "personal/personal_workout_log_20250915_421.txt"
+  },
+  {
+    "filename": "personal_reflection_20240610_708.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal reflection - thinking about neighbor fence dispute [huge]",
+    "storyline": "fence_dispute",
+    "generated_at": "2026-03-18T23:47:07.549680",
+    "path": "personal/personal_reflection_20240610_708.txt"
+  },
+  {
+    "filename": "personal_recipe_notes_20231019_229.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal recipe notes - Max said the funniest thing at nursery t [tiny]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:47:44.004807",
+    "path": "personal/personal_recipe_notes_20231019_229.txt"
+  },
+  {
+    "filename": "personal_recipe_notes_20240118_378.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal recipe notes - rainy Sunday, watched a film with Claire [short]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:48:07.418140",
+    "path": "personal/personal_recipe_notes_20240118_378.txt"
+  },
+  {
+    "filename": "personal_shopping_research_20230310_343.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal shopping research - researching EVs all evening, the Tesla M [huge]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:48:08.096030",
+    "path": "personal/personal_shopping_research_20230310_343.txt"
+  },
+  {
+    "filename": "personal_phone_memo_20231010_353.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal phone memo - Claire and I discussed whether to move M [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:48:59.968309",
+    "path": "personal/personal_phone_memo_20231010_353.txt"
+  },
+  {
+    "filename": "personal_to_do_list_20250914_462.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal to do list - thinking about electric car purchase [medium]",
+    "storyline": "ev_purchase",
+    "generated_at": "2026-03-18T23:49:09.884223",
+    "path": "personal/personal_to_do_list_20250914_462.txt"
+  },
+  {
+    "filename": "personal_workout_log_20250710_581.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal workout log - sister Hannah called about choosing a la [massive]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:49:25.702055",
+    "path": "personal/personal_workout_log_20250710_581.txt"
+  },
+  {
+    "filename": "personal_pros_cons_list_20250522_330.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal pros cons list - thinking about growing distance with bro [long]",
+    "storyline": "brother_estranged",
+    "generated_at": "2026-03-18T23:50:18.014579",
+    "path": "personal/personal_pros_cons_list_20250522_330.txt"
+  },
+  {
+    "filename": "personal_to_do_list_20240327_849.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal to do list - Max said the funniest thing at nursery t [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:50:20.173136",
+    "path": "personal/personal_to_do_list_20240327_849.txt"
+  },
+  {
+    "filename": "personal_phone_memo_20250628_883.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal phone memo - thinking about claire's difficult collea [huge]",
+    "storyline": "claire_school_drama",
+    "generated_at": "2026-03-18T23:51:08.005343",
+    "path": "personal/personal_phone_memo_20250628_883.txt"
+  },
+  {
+    "filename": "personal_diary_entry_20250206_323.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal diary entry - Whiskers (cat) knocked over the fish tan [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:51:59.452431",
+    "path": "personal/personal_diary_entry_20250206_323.txt"
+  },
+  {
+    "filename": "personal_brainstorm_20240422_121.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal brainstorm - thinking about neighbor fence dispute [huge]",
+    "storyline": "fence_dispute",
+    "generated_at": "2026-03-18T23:52:52.725502",
+    "path": "personal/personal_brainstorm_20240422_121.txt"
+  },
+  {
+    "filename": "personal_recipe_notes_20251022_117.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal recipe notes - got the letter from Helen Crawford about [massive]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:53:11.061387",
+    "path": "personal/personal_recipe_notes_20251022_117.txt"
+  },
+  {
+    "filename": "personal_grocery_list_20250906_341.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal grocery list - argument with Dave next door about the f [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:54:01.165140",
+    "path": "personal/personal_grocery_list_20250906_341.txt"
+  },
+  {
+    "filename": "personal_goal_setting_20240518_906.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal goal setting - thinking about growing distance with bro [short]",
+    "storyline": "brother_estranged",
+    "generated_at": "2026-03-18T23:54:34.352723",
+    "path": "personal/personal_goal_setting_20240518_906.txt"
+  },
+  {
+    "filename": "personal_goal_setting_20241012_711.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal goal setting - thinking about claire's difficult collea [huge]",
+    "storyline": "claire_school_drama",
+    "generated_at": "2026-03-18T23:54:47.333555",
+    "path": "personal/personal_goal_setting_20241012_711.txt"
+  },
+  {
+    "filename": "personal_grocery_list_20240413_265.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal grocery list - stressful day at work — payment migratio [tiny]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:55:22.664211",
+    "path": "personal/personal_grocery_list_20240413_265.txt"
+  },
+  {
+    "filename": "personal_personal_note_20230910_607.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal personal note - researching EVs all evening, the Tesla M [long]",
+    "storyline": null,
+    "generated_at": "2026-03-18T23:55:34.858740",
+    "path": "personal/personal_personal_note_20230910_607.txt"
+  },
+  {
+    "filename": "personal_diary_entry_20231028_261.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal diary entry - thinking about message from an old flame [short]",
+    "storyline": "old_flame",
+    "generated_at": "2026-03-18T23:55:39.582084",
+    "path": "personal/personal_diary_entry_20231028_261.txt"
+  },
+  {
+    "filename": "medical_blood_test_results_20260202_553.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical blood test results for Ethan Marsh - stress and anxiety [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:25:24.642313",
+    "path": "medical/medical_blood_test_results_20260202_553.txt"
+  },
+  {
+    "filename": "medical_physiotherapy_notes_20230405_176.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical physiotherapy notes for Ethan Marsh - stress and anxiety [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:25:32.069980",
+    "path": "medical/medical_physiotherapy_notes_20230405_176.txt"
+  },
+  {
+    "filename": "medical_specialist_report_20250101_728.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical specialist report for Lily Marsh - eye test [long]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:25:51.486662",
+    "path": "medical/medical_specialist_report_20250101_728.txt"
+  },
+  {
+    "filename": "medical_dental_report_20250527_314.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical dental report for Ethan Marsh - dental checkup [long]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:27:02.368255",
+    "path": "medical/medical_dental_report_20250527_314.txt"
+  },
+  {
+    "filename": "medical_physiotherapy_notes_20250706_770.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical physiotherapy notes for David Brown - migraine headaches [huge]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:27:04.081543",
+    "path": "medical/medical_physiotherapy_notes_20250706_770.txt"
+  },
+  {
+    "filename": "medical_dental_report_20241019_657.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical dental report for Ethan Marsh - routine blood test [massive]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:27:26.415828",
+    "path": "medical/medical_dental_report_20241019_657.txt"
+  },
+  {
+    "filename": "medical_blood_test_results_20241226_625.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical blood test results for Max Marsh - ear infection [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:28:25.229515",
+    "path": "medical/medical_blood_test_results_20241226_625.txt"
+  },
+  {
+    "filename": "medical_optometry_report_20250414_818.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical optometry report for Lily Marsh - eye test [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:28:27.609232",
+    "path": "medical/medical_optometry_report_20250414_818.txt"
+  },
+  {
+    "filename": "medical_physiotherapy_notes_20230728_340.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical physiotherapy notes for John Wilson - migraine headaches [long]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:29:23.930382",
+    "path": "medical/medical_physiotherapy_notes_20230728_340.txt"
+  },
+  {
+    "filename": "medical_blood_test_results_20240826_777.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical blood test results for Ethan Marsh - dental checkup [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:30:11.918955",
+    "path": "medical/medical_blood_test_results_20240826_777.txt"
+  },
+  {
+    "filename": "medical_vaccination_record_20250411_143.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical vaccination record for John Wilson - type 2 diabetes management [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:34:26.242440",
+    "path": "medical/medical_vaccination_record_20250411_143.txt"
+  },
+  {
+    "filename": "medical_referral_letter_20230522_352.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical referral letter for Ethan Marsh - travel vaccinations [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:34:49.671194",
+    "path": "medical/medical_referral_letter_20230522_352.txt"
+  },
+  {
+    "filename": "medical_GP_visit_notes_20251227_319.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical GP visit notes for Ethan Marsh - dental checkup [massive]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:35:42.307003",
+    "path": "medical/medical_GP_visit_notes_20251227_319.txt"
+  },
+  {
+    "filename": "medical_GP_visit_notes_20231229_712.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical GP visit notes for John Smith - vitamin D deficiency [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:36:20.286372",
+    "path": "medical/medical_GP_visit_notes_20231229_712.txt"
+  },
+  {
+    "filename": "medical_GP_visit_notes_20231121_689.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical GP visit notes for Ethan Marsh - dental checkup [tiny]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:36:25.882043",
+    "path": "medical/medical_GP_visit_notes_20231121_689.txt"
+  },
+  {
+    "filename": "medical_optometry_report_20240330_155.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical optometry report for Max Marsh - ear infection [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:36:43.301571",
+    "path": "medical/medical_optometry_report_20240330_155.txt"
+  },
+  {
+    "filename": "medical_specialist_report_20241105_207.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical specialist report for Max Marsh - nursery health form [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:37:34.279473",
+    "path": "medical/medical_specialist_report_20241105_207.txt"
+  },
+  {
+    "filename": "medical_discharge_summary_20230710_230.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical discharge summary for Sarah Smith - physical exam [long]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:38:28.223030",
+    "path": "medical/medical_discharge_summary_20230710_230.txt"
+  },
+  {
+    "filename": "medical_specialist_report_20250220_997.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical specialist report for Lily Marsh - eye test [massive]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:42:48.945688",
+    "path": "medical/medical_specialist_report_20250220_997.txt"
+  },
+  {
+    "filename": "medical_specialist_report_20240929_164.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical specialist report for Ethan Marsh - dental checkup [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:43:38.753814",
+    "path": "medical/medical_specialist_report_20240929_164.txt"
+  },
+  {
+    "filename": "medical_specialist_report_20230517_862.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical specialist report for Max Marsh - ear infection [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:43:44.510615",
+    "path": "medical/medical_specialist_report_20230517_862.txt"
+  },
+  {
+    "filename": "medical_physiotherapy_notes_20240821_438.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical physiotherapy notes for Max Marsh - nursery health form [massive]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:46:01.986645",
+    "path": "medical/medical_physiotherapy_notes_20240821_438.txt"
+  },
+  {
+    "filename": "medical_GP_visit_notes_20231021_924.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical GP visit notes for Ethan Marsh - travel vaccinations [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:47:03.035440",
+    "path": "medical/medical_GP_visit_notes_20231021_924.txt"
+  },
+  {
+    "filename": "medical_dental_report_20251220_801.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical dental report for Ethan Marsh - seasonal allergies [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:47:03.786370",
+    "path": "medical/medical_dental_report_20251220_801.txt"
+  },
+  {
+    "filename": "medical_blood_test_results_20230307_690.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical blood test results for Ethan Marsh - routine blood test [huge]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:47:21.569380",
+    "path": "medical/medical_blood_test_results_20230307_690.txt"
+  },
+  {
+    "filename": "medical_prescription_20241109_871.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical prescription for Lily Marsh - eye test [tiny]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:47:59.392302",
+    "path": "medical/medical_prescription_20241109_871.txt"
+  },
+  {
+    "filename": "medical_specialist_report_20240409_791.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical specialist report for David Brown - physical exam [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:48:00.522284",
+    "path": "medical/medical_specialist_report_20240409_791.txt"
+  },
+  {
+    "filename": "medical_physiotherapy_notes_20251030_915.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical physiotherapy notes for Ethan Marsh - lower back pain [massive]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:50:10.187057",
+    "path": "medical/medical_physiotherapy_notes_20251030_915.txt"
+  },
+  {
+    "filename": "medical_discharge_summary_20250313_858.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical discharge summary for Emma Brown - type 2 diabetes management [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:50:54.307987",
+    "path": "medical/medical_discharge_summary_20250313_858.txt"
+  },
+  {
+    "filename": "medical_vaccination_record_20241123_237.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical vaccination record for Ethan Marsh - dental checkup [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:51:10.532050",
+    "path": "medical/medical_vaccination_record_20241123_237.txt"
+  },
+  {
+    "filename": "medical_GP_visit_notes_20250414_894.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical GP visit notes for Ethan Marsh - dementia care referral [huge]",
+    "storyline": "mums_health",
+    "generated_at": "2026-03-19T01:51:59.622972",
+    "path": "medical/medical_GP_visit_notes_20250414_894.txt"
+  },
+  {
+    "filename": "medical_dental_report_20230724_197.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical dental report for Ethan Marsh - dental checkup [tiny]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:52:37.005326",
+    "path": "medical/medical_dental_report_20230724_197.txt"
+  },
+  {
+    "filename": "medical_physiotherapy_notes_20240618_367.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical physiotherapy notes for David Wilson - vitamin D deficiency [long]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:53:21.161763",
+    "path": "medical/medical_physiotherapy_notes_20240618_367.txt"
+  },
+  {
+    "filename": "medical_dental_report_20240619_805.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical dental report for Ethan Marsh - travel vaccinations [massive]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:53:29.607208",
+    "path": "medical/medical_dental_report_20240619_805.txt"
+  },
+  {
+    "filename": "medical_optometry_report_20231002_101.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical optometry report for Ethan Marsh - stress and anxiety [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:54:24.761694",
+    "path": "medical/medical_optometry_report_20231002_101.txt"
+  },
+  {
+    "filename": "medical_vaccination_record_20230112_830.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical vaccination record for Ethan Marsh - routine blood test [long]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:54:29.437475",
+    "path": "medical/medical_vaccination_record_20230112_830.txt"
+  },
+  {
+    "filename": "medical_physiotherapy_notes_20240607_473.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical physiotherapy notes for Ethan Marsh - lower back pain [huge]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:54:58.784216",
+    "path": "medical/medical_physiotherapy_notes_20240607_473.txt"
+  },
+  {
+    "filename": "medical_dental_report_20231102_933.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical dental report for Emma Wilson - physical exam [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:55:57.126673",
+    "path": "medical/medical_dental_report_20231102_933.txt"
+  },
+  {
+    "filename": "medical_blood_test_results_20230207_837.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical blood test results for Max Marsh - ear infection [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:55:57.527843",
+    "path": "medical/medical_blood_test_results_20230207_837.txt"
+  },
+  {
+    "filename": "medical_prescription_20250908_871.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical prescription for Sarah Wilson - vitamin D deficiency [long]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:56:16.039158",
+    "path": "medical/medical_prescription_20250908_871.txt"
+  },
+  {
+    "filename": "medical_vaccination_record_20250802_789.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical vaccination record for Ethan Marsh - stress and anxiety [tiny]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:56:55.498413",
+    "path": "medical/medical_vaccination_record_20250802_789.txt"
+  },
+  {
+    "filename": "medical_optometry_report_20250923_193.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical optometry report for Ethan Marsh - stress and anxiety [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:57:17.401605",
+    "path": "medical/medical_optometry_report_20250923_193.txt"
+  },
+  {
+    "filename": "medical_referral_letter_20230427_441.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical referral letter for Ethan Marsh - travel vaccinations [huge]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:57:21.785111",
+    "path": "medical/medical_referral_letter_20230427_441.txt"
+  },
+  {
+    "filename": "medical_referral_letter_20230925_447.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical referral letter for Ethan Marsh - lower back pain [tiny]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:57:59.919612",
+    "path": "medical/medical_referral_letter_20230925_447.txt"
+  },
+  {
+    "filename": "medical_discharge_summary_20230319_336.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical discharge summary for Ethan Marsh - lower back pain [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T01:58:12.352766",
+    "path": "medical/medical_discharge_summary_20230319_336.txt"
+  },
+  {
+    "filename": "knowledge_North_London_history_2959.txt",
+    "category": "knowledge",
+    "source": "generated",
+    "description": "Knowledge: North London history [long]",
+    "storyline": null,
+    "generated_at": "2026-03-19T11:17:44.385198",
+    "path": "knowledge/knowledge_North_London_history_2959.txt"
+  },
+  {
+    "filename": "messaging_whatsapp_discussing_tropical_fish_tank__20251104_633.txt",
+    "category": "messaging",
+    "source": "generated",
+    "description": "Whatsapp: discussing tropical fish tank problems [long]",
+    "storyline": "fish_tank",
+    "generated_at": "2026-03-19T11:17:50.815823",
+    "path": "messaging/messaging_whatsapp_discussing_tropical_fish_tank__20251104_633.txt"
+  },
+  {
+    "filename": "medical_specialist_report_20240512_235.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical specialist report for Lily Marsh - childhood vaccination [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T11:17:56.879747",
+    "path": "medical/medical_specialist_report_20240512_235.txt"
+  },
+  {
+    "filename": "personal_phone_memo_20250529_379.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal phone memo - thinking about lily's school struggles [long]",
+    "storyline": "lily_school",
+    "generated_at": "2026-03-19T11:18:48.831535",
+    "path": "personal/personal_phone_memo_20250529_379.txt"
+  },
+  {
+    "filename": "finance_nursery_invoice_20250615_396.txt",
+    "category": "finance",
+    "source": "generated",
+    "description": "Finance: nursery invoice from Little Stars Nursery [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T11:19:00.303003",
+    "path": "finance/finance_nursery_invoice_20250615_396.txt"
+  },
+  {
+    "filename": "knowledge_UK_inheritance_law_3716.txt",
+    "category": "knowledge",
+    "source": "generated",
+    "description": "Knowledge: UK inheritance law [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T19:46:17.216924",
+    "path": "knowledge/knowledge_UK_inheritance_law_3716.txt"
+  },
+  {
+    "filename": "medical_optometry_report_20260120_505.txt",
+    "category": "medical",
+    "source": "generated",
+    "description": "Medical optometry report for Ethan Marsh - stress and insomnia [medium]",
+    "storyline": "work_migration",
+    "generated_at": "2026-03-19T19:46:22.353611",
+    "path": "medical/medical_optometry_report_20260120_505.txt"
+  },
+  {
+    "filename": "messaging_whatsapp_school_parents_discussing_upco_20230703_783.txt",
+    "category": "messaging",
+    "source": "generated",
+    "description": "Whatsapp: school parents discussing upcoming bake sale [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T19:46:32.752384",
+    "path": "messaging/messaging_whatsapp_school_parents_discussing_upco_20230703_783.txt"
+  },
+  {
+    "filename": "legal_property_valuation_20230621_336.txt",
+    "category": "legal",
+    "source": "generated",
+    "description": "Legal property valuation - fence dispute evidence [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T19:47:12.063769",
+    "path": "legal/legal_property_valuation_20230621_336.txt"
+  },
+  {
+    "filename": "personal_goal_setting_20231003_359.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal goal setting - Lily brought home a painting from school [long]",
+    "storyline": null,
+    "generated_at": "2026-03-19T19:47:16.035463",
+    "path": "personal/personal_goal_setting_20231003_359.txt"
+  },
+  {
+    "filename": "finance_tax_return_summary_20240412_792.txt",
+    "category": "finance",
+    "source": "generated",
+    "description": "Finance: tax return summary from HMRC [long]",
+    "storyline": null,
+    "generated_at": "2026-03-19T19:47:19.404928",
+    "path": "finance/finance_tax_return_summary_20240412_792.txt"
+  },
+  {
+    "filename": "calendar_two_weeks_20250810_204.txt",
+    "category": "calendar",
+    "source": "generated",
+    "description": "Calendar: two weeks (20 events) [long]",
+    "storyline": null,
+    "generated_at": "2026-03-19T19:47:59.586315",
+    "path": "calendar/calendar_two_weeks_20250810_204.txt"
+  },
+  {
+    "filename": "knowledge_vehicle_tax_car_9448.txt",
+    "category": "knowledge",
+    "source": "internet",
+    "description": "Knowledge: vehicle tax car [huge]",
+    "storyline": null,
+    "generated_at": "2026-03-19T19:48:07.354457",
+    "path": "knowledge/knowledge_vehicle_tax_car_9448.txt"
+  },
+  {
+    "filename": "trello_Summer_Holiday_Portugal_20240306_169.xml",
+    "category": "trello",
+    "source": "generated",
+    "description": "Trello: Summer Holiday Portugal (88 cards) [huge]",
+    "storyline": null,
+    "generated_at": "2026-03-19T19:48:23.783819",
+    "path": "trello/trello_Summer_Holiday_Portugal_20240306_169.xml"
+  },
+  {
+    "filename": "knowledge_kitchen_renovation_guide_2701.txt",
+    "category": "knowledge",
+    "source": "generated",
+    "description": "Knowledge: kitchen renovation guide [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T20:09:01.897193",
+    "path": "knowledge/knowledge_kitchen_renovation_guide_2701.txt"
+  },
+  {
+    "filename": "medical_physiotherapy_notes_20240211_896.txt",
+    "category": "medical",
+    "source": "internet",
+    "description": "Medical physiotherapy notes for Ethan Marsh - lower back pain [huge]",
+    "storyline": null,
+    "generated_at": "2026-03-19T20:09:16.942566",
+    "path": "medical/medical_physiotherapy_notes_20240211_896.txt"
+  },
+  {
+    "filename": "finance_utility_bill_20231027_586.txt",
+    "category": "finance",
+    "source": "generated",
+    "description": "Finance: utility bill from Thames Water [tiny]",
+    "storyline": null,
+    "generated_at": "2026-03-19T20:09:48.627000",
+    "path": "finance/finance_utility_bill_20231027_586.txt"
+  },
+  {
+    "filename": "personal_book_notes_20230828_764.txt",
+    "category": "personal",
+    "source": "generated",
+    "description": "Personal book notes - got the letter from Helen Crawford about [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T20:09:50.099930",
+    "path": "personal/personal_book_notes_20230828_764.txt"
+  },
+  {
+    "filename": "legal_inheritance_document_20231121_351.txt",
+    "category": "legal",
+    "source": "generated",
+    "description": "Legal inheritance document - property transfer after father's death [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T20:09:52.563213",
+    "path": "legal/legal_inheritance_document_20231121_351.txt"
+  },
+  {
+    "filename": "calendar_2-3_days_20250507_747.txt",
+    "category": "calendar",
+    "source": "generated",
+    "description": "Calendar: 2-3 days (4 events) [short]",
+    "storyline": null,
+    "generated_at": "2026-03-19T20:10:26.466782",
+    "path": "calendar/calendar_2-3_days_20250507_747.txt"
+  },
+  {
+    "filename": "knowledge_aquarium_algae_control_2902.txt",
+    "category": "knowledge",
+    "source": "generated",
+    "description": "Knowledge: aquarium algae control [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T20:10:31.266350",
+    "path": "knowledge/knowledge_aquarium_algae_control_2902.txt"
+  },
+  {
+    "filename": "trello_EV_Car_Research_20250114_430.xml",
+    "category": "trello",
+    "source": "generated",
+    "description": "Trello: EV Car Research (21 cards) [medium]",
+    "storyline": null,
+    "generated_at": "2026-03-19T20:10:43.145721",
+    "path": "trello/trello_EV_Car_Research_20250114_430.xml"
+  }
+]

@@ -1,0 +1,31 @@
+**North London Bank**
+**Statement for Account ending 8765**
+
+**Account Holder:** Mr Ethan Marsh
+**Address:** 14 Elmwood Drive, North London, NW3 4PR
+**Statement Date:** 19 February 2026
+
+**Account Type:** Current Account
+**Sort Code:** 20-45-78
+**Account Number:** ******8765
+
+**Opening Balance (01 February 2026):** £4,891.22
+
+**Transactions:**
+
+| Date        | Description                                       | Debit (£) | Credit (£) | Balance (£) |
+| :---------- | :------------------------------------------------ | :-------- | :--------- | :---------- |
+| 01 Feb 2026 | Mortgage Payment - Barclays (Ref: MarshHomeNW3)   | 1,850.00  |            | 3,041.22    |
+| 03 Feb 2026 | Salary - FinTech Solutions Ltd (Ref: FEB26PAY)    |           | 4,250.00   | 7,291.22    |
+| 05 Feb 2026 | QPA Primary School - Lily Term Fee (Ref: LILY-Y3) | 320.00    |            | 6,971.22    |
+| 07 Feb 2026 | Little Stars Nursery - Max Fees (Ref: MAX-FEB)    | 780.00    |            | 6,191.22    |
+| 10 Feb 2026 | Sainsbury's - Weekly Shop                         | 112.45    |            | 6,078.77    |
+| 12 Feb 2026 | Amazon Prime - Subscription                       | 8.99      |            | 6,069.78    |
+| 14 Feb 2026 | The Gilded Spoon - Valentine's Dinner             | 145.00    |            | 5,924.78    |
+| 16 Feb 2026 | Cyclist's Hub - Bike Repair (Ref: VWGOLF-TYRE)    | 65.00     |            | 5,859.78    |
+| 17 Feb 2026 | Utility Bill - Gas & Electric                     | 188.50    |            | 5,671.28    |
+
+**Closing Balance (19 February 2026):** £5,671.28
+
+**Important Information:**
+Please note our new branch opening hours. For online banking support, visit northlondonbank.co.uk/help or call 0345 678 9012.

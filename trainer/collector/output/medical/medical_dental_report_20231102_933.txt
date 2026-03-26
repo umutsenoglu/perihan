@@ -1,0 +1,93 @@
+**CITY GENERAL HOSPITAL**
+**Department of Dentistry**
+
+---
+
+**PATIENT INFORMATION:**
+Patient Name: Emma Wilson
+Date of Birth: 1995-03-15 (Age: 28)
+Patient ID: CW-987654
+Gender: Female
+
+**FACILITY INFORMATION:**
+Facility: City General Hospital
+Department: Dental Clinic
+Attending Doctor: Dr. Ahmed, DMD
+Date of Report: 2023-11-02
+Date of Examination: 2023-11-02
+
+**REPORT TYPE:**
+Dental Examination Report - Routine Physical Exam
+
+---
+
+**CHIEF COMPLAINT:**
+Ms. Wilson presents for a routine dental check-up and oral physical examination, last comprehensive exam was 12 months prior. Reports no acute pain or specific concerns.
+
+**MEDICAL HISTORY (VERBAL UPDATE):**
+No significant changes since last visit. Denies current systemic illnesses, allergies to medications (NKDA). No current medications. Non-smoker. Occasional alcohol consumption. Denies history of diabetes, heart conditions, or autoimmune disorders.
+
+**DENTAL HISTORY (VERBAL UPDATE):**
+Reports diligent brushing twice daily with a fluoridated toothpaste and flossing once daily. Occasional sensitivity to cold in the posterior quadrants, which is transient. No history of orthodontic treatment. Last dental cleaning 6 months ago.
+
+---
+
+**CLINICAL FINDINGS:**
+
+**A. EXTRAORAL EXAMINATION:**
+*   **Head and Neck:** Symmetrical, no palpable lymphadenopathy (submandibular, submental, cervical). No masses or swellings observed.
+*   **Temporomandibular Joints (TMJ):** No tenderness to palpation, no clicking or crepitus noted upon opening or closing. Full range of motion (45mm interincisal opening).
+*   **Facial Musculature:** Non-tender to palpation.
+
+**B. INTRAORAL SOFT TISSUE EXAMINATION:**
+*   **Lips:** Intact, good color, no lesions.
+*   **Buccal Mucosa:** Pink, moist, no lesions. Fordyce granules noted bilaterally, considered a normal variant.
+*   **Palate (Hard/Soft):** Pink, firm, no lesions. Torus palatinus absent.
+*   **Tongue:** Normal papillae, midline, no lesions.
+*   **Floor of Mouth:** Pink, moist, no lesions, Wharton's ducts patent.
+*   **Gingiva:** Generalized pale pink, knife-edged margins, firm consistency. Localized mild erythema and slight edema noted in the interproximal papilla between #19 and #20. No signs of recession exceeding 1mm on facial surfaces.
+
+**C. PERIODONTAL EXAMINATION:**
+*   **Gingival Status:** Generalized healthy gingiva, with localized mild inflammation as noted above.
+*   **Bleeding on Probing (BOP):** Localized BOP noted at #19 distobuccal and #20 mesiolingual.
+*   **Probing Depths (PD):** Generalized probing depths of 1-3mm. Isolated 4mm probing depth recorded at #19 distobuccal and #20 mesiolingual. No deep pockets >5mm.
+*   **Clinical Attachment Loss (CAL):** No significant CAL noted.
+*   **Mobility:** All teeth exhibit physiologic mobility (Grade 0).
+*   **Furcation Involvement:** No furcation involvement detected.
+*   **Plaque/Calculus:** Moderate supragingival plaque accumulation noted on lingual surfaces of mandibular incisors and buccal surfaces of maxillary molars. Minimal calculus detected.
+
+**D. DENTAL EXAMINATION:**
+*   **Caries:**
+    *   No new carious lesions detected
+. Existing restorations are intact and show no signs of recurrent decay or marginal breakdown.
+*   **Existing Restorations:**
+    *   Amalgam restorations noted on #2-MO, #3-DO, #14-MOD, #15-O, #18-DO, #19-O, #30-O. All appear functionally sound with good marginal integrity.
+    *   Composite restorations noted on #4-O, #5-O, #13-O, #21-O, #29-O. All are intact with good color match and no signs of fractures or sensitivity.
+    *   Crowns: Full coverage porcelain-fused-to-metal (PFM) crown on #3 and #14. Both crowns are well-adapted, non-tender to percussion, and have healthy surrounding gingiva.
+*   **Missing Teeth:**
+    *   #1, #16, #17, #32 (all third molars) are congenitally absent or previously extracted. Current dentition is complete excluding these.
+*   **Occlusion:**
+    *   Angle's Class I molar relationship bilaterally. Canine protected occlusion with
+no signs of premature contacts or fremitus. Stable centric relation to centric occlusion with adequate anterior guidance. No signs of bruxism or clenching clinically evident.
+
+**E. RADIOGRAPHIC FINDINGS (Full Mouth Series - FMS dated 2023-11-02):**
+*   **Alveolar Bone:** Generally healthy alveolar bone levels, approximately 1-2mm apical to the cementoenamel junction (CEJ) throughout the arches. No significant horizontal or vertical bone loss observed.
+*   **Periodontal Ligament (PDL) & Lamina Dura:** Intact lamina dura and uniform PDL spaces surrounding all erupted teeth.
+*   **Periapical Region:** No periapical radiolucencies or other signs of endodontic pathology detected.
+*   **Caries:** No radiographic evidence of new carious lesions.
+*   **Existing Restorations:** All existing amalgam, composite, and PFM crown restorations appear radiographically sound with good marginal adaptation and no evidence of recurrent decay.
+*   **Impacted/Missing Teeth:** Radiographic confirmation of congenitally missing third molars (#1, #16, #17, #32). No other impacted teeth or supernumerary teeth observed.
+*   **Anatomical Structures:** Maxillary sinuses appear clear. No significant osseous pathology or foreign bodies noted.
+
+**F. DIAGNOSIS:**
+*   Gingivitis, localized, mild (ICD-10-CM: K05.11)
+*   Dental plaque, unspecified (ICD-10-CM: K03.6)
+*   Healthy dentition with existing functional restorations.
+*   Class I molar relationship, Angle's.
+
+**G. TREATMENT PLAN:**
+1.  **Oral Hygiene Instructions (OHI):** Provide detailed instructions on proper brushing technique (modified Bass method) and interproximal cleaning using dental floss, with emphasis on the mandibular incisor lingual surfaces and maxillary molar buccal surfaces. Discuss the benefits of an electric toothbrush.
+2.  **Dental Prophylaxis (D1110):** Perform a comprehensive scaling and polishing to remove supragingival plaque and calculus.
+3.  **Recall Schedule:** Recommend a routine 6-month recall for periodic examination and prophylaxis to maintain optimal oral health.
+4.  **Monitoring:** Monitor localized gingival inflammation at future recall appointments.
+5.  **Patient Education:** Discuss the importance of regular dental check-ups and cleanings in preventing progression of gingivitis and maintaining restorative integrity.

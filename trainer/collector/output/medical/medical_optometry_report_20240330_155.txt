@@ -1,0 +1,21 @@
+## Whittington Hospital - Optometry Department
+**Paediatric Optometry Report**
+
+**Patient:** Max Marsh
+**NHS Number:** 987 654 3210 (Fictional)
+**Date of Birth:** 2019-11-XX (Approx. 4 years old)
+**Address:** [Ethan & Claire Marsh's
+**Address:** [Ethan & Claire Marsh's address], North London, UK
+**Parents/Guardians:** Ethan Marsh (Father), Claire Marsh (Mother)
+**Attending:** Ethan Marsh
+**Date of Examination:** 2024-03-30
+**Doctor:** Dr. Patel (Optometrist)
+
+**Reason for Visit:** Routine paediatric eye examination, as
+## Whittington Hospital - Paediatric Services
+**Consultation Summary Report**
+
+**Patient:** Max Marsh
+**NHS Number:** 987 654 3210 (Fictional)
+**Date of Birth:** 2019-11-05 (Approx. 4 years old)
+**Address:** [Ethan & Claire Marsh

@@ -1,0 +1,8 @@
+**Important Note on Date Discrepancy:**
+
+The prompt specified "Date: 2023-03-23" for this receipt, but also provided a storyline where "Marcus's Cycling Accident" occurred on "2025-02-22", and requested that the document be "related to: Marcus's Cycling Accident". A payment receipt related to an
+a payment receipt related to an accident that occurred in 2025 presents a clear chronological inconsistency. To adhere to both the specified receipt date of **2023-03-23** and the requirement that the document is "related to: Marcus's Cycling Accident" (which happened on **2025-02-22**), this document is
+---
+**Important Note on Date Discrepancy:**
+
+The prompt specified "Date: 2023-03-23" for this receipt, but also provided a storyline where "Marcus's Cycling Accident" occurred on "2025-02-22", and requested that the document be "related to: Marcus's Cycling Accident". A payment

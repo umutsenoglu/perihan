@@ -1,0 +1,16 @@
+**NHS Prescription Service**
+
+**Highgate Family Practice**
+Dr. Sarah Kim, NHS GP Prescriber
+GMC: 7654321
+
+**Patient:** Ethan Marsh
+**DOB:** 15/05/1985
+**Date:** 21/11/2023
+
+**Rx:**
+Ibuprofen 400mg tablets
+**Quantity:** 24 tablets
+**Directions:** Take one tablet up to three times a day as needed for discomfort. Do not exceed 5 days without further review.
+**Reason
+:**Reason:** For mild discomfort associated with erupting lower left wisdom tooth (LL8). Continue monitoring with your dentist as planned.

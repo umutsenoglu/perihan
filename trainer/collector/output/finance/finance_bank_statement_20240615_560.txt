@@ -1,0 +1,51 @@
+**Marsh Household Bank Statement - Current Account**
+
+**Account Holder:** Mr Ethan Marsh
+**Address:** [House Number] Willow Close, North London, NW3 1AB
+**Statement Period:** 15 May 2024 - 15 June 2024
+**Statement Date:** 15 June 2024
+**Account Number:** ******7890
+**Sort Code:** 20-45-89
+**Currency:** GBP
+
+**Opening Balance (15 May 2024):** £3,452.18
+
+**Date | Description | Debit | Credit | Balance**
+---|---|---|---|---
+16 May | Sainsbury's Superstore (Groceries) | £87.45 | | £3,364.73
+17 May | TFL Travel (Oyster Top-up) | £30.00 | | £3,334.73
+18 May | QPA Primary School (Lily's After-School Club) | £45.00 | | £3,289.73
+19 May | Amazon UK (Tropical Fish Supplies) | £22.99 | | £3,266.74
+20 May | Little Stars Nursery (Max's Fees) | £420.00 | | £2,846.74
+21 May | Barclays Mortgage Payment | £1,250.00 | | £1,596.74
+22 May | PureGym London (Monthly Membership) | £35.99 | | £1,560.75
+23 May | Deliveroo (Family Takeaway) | £48.50 | | £1,512.25
+24 May | Waterstones (Book for Claire) | £12.99 | | £1,499.26
+27 May | PayPoint (Gas & Electricity Top-up) | £70.00 | | £1,429.26
+28 May | Cycle Republic (Bike Servicing) | £65.00 | | £1,364.26
+29 May | ATM Withdrawal (Cash for market) | £40.00 | | £1,324.26
+30 May | London Photography Hub (Workshop Deposit) | £50.00 | | £1,274.26
+31 May | Finchley Road Opticians (Contact Lenses) | £28.50 | | £1,245.76
+03 Jun | Salary - FINTECH SOLUTIONS LTD | | £4,500.00 | £5,745.76
+03 Jun | Transfer to Claire Marsh (Joint Account Contribution) | £800.00 | | £4,945.76
+04 Jun | Netflix Subscription | £10.99 | | £4,934.77
+05 Jun | Virgin Media (Broadband & TV) | £62.00 | | £4,872.77
+06 Jun | Bristol Flowers (Mother's Day Gift - Janet Marsh) | £38.00 | | £4,834.77
+07 Jun | Waitrose (Weekend Shop) | £75.20 | | £4,759.57
+08 Jun | Halfords (Car Wash & Tyre Pressure Check) | £15.00 | | £4,744.57
+09 Jun | Zapp (Grocery Delivery) | £22.50 | | £4,722.07
+10 Jun | NHS Prescription Charge (Asthma Inhaler) | £9.65 | | £4,712.42
+11 Jun | Transfer from Hannah Marsh (Shared gift for Luke) | | £25.00 | £4,737.42
+12 Jun | The Fish Keeper (New filter for tank) | £35.99 | | £4,701.43
+13 Jun | National Rail (Train tickets to Bristol - future travel) | £68.50 | | £4,632.93
+14 Jun | The Hackney Coffee Shop (Coffee with colleagues) | £18.75 | | £4,614.18
+
+**Closing Balance (15 June 2024):** £4,614.18
+
+**Total Debits:** £3,335.50
+**Total Credits:** £4,525.00
+
+**Important Information:**
+* For any queries regarding your statement, please contact our customer service line on 0345 678 9012.
+* Your next statement will be issued on 15 July 2024.
+* Remember to keep your contact details updated to receive important account notifications.

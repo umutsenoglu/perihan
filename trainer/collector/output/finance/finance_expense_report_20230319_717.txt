@@ -1,0 +1,55 @@
+**Expense Report - Personal Reimbursement Request**
+
+**Account Holder:** Ethan Marsh
+**Employee ID:** EM789456
+**Department:** Software Engineering
+**Company:** AquaWorld (Mark) - *Correction: This is a vendor, not Ethan's employer. Ethan's employer is a fintech company. This report is for a personal expense, not a company expense. Re-evaluate this instruction.*
+
+**Company:** *[Ethan's actual employer - Fictional Fintech Company]*
+**Date:** 2023-03-19
+**Currency:** GBP
+
+**Recipient Details:**
+**Name:** Ethan Marsh
+**Address:** 14 Elmwood Close, North London, N12 8AB
+**Bank Name:** Barclays
+**Account No:** **** **** **** 7890
+**Sort Code:** 20-30-40
+
+**Expense Period:** 2025-02-20 to 2025-03-15
+**Purpose of Expense:** Purchase of essential aquarium equipment for personal tropical fish tank maintenance. This expenditure was necessary to address persistent water quality issues and fish health concerns that have been ongoing since December 2024. The new filter is critical for improving water clarity and stability, a matter Claire wants sorted before her mum Diane visits at Easter (2025-04-18).
+
+---
+
+**Line Items:**
+
+| Date          | Vendor / Description                                     | Category            | Amount (GBP) | VAT (GBP) | Total (GBP) |
+| :------------ | :------------------------------------------------------- | :------------------ | :----------- | :-------- | :---------- |
+| 2025-02-25    | Fluval 307 Canister Filter (Order Ref: AW-F307-2502)     | Aquarium Equipment  | £157.50      | £31.50    | £189.00     |
+| *Details:*    | *Ordered from AquaWorld (Mark) online. Replaces old internal filter due to ongoing algae bloom (since 2024-12-10) and high phosphate levels (1.5ppm on 23 February 2025 test). Intended to improve filtration for 200-litre tank after losing two neon tetras and a guppy in January (2025-01-15).* |                     |              |           |             |
+| 2025-03-05    | Seachem Flourish Excel 500ml (local pet shop)            | Aquarium Chemicals  | £12.99       | £2.60     | £15.59      |
+| *Details:*    | *Further attempt to combat green algae. Initial application of Excel and 30% water changes twice weekly, along with reduced light to 6 hours, haven't fully resolved the issue.* |                     |              |           |             |
+| 2025-03-08    | API Freshwater Master Test Kit refill (online)           | Water Testing       | £24.50       | £4.90     | £29.40      |
+| *Details:*    | *Need to re-test parameters regularly, especially phosphate, and monitor nitrate (currently 25ppm). CO2 system (Dennerle) also being monitored due to inconsistent bubble counter flow.* |                     |              |           |             |
+| 2025-03-12    | eSHa 2000 Anti-Fungus & Bacteria Treatment (local pet shop) | Fish Medication     | £8.75        | £1.75     | £10.50      |
+| *Details:*    | *Re-purchased as a preventative measure after previous fish losses. Suspected columnaris contributed to January (2025-01-15) deaths. Current stock: 8 neon tetras, 5 guppies, 4 corydoras, 2 bristlenose plecos, 6 cherry shrimp.* |                     |              |           |             |
+
+---
+
+**Totals:**
+**Subtotal (Excl. VAT):** £203.74
+**Total VAT:** £40.75
+**Total Reimbursement Requested:** **£244.49**
+
+---
+
+**Declaration:**
+I confirm that these expenses are genuine, have been incurred for the stated purpose, and are not reimbursable from any other source. I understand that false claims may result in disciplinary action.
+
+**Employee Signature:** E. Marsh
+**Date:** 2025-03-19
+
+**For Internal Use Only:**
+**Approved By:** _________________________
+**Date Approved:** _________________________
+**Payment Reference:** _________________________

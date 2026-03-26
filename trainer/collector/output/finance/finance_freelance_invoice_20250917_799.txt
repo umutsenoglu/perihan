@@ -1,0 +1,46 @@
+**INVOICE**
+
+**From:**
+Ethan Marsh
+14 Elmwood Close
+Highgate
+London
+N6 4AB
+
+Email: ethan.marsh.dev@outlook.com
+Phone: 07XXXXXXXXX
+
+**Invoice No:** EM-2025-09-003
+**Date:** 2025-09-17
+**Payment Due:** 2025-10-01 (14 Days)
+
+**To:**
+Greenwood Garden Supplies Ltd.
+Unit 3, Barnet Business Park
+Barnet
+EN5 1XZ
+
+**Project:** Bespoke Inventory Management Module - Phase 1
+
+**Services Rendered:**
+
+| Description                                                      | Hours | Rate (GBP/hr) | Amount (GBP) |
+| :--------------------------------------------------------------- | :---- | :------------ | :----------- |
+| Custom API Development & Database Integration (Weekend Work)     | 18    | £75.00        | £1,350.00    |
+| *Development of core logic for stock tracking and supplier sync.* |       |               |              |
+
+**TOTAL AMOUNT DUE (GBP): £1,350.00**
+
+**Payment Details:**
+Bank Name: Barclays Bank
+Account Name: Ethan Marsh
+Sort Code: 20-XX-XX
+Account No: XXXXXXXX
+
+Please use "Greenwood-IM-P1" as the payment reference.
+
+Thank you for your business. Please let me know if you have any questions regarding this invoice or the next phase of the project.
+
+**Further Details:**
+NI Number: AB123456C
+Tax Code: 1257L

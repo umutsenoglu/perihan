@@ -1,0 +1,92 @@
+**Book Notes - Personal Journal**
+
+**Date: 2025-04-06**
+**Today's moment:** Thinking about mum's health decline
+**Ongoing situation:** Mother's health declining in Bristol — frequent calls and planning a visit
+
+***
+
+**Sunday, April 6th, 2025 – Early Morning Thoughts**
+
+Another Sunday morning, the house is still. Claire's still asleep, the kids are probably in some deep, pre-dawn dream state, oblivious. Max, curled up like a shrimp. Lily, usually spread-eagled like a starfish. Me? Wide awake since 4:30 AM. My mind, as usual these days, racing. Mostly about Mum.
+
+It’s almost four months since that awful day – January 12th. The day Dr. Collins confirmed what we already suspected, what we’d been trying to ignore for months. Vascular dementia. Early stage, she said, trying to be reassuring. As if there’s anything reassuring about those words. Donepezil 5mg, she prescribed. A pill to slow down the inevitable, to give us… what? More time with the Mum we know? Or just more time watching her fade? It's a horrible question to ask, but it's there, every time I see her, every time I hear her voice on the phone.
+
+I remember November 18th, 2024, vividly. The call from Hannah. Mum had fallen. Just stumbled, bruised her hip. But it wasn't just a clumsy moment, was it? It was a sign. Another crack in the dam. The memory loss, the fatigue – it had been there since mid-2024. Little things at first. Forgetting appointments, repeating stories, losing her keys daily. Then bigger things. Getting confused on familiar routes. Leaving the hob on. Dad (George) always handled everything. After he passed in 2021, Mum had to learn to manage on her own, and she did, for a while. But now… now it’s different. The cracks are widening.
+
+The neurologist at Bristol Royal Infirmary, a kind but direct woman, explained everything. Blood flow, small strokes, the brain not getting enough oxygen. Damage. Irreversible damage. It felt like someone had punched me in the gut. Again. First Dad, now this. It’s like a relentless march of grief, just a different kind.
+
+I try to push it down, compartmentalise. That’s what I do at work, right? Complex problems, breaking them down into manageable chunks. Refactoring code. But this isn’t code. This is Mum. And there's no refactoring, no debugging this.
+
+I'm supposed to be going for a cycle later. Weather looks okay. Maybe clear my head a bit. The VW Golf needs a good clean too. Claire's been bugging me about it. Max spilled a smoothie in the back seat last week. Ugh.
+
+Thinking about switching to electric. The Golf is a 2019 model, still good, but emissions… and the rising fuel costs. It’s another big decision, another thing to research. More tabs open in my brain.
+
+My lower back is a bit stiff this morning. All that desk work. Being a Senior Software Engineer at a fintech company, it’s mostly sitting. Need to get back to those stretches Dr. Evans showed me. And my asthma's been acting up a bit lately, probably the tree pollen, damn seasonal allergies. Spring. Meant to be a time of renewal. Feels more like a time of decay.
+
+***
+
+**Later on Sunday – After the morning rush**
+
+Lily’s currently explaining the intricate social hierarchy of Year 3 at QPA Primary. Mrs. Henderson, her teacher, apparently has an 'ally' in another teacher, Mrs. Davies. Who knew primary school politics were so complex? Max is just banging on pots and pans, a true artist. Claire's making pancakes. The smell is good. Normalcy. A thin veneer, but I cling to it.
+
+Just had a quick call with Hannah. She’s in Manchester, so closer than me, but still a journey. She popped in yesterday to see Mum. Said Mum was lucid for most of the visit, then got confused about where George was. Asked if he was at the golf club. It’s been four years since he died. Four years. That’s the hard bit. The grief, then the confusion on top. Hannah said she just held her hand and tried to redirect her. She’s so much better at that than I am. I tend to just freeze up, or try to logic it out, which is useless.
+
+We discussed the CarePlus Bristol carer. Maria, I think her name is. Comes three times a week. It’s £18 an hour. Works out to about £864 a month. Luke helps out financially, which is a massive relief. He’s in Edinburgh, tied up with his own work, but he always steps up. That's the one good thing about this mess – it’s brought us three (Hannah, Luke, and me) closer in a way. Even if it’s around this black hole of worry.
+
+The LPA, the Lasting Power of Attorney, finally started on February 5th. Simon Holt, Dad’s old solicitor, handled it. He was brilliant. Walked me through everything, explained the finance and health and welfare aspects. It’s all set up now, so at least that's one less bureaucratic mountain to climb when things get… worse. Which they will. It’s not a matter of 'if', but 'when'. And how quickly.
+
+I need to book my next train ticket to Bristol. It’s usually £45 return if I book in advance. Try to go every 2-3 weeks. Claire keeps telling me I don’t have to go *every* time, but I feel like I do. Like if I miss a visit, something vital will slip away, unobserved. And when I’m there, it’s a blur of checking the fridge, making sure bills are paid, chatting with Maria, trying to engage Mum. Sometimes she’s great. We look through old photo albums, she laughs about Dad. Other times, she’s distant, lost. Her eyes are still Mum’s eyes, but sometimes there’s nobody home behind them. That’s the worst.
+
+***
+
+**Afternoon Thoughts – A break from the sun**
+
+Decided against the long cycle today. My back's playing up more than I thought. Just a gentle ride to the park with Lily and Max instead. Lily brought her scooter, Max his balance bike. Normal Sunday stuff. We saw the Swans at the pond. Lily wanted to feed them, but I reminded her about the sign, no bread. Small win for responsible parenting.
+
+Claire and I managed a quick chat while the kids were on the swings. She said, "You're doing so much, Ethan. Don't forget to look after yourself." She sees it, she knows. She’s always been good at that. She’s dealing with her own stuff – primary school teaching, Mrs. Davies is retiring soon, so there’s a new round of school politics there. Plus, balancing our lives, picking up Max from Little Stars Nursery, Lily from QPA. She shoulders so much. Sometimes I feel like I'm just… drifting.
+
+The tropical fish tank needs attention. My Corydoras catfish look a bit sluggish. Maybe the water parameters are off. Another thing to check. It’s supposed to be relaxing, this hobby. A little slice of calm. Lately, it just feels like another responsibility. Maybe I’ll do a water change tonight. Get the siphon out. The gentle gurgle of the filter is usually soothing. Not today.
+
+Thinking about work tomorrow. Monday. Stand-up at 9:30 AM. Need to review Priya’s new branch for the payment gateway refactor. Richard will probably complain about the JIRA tickets again. James will be his usual chipper self, probably talking about his new sourdough starter. It’s all so normal. And I have to switch gears, put on the "Senior Software Engineer" hat, solve problems, deliver features, estimate timelines. All while the background process of 'Mum's health' churns away, consuming cycles.
+
+We’re onboarding a new junior dev next week. I need to prepare some materials, get them set up with the dev environment. It’s good, keeps me busy, forces me to focus. But there’s always a quiet moment, a gap, and then my mind snaps back to Bristol.
+
+***
+
+**Late Afternoon – The weight of it all**
+
+Just spoke to Mum again. She sounded a bit brighter. Asked about Lily and Max, remembered Lily’s 7th birthday was last month. That was a small relief. Then she started talking about the house needing painting, and could I ask George if he had time next weekend? My heart sank. "Mum," I said, "Dad's not here anymore, remember? He passed away a few years ago." A pause. "Oh. Right. Of course. Silly me." But it wasn't silly. It was heartbreaking.
+
+How long before she doesn't recognise me? Or Claire? Or the kids? Dr. Collins mentioned progression, fluctuations. Good days, bad days. But the overall trajectory is downward. How do you prepare for that? It's like standing on a railway track, seeing a train coming, but you can't move, and you can't stop it.
+
+I keep replaying that first meeting with Simon Holt for the LPA. It was February 5th. Felt like a milestone, a grim one. He asked about Mum’s capacity, whether she understood what she was signing. She did, just. She had moments of clarity where she understood that she needed help. She said, "I don't want to be a burden." That broke me. She's never been a burden. Never. She and Dad gave us everything. Now, it's our turn. But it feels inadequate.
+
+The care costs. £864 a month. It's manageable for us, with Luke's help, but it's a constant drain. And what if we need more care? What if she needs 24/7? The house in Bristol will have to be sold eventually. That's a conversation Hannah and I have had in hushed tones, almost guilty. Her home. Her memories. Our childhood home.
+
+It feels selfish to even think about it, but the practicalities are immense. The emotional toll. Claire and I talk about it in bed, whispers in the dark after the kids are asleep. She listens. She suggests things. She reminds me that it’s okay to not be okay. She's my anchor.
+
+I found myself looking through old photos on my phone today. Pictures of Mum and Dad on holiday in Cornwall, laughing. Mum at my graduation. Mum holding Lily as a baby. Her smile. So vibrant. Where does that go? Does it just… vanish? Or is it still there, just buried under layers of… something else?
+
+I need to remember those moments. Keep them clear. That’s why I take so many photos. Photography. Another hobby that feels a bit hollow lately. Capturing fleeting moments. But what if the person in the moments can’t remember them? What’s the point? No, that’s not right. The point is for *me* to remember. For Lily and Max to remember their Grandma, even if her later years were… like this.
+
+My mild asthma. My seasonal allergies. My lower back pain. All these physical nuisances. They feel so trivial compared to what Mum is going through. They feel like little reminders of my own mortality, my own body's eventual decline. Is this what it feels like to truly start getting older? To see your parents, your heroes, become fragile?
+
+***
+
+**Evening – Winding down, or trying to**
+
+Kids finally asleep. Claire's reading a book on the sofa. I'm just here, staring at the tropical fish. The Corydoras are stirring, digging in the substrate. They seem oblivious. Simple, instinctual lives. No worries about dementia or mortgages or work deadlines. Just food, warmth, safety.
+
+I cooked dinner tonight. Tried a new chicken curry recipe. It was… okay. Lily picked out the peppers. Max tried to feed his chicken to the cat (we don’t have a cat). The usual dinner chaos. Small moments of joy. Distractions. Necessary distractions.
+
+I haven’t cycled properly in weeks. The idea of a long, clear ride, just me and the road, sounds like heaven right now. To just switch off the thoughts, feel my legs burn, the wind in my face. But there’s always something. Always a call to make, an email to send, a worry to turn over in my mind.
+
+Claire just looked up from her book. "Still up in your head, eh?" she said, kindly. She knows.
+"Yeah. Just Mum. Everything."
+She put her book down. "Come here. Let's watch something rubbish."
+We need those moments too. The rubbish TV. The comfort of just being.
+
+But the thoughts persist. Janet Marsh, 72. Bristol. Donepezil 5mg. CarePlus Bristol, £864/month. Bristol Royal Infirmary. Dr. Sarah Collins. Simon Holt. Hannah. Luke. George. They're all looping. The exact names, the exact dates, the exact figures. They've become anchors in a storm. And I'm just trying to hold on to the rope.
+
+Tomorrow, another week starts. Fintech code, JIRA tickets, school run, nursery drop-off. Life in London, ticking along. And in the background, the quiet, persistent, heartbreaking decay of Mum's world in Bristol. I’ll call her in the morning, before work. Make sure she’s okay. Make sure Maria's coming. Just another day. Just another wave. And I keep paddling. Keep trying to stay afloat.

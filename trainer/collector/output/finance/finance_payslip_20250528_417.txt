@@ -1,0 +1,85 @@
+**FinEdge Technologies Ltd**
+
+**PAYSLIP**
+
+**Period: May 2025**
+**Payment Date: 2025-05-28**
+
+**Employee Details:**
+
+**Name:** Ethan Marsh
+**Address:** 14 Willow Crescent, Highgate, London, N6 5AB
+**Employee ID:** FETL-EM789
+**NI Number:** AB 12 34 56 C
+**Tax Code:** 1257L
+
+**Company Details:**
+
+**Company Name:** FinEdge Technologies Ltd
+**Address:** The Shard, 32 London Bridge St, London, SE1 9SG
+**Company Reg. No.:** 09876543
+**PAYE Ref:** 123/FG45678
+
+---
+
+**Earnings:**
+
+| Description | Rate (GBP) | Hours/Units | Amount (GBP) |
+| :------------------------------ | :--------- | :---------- | :------------- |
+| Basic Salary                    | 6,250.00   | 1.00        | 6,250.00       |
+| Senior Software Engineer Bonus  | -          | -           | 250.00         |
+| **Total Gross Earnings**        |            |             | **6,500.00**   |
+
+---
+
+**Deductions:**
+
+| Description                   | Amount (GBP) |
+| :---------------------------- | :------------- |
+| PAYE Tax                      | 1,023.60       |
+| National Insurance (NI)       | 447.80         |
+| Pension Contribution (Scottish Widows) | 325.00         |
+| Cycle to Work Scheme (Month 8/12) | 50.00          |
+| Staff Social Fund             | 5.00           |
+| **Total Deductions**          | **1,851.40**   |
+
+---
+
+**Net Pay Calculation:**
+
+Gross Earnings: £6,500.00
+Total Deductions: £1,851.40
+
+**Net Pay: £4,648.60**
+
+---
+
+**Year-to-Date (YTD) Summary:**
+
+| Description | YTD Amount (GBP) |
+| :------------------------------ | :--------------- |
+| Gross Salary                    | 32,500.00        |
+| Total Tax Paid                  | 5,118.00         |
+| Total NI Paid                   | 2,239.00         |
+| Total Pension Contributions     | 1,625.00         |
+
+---
+
+**Payment Information:**
+
+**Bank:** Barclays
+**Account No:** **********8765
+**Sort Code:** 20-45-78
+**Payment Ref:** FENET-EMP-EM789-MAY25
+
+---
+
+**Important Notices:**
+
+*   **Pension Update:** Your pension contribution for May has been processed. Remember to check your Scottish Widows portal for your latest statement. Claire mentioned she received her teacher's pension statement last week, good reminder to check yours.
+*   **Annual Leave:** You have 18 days of annual leave remaining for the current year. Don't forget to book some time off for the Bristol trip to see Mum Janet in August, and the Edinburgh visit to Luke.
+*   **Health & Wellbeing:** Reminder to book your annual health check-up. The company offers discounted physio sessions – might be worth looking into for that lower back pain, especially after those long coding sessions.
+*   **Benefit Reminder:** Your current Cycle to Work scheme payment is for the new e-bike. The old VW Golf is still running well, but the savings from this scheme are great.
+*   **Next Pay Date:** 2025-06-28
+
+This document is for information purposes only. For any queries, please contact HR on extension 4567 or email payroll@finedge.co.uk.

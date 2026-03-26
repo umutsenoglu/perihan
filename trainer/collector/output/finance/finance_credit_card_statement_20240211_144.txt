@@ -1,0 +1,45 @@
+Barclays Bank UK PLC
+1 Churchill Place, London, E14 5HP
+
+**Credit Card Statement**
+
+**Statement Date:** 11 February 2024
+**Account Holder:** Mr Ethan Marsh
+**Account Number:** 4038 **** **** 9123
+**Sort Code:** 20-20-40
+
+**Statement Period:** 12 January 2024 - 11 February 2024
+**Previous Balance:** £543.87
+**Payments Received:** £543.87 CR (01 Feb 2024)
+**New Purchases:** £687.21
+**Cash Advances:** £0.00
+**Interest Charged:** £0.00
+
+**Current Balance:** £687.21
+**Minimum Payment Due:** £25.00
+**Payment Due Date:** 07 March 2024
+
+**Transactions for this period:**
+
+| Date       | Description                                  | Amount (GBP) |
+|------------|----------------------------------------------|--------------|
+| 13 Jan 2024| AMAZON UK RETAIL AMZN.CO.UK                  | £42.99       |
+| 15 Jan 2024| BP CONNECT TOTTENHAM HALE                    | £65.50       |
+| 18 Jan 2024| LITTLE STARS NURSERY FEES                    | £245.00      |
+| 20 Jan 2024| AQUAWORLD AQUATICS LTD SOUTHGATE             | £78.15       |
+| 24 Jan 2024| TESCO STORES LTD N4                          | £34.80       |
+| 28 Jan 2024| THE BLACK HORSE PUB N11                      | £55.70       |
+| 02 Feb 2024| AMAZON UK RETAIL AMZN.CO.UK (Lily's birthday gift) | £18.99       |
+| 05 Feb 2024| SAINSBURY'S LOCAL N12                        | £21.25       |
+| 08 Feb 2024| CYCLE REPUBLIC HIGHGATE                      | £38.83       |
+| 10 Feb 2024| ROYAL MAIL ONLINE POSTAGE (Janet's parcel)   | £5.00        |
+| 11 Feb 2024| BARCLAYS MORTGAGE PAYMENT (Auto-debit from current account) | £800.00 (not on credit card) |
+
+**Important Information:**
+You can manage your account, view transactions, and make payments via the Barclays app or Online Banking. If you have any queries regarding this statement, please contact us on 0345 7345 345.
+
+**Reward Points Balance:** 1,287 points (equivalent to £12.87)
+
+**Your credit limit is £5,000.00. Your available credit is £4,312.79.**
+
+Barclays Bank UK PLC is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register No. 759676). Registered in England. Registered no. 9740322. Registered Office: 1 Churchill Place, London, E14 5HP.

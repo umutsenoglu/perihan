@@ -1,0 +1,162 @@
+**AquaWorld (Mark) - Expense Report**
+
+**Account Holder:** Ethan Marsh
+**Company:** AquaWorld (Mark)
+**Date:** 2024-07-25
+**Currency:** GBP
+
+---
+
+**Expense Report: Tropical Fish Tank Upgrade & Maintenance - Q1/Q2 2025**
+
+**Prepared For:** Ethan Marsh
+**Employee ID:** EM7382
+**Department:** Personal Hobbies & Home Maintenance
+**Reporting Period:** 1st January 2025 - 30th June 2025
+
+**Purpose of Report:** To detail expenditures related to the ongoing issues and subsequent upgrade of the 200-litre tropical fish tank located at the Account Holder's residence, in response to persistent green algae bloom, water parameter imbalances, and fish health concerns. This report covers purchases from AquaWorld (Mark) and other related suppliers, as well as associated costs.
+
+---
+
+**Recipient Details:**
+
+**Name:** Mr. Ethan Marsh
+**Address:** [House Number] Long Meadow Drive, North London, N12 [Postcode]
+**Date of Birth:** DD/MM/1986
+**National Insurance Number:** QQ 12 34 56 A
+**Bank Account:** Barclays PLC
+**Account Number:** **** **** **78
+**Sort Code:** 20-56-78
+
+---
+
+**Summary of Expenditures (AquaWorld (Mark) Specific):**
+
+| Date         | Transaction ID | Description                                        | Category           | Amount (GBP) |
+| :----------- | :------------- | :------------------------------------------------- | :----------------- | :----------- |
+| 2025-02-25   | AQW-FLV307-2502 | Fluval 307 Canister Filter (Order Ref: F307-EM921) | Tank Equipment     | £189.00      |
+| **Total AquaWorld (Mark)** | | | | **£189.00** |
+
+---
+
+**Detailed Transaction Log (All Related Expenditures):**
+
+**Ref:** TANK-Q125-001
+**Date:** 2025-01-08
+**Vendor:** Local Fish Store (The Aquatic Nook)
+**Description:** Water testing kit refill (API Master Test Kit), Seachem Flourish Excel (500ml)
+**Details:** Initial attempts to combat algae bloom and monitor parameters. Algae started 2024-12-10.
+**Category:** Water Treatment & Testing
+**Amount (GBP):** £28.50
+**Payment Method:** Debit Card (Barclays)
+
+**Ref:** TANK-Q125-002
+**Date:** 2025-01-16
+**Vendor:** Online Aquatics Retailer (FishFrenzy.co.uk)
+**Description:** eSHa 2000 (20ml) - Aquarium Treatment
+**Details:** Purchased after the loss of two neon tetras and a guppy on 2025-01-15, suspected columnaris. Treatment administered as per instructions.
+**Category:** Fish Health & Medication
+**Amount (GBP):** £9.99
+**Payment Method:** PayPal (linked to Barclays)
+
+**Ref:** TANK-Q125-003
+**Date:** 2025-02-01
+**Vendor:** Garden Centre (Holloways Garden Centre - Aquatics Section)
+**Description:** Aquarium siphon gravel cleaner, 25L water change bucket, microfibre cleaning cloths (aquarium specific)
+**Details:** To facilitate more frequent and effective 30% water changes (twice weekly).
+**Category:** Maintenance Tools
+**Amount (GBP):** £22.75
+**Payment Method:** Debit Card (Barclays)
+
+**Ref:** TANK-Q125-004
+**Date:** 2025-02-15
+**Vendor:** Local Fish Store (The Aquatic Nook)
+**Description:** Live plants (Anubias nana, Java fern) - 3 pots
+**Details:** Attempt to outcompete algae for nutrients and improve tank aesthetics.
+**Category:** Tank Decor & Live Plants
+**Amount (GBP):** £18.00
+**Payment Method:** Debit Card (Barclays)
+
+**Ref:** TANK-Q125-005
+**Date:** 2025-02-25
+**Vendor:** AquaWorld (Mark)
+**Description:** Fluval 307 Canister Filter (Order Ref: F307-EM921)
+**Details:** Ordered to replace the old internal filter, aiming for superior filtration and improved water clarity. Cost: £189.00. Delivery expected 2025-02-28.
+**Category:** Tank Equipment
+**Amount (GBP):** £189.00
+**Payment Method:** Debit Card (Barclays)
+
+**Ref:** TANK-Q125-006
+**Date:** 2025-03-05
+**Vendor:** Online Aquatics Retailer (CO2Pro.co.uk)
+**Description:** Dennerle CO2 Regulator Service Kit, Replacement CO2 cylinder (500g)
+**Details:** To address the inconsistent CO2 system, bubble counter showing irregular flow. Hoping to stabilise plant growth and further combat algae.
+**Category:** CO2 System Maintenance
+**Amount (GBP):** £45.50
+**Payment Method:** Credit Card (Santander)
+
+**Ref:** TANK-Q125-007
+**Date:** 2025-03-18
+**Vendor:** DIY Superstore (B&Q)
+**Description:** LED Aquarium Light Timer (digital), Blackout blind material (small piece)
+**Details:** To precisely control light duration (currently at 6 hours) and experiment with brief blackout periods for algae reduction. Claire says the tank is an eyesore right now and wants it sorted before her mum Diane visits at Easter (2025-04-18).
+**Category:** Lighting & Environment Control
+**Amount (GBP):** £17.99
+**Payment Method:** Debit Card (Barclays)
+
+**Ref:** TANK-Q125-008
+**Date:** 2025-04-02
+**Vendor:** AquaWorld (Mark)
+**Description:** Phosphate Remover Media (Seachem PhosGuard), Filter media bags (x2)
+**Details:** Purchased after the last water test (2025-02-23) showed phosphate levels at 1.5ppm (too high). To be used in the new Fluval 307 filter.
+**Category:** Water Treatment & Filter Media
+**Amount (GBP):** £15.20
+**Payment Method:** Debit Card (Barclays)
+
+**Ref:** TANK-Q125-009
+**Date:** 2025-04-10
+**Vendor:** Pet Superstore (Pets at Home)
+**Description:** Aquarium lid clips (x4), heavy-duty double-sided tape
+**Details:** To secure the tank lid more effectively. Whiskers (cat) keeps sitting on the tank lid, causing minor displacement.
+**Category:** Accessories & Security
+**Amount (GBP):** £7.50
+**Payment Method:** Debit Card (Barclays)
+
+**Ref:** TANK-Q125-010
+**Date:** 2025-05-15
+**Vendor:** Local Fish Store (The Aquatic Nook)
+**Description:** 2x Corydoras (juvenile) - replacement stock
+**Details:** Replenishment following previous losses and to maintain a healthy social group for the corydoras.
+**Category:** Livestock
+**Amount (GBP):** £9.00
+**Payment Method:** Debit Card (Barclays)
+
+---
+
+**Total Expenditures for Reporting Period:**
+
+*   **AquaWorld (Mark) Specific:** £189.00 + £15.20 = **£204.20**
+*   **Other Vendors:** £28.50 + £9.99 + £22.75 + £18.00 + £45.50 + £17.99 + £7.50 + £9.00 = **£159.23**
+
+**Grand Total Expenses:** £204.20 + £159.23 = **£363.43**
+
+---
+
+**Notes & Observations:**
+
+*   **Algae Bloom:** Ongoing efforts to control the green algae bloom have shown some improvement since the installation of the Fluval 307 filter and the introduction of phosphate remover and live plants. However, continued vigilance is required. The initial algae bloom started around 2024-12-10.
+*   **Water Parameters:** Latest test (2025-02-23) showed pH 7.2, ammonia 0, nitrite 0, nitrate 25ppm, phosphate 1.5ppm. The phosphate remover media from AquaWorld (Mark) is expected to bring down the phosphate levels.
+*   **Fish Health:** The eSHa 2000 treatment appears to have been effective in stopping further losses after the initial fish deaths (two neon tetras, one guppy) on 2025-01-15. Current stock: 8 neon tetras, 5 guppies, 4 corydoras, 2 bristlenose plecos, 6 cherry shrimp.
+*   **CO2 System:** The Dennerle CO2 system's inconsistency (irregular bubble counter flow) is being addressed with the recent service kit and cylinder replacement. This is crucial for healthy plant growth and nutrient uptake, which in turn helps combat algae.
+*   **Family Input:** Claire's concern regarding the tank's appearance before Diane's visit (2025-04-18) highlighted the urgency of these improvements. Progress has been made, and the tank is looking significantly better.
+*   **Cat Intervention:** Whiskers' habit of sitting on the tank lid necessitated the purchase of additional clips to prevent accidental disruptions.
+
+---
+
+**Approval:**
+
+**Account Holder Signature:** E. Marsh
+**Date:** 2025-07-25
+
+---
+**END OF REPORT**

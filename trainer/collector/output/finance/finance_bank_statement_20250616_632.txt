@@ -1,0 +1,74 @@
+First National Bank
+123 Main Street
+Anytown, USA 12345
+
+**Account Statement**
+
+**Account Holder:** John Smith
+**Address:** 456 Oak Avenue, Anytown, USA 12345
+**Account Number:** ******1234
+**Statement Period:** 2025-05-17 to 2025-06-16
+**Statement Date:** 2025-06-16
+**Currency:** USD
+
+**Summary of Your Account**
+
+Previous Balance (as of 2025-05-16): $5,210.75
+Total Deposits/Credits: $3,500.00
+Total Withdrawals/Debits: $2,185.30
+**New Balance (as of 2025-06-16): $6,525.45**
+
+**Transaction Details**
+
+| Date       | Description                                  | Reference Number   | Amount (Debit) | Amount (Credit) |
+|:-----------|:---------------------------------------------|:-------------------|:---------------|:----------------|
+| 2025-05-17 | Recurring Bill Pay - Internet Service        | BP-78901234        | $75.00         |                 |
+| 2025-05-18 | ACH Deposit - Payroll                          | ACH-98765432       |                | $2,500.00       |
+| 2025-05-19 | Debit Card Purchase - Grocery Store (FOODMART) | DC-10293847        | $112.50        |                 |
+| 2025-05-20 | ATM Withdrawal - First National Bank ATM       | ATM-56789012       | $100.00        |                 |
+| 2025-05-22 | Online Transfer - Savings Account            | OT-23456789        | $300.00        |                 |
+| 2025-05-23 | Debit Card Purchase - Gas Station (SPEEDY GAS) | DC-34567890        | $55.20         |                 |
+| 2025-05-25 | Check Cleared - #1001 (Apartment Rent)         | CHK-1001           | $1,500.00      |                 |
+| 2025-05-26 | ACH Deposit - Freelance Project Payment      | ACH-11223344       |                | $1,000.00       |
+| 2025-05-27 | Debit Card Purchase - Online Retailer (AMZ)  | DC-98765432        | $89.99         |                 |
+| 2025-05-29 | Recurring Bill Pay - Utility Company         | BP-12345678        | $120.00        |                 |
+| 2025-05-31 | Debit Card Purchase - Restaurant (THE CHOP HOUSE)| DC-22334455        | $65.80         |                 |
+| 2025-06-01 | Deposit - Mobile Check Deposit                 | MCD-67890123       |                | $0.00           |
+| 2025-06-03 | Debit Card Purchase - Bookstore (READERS Nook) | DC-77889900        | $35.00         |                 |
+| 2025-06-05 | Online Transfer - Investment Account         | OT-99887766        | $200.00        |                 |
+| 2025-06-07 | Debit Card Purchase - Hardware Store (HOME DEPOT)| DC-11223344        | $45.61         |                 |
+| 2025-06-10 | Interest Earned                              | INT-00000001       |                | $0.00           |
+| 2025-06-12 | Debit Card Purchase - Coffee Shop (DAILY GRIND)| DC-55667788        | $6.20          |                 |
+| 2025-06-14 | ACH Debit - Gym Membership                   | ACH-44556677       | $40.00         |                 |
+
+**Daily Balance Summary**
+
+| Date       | Balance     |
+|:-----------|:------------|
+| 2025-05-16 | $5,210.75   |
+| 2025-05-17 | $5,135.75   |
+| 2025-05-18 | $7,635.75   |
+| 2025-05-19 | $7,523.25   |
+| 2025-05-20 | $7,423.25   |
+| 2025-05-22 | $7,123.25   |
+| 2025-05-23 | $7,068.05   |
+| 2025-05-25 | $5,568.05   |
+| 2025-05-26 | $6,568.05   |
+| 2025-05-27 | $6,478.06   |
+| 2025-05-29 | $6,358.06   |
+| 2025-05-31 | $6,292.26   |
+| 2025-06-01 | $6,292.26   |
+| 2025-06-03 | $6,257.26   |
+| 2025-06-05 | $6,057.26   |
+| 2025-06-07 | $6,011.65   |
+| 2025-06-10 | $6,011.65   |
+| 2025-06-12 | $6,005.45   |
+| 2025-06-14 | $5,965.45   |
+| 2025-06-16 | $6,525.45   |
+
+**Important Information:**
+* Please examine this statement carefully and report any discrepancies within 30 days of the statement date.
+* For questions regarding your account, please contact us at 1-800-555-1234 or visit our website at www.firstnationalbank.com.
+* This statement is for informational purposes only and does not constitute a legal record of transactions.
+
+**Thank you for banking with First National Bank.**

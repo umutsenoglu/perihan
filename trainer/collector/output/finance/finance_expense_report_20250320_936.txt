@@ -1,0 +1,26 @@
+**EXPENSE REPORT**
+
+**Account Holder:** Ethan Marsh
+**Company:** Luke Marsh
+**Date:** 2025-03-20
+**Currency:** GBP
+
+**Recipient Account Details (Luke Marsh):**
+*   **Bank:** Bank of Scotland
+*   **Sort Code:** 80-05-67
+*   **Account Number:** ******9102
+
+**Payment Summary:**
+
+| Date       | Description                                                                                                                                                                                                                                                                  | Amount (GBP) |
+| :--------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------- |
+| 2025-03-18 | Contribution towards joint solicitor fees for George Marsh Estate (Bristol property discussions). As per agreement following Hannah's compromise on 2025-02-03. Reference: MARSH-ESTATE-SOL-2025-Q1.                                                                           | 1,250.00     |
+| 2025-03-19 | Reimbursement for shared subscription to Chess.com Premium (annual renewal for both accounts). Paid by Luke on 2025-03-10, prior to our resumption of occasional games.                                                                                                        | 19.99        |
+| 2025-03-20 | Transfer for Mum (Janet Marsh) – agreed contribution for new garden furniture for her Bristol home. She mentioned it needed replacing after the winter, and said she'd discussed it with you earlier this month.                                                               | 150.00       |
+|            |                                                                                                                                                                                                                                                                              |              |
+| **TOTAL**  |                                                                                                                                                                                                                                                                              | **1,419.99** |
+
+**Notes:**
+
+Payment initiated by Ethan Marsh (Barclays Account: ******3456) from 14 Elmwood Drive, North London.
+This report details expenses paid to Luke Marsh, or contributions made on his behalf, reflecting recent joint financial commitments.

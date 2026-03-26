@@ -1,0 +1,73 @@
+**Barclays Platinum Visa Statement**
+
+**Statement Date:** 07 December 2024
+**Account Holder:** Mr. Ethan Marsh
+**Address:** 14 Elmwood Drive, Highgate, London N6 5AB
+**Account Number:** ************0123
+**Sort Code:** 20-17-64
+**Credit Limit:** £12,500.00
+**Available Credit:** £7,189.28
+**Payment Due Date:** 02 January 2025
+**Minimum Payment Due:** £145.00
+
+---
+
+**Summary of Account Activity**
+
+**Previous Balance:** £5,012.85
+**Payments Received:** -£5,012.85 (Thank you for your payment)
+**New Purchases & Other Debits:** £5,310.72
+**Cash Advances:** £0.00
+**Interest Charged:** £0.00
+**Annual Fee:** £0.00
+
+**New Balance:** £5,310.72
+
+---
+
+**Transactions for the Period 08 November 2024 - 07 December 2024**
+
+**Date | Transaction Description | Reference | Amount (GBP)**
+---|---|---|---
+08 Nov | Barclays Mortgage Direct Debit | DD20241108EJM | £1,850.00
+08 Nov | Payment to Barclays (Thank you) | PMT20241108EJM | -£5,012.85
+09 Nov | Amazon UK - "Lily's Christmas Jumper" | AMZUK456789 | £24.99
+09 Nov | BP Express, Archway Road | BPX20241109 | £62.50
+10 Nov | AquaWorld Aquatics, Finchley Rd | AQW20241110 | £48.75 (New filter media, frozen bloodworms)
+11 Nov | Tesco Superstore, Highgate | TSC20241111 | £89.40 (Weekly shop)
+12 Nov | Little Stars Nursery Fees | NRY20241112 | £850.00 (Max's monthly fees)
+13 Nov | Deliveroo - Pizza East, Shoreditch | DLR20241113 | £38.20 (Dinner with Claire)
+15 Nov | Amazon UK - "Photography Lens Filter Set" | AMZUK987654 | £115.00
+17 Nov | Waitrose, Muswell Hill | WTR20241117 | £45.30 (Dinner party ingredients for Janet's visit)
+18 Nov | Trainline - London to Bristol (Return) | TLN20241118 | £88.50 (For Mum's visit)
+19 Nov | QPA Primary School - School Trip Deposit | QPA20241119 | £15.00 (Lily's science museum trip)
+20 Nov | PureGym Highgate | PGY20241120 | £32.99 (Monthly membership)
+21 Nov | National Rail - Manchester (Hannah's Birthday) | NRL20241121 | £65.80 (Brother Luke's train ticket, reimbursed later)
+22 Nov | The Fabled Fox Pub, Highgate | FBL20241122 | £27.50 (Drinks with colleagues after work)
+23 Nov | Halfords, Tottenham Hale | HLF20241123 | £12.99 (Bike chain cleaner)
+24 Nov | Amazon UK - "Smart Home Hub" | AMZUK112233 | £89.99 (Christmas gift for Claire)
+25 Nov | GP Practice, Highgate Medical Centre | GPM20241125 | £0.00 (Asthma review - NHS)
+26 Nov | Apple Store, Covent Garden | APS20241126 | £49.00 (New phone charger and cable)
+27 Nov | Ocado - Online Grocery Order | OCD20241127 | £112.75
+28 Nov | Vue Cinema, Finchley Road | VUE20241128 | £34.80 (Family trip to see new animated film)
+29 Nov | Amazon UK - "Tropical Fish Food Bulk" | AMZUK445566 | £18.50
+30 Nov | Zara, Westfield Stratford City | ZAR20241130 | £55.00 (New trousers for work)
+01 Dec | Tesco Superstore, Highgate | TSC20241201 | £78.10
+02 Dec | Barclays Mortgage Direct Debit | DD20241202EJM | £1,850.00
+03 Dec | AquaWorld Aquatics, Finchley Rd | AQW20241203 | £22.00 (New live plants for aquarium)
+04 Dec | E-Scooter Rental (TfL) | SCR20241204 | £4.50 (Quick trip to meet Claire)
+05 Dec | The Crown & Greyhound, Dulwich | CGH20241205 | £68.50 (Dinner with Luke and Hannah while they were in London)
+06 Dec | Amazon UK - "Kids' Art Supplies" | AMZUK778899 | £19.99
+
+---
+
+**Important Information**
+
+*   Please ensure your payment reaches us by the Payment Due Date to avoid late payment fees and interest charges.
+*   Your Annual Percentage Rate (APR) for purchases is 24.9% (variable).
+*   For any queries regarding this statement, please contact us on 0345 7345 345 or visit your nearest Barclays branch.
+*   Thinking of switching to an electric car? Explore our green financing options online or speak to an advisor.
+
+**Thank you for choosing Barclays.**
+
+Barclays Bank UK PLC. Registered in England. Registered no. 8488886. Registered office: 1 Churchill Place, London E14 5HP. Authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register No. 759676).

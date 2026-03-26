@@ -1,0 +1,112 @@
+**HMRC Self-Assessment Tax Return Summary - Tax Year 2022-2023**
+
+**Issued:** 26 January 2024
+**Reference:** SA302-EM2023-98765
+**UTR:** 12345 67890
+
+**Account Holder:** Mr. Ethan Marsh
+**Date of Birth:** 17/08/1985
+**National Insurance Number:** AB123456C
+**Address:** 14 Elmwood Drive, North London, N14 5BP
+
+---
+
+**Summary of Income**
+
+**1. Employment Income (Fintech Solutions Ltd)**
+*   **Gross Salary:** £78,500.00
+*   **Benefits in Kind (Company Car Allowance):** £4,800.00
+*   **Total Employment Income:** £83,300.00
+*   **Tax Deducted at Source (PAYE):** £17,394.00
+*   **National Insurance Contributions (NICs):** £5,845.20
+*   **Employer Reference:** 123/AB45678
+
+**2. Self-Employment Income (Freelance Web Development - "Marsh Digital")**
+*   **Gross Turnover:** £6,750.00
+*   **Allowable Expenses:**
+    *   Software Subscriptions (Adobe, GitHub Pro): £420.00
+    *   Home Office Costs (proportion of utilities/broadband): £360.00
+    *   Professional Development (Online Course - Python for Data Science): £250.00
+    *   Business Insurance: £180.00
+    *   Marketing/Website Hosting: £95.00
+    *   **Total Allowable Expenses:** £1,305.00
+*   **Net Self-Employment Profit:** £5,445.00
+
+**3. Other Income**
+*   **Bank Interest (Barclays Instant Saver - Joint Account with Claire):** £185.00 (Ethan's share: £92.50)
+*   **Dividends (UK Stocks - Low-Risk Portfolio inherited from Father, George Marsh):** £310.00
+*   **Total Other Income:** £402.50
+
+**Total Gross Income for Tax Year 2022-2023:** £89,147.50
+
+---
+
+**Summary of Deductions & Allowances**
+
+*   **Personal Allowance:** £12,570.00
+*   **Pension Contributions (Relief at Source - NEST Scheme via Fintech Solutions):** £3,925.00
+*   **Gift Aid Donations (Oxfam - Monthly Direct Debit; RSPCA - one-off donation for Lily's school project):** £360.00 (Grossed up: £450.00 for tax purposes)
+*   **Professional Subscriptions (BCS - British Computer Society):** £145.00
+
+**Total Deductions & Allowances:** £17,090.00
+
+---
+
+**Tax Calculation**
+
+*   **Taxable Income:** £89,147.50 - £12,570.00 = £76,577.50
+
+*   **Tax Due on Employment Income (PAYE):**
+    *   Basic Rate (20% on £37,700): £7,540.00
+    *   Higher Rate (40% on £38,877.50): £15,551.00
+    *   **Total PAYE Tax Due:** £23,091.00
+
+*   **Tax Due on Self-Employment & Other Income:**
+    *   Basic Rate (20% on £5,847.50 - assuming remaining basic rate band): £1,169.50
+    *   **Total Tax Due on Self-Employment & Other Income:** £1,169.50
+
+*   **Total Income Tax Due (Before Credits):** £24,260.50
+
+*   **Less: Tax Deducted at Source (PAYE):** -£17,394.00
+*   **Less: Tax Relief for Pension Contributions:** -£785.00 (20% of £3,925.00)
+*   **Less: Tax Relief for Gift Aid:** -£90.00 (20% of £450.00)
+
+**Net Income Tax Payable:** £6,001.50
+
+---
+
+**National Insurance Contributions (NICs)**
+
+*   **Class 1 NICs (deducted via PAYE):** £5,845.20 (already paid)
+*   **Class 2 NICs (Self-Employment):** £179.40 (52 weeks x £3.45)
+*   **Class 4 NICs (Self-Employment - on profits over £11,908, not applicable for your profit level):** £0.00
+
+**Total NICs Payable:** £179.40
+
+---
+
+**Total Amount Due to HMRC**
+
+*   **Net Income Tax Payable:** £6,001.50
+*   **Class 2 NICs:** £179.40
+
+**Total Payment Due:** £6,180.90
+
+---
+
+**Payment Details**
+
+*   **Payment Deadline:** 31 January 2024
+*   **Method:** Bank Transfer (Faster Payments)
+*   **HMRC Bank Account:**
+    *   **Account Name:** HMRC VAT
+    *   **Sort Code:** 08-32-10
+    *   **Account Number:** 12345678
+*   **Reference:** Your UTR (12345 67890)
+
+**Important Notes:**
+*   A 'Payment on Account' for the 2023-2024 tax year may be required if your tax bill is over £1,000. This summary does not include any 'Payments on Account' for the current year.
+*   Please ensure your payment reference is your UTR to avoid delays in processing.
+*   This summary reflects the information submitted in your Self-Assessment Tax Return for the tax year 2022-2023. If any details are incorrect or you believe there has been an error, please contact HMRC directly. You can also view your full tax calculation breakdown via your Government Gateway account.
+
+*Remember to keep all your records for at least 6 years after the tax year they relate to, including invoices for your freelance work and receipts for Lily and Max's school fees, just in case.*

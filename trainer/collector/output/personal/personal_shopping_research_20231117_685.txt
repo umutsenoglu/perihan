@@ -1,0 +1,51 @@
+2023-11-17, Friday
+Just got back from tucking Max in, Lily’s nearly asleep, Claire's still downstairs, probably tidying up the last bits of the dinner massacre. The house is finally quiet. Or, quiet-ish. Can still hear the hum of the fridge and the faint whirring of the filter on the discus tank in the living room. Another week done. And what a week.
+
+God, I’m exhausted. My back is properly stiff tonight, pretty sure it’s a direct result of being hunched over the keyboard for 10+ hours a day, trying to debug that bloody payment processing module. Richard keeps pushing for an early deployment, but James is being sensible and pushing back on the testing timeline. Priya’s doing her best to keep us all sane, but the pressure is definitely mounting for this migration. Feels like my brain is just static.
+
+Started the day feeling groggy, as usual. Max had a full-on meltdown about his Weetabix not being "round enough." Round? It's Weetabix, mate, it's a brick. Lily was actually pretty good, just needed help finding her favourite unicorn hair clip – classic. Claire was a saint, as always, managed to get them both fed and out the door to QPA and Little Stars, despite my less-than-stellar help this morning. I swear, the early morning scramble is a competitive sport in this house. My mild asthma felt a bit twitchy with the cold air, and the seasonal allergies are always lurking, even in November. Thought I caught a whiff of some late-season pollen on the walk to the tube.
+
+The commute was its usual sardine-can experience. Tried to zone out with some podcast about micro-breweries, but my mind kept drifting to work. Kept replaying that code segment. Then, weirdly, my mind shifted to kitchen cabinets. Seriously, I need to compartmentalise.
+
+Lunch was a sad desk salad, wolfed down while trying to review PRs. James messaged me about the "critical path dependencies" again. Yeah, yeah, I know. It's all critical. Everything's critical.
+
+The afternoon was a blur of Jira tickets and Slack messages. Felt like I was constantly context-switching, trying to fix a bug in the legacy system while simultaneously planning the architecture for the new one. My head felt like it was going to explode. The only break was when I remembered I needed to check my tropical fish – saw the water temp was a degree or two low, quickly adjusted the heater. Small win.
+
+Then, walking home, the thought of the kitchen just hit me again, full force. It’s such a huge undertaking, and it feels like another massive project on top of everything else. Claire's been really good about it, but I know she's secretly stressing too.
+
+We finally got a chance to sit down after the kids were in bed. Claire poured us both a cuppa, and we opened up the laptop. Those quotes...
+
+*   **BuildRight Ltd (Steve): £18,500** – this one still feels the most realistic. Steve seems like a straight shooter.
+*   **Modern Spaces: £24,200** – felt a bit steep, even for the slightly fancier finishes they talked about. Plus, they seemed less flexible.
+*   **KitchenCraft:** Radio silence after the initial visit. Just rude, frankly.
+
+So, it's really down to BuildRight. Steve came back on 3rd January 2025 for those detailed measurements. Felt like ages ago, even though it's next year. The quote, BR-Q-2025-0147, arrived 10th Jan 2025. It details new Howdens cabinets, quartz worktops (Claire's non-negotiable), new plumbing for the dishwasher relocation (finally, get it out of that corner), rewiring for additional sockets (god yes, enough with the extension leads), tiling, and painting. Sounds comprehensive. Four weeks starting 7th April 2025.
+
+The big one: deposit of £5,550 (30%) due by 21st March 2025. That's a chunky amount, but manageable. We’ve been saving, thank God. Still, feels like a lot to commit. Then the rest in two installments.
+
+Claire’s still absolutely fixated on an island. "But Ethan, everyone has an island!" she says. And I get it, I really do. It would make the space so much more functional, for cooking, for the kids to do homework while we're making dinner, for just gathering. But Steve was pretty clear when he was here: the space is just too narrow for a proper island without feeling cramped. It’s a 3-bed semi-detached, not a sprawling mansion.
+
+This is where the debate always grinds to a halt. Claire wants to push for extending into the dining area. It's an option, definitely. We've got the space. But then you’re talking about proper building regs, planning permission, structural engineer, knocking down walls... the cost would balloon, and the disruption would be immense. I mean, we're already talking about essentially living in a building site for a month or more. Adding another few weeks, maybe months, and a huge chunk of cash for an extension? It feels like we're biting off more than we can chew, especially with this work project looming.
+
+I tried to explain my hesitations again tonight. She just sighed. "But it would be *perfect*, Ethan." I know, love, I know. But perfect often means bankrupt. We need to be realistic. We have a Barclays mortgage, and while we're doing okay, we don't have unlimited funds.
+
+I did spend some time looking at appliances on Currys and John Lewis earlier this week, trying to get ahead. Claire wants an induction hob, definitely. And an integrated fridge-freezer – less visual clutter. I’m thinking a decent oven, maybe even a double oven if we can swing it. And a proper quiet dishwasher. Max can make enough noise on his own. Trying to find a good package deal. Everything's so expensive.
+
+I feel this constant pull between the future — our dream kitchen, the kids growing up in a beautiful home — and the present — the crushing weight of work deadlines, the daily grind, the constant juggle. My dad, George, he always had a knack for practical problem-solving. Wish I could talk to him about this. He'd probably tell me to stop faffing and just get on with it, or he'd have some ingenious, cheap solution involving secondhand units and his toolbox. Miss him, especially with these big life decisions.
+
+Spoke to Mum (Janet) briefly today, she called to see how work was going. Didn't burden her with the kitchen stress, just kept it light. She’s still in Bristol, sounded well. Hannah texted me about her new photography gig in Manchester, which is cool. Luke called from Edinburgh, complaining about the Scottish weather, as always. Good to hear their voices, a little reminder that there's life beyond London and fintech.
+
+I need to get some sleep. Tomorrow's Saturday, which means trying to catch up on some cycling if the weather holds, maybe taking Lily to her swimming lesson. And then, probably more kitchen research. I should start a proper spreadsheet for the appliance comparison.
+
+Things to do:
+- [ ] Ping Steve at BuildRight next week for a quick chat, clarify a couple of things on the quote.
+- [ ] Revisit Currys/John Lewis sites for oven/hob combos.
+- [ ] Talk to Claire again about the island vs. extension dilemma. Needs a decision soon if we’re going to hit that deposit deadline.
+- [ ] Check Barclays account for savings balance.
+- [ ] Remember to top up the tropical fish food.
+- [ ] Take out the recycling.
+- [ ] Try not to think about work. (Fail.)
+
+My back is really aching now. Might try some stretches before bed. And maybe some allergy meds, just in case. Feeling that familiar fatigue, the kind that no amount of sleep seems to fix. Just a deep, bone-weary exhaustion.
+
+Another day, another step closer to... something. Hopefully a new kitchen. Hopefully a finished work project. Hopefully a bit less stress. One can dream, right? Goodnight, journal.

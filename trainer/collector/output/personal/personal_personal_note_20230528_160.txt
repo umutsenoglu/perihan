@@ -1,0 +1,24 @@
+May 28, 2023
+
+Well, today was… a day. Hannah called just before lunch, said her old laptop finally gave up the ghost. She wanted advice, obviously. Two hours. Two whole hours talking about processor speeds, SSD vs. HDD (still can’t believe she didn’t know the difference), RAM, screen resolution. Felt like I was back in university, explaining basic tech concepts. Bless her heart, she tries, but it’s like talking to a wall sometimes. Ended up just sending her a few links to Dell and HP models, hoping she just picks one. Told her to get something with at least 16GB RAM and an i5, or AMD equivalent. She’ll probably get something pink with flashing lights.
+
+That call ate up most of my lunch break and then some. Had to rush through a quick stand-up with James and Priya – thankfully the payment gateway integration is mostly on track, Richard’s been pretty solid with the backend stuff. Just need to review his PR later tonight if I have any energy left.
+
+Honestly, the laptop thing felt like a welcome distraction, in a weird way. Mum called this morning too, before I even got to my desk. Sounded a bit breathless. Said she’d had a "wobbly turn" again. Just the usual, she tried to brush it off, but I could hear it in her voice. Claire spent a good 45 minutes on the phone with her after school, trying to coax more details out. It’s getting worse, isn’t it? The thought of her alone in Bristol, with Dad gone… it just weighs on me constantly. Hannah and Luke are just as worried. We need to plan that visit soon. Like, properly plan it. Not just 'soon'. Next month, definitely. Maybe the weekend of the 17th? Need to check Claire’s school calendar and Lily’s swimming lessons.
+
+Kids were manic when I got home. Lily had a story she absolutely HAD to tell me about Mrs. Henderson’s cat, which apparently came to school today (it didn’t). Max was just a blur of noise and sticky fingers, demanding a new train track layout. Love those little monsters, but god, the energy. Claire was amazing as always, got dinner on the table – shepherd's pie, my favourite. Max mostly just poked at his.
+
+Managed to sneak in ten minutes with the fish tank after dinner, just watching the rummynose tetras shoal. So calming. Had a brief twinge in my lower back after that long day hunched over the laptop, reminds me I need to actually use the standing desk more. Or get on the bike. The new route through Highgate Wood looked promising.
+
+Need to remember to pay the Barclays mortgage direct debit is due next week. And Claire mentioned the VW is due for a service soon. Still thinking about switching to electric, but the costs… The charging points near us are still a bit sparse, too.
+
+Tomorrow, back to the fintech grind. And another check-in with Mum, first thing. Hope she’s okay.
+
+Notes for tomorrow / tasks:
+- [ ] Check Mum’s calendar for mid-June, coordinate with Hannah/Luke re: visit
+- [ ] Review Richard's PR (payment gateway)
+- [ ] Book VW Golf service
+- [ ] Look at standing desk ergonomics – adjust height
+- [ ] Remind Claire to re-order Lily's swimming goggles
+- [ ] Send Hannah a follow-up link for that Dell Inspiron
+- [ ] Maybe a quick bike ride before work if the pollen count isn't too high (allergies are killers atm)

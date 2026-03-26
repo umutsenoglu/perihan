@@ -1,0 +1,139 @@
+## Personal Research Notes: Aquarium Algae Control
+
+**Date: 2024-10-27 (Sunday)**
+
+**Subject: Algae – The Green Menace (125L Community Tank)**
+
+**Current State of Play:**
+
+Right, the 125L tank (the main community one in the living room) is starting to look a bit… verdant. Not in a good, lush, planted way. More in a "someone dumped a bucket of pond water in here" way. It’s mostly that green spot algae on the glass and the leaves of the Anubias and the Amazon Swords, but I’m seeing some hair algae starting to creep in on the Ludwigia and even a bit of black beard algae (BBA) on the filter intake tube and some of the driftwood. It’s annoying. I put a lot of effort into making this tank look good, and seeing it slowly get engulfed by slime is just frustrating. Lily even pointed out yesterday, "Daddy, why is the fish tank fuzzy?" Can’t argue with a seven-year-old’s observation skills.
+
+Claire’s also noticed. She made a comment last night while we were watching that new Netflix documentary about Roman Britain, "Ethan, is the tank meant to look like that? It's getting a bit… mossy." Bless her, she tries to be supportive of the hobby, but she definitely prefers it when it looks pristine. And frankly, so do I.
+
+**Initial Thoughts/Brainstorm:**
+
+Okay, deep breath. Algae isn't usually a sign of imminent disaster, but it *is* a sign of an imbalance. I need to get on top of this before it spirals out of control. I’ve dealt with this before, but it feels more persistent this time. My usual tricks (more frequent water changes, scrubbing the glass) aren't cutting it.
+
+**Potential Causes (Ethan's Hypothesis):**
+
+1.  **Too much light:**
+    *   **Duration:** Currently, lights are on for about 9 hours a day (10 am - 7 pm). Maybe too long? The tank gets some indirect natural light from the bay window in the living room, but not direct sun. Still, London grey skies don’t always mean low light.
+    *   **Intensity:** Running the Fluval Plant 3.0 at 70% intensity. Maybe dial it back a bit? It's great for the plants, but perhaps a bit *too* great for the algae too.
+    *   **Reflection:** Could the light reflecting off the white wall behind the tank be a factor? Seems unlikely to be a primary cause, but worth considering.
+
+2.  **Nutrient Imbalance:**
+    *   **Fertilisation:** I'm dosing Tropica Premium Fertiliser twice a week (Monday and Thursday) – 5ml each time. Is this too much, or not enough of the *right* nutrients? Could be an excess of phosphates or nitrates.
+    *   **Fish Load:** The tank is pretty well stocked:
+        *   6 x Neon Tetras
+        *   6 x Harlequin Rasboras
+        *   4 x Corydoras (Panda)
+        *   2 x German Blue Rams
+        *   1 x Bristlenose Pleco (Alfred, he's getting quite big!)
+        *   1 x Siamese Algae Eater (SAE – "Sonic")
+        *   A handful of Amano Shrimp
+        *   A few Nerite Snails
+        That's a fair amount of bioload. Max feeds the fish occasionally (under strict supervision), and sometimes, let's be honest, he probably gives them a pinch more than he should. Lily's usually better about it. Claire generally just lets me do it.
+    *   **Feeding:** I'm feeding Tropica flake food once a day, and frozen bloodworms/brine shrimp every other day. Is too much food getting to the bottom and breaking down? I'm usually careful, but with the kids sometimes helping, it's not always perfect.
+
+3.  **CO2/Gas Exchange:**
+    *   **CO2:** I’m running a CO2 system (DIY citric acid/baking soda generator, the one I built based on the YouTube tutorial last year). Bubble count is around 1 bubble per second. The drop checker is usually green, sometimes a touch on the light green side by the end of the day. Is it enough? Is it consistent enough? Perhaps the diffuser is getting clogged? (It probably needs a clean anyway). Good CO2 helps plants outcompete algae.
+    *   **Surface Agitation:** The filter outflow creates a good ripple on the surface. Don't think oxygen is an issue, but poor gas exchange *can* impact CO2 levels for the plants.
+
+4.  **Water Parameters:**
+    *   **Testing:** Haven't done a full test kit run in a couple of weeks. Need to check:
+        *   Nitrates (NO3)
+        *   Phosphates (PO4)
+        *   GH/KH
+        *   pH
+        *   Ammonia/Nitrite (though with established tank, should be 0)
+    *   **Water Changes:** Doing 25% weekly. Should I increase frequency or volume for a bit to combat this?
+
+**Specific Algae Types & Their Solutions (Quick Mental Scan):**
+
+*   **Green Spot Algae (GSA):** Usually low phosphates, or too much light. My GSA is mostly on the glass and slow-growing plants.
+*   **Hair Algae:** Often nutrient imbalance (too much iron/traces relative to nitrates/phosphates), or too much light.
+*   **Black Beard Algae (BBA):** Inconsistent CO2, fluctuating nutrients, too much flow around plants it attaches to. This is the one I *really* don't want to get a foothold. It's a nightmare to remove.
+
+**Action Plan - Phase 1 (Immediate & Low Effort):**
+
+1.  **Manual Removal (Tonight/Tomorrow):**
+    *   Scrape glass vigorously. My magnetic scraper works, but for the tougher spots, I'll need the razor blade attachment.
+    *   Siphon out visible algae during water change.
+    *   Physically remove as much hair algae as possible from plants and decor. Might need to trim some heavily affected Ludwigia leaves.
+    *   Give the filter intake and heater a good scrub.
+
+2.  **Water Change (Tonight):** Do a bigger one, maybe 30-40%. Use dechlorinator (Seachem Prime).
+
+3.  **Light Adjustment (Tonight):**
+    *   Reduce light duration: Change timer from 9 hours to 7.5 hours (e.g., 10:30 am - 6 pm).
+    *   Reduce intensity: Drop Fluval Plant 3.0 intensity from 70% to 60%. See how plants react.
+
+4.  **CO2 Check (Tomorrow Morning):**
+    *   Inspect diffuser for clogs. Give it a good clean in a bleach solution if needed (will do this on Monday evening after work).
+    *   Verify bubble count. Make sure the DIY setup isn't running out of juice prematurely. Need to mix a new batch of citric acid/baking soda solution soon anyway.
+
+5.  **Feeding Review (Ongoing):**
+    *   Be more diligent about feeding *less*. Remind Lily and Max (again!) about only one tiny pinch. Or maybe just feed them myself for a week or two. That might be easier than the constant negotiation. Claire can back me up on this.
+
+**Action Plan - Phase 2 (Once Phase 1 is underway & I have more data):**
+
+1.  **Water Parameter Testing (Tomorrow Evening):**
+    *   Full API Freshwater Master Test Kit + Seachem Phosphate kit. Will do this after work. Need to remember where I put the Phosphate kit. Probably in the utility cupboard with the other fish stuff.
+    *   Write down results in my fish log (the Google Sheet).
+
+2.  **Fertilisation Adjustment:**
+    *   *If nitrates are low:* Increase Tropica Premium slightly, or consider adding a dedicated nitrogen source if still experiencing GSA. (Though Tropica Premium is supposed to be all-in-one).
+    *   *If phosphates are low:* This could explain the GSA. I could try adding a tiny bit of Seachem Flourish Phosphorus. Need to be careful though, too much phosphate can cause different algae problems.
+    *   *If nitrates/phosphates are high:* Reduce fertilisation frequency/dose.
+
+3.  **Algae Eaters:**
+    *   Alfred (Bristlenose Pleco) is good for diatom algae, but less so for the tough green stuff.
+    *   Sonic (SAE) is usually a good hair algae eater, but he seems to be slacking lately. Maybe he’s getting too much supplemental food.
+    *   Amano shrimp are decent, but there aren't enough of them to make a huge dent in a serious outbreak.
+    *   Nerite snails are great on glass, but the GSA is really stuck on there.
+    *   **Consider adding more Amano shrimp?** Maybe 3-4 more. They're pretty good value and don't add much bioload. Could pop to Maidenhead Aquatics next weekend if things don't improve.
+
+4.  **Biological Control / UV Sterilizer (Last Resort / Long Term):**
+    *   **UV Sterilizer:** I’ve considered one before for overall water clarity and preventing free-floating algae. It's an investment though. Claire might raise an eyebrow at another piece of fish kit. "Do we *really* need that, Ethan? Max's nursery fees are going up again." She's right, nursery fees are a beast. Little Stars is great, but £1200 a month for 4 days is getting ridiculous. We looked at alternatives, but the local council nurseries had no space, and the other private ones were even more expensive or had terrible reviews. So, a UV sterilizer is definitely a "later" problem, not a "now" one.
+    *   **Blackout:** For a really bad green water or hair algae outbreak, a 3-day blackout can work. Turn off all lights, cover tank, no feeding. This stresses the plants a bit too, but can reset things. Don't think it's *that* bad yet, but something to keep in mind.
+
+**Specific Thoughts on BBA (The Evil One):**
+
+*   BBA is a pain. It often indicates fluctuating CO2 levels or inconsistent nutrients.
+*   **Spot Treatment:** If it persists, I might try spot treating with Seachem Excel (liquid carbon) or even hydrogen peroxide *very carefully* using a syringe with the filter off. I've done this before on a small patch of BBA on a rock – it works, but you have to be precise and watch the fish for stress. Rams are sensitive.
+*   **Flow:** I need to check the flow patterns. Sometimes BBA loves high flow areas. The filter outflow is pretty strong. Is it hitting the affected areas too directly?
+
+**What Claire Said (and my internal monologue):**
+
+"Ethan, did you remember to book Lily's eye test? Her teacher, Mrs. Henderson, mentioned she was squinting a bit in class."
+*Damn, no, completely forgot. Will do that tomorrow during lunch break at work. Online booking for Specsavers. Add to calendar.*
+
+"Are you still thinking about that electric car? Ben from work was raving about his new Tesla, said he saves a fortune on fuel."
+*Yes, still thinking about it. The Golf is fine, but range anxiety, charging points, cost... it's a big jump. And what about that government grant for home chargers? Need to look into that. The London ULEZ expansion means it's probably a good idea long term.*
+
+"Don't forget we're having Janet over for Sunday lunch next week. She mentioned wanting to see the new photos from the Peak District trip."
+*Right, Mum. Peak District photos. Need to sort and edit those. And maybe get a print for her. The Fuji X-T4 takes cracking photos, but the processing takes time.*
+
+"Max tried to feed the fish again this morning. I had to stop him before he dumped half the pot in. He said 'Fishy hungry, Mummy!'"
+*Figures. He's a sweet kid, but fish food is not a toy. This reinforces my decision to take over feeding completely for a bit.*
+
+**Next Steps (Tomorrow – Monday 28th October):**
+
+*   **Work:** Normal software engineering grind. Stand-up at 9:30. Project Alpha sprint planning. Need to get that PR reviewed for the payment gateway integration.
+*   **Lunch Break:** Book Lily’s eye test. Check Specsavers online.
+*   **Evening:**
+    *   Water change (30-40%).
+    *   Manual algae removal.
+    *   Reduce light duration and intensity.
+    *   Test water parameters (Nitrates, Phosphates, GH, KH, pH). Log results.
+    *   Clean CO2 diffuser.
+    *   Remind Claire about the feeding moratorium for the kids.
+    *   **Check:** Is the filter due for a clean? Probably. I usually clean the filter media every 4-6 weeks. Last clean was about 5 weeks ago. A clogged filter can reduce flow and impact nutrient cycling. Add to this week’s to-do list if not done tomorrow.
+
+**Long-Term Considerations:**
+
+*   **Plant Mass:** The tank is reasonably planted, but maybe adding more fast-growing stem plants could help outcompete the algae? Like Rotala or more Ludwigia. Might need to prune more frequently though.
+*   **Substrate:** It’s Fluval Stratum. Good for plants, but over time it can release nutrients.
+*   **Maintenance Routine:** Need to be more consistent with weekly water changes and filter cleaning. My back pain has been a bit worse lately, especially after those long coding sessions, which sometimes makes me rush the tank maintenance. Maybe I should invest in a better siphon with a pump action to save my lower back. I saw one at Aquaessentials online.
+
+This algae outbreak feels like another small battle in the never-ending war of fish keeping. It's therapeutic in a way, troubleshooting and trying to restore balance. Just another thing on the mental checklist amongst mortgage payments, school runs, dinner prep, and trying to remember if I left my cycling lights charged. At least the fish are happy, even if they're living in a slightly greener world than intended.

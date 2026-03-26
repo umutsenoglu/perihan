@@ -1,0 +1,669 @@
+{
+  "package_hashes": {
+    "dc2dc1f34ab580d6": {
+      "files": [
+        "medical/medical_physiotherapy_notes_20251030_915.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T16:33:41.976018"
+    },
+    "0242dd446094854b": {
+      "files": [
+        "personal/personal_goal_setting_20241012_711.txt",
+        "personal/personal_phone_memo_20250628_883.txt"
+      ],
+      "strategy": "cross_storyline",
+      "storyline": "claire_school_drama",
+      "category": null,
+      "qa_count": 10,
+      "completed_at": "2026-03-19T16:35:43.665409"
+    },
+    "1b837d0966ff9477": {
+      "files": [
+        "personal/personal_book_notes_20240125_209.txt",
+        "personal/personal_recipe_notes_20260211_195.txt",
+        "personal/personal_personal_note_20250914_935.txt",
+        "personal/personal_brainstorm_20230322_911.txt",
+        "personal/personal_reflection_20230720_838.txt"
+      ],
+      "strategy": "cross_storyline",
+      "storyline": "ryan_fallout",
+      "category": null,
+      "qa_count": 11,
+      "completed_at": "2026-03-19T16:37:21.805943"
+    },
+    "98493944ed659e11": {
+      "files": [
+        "medical/medical_specialist_report_20241105_207.txt",
+        "medical/medical_blood_test_results_20230207_837.txt",
+        "medical/medical_dental_report_20241019_657.txt",
+        "medical/medical_referral_letter_20230522_352.txt",
+        "medical/medical_vaccination_record_20241123_237.txt",
+        "medical/medical_GP_visit_notes_20250414_894.txt",
+        "medical/medical_blood_test_results_20230307_690.txt",
+        "medical/medical_specialist_report_20250220_997.txt",
+        "medical/medical_vaccination_record_20250411_143.txt",
+        "medical/medical_specialist_report_20240409_791.txt",
+        "medical/medical_dental_report_20250527_314.txt",
+        "medical/medical_physiotherapy_notes_20240607_473.txt",
+        "medical/medical_physiotherapy_notes_20240821_438.txt",
+        "medical/medical_discharge_summary_20230710_230.txt",
+        "medical/medical_vaccination_record_20230112_830.txt"
+      ],
+      "strategy": "same_category",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 7,
+      "completed_at": "2026-03-19T16:39:50.822684"
+    },
+    "b27d0ff918c25b2d": {
+      "files": [
+        "personal/personal_book_notes_20250406_510.txt",
+        "personal/personal_workout_log_20241226_111.txt",
+        "personal/personal_pros_cons_list_20231026_727.txt",
+        "personal/personal_grocery_list_20230709_675.txt",
+        "medical/medical_GP_visit_notes_20250414_894.txt"
+      ],
+      "strategy": "cross_storyline",
+      "storyline": "mums_health",
+      "category": null,
+      "qa_count": 11,
+      "completed_at": "2026-03-19T16:40:44.648087"
+    },
+    "71a54d0498e1402f": {
+      "files": [
+        "medical/medical_physiotherapy_notes_20251030_915.txt",
+        "medical/medical_physiotherapy_notes_20240618_367.txt",
+        "medical/medical_physiotherapy_notes_20230405_176.txt",
+        "medical/medical_referral_letter_20230925_447.txt",
+        "medical/medical_specialist_report_20250101_728.txt",
+        "medical/medical_discharge_summary_20230319_336.txt",
+        "medical/medical_GP_visit_notes_20231229_712.txt",
+        "medical/medical_optometry_report_20250923_193.txt",
+        "medical/medical_physiotherapy_notes_20230728_340.txt",
+        "medical/medical_discharge_summary_20250313_858.txt",
+        "medical/medical_vaccination_record_20250802_789.txt",
+        "medical/medical_blood_test_results_20240826_777.txt",
+        "medical/medical_blood_test_results_20260202_553.txt",
+        "medical/medical_optometry_report_20240330_155.txt",
+        "medical/medical_physiotherapy_notes_20250706_770.txt"
+      ],
+      "strategy": "same_category",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 15,
+      "completed_at": "2026-03-19T16:43:04.401874"
+    },
+    "bb754e8d6c3ecbae": {
+      "files": [
+        "personal/personal_workout_log_20250227_212.txt",
+        "personal/personal_brainstorm_20241208_685.txt",
+        "personal/personal_shopping_research_20241023_449.txt",
+        "personal/personal_reflection_20251009_369.txt",
+        "messaging/messaging_whatsapp_discussing_tropical_fish_tank__20251104_633.txt"
+      ],
+      "strategy": "cross_storyline",
+      "storyline": "fish_tank",
+      "category": null,
+      "qa_count": 13,
+      "completed_at": "2026-03-19T16:44:06.145126"
+    },
+    "4b5ce2ab1b57328a": {
+      "files": [
+        "personal/personal_brainstorm_20240422_121.txt",
+        "personal/personal_reflection_20240610_708.txt"
+      ],
+      "strategy": "cross_storyline",
+      "storyline": "fence_dispute",
+      "category": null,
+      "qa_count": 10,
+      "completed_at": "2026-03-19T16:44:56.097528"
+    },
+    "4fda4ec28d2e9fb5": {
+      "files": [
+        "personal/personal_grocery_list_20240413_265.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T16:45:20.171242"
+    },
+    "9504437b8a20cd2b": {
+      "files": [
+        "personal/personal_pros_cons_list_20250522_330.txt",
+        "personal/personal_goal_setting_20240518_906.txt",
+        "personal/personal_diary_entry_20240603_649.txt",
+        "personal/personal_recipe_notes_20240706_883.txt"
+      ],
+      "strategy": "cross_storyline",
+      "storyline": "brother_estranged",
+      "category": null,
+      "qa_count": 9,
+      "completed_at": "2026-03-19T16:45:59.490574"
+    },
+    "8bff869b0f975f8a": {
+      "files": [
+        "personal/personal_journal_20240701_246.txt",
+        "personal/personal_diary_entry_20250701_443.txt",
+        "personal/personal_shopping_research_20240129_975.txt",
+        "personal/personal_shopping_research_20230318_241.txt"
+      ],
+      "strategy": "cross_storyline",
+      "storyline": "mum_flights",
+      "category": null,
+      "qa_count": 10,
+      "completed_at": "2026-03-19T16:47:12.192370"
+    },
+    "082fce511ae800c5": {
+      "files": [
+        "personal/personal_pros_cons_list_20250522_330.txt",
+        "personal/personal_shopping_research_20230310_343.txt",
+        "personal/personal_to_do_list_20230528_654.txt",
+        "personal/personal_recipe_notes_20240926_167.txt",
+        "personal/personal_pros_cons_list_20240101_867.txt",
+        "personal/personal_phone_memo_20231010_353.txt",
+        "personal/personal_brainstorm_20240226_513.txt",
+        "personal/personal_recipe_notes_20240516_946.txt",
+        "personal/personal_to_do_list_20231010_994.txt",
+        "personal/personal_workout_log_20241226_111.txt",
+        "personal/personal_goal_setting_20250713_354.txt",
+        "personal/personal_grocery_list_20250906_341.txt",
+        "personal/personal_gratitude_journal_20240409_195.txt",
+        "personal/personal_reflection_20230720_838.txt",
+        "personal/personal_phone_memo_20251130_631.txt"
+      ],
+      "strategy": "same_category",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 12,
+      "completed_at": "2026-03-19T16:48:58.731200"
+    },
+    "786685eb07d17cfc": {
+      "files": [
+        "personal/personal_to_do_list_20241227_204.txt",
+        "personal/personal_diary_entry_20231028_261.txt",
+        "personal/personal_reflection_20231208_779.txt"
+      ],
+      "strategy": "cross_storyline",
+      "storyline": "old_flame",
+      "category": null,
+      "qa_count": 10,
+      "completed_at": "2026-03-19T16:49:58.544347"
+    },
+    "9440cf8a87bcf84f": {
+      "files": [
+        "medical/medical_prescription_20250908_871.txt",
+        "medical/medical_dental_report_20231102_933.txt",
+        "medical/medical_GP_visit_notes_20231121_689.txt",
+        "medical/medical_prescription_20241109_871.txt",
+        "medical/medical_discharge_summary_20230710_230.txt",
+        "medical/medical_blood_test_results_20241226_625.txt",
+        "medical/medical_dental_report_20241019_657.txt",
+        "medical/medical_optometry_report_20231002_101.txt",
+        "medical/medical_specialist_report_20250101_728.txt",
+        "medical/medical_referral_letter_20230522_352.txt",
+        "medical/medical_physiotherapy_notes_20230728_340.txt",
+        "medical/medical_vaccination_record_20250802_789.txt",
+        "medical/medical_dental_report_20230724_197.txt",
+        "medical/medical_GP_visit_notes_20251227_319.txt",
+        "medical/medical_GP_visit_notes_20231021_924.txt"
+      ],
+      "strategy": "same_category",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 14,
+      "completed_at": "2026-03-19T16:51:31.661500"
+    },
+    "465cc3fc547ee3d0": {
+      "files": [
+        "personal/personal_shopping_research_20240129_975.txt",
+        "personal/personal_grocery_list_20230709_675.txt",
+        "personal/personal_to_do_list_20250914_462.txt",
+        "personal/personal_workout_log_20250430_800.txt",
+        "personal/personal_brainstorm_20240422_121.txt",
+        "personal/personal_diary_entry_20250206_323.txt",
+        "personal/personal_gratitude_journal_20240708_841.txt",
+        "personal/personal_shopping_research_20240610_546.txt",
+        "personal/personal_diary_entry_20240518_635.txt",
+        "personal/personal_shopping_research_20231117_685.txt",
+        "personal/personal_phone_memo_20250628_883.txt",
+        "personal/personal_recipe_notes_20231019_229.txt",
+        "personal/personal_dream_log_20230520_333.txt",
+        "personal/personal_reflection_20230930_701.txt",
+        "personal/personal_shopping_research_20260122_728.txt"
+      ],
+      "strategy": "same_category",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 14,
+      "completed_at": "2026-03-19T16:53:51.539307"
+    },
+    "79815d871068f3a6": {
+      "files": [
+        "personal/personal_pros_cons_list_20240101_867.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T16:54:09.252464"
+    },
+    "d0f209528a90ebfa": {
+      "files": [
+        "medical/medical_physiotherapy_notes_20240607_473.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T16:54:34.579450"
+    },
+    "88e40a0f85a34f88": {
+      "files": [
+        "personal/personal_journal_20240701_246.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": "mum_flights",
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T16:54:57.408901"
+    },
+    "f2a8d4a19bfbad4e": {
+      "files": [
+        "medical/medical_optometry_report_20231002_101.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T16:55:18.143955"
+    },
+    "b3fc64b55a0c05cd": {
+      "files": [
+        "personal/personal_goal_setting_20240518_906.txt",
+        "personal/personal_workout_log_20250915_421.txt",
+        "personal/personal_goal_setting_20231204_250.txt",
+        "personal/personal_diary_entry_20240603_649.txt",
+        "personal/personal_reflection_20240610_708.txt",
+        "personal/personal_reflection_20231208_779.txt",
+        "personal/personal_journal_20241128_607.txt",
+        "personal/personal_pros_cons_list_20231026_727.txt",
+        "personal/personal_recipe_notes_20251022_117.txt",
+        "personal/personal_personal_note_20250914_935.txt",
+        "personal/personal_personal_note_20240426_524.txt",
+        "personal/personal_diary_entry_20230116_466.txt",
+        "personal/personal_book_notes_20250406_510.txt",
+        "personal/personal_workout_log_20250227_212.txt",
+        "personal/personal_book_notes_20231118_984.txt"
+      ],
+      "strategy": "same_category",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 13,
+      "completed_at": "2026-03-19T16:59:04.349266"
+    },
+    "6e2e3d9cf73bd333": {
+      "files": [
+        "personal/personal_recipe_notes_20260211_195.txt",
+        "personal/personal_grocery_list_20240413_265.txt",
+        "personal/personal_brainstorm_20241229_540.txt",
+        "personal/personal_personal_note_20230528_160.txt",
+        "personal/personal_book_notes_20240125_209.txt",
+        "personal/personal_workout_log_20250710_581.txt",
+        "personal/personal_recipe_notes_20240118_378.txt",
+        "personal/personal_grocery_list_20250106_699.txt",
+        "personal/personal_journal_20240701_246.txt",
+        "personal/personal_diary_entry_20250701_443.txt",
+        "personal/personal_to_do_list_20240327_849.txt",
+        "personal/personal_shopping_research_20230318_241.txt",
+        "personal/personal_goal_setting_20230706_924.txt",
+        "personal/personal_book_notes_20231016_652.txt",
+        "personal/personal_grocery_list_20250809_271.txt"
+      ],
+      "strategy": "same_category",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 9,
+      "completed_at": "2026-03-19T17:00:23.865939"
+    },
+    "6c9cbf4d273f9499": {
+      "files": [
+        "personal/personal_goal_setting_20241012_711.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": "claire_school_drama",
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:00:39.151345"
+    },
+    "3853b0e4958668d5": {
+      "files": [
+        "personal/personal_brainstorm_20230322_911.txt",
+        "personal/personal_goal_setting_20231019_310.txt",
+        "personal/personal_goal_setting_20231014_211.txt",
+        "personal/personal_personal_note_20230910_607.txt",
+        "personal/personal_grocery_list_20260110_350.txt",
+        "personal/personal_goal_setting_20250901_888.txt",
+        "personal/personal_gratitude_journal_20230817_782.txt",
+        "personal/personal_shopping_research_20241023_449.txt",
+        "personal/personal_personal_note_20240418_933.txt",
+        "personal/personal_reflection_20251009_369.txt",
+        "personal/personal_brainstorm_20250404_358.txt",
+        "personal/personal_personal_note_20251208_499.txt",
+        "personal/personal_brainstorm_20241208_685.txt",
+        "personal/personal_to_do_list_20241227_204.txt",
+        "personal/personal_personal_note_20240521_153.txt"
+      ],
+      "strategy": "same_category",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 9,
+      "completed_at": "2026-03-19T17:03:18.944329"
+    },
+    "0d17ef9049aa0ffa": {
+      "files": [
+        "personal/personal_workout_log_20241226_111.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": "mums_health",
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:03:41.383213"
+    },
+    "b8cebbb61f704d46": {
+      "files": [
+        "personal/personal_goal_setting_20231019_310.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": "marcus_accident",
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:04:08.545318"
+    },
+    "1a893ee6b2e36bcb": {
+      "files": [
+        "medical/medical_prescription_20250908_871.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:04:26.229522"
+    },
+    "60f4e12766af4d7e": {
+      "files": [
+        "personal/personal_recipe_notes_20240706_883.txt",
+        "personal/personal_diary_entry_20231028_261.txt",
+        "personal/personal_personal_note_20230411_971.txt",
+        "personal/personal_phone_memo_20250529_379.txt",
+        "personal/personal_goal_setting_20241012_711.txt"
+      ],
+      "strategy": "same_category",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 12,
+      "completed_at": "2026-03-19T17:05:34.591090"
+    },
+    "7a0347aa941fe2d7": {
+      "files": [
+        "medical/medical_blood_test_results_20240826_777.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:06:03.576074"
+    },
+    "357484a222dd520d": {
+      "files": [
+        "medical/medical_specialist_report_20230517_862.txt",
+        "medical/medical_referral_letter_20230427_441.txt",
+        "medical/medical_dental_report_20251220_801.txt",
+        "medical/medical_physiotherapy_notes_20240821_438.txt",
+        "medical/medical_specialist_report_20250220_997.txt",
+        "medical/medical_GP_visit_notes_20250414_894.txt",
+        "medical/medical_blood_test_results_20240826_777.txt",
+        "medical/medical_GP_visit_notes_20231229_712.txt",
+        "medical/medical_discharge_summary_20250313_858.txt",
+        "medical/medical_optometry_report_20240330_155.txt",
+        "medical/medical_blood_test_results_20260202_553.txt",
+        "medical/medical_specialist_report_20241105_207.txt",
+        "medical/medical_physiotherapy_notes_20240618_367.txt",
+        "medical/medical_physiotherapy_notes_20250706_770.txt",
+        "medical/medical_blood_test_results_20230207_837.txt"
+      ],
+      "strategy": "same_category",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 12,
+      "completed_at": "2026-03-19T17:08:00.304411"
+    },
+    "9dc6304b0cd1f743": {
+      "files": [
+        "personal/personal_personal_note_20230411_971.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:08:22.648253"
+    },
+    "3d5501eaa46d4b90": {
+      "files": [
+        "medical/medical_dental_report_20240619_805.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:08:43.435158"
+    },
+    "f5f3ff674a79a908": {
+      "files": [
+        "personal/personal_workout_log_20250915_421.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:09:14.174422"
+    },
+    "2049a8de0845c464": {
+      "files": [
+        "medical/medical_vaccination_record_20250411_143.txt",
+        "medical/medical_referral_letter_20230925_447.txt",
+        "medical/medical_physiotherapy_notes_20251030_915.txt",
+        "medical/medical_specialist_report_20240512_235.txt",
+        "medical/medical_dental_report_20240619_805.txt",
+        "medical/medical_blood_test_results_20230307_690.txt",
+        "medical/medical_physiotherapy_notes_20230405_176.txt",
+        "medical/medical_dental_report_20250527_314.txt",
+        "medical/medical_optometry_report_20250923_193.txt",
+        "medical/medical_vaccination_record_20230112_830.txt",
+        "medical/medical_optometry_report_20250414_818.txt",
+        "medical/medical_vaccination_record_20241123_237.txt",
+        "medical/medical_specialist_report_20240409_791.txt",
+        "medical/medical_discharge_summary_20230319_336.txt",
+        "medical/medical_physiotherapy_notes_20240607_473.txt"
+      ],
+      "strategy": "same_category",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:11:44.304563"
+    },
+    "657fa74b4f5e1c68": {
+      "files": [
+        "personal/personal_grocery_list_20260110_350.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:12:05.059534"
+    },
+    "ec7500b3e5218693": {
+      "files": [
+        "medical/medical_GP_visit_notes_20250414_894.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": "mums_health",
+      "category": "medical",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:12:33.265389"
+    },
+    "7ce16eea3294f6a6": {
+      "files": [
+        "personal/personal_brainstorm_20250404_358.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:13:14.111839"
+    },
+    "c68e8f1246996298": {
+      "files": [
+        "personal/personal_reflection_20230930_701.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:13:42.556117"
+    },
+    "aef02a0d7296dbd9": {
+      "files": [
+        "personal/personal_dream_log_20230520_333.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 4,
+      "completed_at": "2026-03-19T17:13:57.507851"
+    },
+    "c5eb899f67fbeafe": {
+      "files": [
+        "medical/medical_physiotherapy_notes_20240821_438.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:14:24.795964"
+    },
+    "20d9b82dd034b75a": {
+      "files": [
+        "medical/medical_optometry_report_20250414_818.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:14:47.633503"
+    },
+    "c18980e928f02298": {
+      "files": [
+        "medical/medical_dental_report_20231102_933.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:15:14.276262"
+    },
+    "97e70f7cec39487b": {
+      "files": [
+        "personal/personal_personal_note_20250914_935.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": "ryan_fallout",
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:15:33.200409"
+    },
+    "575dca46a9b91971": {
+      "files": [
+        "personal/personal_to_do_list_20230528_654.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:15:56.701334"
+    },
+    "0bcb816fe5011485": {
+      "files": [
+        "personal/personal_grocery_list_20250106_699.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:16:18.130317"
+    },
+    "ded5a100276872a4": {
+      "files": [
+        "personal/personal_diary_entry_20230116_466.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:17:03.833942"
+    },
+    "f09827a6d71be0f5": {
+      "files": [
+        "personal/personal_workout_log_20250710_581.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:17:25.647765"
+    },
+    "2605f32cea5b85b7": {
+      "files": [
+        "personal/personal_reflection_20230720_838.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": "ryan_fallout",
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:17:43.209959"
+    },
+    "71133b8afa61cab4": {
+      "files": [
+        "personal/personal_book_notes_20231118_984.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "personal",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:18:07.664887"
+    },
+    "b1446818edb40a14": {
+      "files": [
+        "medical/medical_blood_test_results_20230307_690.txt"
+      ],
+      "strategy": "single_doc",
+      "storyline": null,
+      "category": "medical",
+      "qa_count": 5,
+      "completed_at": "2026-03-19T17:18:31.869922"
+    }
+  },
+  "in_progress": {
+    "hash": "cbaf912b3d1781db",
+    "strategy": "single_doc",
+    "files": [
+      "personal/personal_grocery_list_20250906_341.txt"
+    ],
+    "storyline": null,
+    "category": "personal"
+  }
+}

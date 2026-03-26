@@ -1,0 +1,45 @@
+Barnet General Hospital
+Optometry Department
+Wellhouse Lane, Barnet, EN5 3DJ
+
+**OPTOMETRY CONSULTATION REPORT**
+
+**Patient:** Ethan Marsh
+**NHS Number:** 987 654 3210
+**Date of Birth:** 15/05/1985 (Age 38)
+**Address:** 
+Barnet General Hospital
+Optometry Department
+Wellhouse Lane, Barnet, EN5 3DJ
+
+**OPTOMETRY CONSULTATION REPORT**
+
+**Patient:** Ethan Marsh
+**NHS Number:** 987 654 3210
+**Date of Birth:** 15/05/1985 (Age 38)
+**Address:** 14 Elmwood Drive, North London, N12 0PX
+**Date of Consultation:** 2023-10-02
+**Consultant Optometrist:** Dr. Anand Patel
+
+**Reason for Visit:** Routine eye examination. Patient reported increased eye strain and occasional blurred vision, particularly in the evenings.
+
+**Clinical Findings:**
+Visual Acuity: R: 6/6, L: 6/6 (Unaided). Refraction unchanged.
+Intraocular Pressure: Within normal limits (R: 15 mmHg, L: 16 mmHg).
+Fundoscopy: Healthy optic discs and retina bilaterally.
+
+**Discussion and Observations:**
+During the consultation, Mr. Marsh expressed experiencing difficulty sleeping for the past three weeks, feeling restless and finding it hard to concentrate, particularly at work (
+...particularly at work (Senior Software Engineer at a fintech company), attributing these to recent demanding deadlines and ongoing worry about his mother, Janet, in Bristol. He also mentioned feeling easily tired and generally tense, which can exacerbate perceived eye strain.
+
+While no significant ophthalmic pathology was identified to explain the visual symptoms, the reported systemic symptoms (difficulty sleeping for 3 weeks, restlessness, difficulty concentrating, fatigue, feeling tense) align with common indicators of stress and anxiety, potentially indicative of Generalised Anxiety Disorder (GAD) as described by NHS guidance.
+
+**Recommendations:**
+1.  **GP Referral:** Strongly advised Mr. Marsh to schedule an appointment with his General Practitioner to discuss his persistent sleep difficulties, restlessness, and feelings of anxiety. The GP can assess for GAD and explore suitable interventions, including talking therapies (e.g., CBT) or other support as per NHS pathways. Self-referral to NHS talking therapies for anxiety and depression is also an option for adults aged 18+.
+2.  **Visual Hygiene:** Advised regular breaks from screen work (20-20-20 rule) and ensuring adequate lighting to minimise eye strain, given his profession.
+3.  **Lifestyle Advice:** Encouraged adherence to healthy sleep practices, regular exercise (e.g., cycling), and a balanced diet, which can help manage anxiety symptoms.
+4.  **Follow-up:** Routine optometry review in 2 years, or sooner if visual symptoms persist or worsen, particularly after addressing systemic concerns with his GP.
+
+**Dr. Anand Patel**
+Consultant Optometrist
+Barnet General Hospital

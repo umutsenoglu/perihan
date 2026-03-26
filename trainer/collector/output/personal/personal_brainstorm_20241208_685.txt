@@ -1,0 +1,184 @@
+December 8, 2024
+Brainstorm / Notes
+
+Alright, need to get this stuff down. Too much rattling around my head. Claire keeps saying I need to write things down, get it out. Probably right.
+
+**Today's Mess (Fish Tank):**
+It’s getting worse. This green film. Like someone painted the glass inside. Started noticing it a few days ago, maybe around Wednesday? So, Dec 4th-ish. Proper annoyance. I cleaned the front panel yesterday but already coming back. Is it too much light? I usually run it about 8 hours. Maybe drop it to 6? Yeah, try that. Set the timer. Max keeps wanting to tap the glass, "Fishy! Fishy!". Little bugger. He loves watching them, though. Lily too. If it weren't for them, Claire would probably have dumped the whole thing in the garden by now. Or at least that's what she jokes. Mostly.
+
+**Lily's Math:**
+Another text from Mrs. Henderson today. Lily is really struggling with her times tables. She's in Year 3 now, this is important stuff. Claire's really worried. She says she’s trying to help after school but Lily just gets frustrated. I tried with her last night, the 3s. Total meltdown. Felt awful. Maybe we need to look into a tutor? Claire mentioned it last week, I was a bit 'nah, she'll catch up'. But now… yeah. Let’s actually look. Check local community boards, maybe the school has a list? QPA is usually good for that. I'll ask Claire to check with Mrs. Henderson again. Or maybe just Google 'Year 3 math tutor North London'. So many options, it's a minefield.
+
+**Work:**
+-   Sprint review Tuesday. Need to finalize the backend for the new payments gateway. James is on my case about the API documentation. Always James. Good guy, but pedantic.
+-   Priya is flying on the UI for the risk assessment module. She makes it look so easy. Maybe I should ask her what her secret is for juggling everything.
+-   Meeting with Richard on Wednesday. Ugh. He'll drone on about 'synergy' and 'optimizing bandwidth' for an hour. Just give me the actual technical spec, mate.
+
+**Home Stuff:**
+-   Barclays mortgage statement came. Still feels like we're paying for a shoebox in Mayfair, not a 3-bed semi in N12.
+-   Need to clear the leaves from the front path. Claire nearly slipped yesterday.
+-   Car MOT is due in March. Think about that EV switch again. Prices are still steep. But the petrol costs… Maybe just wait another year. The Golf's fine, it's a 2019, still good.
+
+**Random thoughts:**
+*   Mum called. Janet sounded good. Talking about Christmas plans. She wants us down in Bristol, but Claire wants to host this year. Juggling that.
+*   Hannah texted. Max sent her a drawing of a 'super monster'. Her kids are getting so big.
+*   My back is playing up a bit again. Sitting hunched over the keyboard too much. Need to stretch.
+*   Whiskers keeps trying to drink from the fish tank. Stupid cat. He'll knock the lid off one day.
+
+**To-do list (mental/quick):**
+*   Fish tank light timer to 6 hours.
+*   Lily math tutor research - Google 'Year 3 math tutor North London'. Ask Claire to check school.
+*   Finalize API docs for James.
+*   Leaf clear.
+*   Call Mum back re: Christmas.
+*   Stretches for back.
+
+---
+
+December 16, 2024
+Quick notes - Algae disaster
+
+It's been a week. The algae is rampant. I officially marked Dec 10 as 'Algae Bloom Day'. Green sludge everywhere. Cutting the light to 6 hours has done practically nothing. If anything, it seems *worse*. The plants look miserable too. The Anubias are coated. Even the substrate has a greenish tint. Max thinks it's 'swamp monster' water. Not wrong, mate.
+
+Claire is getting seriously fed up. "Ethan, it looks like a pond, not a living room feature." Point taken. I know. It's bothering me too. My pride and joy. This 200-litre tank usually looks great. What the hell is going on?
+
+Did a 30% water change on Saturday. Siphoned up as much as I could. Still there.
+Think I need to hit it harder. Maybe some algaecide? No, usually a bad idea. Can crash the cycle.
+I remember reading about Seachem Flourish Excel for CO2 supplementation but it also has algaecide properties, apparently. Let's try that. Ordered some from Amazon, should be here by Wednesday.
+
+Lily’s math. Spoke to Mrs. Henderson. She suggested a couple of local tutors, gave me their details. Sarah Miller and Mr. Peterson. Will look them up later. Claire is going to call them tomorrow. She's got more patience for that sort of thing than I do. Lily seemed a bit down when we mentioned it, but Claire explained it’s just to help her catch up, not because she’s 'bad'. Hard one, that. Don't want her feeling bad about school.
+
+Work is manic. End of sprint, pushing new code to staging. James found a tiny bug in my API. Knew he would. Fixed it. Long day.
+
+---
+
+January 5, 2025
+Post-NY Update - Algae still. Fish loss.
+
+Happy New Year, right? Not really.
+Algae. Still there. The Seachem Flourish Excel did *something*? Maybe? Hard to tell. I've been dosing it since Christmas. Still doing 30% water changes twice a week. Every Saturday, every Wednesday evening. It's becoming a full-time job. Claire is now calling it 'the green monster's lair'. Ha-ha.
+
+Worse, I lost a neon tetra yesterday. One of the newer ones. Just found it lying on the substrate. No obvious signs of disease. Swapped out the old internal filter media, gave the filter itself a good clean, but it's not exactly powerful for a 200L tank. It’s an old one. Been meaning to upgrade for ages. Maybe this is the push I need.
+
+Lily's math. We spoke to Sarah Miller. Seems good. Experienced with Year 3. Claire liked her, said she had a good vibe. We're looking at starting once a week, after school on Tuesdays, beginning next week. Lily's still a bit wary, but I think it's for the best. £35 an hour, not cheap, but worth it if it helps her confidence.
+
+Max got a new LEGO set for Christmas. Builder in the making. Kept him quiet for a solid hour. Miracle.
+
+Work is picking up again. Kicking off the new year with a big new payment processing initiative. More meetings with Richard. Joy.
+
+Back's a bit better, but the constant bending over the tank for water changes isn't helping. Think I need to get one of those automatic gravel cleaners or something. This siphon is old school.
+
+Mum called again, sorted out the Christmas visit to ours. It was actually lovely having everyone, even with the tank looking like a bog. Max loved playing with his cousins. My sister Hannah brought her famous trifle. Made me miss Dad, though. First Christmas without him always feels weird. Still hurts sometimes, especially around these big family gatherings.
+
+---
+
+January 15, 2025
+Fish deaths. Panic mode.
+
+Woke up this morning to find two more fish gone. Another neon tetra, and one of my favourite guppies. Just dead. Floating. This is not good. This is a problem.
+That makes three fish in about 10 days. The earlier neon tetra, and now these two.
+
+I'm thinking Columnaris. Those white patches, almost furry, near the mouth on the guppy. The neons just seemed to fade. Could be related to the stress of the algae/water quality. Damn it.
+Pulled the dead fish out. Did another 30% water change immediately. Tested the water again.
+pH 7.2 (stable, good). Ammonia 0. Nitrite 0. Nitrate… still around 20ppm. Not ideal, but not lethal. Phosphate kit, where is it? Ah, found it. Phosphate… 1.0ppm. Still high. Maybe that's why the algae is so bad? Excess nutrients.
+
+Need to treat the tank. Fast. eSHa 2000. I usually keep a bottle of that. Good broad-spectrum stuff. Found it in the cupboard. Dosed the tank according to instructions. Fingers crossed. Losing fish is the worst part of this hobby. It's not just objects, they're living things.
+
+Claire came down, saw the dead fish. "Oh, Ethan. What's happening?" She knows how much I care about them. She's been patient, but I can tell this is really pushing her. "It's fine, I'm on it," I said, probably too quickly.
+
+Lily’s tutor started today. Sarah Miller. Claire said Lily came out smiling, which is a massive win. Apparently they played some math games. Good. That's a relief. One less thing to worry about *right now*.
+
+Work was a blur. Just went through the motions. Couldn't focus. All I could think about was the tank.
+
+---
+
+February 1, 2025
+Tank looking grim. Claire's ultimatum.
+
+Two weeks since the fish deaths and eSHa 2000 treatment. No more deaths, which is a relief. The remaining 8 neon tetras, 5 guppies, 4 corydoras, 2 bristlenose plecos, and 6 cherry shrimp seem okay. But the algae. Oh, the algae. It's still here, still green, still covering everything. The treatment didn't touch the algae, just stopped the disease.
+
+The tank looks like a swamp. Claire walked past it this morning, sighed loudly, and just said, "Ethan. My mum is visiting at Easter. Diane. She's due on April 18th. This tank *has* to be sorted by then. It looks awful. I mean it."
+Right. Diane. Claire's mum is lovely, but she notices *everything*. Especially if it's not pristine. And she'll absolutely comment on my 'swamp tank'.
+Easter. April 18th. That's… not that far away. I've got two and a half months. It feels like two and a half days given how persistent this green slime is.
+
+I've tried everything I can think of for the algae.
+-   Reduced light to 6 hours. Failed.
+-   Seachem Flourish Excel. Failed (on algae).
+-   30% water changes twice weekly. Ongoing, but not fixing the root cause.
+-   Manual scrubbing. Daily. Temporarily clears the front, but it's back in hours.
+
+This phosphate issue. 1.5ppm on the last test (Jan 15th). Too high. Normal should be under 0.5. Where is it coming from? Maybe the food? Or just decaying plant matter? The old internal filter can't handle it. It's just circulating the crud. This has to be it. I need a proper external filter. Something with better mechanical and biological filtration. Something that can remove phosphates.
+
+Max made a "fishy" drawing for me at nursery today. A green fish. Not sure if it's an encouraging sign or just reflecting the tank. Cute, either way.
+
+Lily's doing much better with Sarah Miller. She actually looks forward to Tuesdays now. Amazing what a bit of dedicated, patient help can do. Claire is chuffed. So am I. Less stress for everyone.
+
+Work. My new payment gateway project has hit a snag with cross-border compliance. Another meeting with legal. More acronyms. Fun.
+
+---
+
+February 15, 2025
+Filter research. CO2 trouble.
+
+Been doing a lot of reading on forums. Consensus seems to be: 200L tank, internal filter is inadequate, especially with high phosphates and algae. It's just not getting enough water turnover or proper filtration.
+
+I'm looking at canister filters. Fluval is a good brand. The Fluval 307 seems to be the right size for a 200-litre tank. Good reviews. Easy maintenance. Crucially, I can add specific media for phosphate removal. Activated carbon, GFO (granular ferric oxide). Yes. This could be the game changer.
+
+Prices. AquaWorld seems to have it for £189. A bit steep, but if it solves this nightmare, it's worth it. Claire will kill me if I spend another penny on this tank and it's still green by Easter. But she also said *to sort it*. So, logical expenditure, right?
+
+Also, the CO2 system. The Dennerle system. I noticed the bubble counter is inconsistent. One minute it's a steady 2 bubbles per second, then it's just a trickle, then a burst. This could be contributing to plant health issues, which in turn means algae has an easier time. Another thing to troubleshoot. Could be the regulator, could be the CO2 bottle running low. I need to check the pressure gauge properly. More bloody fiddling.
+
+My back is really aching today. Long coding session at work, and then helping Max build a tower that was taller than him. Worth it for his giggle, but ouch. Took some paracetamol.
+Seasonal allergies are starting early this year too. My eyes are a bit itchy. Or maybe it's just the constant peering at the tank looking for improvement.
+
+---
+
+February 23, 2025
+Water test results - high phosphates confirmed. Filter ordered!
+
+Right, definitive water test results. Got the full kit out.
+pH: 7.2 (good, stable)
+Ammonia: 0 (excellent)
+Nitrite: 0 (excellent)
+Nitrate: 25ppm (acceptable, but on the higher side)
+Phosphate: 1.5ppm. Bingo. Still high. This is absolutely the culprit. The internal filter just isn't cutting it. It's not removing the phosphate-rich waste effectively.
+
+This confirms it. The new filter is essential. I can't keep living with this green swamp. Claire will genuinely divorce me.
+
+I made the call. Ordered the Fluval 307 canister filter from AquaWorld. Spoke to Mark. Nice guy. Confirmed it's in stock and will ship tomorrow. Said it should arrive by Wednesday or Thursday. £189. Just hit 'confirm payment' on the credit card. Ouch. But necessary. So necessary.
+
+This is it. This is the big step. I'm going to set it up with some filter floss, ceramic rings, and a phosphate remover pad. Get it cycled quickly, then hope for the best.
+I'll keep the old internal filter running for a week or two alongside the new one to help seed the beneficial bacteria in the Fluval 307. Don't want to crash the cycle and kill everything that survived the columnaris scare.
+
+Lily had her third session with Sarah Miller today. She actually *asked* Claire when Sarah was coming. And she did her 7 times tables without too much prompting. HUGE progress. So relieved about that. Claire is practically dancing. Makes the tutor cost feel totally worth it.
+
+Max tried to feed the fish a bit of his toast this morning. Managed to intercept him just in time. "No, Maxy, not toast!" He gets it from me, honestly. Trying to help.
+
+Work. Richard has finally signed off on the new API design. Took long enough. Now the real coding starts. At least I have something else to focus on for a bit, while I wait for the filter. Maybe I can squeeze in some photography this weekend? The grey London skies aren't exactly inspiring, but a change of pace would be good.
+
+Also, Whiskers. Seriously. He's been sitting on the tank lid every night. Staring at the fish. I woke up to him trying to bat at one of the guppies through the gap in the feeding hatch. Had to shoo him off again. One day he'll fall in. The fish would get the shock of their lives.
+
+---
+
+February 26, 2025
+Filter arrived. Project installation.
+
+The Fluval 307 arrived this morning! That was quick. Thanks, Mark at AquaWorld.
+It's a chunky box. Looks professional. Tonight, after the kids are in bed. No point trying to do it with Max "helping" and Lily "supervising."
+
+I've watched a couple of YouTube videos on installing the 307. Seems straightforward enough. Will need to drain some water, obviously. Got the buckets ready. Claire is already giving me the 'don't make a mess' look. I promise, I won't flood the living room. Probably.
+
+Thinking about the media:
+-   Bottom basket: ceramic rings (biological filtration)
+-   Middle basket: filter floss (mechanical, fine particles) + Seachem PhosGuard (phosphate removal)
+-   Top basket: activated carbon (chemical, removes discolouration, odours)
+
+This should be a significant upgrade from the dinky internal filter. A 200-litre tank needs serious filtration. I should have done this months ago, years even. Why do I always procrastinate on these big maintenance jobs?
+
+CO2 system is still bugging me. Bubble counter is definitely inconsistent. Need to order a new regulator, I think. Or at least a new solenoid valve. That's another thing for the wishlist. One step at a time. Algae first.
+
+I had a really good cycling session this morning. Went out towards Highgate, up those brutal hills. Felt good to push myself. The back held up okay. Good way to clear the head before diving into filter installation. Maybe I can convince Claire to come for a cycle ride around Richmond Park this weekend if the weather holds.
+
+Just realised it’s March next week. Easter is just over a month and a half away. Diane's visit is looming. This filter *has* to work its magic. I need a clear tank by April 18th. For Claire's sake, and for my own sanity. This has been such a persistent, annoying problem. Fingers crossed this is the solution.
+
+One step closer to a serene, clear 200-litre underwater world. God, I hope so.

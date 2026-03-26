@@ -1,0 +1,77 @@
+**Little Stars Nursery**
+
+**Invoice**
+
+**Invoice Number:** LSN-2025-09-003
+**Date:** 17 September 2025
+**Payment Due By:** 30 September 2025
+
+**Account Holder:** Mr. Ethan Marsh
+**Address:** 14 Elmwood Drive, North London, N12 7AB
+**Contact Email:** ethan.marsh@email.com
+**Contact Phone:** 07700 900XXX
+
+**Child's Name:** Max Marsh
+**Date of Birth:** 05/03/2021
+**Room:** Acorns (Pre-School)
+
+---
+
+**Services Rendered: September 2025**
+
+| Item / Description                         | Quantity | Unit Price (GBP) | Total (GBP) |
+| :----------------------------------------- | :------- | :--------------- | :---------- |
+| Full Day Session (8:00 AM - 6:00 PM)       | 16       | £65.00           | £1,040.00   |
+| Government 15-Hour Funding (Universal)     | 15       | -£65.00          | -£975.00    |
+| Hot Lunch & Snacks (Daily)                 | 16       | £4.50            | £72.00      |
+| Extra Curricular: Forest School (Wednesdays)| 4        | £12.00           | £48.00      |
+| Ad-hoc early drop-off (08/09/2025)         | 1        | £10.00           | £10.00      |
+| Ad-hoc late pick-up (22/09/2025)           | 1        | £10.00           | £10.00      |
+
+---
+
+**Summary**
+
+| Subtotal                                   | £195.00     |
+| :----------------------------------------- | :---------- |
+| Less: Sibling Discount (Lily Marsh, QPA Primary) | -£9.75      |
+| **Total Amount Due**                       | **£185.25** |
+
+---
+
+**Payment Information**
+
+Please make payment by the due date using one of the following methods:
+
+**Bank Transfer:**
+Account Name: Little Stars Nursery Ltd
+Sort Code: 20-35-XX
+Account No: 7069XXXX
+Reference: MAXMARSH/SEP25
+
+**Online Payment:**
+Visit www.littlestarsnursery.co.uk/pay and use Invoice Number LSN-2025-09-003
+
+**Childcare Vouchers:**
+If you are paying by childcare vouchers, please ensure they are processed in time to reach us by the due date. Our provider reference is CCV-LSN-005.
+
+---
+
+**Notes:**
+
+*   This invoice covers Max's attendance for the month of September 2025.
+*   The Government 15-hour universal funding has been applied as per your eligibility. Please ensure your eligibility code (URN: 1234-5678-90AB) remains valid for future terms.
+*   The sibling discount is applied as Lily is still attending QPA Primary School. We hope she's enjoying Year 3 with Mrs. Henderson!
+*   Please remember to notify us in advance for any planned absences or changes to Max's schedule.
+*   We've noted your interest in the upcoming Parent's Evening on 15th October. We look forward to discussing Max's progress.
+
+Thank you for choosing Little Stars Nursery. We appreciate your continued trust.
+
+**Little Stars Nursery Team**
+18 Oakwood Road, North London, N12 7CD
+www.littlestarsnursery.co.uk
+info@littlestarsnursery.co.uk
+020 8XXX XXXX
+
+*Little Stars Nursery Ltd. is registered in England & Wales. Company No. 0987XXXX.*
+*VAT Registration No. 123 4567 89.*

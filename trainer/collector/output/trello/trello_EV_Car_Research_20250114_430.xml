@@ -1,0 +1,342 @@
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<board>
+  <name>EV Car Research</name>
+  <exportDate>2025-01-14</exportDate>
+  <members>
+    <member>Ethan Marsh</member>
+    <member>Claire Marsh</member>
+  </members>
+  <lists>
+    <list>
+      <name>Models to Check</name>
+      <cards>
+        <card>
+          <title>Tesla Model 3 Long Range</title>
+          <description>Considered a top contender. Good range, tech features. Need to understand charging infrastructure better for home and public. Check insurance costs.</description>
+          <labels>
+            <label color="blue">High Priority</label>
+            <label color="green">Range</label>
+          </labels>
+          <dueDate>2025-02-28</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <checklists>
+            <checklist><name>Initial Research</name>
+              <items>
+                <item completed="true">Read reviews on What Car?</item>
+                <item completed="true">Check Tesla website for latest pricing</item>
+                <item completed="false">Compare charging speeds (home vs. Supercharger)</item>
+                <item completed="false">Look into Tesla insurance options</item>
+              </items>
+            </checklist>
+          </checklists>
+          <comments>
+            <comment><author>Ethan Marsh</author><date>2024-12-15</date><text>Claire likes the minimalist interior, but worried about repair costs if anything goes wrong. Need to factor that in.</text></comment>
+          </comments>
+        </card>
+        <card>
+          <title>Hyundai Ioniq 5 Premium</title>
+          <description>Retro-futuristic design, good reviews for comfort and space. Might be better for Lily and Max in the back. Check boot space against Golf for holiday luggage.</description>
+          <labels>
+            <label color="purple">Family Friendly</label>
+            <label color="green">Design</label>
+          </labels>
+          <dueDate>2025-02-28</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+          <checklists>
+            <checklist><name>Initial Research</name>
+              <items>
+                <item completed="true">Watch YouTube reviews (Fully Charged Show)</item>
+                <item completed="false">Find local dealer for a look around</item>
+                <item completed="false">Check PCP vs. cash purchase options</item>
+              </items>
+            </checklist>
+          </checklists>
+          <comments>
+            <comment><author>Claire Marsh</author><date>2024-12-18</date><text>Ethan, I saw one of these near QPA Primary School this morning, it looks really spacious. Max would love the 'robot' look!</text></comment>
+            <comment><author>Ethan Marsh</author><date>2024-12-18</date><text>Good point, Claire. Headroom for me in the back with the kids is important. My lower back pain wouldn't appreciate bending much.</text></comment>
+          </comments>
+        </card>
+        <card>
+          <title>VW ID.4 Style</title>
+          <description>Familiar brand, good build quality. Might feel more like a natural progression from the Golf. Check range in winter conditions.</description>
+          <labels>
+            <label color="yellow">Familiar Brand</label>
+            <label color="green">Practical</label>
+          </labels>
+          <dueDate>2025-02-28</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <checklists>
+            <checklist><name>Initial Research</name>
+              <items>
+                <item completed="true">Read Autocar review</item>
+                <item completed="false">Check configurator for available colours/options</item>
+                <item completed="false">Ask Richard (from work) about his ID.3 experience</item>
+              </items>
+            </checklist>
+          </checklists>
+          <comments>
+            <comment><author>Ethan Marsh</author><date>2025-01-05</date><text>Richard mentioned some software glitches initially with his ID.3, but said they're mostly resolved now. Worth keeping in mind.</text></comment>
+          </comments>
+        </card>
+        <card>
+          <title>Kia EV6</title>
+          <description>Shares platform with Ioniq 5, but sportier design. Claire might prefer the look. Similar range and charging tech.</description>
+          <labels>
+            <label color="purple">Family Friendly</label>
+            <label color="green">Design</label>
+          </labels>
+          <dueDate>2025-02-28</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+          <checklists>
+            <checklist><name>Initial Research</name>
+              <items>
+                <item completed="false">Read reviews comparing to Ioniq 5</item>
+                <item completed="false">Check boot space dimensions</item>
+              </items>
+            </checklist>
+          </checklists>
+        </card>
+        <card>
+          <title>Polestar 2</title>
+          <description>Sleek design, Google Android Automotive OS. Worth a look for the tech, but maybe a bit small for family trips.</description>
+          <labels>
+            <label color="orange">Tech Focus</label>
+          </labels>
+          <dueDate></dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+        </card>
+      </cards>
+    </list>
+    <list>
+      <name>Test Drives</name>
+      <cards>
+        <card>
+          <title>Book Tesla Model 3 Test Drive</title>
+          <description>Need to book online. See if they have one available at the Westfield Stratford store or similar.</description>
+          <labels>
+            <label color="blue">High Priority</label>
+          </labels>
+          <dueDate>2025-02-15</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <comments>
+            <comment><author>Ethan Marsh</author><date>2025-01-10</date><text>Check weekend availability, maybe when Lily and Max are at Janet's or with Hannah.</text></comment>
+          </comments>
+        </card>
+        <card>
+          <title>Hyundai Ioniq 5 Test Drive</title>
+          <description>Find nearest Hyundai dealer in North London. See how it handles on local roads.</description>
+          <labels>
+            <label color="purple">Family Friendly</label>
+          </labels>
+          <dueDate>2025-02-22</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+        </card>
+        <card>
+          <title>VW ID.4 Test Drive</title>
+          <description>Nearest VW dealer to compare with the Golf. Want to feel the driving difference.</description>
+          <labels>
+            <label color="yellow">Familiar Brand</label>
+          </labels>
+          <dueDate>2025-02-22</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+        </card>
+        <card>
+          <title>Test drive with kids (if possible)</title>
+          <description>Try to do one of the test drives with Lily and Max to see how they fit and like the back seats.</description>
+          <labels>
+            <label color="red">Crucial</label>
+          </labels>
+          <dueDate>2025-03-01</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <comments>
+            <comment><author>Claire Marsh</author><date>2025-01-12</date><text>Good idea, Ethan. Especially the car seats for Max and Lily. Make sure they fit properly.</text></comment>
+          </comments>
+        </card>
+      </cards>
+    </list>
+    <list>
+      <name>Financing</name>
+      <cards>
+        <card>
+          <title>Get VW Golf Trade-in Value</title>
+          <description>Contact local VW dealer and online services (We Buy Any Car, Cazoo) for a quote on the 2019 Golf.</description>
+          <labels>
+            <label color="red">Crucial</label>
+          </labels>
+          <dueDate>2025-02-01</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <checklists>
+            <checklist><name>Quotes</name>
+              <items>
+                <item completed="false">We Buy Any Car online valuation</item>
+                <item completed="false">Cazoo online valuation</item>
+                <item completed="false">VW dealer valuation</item>
+              </items>
+            </checklist>
+          </checklists>
+          <comments>
+            <comment><author>Ethan Marsh</author><date>2025-01-08</date><text>Steve at the local garage said he'd give me a rough estimate if I pop by. Might be worth it for a quick comparison.</text></comment>
+          </comments>
+        </card>
+        <card>
+          <title>Research PCP vs. Lease vs. Outright Purchase</title>
+          <description>Compare costs and flexibility for different financing options. Consider our mortgage with Barclays and current savings.</description>
+          <labels>
+            <label color="red">Crucial</label>
+          </labels>
+          <dueDate>2025-02-15</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <checklists>
+            <checklist><name>Comparison Points</name>
+              <items>
+                <item completed="false">Monthly payments</item>
+                <item completed="false">Total cost over term</item>
+                <item completed="false">Flexibility at end of term</item>
+                <item completed="false">Impact on credit score</item>
+              </items>
+            </checklist>
+          
+</checklists>
+          <comments>
+            <comment><author>Claire Marsh</author><date>2025-01-09</date><text>Remember to factor in the interest rate from Barclays if we borrow more against the house, or if we get a separate loan.</text></comment>
+            <comment><author>Ethan Marsh</author><date>2025-01-09</date><text>Good point, will look at our current mortgage terms. Don't want to overstretch.</text></comment>
+          </comments>
+        </card>
+        <card>
+          <title>Check Barclays Loan Options</title>
+          <description>See what personal loan rates Barclays offers for a car purchase. Also check for any special green car financing.</description>
+          <labels>
+            <label color="blue">Ongoing</label>
+          </labels>
+          <dueDate>2025-02-20</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <comments>
+            <comment><author>Ethan Marsh</author><date>2025-01-12</date><text>Need to call their customer service or check the online portal.</text></comment>
+          </comments>
+        </card>
+        <card>
+          <title>Government Grants/Incentives for EVs</title>
+          <description>Research any current UK government grants for EV purchases or home charger installations. OZEV grant?</description>
+          <labels>
+            <label color="green">Info</label>
+          </labels>
+          <dueDate>2025-02-10</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <checklists>
+            <checklist><name>Grants</name>
+              <items>
+                <item completed="false">Car purchase grant (if any still exist for new EVs)</item>
+                <item completed="false">Home charger installation grant (OZEV)</item>
+              </items>
+            </checklist>
+          </checklists>
+          <comments>
+            <comment><author>Ethan Marsh</author><date>2025-01-05</date><text>Think the main car grant ended for most private purchases, but definitely check the charger one.</text></comment>
+          </comments>
+        </card>
+      </cards>
+    </list>
+    <list>
+      <name>Insurance Quotes</name>
+      <cards>
+        <card>
+          <title>Get Tesla Model 3 Insurance Quotes</title>
+          <description>Use comparison sites (Confused.com, CompareTheMarket) for insurance quotes on a Tesla Model 3. Add Claire and me as named drivers.</description>
+          <labels>
+            <label color="yellow">Pending</label>
+          </labels>
+          <dueDate>2025-03-01</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <comments>
+            <comment><author>Ethan Marsh</author><date>2025-01-10</date><text>Need to decide on trim level first, as that will affect the price.</text></comment>
+          </comments>
+        </card>
+        <card>
+          <title>Get Hyundai Ioniq 5 Insurance Quotes</title>
+          <description>Use comparison sites for insurance quotes on a Hyundai Ioniq 5. Include both drivers.</description>
+          <labels>
+            <label color="yellow">Pending</label>
+          </labels>
+          <dueDate>2025-03-01</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+        </card>
+        <card>
+          <title>Get VW ID.4 Insurance Quotes</title>
+          <description>Use comparison sites for insurance quotes on a VW ID.4. Include both drivers.</description>
+          <labels>
+            <label color="yellow">Pending</label>
+          </labels>
+          <dueDate>2025-03-01</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+        </card>
+        <card>
+          <title>Check existing no-claims bonus</title>
+          <description>Confirm current no-claims bonus with our existing insurer (LV=) to ensure accurate quotes.</description>
+          <labels>
+            <label color="green">Info</label>
+          </labels>
+          <dueDate>2025-02-15</dueDate>
+          <assignedTo>Claire Marsh</assignedTo>
+          <comments>
+            <comment><author>Claire Marsh</author><date>2025-01-07</date><text>I'll grab the policy docs from the filing cabinet after work tonight.</text></comment>
+          </comments>
+        </card>
+      </cards>
+    </list>
+    <list>
+      <name>Decision</name>
+      <cards>
+        <card>
+          <title>Final Car Choice</title>
+          <description>Make a final decision based on test drives, costs, family needs (Lily's car seat, Max's pram), and overall preference.</description>
+          <labels>
+            <label color="red">Crucial</label>
+          </labels>
+          <dueDate>2025-04-30</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <checklists>
+            <checklist><name>Decision Criteria</name>
+              <items>
+                <item completed="false">Total cost (purchase + insurance + charging)</item>
+                <item completed="false">Boot space for family trips</item>
+                <item completed="false">Driving experience</item>
+                <item completed="false">Charging infrastructure compatibility</item>
+                <item completed="false">Claire's preference</item>
+                <item completed="false">Resale value prediction</item>
+              </items>
+            </checklist>
+          </checklists>
+          <comments>
+            <comment><author>Ethan Marsh</author><date>2025-01-14</date><text>Need to sit down with Claire once we have all the info and weigh up the pros and cons properly. Maybe a spreadsheet?</text></comment>
+            <comment><author>Claire Marsh</author><date>2025-01-14</date><text>Definitely a spreadsheet! We can factor in the commute for school runs and your office days too.</text></comment>
+          </comments>
+        </card>
+        <card>
+          <title>Arrange Home Charger Installation</title>
+          <description>Once car is decided, arrange for a home EV charger installation. Check if our electrician Richard can do it or recommend someone.</description>
+          <labels>
+            <label color="blue">Ongoing</label>
+          </labels>
+          <dueDate>2025-05-30</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <comments>
+            <comment><author>Ethan Marsh</author><date>2025-01-03</date><text>Will need to check our fuse box capacity. Richard sorted out the outdoor lights last year, so he'll know.</text></comment>
+          </comments>
+        </card>
+        <card>
+          <title>Sell current VW Golf</title>
+          <description>Execute the sale of the 2019 VW Golf based on the best trade-in/sale offer received.</description>
+          <labels>
+            <label color="green">Info</label>
+          </labels>
+          <dueDate>2025-06-30</dueDate>
+          <assignedTo>Ethan Marsh</assignedTo>
+          <comments>
+            <comment><author>Ethan Marsh</author><date>2025-01-14</date><text>This will depend entirely on when the new car is available. Don't want to be car-less with the kids' school runs!</text></comment>
+          </comments>
+        </card>
+      </cards>
+    </list>
+  </lists>
+</board>

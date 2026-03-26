@@ -1,0 +1,11 @@
+**Receipt/Payment Confirmation**
+
+**Date:** 2025-02-14
+**Transaction Type:** Debit
+**Amount:** £112.50
+**Recipient:** La Mia Cucina, Highgate
+**Description:** Valentine's Dinner - Ethan Marsh
+**Reference:** LAMIACUCINA/EBM/1402
+**Account:** **** **** **5678 (Ethan Marsh)**
+
+Payment successful. Thank you for banking with us.

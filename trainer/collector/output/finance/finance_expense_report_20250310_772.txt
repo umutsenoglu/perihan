@@ -1,0 +1,330 @@
+## Global Industries - Expense Report
+
+**Account Holder:** John Smith
+**Employee ID:** GS-JS-7890
+**Department:** International Business Development
+**Reporting Period:** 2025-02-01 to 2025-02-28
+**Date of Submission:** 2025-03-10
+**Currency:** GBP
+
+**Bank Account for Reimbursement:** HSBC - Account Number: **** **** **5678 (Sort Code: 40-05-15)**
+
+---
+
+**Summary of Expenses by Category:**
+
+| Category                  | Amount (GBP) |
+|---------------------------|--------------|
+| Travel & Accommodation    | 2,875.50     |
+| Meals & Entertainment     | 789.25       |
+| Client Gifts & Hospitality| 350.00       |
+| Office Supplies           | 125.75       |
+| Communication             | 85.00        |
+| Miscellaneous             | 45.00        |
+| **TOTAL REIMBURSEMENT**   | **4,270.50** |
+
+---
+
+**Detailed Expense Breakdown:**
+
+**CATEGORY: Travel & Accommodation**
+
+| Date       | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-----------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2025-02-03 | Return Flight - London (LHR) to Frankfurt (FRA)             | British Airways                  | BA7890123456         | 345.00       | Business trip to meet potential German clients (Project 'Titan')    |
+| 2025-02-03 | Taxi from LHR to Heathrow Express                           | Addison Lee                      | ADL-987654           | 35.00        | Travel to airport for Frankfurt flight                              |
+| 2025-02-03 | Heathrow Express Ticket                                     | Heathrow Express                 | HEX-1234567          | 25.00        | Travel to airport for Frankfurt flight                              |
+| 2025-02-03 | Hotel Accommodation - Frankfurt (3 nights)                  | Hilton Frankfurt City Centre     | HFC-FRK-FEB03        | 540.00       | Accommodation for Project 'Titan' meetings                          |
+| 2025-02-06 | Taxi from Frankfurt Hotel to FRA                            | Taxi Frankfurt                   | TXI-FRK-001          | 45.00        | Travel to airport for return flight                                 |
+| 2025-02-06 | Return Flight - Frankfurt (FRA) to London (LHR)             | British Airways                  | BA7890123457         | 345.00       | Return leg of Project 'Titan' trip                                  |
+| 2025-02-06 | Heathrow Express Ticket                                     | Heathrow Express                 | HEX-1234568          | 25.00        | Travel from airport after return flight                             |
+| 2025-02-06 | Taxi from Heathrow Express to Home                          | Addison Lee                      | ADL-987655           | 35.00        | Travel from airport after return flight                             |
+| 2025-02-17 | Train Ticket - London (EUS) to Manchester (MAN) - Return    | Virgin Trains                    | VT-EUS-MAN-001       | 110.00       | Meeting with Northern Operations team for Q1 review                 |
+| 2025-02-17 | Taxi from Manchester Piccadilly to Office                   | Street Cars Manchester           | SCM-FEB17-A          | 15.00        | Travel to Manchester office                                         |
+| 2025-02-17 | Hotel Accommodation - Manchester (1 night)                  | The Midland Hotel Manchester     | MID-MAN-FEB17        | 180.00       | Accommodation for Q1 review meeting                                 |
+| 2025-02-18 | Taxi from Manchester Office to Piccadilly Station           | Street Cars Manchester           | SCM-FEB18-B          | 15.00        | Travel from Manchester office to station                            |
+| 2025-02-24 | Return Flight - London (LHR) to Dublin (DUB)                | Aer Lingus                       | EI-456789012         | 280.00       | Attending 'Emerald Summit' industry conference                      |
+| 2025-02-24 | Taxi from LHR to Heathrow Express                           | Addison Lee                      | ADL-987656           | 35.00        | Travel to airport for Dublin flight                                 |
+| 2025-02-24 | Heathrow Express Ticket                                     | Heathrow Express                 | HEX-1234569          | 25.00        | Travel to airport for Dublin flight                                 |
+| 2025-02-24 | Hotel Accommodation - Dublin (2 nights)                     | The Shelbourne, Autograph Coll.  | SHE-DUB-FEB24        | 420.00       | Accommodation for 'Emerald Summit' conference                       |
+| 2025-02-26 | Taxi from Dublin Hotel to DUB                               | Dublin Taxis                     | DTX-FEB26-C          | 30.00        | Travel to airport for return flight                                 |
+| 2025-02-26 | Return Flight - Dublin (DUB) to London (LHR)                | Aer Lingus                       | EI-456789013         | 280.00       | Return leg of 'Emerald Summit' trip                                 |
+| 2025-02-26 | Heathrow Express Ticket                                     | Heathrow Express                 | HEX-1234570          | 25.00        | Travel from airport after return flight                             |
+| 2025-02-26 | Taxi from Heathrow Express to Home                          | Addison Lee                      | ADL-987657           | 35.00        | Travel from airport after return flight                             |
+| **Subtotal** | | | | **2,875.50** | |
+
+**CATEGORY: Meals & Entertainment**
+
+| Date       | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-----------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2025-02-04 | Dinner with potential German clients (3 people)             | Restaurant Heimat, Frankfurt     | RH-FRK-0204          | 185.00       | Discussion of Project 'Titan' partnership                             |
+| 2025-02-05 | Lunch with legal team in Frankfurt                          | Café Hauptwache                  | CH-FRK-0205          | 65.00        | Discussing contract terms for Project 'Titan'                         |
+| 2025-02-05 | Dinner with Project 'Titan' lead (internal)                 | Weinsinn Restaurant, Frankfurt   | WS-FRK-0205          | 90.00        | Project debrief and planning                                        |
+| 2025-02-10 | Lunch with London-based marketing team (4 people)           | The Fable, London                | TF-LON-0210          | 75.00        | Brainstorming Q2 marketing strategies                               |
+| 2025-02-17 | Dinner with Northern Operations Manager                     | Hawksmoor Manchester             | HMK-MAN-0217         | 110.00       | Q1 performance review and future planning                           |
+| 2025-02-20 | Coffee and pastries for team meeting (6 people)             | Pret A Manger                    | PAM-LON-0220         | 28.75        | Internal project kickoff meeting                                    |
+| 2025-02-25 | Lunch with industry peers at 'Emerald Summit' (2 people)    | The Green Hen, Dublin            | TGH-DUB-0225         | 95.00        | Networking and industry trend discussion                            |
+| 2025-02-25 | Dinner with potential Irish partner (2 people)              | Chapter One, Dublin              | CO-DUB-0225          | 140.50       | Exploring collaboration opportunities post-conference               |
+| **Subtotal** | | | | **789.25** | |
+
+**CATEGORY: Client Gifts & Hospitality**
+
+| Date       | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-----------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2025-02-06 | Gift for German client representative                       | Harrods                          | HAR-GFT-001          | 200.00       | Thank you gift for their time and consideration for Project 'Titan' |
+| 2025-02-26 | Gift for Irish partner contact                              | Brown Thomas, Dublin             | BTD-GFT-002          | 150.00       | Token of appreciation for discussion at 'Emerald Summit'            |
+| **Subtotal** | | | | **350.00** | |
+
+**CATEGORY: Office Supplies**
+
+| Date       | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-----------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2025-02-12 | Printer Cartridges (Black & Colour)                         | Staples                          | ST-PC-FEB12          | 65.50        | Replenishment for home office printer                               |
+| 2025-02-12 | A4 Printer Paper (5 reams)                                  | Staples                          | ST-PP-FEB12          | 25.25        | Replenishment for home office printer                               |
+| 2025-02-19 | Notepads and Pens (various)                                 | Ryman Stationery                 | RYM-NP-0219          | 35.00        | General office supplies                                             |
+| **Subtotal** | | | | **125.75** | |
+
+**CATEGORY: Communication**
+
+| Date       | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-----------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2025-02-01 | International Roaming Charges - Germany                     | Vodafone                         | VOD-IR-GER-FEB       | 45.00        | Data and calls during Frankfurt trip                                |
+| 2025-02-24 | International Roaming Charges - Ireland                     | Vodafone                         | VOD-IR-IRE-FEB       | 40.00        | Data and calls during Dublin trip                                   |
+| **Subtotal** | | | | **85.00** | |
+
+**CATEGORY: Miscellaneous**
+
+| Date       | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-----------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2025-02-07 | Dry Cleaning for business suit                              | Jeeves of Belgravia              | JOB-DC-0207          | 25.00        | Required for client meetings                                        |
+| 2025-02-14 | Business magazine subscription (annual renewal)             | The Economist                    | TEC-SUB-2025         | 20.00        | Pro-rated monthly portion (Total annual: £240.00)                   |
+| **Subtotal** | | | | **45.00** | |
+
+---
+
+**TOTAL REIMBURSEMENT REQUESTED: £4,270.50**
+
+---
+
+**Declaration:**
+
+I, John Smith (Employee ID: GS-JS-7890), hereby certify that the above expenses were incurred for legitimate business purposes on behalf of Global Industries and are in accordance with the company's expense policy. All supporting receipts and documentation are attached or available upon request.
+
+**Employee Signature:** John Smith
+**Date:** 2025-03-10
+
+---
+
+**Approver Comments & Approval:**
+
+**Approved By:** Sarah Chen
+**Approver Title:** Head of International Business Development
+**Approval Date:** 2025-03-12
+**Approval Signature:** Sarah Chen
+
+**Notes:** All expenses appear to be within policy and are appropriately justified. Project 'Titan' and 'Emerald Summit' expenditures are particularly critical for strategic growth.
+
+---
+
+**Finance Department Review:**
+
+**Reviewed By:** David Miller
+**Reviewer Title:** Senior Finance Analyst
+**Review Date:** 2025-03-14
+
+**Audit Notes:** All receipts verified against claims. Categorization correct. Total reimbursement amount matches sum of detailed expenses. Payment to be processed on 2025-03-15.
+
+**Payment Reference:** GI-EXP-JS-202502-001
+**Payment Status:** Pending
+
+---
+---
+
+**Global Industries - Annual Expense Summary (2024)**
+
+**Account Holder:** John Smith
+**Employee ID:** GS-JS-7890
+**Department:** International Business Development
+**Reporting Period:** 2024-01-01 to 2024-12-31
+**Date of Generation:** 2025-01-15
+**Currency:** GBP
+
+**Bank Account for Reimbursement:** HSBC - Account Number: **** **** **5678 (Sort Code: 40-05-15)**
+
+---
+
+**Annual Summary of Expenses by Category (2024):**
+
+| Category                      | Total Amount (GBP) |
+|:------------------------------|--------------------|
+| Travel & Accommodation        | 18,245.80          |
+| Meals & Entertainment         | 5,123.50           |
+| Client Gifts & Hospitality    | 1,850.00           |
+| Training & Development        | 1,200.00           |
+| Office Supplies               | 489.95             |
+| Communication                 | 870.00             |
+| Conferences & Subscriptions   | 2,500.00           |
+| Miscellaneous                 | 315.75             |
+| **GRAND TOTAL REIMBURSED**    | **30,595.00**      |
+
+---
+
+**Detailed Annual Expense Breakdown (2024):**
+
+**CATEGORY: Travel & Accommodation**
+
+| Date         | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-------------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2024-01-15   | Return Flight - London (LHR) to New York (JFK)              | Virgin Atlantic                  | VS-123456789         | 780.00       | Meeting US East Coast partners (Project 'Horizon')                  |
+| 2024-01-15   | Hotel Accommodation - New York (4 nights)                   | The Peninsula New York           | PNY-JAN15            | 1,080.00     | Project 'Horizon' meetings                                          |
+| 2024-01-19   | Taxi from JFK to Hotel                                      | NYC Yellow Cab                   | NYC-CAB-0115         | 60.00        | Travel upon arrival                                                 |
+| 2024-01-19   | Taxi from Hotel to JFK                                      | NYC Yellow Cab                   | NYC-CAB-0119         | 60.00        | Travel for departure                                                |
+| 2024-02-05   | Train Ticket - London (EUS) to Glasgow (GLC) - Return       | LNER                             | LNER-EUS-GLC-001     | 135.00       | Scottish regional office visit                                      |
+| 2024-02-05   | Hotel Accommodation - Glasgow (1 night)                     | Malmaison Glasgow                | MAL-GLA-FEB05        | 160.00       | Accommodation for regional visit                                    |
+| 2024-03-10   | Return Flight - London (LHR) to Singapore (SIN)             | Singapore Airlines               | SQ-987654321         | 1,250.00     | APAC market research trip                                           |
+| 2024-03-10   | Hotel Accommodation - Singapore (5 nights)                  | Marina Bay Sands                 | MBS-SIN-MAR10        | 1,500.00     | APAC market research                                                |
+| 2024-03-15   | Airport Transfer - SIN                                      | Changi Airport Taxi              | CAT-SIN-0315         | 40.00        | Travel to/from airport                                              |
+| 2024-04-22   | Return Flight - London (LHR) to Paris (CDG)                 | Air France                       | AF-112233445         | 220.00       | European client review meeting                                      |
+| 2024-04-22   | Train Ticket - CDG to Paris City Centre (RER)               | RER Paris                        | RER-PAR-0422         | 20.00        | Travel to city centre                                               |
+| 2024-04-22   | Hotel Accommodation - Paris (2 nights)                      | Hotel Lutetia, Paris             | LUT-PAR-APR22        | 450.00       | European client review                                              |
+| 2024-05-18   | Train Ticket - London (KGX) to Edinburgh (EDI) - Return     | LNER                             | LNER-KGX-EDI-002     | 145.00       | Internal strategy workshop                                          |
+| 2024-05-18   | Hotel Accommodation - Edinburgh (1 night)                   | The Balmoral, Edinburgh          | BAL-EDI-MAY18        | 210.00       | Accommodation for workshop                                          |
+| 2024-06-03   | Return Flight - London (LHR) to Dubai (DXB)                 | Emirates                         | EK-556677889         | 950.00       | Middle East expansion discussions                                   |
+| 2024-06-03   | Hotel Accommodation - Dubai (4 nights)                      | Burj Al Arab Jumeirah            | BAJ-DXB-JUN03        | 1,800.00     | Middle East expansion meetings                                      |
+| 2024-06-07   | Airport Transfer - DXB                                      | Dubai Taxi Corporation           | DTC-DXB-0607         | 55.00        | Travel to/from airport                                              |
+| 2024-07-11   | Return Flight - London (LGW) to Berlin (BER)                | EasyJet                          | U2-12345678          | 180.00       | Tech innovation conference                                          |
+| 2024-07-11   | Hotel Accommodation - Berlin (3 nights)                     | Hotel Adlon Kempinski Berlin     | HAK-BER-JUL11        | 720.00       | Accommodation for conference                                        |
+| 2024-08-20   | Train Ticket - London (PAD) to Bristol (BRI) - Return       | GWR                              | GWR-PAD-BRI-001      | 85.00        | Regional client visit                                               |
+| 2024-09-01   | Return Flight - London (LHR) to Toronto (YYZ)               | Air Canada                       | AC-998877665         | 850.00       | North American sales review                                         |
+| 2024-09-01   | Hotel Accommodation - Toronto (3 nights)                    | The Ritz-Carlton, Toronto        | RZT-YYZ-SEP01        | 810.00       | North American sales review                                         |
+| 2024-09-04   | Airport Transfer - YYZ                                      | Toronto Airport Express          | TAE-YYZ-0904         | 45.00        | Travel to/from airport                                              |
+| 2024-10-15   | Return Flight - London (LHR) to Milan (MXP)                 | British Airways                  | BA-102030405         | 250.00       | European partnership negotiations                                   |
+| 2024-10-15   | Hotel Accommodation - Milan (2 nights)                      | Bulgari Hotel Milan              | BHM-MIL-OCT15        | 550.00       | Partnership negotiations                                            |
+| 2024-11-05   | Train Ticket - London (EUS) to Liverpool (LIV) - Return     | Avanti West Coast                | AVC-EUS-LIV-001      | 105.00       | Meeting with new regional manager                                   |
+| 2024-12-02   | Return Flight - London (LHR) to Tokyo (NRT)                 | Japan Airlines                   | JL-678901234         | 1,300.00     | Year-end review with Japanese stakeholders                          |
+| 2024-12-02   | Hotel Accommodation - Tokyo (5 nights)                      | The Imperial Hotel, Tokyo        | IMP-TYO-DEC02        | 1,650.00     | Year-end review meetings                                            |
+| 2024-12-07   | Airport Transfer - NRT                                      | Tokyo Limousine Bus              | TLB-NRT-1207         | 70.00        | Travel to/from airport                                              |
+| **Subtotal** | | | | **18,245.80**| |
+
+**CATEGORY: Meals & Entertainment**
+
+| Date         | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-------------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2024-01-16   | Dinner with US East Coast partners (4 people)               | Eleven Madison Park, NYC         | EMP-NYC-0116         | 320.00       | Project 'Horizon' discussions                                       |
+| 2024-01-17   | Lunch with legal counsel, NYC                               | The Modern, NYC                  | TMD-NYC-0117         | 110.00       | Contract review                                                     |
+| 2024-02-06   | Dinner with Scottish regional team (3 people)               | The Gannet, Glasgow              | TGA-GLA-0206         | 145.00       | Quarterly performance review                                        |
+| 2024-03-12   | Dinner with potential Singaporean partners (5 people)       | Odette, Singapore                | ODE-SIN-0312         | 450.00       | APAC market entry strategy                                          |
+| 2024-03-13   | Lunch with local market analyst, Singapore                  | Candlenut, Singapore             | CAN-SIN-0313         | 90.00        | Market insights discussion                                          |
+| 2024-04-23   | Dinner with European client (2 people)                      | Arpège, Paris                    | ARP-PAR-0423         | 280.00       | Annual account review                                               |
+| 2024-05-19   | Dinner with UK leadership team (internal)                   | The Witchery by the Castle, Edin | WIT-EDI-0519         | 190.00       | Strategy workshop debrief                                           |
+| 2024-06-05   | Dinner with Middle East investors (6 people)                | Al Mahara, Dubai                 | ALM-DXB-0605         | 550.00       | Investment discussions for expansion                                |
+| 2024-07-12   | Lunch with conference speakers (3 people)                   | Tim Raue, Berlin                 | TIR-BER-0712         | 170.00       | Networking and industry insights                                    |
+| 2024-08-20   | Lunch with Bristol client (2 people)                        | The Ivy Clifton Brasserie        | IVY-BRI-0820         | 85.00        | Project progress update                                             |
+| 2024-09-02   | Dinner with North American sales team (4 people)            | Alo Restaurant, Toronto          | ALO-YYZ-0902         | 380.00       | Q3 sales performance review                                         |
+| 2024-10-16   | Dinner with Italian negotiation team (3 people)             | Il Luogo di Aimo e Nadia, Milan  | ILN-MIL-1016         | 310.00       | Partnership contract finalisation                                   |
+| 2024-11-06   | Dinner with new Liverpool manager                           | Mowgli Street Food, Liverpool    | MOW-LIV-1106         | 75.00        | Onboarding and strategic alignment                                  |
+| 2024-12-04   | Dinner with Japanese stakeholders (5 people)                | Nihonryori RyuGin, Tokyo         | NIH-TYO-1204         | 480.00       | Annual performance review and future plans                          |
+| 2024-12-05   | Lunch with local industry contacts, Tokyo                   | Sushi Saito, Tokyo               | SUS-TYO-1205         | 270.00       | Market trend analysis                                               |
+| **Subtotal** | | | | **5,123.50** | |
+
+**CATEGORY: Client Gifts & Hospitality**
+
+| Date         | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-------------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2024-01-18   | Gift for key US client contact                              | Tiffany & Co.                    | TIF-GFT-001          | 300.00       | Appreciation for ongoing partnership (Project 'Horizon')            |
+| 2024-03-14   | Gifts for potential Singaporean partners (3 items)          | TANGS, Singapore                 | TAN-GFT-002          | 450.00       | Thank you gifts for market research participation                   |
+| 2024-06-06   | Gift for Middle East investor                               | Damas Jewellery, Dubai           | DAM-GFT-003          | 500.00       | Token of goodwill for promising investment discussions              |
+| 2024-09-03   | Gift for North American sales director                      | Nordstrom                        | NOR-GFT-004          | 250.00       | Recognition for strong Q2/Q3 performance                            |
+| 2024-12-06   | Gift for Japanese stakeholder                               | Mitsukoshi, Tokyo                | MIT-GFT-005          | 350.00       | Appreciation for successful year-end collaboration                  |
+| **Subtotal** | | | | **1,850.00** | |
+
+**CATEGORY: Training & Development**
+
+| Date         | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-------------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2024-03-01   | Online course: Advanced Data Analytics for Business         | Coursera (Global Learning)       | CRS-ADA-0301         | 300.00       | Skill enhancement for strategic analysis                            |
+| 2024-09-15   | Leadership & Negotiation Skills Workshop (2 days)           | Executive Education Group        | EEG-LNS-0915         | 900.00       | Professional development for international roles                    |
+| **Subtotal** | | | | **1,200.00** | |
+
+**CATEGORY: Office Supplies**
+
+| Date         | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-------------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2024-01-25   | Ergonomic Office Chair                                      | Herman Miller                    | HM-CHAIR-0125        | 350.00       | Upgrade for home office setup                                       |
+| 2024-04-10   | Printer cartridges, paper, pens                             | Viking Direct                    | VIK-OS-0410          | 75.95        | General office replenishment                                        |
+| 2024-07-01   | External SSD for backup                                     | Amazon UK                        | AMZ-SSD-0701         | 64.00        | Data storage and backup                                             |
+| **Subtotal** | | | | **489.95**   | |
+
+**CATEGORY: Communication**
+
+| Date         | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-------------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2024-01-31   | International Roaming Charges (USA)                         | Vodafone                         | VOD-IR-USA-JAN       | 80.00        | Data and calls during New York trip                                 |
+| 2024-03-31   | International Roaming Charges (Singapore)                   | Vodafone                         | VOD-IR-SIN-MAR       | 120.00       | Data and calls during Singapore trip                                |
+| 2024-04-30   | International Roaming Charges (France)                      | Vodafone                         | VOD-IR-FRA-APR       | 40.00        | Data and calls during Paris trip                                    |
+| 2024-06-30   | International Roaming Charges (UAE)                         | Vodafone                         | VOD-IR-UAE-JUN       | 100.00       | Data and calls during Dubai trip                                    |
+| 2024-07-31   | International Roaming Charges (Germany)                     | Vodafone                         | VOD-IR-GER-JUL       | 50.00        | Data and calls during Berlin trip                                   |
+| 2024-09-30   | International Roaming Charges (Canada)                      | Vodafone                         | VOD-IR-CAN-SEP       | 90.00        | Data and calls during Toronto trip                                  |
+| 2024-10-31   | International Roaming Charges (Italy)                       | Vodafone                         | VOD-IR-ITA-OCT       | 50.00        | Data and calls during Milan trip                                    |
+| 2024-12-31   | International Roaming Charges (Japan)                       | Vodafone                         | VOD-IR-JPN-DEC       | 140.00       | Data and calls during Tokyo trip                                    |
+| 2024-01-01   | Home Broadband Contribution (12 months x £10/month)         | Various (part of utility bill)   | HB-CONT-2024         | 120.00       | Company policy contribution for remote work                         |
+| **Subtotal** | | | | **870.00**   | |
+
+**CATEGORY: Conferences & Subscriptions**
+
+| Date         | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-------------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2024-03-15   | Annual Subscription: Harvard Business Review                | Harvard Business Publishing      | HBR-SUB-2024         | 150.00       | Professional development and industry insights                      |
+| 2024-07-11   | Registration Fee: Global Tech Innovation Summit, Berlin     | GTS Organisers                   | GTS-REG-0711         | 750.00       | Attending for market research and networking                        |
+| 2024-09-01   | Annual Subscription: Wall Street Journal Digital            | Dow Jones                        | WSJ-SUB-2024         | 200.00       | Global financial news and analysis                                  |
+| 2024-11-20   | Membership Renewal: International Chamber of Commerce       | ICC UK                           | ICC-MEM-2024         | 1,400.00     | Networking, advocacy, and business intelligence                     |
+| **Subtotal** | | | | **2,500.00** | |
+
+**CATEGORY: Miscellaneous**
+
+| Date         | Description                                                 | Vendor/Payee                     | Reference/Receipt #  | Amount (GBP) | Notes                                                               |
+|:-------------|:------------------------------------------------------------|:---------------------------------|:---------------------|:-------------|:--------------------------------------------------------------------|
+| 2024-02-10   | Dry Cleaning for business attire (monthly average)          | Johnson Cleaners                 | JC-DC-FEB            | 25.00        | Professional appearance for client meetings                         |
+| 2024-03-05   | Passport Renewal Fee                                        | HM Passport Office               | HMP-PR-0305          | 82.50        | Essential for international travel                                  |
+| 2024-05-20   | Business luggage repair                                     | Luggage Repair Shop              | LRS-REP-0520         | 40.00        | Damage incurred during business travel                              |
+| 2024-08-15   | Emergency flight change fee (personal emergency)            | British Airways                  | BA-CHANGE-0815       | 120.00       | Approved by manager, reimbursed according to policy                 |
+| 2024-10-01   | Dry Cleaning for business attire (monthly average)          | Jeeves of Belgravia              | JOB-DC-OCT           | 25.00        | Professional appearance for client meetings                         |
+| 2024-11-10   | Taxi from home to local train station (non-LHR/LGW travel)  | Local Cabs                       | LC-TX-1110           | 10.00        | For travel to Glasgow trip                                          |
+| 2024-12-15   | Business card printing (reorder)                            | Vistaprint                       | VIST-BC-1215         | 13.25        | Essential for networking                                            |
+| **Subtotal** | | | | **315.75**   | |
+
+---
+
+**GRAND TOTAL REIMBURSED FOR 2024: £30,595.00**
+
+---
+
+**Policy Compliance Notes:**
+
+*   All expenses adhere to Global Industries' International Travel & Entertainment Policy (rev. 2023-09).
+*   Accommodation rates generally within approved limits for respective cities. Exceptions (e.g., Burj Al Arab, Marina Bay Sands) were pre-approved due to strategic importance of engagements.
+*   Client gifts are within the £500 per client per annum limit.
+*   Training and development expenditures were pre-approved by Head of Department.
+*   Home office contributions and communication expenses are in line with remote work policy.
+*   Emergency flight change fee was approved by Sarah Chen (Head of International Business Development) due to unforeseen personal circumstances, with clear documentation provided.
+
+---
+
+**Finance Department Audit Summary (2024 Annual Expenses):**
+
+**Auditor:** Emily Davies
+**Audit Date:** 2025-01-20
+
+**Audit Findings:**
+*   **Completeness:** All submitted expense reports for John Smith (GS-JS-7890) for the 2024 fiscal year have been reconciled against the annual summary.
+*   **Accuracy:** Sample audit of 20% of high-value transactions (£200+) and 10% of low-value transactions (<£50) against original receipts and supporting documentation confirmed accuracy of amounts claimed. Minor discrepancies (e.g., currency conversion rounding) were within acceptable thresholds and adjusted where material.
+*   **Policy Compliance:** Overall compliance with Global Industries' expense policy is strong. All significant deviations (e.g., luxury hotels, emergency flight change) were found to have appropriate pre-approvals or justifications on file.
+*   **Categorization:** Expenses are consistently and correctly categorized.
+*   **Recommendations:** No specific recommendations for John Smith's expense management. Continue to ensure all pre-approvals for high-value items are documented clearly.
+*   **Overall Conclusion:** John Smith's 2024 expense submissions are well-documented, accurate, and largely compliant with company policy.
+
+**Audit Status:** Closed and Approved.
+
+---
+
+**End of Document**

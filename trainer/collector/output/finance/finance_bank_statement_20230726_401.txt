@@ -1,0 +1,284 @@
+**First National Bank**
+**Annual Account Statement**
+**Reporting Period: July 1, 2022 - June 30, 2023**
+
+**Account Holder:** John Smith
+**Account Number:** XXXXXXXXXXX1234
+**Account Type:** Premier Checking
+**Statement Date:** July 26, 2023
+**Currency:** USD
+
+---
+
+**Summary of Your Account Activity**
+
+**Previous Balance (as of July 1, 2022):** $12,587.23
+**Total Deposits/Credits:** $124,152.88
+**Total Withdrawals/Debits:** $119,876.51
+**Service Charges/Fees:** $75.00
+**Interest Earned:** $45.17
+**New Balance (as of June 30, 2023):** $16,833.77
+
+---
+
+**Detailed Transaction History**
+
+**Date | Transaction Type | Description | Reference Number | Amount (USD)**
+--- | --- | --- | --- | ---
+2022-07-05 | DEBIT | ATM Withdrawal - Main St Branch | REF78901234 | -$100.00
+2022-07-07 | DEBIT | POS Purchase - Grocer's Delight | REF78901235 | -$67.89
+2022-07-08 | CREDIT | Direct Deposit - Acme Corp Payroll | REF78901236 | $4,500.00
+2022-07-10 | DEBIT | Online Payment - Electric Bill | REF78901237 | -$89.50
+2022-07-12 | DEBIT | POS Purchase - Coffee Corner | REF78901238 | -$4.75
+2022-07-15 | DEBIT | Rent Payment - Property Management LLC | REF78901239 | -$1,500.00
+2022-07-18 | DEBIT | Online Subscription - Streaming Service | REF78901240 | -$15.99
+2022-07-20 | CREDIT | Transfer In - Savings Account | REF78901241 | $500.00
+2022-07-22 | DEBIT | POS Purchase - Bookstore Bonanza | REF78901242 | -$32.10
+2022-07-25 | DEBIT | Online Payment - Internet Service | REF78901243 | -$65.00
+2022-07-28 | DEBIT | ATM Withdrawal - Downtown Plaza | REF78901244 | -$200.00
+2022-08-01 | DEBIT | POS Purchase - Gas Station | REF78901245 | -$55.30
+2022-08-05 | DEBIT | POS Purchase - Pharmacy | REF78901246 | -$23.45
+2022-08-08 | CREDIT | Direct Deposit - Acme Corp Payroll | REF78901247 | $4,500.00
+2022-08-10 | DEBIT | Online Payment - Water Bill | REF78901248 | -$42.75
+2022-08-14 | DEBIT | POS Purchase - Hardware Store | REF78901249 | -$18.99
+2022-08-16 | DEBIT | Check Payment - Landscaping Service | REF78901250 | -$75.00
+2022-08-19 | DEBIT | Online Payment - Credit Card | REF78901251 | -$750.00
+2022-08-23 | DEBIT | ATM Withdrawal - Airport Terminal | REF78901252 | -$100.00
+2022-08-26 | DEBIT | POS Purchase - Restaurant "The Eatery" | REF78901253 | -$48.60
+2022-08-30 | DEBIT | Online Subscription - Cloud Storage | REF78901254 | -$9.99
+2022-09-02 | DEBIT | POS Purchase - Pet Store | REF78901255 | -$35.20
+2022-09-06 | DEBIT | ATM Withdrawal - Suburban Mall | REF78901256 | -$50.00
+2022-09-09 | CREDIT | Direct Deposit - Acme Corp Payroll | REF78901257 | $4,500.00
+2022-09-11 | DEBIT | Online Payment - Car Insurance | REF78901258 | -$120.00
+2022-09-15 | DEBIT | Rent Payment - Property Management LLC | REF78901259 | -$1,500.00
+2022-09-18 | DEBIT | POS Purchase - Electronics Store | REF78901260 | -$149.99
+2022-09-21 | DEBIT | Online Payment - Student Loan Servicing | REF78901261 | -$250.00
+2022-09-24 | DEBIT | ATM Withdrawal - University Campus | REF78901262 | -$50.00
+2022-09-27 | DEBIT | POS Purchase - Dry Cleaner | REF78901263 | -$18.50
+2022-09-30 | DEBIT | Online Subscription - Magazine | REF78901264 | -$7.99
+2022-10-03 | DEBIT | POS Purchase - Coffee Shop | REF78901265 | -$5.25
+2022-10-07 | DEBIT | ATM Withdrawal - Grocery Store | REF78901266 | -$75.00
+2022-10-10 | CREDIT | Direct Deposit - Acme Corp Payroll | REF78901267 | $4,500.00
+2022-10-12 | DEBIT | Online Payment - Gas Bill | REF78901268 | -$78.10
+2022-10-15 | DEBIT | Rent Payment - Property Management LLC | REF78901269 | -$1,500.00
+2022-10-17 | DEBIT | POS Purchase - Department Store | REF78901270 | -$85.70
+2022-10-20 | DEBIT | Online Purchase - Book Retailer | REF78901271 | -$29.99
+2022-10-24 | DEBIT | ATM Withdrawal - City Center | REF78901272 | -$100.00
+2022-10-27 | DEBIT | POS Purchase - Pharmacy | REF78901273 | -$12.80
+2022-10-31 | DEBIT | Online Subscription - News Service | REF78901274 | -$10.00
+2022-11-03 | DEBIT | POS Purchase - Bakery | REF78901275 | -$15.50
+2022-11-07 | DEBIT | ATM Withdrawal - Neighborhood Branch | REF78901276 | -$50.00
+2022-11-10 | CREDIT | Direct Deposit - Acme Corp Payroll | REF78901277 | $4,500.00
+2022-11-12 | DEBIT | Online Payment - Electric Bill | REF78901278 | -$95.20
+2022-11-15 | DEBIT | Rent Payment - Property Management LLC | REF78901279 | -$1,500.00
+2022-11-18 | DEBIT | POS Purchase - Restaurant "Fine Dining" | REF78901280 | -$110.00
+2022-11-21 | CREDIT | Bonus Payment - Acme Corp | REF78901281 | $1,000.00
+2022-11-24 | DEBIT | Online Purchase - Travel Website | REF78901282 | -$350.00
+2022-11-28 | DEBIT | ATM Withdrawal - Shopping Center | REF78901283 | -$200.00
+2022-12-01 | DEBIT | POS Purchase - Gift Shop | REF78901284 | -$45.75
+2022-12-05 | DEBIT | Online Payment - Credit Card | REF78901285 | -$1,000.00
+2022-12-08 | CREDIT | Direct Deposit - Acme Corp Payroll | REF78901286 | $4,500.00
+2022-12-10 | DEBIT | Online Payment - Internet Service | REF78901287 | -$65.00
+2022-12-15 | DEBIT | Rent Payment - Property Management LLC | REF78901288 | -$1,500.00
+2022-12-18 | DEBIT | POS Purchase - Toy Store | REF78901289 | -$78.99
+2022-12-21 | DEBIT | Check Payment - Charity Donation | REF78901290 | -$100.00
+2022-12-24 | DEBIT | ATM Withdrawal - Holiday Market | REF78901291 | -$150.00
+2022-12-27 | DEBIT | POS Purchase - Grocery Store | REF78901292 | -$120.30
+2022-12-30 | DEBIT | Online Subscription - Fitness App | REF78901293 | -$19.99
+2023-01-03 | DEBIT | POS Purchase - Coffee Corner | REF78901294 | -$4.75
+2023-01-06 | DEBIT | ATM Withdrawal - Main St Branch | REF78901295 | -$100.00
+2023-01-09 | CREDIT | Direct Deposit - Acme Corp Payroll | REF78901296 | $4,500.00
+2023-01-11 | DEBIT | Online Payment - Water Bill | REF78901297 | -$47.80
+2023-01-15 | DEBIT | Rent Payment - Property Management LLC | REF78901298 | -$1,500.00
+2023-01-18 | DEBIT | POS Purchase - Pharmacy | REF78901299 | -$28.15
+2023-01-22 | DEBIT | Online Payment - Student Loan Servicing | REF78901300 | -$250.00
+2023-01-25 | DEBIT | ATM Withdrawal - Downtown Plaza | REF78901301 | -$50.00
+2023-01-28 | DEBIT | POS Purchase - Book Store | REF78901302 | -$19.99
+2023-02-01 | DEBIT | Online Subscription - Music Service | REF78901303 | -$12.99
+2023-02-04 | DEBIT | POS Purchase - Flower Shop | REF78901304 | -$30.00
+2023-02-07 | DEBIT | ATM Withdrawal - Suburban Mall | REF78901305 | -$100.00
+2023-02-10 | CREDIT | Direct Deposit - Acme Corp Payroll | REF78901306 | $4,500.00
+2023-02-12 | DEBIT | Online Payment - Car Insurance | REF78901307 | -$120.00
+2023-02-15 | DEBIT | Rent Payment - Property Management LLC | REF78901308 | -$1,500.00
+2023-02-18 | DEBIT | POS Purchase - Restaurant "Pizza Palace" | REF78901309 | -$38.50
+2023-02-22 | DEBIT | Online Payment - Electric Bill | REF78901310 | -$105.40
+2023-02-25 | DEBIT | ATM Withdrawal - University Campus | REF78901311 | -$50.00
+2023-02-28 | DEBIT | POS Purchase - Dry Cleaner | REF78901312 | -$21.00
+2023-03-03 | DEBIT | Online Subscription - Gaming Service | REF78901313 | -$14.99
+2023-03-06 | DEBIT | POS Purchase - Hardware Store | REF78901314 | -$42.70
+2023-03-09 | DEBIT | ATM Withdrawal - Grocery Store | REF78901315 | -$75.00
+2023-03-12 | CREDIT | Direct Deposit - Acme Corp Payroll | REF78901316 | $4,500.00
+2023-03-14 | DEBIT | Online Payment - Gas Bill | REF78901317 | -$82.60
+2023-03-15 | DEBIT | Rent Payment - Property Management LLC | REF78901318 | -$1,500.00
+2023-03-18 | DEBIT | POS Purchase - Department Store | REF78901319 | -$99.50
+2023-03-22 | DEBIT | Online Purchase - Home Goods | REF78901320 | -$65.00
+2023-03-25 | DEBIT | ATM Withdrawal - City Center | REF78901321 | -$100.00
+2023-03-28 | DEBIT | POS Purchase - Pet Store | REF78901322 | -$29.90
+2023-03-31 | DEBIT | Online Subscription - Productivity Tool | REF78901323 | -$8.99
+2023-04-03 | DEBIT | POS Purchase - Coffee Shop | REF78901324 | -$5.25
+2023-04-06 | DEBIT | ATM Withdrawal - Neighborhood Branch | REF78901325 | -$50.00
+2023-04-09 | CREDIT | Direct Deposit - Acme Corp Payroll | REF78901326 | $4,500.00
+2023-04-11 | DEBIT | Online Payment - Internet Service | REF78901327 | -$65.00
+2023-04-15 | DEBIT | Rent Payment - Property Management LLC | REF78901328 | -$1,500.00
+2023-04-18 | DEBIT | POS Purchase - Garden Center | REF78901329 | -$55.30
+2023-04-21 | CREDIT | Tax Refund - IRS | REF78901330 | $750.00
+2023-04-24 | DEBIT | Online Payment - Credit Card | REF78901331 | -$800.00
+2023-04-27 | DEBIT | ATM Withdrawal - Shopping Center | REF78901332 | -$200.00
+2023-04-30 | DEBIT | POS Purchase - Restaurant "Sushi Spot" | REF78901333 | -$62.00
+2023-05-03 | DEBIT | Online Subscription - E-book Service | REF78901334 | -$11.99
+2023-05-06 | DEBIT | POS Purchase - Bakery | REF78901335 | -$10.75
+2023-05-09 | DEBIT | ATM Withdrawal - Main St Branch | REF78901336 | -$100.00
+2023-05-12 | CREDIT | Direct Deposit - Acme Corp Payroll | REF78901337 | $4,500.00
+2023-05-14 | DEBIT | Online Payment - Electric Bill | REF78901338 | -$115.60
+2023-05-15 | DEBIT | Rent Payment - Property Management LLC | REF78901339 | -$1,500.00
+2023-05-18 | DEBIT | POS Purchase - Sporting Goods | REF78901340 | -$70.00
+2023-05-21 | DEBIT | Check Payment - Home Repair Service | REF78901341 | -$200.00
+2023-05-24 | DEBIT | ATM Withdrawal - Downtown Plaza | REF78901342 | -$50.00
+2023-05-27 | DEBIT | POS Purchase - Grocery Store | REF78901343 | -$98.40
+2023-05-30 | DEBIT | Online Subscription - Movie Rental | REF78901344 | -$5.99
+2023-06-02 | DEBIT | POS Purchase - Coffee Corner | REF78901345 | -$4.75
+2023-06-05 | DEBIT | ATM Withdrawal - Suburban Mall | REF78901346 | -$100.00
+2023-06-08 | CREDIT | Direct Deposit - Acme Corp Payroll | REF78901347 | $4,500.00
+2023-06-10 | DEBIT | Online Payment - Water Bill | REF78901348 | -$51.20
+2023-06-15 | DEBIT | Rent Payment - Property Management LLC | REF78901349 | -$1,500.00
+2023-06-18 | DEBIT | POS Purchase - Pharmacy | REF78901350 | -$15.90
+2023-06-21 | DEBIT | Online Payment - Student Loan Servicing | REF78901351 | -$250.00
+2023-06-24 | DEBIT | ATM Withdrawal - University Campus | REF78901352 | -$50.00
+2023-06-27 | DEBIT | POS Purchase - Bookstore Bonanza | REF78901353 | -$25.50
+2023-06-30 | CREDIT | Interest Earned | REF78901354 | $45.17
+2023-06-30 | DEBIT | Monthly Service Fee | REF78901355 | -$5.00
+
+---
+
+**Interest Information**
+
+**Interest Earned This Period:** $45.17
+**Annual Percentage Yield Earned (APY):** 0.25%
+**Interest Paid Year-to-Date:** $45.17
+
+---
+
+**Fees Summary**
+
+**Monthly Service Fees:** $60.00 (12 x $5.00)
+**ATM Fees (Non-First National Bank ATMs):** $15.00
+**Total Fees This Period:** $75.00
+
+*Note: Your Premier Checking account waives up to 2 out-of-network ATM fees per month. Fees beyond this limit are $2.50 per transaction. All ATM fees charged this period were for out-of-network transactions exceeding the monthly waiver.*
+
+---
+
+**Important Notices**
+
+* **Online Banking Security:** We encourage you to regularly review your account activity through First National Bank's secure online banking portal. Report any suspicious transactions immediately.
+* **Fraud Prevention:** First National Bank will never ask for your full account number, PIN, or online banking password via email or unsolicited phone calls. Be wary of phishing attempts.
+* **Upcoming Changes:** Effective September 1, 2023, the monthly service fee for Premier Checking accounts will increase to $6.00. Please refer to our website or contact customer service for more details.
+* **Paperless Statements:** Consider enrolling in paperless statements for a more environmentally friendly and secure way to receive your account information. You can enroll through your online banking portal.
+* **Direct Deposit Information:** Ensure your direct deposit information with your employer, Acme Corp, is always up to date to avoid any delays in receiving your payroll.
+* **Financial Planning Resources:** First National Bank offers a variety of financial planning tools and resources through our website. These can help you budget, save, and plan for your future.
+* **Dispute Resolution:** If you believe there is an error on your statement, please contact us within 60 days of the statement date. Refer to the "Error Resolution Notice" included with this statement for detailed instructions.
+
+---
+
+**Year-to-Date Financial Overview (July 1, 2022 - June 30, 2023)**
+
+**Income Breakdown:**
+* **Acme Corp Payroll (Direct Deposits):** $54,000.00 (12 x $4,500.00)
+* **Acme Corp Bonus Payment:** $1,000.00
+* **Tax Refund - IRS:** $750.00
+* **Transfer In - Savings Account:** $500.00
+* **Interest Earned:** $45.17
+* **Total Income:** $56,295.17
+
+**Expense Breakdown (Common Categories):**
+* **Rent Payments:** $18,000.00 (12 x $1,500.00)
+* **Groceries/Dining:** $1,036.03
+    * Grocer's Delight: $67.89
+    * Restaurant "The Eatery": $48.60
+    * Restaurant "Fine Dining": $110.00
+    * Grocery Store: $120.30
+    * Pharmacy: $23.45 + $12.80 + $28.15 + $15.90 = $80.30
+    * Bakery: $15.50 + $10.75 = $26.25
+    * Coffee Corner/Shop: $4.75 + $5.25 + $4.75 + $5.25 + $4.75 = $24.75
+    * Restaurant "Pizza Palace": $38.50
+    * Restaurant "Sushi Spot": $62.00
+    * Pet Store: $35.20 + $29.90 = $65.10
+    * Dry Cleaner: $18.50 + $21.00 = $39.50
+    * Flower Shop: $30.00
+    * Gas Station: $55.30
+* **Utilities (Electric, Water, Internet, Gas):** $1,017.65
+    * Electric Bill: $89.50 + $95.20 + $105.40 + $115.60 = $405.70
+    * Water Bill: $42.75 + $47.80 + $51.20 = $141.75
+    * Internet Service: $65.00 + $65.00 + $65.00 + $65.00 = $260.00
+    * Gas Bill: $78.10 + $82.60 = $160.70
+    * Car Insurance: $120.00 + $120.00 = $240.00
+* **Subscriptions/Services:** $136.91
+    * Streaming Service: $15.99
+    * Cloud Storage: $9.99
+    * Magazine: $7.99
+    * News Service: $10.00
+    * Fitness App: $19.99
+    * Music Service: $12.99
+    * Gaming Service: $14.99
+    * Productivity Tool: $8.99
+    * E-book Service: $11.99
+    * Movie Rental: $5.99
+* **Personal Care/Shopping:** $1,012.33
+    * Bookstore Bonanza: $32.10 + $25.50 = $57.60
+    * Electronics Store: $149.99
+    * Department Store: $85.70 + $99.50 = $185.20
+    * Toy Store: $78.99
+    * Gift Shop: $45.75
+    * Book Retailer (Online): $29.99
+    * Hardware Store: $18.99 + $42.70 = $61.69
+    * Home Goods (Online): $65.00
+    * Garden Center: $55.30
+    * Sporting Goods: $70.00
+* **Loan Payments:** $1,000.00
+    * Student Loan Servicing: $250.00 + $250.00 + $250.00 + $250.00 = $1,000.00
+* **Credit Card Payments:** $2,550.00
+    * Credit Card: $750.00 + $1,000.00 + $800.00 = $2,550.00
+* **ATM Withdrawals:** $2,125.00
+    * Main St Branch: $100.00 + $100.00 + $100.00 = $300.00
+    * Downtown Plaza: $200.00 + $50.00 + $50.00 = $300.00
+    * Airport Terminal: $100.00
+    * Suburban Mall: $50.00 + $100.00 + $100.00 = $250.00
+    * University Campus: $50.00 + $50.00 + $50.00 = $150.00
+    * Grocery Store: $75.00 + $75.00 = $150.00
+    * City Center: $100.00 + $100.00 = $200.00
+    * Neighborhood Branch: $50.00 + $50.00 = $100.00
+    * Shopping Center: $200.00 + $200.00 = $400.00
+    * Holiday Market: $150.00
+* **Miscellaneous Checks/Payments:** $375.00
+    * Landscaping Service: $75.00
+    * Charity Donation: $100.00
+    * Home Repair Service: $200.00
+* **Travel:** $350.00
+    * Travel Website: $350.00
+* **Total Debits:** $29,042.92 (Sum of listed categories, excluding ATM withdrawals as cash usage is variable and already accounted for in other categories if spent.)
+
+**Note on Expense Breakdown:** The "Expense Breakdown" above provides a categorized view of your *debit transactions* where possible. ATM withdrawals represent cash received, which may then be used for various expenses not individually tracked on this statement. For a complete understanding of your spending, consider your cash usage in addition to these categorized electronic debits.
+
+---
+
+**Contact Us**
+
+**Customer Service:** 1-800-555-1234
+**Online Banking Support:** 1-800-555-5678
+**Website:** www.firstnationalbank.com
+**Mailing Address:**
+First National Bank
+P.O. Box 12345
+Anytown, USA 98765
+
+**Branch Locations:**
+Visit our website for a complete list of branch locations and hours.
+
+---
+
+**Thank you for banking with First National Bank.**
+
+**Your financial well-being is our priority.**
+
+---
+**END OF STATEMENT**

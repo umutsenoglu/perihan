@@ -1,0 +1,55 @@
+**INVOICE**
+
+**Invoice Number:** EM-20231030-001
+**Date:** 30 October 2023
+
+**Issued By:**
+Ethan Marsh
+14 Willowbrook Avenue
+N12 8XY
+London, UK
+Email: ethan.marsh.dev@gmail.com
+Phone: 07700 900XXX
+
+**Bill To:**
+[Client Company Name]
+[Client Company Address]
+[Client Contact Person]
+
+---
+
+**Services Rendered:**
+
+| Description                               | Quantity | Rate (GBP) | Amount (GBP) |
+| :---------------------------------------- | :------- | :--------- | :----------- |
+| Weekend API Development - Project "Aurora" | 16 hours | 75.00      | 1,200.00     |
+| (28th & 29th October)                     |          |            |              |
+
+**Total Amount Due:** £1,200.00
+
+---
+
+**Payment Details:**
+
+Please remit payment within 14 days of the invoice date.
+
+**Bank Name:** Barclays
+**Account Name:** E Marsh
+**Account Number:** ******1234
+**Sort Code:** 20-XX-XX
+
+**Payment Reference:** EM-20231030-001
+
+---
+
+**Notes:**
+
+*   Thanks for the quick turnaround on the specification for the "Aurora" project. I managed to get the core endpoints implemented and unit tests drafted over the weekend.
+*   Next steps will be to integrate with the existing frontend and refine error handling.
+*   Hope Max is settling into Little Stars alright! Lily mentioned he was a bit teary on Monday morning.
+*   Any questions, just drop me an email or a call.
+
+**NI Number:** XX XX XX XX X
+**Tax Code:** 1257L
+
+Thank you for your business.

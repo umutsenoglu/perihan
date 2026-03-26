@@ -1,0 +1,99 @@
+```
+Archway Surgery
+14 High Street, Northwood, HA6 1DA
+NHS Provider Number: 8A123
+
+OPTOMETRY REPORT
+
+Patient Details:
+Name: Ethan Marsh
+Date of Birth: 1987-07-15 (38 years old)
+NHS Number: 987 654 3210
+Address: 12 Elmwood Avenue, North London, N12 0PX
+Contact Number: 07700 900XXX
+GP: Dr. Sarah Jenkins, Archway Surgery
+
+Date of Examination: 2026-01-20
+Time of Examination: 15:30
+Examining Optometrist: Dr. Anand Patel, GOC Reg. No. 012345
+
+Reason for Visit:
+Patient reports increased eye strain, blurred vision, and frequent headaches, particularly in the evenings. Mentions difficulty falling asleep and staying asleep, attributing it to work-related stress. Spouse, Claire Marsh, suggested an eye check-up as symptoms have worsened over the past three months.
+
+Ocular History:
+No significant ocular history. Wears glasses for computer use (prescription -0.75D sphere OU, issued 2023-05-10 by Specsavers, Finchley). No history of glaucoma, cataracts, or retinal detachment. Family history: maternal grandfather had presbyopia.
+
+General Health History:
+Mild asthma (Ventolin inhaler as needed), seasonal allergies (cetirizine in spring/summer), occasional lower back pain (managed with stretching and physiotherapy referral from 2024). No known systemic conditions affecting vision. Reports increased reliance on screen time for work.
+
+Current Medications:
+Ventolin inhaler (as needed), Cetirizine (seasonal), occasional paracetamol for headaches.
+
+Social History:
+Senior Software Engineer at FinEdge Technologies. Works predominantly on a computer. Recently leading a demanding project, "PayFlow Migration," moving from "PayCore v2" to a new microservices architecture. Project started 2024-09-01, with a critical deadline of 2025-04-30. Key personnel involved: James Patterson, Priya Sharma. Richard Clarke (CTO) is applying significant pressure. Mentions long hours, often working past 20:00, leading to tension with Claire. Children: Lily (7, QPA Primary School, Year 3), Max (4, Little Stars Nursery). Hobbies include tropical fish keeping, cycling, photography, and cooking, but less time for these recently.
+
+Objective Findings:
+
+Visual Acuity (with current glasses):
+Right Eye (RE): 6/7.5
+Left Eye (LE): 6/7.5
+Both Eyes (OU): 6/6
+
+Refraction:
+RE: -1.00 DSph / -0.25 DCyl x 180 (VA 6/6)
+LE: -1.00 DSph / -0.50 DCyl x 170 (VA 6/6)
+Add (Near): +0.75 (for computer/reading)
+
+Pupils: PERRLA (Pupils Equal, Round, Reactive to Light and Accommodation)
+Ocular Motility: Full and smooth, no restrictions.
+Confrontation Visual Fields: Full to finger counting OU.
+Intraocular Pressure (IOP):
+RE: 14 mmHg (at 15:45)
+LE: 15 mmHg (at 15:46)
+(Normal range: 10-21 mmHg)
+
+Slit Lamp Examination:
+Lids and Lashes: Clear, no inflammation.
+Conjunctiva: Clear and white, no injection.
+Cornea: Clear, no abrasions or opacities.
+Anterior Chamber: Deep and quiet.
+Iris: Normal architecture.
+Lens: Clear, no signs of cataract formation.
+
+Funduscopy (Dilated):
+Optic Disc: Healthy, distinct margins, good colour, C/D ratio 0.3 OU.
+Macula: Flat, no drusen or oedema.
+Retinal Vessels: Normal calibre, no haemorrhages or exudates.
+Peripheral Retina: Intact, no tears or detachments observed.
+
+Assessment:
+1.  **Refractive Error Progression:** Mild myopic progression in both eyes, with a slight increase in astigmatism in the left eye since the last examination. The current glasses are no longer providing optimal correction for prolonged visual tasks.
+2.  **Asthenopia (Eye Strain):** Symptoms are consistent with digital eye strain, exacerbated by prolonged screen time and inadequate visual correction. The patient's reported work schedule (leading the "PayFlow Migration" project, with critical deadlines and issues like data migration of 2.3 million historical transactions and PCI compliance audit for Meridian Bank) points to significant visual load and mental stress.
+3.  **Stress and Insomnia:** The patient's presentation aligns with symptoms of stress-induced insomnia and visual fatigue. The demanding project environment, specifically the pressure from Richard Clarke regarding the 2025-04-30 deadline and the ongoing issues with the reconciliation module and Stripe integration, are significant contributing factors. This is impacting not only his concentration during the day (e.g., during sprint reviews or working on PAY-xxx tickets) but also his ability to wind down in the evenings, leading to tension at home with Claire.
+4.  **No Ocular Pathology:** No underlying ocular disease was detected.
+
+Plan:
+1.  **New Prescription Glasses:** Prescribe new glasses with the updated prescription:
+    RE: -1.00 DSph / -0.25 DCyl x 180
+    LE: -1.00 DSph / -0.50 DCyl x 170
+    Recommend anti-reflective coating and blue-light filtering to reduce glare and eye fatigue.
+2.  **Visual Hygiene Education:**
+    *   Implement the "20-20-20 rule": Every 20 minutes, look at something 20 feet away for at least 20 seconds.
+    *   Ensure adequate lighting in the workspace.
+    *   Optimise monitor settings (brightness, contrast, text size).
+    *   Encourage regular breaks away from the screen, especially during long coding sessions for the "PayFlow Migration" project.
+3.  **Ergonomic Review:** Advise patient to review his workstation ergonomics at FinEdge Technologies to ensure optimal monitor distance and posture, which may also help with his lower back pain.
+4.  **Stress Management & Sleep Hygiene:**
+    *   Strongly recommend prioritising sleep and encouraging a consistent sleep schedule.
+    *   Advise reducing screen time at least one hour before bed.
+    *   Suggest exploring stress-reduction techniques (e.g., mindfulness, short walks during breaks).
+    *   Referral to his GP, Dr. Sarah Jenkins, for further discussion regarding stress management and insomnia, particularly given the ongoing high-pressure work environment related to the "PayFlow Migration" and the upcoming PCI audit (2025-03-20). Dr. Jenkins may consider NHS talking therapies or other interventions.
+5.  **Follow-up:** Re-examine in 12-18 months, or sooner if symptoms persist or worsen.
+
+Patient counselled on findings and recommendations. He acknowledged the impact of work stress on his symptoms and expressed willingness to implement the advised changes.
+
+_________________________
+Dr. Anand Patel
+GOC Reg. No. 012345
+Archway Surgery
+```

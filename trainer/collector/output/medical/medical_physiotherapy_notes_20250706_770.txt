@@ -1,0 +1,373 @@
+**CITY GENERAL HOSPITAL**
+**Department of Physiotherapy**
+
+**PATIENT MEDICAL RECORD**
+
+**Patient Name:** BROWN, David Michael
+**Medical Record Number (MRN):** CGH-DB-070625-MIG
+**Date of Birth (DOB):** 1985-03-12 (Age: 40 years)
+**Sex:** Male
+**Address:** 45 Elm Street, Cityville, State, Zip Code
+**Contact Phone:** (555) 123-4567
+**Email:** david.brown@example.com
+
+**Admission Date:** 2025-07-06 (Referral received)
+**Primary Diagnoses (ICD-10):**
+*   G43.109 - Migraine with aura, not intractable, without status migrainosus
+*   M54.2 - Cervicalgia (Chronic neck pain)
+*   R51 - Headache (Secondary to migraines, general complaint)
+
+**Referring Physician:** Dr. Sarah Wilson, Neurology Department
+**Attending Physiotherapist:** Jane Doe, PT, DPT
+
+**Allergies:** Penicillin (rash), NSAIDs (gastric upset)
+**Current Medications:**
+*   Propranolol 40 mg BID (Migraine prophylaxis)
+*   Sumatriptan 50 mg PRN (Acute migraine treatment, max 2 doses/24hr)
+*   Magnesium Oxide 400 mg daily (Supplement)
+*   CoQ10 200 mg daily (Supplement)
+
+**Past Medical History (PMHx):**
+*   Childhood asthma (resolved)
+*   Seasonal allergies
+*   Occasional gastroesophageal reflux disease (GERD)
+*   History of episodic migraines since age 18, increasing in frequency and severity over the last 3-5 years.
+
+**Past Surgical History (PSHx):**
+*   Appendectomy (1995)
+
+**Social History (SHx):**
+*   **Occupation:** Senior Software Engineer. Works primarily at a desk, 8-10 hours/day, frequent computer use. Reports high work-related stress.
+*   **Marital Status:** Married
+*   **Children:** Two (ages 8 and 10)
+*   **Smoking:** Never Smoker
+*   **Alcohol:** Occasional social drinking (1-2 units/week), denies heavy use. Reports alcohol can be a migraine trigger.
+*   **Exercise:** Sporadic; mostly weekend hikes, but inconsistent due to migraine frequency.
+*   **Diet:** Generally balanced, avoids known food triggers (aged cheeses, processed meats, artificial sweeteners).
+*   **Sleep:** Reports difficulty maintaining consistent sleep patterns, often disrupted by early morning headaches or stress. Averages 6-7 hours, feels it's insufficient.
+*   **Stress:** High, related to work demands and family responsibilities.
+
+**Family History (FHx):**
+*   Mother: History of chronic migraines.
+*   Father: Hypertension.
+*   Maternal Aunt: History of migraines.
+
+---
+
+**SECTION 1: INITIAL PHYSIOTHERAPY ASSESSMENT**
+
+**Date:** 2025-07-06
+**Time:** 10:30 AM
+**Therapist:** Jane Doe, PT, DPT
+
+**Subjective (S):**
+Mr. David Brown is a 40-year-old male referred by Dr. Wilson for physiotherapy management of chronic migraine headaches and associated neck pain. He reports a history of migraines dating back to his late teens, which have significantly worsened in frequency and intensity over the past 3-5 years. He currently experiences 10-15 migraine days per month, with typical episodes lasting 12-48 hours.
+Migraines are described as severe, throbbing, unilateral (primarily right-sided, sometimes shifts), often preceded by a visual aura (zigzag lines, flashing lights, scotoma) lasting 15-30 minutes. Associated symptoms include severe photophobia, phonophobia, osmophobia (strong aversion to certain smells), nausea (sometimes with vomiting), and significant neck stiffness/pain. He states the neck pain often precedes or accompanies the headache and feels like a "tight band" around his head and upper neck. He rates his average migraine pain at 7-8/10 on an NRS, with acute attacks peaking at 9-10/10.
+He reports that current medications (Propranolol, Sumatriptan) provide partial relief but do not eliminate the migraines or their frequency entirely. He avoids NSAIDs due to gastric upset. He has tried various over-the-counter pain relievers (acetaminophen) with minimal effect.
+Migraine triggers identified by the patient include: stress, lack of sleep, certain foods (red wine, aged cheese), weather changes (barometric pressure), bright lights, strong odors, and prolonged computer use with poor posture.
+Current functional limitations due to migraines include: significant interference with work productivity (misses 1-2 days/month), inability to participate in family activities, reduced exercise capacity, and social withdrawal during attacks. He feels constantly fatigued and anxious about the next migraine.
+He has not previously undergone formal physiotherapy for his migraines or neck pain. He expresses a strong desire to reduce migraine frequency and severity and improve his overall quality of life.
+
+**Objective (O):**
+**Observation:**
+*   General posture: Forward head posture (FHP) with increased cervical lordosis and thoracic kyphosis in sitting. Shoulders protracted and internally rotated.
+*   Gait: Symmetrical, no antalgic pattern noted.
+*   Skin: No obvious rashes or lesions.
+**Palpation:**
+*   **Cervical Spine:**
+    *   Significant tenderness to palpation (TTP) over bilateral upper trapezius, levator scapulae, sternocleidomastoid (SCM), and suboccipital muscles, particularly on the right.
+    *   Multiple active trigger points identified in upper trapezius bilaterally, greater on the right, referring pain to the temple and posterior head.
+    *   Muscle guarding noted in deep cervical extensors and suboccipital region.
+*   **Thoracic Spine:** Mild TTP over T1-T4 paraspinal muscles.
+*   **Temporomandibular Joint (TMJ):** No clicking or crepitus. Mild TTP over bilateral masseter and temporalis muscles.
+**Range of Motion (ROM) - Cervical Spine (Active):**
+*   Flexion: 45° (norm 50°) - with mild end-range discomfort
+*   Extension: 40° (norm 60°) - with mild end-range discomfort, reports feeling tightness in suboccipital region
+*   Right Rotation: 60° (norm 80°) - with mild end-range stiffness
+*   Left Rotation: 65° (norm 80°) - with mild end-range stiffness
+*   Right Lateral Flexion: 30° (norm 45°) - with moderate end-range tightness
+*   Left Lateral Flexion: 35° (norm 45°) - with moderate end-range tightness
+**Strength (Manual Muscle Testing - MMT):**
+*   Cervical Flexors: 4/5 (mild weakness, poor endurance)
+*   Cervical Extensors: 4+/5
+*   Scapular Retractors (Rhomboids, Mid Trapezius): 4/5 (bilateral)
+*   Shoulder Elevators (Upper Trapezius): 5/5
+*   Shoulder Depressors (Lower Trapezius): 3+/5
+**Neurological Screen (Upper Extremity):**
+*   Sensation: Intact to light touch bilaterally C5-T1.
+*   Reflexes: Biceps (C5), Brachioradialis (C6), Triceps (C7) 2+ bilaterally, symmetrical.
+*   No motor deficits noted in upper extremities.
+**Special Tests:**
+*   Spurling's Test: Negative bilaterally.
+*   Vertebral Artery Test: Negative bilaterally.
+*   Cervical Flexion-Rotation Test: Limited to 30° on right, 35° on left (norm 45°). Suggests upper cervical segmental dysfunction.
+**Pain Scales:**
+*   Current pain (neck): 4/10 NRS
+*   Worst pain (migraine): 9/10 NRS
+*   Average pain (migraine): 7/10 NRS
+**Outcome Measures:**
+*   **Neck Disability Index (NDI):** 44% (Severe Disability)
+*   **Migraine Disability Assessment (MIDAS) Scale:** Grade IV (Severe Disability - 21 points)
+
+**Assessment (A):**
+Mr. Brown presents with chronic migraines exacerbated by significant cervicalgia and musculoskeletal impairments of the cervical and upper thoracic spine. His forward head posture, increased muscle tension (especially in suboccipital, SCM, and upper trapezius muscles), and restricted cervical ROM are contributing factors to his neck pain and likely to the frequency and severity of his migraines. The presence of active trigger points referring pain to the head further supports a cervicogenic component to his headaches. Reduced deep cervical flexor endurance and lower trapezius weakness contribute to postural dysfunction. His high stress levels and poor sleep hygiene are additional factors impacting his condition. The MIDAS and NDI scores indicate a significant impact on his daily life and function. Prognosis for improvement in neck pain and reduction in migraine frequency/severity with a comprehensive physiotherapy program is good, provided he adheres to the treatment plan and addresses lifestyle factors.
+
+**Problem List:**
+1.  Chronic migraine headaches (10-15 days/month, 7-9/10 NRS).
+2.  Chronic cervicalgia and stiffness (4/10 NRS current).
+3.  Restricted cervical spine ROM (flexion, extension, rotation, lateral flexion).
+4.  Hypertonicity and active trigger points in cervical and upper thoracic musculature.
+5.  Forward head posture and rounded shoulders.
+6.  Weakness/poor endurance of deep cervical flexors and lower trapezius.
+7.  Impaired sleep hygiene.
+8.  High stress levels.
+9.  Significant functional limitations affecting work, family, and social activities.
+
+**Plan (P):**
+**Goals:**
+*   **Short-Term (2-4 weeks):**
+    *   Reduce current neck pain to 2/10 NRS.
+    *   Increase cervical ROM by 10-15 degrees in all planes.
+    *   Decrease palpable muscle tension and trigger point activity in cervical/upper thoracic muscles.
+    *   Patient to identify and implement 2 stress management techniques.
+*   **Long-Term (8-12 weeks):**
+    *   Reduce migraine frequency to <6 days/month.
+    *   Reduce average migraine intensity to <4/10 NRS.
+    *   Improve NDI score to <20% (Moderate Disability) and MIDAS score to Grade II or less.
+    *   Patient to demonstrate independent performance of home exercise program (HEP) with good form.
+    *   Improve postural awareness and maintain corrected posture for >50% of work day.
+    *   Improve sleep quality and consistency.
+
+**Interventions:**
+1.  **Manual Therapy:**
+    *   Soft tissue mobilization (STM) and myofascial release to suboccipital, SCM, upper trapezius, and levator scapulae muscles.
+    *   Trigger point release techniques.
+    *   Cervical joint mobilizations (grades I-II) for restricted segments (C0-C2, C3-C4, T1-T4).
+2.  **Therapeutic Exercise:**
+    *   Deep cervical flexor strengthening (chin tucks).
+    *   Scapular stabilization exercises (wall slides, Y-T-W exercises).
+    *   Cervical ROM exercises.
+    *   Postural re-education exercises.
+3.  **Modalities (as needed):** Heat/cold packs for pain relief, TENS for muscle relaxation/pain modulation.
+4.  **Patient Education:**
+    *   Posture and ergonomics at workstation.
+    *   Stress management techniques (diaphragmatic breathing, progressive muscle relaxation).
+    *   Sleep hygiene principles.
+    *   Trigger identification and avoidance strategies.
+    *   Pacing activities.
+5.  **Home Exercise Program (HEP):** Initial gentle ROM and postural exercises.
+
+**Frequency & Duration:** 2-3 times per week for 8-10 weeks, then reassess.
+**Referrals:** Continue follow-up with Dr. Wilson (Neurology). Consider referral to pain psychologist if stress/anxiety remain major barriers.
+
+---
+
+**SECTION 2: SPECIALIST CONSULTATIONS & LAB HISTORY SUMMARY**
+
+**2.1 Neurology Consultation (Dr. Sarah Wilson)**
+**Date of Consult:** 2025-06-28 (Prior to PT referral)
+**Reason for Consult:** Escalating migraine frequency and severity, inadequate response to current prophylactic and abortive treatments.
+**Findings:** Comprehensive neurological exam revealed no focal neurological deficits. Cranial nerves intact. Motor and sensory systems normal. Reflexes symmetrical. Gait normal. Diagnosis of Chronic Migraine with Aura confirmed, based on ICHD-3 criteria (≥15 headache days/month for >3 months, with at least 8 fulfilling migraine criteria).
+**Investigations Ordered:**
+*   **MRI Brain with and without contrast:** To rule out secondary causes of headache (e.g., structural lesions, vascular abnormalities).
+*   **Routine Blood Work:** CBC, CMP, ESR, CRP, Thyroid Panel (TSH, free T4), Vitamin D.
+**Recommendations:**
+*   Continue Propranolol 40mg BID.
+*   Continue Sumatriptan 50mg PRN.
+*   Consider CGRP monoclonal antibody therapy (e.g., Erenumab) if current regimen proves insufficient after physical therapy and lifestyle modifications.
+*   Referral to Physiotherapy for cervicogenic component and postural issues.
+*   Lifestyle modifications: stress reduction, sleep hygiene, regular exercise, trigger avoidance.
+*   Follow-up in 3 months.
+
+**2.2 Radiology Report (MRI Brain with and without contrast)**
+**Date of Scan:** 2025-07-01
+**Findings:**
+*   No evidence of acute infarct, hemorrhage, or mass lesion.
+*   Normal parenchymal signal intensity.
+*   No hydrocephalus or significant cerebral atrophy.
+*   Vascular structures appear unremarkable.
+*   No abnormal enhancement post-contrast administration.
+*   Mild mucosal thickening in the sphenoid sinuses, likely inflammatory, not clinically significant for primary headache.
+**Impression:** Unremarkable MRI brain. No structural cause for headaches identified.
+
+**2.3 Laboratory Results Summary**
+**Date Collected:** 2025-07-01
+*   **Complete Blood Count (CBC):** All parameters within normal limits (WNL).
+    *   WBC: 7.2 x 10^9/L (Ref: 4.0-11.0)
+    *   RBC: 5.1 x 10^12/L (Ref: 4.5-5.5)
+    *   Hgb: 15.1 g/dL (Ref: 13.5-17.5)
+    *   Plt: 250 x 10^9/L (Ref: 150-450)
+*   **Comprehensive Metabolic Panel (CMP):** All parameters WNL.
+    *   Glucose: 95 mg/dL (Ref: 70-100)
+    *   Electrolytes, Renal, Liver Function Tests: All WNL.
+*   **Erythrocyte Sedimentation Rate (ESR):** 8 mm/hr (Ref: 0-15) - WNL.
+*   **C-Reactive Protein (CRP):** 1.2 mg/L (Ref: <3.0) - WNL.
+*   **Thyroid Stimulating Hormone (TSH):** 2.1 mIU/L (Ref: 0.4-4.0) - WNL.
+*   **Free T4:** 1.2 ng/dL (Ref: 0.8-1.8) - WNL.
+*   **Vitamin D (25-OH):** 28 ng/mL (Ref: 30-100 optimal) - borderline insufficient.
+**Conclusion:** Routine labs largely unremarkable, ruling out common systemic inflammatory or metabolic causes. Vitamin D levels are borderline, supplementation may be beneficial.
+
+---
+
+**SECTION 3: PHYSIOTHERAPY TREATMENT TIMELINE**
+
+**Visit 2**
+**Date:** 2025-07-09
+**Subjective (S):** Patient reports experiencing one migraine attack since last session, lasting approximately 18 hours, rated 8/10 NRS, required Sumatriptan for partial relief. Neck pain slightly improved, current 3/10 NRS. Reports feeling less stiff in the morning. Tried gentle chin tucks as instructed, reports mild soreness in anterior neck. No issues with exercises. Reports attempting diaphragmatic breathing for 5 minutes daily.
+**Objective (O):**
+*   Palpation: Decreased TTP in bilateral upper trapezius and SCM, still moderate TTP in suboccipital region. Trigger points less active.
+*   Cervical ROM: Flexion 48°, Extension 42°, Right Rotation 62°, Left Rotation 67°. Slight improvement.
+*   Posture: Demonstrates improved awareness of FHP, able to self-correct momentarily.
+**Assessment (A):** Patient showing initial positive response to manual therapy and HEP. Neck pain and stiffness slightly reduced. Adherence to HEP and breathing exercises is good. Migraine frequency remains the primary concern.
+**Plan (P):**
+*   Continue STM and myofascial release, focusing on suboccipital and deep cervical extensors.
+*   Introduce gentle cervical traction (manual, supine) for 5 minutes to decompress upper cervical segments.
+*   Progress HEP: Add seated scapular retraction with Theraband, increased repetitions for chin tucks (3x10-15 reps).
+*   Reinforce postural awareness and ergonomic advice.
+*   Continue education on stress management and sleep hygiene.
+
+**Visit 3**
+**Date:** 2025-07-12
+**Subjective (S):** Patient reports no full-blown migraines since last visit, but had two "tension-type" headaches (4/10 NRS) that resolved with rest. Neck pain is now consistently 2/10 NRS. Reports better sleep quality last two nights, averaging 7 hours. Finds manual traction helpful. Able to perform HEP with less anterior neck soreness.
+**Objective (O):**
+*   Palpation: Mild TTP in suboccipital region, significantly reduced in upper trapezius/SCM. No active trigger points identified today.
+*   Cervical ROM: Flexion 50°, Extension 45°, Right Rotation 65°, Left Rotation 70°. Further improvement.
+*   Posture: Maintains corrected posture for longer periods during seated activities.
+**Assessment (A):** Good progress with neck pain reduction and cervical mobility. Absence of migraine attacks is encouraging, though "tension-type" headaches indicate residual muscular tension. Sleep hygiene improvement is a positive sign.
+**Plan (P):**
+*   Continue manual therapy, focusing on maintaining gains and addressing any residual stiffness.
+*   Introduce PNF (Proprioceptive Neuromuscular Facilitation) techniques for cervical rotation and extension to improve motor control.
+*   Progress HEP: Add supine cervical rotation stretches, standing corner stretches for pectorals. Emphasize consistency with deep neck flexor and scapular stabilization exercises.
+*   Discuss strategies for managing work-related stress during peak periods.
+*   Introduce gentle aerobic exercise (e.g., walking 20-30 min, 3x/week).
+
+**Visit 4**
+**Date:** 2025-07-16
+**Subjective (S):** Patient reports experiencing one moderate migraine (6/10 NRS) two days ago, lasting 12 hours, partially relieved by Sumatriptan. He attributes it to a particularly stressful day at work and inadequate sleep the night before. Neck pain remains low at 1-2/10 NRS. Reports adherence to HEP and walking schedule. Feels stronger in his neck and shoulders.
+**Objective (O):**
+*   Palpation: Minimal TTP. No active trigger points.
+*   Cervical ROM: Full and pain-free for flexion, extension. Slight restriction in end-range right rotation (70°).
+*   Strength: Deep cervical flexors 4+/5, lower trapezius 4/5.
+*   NDI: 30% (Moderate Disability) - improved from 44%.
+**Assessment (A):** Overall positive trend despite one migraine episode. Patient is improving self-awareness of triggers (stress, sleep) and is compliant with his HEP. Neck pain and ROM are significantly improved. Focus shifts more towards sustained postural correction and deeper muscular endurance, alongside continued education on migraine management.
+**Plan (P):**
+*   Manual therapy as needed for any specific restrictions.
+*   Progress cervical stabilization exercises: Add exercises on unstable surfaces (e.g., foam pad) for proprioception and control.
+*   Introduce light resistance training for upper back and shoulders (e.g., rows, external rotations with light dumbbells).
+*   Reinforce importance of consistent sleep schedule and stress reduction techniques.
+*   Discuss the impact of screens on headaches and strategies for eye strain reduction (20-20-20 rule).
+
+**Visit 5**
+**Date:** 2025-07-20
+**Subjective (S):** Patient reports no migraines since last visit. Had one mild headache (3/10 NRS) after a long work meeting, resolved with rest. Neck pain remains minimal, 1/10 NRS. Reports feeling more energetic. Has incorporated 30 minutes of walking daily.
+**Objective (O):**
+*   Palpation: No TTP. Muscles feel soft and relaxed.
+*   Cervical ROM: Full and pain-free in all planes. Cervical Flexion-Rotation Test now 40° right, 42° left.
+*   Strength: Deep cervical flexors 5/5, lower trapezius 4+/5.
+*   Posture: Consistently maintaining improved posture.
+**Assessment (A):** Excellent progress. Patient is now largely pain-free in his neck and has regained full cervical ROM. Migraine frequency has significantly reduced over the past two weeks. He is actively engaging in lifestyle modifications.
+**Plan (P):**
+*   Reduce manual therapy, focus on supervised exercise progression.
+*   Introduce dynamic cervical strengthening exercises (e.g., resisted movements).
+*   Advance scapular stabilization and upper back strengthening with increased resistance.
+*   Discuss gradual return to previous recreational activities (e.g., hiking with increased intensity).
+*   Continue emphasis on self-management, trigger identification, and relaxation techniques.
+*   Review ergonomic setup at work and home.
+
+**Visit 6**
+**Date:** 2025-07-27
+**Subjective (S):** Patient reports one very mild migraine (4/10 NRS) that did not require Sumatriptan, resolved within 6 hours. He attributes it to skipping his morning walk and having a late night. Neck pain remains 0-1/10 NRS. He feels his posture is much better and is more aware of it.
+**Objective (O):**
+*   All previous objective measures (ROM, strength, palpation) remain at excellent levels.
+*   Patient demonstrates correct form with all HEP exercises.
+*   MIDAS score: 12 points (Grade II - Moderate Disability) - improved from 21 points.
+**Assessment (A):** Consistent improvement. Patient is demonstrating good self-efficacy in managing his condition and identifying triggers. The migraine intensity and duration are significantly reduced. The focus now shifts to maintenance and discharge planning.
+**Plan (P):**
+*   Reduce frequency of PT visits to 1x/week for next 2-3 weeks.
+*   Progress HEP to incorporate more functional and dynamic movements relevant to his daily life and recreational activities.
+*   Review entire HEP to ensure patient confidence and understanding for independent management.
+*   Discuss long-term strategies for preventing recurrence of neck pain and migraines.
+*   Encourage continued aerobic exercise (at least 150 minutes/week).
+
+**Visit 7**
+**Date:** 2025-08-03
+**Subjective (S):** Patient reports no migraines since last visit, only occasional mild neck tightness (1/10 NRS) that resolves with stretching. He reports feeling much more in control of his headaches and less anxious. He feels confident with his HEP.
+**Objective (O):**
+*   Objective findings are stable and optimal.
+*   Patient demonstrates full understanding and independent execution of complex HEP.
+**Assessment (A):** Patient has met most short-term goals and is progressing well towards long-term goals. He is demonstrating excellent self-management skills.
+**Plan (P):**
+*   Continue with current HEP.
+*   Schedule one final review session in 2 weeks.
+*   Provide written discharge instructions and contact information for future needs.
+*   Encourage continued communication with Dr. Wilson for ongoing migraine management.
+
+**Visit 8 (Final Review)**
+**Date:** 2025-08-17
+**Subjective (S):** Patient reports no migraines in the past two weeks. Reports one mild tension headache (2/10 NRS) due to prolonged screen time, which resolved with a break and neck stretches. Neck pain remains 0/10 NRS. He is consistently performing his HEP 3-4 times per week and walking daily. Reports significantly improved sleep and reduced stress levels due to implementing strategies learned. He feels his quality of life has dramatically improved.
+**Objective (O):**
+*   Cervical ROM: Full and pain-free.
+*   Strength: All tested muscles 5/5.
+*   Palpation: No TTP, muscles supple.
+*   Posture: Excellent static and dynamic postural control.
+*   NDI: 8% (Mild Disability) - achieved long-term goal.
+*   MIDAS: 5 points (Grade I - Little/No Disability) - achieved long-term goal.
+**Assessment (A):** Mr. Brown has made exceptional progress in reducing his migraine frequency and severity, resolving his chronic neck pain, and improving his overall functional status and quality of life. He has successfully integrated self-management strategies into his daily routine. All short and long-term goals have been met.
+
+**Plan (P):**
+*   Discharge from active physiotherapy treatment today.
+*   Provide comprehensive home exercise program (HEP) with emphasis on long-term maintenance and progression.
+*   Educate on signs of potential relapse and when to seek further PT intervention.
+*   Recommend continuing regular physical activity (aerobic and strengthening) at least 3-4 times per week.
+*   Encourage continued use of stress management and sleep hygiene techniques.
+*   Encourage continued follow-up with Dr. Wilson for ongoing medical management of migraines.
+
+---
+
+**SECTION 4: DISCHARGE SUMMARY**
+
+**Patient Name:** BROWN, David Michael
+**MRN:** CGH-DB-070625-MIG
+**Date of Birth:** 1985-03-12
+**Discharge Date:** 2025-08-17
+**Primary Physiotherapy Diagnosis:** Chronic Migraine with associated Cervicalgia, Postural Dysfunction.
+**Attending Physiotherapist:** Jane Doe, PT, DPT
+
+**Reason for Referral:**
+Mr. David Brown was referred to physiotherapy on 2025-07-06 by Dr. Sarah Wilson for chronic migraine headaches (10-15 days/month, 7-9/10 NRS) and significant associated chronic neck pain (4/10 NRS). He presented with a history of increasing migraine frequency and intensity, significantly impacting his work, family life, and overall well-being. Initial assessment revealed significant cervical and upper thoracic musculoskeletal impairments, including forward head posture, restricted cervical range of motion, hypertonicity, active myofascial trigger points, and weakness of deep cervical flexors and lower trapezius. His initial Neck Disability Index (NDI) was 44% (Severe Disability) and Migraine Disability Assessment (MIDAS) score was 21 points (Grade IV - Severe Disability).
+
+**Course of Treatment:**
+Mr. Brown underwent a comprehensive physiotherapy program consisting of 8 sessions over approximately 6 weeks. The treatment program focused on:
+1.  **Manual Therapy:** Soft tissue mobilization, myofascial release, trigger point release to cervical and upper thoracic musculature, and gentle cervical joint mobilizations to address stiffness and hypertonicity.
+2.  **Therapeutic Exercise:** Progressive home exercise program (HEP) including deep cervical flexor strengthening (chin tucks), scapular stabilization exercises (wall slides, rows, Y-T-W), cervical ROM exercises, and postural re-education. This progressed to light resistance training and functional movements.
+3.  **Patient Education:** Extensive education on proper workstation ergonomics, postural awareness, migraine trigger identification and avoidance, stress management techniques (diaphragmatic breathing, progressive muscle relaxation), and sleep hygiene principles.
+4.  **Aerobic Conditioning:** Encouraged and monitored gradual increase in consistent aerobic exercise (walking).
+
+**Progress and Outcomes:**
+Mr. Brown responded exceptionally well to the physiotherapy intervention.
+*   **Neck Pain:** Completely resolved, current 0/10 NRS.
+*   **Cervical Range of Motion:** Full and pain-free in all planes.
+*   **Musculoskeletal Impairments:** All hypertonicity and active trigger points resolved. Deep cervical flexor and lower trapezius strength improved to 5/5. Postural alignment significantly improved and consistently maintained.
+*   **Migraine Frequency:** Reduced from 10-15 days/month to 0-1 mild headache day/month (not fulfilling migraine criteria, no Sumatriptan required in the last 3 weeks).
+*   **Migraine Intensity:** Reduced from average 7-9/10 NRS to 0-2/10 NRS for occasional mild headaches.
+*   **Functional Outcomes:**
+    *   **NDI:** Improved from 44% (Severe Disability) to 8% (Mild Disability).
+    *   **MIDAS:** Improved from 21 points (Grade IV - Severe Disability) to 5 points (Grade I - Little/No Disability).
+*   **Self-Management:** Patient demonstrated excellent understanding and adherence to his HEP and self-management strategies. He is now proficient in identifying his migraine triggers (stress, sleep deprivation, prolonged screen time) and implementing learned techniques to mitigate their impact. Sleep quality and stress levels are reported as significantly improved.
+
+**Discharge Plan and Recommendations:**
+Mr. Brown is discharged from active physiotherapy treatment today, having achieved all established short and long-term goals. He has demonstrated exceptional progress and self-efficacy.
+1.  **Home Exercise Program (HEP):** Patient provided with a comprehensive written and illustrated HEP to be performed 3-4 times per week indefinitely for maintenance. This includes cervical stabilization, scapular strengthening, and postural exercises.
+2.  **Activity:** Encourage continued regular aerobic exercise (e.g., brisk walking, cycling) for at least 150 minutes per week.
+3.  **Ergonomics & Posture:** Continue to implement ergonomic principles at his workstation and maintain good postural awareness throughout daily activities.
+4.  **Lifestyle Modifications:** Continue practicing stress management techniques, maintaining consistent sleep hygiene, and avoiding known migraine triggers.
+5.  **Follow-up:**
+    *   No further physiotherapy appointments are routinely scheduled. Patient is advised to contact the department if he experiences any significant recurrence of neck pain or an increase in migraine frequency/severity.
+    *   Continue regular follow-up with Dr. Sarah Wilson (Neurology) for ongoing medical management of his migraine condition.
+
+**Prognosis:** Excellent for long-term management of migraines and prevention of cervicogenic pain, given his strong commitment to self-management and lifestyle modifications.
+
+**Jane Doe, PT, DPT**
+**Physiotherapist**
+**City General Hospital**
+**Date:** 2025-08-17

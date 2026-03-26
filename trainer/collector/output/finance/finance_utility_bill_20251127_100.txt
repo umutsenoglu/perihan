@@ -1,0 +1,12 @@
+**Thames Water - Payment Confirmation**
+
+**Date:** 2025-11-27
+
+**Account Holder:** Ethan Marsh
+**Property Address:** 14 Willow Drive, Muswell Hill, London N10 3AB
+**Thames Water Account No:** *********0123
+**Amount Paid:** £58.75 GBP
+**Payment Method:** Direct Debit
+**Payment Reference:** TWP-251127-DD-78901
+
+Thank you, Ethan, your payment for this quarter's water services has been successfully received. Your updated account balance will reflect this transaction shortly.

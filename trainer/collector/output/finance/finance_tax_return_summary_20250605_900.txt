@@ -1,0 +1,209 @@
+HMRC Self-Assessment Tax Calculation Summary (SA302)
+Tax Year 2024-2025
+
+**Account Holder:** Mr. Ethan J. Marsh
+**Date Issued:** 05 June 2025
+**HMRC Reference:** XJ123456B
+**National Insurance Number:** QQ123456A
+**UTR (Unique Taxpayer Reference):** 12345 67890
+**Address:** 14 Elmwood Close, Highbury, London, N5 1AB
+**Contact Email:** ethan.marsh@example.co.uk
+**Contact Phone:** 07700 900XXX
+
+---
+
+**Page 1 of 5: Summary of Your Tax Calculation**
+
+This document provides a summary of your Self-Assessment tax calculation for the tax year ended 5 April 2025. This is an SA302 form, often required for mortgage applications or other financial assessments.
+
+**A. Income Received**
+
+| Income Type                      | Source                                   | Gross Amount (GBP) | Taxable Amount (GBP) |
+| :------------------------------- | :--------------------------------------- | :----------------- | :------------------- |
+| **Employment Income**            | FinTech Solutions Ltd.                   | 85,500.00          | 85,500.00            |
+| *Pensions (State, Private)*      | N/A                                      | 0.00               | 0.00                 |
+| **Other Income**                 |                                          |                    |                      |
+| *Freelance Consultancy Income*   | CodeCraft Solutions (various clients)    | 7,850.00           | 7,850.00             |
+| *Bank Interest (Gross)*          | Barclays Everyday Saver (Acct: **6789) | 125.40             | 125.40               |
+| *Dividends*                      | N/A                                      | 0.00               | 0.00                 |
+| *Rental Income*                  | N/A                                      | 0.00               | 0.00                 |
+| *Capital Gains*                  | N/A                                      | 0.00               | 0.00                 |
+| **Total Gross Income**           |                                          | **93,475.40**      | **93,475.40**        |
+
+**B. Allowances and Reliefs**
+
+| Item                                     | Amount (GBP) |
+| :--------------------------------------- | :----------- |
+| Personal Allowance (Standard)            | 12,570.00    |
+| *Adjusted for high income*               | N/A          |
+| Gift Aid Contributions                   | 250.00       |
+| *Pension Contributions (Gross)*          | 5,100.00     |
+| **Total Allowances & Reliefs**           | **17,920.00**|
+
+**C. Taxable Income**
+
+Total Gross Income (A) - Total Allowances & Reliefs (B) = **Taxable Income**
+£93,475.40 - £17,920.00 = **£75,555.40**
+
+**D. Tax Calculation**
+
+| Income Band (GBP)     | Rate       | Taxable Amount (GBP) | Tax Due (GBP) |
+| :-------------------- | :--------- | :------------------- | :------------ |
+| **Basic Rate**        | 20%        | 37,700.00            | 7,540.00      |
+| *(£12,571 - £50,270)* |            |                      |               |
+| **Higher Rate**       | 40%        | 37,855.40            | 15,142.16     |
+| *(£50,271 - £125,140)*|            |                      |               |
+| **Additional Rate**   | 45%        | 0.00                 | 0.00          |
+| *(Over £125,140)*     |            |                      |               |
+| **Total Income Tax**  |            |                      | **22,682.16** |
+
+**E. National Insurance Contributions (NICs)**
+
+| NIC Type                                 | Gross Profit/Income (GBP) | Class | Rate        | Amount Due (GBP) |
+| :--------------------------------------- | :------------------------ | :---- | :---------- | :--------------- |
+| **Class 1 (Employment)**                 | 85,500.00                 | 1     | Var.        | 7,725.60         |
+| *(Deducted via PAYE by FinTech Solutions Ltd.)* |                           |       |             |                  |
+| **Class 2 (Self-Employed)**              | 7,850.00                  | 2     | £3.45/week  | 179.40           |
+| **Class 4 (Self-Employed)**              | 7,850.00                  | 4     | 9% (on £6,725+) | 101.25           |
+| **Total NICs Due**                       |                           |       |             | **8,006.25**     |
+
+**F. Total Tax and NICs Due**
+
+Total Income Tax (D) + Total NICs Due (E) = **Total Amount Due**
+£22,682.16 + £8,006.25 = **£30,688.41**
+
+---
+
+**Page 2 of 5: Payments Already Made & Balance Due**
+
+**G. Payments Already Made**
+
+| Payment Type                             | Date         | Amount (GBP) |
+| :--------------------------------------- | :----------- | :----------- |
+| **PAYE Deductions (Income Tax)**         | Various      | 22,150.00    |
+| *From FinTech Solutions Ltd. employment* |              |              |
+| **PAYE Deductions (Class 1 NICs)**       | Various      | 7,725.60     |
+| *From FinTech Solutions Ltd. employment* |              |              |
+| **Payments on Account (2024-25)**        | 31 Jan 2025  | 1,250.00     |
+| *For Self-Employment Income*             |              |              |
+| **Total Payments Made**                  |              | **31,125.60**|
+
+**H. Balance Due / Overpayment**
+
+Total Payments Made (G) - Total Tax and NICs Due (F) = **Balance**
+£31,125.60 - £30,688.41 = **£437.19 (Overpayment)**
+
+**Congratulations, Mr. Marsh! You have overpaid your tax for the 2024-25 tax year.**
+
+You are due a refund of **£437.19**. This amount will be automatically refunded to the bank account previously provided for Self-Assessment payments, or you can request it be carried forward against your next tax liability.
+
+---
+
+**Page 3 of 5: Breakdown of Income and Deductions**
+
+**Employment Income: FinTech Solutions Ltd.**
+
+Your P60 from FinTech Solutions Ltd. (dated 05 April 2025) reported the following:
+*   Gross Salary: £85,500.00
+*   Total Tax Deducted (PAYE): £22,150.00
+*   Total Class 1 NICs Deducted: £7,725.60
+*   Employer Pension Contributions (not taxable to you): £8,550.00
+*   Employee Pension Contributions (taken pre-tax via salary sacrifice): £4,275.00
+*   Benefits in Kind (BIK): None reported for this period.
+
+*Note: Your employee pension contributions are included in 'Total Allowances & Reliefs' on page 1 as £5,100.00. This is the gross amount including basic rate tax relief (£4,275.00 + 25% = £5,343.75 rounded to nearest £100 for HMRC calculation purposes).*
+
+**Freelance Consultancy Income: CodeCraft Solutions**
+
+This income is from your work on various small software development projects outside of your main employment, primarily for start-ups and small businesses referred through your professional network.
+*   **Total Gross Receipts:** £7,850.00
+    *   *12/05/2024: AlphaTech Systems - UI/UX Refinement (Invoice #CC2024-001): £1,500.00*
+    *   *01/08/2024: Beta Innovations - API Integration Support (Invoice #CC2024-002): £2,300.00*
+    *   *15/11/2024: Gamma Data Services - Database Optimisation (Invoice #CC2024-003): £1,800.00*
+    *   *28/02/2025: Delta Analytics - Frontend Development (Invoice #CC2024-004): £2,250.00*
+*   **Allowable Expenses:** £700.00
+    *   *Software Subscriptions (VS Code Pro, Azure Dev Tools): £240.00*
+    *   *Professional Indemnity Insurance (Hiscox Policy #PI12345): £360.00*
+    *   *Home Office Utilities (apportioned): £100.00 (based on 10% of total utility bills for 2 months of intense project work for Beta Innovations)*
+*   **Net Profit from Self-Employment:** £7,850.00 - £700.00 = **£7,150.00**
+
+*Note: Class 4 NICs are calculated on profits over the Small Profits Threshold (£6,725 for 2024-25). Your profit of £7,150.00 results in £425.00 subject to Class 4 NICs at 9%.*
+
+**Bank Interest: Barclays Everyday Saver**
+
+*   Account Name: Mr. E.J. Marsh
+*   Account Number: **-****-**6789
+*   Sort Code: 20-12-34
+*   Gross Interest Received: £125.40
+*   Tax treatment: This falls within your Personal Savings Allowance (£1,000 for basic rate taxpayers, £500 for higher rate taxpayers). As your total savings interest is below this, no tax is due on this income.
+
+**Gift Aid Contributions**
+
+You reported a total of £200.00 in Gift Aid donations.
+*   *10/06/2024: RSPB - £50.00*
+*   *05/11/2024: National Trust - £50.00*
+*   *20/03/2025: QPA Primary School PTA - £100.00 (for Lily's class trip fund)*
+
+HMRC treats this as grossed-up by the basic rate of tax (20%), so £200.00 x 1.25 = £250.00. This £250.00 is added to your basic rate band, meaning you pay less tax at the higher rate.
+
+---
+
+**Page 4 of 5: Next Year's Payments (Payment on Account)**
+
+**I. Payments on Account for Tax Year 2025-2026**
+
+Based on your tax liability for 2024-25, you are required to make Payments on Account for the upcoming tax year, 2025-26. This helps spread your tax bill for self-employment income and other untaxed income.
+
+*   **Total Tax & NICs for Self-Employment (excluding Class 1 NICs):**
+    *   Income Tax on Freelance Profit: £7,150.00 @ 20% = £1,430.00
+    *   Class 2 NICs: £179.40
+    *   Class 4 NICs: £101.25
+    *   **Total Untaxed Income Liability:** £1,710.65
+
+*   **Payment on Account 1 (due 31 January 2026):** 50% of £1,710.65 = **£855.33**
+*   **Payment on Account 2 (due 31 July 2026):** 50% of £1,710.65 = **£855.32**
+
+*Note: These payments cover 50% of your projected tax bill for the 2025-26 tax year. The remaining balance (and any adjustments) will be due by 31 January 2027 when you file your next Self-Assessment return.*
+
+**Important Reminders:**
+
+*   You can reduce Payments on Account if you expect your income to be lower in 2025-26.
+*   If you choose to carry forward your £437.19 overpayment, it will reduce your first Payment on Account for 2025-26.
+
+---
+
+**Page 5 of 5: Additional Information & Contact Details**
+
+**Your Personal Details on Record:**
+
+*   **Full Name:** Mr. Ethan James Marsh
+*   **Date of Birth:** 15/09/1986
+*   **Marital Status:** Married (Spouse: Mrs. Claire A. Marsh, NI: XX987654C)
+*   **Children:**
+    *   Lily Marsh (DOB: 03/03/2018) - Attends QPA Primary School
+    *   Max Marsh (DOB: 12/11/2020) - Attends Little Stars Nursery
+*   **Current Address:** 14 Elmwood Close, Highbury, London, N5 1AB
+*   **Previous Address (within last 3 years):** Flat 3, 27 Cranbrook Road, Islington, N1 0XX (moved July 2022)
+*   **Home Mortgage Provider:** Barclays Bank Plc (Mortgage Account: **-****-****-****-**1122)
+*   **Car Details:** 2019 VW Golf (Registration: LT19 ABC)
+
+**General Notes:**
+
+*   Your tax code for 2024-25 was 1257L. This indicates you received the standard Personal Allowance.
+*   HMRC has successfully received and processed your Self-Assessment tax return for the 2024-25 tax year, submitted online on 03 June 2025.
+*   We recommend keeping accurate records of all your income and expenses for at least 6 years. This includes payslips, invoices from your freelance work, bank statements, and receipts for allowable expenses.
+*   Remember to declare any new sources of income or changes in circumstances in your next Self-Assessment return. For example, if you decide to rent out a room or start a new business venture, or if your plan to switch to an electric car has BIK implications.
+*   We noted your previous query regarding capital gains on the sale of your old camera equipment (Canon 5D Mark III setup) in November 2024. As the proceeds were below the Capital Gains Tax Annual Exempt Amount (£6,000 for 2024-25) and it was personal use property, no CGT was due or declared on this return.
+
+**Contacting HMRC:**
+
+If you have any questions about this calculation, please quote your HMRC Reference (XJ123456B) and Unique Taxpayer Reference (12345 67890) when contacting us.
+
+*   **Online:** Use your Government Gateway account for secure messaging.
+*   **Phone:** Self-Assessment Helpline: 0345 900 0000 (Mon-Fri, 8am-6pm)
+*   **Post:** Self-Assessment, HM Revenue and Customs, BX9 1AS
+
+Thank you for filing your tax return.
+
+**HM Revenue & Customs**
+*This is an automatically generated summary. No signature is required.*

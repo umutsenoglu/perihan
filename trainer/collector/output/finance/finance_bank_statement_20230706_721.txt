@@ -1,0 +1,323 @@
+**Barclays Bank PLC**
+**Annual Statement of Account**
+
+**Account Holder:** Mr. Ethan Marsh
+**Address:** 14 Willowbrook Drive, North London, N12 8FG
+**Account Number:** ************8765
+**Sort Code:** 20-45-78
+**Statement Period:** 1st January 2024 - 31st December 2024
+**Statement Date:** 6th July 2025
+**Currency:** GBP (£)
+
+**Opening Balance (01/01/2024):** £12,458.23
+
+---
+
+**Summary of Account Activity (01/01/2024 - 31/12/2024)**
+
+*   **Total Credits:** £78,923.45
+*   **Total Debits:** £76,899.12
+*   **Closing Balance (31/12/2024):** £14,482.56
+
+---
+
+**Detailed Transaction History**
+
+**January 2024**
+
+| Date       | Description                                        | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :------------------------------------------------- | :-------- | :--------- | :---------- |
+| 01/01/2024 | Opening Balance                                    |           |            | 12,458.23   |
+| 03/01/2024 | Sainsbury's Local - Groceries                      | 45.89     |            | 12,412.34   |
+| 05/01/2024 | London Cycle Workshop - Bike Service               | 110.00    |            | 12,302.34   |
+| 07/01/2024 | Direct Debit: Barclays Mortgage Payment            | 1,450.00  |            | 10,852.34   |
+| 08/01/2024 | Salary Payment - FinTech Solutions Ltd.            |           | 4,200.00   | 15,052.34   |
+| 08/01/2024 | Transfer to Claire Marsh - Joint Account           | 1,000.00  |            | 14,052.34   |
+| 10/01/2024 | Amazon UK - Tropical Fish Supplies                 | 67.50     |            | 13,984.84   |
+| 12/01/2024 | National Rail - Bristol Return Ticket              | 78.90     |            | 13,905.94   |
+| 13/01/2024 | Waitrose - Weekend Shop                            | 89.45     |            | 13,816.49   |
+| 15/01/2024 | Direct Debit: Virgin Media - Broadband & TV        | 58.00     |            | 13,758.49   |
+| 17/01/2024 | QPA Primary School - Lily School Trip              | 25.00     |            | 13,733.49   |
+| 19/01/2024 | Tesco Express - Quick Shop                         | 12.30     |            | 13,721.19   |
+| 20/01/2024 | Netflix Subscription                               | 10.99     |            | 13,710.20   |
+| 22/01/2024 | Apple App Store - Photo Editing Software           | 15.99     |            | 13,694.21   |
+| 24/01/2024 | Direct Debit: British Gas - Energy Bill            | 185.00    |            | 13,509.21   |
+| 25/01/2024 | Payment to Janet Marsh (Mum's Birthday Gift)       | 50.00     |            | 13,459.21   |
+| 27/01/2024 | Pizza Express - Family Dinner                      | 75.60     |            | 13,383.61   |
+| 29/01/2024 | Transport for London - Oyster Top-up               | 40.00     |            | 13,343.61   |
+| 31/01/2024 | Direct Debit: London Water - Water Bill            | 35.00     |            | 13,308.61   |
+
+**February 2024**
+
+| Date       | Description                                        | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :------------------------------------------------- | :-------- | :--------- | :---------- |
+| 01/02/2024 | Morrisons - Weekly Shop                            | 78.20     |            | 13,230.41   |
+| 02/02/2024 | Little Stars Nursery - Max Fees                    | 850.00    |            | 12,380.41   |
+| 05/02/2024 | Direct Debit: Barclays Mortgage Payment            | 1,450.00  |            | 10,930.41   |
+| 06/02/2024 | Salary Payment - FinTech Solutions Ltd.            |           | 4,200.00   | 15,130.41   |
+| 06/02/2024 | Transfer to Claire Marsh - Joint Account           | 1,000.00  |            | 14,130.41   |
+| 09/02/2024 | Halfords - Bike Accessories                        | 32.50     |            | 14,097.91   |
+| 11/02/2024 | Amazon UK - Lily's Reading Books                   | 22.99     |            | 14,074.92   |
+| 14/02/2024 | Marks & Spencer - Valentine's Day Flowers          | 40.00     |            | 14,034.92   |
+| 16/02/2024 | ZSL London Zoo - Family Entry                      | 72.00     |            | 13,962.92   |
+| 18/02/2024 | Shell Petrol Station - Fuel                        | 65.00     |            | 13,897.92   |
+| 20/02/2024 | Deliveroo - Dinner (Claire upset about work)       | 38.50     |            | 13,859.42   |
+| 21/02/2024 | Waitrose - Comfort Food                            | 55.00     |            | 13,804.42   |
+| 23/02/2024 | Direct Debit: O2 Mobile - Phone Bill               | 45.00     |            | 13,759.42   |
+| 26/02/2024 | Transport for London - Oyster Top-up               | 40.00     |            | 13,719.42   |
+| 28/02/2024 | Direct Debit: Sky Sports - Subscription            | 32.00     |            | 13,687.42   |
+
+**March 2024**
+
+| Date       | Description                                        | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :-------- | :--------- | :---------- |
+| 01/03/2024 | Tesco Superstore - Weekly Shop                     | 88.75     |            | 13,598.67   |
+| 04/03/2024 | Direct Debit: Barclays Mortgage Payment            | 1,450.00  |            | 12,148.67   |
+| 06/03/2024 | Salary Payment - FinTech Solutions Ltd.            |           | 4,200.00   | 16,348.67   |
+| 06/03/2024 | Transfer to Claire Marsh - Joint Account           | 1,000.00  |            | 15,348.67   |
+| 08/03/2024 | John Lewis - New Camera Lens (Photography hobby)   | 280.00    |            | 15,068.67   |
+| 10/03/2024 | Amazon UK - Max's Toy Car                          | 18.99     |            | 15,049.68   |
+| 12/03/2024 | National Express - Coach to Manchester (Hannah visit) | 45.00     |            | 15,004.68   |
+| 15/03/2024 | Direct Debit: Virgin Media - Broadband & TV        | 58.00     |            | 14,946.68   |
+| 17/03/2024 | Wagamama - Family Dinner                           | 68.00     |            | 14,878.68   |
+| 19/03/2024 | PureGym - Monthly Membership                       | 30.00     |            | 14,848.68   |
+| 22/03/2024 | Homebase - Garden Supplies                         | 42.50     |            | 14,806.18   |
+| 24/03/2024 | Direct Debit: British Gas - Energy Bill            | 190.00    |            | 14,616.18   |
+| 26/03/2024 | Transport for London - Oyster Top-up               | 40.00     |            | 14,576.18   |
+| 29/03/2024 | Sainsbury's - Easter Eggs                          | 28.00     |            | 14,548.18   |
+| 31/03/2024 | Direct Debit: London Water - Water Bill            | 35.00     |            | 14,513.18   |
+
+**April 2024**
+
+| Date       | Description                                        | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :------------------------------------------------- | :-------- | :--------- | :---------- |
+| 01/04/2024 | Waitrose - Weekly Shop                             | 92.30     |            | 14,420.88   |
+| 03/04/2024 | Little Stars Nursery - Max Fees                    | 850.00    |            | 13,570.88   |
+| 05/04/2024 | Direct Debit: Barclays Mortgage Payment            | 1,450.00  |            | 12,120.88   |
+| 08/04/2024 | Salary Payment - FinTech Solutions Ltd.            |           | 4,200.00   | 16,320.88   |
+| 08/04/2024 | Transfer to Claire Marsh - Joint Account           | 1,000.00  |            | 15,320.88   |
+| 10/04/2024 | Amazon UK - Tropical Fish Food                     | 15.75     |            | 15,305.13   |
+| 12/04/2024 | Halfords - Car Servicing Deposit                   | 50.00     |            | 15,255.13   |
+| 15/04/2024 | Direct Debit: Car Insurance - VW Golf              | 65.00     |            | 15,190.13   |
+| 17/04/2024 | QPA Primary School - After School Club             | 30.00     |            | 15,160.13   |
+| 19/04/2024 | Tesco Express - Lunch                               | 8.50      |            | 15,151.63   |
+| 22/04/2024 | Direct Debit: O2 Mobile - Phone Bill               | 45.00     |            | 15,106.63   |
+| 24/04/2024 | Transport for London - Oyster Top-up               | 40.00     |            | 15,066.63   |
+| 26/04/2024 | Payment to Luke Marsh (Birthday Present)           | 50.00     |            | 15,016.63   |
+| 29/04/2024 | Decathlon - Cycling Gear                           | 75.00     |            | 14,941.63   |
+
+**May 2024**
+
+| Date       | Description                                        | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :------------------------------------------------- | :-------- | :--------- | :---------- |
+| 01/05/2024 | Sainsbury's - Weekly Shop                          | 85.90     |            | 14,855.73   |
+| 03/05/2024 | London Cycle Workshop - New Tyres                  | 95.00     |            | 14,760.73   |
+| 07/05/2024 | Direct Debit: Barclays Mortgage Payment            | 1,450.00  |            | 13,310.73   |
+| 08/05/2024 | Salary Payment - FinTech Solutions Ltd.            |           | 4,200.00   | 17,510.73   |
+| 08/05/2024 | Transfer to Claire Marsh - Joint Account           | 1,000.00  |            | 16,510.73   |
+| 10/05/2024 | Apple App Store - Productivity App                 | 5.99      |            | 16,504.74   |
+| 12/05/2024 | National Rail - Edinburgh Return (Luke visit)      | 95.00     |            | 16,409.74   |
+| 15/05/2024 | Direct Debit: Virgin Media - Broadband & TV        | 58.00     |            | 16,351.74   |
+| 18/05/2024 | The Fishkeeper - New Fish & Plants                 | 110.00    |            | 16,241.74   |
+| 20/05/2024 | Waitrose - Weekend Shop                            | 78.20     |            | 16,163.54   |
+| 23/05/2024 | Direct Debit: British Gas - Energy Bill            | 170.00    |            | 15,993.54   |
+| 25/05/2024 | Transport for London - Oyster Top-up               | 40.00     |            | 15,953.54   |
+| 28/05/2024 | Curry's PC World - New Monitor (Work from home setup) | 250.00    |            | 15,703.54   |
+| 31/05/2024 | Direct Debit: London Water - Water Bill            | 35.00     |            | 15,668.54   |
+
+**June 2024**
+
+| Date       | Description                                        | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :------------------------------------------------- | :-------- | :--------- | :---------- |
+| 01/06/2024 | Morrisons - Weekly Shop                            | 89.10     |            | 15,579.44   |
+| 03/06/2024 | Little Stars Nursery - Max Fees                    | 850.00    |            | 14,729.44   |
+| 05/06/2024 | Direct Debit: Barclays Mortgage Payment            | 1,450.00  |            | 13,279.44   |
+| 06/06/2024 | Salary Payment - FinTech Solutions Ltd.            |           | 4,200.00   | 17,479.44   |
+| 06/06/2024 | Transfer to Claire Marsh - Joint Account           | 1,000.00  |            | 16,479.44   |
+| 09/06/2024 | Amazon UK - Lily's Birthday Present                | 45.00     |            | 16,434.44   |
+| 11/06/2024 | QPA Primary School - Lily's Summer Fair Donation   | 10.00     |            | 16,424.44   |
+| 14/06/2024 | Direct Debit: Netflix Subscription                 | 10.99     |            | 16,413.45   |
+| 16/06/2024 | Local Pub - Father's Day Lunch                     | 60.00     |            | 16,353.45   |
+| 18/06/2024 | Shell Petrol Station - Fuel                        | 70.00     |            | 16,283.45   |
+| 21/06/2024 | Direct Debit: O2 Mobile - Phone Bill               | 45.00     |            | 16,238.45   |
+| 24/06/2024 | Transport for London - Oyster Top-up               | 40.00     |            | 16,198.45   |
+| 27/06/2024 | PureGym - Monthly Membership                       | 30.00     |            | 16,168.45   |
+| 30/06/2024 | Tesco Express - Quick Shop                         | 15.20     |            | 16,153.25   |
+
+**July 2024**
+
+| Date       | Description                                        | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :------------------------------------------------- | :-------- | :--------- | :---------- |
+| 01/07/2024 | Waitrose - Weekly Shop                             | 95.60     |            | 16,057.65   |
+| 04/07/2024 | Direct Debit: Barclays Mortgage Payment            | 1,450.00  |            | 14,607.65   |
+| 08/07/2024 | Salary Payment - FinTech Solutions Ltd.            |           | 4,200.00   | 18,807.65   |
+| 08/07/2024 | Transfer to Claire Marsh - Joint Account           | 1,000.00  |            | 17,807.65   |
+| 10/07/2024 | EasyJet - Summer Holiday Flights Deposit           | 300.00    |            | 17,507.65   |
+| 12/07/2024 | Amazon UK - Kids' Holiday Activity Books           | 28.00     |            | 17,479.65   |
+| 15/07/2024 | Direct Debit: Virgin Media - Broadband & TV        | 58.00     |            | 17,421.65   |
+| 17/07/2024 | QPA Primary School - Lily's End of Year Gift       | 15.00     |            | 17,406.65   |
+| 19/07/2024 | Local Restaurant - Dinner with Rachel Green        | 45.00     |            | 17,361.65   |
+| 22/07/2024 | Direct Debit: British Gas - Energy Bill            | 160.00    |            | 17,201.65   |
+| 24/07/2024 | Transport for London - Oyster Top-up               | 40.00     |            | 17,161.65   |
+| 26/07/2024 | Trainline - Tickets to Bristol (Janet visit)       | 78.90     |            | 17,082.75   |
+| 29/07/2024 | Direct Debit: Car Insurance - VW Golf              | 65.00     |            | 17,017.75   |
+| 31/07/2024 | Direct Debit: London Water - Water Bill            | 35.00     |            | 16,982.75   |
+
+**August 2024**
+
+| Date       | Description                                        | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :------------------------------------------------- | :-------- | :--------- | :---------- |
+| 01/08/2024 | Sainsbury's Local - Holiday Snacks                 | 35.80     |            | 16,946.95   |
+| 02/08/2024 | Little Stars Nursery - Max Fees (Holiday reduced)  | 425.00    |            | 16,521.95   |
+| 05/08/2024 | Direct Debit: Barclays Mortgage Payment            | 1,450.00  |            | 15,071.95   |
+| 08/08/2024 | Salary Payment - FinTech Solutions Ltd.            |           | 4,200.00   | 19,271.95   |
+| 08/08/2024 | Transfer to Claire Marsh - Joint Account           | 1,000.00  |            | 18,271.95   |
+| 10/08/2024 | Hotel Booking - Holiday Accommodation              | 850.00    |            | 17,421.95   |
+| 12/08/2024 | Travel Money Exchange - Euros                      | 500.00    |            | 16,921.95   |
+| 15/08/2024 | Direct Debit: O2 Mobile - Phone Bill               | 45.00     |            | 16,876.95   |
+| 17/08/2024 | Airport Parking                                    | 60.00     |            | 16,816.95   |
+| 19/08/2024 | Holiday Spending - Various (ATM Withdrawal)        | 200.00    |            | 16,616.95   |
+| 21/08/2024 | Holiday Spending - Various (ATM Withdrawal)        | 200.00    |            | 16,416.95   |
+| 24/08/2024 | Holiday Spending - Various (ATM Withdrawal)        | 150.00    |            | 16,266.95   |
+| 26/08/2024 | Transport for London - Oyster Top-up               | 40.00     |            | 16,226.95   |
+| 29/08/2024 | Supermarket - Post-holiday stock-up                | 110.00    |            | 16,116.95   |
+
+**September 2024**
+
+| Date       | Description                                        | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :------------------------------------------------- | :-------- | :--------- | :---------- |
+| 02/09/2024 | Tesco Superstore - Weekly Shop                     | 98.70     |            | 16,018.25   |
+| 03/09/2024 | Little Stars Nursery - Max Fees                    | 850.00    |            | 15,168.25   |
+| 05/09/2024 | Direct Debit: Barclays Mortgage Payment            | 1,450.00  |            | 13,718.25   |
+| 06/09/2024 | Salary Payment - FinTech Solutions Ltd.            |           | 4,200.00   | 17,918.25   |
+| 06/09/2024 | Transfer to Claire Marsh - Joint Account           | 1,000.00  |            | 16,918.25   |
+| 09/09/2024 | Amazon UK - School Uniform Replacements            | 42.00     |            | 16,876.25   |
+| 11/09/2024 | QPA Primary School - Lily's School Dinners         | 60.00     |            | 16,816.25   |
+| 14/09/2024 | Direct Debit: Netflix Subscription                 | 10.99     |            | 16,805.26   |
+| 16/09/2024 | PureGym - Monthly Membership                       | 30.00     |            | 16,775.26   |
+| 18/09/2024 | Waterstones - Books for Kids                       | 25.00     |            | 16,750.26   |
+| 20/09/2024 | Direct Debit: Virgin Media - Broadband & TV        | 58.00     |            | 16,692.26   |
+| 23/09/2024 | Direct Debit: British Gas - Energy Bill            | 180.00    |            | 16,512.26   |
+| 25/09/2024 | Transport for London - Oyster Top-up               | 40.00     |            | 16,472.26   |
+| 28/09/2024 | Local Indian Restaurant - Takeaway                 | 32.50     |            | 16,439.76   |
+| 30/09/2024 | Direct Debit: London Water - Water Bill            | 35.00     |            | 16,404.76   |
+
+**October 2024**
+
+| Date       | Description                                        | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :------------------------------------------------- | :-------- | :--------- | :---------- |
+| 01/10/2024 | Waitrose - Weekly Shop                             | 90.40     |            | 16,314.36   |
+| 03/10/2024 | Little Stars Nursery - Max Fees                    | 850.00    |            | 15,464.36   |
+| 07/10/2024 | Direct Debit: Barclays Mortgage Payment            | 1,450.00  |            | 14,014.36   |
+| 08/10/2024 | Salary Payment - FinTech Solutions Ltd.            |           | 4,200.00   | 18,214.36   |
+| 08/10/2024 | Transfer to Claire Marsh - Joint Account           | 1,000.00  |            | 17,214.36   |
+| 10/10/2024 | Amazon UK - Halloween Decorations                   | 22.50     |            | 17,191.86   |
+| 12/10/2024 | Shell Petrol Station - Fuel                        | 68.00     |            | 17,123.86   |
+| 15/10/2024 | Direct Debit: O2 Mobile - Phone Bill               | 45.00     |            | 17,078.86   |
+| 17/10/2024 | QPA Primary School - Lily's After School Club      | 30.00     |            | 17,048.86   |
+| 19/10/2024 | Argos - Max's Winter Coat                          | 35.00     |            | 17,013.86   |
+| 22/10/2024 | Direct Debit: Car Insurance - VW Golf              | 65.00     |            | 16,948.86   |
+| 24/10/2024 | Transport for London - Oyster Top-up               | 40.00     |            | 16,908.86   |
+| 27/10/2024 | National Rail - Bristol Return (Janet visit)       | 78.90     |            | 16,829.96   |
+| 30/10/2024 | Sainsbury's - Halloween Sweets                     | 18.00     |            | 16,811.96   |
+
+**November 2024**
+
+| Date       | Description                                        | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :------------------------------------------------- | :-------- | :--------- | :---------- |
+| 01/11/2024 | Morrisons - Weekly Shop                            | 87.60     |            | 16,724.36   |
+| 04/11/2024 | Direct Debit: Barclays Mortgage Payment            | 1,450.00  |            | 15,274.36   |
+| 06/11/2024 | Salary Payment - FinTech Solutions Ltd.            |           | 4,200.00   | 19,474.36   |
+| 06/11/2024 | Transfer to Claire Marsh - Joint Account           | 1,000.00  |            | 18,474.36   |
+| 09/11/2024 | Amazon UK - Christmas Shopping                     | 120.00    |            | 18,354.36   |
+| 11/11/2024 | John Lewis - Christmas Decorations                 | 75.00     |            | 18,279.36   |
+| 14/11/2024 | Direct Debit: Virgin Media - Broadband & TV        | 58.00     |            | 18,221.36   |
+| 16/11/2024 | Local Photography Shop - Photo Prints              | 40.00     |            | 18,181.36   |
+| 19/11/2024 | Waitrose - Sunday Roast Ingredients                | 65.00     |            | 18,116.36   |
+| 22/11/2024 | Direct Debit: British Gas - Energy Bill            | 200.00    |            | 17,916.36   |
+| 24/11/2024 | Transport for London - Oyster Top-up               | 40.00     |            | 17,876.36   |
+| 27/11/2024 | PureGym - Monthly Membership                       | 30.00     |            | 17,846.36   |
+| 30/11/2024 | Direct Debit: London Water - Water Bill            | 35.00     |            | 17,811.36   |
+
+**December 2024**
+
+| Date       | Description                                        | Debit (£) | Credit (£) | Balance (£) |
+| :--------- | :------------------------------------------------- | :-------- | :--------- | :---------- |
+| 02/12/2024 | Tesco Superstore - Christmas Food Shop             | 150.00    |            | 17,661.36   |
+| 03/12/2024 | Little Stars Nursery - Max Fees (Last payment of year) | 850.00    |            | 16,811.36   |
+| 05/12/2024 | Direct Debit: Barclays Mortgage Payment            | 1,450.00  |            | 15,361.36   |
+| 06/12/2024 | Salary Payment - FinTech Solutions Ltd.            |           | 4,200.00   | 19,561.36   |
+| 06/12/2024 | Transfer to Claire Marsh - Joint Account           | 1,000.00  |            | 18,561.36   |
+| 09/12/2024 | M&S Food - Christmas Treats                        | 80.00     |            | 18,481.36   |
+| 11/12/2024 | Amazon UK - Last Minute Christmas Gifts            | 65.00     |            | 18,416.36   |
+| 14/12/2024 | Direct Debit: Netflix Subscription                 | 10.99     |            | 18,405.37   |
+| 16/12/2024 | Royal Mail - Christmas Card Postage                | 15.00     |            | 18,390.37   |
+| 18/12/2024 | Local Butcher - Christmas Turkey                   | 70.00     |            | 18,320.37   |
+| 20/12/2024 | Direct Debit: O2 Mobile - Phone Bill               | 45.00     |            | 18,275.37   |
+| 22/12/2024 | Waitrose - Christmas Eve Essentials                | 90.00     |            | 18,185.37   |
+| 24/12/2024 | Payment to Hannah Marsh (Christmas Gift)           | 50.00     |            | 18,135.37   |
+| 26/12/2024 | Currys PC World - Boxing Day Sale (Small Kitchen Appliance) | 80.00     |            | 18,055.37   |
+| 28/12/2024 | Transport for London - Oyster Top-up               | 40.00     |            | 18,015.37   |
+| 30/12/2024 | Payment to Janet Marsh (New Year's Eve Dinner Contribution) | 30.00     |            | 17,985.37   |
+| 31/12/2024 | Closing Balance                                    |           |            | 17,985.37   |
+
+---
+
+**Year-End Financial Overview (01/01/2024 - 31/12/2024)**
+
+**Income:**
+
+*   **Total Salary (FinTech Solutions Ltd.):** £50,400.00
+*   **Other Credits:** £0.00
+*   **Total Income:** £50,400.00
+
+**Expenditure Categories:**
+
+*   **Mortgage Payments:** £17,400.00 (12 x £1,450.00)
+*   **Nursery Fees (Little Stars Nursery):** £9,350.00 (11 x £850.00, 1 x £425.00)
+*   **Joint Account Transfer (Claire Marsh):** £12,000.00 (12 x £1,000.00)
+*   **Groceries/Supermarkets:** £1,300.29 (Various transactions across Sainsbury's, Waitrose, Tesco, Morrisons)
+*   **Utilities (British Gas, London Water, Virgin Media, O2 Mobile):** £1,922.00
+*   **Transport (TfL, National Rail, Shell Petrol):** £951.80
+*   **Children's Activities/School (QPA Primary):** £200.00
+*   **Hobbies (Cycling, Photography, Tropical Fish):** £920.75
+*   **Dining Out/Takeaways:** £359.60
+*   **Subscriptions (Netflix, Sky Sports, PureGym, Apple Apps):** £280.93
+*   **Car Expenses (Insurance, Servicing):** £265.00
+*   **Gifts (Family):** £245.00
+*   **Holiday/Travel:** £1,988.90
+*   **Household/Other:** £377.50
+*   **ATM Withdrawals (Holiday Spending):** £550.00
+
+---
+
+**Important Notes for Tax Year 2024/2025:**
+
+*   **Employment Income:** Your P60 will be issued by FinTech Solutions Ltd. by 31st May 2025.
+*   **Mortgage Interest Certificate:** This will be issued by Barclays Bank PLC by 31st May 2025 for your records.
+*   **Pension Contributions:** Please refer to statements from your workplace pension provider for details of contributions made in the tax year.
+*   **ISA Contributions:** No direct ISA contributions were made from this current account. Please refer to separate ISA statements if applicable.
+
+**Future Considerations for 2025:**
+
+*   **Mortgage Review:** Your fixed-rate mortgage with Barclays is due for review in mid-2025. Please contact a mortgage advisor to discuss your options.
+*   **Car Replacement:** You indicated an interest in switching to an electric vehicle. Please budget for potential deposit and finance arrangements.
+*   **Increased Living Costs:** Please note the general increase in cost of living, which may impact your monthly outgoings in 2025.
+
+---
+
+**Contact Information:**
+
+**Barclays Customer Services:** 0345 7345 345
+**Online Banking Support:** www.barclays.co.uk/personal/online-banking/
+**Your Branch:** North London Branch, 12 High Street, North London, N12 8AB
+
+**Fraud Prevention:**
+
+Please be vigilant against fraud. Barclays will never ask you for your full PIN or online banking password. If you receive suspicious communications, please report them to us immediately.
+
+---
+
+**This is an annual summary of your account. For more detailed monthly statements, please refer to your online banking portal or previous mailed statements.**
+
+**Thank you for banking with Barclays.**

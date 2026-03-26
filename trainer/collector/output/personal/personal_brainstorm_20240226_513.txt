@@ -1,0 +1,65 @@
+Journal Entry: Monday, 26th February 2024
+
+God, what a day. Or rather, what a *start* to a week. Feel like I've been running on fumes since 6 AM and it's barely 10 PM. My brain feels like that payment migration script – full of errors and refusing to commit.
+
+Woke up before the alarm, 6:05 AM. That familiar low-level hum of anxiety already present. Claire was still fast asleep, bless her. Always looks so peaceful. Tried to be quiet, got out of bed, did my usual stretching for my back – it's been aching a lot lately, probably all the hours hunched over the keyboard. And the cycling doesn't always help, despite what the physio says.
+
+Max was up by 6:30, like clockwork. Little terror. Bouncing into our room, demanding "Pancakes!" We do pancakes on Sundays, not Mondays, kiddo. Managed to distract him with 'Paw Patrol' while I got the coffee brewing. Lily was a bit slower, grumbling about "Mrs. Henderson's homework" before she'd even had breakfast. Year 3 is getting serious. Remember when she just drew pictures of cats all day? Good times.
+
+Breakfast was a blur. Cereal, toast, the usual morning chaos. Claire was doing her best to keep things on track, reminding Lily about her reading book and Max about not trying to feed his yoghurt to Mr. Bubbles (the goldfish, obviously). We need a bigger tank for the little guy soon, he's getting massive. Or maybe some new tankmates? Nah, too much to deal with right now.
+
+The car. That damn car. Claire brought it up again. "Did you manage to post the Golf ad on AutoTrader yet, Ethan?" No, Claire, I didn't. Because I was too busy staring into the abyss of my impending work week. "I'll do it tonight," I mumbled, knowing full well 'tonight' means 'probably next weekend if I'm lucky'. She gave me *the look*. The one that says, 'I know you're stressed, but this isn't going to magically happen'. She's right, of course. We need to get it gone. The parking permit renewal is looming, and we really, really need to make progress on the EV. Those charging points are popping up everywhere now, saw another one on Parkway this morning. The thought of no more petrol stations, no more ULEZ charges, it's so tempting. But the upfront cost… and getting a decent price for the Golf, that's the sticking point. Everyone wants an EV now, but nobody wants a petrol car unless it's dirt cheap. Catch-22.
+
+Managed to get Lily and Max dressed and fed, then it was the usual dash out the door. Max to Little Stars Nursery – he was actually quite cheerful today, no tears, which is a small win. Lily to QPA Primary. Hugged her goodbye, told her to listen to Mrs. Henderson. She's a good kid, Lily. Smart.
+
+Then, the cycle to work. The air was crisp, surprisingly clear for London. Made good time. Tried to clear my head, but the second I thought about the office, the dread started. Richard. The payment migration. It's been a monster project for months, and we're so close to go-live, but every day throws up a new curveball.
+
+Walked in, brewed a terrible cup of office coffee. James was already there, looking just as stressed as I felt. "Morning, disaster zone," he said, without even looking up from his screen. That set the tone. Priya joined us shortly, bringing in pastries, bless her. Small mercies.
+
+It didn't take long for the shit-storm to hit. First email from Richard: "Ethan - meeting @ 9:30 AM to discuss latest prod issues. Bring updates on the migration rollback strategy." Rollback strategy? We haven't even *gone live* yet, and he's already talking about rolling back? My stomach did a flip.
+
+The meeting was… predictably awful. Richard was pacing, veins practically popping in his neck. "This is unacceptable, Ethan. We're behind schedule, and now these pre-go-live bugs? What are we paying you for?" Standard Richard. Always makes it personal. James tried to interject, explain the complexity, the vendor issues, the API latency spikes, but Richard just waved his hand. "I don't care about the excuses. I care about results. We need to be ready by Friday. No ifs, no buts."
+
+Friday. That's three days away. We've got like 20 outstanding critical issues. How? How are we going to do this? My brain started listing things:
+- [ ] Fix API auth bug (James looking at this)
+- [x] Merge PR #451 (Done, but caused new issues)
+- [ ] Debug transaction processing errors (My main focus)
+- [ ] Write up new rollback plan (Richard's new demand)
+- [ ] Update documentation (LOL, who has time?)
+- [ ] Test edge cases (ha!)
+- [ ] Get vendor to respond (Good luck with that)
+
+Spent the rest of the morning deep in code, head throbbing. Every query I ran, every log I parsed, felt like I was wading through treacle. The payment processing flow is so intricate, so many dependencies. And the pressure from Richard just makes everything worse. He breathes down your neck until you make a mistake, then he pounces. I felt that familiar tightness in my chest, the asthma acting up slightly, probably just stress. Had to step away a few times, just to stare out the window, watch the taxis pass. Imagined myself just cycling away, never looking back. Silly.
+
+Lunch was a quick Pret sandwich at my desk, still debugging. Claire messaged me: "How's work? Lily's tooth is wobbly!" A small, happy distraction. Sent back a quick, "Stressful. Good news about Lily though!" She's getting so big.
+
+The afternoon was just a blur of more errors, more frantic Slack messages. Richard kept popping by, hovering. "Any progress, Ethan?" "Are we on track for Friday?" It was relentless. Priya was a godsend, helping me with some of the obscure database queries, her calm presence a small comfort. James and I were tag-teaming the API issues. It felt like we were throwing spaghetti at the wall.
+
+By 5 PM, I felt completely drained. Physically and mentally. My back was screaming. Managed to get a few critical bugs squashed, but it felt like bailing out a sinking ship with a teaspoon. Sent Richard an email, trying to sound confident, but also setting realistic expectations without explicitly saying "we're screwed." Something along the lines of "good progress on P1 items, still assessing full scope for Friday go-live, will provide updated risk assessment EOD tomorrow." Cowardly, maybe, but I just couldn't face another shouting match.
+
+Cycled home, the evening traffic a symphony of horns and fumes. Just wanted to get home, see the kids, switch off my brain.
+
+Walked in, and the smell of Claire's cooking instantly relaxed me a tiny bit. She was making her famous chicken stir-fry. Max immediately launched himself at my legs, "Daddy! Look! I made a drawing!" It was a purple blob, which he proudly declared was "a dinosaur eating a rocket." Brilliant. Lily was doing her homework at the kitchen table, concentrating hard, her wobbly tooth evident every time she talked. "Daddy, Mrs. Henderson said we have to learn our 7 times tables!"
+
+Dinner was noisy, chaotic, and wonderful. Just the antidote I needed. Talked about Lily's tooth, Max's dinosaur, Claire's day at school ("Another parent-teacher meeting, Mrs. Davies is still convinced little Timmy is a 'visual learner' and just needs more glitter.") It’s a completely different world, and for an hour or so, I almost forgot about payment migrations and Richard.
+
+After dinner, helped Lily with her 7 times tables – she actually got them pretty quick. Max 'helped' by trying to climb into the fish tank. Had to rescue him before he ended up as Mr. Bubbles' new tankmate. Checked the filter on the tank, everything looking good. The fish are so mesmerising, just floating there, oblivious to the stresses of the human world.
+
+Kids to bed, stories, cuddles. Then, finally, Claire and I had a chance to sit down. She could tell I was shattered. "Rough day, love?" she asked, handing me a mug of tea. "The roughest," I replied, and just let it all out. The migration, Richard, the Friday deadline. She listened patiently, as she always does. "Don't let him get to you, Ethan. You're good at what you do. You'll figure it out." Her unwavering support is everything.
+
+Then, the car again. She gently reminded me. "I saw a few nice EVs online today, but we really need to get the Golf listed first. It's been a month since we agreed." Right. I know. It's just another thing on the mountain of things.
+
+So, here I am, 10:15 PM. Sitting on the sofa, typing this on my phone. Claire's in the other room, probably marking papers or prepping for tomorrow. I should probably do something productive, like finally post that ad, or maybe just look at some EV models for five minutes.
+
+Quick search:
+- Nissan Leaf – maybe too small?
+- Hyundai Kona Electric – good range.
+- MG4 – surprisingly good reviews.
+
+But my eyes are glazing over. My brain is fried.
+Tomorrow. Tomorrow I'll tackle the car ad.
+Tomorrow I'll face Richard and the migration again.
+Tonight, I just need to sleep. My back aches, my head aches, my chest feels heavy.
+Just want to crawl into bed and forget about everything until the morning.
+Hope the fish are having a better night than I am.
+God, I'm tired.

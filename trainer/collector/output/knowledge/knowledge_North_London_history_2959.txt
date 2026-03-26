@@ -1,0 +1,110 @@
+**Date:** Saturday, 18th May 2024
+**Time:** 10:45 AM
+**Location:** Home office desk. Kids out (Lily at a friend's birthday party, Claire took Max to the park).
+**Context:** Trying to focus on North London history research. Portugal flights are a blinking red light in the back of my mind.
+
+---
+
+**North London History - Initial Scrawl/Notes**
+
+Okay, so I keep saying I'm going to dig into the history of *our bit* of North London, and the wider area, and then I get distracted by work, or the kids, or trying to perfect that paella recipe. But with Lily asking more questions about "old London" after her school trip to the Museum of London, it feels like a good time to actually start. And honestly, it’s a nice break from looking at API docs.
+
+**Why now?**
+*   Lily's curiosity (Year 3, Mrs. Henderson mentioned local history in their newsletter a while back too).
+*   Claire's always saying we should appreciate where we live more.
+*   My own vague curiosity – how did this place go from fields to... this?
+*   Photography ideas – might find some cool old buildings or hidden alleys to shoot.
+*   Avoid booking Portugal flights for another hour. (Seriously, *must* do that soon. Claire will kill me. Ryanair or EasyJet? Faro seems best. Need to check Lily's school holiday dates again – QPA is out 22nd July, right? Max’s nursery Little Stars usually aligns, but better double check that too.)
+
+**Broad Strokes - How to approach this?**
+Think about it like structuring a database – what are the key tables?
+1.  **Geography/Pre-history:** Before "London" reached here.
+2.  **Early Settlements:** Villages, roads, estates.
+3.  **Expansion Drivers:** Transport (canals, railways, trams, tube), industry.
+4.  **Social/Demographic Changes:** Who lived here, when, why?
+5.  **Architecture:** What styles, when did specific types of housing appear? (Like our semi-detached, probably inter-war?)
+6.  **Key Events/Figures:** Anything particularly notable.
+
+---
+
+**1. Geography & Early Days (Pre-1800s)**
+
+*   **Topography:** Hilly! Hampstead Heath, Highgate Hill. This must have been a natural barrier for centuries, slowing down expansion northwards compared to say, the flat lands to the east or west. Good for views, bad for horse-drawn carts.
+*   **Forests/Farmland:** Definitely mostly agricultural until relatively recently. Where *exactly* was the edge of London proper? "The City" was the core. North London was literally "the country".
+*   **Roman Roads:** Ermine Street (modern A10) and Watling Street (A5) were major routes. Did they influence early settlements? Probably.
+    *   *Check:* Where exactly do these run through N. London? A10 goes through Stoke Newington, Tottenham. A5 goes through Edgware, Kilburn. Not directly past *us* but influential.
+*   **Villages:** This is key. Most of North London started as distinct villages that got swallowed up.
+    *   Islington: Very early commuter village, known for its spas and cattle markets. Close enough to the City.
+    *   Highgate: Hilltop village, nice views, attracted wealthier people early on. Cemetery is famous.
+    *   Hampstead: Similar to Highgate, health benefits of the air, artists, intellectuals.
+    *   Clerkenwell: More industrial, closer to the City.
+    *   Stoke Newington, Tottenham, Enfield, Barnet, Finchley, Hendon: Further out, remained more rural for longer.
+    *   *Self-note:* Our area... is it a former village, or just land that was developed? Need to pinpoint the nearest 'original' settlement. Will get the Ordnance Survey maps out later. Could be a nice photo project, tracing old boundaries.
+
+---
+
+**2. The Age of Expansion (19th Century - Victorian Boom)**
+
+This is where things really kicked off. London population exploded, and the need for housing stretched further and further out.
+
+*   **Canals:** Regent's Canal (opened 1820) – major transport artery for goods (coal, timber, bricks) into the heart of London. How did it affect areas like Camden Town, Islington? Probably spurred industrial development along its banks.
+    *   *To do:* Cycle along Regent's Canal soon, take some photos of old industrial buildings. Good exercise for my lower back pain too.
+*   **Railways:** The absolute game-changer.
+    *   North London Railway (NLR): Opened 1850s, linked the docks to Camden, Islington, Hackney. Crucial for goods and passengers. Allowed people to live further out and commute.
+    *   Great Northern Railway: King's Cross opened 1852. Main line heading north.
+    *   Midland Railway: St Pancras opened 1868. Another major hub.
+    *   Impact: Created entirely new suburbs around stations. Property developers bought up land near stations, built houses for commuters. Think about stations like Finsbury Park, Highbury & Islington, Camden Road.
+    *   *Question:* What was the social impact? Did it create class segregation? More affluent people moved to leafy suburbs, working class stayed closer to factories or docks.
+*   **Trams:** Horse-drawn then electric. Helped fill in the gaps between railway lines. Made more areas accessible.
+*   **"Tube" Lines (Underground):** Metropolitan Line (1863) – world's first underground railway. Extended northwards. Eventually the Northern Line, Piccadilly Line.
+    *   *Connection:* The Northern Line runs close to us. How old are the stations nearby? This is probably why our area developed when it did. The 'Metroland' phenomenon.
+
+---
+
+**3. Social & Demographic Shifts**
+
+*   **Class:** North London has always had a mix. Hampstead/Highgate for the wealthy, Islington attracting professionals, but also areas that were more working-class, especially around the industrial hubs (Camden, Tottenham).
+*   **Migration:**
+    *   Irish immigration (post-famine, railway building).
+    *   Jewish communities (late 19th/early 20th century, particularly around Stamford Hill, Golders Green, Hendon).
+    *   Caribbean, African, South Asian communities (post-WWII). Claire mentioned that QPA Primary has a really diverse mix of kids, which is brilliant, and reflects this history. Max's nursery, Little Stars, is the same.
+    *   Gentification: More recent phenomenon, pushing up house prices (ours included, thankfully for the mortgage with Barclays, but not so much for first-time buyers).
+
+---
+
+**4. Architecture & Housing (Our House!)**
+
+*   **Georgian (late 18th/early 19th):** Elegant terraces, squares. Think Islington, Canonbury. Brick-fronted, sash windows.
+*   **Victorian (mid-late 19th):** Massive variety. Terraced houses, semi-detached for the growing middle class. Bay windows, decorative brickwork, often larger than Georgian.
+*   **Edwardian (early 20th):** Still grand, but maybe a bit more restrained than Victorian. Wider, often with more of a 'garden city' feel.
+*   **Inter-war (1920s-30s):** This is where our semi-detached probably fits in. Garden suburbs, "mock-Tudor" elements, bay windows, garages becoming common. Built for the burgeoning car-owning middle class (though our 2019 VW Golf is a bit newer!). This era saw huge development along new tube lines.
+    *   *Research task:* Find out the typical build date for our specific street/area. Claire loves this stuff; I should ask her if she knows any local history groups.
+*   **Post-WWII:** Rebuilding after the Blitz. Some brutalist architecture, council estates.
+
+---
+
+**5. Key Events & Figures**
+
+*   **The Blitz:** North London took a hit, like all of London. What areas were most affected? Probably around railway lines and industrial sites.
+*   **Cultural Figures:** Loads! From literary greats in Hampstead to musicians in Camden. Worth a separate dive later.
+*   **Markets:** Camden Market, Borough Market (not N. London, but good example of old markets). What were the historic markets in N. London? Caledonian Road Market (cattle market) is a big one.
+
+---
+
+**Random Thoughts / To Do List / Claire/Kids Notes:**
+
+*   **Portugal Flights:** Okay, I've put it off long enough. After this, I need to open the browser tabs for EasyJet and Ryanair. Faro. Kids' passports are still valid. Lily wants to go on a "big plane." Max just wants sand.
+*   **Local Archives/Libraries:** Is there a local historical society? Claire might know, she's good at finding community stuff. Our local library probably has some old maps or books.
+*   **Photos:** Take my camera out more often on my bike rides. Look for plaques, old street signs, specific architectural details. Maybe a series on "Vanishing North London".
+*   **Lily:** Tell her about the Roman roads. She might find it cool that her ancestors walked on the same routes (even if it's buried under tarmac now). Or the idea of our house being built on what was once fields.
+*   **Max:** Probably won't care yet, but good to have the info for later.
+*   **Mum (Janet):** She was telling me about her grandparents moving to London from Bristol in the 1930s. I should ask her if they had any stories about specific North London areas, how it was then.
+*   **Back pain:** Already feeling it a bit. Need to stand up and stretch. Maybe a quick walk around the block before tackling those flights.
+*   **Future Research:**
+    *   Specific street history: Who lived in our house before us?
+    *   Local pubs: Often the oldest buildings in an area, good markers of community.
+    *   Green spaces: History of Hampstead Heath, Finsbury Park, local parks.
+
+---
+
+Right, this is a decent start. My brain feels suitably engaged. Now, for the real challenge: finding affordable flights to Portugal that don't involve a 3 AM departure with a 4-year-old. Wish me luck. And then I can tell Claire I've actually started researching our local history too, that'll earn me some brownie points. Hopefully.

@@ -1,0 +1,72 @@
+**Journal Entry - Ethan Marsh**
+**2023-12-04**
+
+Ugh, another Monday. Woke up before the alarm again, just after 6 AM. The sky outside is still that pre-dawn bruised purple colour, streetlights glowing faintly through the window. First thought wasn't even work, surprisingly. It was the damn algae in the fish tank. Green spot on the glass, some hair algae starting to creep up on the Amazon swords. Really need to get those water parameters checked today. Nitrates usually creep up, maybe phosphates too. Always a battle. Community tank, it's mostly guppies and a few neon tetras, plus that grumpy pleco who just hides all day. Lily named him 'Spot'. So original.
+
+Max was already awake, shuffling around in his room, probably playing with his fire engine. Lily, surprisingly, still asleep. Claire groaned beside me when I moved. She's got an early start today too, Year 3 assembly planning. Pulled myself up, back gave a familiar twinge. Gotta stretch more, this desk job is killing me. Went to the bathroom, then straight to the kitchen to boil the kettle. Made a mental note to pick up some more algaecide later, or maybe just do a bigger water change. That's usually the safer bet.
+
+Breakfast chaos ensued. Lily eventually emerged, looking like she’d wrestled a badger, uniform half on. Max insisted on having his cereal with a fork. "It's like little boats, Daddy!" he declared, launching Cheerios across the table. Claire managed to get through a cup of tea while simultaneously signing Lily's reading record (Mrs. Henderson is really hot on those) and reminding Max not to feed the dog *his* toast. We don't even have a dog. He just makes things up.
+
+Got them both out the door eventually. Lily to QPA Primary, Max to Little Stars. Claire dropped Max, I did Lily. Standard morning rush, nearly clipped a cyclist on the corner near the park, but it was fine. Said goodbye to Lily, she gave me a quick hug then ran off to find her friends. She's growing up so fast. Seven already. Sometimes it feels like yesterday we brought her home.
+
+Commute was... a commute. Northern Line was actually running okay, which is a miracle. Read a bit of that sci-fi novel, but my brain kept drifting to work. The payment processing migration. Bloody hell. We're in the final sprint now, deadline is end of next week, and it feels like we're still debugging core issues. My stomach was in knots before I even stepped into the office.
+
+Got in around 8:45 AM. James was already there, head down, looking stressed. Priya messaged on Slack asking for an update on the latency spikes we saw during Saturday's testing. Knew it. That's the main blocker right now. The old legacy system, for all its faults, was consistent. This new API integration, while theoretically faster, is throwing up all sorts of weird delays under load.
+
+Spent the morning in a haze of code, Slack messages, and a brutal stand-up. Richard, our manager, was pushing hard. "Ethan, James, what's the ETA on resolving the latency? We *cannot* go live with this. Client will flip." I tried to explain it's not a simple fix, it's deep in the architecture, potentially a caching issue or how the microservices are communicating. He just nodded, looking impatient. Classic Richard. He doesn't need to understand it, just needs it fixed. Priya's testing team is swamped too, trying to re-run test suites after every small change we push. It's a proper pressure cooker.
+
+Lunch was a Pret sandwich (chicken & avocado, my usual). Ate it at my desk, trying to debug a particularly gnarly section of the code that handles multi-currency transactions. Kept thinking about the fish tank though. A quick mental checklist:
+- [ ] Check nitrates
+- [ ] Check phosphates
+- [ ] Check pH
+- [ ] Check ammonia/nitrite (unlikely, but good to be sure)
+- [ ] Bigger water change?
+- [ ] Add CO2 booster?
+- [ ] Cut back feeding?
+- [ ] Snails? (don't want snails)
+
+Distractions were welcome, even if they were about microscopic aquatic life. Anything to not think about the looming deadline. My lower back started to ache again, probably from hunching over the keyboard.
+
+Afternoon was more of the same. A call with the infrastructure team – they think it might be a database connection pooling issue on their side, which would be... good, in a way. Not our code directly. But it means another team, another set of dependencies. It's like whack-a-mole. James and I paired on a particularly tricky bug for an hour, trying to trace a failed transaction. It was one of those where you stare at the same lines of code for ages, convinced it's right, then suddenly you spot a single character typo. Happens every time. Made some progress, at least. Feel like I'm running on fumes.
+
+Left the office around 5:45 PM. The thought of getting home and seeing the kids was the only thing pulling me through. Called Claire on the way. She'd picked up Max, and Lily was with Sarah (her friend from school) for a playdate, so Claire would grab her on the way home. Good. Less juggling for me.
+
+Got home, dropped my bag, immediately went to the fish tank. Green spot algae definitely worse. Damn it. Pulled out the test kit.
+- Nitrates: 30 ppm (high, but not catastrophic)
+- Phosphates: 1.5 ppm (definitely too high, that's the algae fuel)
+- pH: 7.2 (stable)
+- Ammonia/Nitrite: 0 (good)
+
+Okay, so high phosphates. Explains a lot. That'll be from overfeeding, or maybe the tap water has some in it. I need to get some phosphate remover, or just do a massive water change. Sighed. Just what I needed after a day like this.
+
+Claire arrived home with the kids shortly after. Lily ran straight for me, "Daddy! Guess what? Mrs. Henderson said my drawing of the Gruffalo was the best!" Max was clinging to Claire's leg, already overtired and whiny. My heart did that familiar flip-flop. All the work stress, the algae, it just kind of melts away for a second when they're like that.
+
+Dinner was one of my quick go-to's: pasta with a simple tomato sauce and meatballs. Lily helped stir the sauce, Max tried to eat the raw meatballs. "No, Max! We cook those first!" Claire just laughed, looking equally tired but still beautiful. We talked about their day. Claire had to deal with a particularly difficult parent whose child kept biting other kids. Teachers, honestly. They deserve medals.
+
+After dinner, it was the usual routine. Lily's homework – some maths problems (Year 3 maths is getting surprisingly complex), then bath time. Max splashing half the water out of the tub. Story time, then finally tucked them into bed. Kissed their heads, listened to their breathing for a moment. So peaceful.
+
+Came downstairs. Claire was already slumped on the sofa, scrolling through her phone. "Long day?" I asked. She just nodded. I sat next to her, leaned my head back. My back was really throbbing now.
+
+"The fish tank's got an algae problem," I said, almost as an aside. "High phosphates. Need to do a big water change tomorrow, maybe get some phosphate remover."
+She just hummed, half listening. "You going to order some of that EV car literature? I saw a Tesla on the school run, looked pretty nice."
+Ah, the EV. Yeah, still weighing it up. My 2019 Golf is perfectly fine, but the idea of no more petrol stations, lower emissions... it's appealing. But the initial cost, plus charging point installation. It's a big chunk out of the Barclays mortgage fund.
+
+Got up, stretched carefully. Decided to tackle some of the algae directly. Scraped the glass, pulled out some of the hair algae from the plants. It's therapeutic, in a weird way. Just focusing on one small, manageable problem. Unlike the payment processing migration.
+
+Sat back down. Claire had fallen asleep on the sofa. Carefully, I covered her with a throw. My phone buzzed – a late email from James, found another potential source for the latency spikes. "Looks like a thread-safety issue in the legacy adapter layer, mate. Ugh. FML." Just great. More work for tomorrow.
+
+It's nearly 11 PM. Too late for cycling, too tired for photography. Just this quiet, the hum of the fridge, the distant traffic noise. Mum called earlier, forgot to ring her back. Must do that tomorrow. She worries, especially since Dad passed in 2021. Hannah in Manchester, Luke in Edinburgh... we don't get to see them enough.
+
+Sometimes I feel like I'm just treading water. Juggling work, kids, house, trying to keep everyone happy, including the bloody fish. The stress of this migration project is immense. What if it goes wrong? What if I miss something critical? It's not just code; it's people's money, transactions. The responsibility weighs heavy.
+
+But then I think of Lily's Gruffalo drawing, Max's "little boats" cereal, Claire sleeping peacefully on the sofa. And it makes it all worth it. Mostly. Just need to keep pushing.
+
+Tomorrow:
+- [ ] Ring Mum (Bristol)
+- [ ] Follow up on James's thread-safety issue
+- [ ] Major fish tank water change + phosphate remover order
+- [ ] Look at EV car info (even just for 10 mins)
+- [x] Remember to stretch my back
+- [ ] No more Pret sandwiches – make a proper lunch
+
+V. tired. Zzz.

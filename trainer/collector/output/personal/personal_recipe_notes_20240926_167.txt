@@ -1,0 +1,92 @@
+2024-09-26
+
+Okay, Thursday. Another one. Woke up before the alarm again, 6:15am. Not sure if it's the light getting brighter earlier or just my brain already spinning up to 100 on the day's to-do list. Claire was still out cold next to me. Smart woman. Tried to just lie there for a bit, listen to the birds, but then Lily's muffled cough from down the hall snapped me out of it. Probably just a bit of dust or something, but you always check, don't you?
+
+Got up, put the kettle on. Standard morning routine: meds (asthma inhaler, daily allergy pill – bloody hayfever, even in September), water, then coffee. Black, strong. Checked my phone for any urgent alerts from work – nothing, thankfully. Just an email from James about the sprint demo next week. Ugh. Always a scramble to get the ‘demoable’ features ready.
+
+Max wandered in around 6:50, rubbing his eyes, clutching that grubby teddy bear he insists on taking everywhere. "Dada, hungry." Standard. Made him toast with jam, Lily appeared shortly after, looking much more awake, already asking what was for dinner. Seriously, kid? It's barely 7 AM.
+
+Breakfast chaos. Lily wanted her special dinosaur cereal bowl, Max wanted to pour his own milk (disaster averted, just), Claire came down looking tired, as usual. "Morning, love," she murmured, giving me a quick peck. She's got that Year 3 parent-teacher meeting tonight, so it's going to be a late one for her. I need to remember to pick up that extra box of herbal tea she likes from Waitrose on the way home.
+
+School run was its usual manic dash. Lily was telling me all about Mrs. Henderson's plan for a class trip to the Science Museum – "Can we go, Daddy? Please?" Of course we can, love. Max, meanwhile, was just making car noises and trying to pull his seatbelt off. Switched the radio to Capital for Lily, then Classic FM for me once I'd dropped them off. The contrast is always jarring. First QPA Primary, then Little Stars Nursery. Quick goodbye to Max, he was already distracted by the duplo. Always slightly guilt-inducing, dropping them off, rushing off to work. But what's the alternative, eh?
+
+Got to the office (Canary Wharf) around 8:40. Just enough time to grab another coffee and settle in before the stand-up. Priya was already at her desk, deep in some code. Richard was pontificating loudly about the latest football transfer rumours. Normal.
+
+Stand-up:
+- Me: Finishing up the payment gateway integration for Project Phoenix, need to test edge cases. Almost there.
+- Priya: Debugging that weird timeout issue on the API. Think it might be a caching problem.
+- James: Finalising the user stories for the next sprint, reviewing backlog. Lots of debate on priorities.
+- Richard: Still on that compliance report. (He always seems to be on that compliance report).
+
+Morning was a blur of Jira tickets and Slack messages. Pairing with Priya on that timeout bug was tricky. Turns out it was an obscure config issue in prod, not dev. Classic. Spent a good hour on that, pushing a hotfix. Back started aching around 11:30. Need to remember to stand up more. Or actually, you know, do those stretches Dr. Evans told me about. Ha.
+
+Then the call. Mum. Knew it was coming. She called at 12:30, just as I was about to head for lunch. Probably knew I'd pick up. We chatted for ages, must've been 45 minutes. Mostly about nothing much, you know, the usual Bristol gossip, how the garden's doing, her latest bridge club triumph. But... she sounded really tired. Not just "oh I've had a busy morning" tired, more like deep-in-the-bones tired. Her voice was thin. I asked if she was feeling okay, if she’d seen the doctor about that cough she mentioned last week. She brushed it off, "Oh, just the change in weather, dear. You know how it is." But I don't know. Ever since Dad passed in 2021, she's had this way of minimizing things, trying to be strong. But I hear it. The quiet sigh before she changes the subject, the slight tremor in her voice. Told her I'd call Hannah and Luke to check in. She said not to fuss. I'll fuss. She's my mum. George would have known what to say. He always did.
+
+After that call, lunch felt a bit hollow. Just grabbed a sandwich from Pret and ate it at my desk, staring blankly at my monitor. Couldn't really focus on code. My mind kept going back to her. Maybe I should go down next weekend. Claire wouldn't mind, she knows how I get.
+
+Afternoon was a grind. Tried to get back into the Phoenix integration. Made some progress but my head just wasn't in it fully. James messaged me about the kitchen quotes. Right. The kitchen.
+"Any luck with that last contractor, Ethan? Their bid seemed promising."
+"Yeah, will chase them today. Need to compare it properly with the others. Still leaning towards 'Kitchens by Design' though, they just seemed more... on it, you know? Less jargon, more actual solutions."
+"Okay, keep me posted. Claire's keen to get this sorted, I know."
+He's right. Claire's beyond keen. She's been pinning things on Pinterest for months. I just want it *done*. The thought of weeks of dust and microwave meals fills me with dread. But it needs doing. The current kitchen is barely holding together. That leaky tap and the warped cupboard under the sink are a constant reminder. And Max already drew on the wall with permanent marker last month. "Just testing the surface, Dada!" he'd said. Bless him.
+
+Left work a bit late, around 5:45. Traffic was a nightmare on the A1. Contemplating the electric car switch again. This 2019 VW Golf is solid, but the petrol prices... and the congestion charge if I ever have to drive into central. Maybe that new Polestar? Claire likes the look of the Tesla, but I'm not sure about the build quality on some of them. Another thing to research. Another decision. Add it to the list.
+
+Got home a little after 6:30. The usual explosion of noise and hugs. Lily was showing Claire a drawing of a 'superhero cat' from school, Max was trying to build a tower out of cushions. "Daddy!" Lily shrieked, running over. Max, not to be outdone, launched himself at my legs.
+"Hey you two! How was your day?"
+Claire, looking tired but smiling, met my eyes. "Rough day for you too, I take it?" She can always tell. I just nodded.
+"Mum sounded a bit off today," I told her quietly.
+"Oh, Ethan. What did she say?"
+"Not much, just brushed it off. But I'll call Hannah later."
+Claire squeezed my arm. "Good idea. Maybe she needs a visit."
+
+Dinner. Always a scramble on a Thursday. I'd vaguely planned to do that chicken and mushroom pasta bake from one of Jamie Oliver's 15-minute books, but my heart wasn't in it. Claire said she could manage something quick, so I put on the water for pasta and got out the pesto. We had some leftover roast chicken from Tuesday.
+
+*Ethan's Quick Pesto Pasta (Mental notes for next time, or variations):*
+- Pasta (penne or fusilli, about 300g for 4, Barilla or Garofalo if available)
+- Leftover chicken (shredded)
+-
+- Pasta (penne or fusilli, about 300g for 4, Barilla or Garofalo if available)
+- Leftover chicken (shredded)
+- Pesto (sacla, maybe try making my own sometime? No, too much effort right now)
+- Cherry tomatoes (halved, for colour and a bit of freshness)
+- Parmesan (grated, lots of it)
+- Splash of good olive oil
+- Maybe a handful of spinach at the end for the grown-ups? Lily will just pick it out. Max might eat it if I chop it really fine.
+
+Cooked the pasta, tossed it with the warmed chicken, pesto, and halved tomatoes. Grated a mountain of Parmesan over it. It was quick, it was edible, and crucially, Lily and Max both ate it without too many complaints. Max got a bit of pesto on his cheek, looked like a tiny green beard. Lily told us about her friend Maya at QPA, who apparently got a new pet hamster. "Can *we* have a hamster, Daddy? Please? It's much smaller than a cat!" I managed to deflect with talk of the fish tank. "Hamsters are boring, Lily. And smelly," Max piped up, ever the contrarian.
+
+After dinner, it was the usual chaotic dash of clearing up (mostly Claire, bless her, while I herded the kids), then bath time. Lily's still obsessed with making elaborate bubble beards, Max just likes to splash everything within a three-foot radius. Had to remind them about Mrs. Henderson's homework – a drawing of 'My Favourite Season'. Lily's already decided on autumn, with crunchy leaves and conkers. Max, naturally, just wanted to draw a dinosaur eating a pumpkin.
+
+Storytime. Lily chose "The Gruffalo's Child" and Max wanted "Room on the Broom." Read them both, doing all the voices, trying to inject some energy into my already depleted reserves. Tucked them in, a kiss on each forehead, told them I loved them. Max usually falls asleep pretty fast, Lily takes a bit longer, often calling out for a drink or "just one more hug." Tonight she was quiet. Maybe she could tell I was shattered too.
+
+Came downstairs. Claire was already on the sofa, scrolling through her phone. "Long day," she sighed, without looking up. "Year 3 are in a proper mood this week. And Mrs. Davies from reception just handed in her notice. Another one."
+I slumped next to her, running a hand through my hair. "Yeah, mum sounded really flat on the phone. Made me worry. She said she was just tired, but... you know mum."
+"I do. And with your dad gone, she bottles things up even more. Did you get through to Hannah?"
+"Not yet. I'll call her in a bit. Just needed a moment."
+"Another kitchen contractor emailed through a quote today," Claire said, changing the subject. "Northwood Kitchens. They're on the pricier side, but the designs look good. And they do the whole project management thing, which would be a lifesaver."
+"Pricier is probably an understatement. We've got two more coming in next week, right? Best to get all the numbers before we even think about it." My mind immediately went to the Barclays mortgage and our savings. This reno is going to sting. But, god, that leaky tap... and the permanent marker graffiti. It *has* to be done.
+
+Went into the living room, checked on the fish tank. The dwarf gouramis were chasing each other playfully, the neon tetras schooling tightly. Always calming, watching them glide around. The plants are looking a bit overgrown, probably need to trim them this weekend. Been meaning to take some photos of the tank with my new prime lens, but haven't had the time or energy. Maybe Saturday morning, if I can drag myself out of bed before the kids are up.
+
+Finally remembered to call Hannah. Dialled her number in Manchester. She picked up on the third ring, sounding a bit breathless. "Hey, Ethan! What's up? Just wrangling Sarah into bed."
+"Hey, Han. Nothing much, just called Mum earlier and she sounded really tired, a bit off. Just wanted to see if you'd spoken to her or had any insights."
+A pause. "Yeah, I noticed it too when I called on Tuesday. She said she just had a rubbish night's sleep. But I agree, she sounded... brittle, almost. Not like her usual 'stiff upper lip' tired. More genuinely down. I tried to get her to open up, but she just changed the subject to Luke's new job in Edinburgh."
+"Exactly. She deflected with Luke. I wonder if it's the house? Or just getting older and missing Dad more."
+"Could be. Or just a cumulative thing. She's been so strong since Dad passed. Maybe it's just catching up. We should both try to call her again tomorrow. Maybe suggest I come down for a weekend soon. Get her out for a walk."
+"Good idea, Han. Let me know if you do. I'll ping Luke too, see if he's heard anything."
+"Will do. Don't stress too much, E. She's tough, you know. Just needs a bit of TLC."
+"Yeah. Thanks, Han. Talk soon."
+
+Hung up feeling slightly less worried, but not entirely. It's tough, living so far from Mum. Dad's death in 2021 hit us all hard, but seeing Mum navigate it on her own in that big house... I constantly worry.
+
+Sat back down next to Claire. She was reading an article about 'eco-friendly ways to update your home'. "Hey, did you remember to email James the sprint report for tomorrow's stand-up?" she asked, without looking up.
+"Shit. No. Completely forgot." My mind was still on Mum.
+Opened the laptop. Blinked at the screen. My eyes felt gritty. Lower back was aching like mad from sitting at the desk all day, and my allergies were playing up, a constant tickle in my throat. Need to remember to take an antihistamine before bed. And maybe do those stretches Richard from Ops recommended.
+
+Typed out the email to James, attached the report. Sent. Finally, done.
+Closed the laptop. "Right. Bed. My brain feels like scrambled eggs."
+Claire chuckled. "Mine too. Still thinking about those kitchen quotes though."
+"Yeah, me too. Just not tonight."
+
+As I climbed into bed, I could hear Lily softly humming from her room. A quiet melody. The house was finally still. Another day gone. Full of small joys, small worries. Mum. The kitchen. Work. Kids. Just... life, I guess. At 38, it doesn't get simpler, does it? Just different. Shifted, trying to find a comfortable position for my back. Tomorrow's Friday. Thank God. Just need to get through tomorrow.

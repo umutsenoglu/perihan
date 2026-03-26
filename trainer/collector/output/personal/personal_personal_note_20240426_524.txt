@@ -1,0 +1,75 @@
+April 26, 2024
+Phone notes – private. Don't let Claire see this.
+
+Bloody hell, what a day. Or rather, what a brain-scramble of a day. Woke up before the alarm again, 5:45. That familiar ache in my lower back acting up, probably from hunching over the keyboard yesterday trying to debug that payment gateway integration. Claire was still out cold, thank god. She needs her sleep more than I do. Snuck out, made coffee. The usual grind. Lily came down like a whirlwind, already dressed somehow, wanting to know if it was "pizza Friday" (it's not). Max, bless him, was still in a fuzzy, sleepy fog, clinging to my leg, smelling faintly of milk and nursery soap. Small mercies.
+
+Getting them fed and out the door felt like a military operation, as always. Lily arguing about her toast crusts, Max deciding his yogurt was a finger paint medium. Claire, somehow, maintains a saintly calm through it all. Me? I'm just trying not to spill coffee on my work shirt. Dropped Lily at QPA, saw Mrs. Henderson briefly – she mentioned Lily's been doing well with her fractions. Good. Max at Little Stars, another quick handover. Felt a pang of guilt, leaving him there. He loves it, I know he does, but still. That constant background hum of *cost*.
+
+Commute on the Piccadilly line was its usual sardine can experience. Managed to get a seat, which felt like a win. Headphones on, tried to zone out, but my mind was already buzzing with code and that email. That bloody email.
+
+Got to the office, logged in, coffee number two. James was already at his desk, deep into something. Priya came over, asking about the sprint retrospective notes. Just another Thursday, or so I thought. Then I saw it. The email from Mark, that old contact from the FinTech startup days. "Freelance project – quick chat?"
+
+My heart did a little lurch. Knew what that meant. We had the chat later, a quick video call. It's a six-week project, building out some backend microservices for a new crypto exchange platform. The money… it’s really good. Like, genuinely decent money. Enough to make a difference. And it’s right up my street, technical challenge, interesting stack. For a second, I felt that old thrill of building something new, something completely mine.
+
+Then the other part of my brain kicked in. Six weeks. Nights. Weekends. "No time," I told him. He pushed a bit, "Evenings? Just a few hours?" I gave the usual corporate answer, "My current commitments… blah blah blah." But really, it’s not just work commitments. It’s *life* commitments.
+
+Got my head down for the rest of the morning, tried to focus on the sprint planning for our new credit card product. Richard was being his usual self, nitpicking every user story. Good, in a way, keeps me grounded. But my mind kept drifting. Freelance. Money. Max.
+
+Max’s nursery fees. God, it feels like they just went up, and now Little Stars sent out an email – another increase coming in September. Something about "rising operational costs and staff retention challenges." I get it, I really do. Everyone’s struggling. But for us, it’s just another whack. We’re already stretching to cover it. The Barclays mortgage is relentless, and while our 3-bed semi is perfect for us, it’s not cheap living in North London.
+
+Lunch was a sad desk sandwich, scrolling through my phone. Looked at alternative nurseries, childminders.
+*   Starlight Playgroup – cheaper, but heard their Ofsted report wasn't great last year. And it's further out of the way. Logistics nightmare.
+*   Sarah's Childminding – sounds good, local, but she's full until next year.
+*   What about Claire reducing her hours? No. Absolutely not. She loves her job at QPA, loves her Year 3 class, and we need her salary. Plus, she’d hate it. We’ve talked about it before.
+*   Mum? Janet’s in Bristol. She’d love to help, I know, but it’s too far for regular childcare. And she’s got her own life, her friends, her bridge club. Wouldn't ask her to uproot everything. Hannah’s in Manchester, Luke in Edinburgh. All too far.
+
+It just feels like a trap. Max is four. He'll be starting school next year, thank god, so it's only another year of nursery fees. But this *year*. This one year. It's significant. The freelance money would *solve* it. It would put us in a comfortable position, relieve that pressure. Maybe even contribute towards a deposit for an electric car, which I've been eyeing up for ages – the Golf is fine, but it's getting on a bit, and those ULEZ charges are just going to get worse.
+
+But at what cost? My evenings? My weekends? My few precious hours with Lily and Max? My time to unwind with my tropical fish tank, or get out on the bike? My photography hobby, which I barely have time for as it is? Cooking for Claire, trying new recipes – that would all go out the window. And my back would probably seize up permanently. And the asthma, allergies… stress definitely makes them worse.
+
+Spent the afternoon in a haze of code and internal debate. Managed to fix that pesky bug in the data pipeline, but honestly, my focus was shot. James asked if I was alright, said I looked a bit "grey." Just told him I was thinking about the migration plan. Lie.
+
+Got home. The usual chaos. Lily showing me a drawing of a multi-headed monster. Max attempting to scale the bookshelf, looking like a tiny, determined spider. Claire giving me "the look" – tired, but glad to see me. Dinner was a bit rushed. Lily wanted to help, Max wanted to make aeroplane noises with his fork. Normal. Wonderful. Exhausting.
+
+After baths and stories (read *The Gruffalo* for the 500th time), after Lily's endless "just one more drink" and Max's determined "no-no-no-no" to bedtime, they were finally asleep. Silence. Almost. The gentle hum of the fridge, the distant wail of a siren.
+
+Claire and I sat on the sofa. She asked about my day. I mentioned the freelance offer. Saw her eyes light up a bit, then cloud over. She knows. She knows what that money would mean. She also knows what it would *cost*.
+
+"Could you manage it, Ethan?" she asked, her voice soft. "Without completely burning yourself out?"
+I just shrugged. "I don't know, love. It's good money. Enough to make a real dent in the nursery fees, maybe even save a bit extra for… well, for anything really. A cushion."
+"The nursery fees are really stressing you out, aren't they?" she said, reaching for my hand.
+"Yeah," I admitted. "They are. It feels like we're always just treading water."
+
+We talked for a while. Rehashed the same old arguments, the same impossible choices.
+Pros of freelance:
+*   ✅ Max's nursery fees covered for the next year, easily.
+*   ✅ Some financial breathing room.
+*   ✅ Could put a dent in the electric car fund.
+*   ✅ Interesting technical challenge.
+*   ✅ Sense of achievement.
+
+Cons of freelance:
+*   ❌ No evenings, no weekends.
+*   ❌ Less time with kids, Claire.
+*   ❌ Exhaustion. Burnout risk.
+*   ❌ Hobbies (cycling, photography, fish) would completely disappear.
+*   ❌ More back pain, probably.
+*   ❌ What about my mild asthma? Stress usually triggers it.
+*   ❌ Guilt. Just so much guilt about not being present.
+
+It feels like I'm stuck between a rock and a hard place. Do I sacrifice my personal time and sanity for financial relief, or do I continue feeling this low-level financial anxiety, but get to be present for my family? It's not a fair choice. No parent should have to make it.
+
+I told Mark I'd get back to him by Monday. That gives me a weekend to think. To agonize, more like. Maybe I'll go for a long cycle tomorrow morning, clear my head. Or just stare at the fish, let their slow, graceful movements calm my frantic brain. Probably end up doing laundry and wrestling Max into some new shoes. The glamorous life of Ethan Marsh.
+
+Need to sleep. But my mind won't shut off. What's the right thing to do? For us? For Max? For *me*?
+Ugh.
+
+To-do for tomorrow (not work related):
+- [ ] Check bike tyres
+- [ ] Research local childminders again (just in case I missed someone)
+- [ ] Talk to Claire properly about budget for next 12 months (even though it's depressing)
+- [ ] Try to get a decent photo of Lily and Max together (rare event)
+
+This freelance thing... it's a huge temptation. The money. God, the money. But the time. Where would it come from? It's not like I'm sitting around twiddling my thumbs now.
+
+This is going to be a long weekend.

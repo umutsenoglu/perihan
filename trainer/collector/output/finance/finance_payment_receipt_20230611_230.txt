@@ -1,0 +1,56 @@
+**PAYMENT RECEIPT**
+
+**Issued To:** Ethan Marsh
+**Date of Issue:** 11 June 2023
+
+---
+
+**TRANSACTION DETAILS**
+
+**Payer Name:** Claire Marsh
+**Payer's Address:** 14 Willow Crescent, Highgate, London, N6 5AB
+
+**Recipient Name:** Ethan Marsh
+**Recipient's Address:** 14 Willow Crescent, Highgate, London, N6 5AB
+
+**Amount Received:** £120.00 GBP (One Hundred and Twenty Pounds Sterling)
+
+**Purpose of Payment:** Contribution towards new external filter for tropical fish tank (Eheim Classic 600 model).
+
+**Reference Number (Payer's):** MARSH-FISH-20230611
+**Transaction ID (Payer's Bank):** T7812934-C
+
+**Payment Method:** Bank Transfer (Faster Payment Service)
+
+---
+
+**RECIPIENT ACCOUNT INFORMATION (Ethan Marsh)**
+
+**Bank Name:** Barclays Bank UK PLC
+**Account Number:** XXXXXXX8765
+**Sort Code:** 20-35-XX
+
+---
+
+**PAYER ACCOUNT INFORMATION (Claire Marsh)**
+
+**Bank Name:** NatWest Bank
+**Account Number:** XXXXXXX1234
+**Sort Code:** 60-00-XX
+
+---
+
+**CONFIRMATION OF RECEIPT**
+
+This receipt confirms that the payment of £120.00 GBP from Claire Marsh was successfully credited to Ethan Marsh's Barclays account on 11 June 2023. This transaction settles the agreed contribution for the specified purpose.
+
+---
+
+**ADDITIONAL NOTES (from Claire Marsh):**
+
+"Hey Ethan, just transferred the money for the fish tank filter. Hope it helps keep your little ecosystem thriving! Lily and Max are already asking when they can watch the fish eat with the new setup. Love you!"
+
+---
+
+**RECORD GENERATED ON:** 2023-06-11 14:35 GMT
+**DOCUMENT ID:** EM-CR-20230611-001

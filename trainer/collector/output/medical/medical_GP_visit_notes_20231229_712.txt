@@ -1,0 +1,31 @@
+**MEMORIAL MEDICAL CENTER**
+**GP Visit Notes**
+
+**Patient:** John Smith
+**DOB:** 1978-05-15
+**MRN:** MMS-JS78515
+**Date:** 2023-12-29
+**Doctor:** Dr. M. Wilson
+
+---
+
+**Subjective:**
+Mr. Smith, a 45-year-old male, presents today reporting persistent fatigue, generalized muscle aches, and a feeling of being "run down" for the past 3-4 months. Symptoms are worse in the late afternoon. He reports limited outdoor activity and sun exposure due to work commitments and the current winter season. Denies fever, chills, weight changes, or acute injury.
+
+**Objective:**
+*   **Vitals:** BP 128/78 mmHg, HR 72 bpm, Temp 36.8°C, O2 Sat 99% RA.
+*   **Physical Exam:** General: Appears comfortable, no acute distress (NAD). Musculoskeletal: Full range of motion in major joints, no focal tenderness or swelling. Muscle strength 5/5 bilaterally.
+*   **Labs (reviewed from 2023-12-27):**
+    *   25-hydroxyvitamin D: **18 ng/mL** (Reference range: 30-100 ng/mL)
+    *   Serum Calcium: 9.2 mg/dL (Normal: 8.5-10.2 mg/dL)
+    *   PTH: Within normal limits.
+
+**Assessment:**
+Vitamin D deficiency (ICD-10: E55.9)
+
+**Plan:**
+1.  **Supplementation:** Initiate Cholecalciferol (Vitamin D3) 50,000 IU orally once weekly for 8 weeks.
+2.  **Maintenance:** Following 8 weeks, transition to Vitamin D3 2000 IU daily.
+3.  **Lifestyle:** Counselled on increasing dietary intake of vitamin D-rich foods (e.g., fatty fish, fortified dairy) and safe, moderate sun exposure during warmer months.
+4.  **Follow-up:** Re-check 25-hydroxyvitamin D level in 3 months (end of March 2024).
+5.  Advised to return sooner if symptoms worsen or new concerns arise.

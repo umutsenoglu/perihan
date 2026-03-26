@@ -1,0 +1,186 @@
+## BARNET GENERAL HOSPITAL – PHYSIOTHERAPY DEPARTMENT
+**PATIENT MEDICAL RECORD**
+
+**Patient Name:** Ethan Marsh
+**NHS Number:** 734 892 1234
+**Date of Birth:** 15/07/1985 (Age 38)
+**Address:** 14 Elmwood Drive, North London, N12 8XY
+**Contact Number:** 07912 345678
+**Email:** ethan.marsh@example.com
+**Next of Kin:** Claire Marsh (Spouse)
+**NOK Contact:** 07789 123456
+
+**Date of Document:** 2024-02-11
+**Type of Document:** Physiotherapy Initial Assessment Notes
+**Clinician:** Dr. Anand Patel (Senior Physiotherapist)
+**Facility:** Barnet General Hospital, Wellhouse Lane, Barnet, EN5 3DJ
+
+---
+
+**REASON FOR REFERRAL:**
+Recurring lower back pain (LBP), exacerbated by prolonged desk work. Referral from Dr. Sarah Khan, GP, Barnet Health Centre. Self-referral option was discussed with patient but GP referral was preferred due to existing medical history.
+
+**PRESENTING COMPLAINT & HISTORY OF PAIN:**
+Mr. Ethan Marsh, a 38-year-old Senior Software Engineer, presents with a primary complaint of lower back pain. He describes the pain as a dull ache, predominantly in the lumbar region, occasionally radiating into the glutes but not extending down the legs. He rates the pain as 4/10 on average, escalating to 6/10 after prolonged sitting (e.g., 2-3 hours at his desk) or during sustained periods of driving (e.g., commute to his office in Canary Wharf, or longer drives to visit his mother Janet in Bristol or sister Hannah in Manchester).
+
+The current episode started approximately 3 weeks ago, after a particularly intense period at work requiring extended hours in front of his computer. He notes that this is a recurring issue, with similar episodes occurring approximately 2-3 times a year over the past 5 years. Each episode typically resolves within 4-6 weeks with rest and over-the-counter painkillers. However, this current flare-up feels more persistent and is significantly impacting his daily activities and hobbies.
+
+**PREVIOUS MANAGEMENT & EFFECTIVENESS:**
+*   **Self-management:** Regular use of ibuprofen (200mg, 2 tablets, up to 3 times a day as needed, avoiding exceeding 1200mg/day) which provides some temporary relief, but pain often returns. Has tried paracetamol in the past but found it less effective for LBP as per NHS guidance (paracetamol on its own not recommended for back pain, though may be used with another painkiller). Uses a hot water bottle (heat pack wrapped in a tea towel) in the evenings to relieve stiffness, which he finds helpful. Has tried ice packs (bag of frozen peas) occasionally, but prefers heat.
+*   **Activity modification:** Attempts to stand and stretch every hour at work, though admits this is often forgotten when engrossed in coding. Has reduced cycling frequency and duration due to discomfort. He used to cycle several times a week, including a commute of approximately 5 miles each way, and longer weekend rides (20-30 miles). He now limits himself to short, local cycles (e.g., taking Lily to QPA Primary School or Max to Little Stars Nursery).
+*   **GP consultation (2024-01-29, Dr. Khan):** Advised to continue with NSAIDs, encouraged activity, and referred for physiotherapy due to persistence of symptoms and impact on daily life. No red flag symptoms identified by GP.
+
+**PAST MEDICAL HISTORY (PMH):**
+*   Mild Asthma (diagnosed childhood, managed with Salbutamol inhaler PRN, last exacerbation 2023-09 during a chest infection).
+*   Seasonal Allergies (pollen, dust mites; managed with Cetirizine 10mg daily during peak season).
+*   No significant surgical history.
+*   Father, George, passed away 2021 (cardiac event). Mother, Janet, in Bristol, managing well.
+*   No known history of slipped disc, sciatica, or ankylosing spondylitis.
+
+**MEDICATIONS:**
+*   Ibuprofen 200mg PRN (as above)
+*   Salbutamol inhaler PRN (as above)
+*   Cetirizine 10mg daily (seasonal)
+*   No known drug allergies.
+
+**SOCIAL HISTORY:**
+*   **Family:** Married to Claire Marsh (teacher at a primary school), two children: Lily (7, Year 3 at QPA Primary School, Mrs. Henderson's class) and Max (4, at Little Stars Nursery).
+*   **Occupation:** Senior Software Engineer, fintech company. Works predominantly from home (3 days/week) and 2 days/week in the office (Canary Wharf). Desk setup at home is a standard desk with an ergonomic chair, but often finds himself slouching. Office setup is also similar.
+*   **Lifestyle:** Non-smoker, occasional alcohol (1-2 units/week).
+*   **Home:** Lives in a 3-bed semi-detached house in North London, mortgage with Barclays.
+*   **Transport:** Drives a 2019 VW Golf; considering switching to electric.
+*   **Hobbies:** Enjoys tropical fish keeping (spends time bending over tanks), cycling (currently limited), photography (can involve awkward postures), and cooking (standing for extended periods).
+
+**FUNCTIONAL IMPACT OF PAIN:**
+*   **Work:** Difficulty concentrating after prolonged sitting, requires frequent breaks. Productivity slightly affected.
+*   **Home:** Struggles with activities involving bending or lifting (e.g., picking up children, doing laundry, tidying up after Lily and Max). Finds it uncomfortable to sit on the floor to play with Max. Claire often takes on more household duties due to Ethan's discomfort.
+*   **Hobbies:** Reduced participation in cycling. Finds prolonged standing for cooking or photography uncomfortable. Bending over tropical fish tanks exacerbates pain.
+*   **Sleep:** Can find it difficult to get comfortable in bed, occasionally wakes due to pain, especially if he’s had a particularly bad day.
+*   **General:** Feeling generally more irritable and frustrated due to persistent pain. Worried about the pain impacting his ability to keep up with his active children.
+
+**RED FLAGS SCREENING (as per NHS guidance):**
+*   No reported weight loss without trying.
+*   No lump, swelling, or change in back shape.
+*   Pain does not improve after resting; occasionally worse at night if he's had a busy day. (This is a borderline symptom, requiring careful monitoring, but not immediately concerning given the chronic nature and lack of other red flags).
+*   Pain not worse with sneezing, coughing, or defecation.
+*   Pain is clearly lower back, not between shoulders.
+*   No fever, chills, or general unwellness.
+*   No sudden severe pain or rapidly worsening pain.
+*   No pain, tingling, weakness, or numbness in both legs.
+*   No loss of feeling around genitals or anus.
+*   No changes in bladder or bowels (difficulty peeing, peeing/pooing self).
+*   No changes in sexual function (penis/vagina feeling during sex, erection issues, orgasm issues).
+*   No chest pain.
+*   Pain did not start after a serious accident.
+
+**Conclusion of Red Flag Screening:** No immediate red flag symptoms identified requiring urgent GP review or A&E attendance.
+
+**OBJECTIVE ASSESSMENT:**
+
+**OBSERVATION:**
+*   Posture: Appears to have a mild lumbar lordosis, slight anterior pelvic tilt. Shoulders slightly rounded.
+*   Gait: Symmetrical, no obvious antalgic gait.
+*   Muscle bulk: Appears generally fit, no gross muscle wasting.
+*   Skin: No obvious bruising, swelling, or discolouration.
+
+**PALPATION:**
+*   Tenderness noted in the lumbar paraspinal muscles, particularly L4/L5 and L5/S1 levels, bilaterally.
+*   No palpable swelling or deformity.
+*   Sacroiliac joints non-tender.
+
+**RANGE OF MOVEMENT (ROM) LUMBAR SPINE:**
+*   **Flexion:** Limited to approximately 40 degrees, pain reported at end range (6/10). Reaches mid-shin level.
+*   **Extension:** Limited, approximately 10 degrees, pain reported at end range (5/10).
+*   **Lateral Flexion (Left):** Full range, mild discomfort (2/10).
+*   **Lateral Flexion (Right):** Full range, mild discomfort (2/10).
+*   **Rotation (Left):** Full range, no pain.
+*   **Rotation (Right):** Full range, no pain.
+
+**NEUROLOGICAL SCREEN:**
+*   **Dermatomes:** Light touch sensation intact throughout lower limbs (L1-S2).
+*   **Myotomes:**
+    *   Hip Flexion (L1/L2): 5/5 bilateral.
+    *   Knee Extension (L3/L4): 5/5 bilateral.
+    *   Ankle Dorsiflexion (L4/L5): 5/5 bilateral.
+    *   Great Toe Extension (L5): 5/5 bilateral.
+    *   Ankle Plantarflexion (S1/S2): 5/5 bilateral.
+*   **Reflexes:**
+    *   Patellar (L3/L4): 2+ bilateral (normal).
+    *   Achilles (S1/S2): 2+ bilateral (normal).
+*   **Straight Leg Raise (SLR):**
+    *   Left: Negative at 80 degrees.
+    *   Right: Negative at 85 degrees.
+    *   No radicular symptoms elicited.
+
+**SPECIAL TESTS:**
+*   Kemp's Test: Negative bilaterally.
+*   Femoral Nerve Stretch: Negative bilaterally.
+
+**DIFFERENTIAL DIAGNOSIS:**
+*   Musculoskeletal back pain (likely mechanical, possibly related to postural strain and muscle fatigue/spasm).
+*   Lumbar strain/sprain.
+*   Potential for early degenerative changes, but not indicated by current presentation or neurological screen.
+*   Less likely: Slipped disc (no radiculopathy), sciatica (no nerve entrapment signs), ankylosing spondylitis (no inflammatory markers or specific symptoms).
+
+**CLINICAL IMPRESSION:**
+Mr. Ethan Marsh presents with chronic, recurring mechanical lower back pain, likely a result of postural stressors associated with his occupation (prolonged sitting) and exacerbated by certain hobbies. The pain is primarily muscular in nature, with limited lumbar spine range of movement, particularly in flexion and extension, and localised tenderness. Red flags have been screened and ruled out. His symptoms align with the common presentation of non-specific lower back pain, which typically improves within a few weeks, though his recurring nature suggests a need for a robust self-management strategy and postural correction.
+
+**TREATMENT PLAN:**
+
+**Goals (Patient-centred):**
+1.  Reduce current pain levels to 2/10 or less within 4 weeks.
+2.  Improve lumbar spine flexibility, particularly flexion and extension, to enable comfortable daily activities within 6 weeks.
+3.  Return to cycling (commute and weekend rides) without pain within 8 weeks.
+4.  Be able to comfortably play on the floor with Max and lift Lily without pain within 6 weeks.
+5.  Develop a sustainable self-management routine to prevent recurrence and manage future flare-ups.
+
+**Interventions:**
+
+1.  **Education and Advice:**
+    *   Reassurance regarding the non-serious nature of the pain. Emphasise that back pain, particularly lower back pain, is very common and usually improves within a few weeks, but can sometimes last longer or keep coming back (as per NHS guidance).
+    *   Reinforce the importance of staying active and continuing with daily activities where possible. Avoid prolonged bed rest, as this can delay recovery (NHS guidance).
+    *   Discuss the role of posture in aggravating his symptoms, especially during desk work and hobbies like tropical fish keeping.
+    *   Review current pain management strategies (ibuprofen, heat pack). Advise to continue with ibuprofen as tolerated, and to ensure adequate hydration.
+    *   Discuss ergonomic principles for his home and office desk setup. Suggest evaluating chair support, screen height, and keyboard/mouse positioning. Recommend using a lumbar support cushion if his current chair doesn't provide adequate support.
+    *   Encourage regular breaks from sitting – aim for a 5-minute movement break every 30-45 minutes. This could involve standing, walking around, or performing gentle stretches.
+
+2.  **Manual Therapy (Initial Session):**
+    *   Gentle soft tissue massage to lumbar paraspinal muscles to address muscle spasm and tenderness.
+    *   Mobilisation techniques to improve lumbar spine segmental movement, focusing on restricted flexion and extension.
+
+3.  **Exercise Prescription (Home Exercise Programme - HEP):**
+    *   **Focus:** Core stability, lumbar mobility, and muscle strengthening.
+    *   **Frequency:** Daily, 2-3 times per day.
+    *   **Duration:** 10-15 minutes per session.
+    *   **Specific Exercises (demonstrated and provided with printouts/NHS App link):**
+        *   **Pelvic Tilts:** Lie on back, knees bent, feet flat. Gently flatten lower back into floor, then arch it slightly. Repeat 10-15 times.
+        *   **Knee to Chest Stretch:** Lie on back, bring one knee to chest, hold for 20-30 seconds. Repeat 3 times each leg.
+        *   **Cat-Cow Stretch:** On all fours, arch back like a cat, then drop belly towards floor like a cow. Repeat 10-15 times. (Patient noted this is similar to yoga poses he's seen Claire do).
+        *   **Bird-Dog:** On all fours, extend opposite arm and leg, keeping core stable. Repeat 10-12 times each side.
+        *   **Gentle Lumbar Rotations (Supine):** Lie on back, knees bent, feet flat. Gently let knees fall to one side, then the other. Repeat 10-15 times each side.
+        *   **Bridge:** Lie on back, knees bent, feet flat. Lift hips off floor, hold briefly, lower slowly. Repeat 10-15 times.
+    *   **Instructions:** Perform exercises slowly and controlled. Stop if pain worsens. Emphasise that consistency is key.
+    *   **Resources:** Provided links to NHS back pain pilates video workout and Chartered Society of Physiotherapy: video exercises for back pain. Encouraged to explore these for additional exercises once comfortable with the basics.
+
+4.  **Activity Modification & Integration:**
+    *   **Cycling:** Advise gradual return. Start with shorter distances on flat terrain. Ensure bike setup (seat height, handlebar reach) is appropriate to minimise back strain.
+    *   **Tropical Fish Keeping:** Suggest kneeling or using a small stool instead of bending from the waist when cleaning tanks.
+    *   **Photography/Cooking:** Advise taking frequent short breaks, changing standing position, or using a stool when standing for extended periods.
+
+**FOLLOW-UP:**
+*   Scheduled for 1 week (2024-02-18) to review progress, assess pain levels, adjust HEP, and progress manual therapy as appropriate.
+*   Patient encouraged to contact department earlier if symptoms significantly worsen or new symptoms develop.
+*   Advised to use the NHS App to view his GP health record and test results, and to track his appointments, as this will integrate well with his current digital habits.
+
+**PROGNOSIS:**
+Good, given the absence of red flags, patient's motivation, and compliance with previous self-management strategies. Expect significant improvement within 4-6 weeks with consistent adherence to the treatment plan. Full return to desired activity levels anticipated within 8-12 weeks. Long-term management will focus on maintaining activity levels, ergonomic awareness, and a consistent exercise routine to prevent future recurrences.
+
+---
+**Dr. Anand Patel**
+Senior Physiotherapist
+Barnet General Hospital
+
+**Date of Review:** 2024-02-11
+**Next Review Due:** 2024-02-18
+
+*(Patient copy provided and discussed. Digital copy uploaded to NHS patient portal.)*

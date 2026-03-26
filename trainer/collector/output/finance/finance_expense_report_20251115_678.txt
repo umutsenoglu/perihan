@@ -1,0 +1,35 @@
+**GLOBAL INDUSTRIES**
+
+**Expense Report**
+
+**Employee Name:** John Smith
+**Employee ID:** GS-78901
+**Department:** Project Management
+**Reporting Period:** November 1st - November 14th, 2025
+**Date Submitted:** 2025-11-15
+**Report ID:** ER-2025-11-SMITH-001
+
+**Account Billed:** Corporate AMEX ending **** **** **** 1234
+**Currency:** USD
+
+---
+
+**Date | Category | Vendor | Description | Amount**
+------- | -------- | -------- | ----------- | --------
+2025-11-03 | Travel - Airfare | AirLink Airlines | Roundtrip flight: NYC (JFK) to Chicago (ORD) | $385.50
+2025-11-03 | Lodging | The Grand Hyatt Chicago | 1 night stay (Project Alpha Meeting) | $275.00
+2025-11-04 | Meals - Dinner | Gibson's Bar & Steakhouse | Client Dinner (Project Alpha, 3 attendees) | $189.75
+2025-11-05 | Transportation | Lyft | Airport transfer to ORD | $45.20
+2025-11-08 | Office Supplies | OfficeMax | Printer ink cartridges & paper | $78.99
+2025-11-12 | Meals - Lunch | Panera Bread | Team Lunch (5 attendees) | $62.50
+2025-11-13 | Software | SaaS Solutions Inc. | Monthly subscription (Project Management Tool) | $99.00
+
+---
+
+**Total Reimbursement Due:** **$1,135.94**
+
+**Approver Signature:** [Digital Signature: Sarah Chen]
+**Approval Date:** 2025-11-16
+**Status:** Approved
+
+**Note:** All receipts for expenses over $50 are attached electronically. Airfare and lodging were pre-booked through corporate travel portal.

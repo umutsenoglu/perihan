@@ -1,0 +1,32 @@
+First National Bank
+123 Main Street
+Anytown, USA 12345
+
+**Account Statement**
+
+**Account Holder:** John Smith
+**Account Number:** ******1234
+**Statement Date:** May 5, 2023
+**Statement Period:** April 1, 2023 - April 30, 2023
+**Currency:** USD
+
+**Summary of Your Account**
+
+Previous Balance (as of 03/31/2023): $3,150.78
+Total Deposits & Credits: $2,875.00
+Total Withdrawals & Debits: $1,420.55
+**New Balance (as of 04/30/2023): $4,605.23**
+
+**Transactions During This Period**
+
+**Date       Description                             Amount**
+04/03/2023 Deposit - Payroll (Ref: PAY230403JS)      $2,875.00
+04/05/2023 Debit Card Purchase - Groceries (Ref: DC5876)  -$112.30
+04/10/2023 ATM Withdrawal (Ref: ATM1024)               -$200.00
+04/12/2023 Online Transfer to Savings (Ref: OTSAV456)   -$500.00
+04/18/2023 Debit Card Purchase - Online Retailer (Ref: DC9101) -$355.25
+04/22/2023 Bill Payment - Utility Company (Ref: BP7890)    -$152.00
+04/27/2023 Debit Card Purchase - Restaurant (Ref: DC3210)  -$101.00
+
+For questions about your statement, please call us at 1-800-555-1234 or visit our website at www.firstnationalbank.com.
+Thank you for banking with First National Bank.

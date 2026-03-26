@@ -1,0 +1,118 @@
+2023-03-10
+Friday night. Finally. Kids are asleep, managed to wrestle Lily’s Year 3 maths homework into some semblance of completion (seriously, fractions? At seven? My head was spinning), and Max, bless him, crashed out the second his head hit the pillow. Claire’s in the living room, probably marking papers or trying to find a decent series on Netflix that isn’t another period drama. My cue for some proper EV deep dive. Been meaning to do this all week, but between James’s latest production bug, Priya’s insistence on yet another refactor, and just, well, life, it kept getting pushed back. Tonight’s the night. Model 3 vs Ioniq 5. The big showdown.
+
+Been thinking about this switch for ages. The Golf, God bless its reliable German heart, is almost four years old now. Still runs like a dream, but the petrol prices lately… honestly, it’s a joke. Plus, the environmental thing. I know, one guy buying an EV isn’t going to save the planet, but it feels like the right direction. And I’m a software engineer, I love new tech. The idea of a car that gets over-the-air updates, that’s basically a giant computer on wheels? Yeah, that appeals.
+
+**EV Research Session 1: Tesla Model 3 (Long Range)**
+
+Okay, let’s start with the obvious choice. Everyone talks about Tesla. It’s the benchmark, right? The Model 3 is everywhere in London now, feels like every third car is one. Claire’s colleague, Sarah, just got one, raving about it.
+
+*   **Pros (based on initial scan and what I already know):**
+    *   **Range:** Long Range version, 374 miles (WLTP). That’s solid. Easily handle a trip to Mum’s in Bristol without charging, or even Hannah in Manchester if I’m careful. Luke in Edinburgh is probably a stretch without a stop, but doable with one good charge.
+    *   **Performance:** 0-60 in 4.2s. Not that I’m drag racing anyone, especially with Lily’s booster seat in the back, but it’s nice to know it’s there. Responsive.
+    *   **Supercharger Network:** This is the big one. It’s extensive, reliable, mostly pain-free. Crucial for those longer family trips. No faffing about with different apps or dodgy chargers.
+    *   **Tech/Software:** This is where my engineer brain lights up. Minimalist interior, huge central screen. Updates over the air. Sentry Mode, Dog Mode. All the nerdy stuff. The app integration seems seamless. Claire would probably find it a bit much at first, but she adapts quickly.
+    *   **Efficiency:** From what I’ve read, Teslas are generally very efficient with their battery usage. Good for running costs.
+    *   **Safety:** Always top-tier ratings. Essential with the kids.
+
+*   **Cons (the doubts creeping in):**
+    *   **Price:** Right, this is the kicker. It’s a chunk of change. Even after selling the Golf, we’d be looking at a significant amount. Need to run the numbers properly, talk to Barclays about extending the mortgage or a separate loan. Claire will have some strong opinions on the budget. She’s much more sensible with money than I am sometimes.
+    *   **Interior Quality/Materials:** Heard mixed reviews. Some people say it’s spartan, a bit plasticky in places. For the price, you’d expect more premium feel. My Golf feels pretty solid. This is a point of concern. Claire likes things to feel nice, especially if it’s a big purchase.
+    *   **Ride Comfort:** This is a big one for me. My lower back pain from sitting at a desk all day is no joke. I need a comfortable ride. Heard the Model 3 can be a bit firm, sporty even. Not ideal for school runs over London potholes or long journeys to Bristol. A test drive is absolutely essential for this.
+    *   **Lack of Physical Buttons:** Everything on the screen. Heating, wipers, indicators (some functions). I get the minimalist aesthetic, but sometimes a physical button is just… better. Safer even, without having to look away from the road. Claire would definitely struggle with this. She still sometimes asks me how to adjust the temperature in the Golf.
+    *   **Boot Space:** Sedan style. Max’s pushchair is long gone, but we still haul a fair bit – groceries, Lily’s scooter, my photography gear (camera bag, tripod), sometimes a picnic basket for Hampstead Heath. The Golf’s hatchback is so practical. A sedan boot opening might be a pain. I need to check the actual volume and opening dimensions. The front trunk (frunk) is a nice bonus for charging cables or smaller items, I suppose.
+    *   **Insurance:** Heard it can be pricey, especially in London. Need to get some quotes.
+    *   **Home Charging:** Need to get a proper charger installed. Our semi-detached has a driveway, so that’s fine. But the cost of installation, getting a grant sorted… another thing to factor in.
+    *   **Build Quality Issues:** Seen some horror stories online – panel gaps, rattles. Hopefully these are older issues or isolated incidents, but it’s a worry.
+
+**Quick mental break:** I should probably reply to James about that API issue. It's Friday, but he'll be stressing. Just a quick "Will look first thing Monday, don't sweat it." No, actually, "Got your message, ping me on Slack if it's critical, otherwise Mon morning." Better. I don't want to get sucked back into work now. My time for cars.
+
+**EV Research Session 2: Hyundai Ioniq 5 (Long Range)**
+
+Right, now for the Ioniq 5. This one looks really interesting. Different vibe altogether. Claire actually pointed this one out months ago when she saw a review. Said it looked "futuristic but also sensible." Which is Claire in a nutshell, really.
+
+*   **Pros:**
+    *   **Design:** Distinctive. Retro-futuristic. As a photography enthusiast, I appreciate unique aesthetics. It certainly stands out from the sea of identikit SUVs. Might not be everyone’s cup of tea, but I like it. Claire definitely liked it.
+    *   **Space & Comfort:** This is where it potentially shines for us. It’s built on a dedicated EV platform (E-GMP), which means a completely flat floor, lots of legroom. Rear seats slide and recline. That sounds like a dream for Lily and Max on longer trips. Max in his rear-facing booster, Lily’s regular booster – need to ensure enough space for both without kicking Claire’s seat. The seats themselves are reportedly very comfortable, which is great for my back.
+    *   **Interior Feel:** Much more conventional interior with a mix of screens and physical buttons. The materials seem to be high quality, and it feels a bit more "premium" and less stark than the Tesla. Claire would prefer this, I think. She likes a bit of tactility.
+    *   **V2L (Vehicle-to-Load):** This is a cool party trick. Plug in appliances directly to the car. Imagine camping (if we ever get around to it), or even just running some power tools in the garden. For my photography, I could charge camera batteries on the go, or even power a laptop for editing on location. Practical applications, not just a gimmick.
+    *   **Charging Speed:** Very fast charging, thanks to its 800V architecture. Can go from 10-80% in about 18 minutes on a suitable rapid charger. That’s huge for long trips. Less time waiting around with two restless kids.
+    *   **Practicality:** Hatchback boot opening. Easier to load groceries, bikes (with a rack, obviously), my gear. The boot space itself is decent.
+    *   **Ride Comfort:** Generally reviewed as softer, more compliant than the Model 3. Music to my back’s ears.
+
+*   **Cons:**
+    *   **Range:** Long Range version, 315 miles (WLTP). Good, but not quite as much as the Model 3. Might need a quick top-up on the way to Bristol if I hit traffic or if it’s cold. Definitely a charge for Manchester or Edinburgh.
+    *   **Charging Network (non-Tesla):** This is the main point of concern compared to Tesla. Relying on the public CCS network (BP Pulse, Ionity, Gridserve, etc.). It’s improving, but sometimes it’s a lottery – broken chargers, slow speeds, different apps, inconsistent pricing. This is where the Supercharger network really has an edge. Claire would hate faffing with multiple apps.
+    *   **Infotainment System:** While it has physical buttons, the software itself might not be as slick or intuitive as Tesla’s. Hyundai’s systems are generally good, but Tesla sets a very high bar for software integration. I’m a software engineer, I notice these things.
+    *   **Brand Perception:** For some, Hyundai isn’t seen as "premium" in the same way Tesla is, or the German marques. But frankly, I couldn’t care less about badge snobbery. It’s about value, tech, and fit for purpose.
+    *   **Price:** Still not cheap, comparable to the Model 3, maybe a little less if I pick the right trim. Still a big financial commitment.
+
+Okay, deep breath. That’s a lot of information. My eyes are starting to blur. Should probably get a glass of water.
+
+**Initial Comparison & Thoughts:**
+
+It really boils down to two main things: **charging network vs. comfort/practicality.**
+
+*   **Tesla Model 3:** Range king, Supercharger network, bleeding-edge tech. But potentially less comfortable, less practical boot opening, and more spartan interior.
+*   **Hyundai Ioniq 5:** Super comfortable, incredibly spacious, fast charging, unique design, V2L. But slightly less range, and relies on the more fragmented public charging network.
+
+**Family Needs – Crucial Points:**
+
+*   **Kids in the back:** Max's booster seat (rear-facing Graco from what I remember, so bulky), Lily's standard booster. How easy are they to install? Is there enough space between them? Will they be comfortable? Headroom? The Ioniq 5’s sliding rear seats sound like a huge win here.
+*   **Boot Space:** Can I fit Lily's school bag, Max's nursery bag, Claire's huge teacher tote (full of marking), *and* a week's worth of groceries? Or my photography backpack and tripod if we go out for a shoot? The Golf’s hatchback has spoiled me. Ioniq 5 wins on practicality here, I think.
+*   **School Runs/Nursery:** Short trips, stop-start traffic. Ride comfort is important. Easy manoeuvrability. The ULEZ in London is obviously not an issue for either EV.
+*   **Long Trips (Bristol/Manchester/Edinburgh):** This is where range and charging network come into play. Tesla's Superchargers are a huge advantage for minimising stress. The Ioniq 5's fast charging makes up for its slightly lower range, but finding a *reliable and available* 350kW charger when you need one with two kids screaming "Are we there yet?" is a different beast.
+*   **Home Charging:** Both will need a dedicated wall charger. I need to scope out the wiring in our North London semi-detached. It’s an old house, so might need some upgrades. We have a driveway, so no street parking hassle. That’s a relief.
+*   **Claire's Input:** She'll care about safety, comfort, ease of use (physical buttons!), space, and budget. She's not bothered by 0-60 times. She needs a car that makes her life easier, not more complicated. I think she’d lean towards the Ioniq 5 for its comfort and practicality.
+
+**Financial Realities:**
+
+*   **Selling the Golf:** Need to get a good price for the 2019 VW Golf. It’s been well-maintained, low mileage. AutoTrader, WeBuyAnyCar, Cazoo – need to get quotes from all of them. Use that as a deposit.
+*   **Loan/Mortgage:** Discuss with Claire and then with Barclays. The interest rates are climbing. We’re already locked into a decent mortgage rate for another couple of years, but any new borrowing will sting.
+*   **Running Costs:** Electricity is cheaper than petrol, especially charging at home overnight. Servicing costs are usually lower for EVs. Road tax is zero. Insurance is the unknown variable.
+*   **Depreciation:** EVs generally hold their value better right now, but that could change as more models flood the market.
+
+**Other Random Thoughts/To-dos:**
+
+*   **Test Drives:** Absolutely critical. For both cars. Need to book them. Take Claire and the kids if possible, especially for the Ioniq 5 to see how car seats fit. My back pain needs to be a key consideration on the test drive.
+*   **Home Charger Installation:** Get quotes from local electricians. Check OZEV grant eligibility.
+*   **Insurance Quotes:** Get specific quotes for both Model 3 and Ioniq 5, given our address and driver history.
+*   **Bike Rack:** If we do get a new car, need to see options for a bike rack. My road bike for weekend cycles is precious, and Lily will probably want her own bike on trips soon. Would prefer a tow bar mounted one, if possible.
+*   **Photography Gear:** Need to ensure my backpack and gear (lenses, tripod, drone sometimes) fit securely and safely in the boot.
+*   **Fish Tank:** Need to get some more filter media for the tropical tank tomorrow. The guppies are looking a bit pale. Maybe a quick water change too. Always something.
+*   **Claire's day:** Max had a 'dinosaur incident' at nursery today apparently, drawing on the wall with crayon. Claire sounded tired when she told me. Poor thing. Her Year 3 class is a handful right now, Mrs. Henderson is off sick so Claire’s covering extra lessons. I should offer to make her favourite curry this weekend.
+
+**Decision points for next week:**
+
+- [ ] Book test drive for Tesla Model 3 (Long Range)
+- [ ] Book test drive for Hyundai Ioniq 5 (Long Range)
+- [ ] Get quotes for current Golf sale (AutoTrader, WBAC, Cazoo)
+- [ ] Get insurance quotes for both EVs
+- [ ] Research local EV charger installers and OZEV grant
+- [ ] Chat with Claire about the pros/cons. She's going to want to see the cars in person.
+- [ ] Look at specific car seat compatibility/space in both cars. Maybe watch some YouTube reviews from family vloggers.
+- [ ] Check boot dimensions carefully, not just volume. Max opening and usable space.
+
+This is going to be a tougher decision than I thought. My head is saying Model 3 for the tech and charging network, but my back (and Claire, and probably the kids) is screaming Ioniq 5 for comfort and practicality. It's a significant amount of money either way. Need to balance the engineer in me with the family man.
+
+It’s almost 11pm. My back is definitely protesting after hunching over the laptop for hours. Time to pack it in. Claire’s probably wondering what I’m up to in here. I can hear the faint sounds of some historical drama through the wall. She’ll have questions about my research in the morning. Better try to condense these thoughts into something coherent for her. Or maybe just show her this rambling mess. She knows how my brain works.
+
+I need to make sure I don't forget to get the milk and bread tomorrow for breakfast. Max will riot if there's no toast. And Lily's got her swimming lesson. Normal life continues even when I'm deep in EV land.
+
+One last check:
+Tesla:
+- Supercharger network is a huge plus.
+- Tech is very appealing.
+- Ride comfort is a major question mark. My back...
+- Boot opening potentially annoying.
+- Price.
+
+Ioniq 5:
+- Space and comfort seem fantastic. Kids will appreciate.
+- Physical buttons for Claire.
+- V2L is super cool for hobbies/general utility.
+- Charging network is the major unknown/potential faff.
+- Slightly less range.
+- Price.
+
+A real head vs. heart vs. practicality dilemma. This is why I procrastinated. It's not just a car, it's a family investment. Right, bedtime. My brain is fried. Good night, Model 3. Good night, Ioniq 5. See you in my dreams. Maybe I'll dream of a silent, petrol-free commute. Or maybe just Max covered in crayon again. Probably the latter.

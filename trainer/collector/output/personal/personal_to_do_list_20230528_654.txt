@@ -1,0 +1,51 @@
+**Ethan Marsh's To-Do List & Brain Dump - Sunday 28th May 2023**
+
+Right. Today. Woke up feeling… ugh. Dave next door. The bloody fence. Again. Can't believe he had the gall to bring it up when I was just trying to get the bins out. "Morning, Ethan. About that lean..." Like I'm not aware of it. We had this out last year! I told him I'd look at it once the kitchen renovation dust settles, and he just huffed. The nerve. It's *our* fence technically, on *our* boundary, even if it looks like it's holding up his prize-winning roses. Just needed to get that off my chest before I forget half the stuff Claire's already asked me to do. It’s supposed to be a relaxing Sunday. Hah.
+
+---
+
+**1. Kitchen Reno Madness (The Big One)**
+*   [ ] **Chase Zenith Builders for revised quote.** (The one we discussed with the island option. Claire's absolutely set on it, and honestly, seeing Sarah's initial designs with it, I think she's right. Still a bit miffed Zenith took so long to get the first one over, makes me wonder about their timelines. James from work swore by them though, said they were efficient once they started. Hope he's right. Need to check if they included the plumbing for the sink in the island, didn't see it explicitly.)
+*   [ ] **Call Sarah (Kitchens by Design) re: availability for site visit.** (She said mid-June was looking good, but we need to lock it in. Need to coordinate with Claire's school schedule – INSET day or half-term would be ideal. Maybe a Saturday? Max is a handful when contractors are around, though Lily finds it 'interesting'.)
+*   [ ] **Research induction hobs - Miele vs. Bosch.** (Claire wants induction for safety with the kids and easier cleaning. I'm leaning towards Miele, but the price tag is… significant. Bosch seems a good balance. Also need to think about extractor fan power – cooking smells travel, especially with our open-plan lounge. Remembered when we burnt the toast last week and the smoke detector went off for ages.)
+*   [ ] **Send latest plans to Priya.** (She mentioned she knows a really good electrician, Martin, who specialises in kitchen fit-outs and smart home stuff. Might be worth getting a separate quote for electrical given the complexity – new sockets, under-cabinet lighting, maybe some smart switches? Zenith's quote probably lumps it all in.)
+*   [ ] **Review budget spreadsheet.** (Claire's already stressed about the cost. Need to show her where we can shave off a bit if needed. Maybe the tiles? Or hold off on the fancy boiling water tap for a year?)
+*   [ ] **Look into council planning permission for side return extension.** (This might push things out, but if we're doing the kitchen, should we really go for the full extension dream? Max and Lily are growing up so fast, more space would be amazing. Another thing to discuss with Claire tonight, probably over wine.)
+
+---
+
+**2. Family & Home Front**
+*   [ ] **Lily's spelling words.** (Mrs. Henderson's class is brutal this term! "Necessary" and "recommend" are proving tough. Flashcards after lunch? She gets easily distracted, especially if Max is running riot.)
+*   [ ] **Max's nursery bag.** (Is his spare change of clothes clean? Pretty sure I saw a paint stain on the last one. Need to check if he's outgrown any of his shoes already – little growing machine.)
+*   [ ] **Talk to Claire about summer holiday camp options for Lily.** (She mentioned the one at QPA Primary again, but Lily seemed a bit bored last year. Maybe the sports one at the leisure centre? Or just a week with Mum in Bristol, though Mum's mobility isn't what it was.)
+*   [ ] **Help Lily with her nature project.** (She wants to find snails in the garden for observation. Might need to actually clean out the old terrarium from when I was a kid. Hope Dave doesn't complain about us "messing up the boundary" while we're searching for snails near *his* fence.)
+*   [ ] **Book dentist check-ups for everyone.** (Been meaning to do this for ages. Lily's last one was six months ago, Max probably needs one, and Claire and I are definitely overdue. Use the Bupa private cover this time? NHS waits are a nightmare.)
+*   [ ] **Water garden.** (The new tomato plants I put in last week are looking a bit thirsty. Typical London weather, one minute downpour, next minute drought. Basil's looking good though.)
+*   [ ] **Take bins out.** (Recycling day tomorrow. Blue bin and green bin. Don't want to get caught out, especially with Dave watching.)
+*   [ ] **Barclays mortgage statement.** (It came through last week. Need to file it digitally and probably shred the paper one. Interest rates creeping up, makes me feel a bit sick every time I look at it.)
+*   [ ] **Find that leak under the kitchen sink again.** (It's not a huge leak, just a drip, but it's annoying. Tried tightening it last month, but it's back. Maybe it's time to admit defeat and call a plumber. Another expense, great.)
+*   [ ] **Repair loose fence panel.** (The *other* side of the garden, near the neighbours at number 17. No drama there, thankfully. Just needs a couple of screws. Might do it while Lily's 'observing' her snails.)
+
+---
+
+**3. Work & Professional (Even on a Sunday)**
+*   [ ] **Review James' PR for the payment gateway refactor.** (He pinged me late Friday. Can probably get through it quickly, but want to give it proper attention. That part of the codebase is delicate. Don't want any P0s popping up on Monday morning.)
+*   [ ] **Draft quick email to Richard re: sprint planning topics.** (Need to make sure the "tech debt" story for the legacy authentication is prioritised. It's been pushed for too long. If we don't fix it soon, it'll bite us, I know it.)
+*   [ ] **Set up stand-up reminder for 9:30 AM.** (Always forget to do this on Sunday night, then scramble Monday morning. Small thing, but helps.)
+*   [ ] **Check calendar for next week.** (Any conflicting meetings? That finance team presentation on Wednesday is going to be a slog.)
+
+---
+
+**4. Personal & Hobbies**
+*   [ ] **Clean fish tank.** (Partial water change needed for the Angels and Tetras. Parameters looked a bit off yesterday. Need to top up the dechlorinator. The new plant looks like it's melting a bit, might need more light. Or less. Can never get it quite right.)
+*   [ ] **Charge camera battery.** (For the walk we planned for later in Hampstead Heath. Always forget. And then Claire gets annoyed.)
+*   [ ] **Research new lens for macro photography.** (Thinking about getting a dedicated macro lens for the fish. The current one just isn't sharp enough for fin details. Might be able to get some stunning shots, if I can stop them from darting around.)
+*   [ ] **Recipe for tonight: Roast chicken, new potatoes.** (Riverford box arrived Friday, want to make sure I use everything up. Found a new recipe online for a lemon and herb marinade. Hope it's good, don't want to mess up Sunday dinner.)
+*   [ ] **Quick browse of used Tesla Model 3s.** (Claire said "absolutely not" when I mentioned it last week, but the VW Golf is getting on, and I really want to switch to electric. The range anxiety is real though. And charging points near the office are still a bit sparse. Maybe just a quick look, no harm.)
+*   [ ] **Order new Ventolin inhaler.** (Running low again. My asthma has been a bit worse with the spring pollen. Need to remember to pick up some more antihistamines too. Back pain flared up again this morning, probably from leaning over the desk all week. Must remember to stretch.)
+*   [ ] **Text Mum (Janet) re: her doctor's appointment.** (She sounded a bit down last time we spoke. Just a quick check-in. Maybe send her some photos of Lily's snail hunting? She always loves that.)
+*   [ ] **Remember to call Hannah later this week.** (She mentioned a problem with her boiler in Manchester. Need to check if she got it sorted. And probably tell her about Dave and the fence, she'll find it hilarious.)
+*   [ ] **Find that photo of Dad (George) for the anniversary of his passing.** (It's coming up next month. Want to put one of his old photos on the mantelpiece, maybe the one from his fishing trip. Still miss him. Especially on days like today when I could use his calm perspective on things like annoying neighbours and kitchen budgets.)
+
+---
+**Thought of the Day (Post-Dave Encounter):** Some days, you just want to bury your head in code, where the problems are logical and the solutions (usually) exist. Real life's a messier algorithm.

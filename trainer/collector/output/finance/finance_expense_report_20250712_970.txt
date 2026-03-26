@@ -1,0 +1,245 @@
+GLOBAL INDUSTRIES
+Expense Report - Q3 2025
+
+Account Holder: John Smith
+Employee ID: GS-JS-7890
+Department: International Business Development
+Report Period: 2025-07-01 to 2025-07-10
+Submission Date: 2025-07-12
+Currency: EUR
+
+Bank Account for Reimbursement: **** **** **** 4321 (Global Bank, John Smith)
+
+Project/Client: "Project Alpha - European Market Expansion"
+
+Travel Itinerary:
+Departure: London Heathrow (LHR) - 2025-07-01
+Arrival: Berlin Brandenburg (BER) - 2025-07-01
+Departure: Berlin Brandenburg (BER) - 2025-07-05
+Arrival: Paris Charles de Gaulle (CDG) - 2025-07-05
+Departure: Paris Charles de Gaulle (CDG) - 2025-07-10
+Arrival: London Heathrow (LHR) - 2025-07-10
+
+---
+
+**Expense Details:**
+
+**Date: 2025-07-01**
+*   **Description:** Flight LHR to BER (Economy Plus)
+*   **Category:** Airfare
+*   **Vendor:** British Airways
+*   **Reference:** BA20250701JS
+*   **Amount:** 185.50 EUR
+*   **Notes:** Business travel for Project Alpha initial meetings.
+
+*   **Description:** Taxi from BER to Hotel Berlin Mitte
+*   **Category:** Ground Transportation
+*   **Vendor:** Berlin Taxi Services
+*   **Reference:** TXI7890BER
+*   **Amount:** 45.20 EUR
+*   **Notes:** Standard fare, receipt attached.
+
+*   **Description:** Dinner with Client (Mr. Klaus Richter, Beta Solutions GmbH)
+*   **Category:** Client Entertainment
+*   **Vendor:** Restaurant "Zum Noodlehaus"
+*   **Reference:** DINN0107JS
+*   **Amount:** 92.80 EUR
+*   **Notes:** Discussion of initial project scope. Includes two main courses, one bottle of mineral water, and coffee.
+
+**Date: 2025-07-02**
+*   **Description:** Hotel Berlin Mitte (1/4 nights)
+*   **Category:** Accommodation
+*   **Vendor:** Hotel Berlin Mitte
+*   **Reference:** HBM0207JS
+*   **Amount:** 140.00 EUR
+*   **Notes:** Corporate rate applied.
+
+*   **Description:** Lunch with Team
+*   **Category:** Meals (Individual)
+*   **Vendor:** Cafe Zeitgeist
+*   **Reference:** LNC0207JS
+*   **Amount:** 18.50 EUR
+*   **Notes:** Quick lunch during work session.
+
+**Date: 2025-07-03**
+*   **Description:** Hotel Berlin Mitte (2/4 nights)
+*   **Category:** Accommodation
+*   **Vendor:** Hotel Berlin Mitte
+*   **Reference:** HBM0307JS
+*   **Amount:** 140.00 EUR
+*   **Notes:** Corporate rate applied.
+
+*   **Description:** Conference registration fee - "European Digital Transformation Summit"
+*   **Category:** Professional Development
+*   **Vendor:** DT Summit Organizers
+*   **Reference:** DTSUMMITJS
+*   **Amount:** 250.00 EUR
+*   **Notes:** Attended relevant industry conference as per project requirements.
+
+**Date: 2025-07-04**
+*   **Description:** Hotel Berlin Mitte (3/4 nights)
+*   **Category:** Accommodation
+*   **Vendor:** Hotel Berlin Mitte
+*   **Reference:** HBM0407JS
+*   **Amount:** 140.00 EUR
+*   **Notes:** Corporate rate applied.
+
+*   **Description:** Taxi to client office (Gamma Systems AG)
+*   **Category:** Ground Transportation
+*   **Vendor:** Berlin Taxi Services
+*   **Reference:** TXI7891BER
+*   **Amount:** 22.10 EUR
+*   **Notes:** To follow up meeting.
+
+**Date: 2025-07-05**
+*   **Description:** Hotel Berlin Mitte (4/4 nights)
+*   **Category:** Accommodation
+*   **Vendor:** Hotel Berlin Mitte
+*   **Reference:** HBM0507JS
+*   **Amount:** 140.00 EUR
+*   **Notes:** Corporate rate applied. Check-out.
+
+*   **Description:** Flight BER to CDG (Economy)
+*   **Category:** Airfare
+*   **Vendor:** Air France
+*   **Reference:** AF20250705JS
+*   **Amount:** 110.20 EUR
+*   **Notes:** Travel to Paris for second phase of meetings.
+
+*   **Description:** RER Train from CDG to Paris city center
+*   **Category:** Ground Transportation
+*   **Vendor:** SNCF
+*   **Reference:** RER7892CDG
+*   **Amount:** 10.30 EUR
+*   **Notes:** Standard public transport.
+
+*   **Description:** Dinner with Client (Ms. Sophie Dubois, Delta Innovations SA)
+*   **Category:** Client Entertainment
+*   **Vendor:** Le Bistro Parisien
+*   **Reference:** DINN0507JS
+*   **Amount:** 115.60 EUR
+*   **Notes:** Project Alpha follow-up and proposal discussion. Includes three courses, wine, and coffee.
+
+**Date: 2025-07-06**
+*   **Description:** Hotel Paris Opera (1/4 nights)
+*   **Category:** Accommodation
+*   **Vendor:** Hotel Paris Opera
+*   **Reference:** HPO0607JS
+*   **Amount:** 180.00 EUR
+*   **Notes:** Corporate rate applied.
+
+**Date: 2025-07-07**
+*   **Description:** Hotel Paris Opera (2/4 nights)
+*   **Category:** Accommodation
+*   **Vendor:** Hotel Paris Opera
+*   **Reference:** HPO0707JS
+*   **Amount:** 180.00 EUR
+*   **Notes:** Corporate rate applied.
+
+*   **Description:** Metro tickets (daily pass)
+*   **Category:** Ground Transportation
+*   **Vendor:** RATP
+*   **Reference:** MTR7893PAR
+*   **Amount:** 7.50 EUR
+*   **Notes:** For various meetings around the city.
+
+**Date: 2025-07-08**
+*   **Description:** Hotel Paris Opera (3/4 nights)
+*   **Category:** Accommodation
+*   **Vendor:** Hotel Paris Opera
+*   **Reference:** HPO0807JS
+*   **Amount:** 180.00 EUR
+*   **Notes:** Corporate rate applied.
+
+*   **Description:** Printing services for presentation materials
+*   **Category:** Office Supplies/Services
+*   **Vendor:** PrintFast Paris
+*   **Reference:** PRNT0807JS
+*   **Amount:** 12.00 EUR
+*   **Notes:** Needed for final client presentation.
+
+**Date: 2025-07-09**
+*   **Description:** Hotel Paris Opera (4/4 nights)
+*   **Category:** Accommodation
+*   **Vendor:** Hotel Paris Opera
+*   **Reference:** HPO0907JS
+   **Amount:** 180.00 EUR
+   **Notes:** Corporate rate applied. Check-out.
+
+*   **Description:** Lunch with team for debrief
+*   **Category:** Meals (Individual)
+*   **Vendor:** Brasserie du Pont Neuf
+*   **Reference:** LNC0907JS
+*   **Amount:** 25.00 EUR
+*   **Notes:** Final team lunch before departure.
+
+**Date: 2025-07-10**
+*   **Description:** Taxi from hotel to CDG
+*   **Category:** Ground Transportation
+*   **Vendor:** G7 Taxis Paris
+*   **Reference:** TXI7894PAR
+*   **Amount:** 55.00 EUR
+*   **Notes:** Early morning flight.
+
+*   **Description:** Flight CDG to LHR (Economy Plus)
+*   **Category:** Airfare
+*   **Vendor:** Air France
+*   **Reference:** AF20250710JS
+*   **Amount:** 195.70 EUR
+*   **Notes:** Return flight to London.
+
+---
+
+**Summary of Expenses:**
+
+*   Airfare: 491.40 EUR
+*   Ground Transportation: 140.10 EUR
+*   Client Entertainment: 208.40 EUR
+*   Accommodation: 12
+120.00 EUR
+*   Meals (Individual): 85.00 EUR
+*   Office Supplies/Services: 12.00 EUR
+
+**Total Reimbursable Expenses: 1,056.90 EUR**
+
+**Payment Details:**
+*   **Reimbursement Method:** Direct Deposit
+*   **Bank Name:** Global Bank & Trust
+*   **Account Number (Masked):** **** **** **** 1234
+*   **Currency for Reimbursement:** EUR
+
+**Approvals:**
+*   **Submitted By:** John Smith
+*   **Submission Date:** 2025-07-12
+*   **Employee ID:** JS7890
+*   **Department:** Global Strategy & Development
+
+*   **Approved By:** Sarah Chen
+*   **Approval Date:** 2025-07-15
+*   **Approver ID:** SC4567
+*   **Department:** Finance Operations
+*   **Notes:** All receipts attached and verified against policy. Project code GSD-2025-PARIS-INITIATIVE.
+
+**Disbursement Status:** Pending
+
+**Company Policy Notes:**
+*   All expenses must be submitted within 30 days of the expense date.
+*   Original receipts or digital copies are required for all expenses over 10 EUR.
+*   Client entertainment requires a brief description of attendees and purpose.
+*   Accommodation is reimbursed at corporate rates only. Any deviation must be pre-approved.
+*   Mileage reimbursement (not applicable to this report) is calculated at 0.45 EUR per km.
+
+**For Internal Use Only:**
+*   **Processing ID:** EXP20250712JS-001
+*   **Audit Trail:** Initiated by John Smith 2025-07-12 14:30 GMT+1; Reviewed by Sarah Chen 2025-07-15 09:15 GMT+1; Sent to Disbursement Queue 2025-07-15 09:20 GMT+1.
+*   **GL Account Codes:**
+    *   5110-Travel-Airfare: 491.40 EUR
+    *   5120-Travel-Ground Transport: 140.10 EUR
+    *   5310-Client Entertainment: 208.40 EUR
+    *   5130-Travel-Accommodation: 120.00 EUR
+    *   5320-Meals-Individual: 85.00 EUR
+    *   5410-Office Supplies/Services: 12.00 EUR
+*   **Project Code:** GSD-2025-PARIS-INITIATIVE
+*   **Budget Impact:** Within allocated budget for Q3 2025 Paris initiative.
+
+**End of Report**

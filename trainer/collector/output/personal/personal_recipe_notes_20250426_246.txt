@@ -1,0 +1,119 @@
+**Sourdough Log: The "Everything's Fine" Loaf (V3.2 – Apr 2025)**
+
+**Project Goal:** Consistent open crumb, tangy but not overwhelmingly so. Get that ear to pop. Find some damn calm.
+
+**Date:** 2025-04-26, 06:15 AM (initially, then updated throughout the day/night)
+
+**Starter Activity (The Unsung Hero):**
+*   **Name:** "Bubbles" (Max's idea, he says it makes the bread sing).
+*   **Last fed:** 2025-04-25, 08:00 PM (1:2:2 ratio – 20g starter, 40g water, 40g strong white bread flour).
+*   **Current state:** Peaked around 10:30 PM, now slowly receding. Smells properly yeasty, a bit like cider. Good float test candidate. Should be ready for mixing around 7:00 AM. If I actually get to it.
+*   **Notes:** If I actually get to it. That’s the recurring theme of my life lately. The *intention* is there, the *time* and *energy* are not. Especially not after last night. The ghost of an 11 PM PII server alert still humming in my ears. I swear that unique notification sound is designed to trigger a primal fear response. It rips you straight from whatever semblance of peace you've managed to cobble together.
+
+**Water (The Foundation):**
+*   **Amount:** 350g filtered water (chlorine is the enemy of happy yeast, and honestly, anything resembling 'clean' these days feels like a win).
+*   **Temperature:** Aim for 28-30°C. Warm enough to wake Bubbles up, not so hot it kills them. Like me after that server incident last night. Trying to function, but definitely not at peak performance.
+*   **Notes:** God, the sheer adrenaline of it. Lily and I were finally settling down, I was halfway through a surprisingly exciting chapter of "The Lord of the Rings" – she's completely hooked, which is amazing, but it also means our "one chapter" rule is a bit… fluid. Claire was already asleep. Then *BRRRRRRRRRRRR!* My phone, screaming from the bedside table. My heart actually jumped into my throat. James had messaged first, then Priya. Both failed to resolve. So, of course, it’s me. It’s always me when it’s truly deep in the shit.
+    I stumbled out of bed, fumbled for my glasses. Claire just stirred, gave me a barely audible groan of sympathy. I muttered "prod down" and she just nodded, eyes still closed, already back to sleep. She’s a saint. I got the laptop, connected to the VPN. My brain was a swamp. Half-asleep, half-dressed, staring at log files in the dark. `kubectl describe pod`… `grep ERROR`… the familiar ritual. It was a stupid, stupid config error. A single line in a Kubernetes manifest. *One. Single. Line.* Richard. It had to be Richard. He pushed something yesterday afternoon, probably didn't even follow the proper change management process. "Minor," he'd called it. Minor, my arse. Cost us 1.5 hours of critical uptime, potential regulatory reporting nightmares, and me 5 hours of sleep. I finally got it resolved by 12:45 AM. Falling asleep after that? Impossible. My brain was still buzzing with command-line outputs and system alerts. Didn't drop off until well after 1:30 AM. And the alarm, the cruel, cruel alarm, went off at 6 AM. Five hours sleep. Maybe. Claire was already up when I finally dragged myself down, packing lunches. "Rough night?" she asked, with that look. I just grunted, mentioned Richard’s name with far too much venom for 6:30 AM. She just squeezed my arm and made me a proper builders' tea. Needed that. This payment processing migration is just… everything is amplified. Every small bug, every delay. James is on my back. Priya is trying to coordinate things, but even she's looking frayed. The client wants daily updates, sometimes twice daily. It feels like we're building a new engine while the old one is still flying the plane, and everyone keeps throwing spanners in.
+
+**Flour (The Body):**
+*   **Amount:** 500g (450g strong white bread flour, 50g wholemeal or rye for flavour and structure – maybe wholemeal today, trying to use up that Shipton Mill sack).
+*   **Type:** Shipton Mill Canadian Strong White, and their Organic Light Wholemeal.
+*   **Notes:** Need to order more flour. And filter cartridges for the Brita. And cat food (oh wait, no cat, that’s Hannah’s obsession, forgot for a sec). Fish food. Lily’s school trip money (damn it, almost forgot). Max’s new shoes (growing like a weed). The list is endless. The absolute exhaustion of dragging myself out of bed, grabbing the laptop, connecting to the VPN. Claire just stirred, gave me a sympathetic groan. I just muttered "prod down" and she knew. She *always* knows. The sheer adrenaline of trying to diagnose a problem when you're half-asleep, half-dressed, and the world feels like it's ending for 0.0001% of our user base. It was a stupid config error. A *single line* in a K8s manifest. One. Single. Line. Richard pushed it yesterday afternoon. Didn't even follow the proper change management process. Said it was "minor." Minor, my arse.
+
+**Autolyse (The Rest):**
+*   **Process:** Mix flour and water only. No salt, no starter. Just let it sit for 30-60 minutes. Hydrate the flour. Develop gluten naturally.
+*   **Time:** 07:15 AM - 07:45 AM (ideally).
+*   **Notes:** A rest. God, I could use a rest. Still feeling wired from last night. Finally got it resolved by 12:45 AM. Then trying to fall asleep when your brain is still buzzing with `kubectl describe pod` and `grep ERROR` commands. Didn't really drop off until well after 1:30 AM. Alarm went off at 6 AM. Five hours sleep, maybe. Claire was up before me, already packing lunches. She's a saint. Said "rough night?" I just nodded, grunted something about Richard. She just squeezed my arm and made me a proper builders' tea. Needed that. This payment processing migration is just... everything is amplified. Every small bug, every delay. James is on my back. Priya is trying to coordinate things, but even she's looking frayed. The client wants daily updates, sometimes twice daily. It feels like we're building a new engine while the old one is still flying the plane, and everyone keeps throwing spanners in.
+
+**Mixing (The Gathering):**
+*   **Process:** Add activated starter to autolysed dough. Mix thoroughly until fully incorporated. Then add salt.
+*   **Salt:** 10g fine sea salt. Never forget the salt. It's not just for flavour, it tightens the gluten. A necessary addition.
+*   **Time:** 07:45 AM.
+*   **Notes:** Lily was up at 7. Max followed at 7:05, demanding toast. The usual morning chaos. Cereal everywhere. "Dad, where's my unicorn socks?" "Max, stop trying to feed your Lego to the fish!" My poor tropical fish, living in serene ignorance of the human drama unfolding metres away in our 3-bed semi in North London. I need to clean that tank this weekend. Algae build-up is getting out of hand. Haven't done a proper water change in weeks. Blame work. Blame lack of sleep. Blame everything. Claire handled most of it, bless her. Got Lily's hair tied back, found the unicorn socks. Got Max dressed. While I was trying to gently fold the dough and get the starter worked in – the dough felt surprisingly good, almost resilient, a pleasant contrast to my own state – Lily was telling me all about Mrs. Henderson's plan for the Year 3 summer fair. Apparently, they're doing a "Great British Bake Off" theme. "Can you make us a showstopper cake, Dad?" she asked, with those big, hopeful eyes. My "showstopper" right now is getting out of bed without my lower back seizing up. All that hunching over a laptop, 12 hours a day. Needs more cycling. Missed my usual Richmond Park loop last Sunday. Another thing sacrificed to the migration. My mild asthma always feels worse when I'm stressed too, a tightening in the chest that isn't helping.
+
+**Bulk Fermentation & Stretch & Folds (The Development):**
+*   **Process:** Cover dough, let it rest in a warm place (24-26°C ideal – my kitchen counter is usually okay). Perform a series of stretch and folds every 30-45 minutes.
+    *   **Fold 1:** 08:30 AM (after a 30 min rest)
+    *   **Fold 2:** 09:15 AM
+    *   **Fold 3:** 10:00 AM
+    *   **Fold 4:** 10:45 AM (last one, then leave it)
+*   **Total Bulk Fermentation Time:** 4-5 hours, depending on dough activity. Look for significant rise (30-50%), dome shape, jiggly texture, bubbles on surface.
+*   **Notes:** Okay, first fold done. Dough felt a bit sticky, but that's normal for high hydration. Had to rush it a bit. Got the kids dropped off. Lily, QPA Primary, Mrs. Henderson. Max, Little Stars Nursery. Both running late because Max decided his shoes were actually hats today. I swear sometimes parenting feels like an elaborate test of patience designed by a sadist. Traffic on the A1 was a nightmare. Almost missed the school bell for Lily. Got a text from James just as I was pulling up to the nursery. "Prod incident follow-up first thing, Ethan. 9:30 AM." Great. Just what I needed after 5 hours sleep and a config error that wasn't even *mine*.
+
+**Work Block 1: 09:30 AM - 12:30 PM (Pre-lunch)**
+*   **Stand-up:** 9:00 AM. Gave the usual update, trying to sound calm and in control. "Prod incident resolved, RCA pending. Payment processing migration, still on track despite minor setbacks." Richard looked sheepish. He should. Everyone knows. The collective sigh when I mentioned "RCA" (Root Cause Analysis) was palpable. Everyone dreads them because it means more bureaucracy, more forms, more blame games.
+*   **James's "Follow-up":** Not a follow-up, a grilling. James pulled me into a quick virtual meeting. His face was grim even over Zoom. "How did this happen, Ethan? We need to ensure these sorts of incidents don't happen again, especially with the migration looming." I explained it was a misconfiguration in an unrelated service (technically true, but it *was* related via shared infrastructure and a poor deployment process). I didn't throw Richard under the bus directly, but I did emphasize the lack of proper peer review and staging environment testing, implying where the real fault lay. James just nodded, made noises about tightening up procedures. As if. We're already spread thin. The entire fintech company feels like it's perpetually running on fumes.
+*   **Migration progress:** Spent the next couple of hours deep diving into the API spec for the new payment gateway. Found a few discrepancies with the documentation we were given. Bloody typical. The client’s docs are always a bit… aspirational. Sent a frantic Slack message to Priya – she's usually good at getting answers from the client's dev team. No reply yet. Probably swamped with her own issues.
+*   **Second fold:** Snuck down to the kitchen for Fold 2 around 09:15 AM. Dough feels a bit better. A bit more extensible. It's funny how something so simple can demand such attention. Like my fish, or my kids. If you neglect it, it goes south.
+*   **Third fold:** Took a quick break from staring at JSON schemas. 10:00 AM. Dough looks promising. Bubbles forming. It's a small victory, but a victory nonetheless. The texture is getting lovely, silky almost. A world away from the gritty reality of the migration.
+*   **Fourth fold:** 10:45 AM. Just finished a call with the QA team about the latest test environment build. Found a blocker bug in the new transaction reconciliation service. Bloody hell. This is what I mean by "setbacks." Every time we fix one thing, two more crop up. Told them I'd look at it this afternoon. Dough is looking good though, feels like it has some strength now. Hopefully it holds. This loaf feels like it's going to be a good one, despite everything.
+
+**Pre-shaping (The Gentle Touch):**
+*   **Process:** Gently turn dough out onto a lightly floured surface. Divide if making two loaves (not today, one big stress-relieving loaf). Preshape into a loose round or rectangle. Let it rest for 20-30 minutes.
+*   **Time:** Around 1:45 PM (estimated, after lunch).
+*   **Notes:** Lunch was a sad affair. Leftover pasta Claire made (she's good at making sure there are always decent leftovers). Ate it at my desk, while scrolling through more API docs. Priya finally messaged back. Client dev team says the docs *are* correct, and *we* must be misinterpreting. FFS. It's always our fault, isn't it? The joys of third-party integrations. Sent a detailed explanation back, with code examples and screenshots. Let's see them argue with that. This migration feels less like a project and more like a never-ending cycle of blame and workarounds. My back is properly aching now. That persistent lower back pain from desk work. Need to remember to stand up more. Maybe a quick walk around the block? No, too much to do. The mortgage with Barclays isn't going to pay itself, and neither is Lily's school fees.
+
+**Work Block 2: 12:30 PM - 05:30 PM (Post-lunch, Pre-pick-up)**
+*   **Bug hunting:** Spent 2 hours on that reconciliation bug. Turned out to be an edge case in how we handle certain payment statuses. Not a showstopper, but definitely annoying. Another one for the "technical debt" pile. Pushed a fix to a feature branch. Will need a code review from James, probably won't get to it today.
+*   **Client calls:** Another sync-up call with the client's technical lead. More assurances needed, more "everything is under control" despite the gnawing feeling in my gut that it isn't. Richard was unusually quiet on the call. Good.
+*   **Priya's update:** She just dropped by my desk, looking even more tired than usual. "Ethan, the client wants to accelerate the go-live. They're talking about bringing it forward by a week." My jaw dropped. "A week? Priya, we're barely keeping it together on the current timeline! We've still got major testing to do, performance tuning, security audits..." She just shrugged, rubbing her temples. "I know. Finance pressure, apparently. Said the current system is costing them too much in fees. Can you draft an impact assessment for James and me? Highlighting all the risks." My head is spinning. This is a recipe for disaster. A full-on, unmitigated disaster.
+*   **Preshaping:** Managed to do the preshape around 2:00 PM. Dough felt good. Smooth, elastic. It’s got potential, this loaf. Unlike my career trajectory right now. Or my sleep schedule. Or my overall mental health.
+*   **Text from Claire:** "Lily forgot her swimming costume AGAIN. Can you pick one up from home on your way to school?" God. Not again. That's the third time this term. She's 7, Year 3. Does she not check her bag? Or is Mrs. Henderson not reminding them? Probably my fault for rushing them out the door. My brain is so fried. Okay, quick dash home, grab costume, straight to QPA.
+*   **Bike ride idea:** As I was driving home (in the 2019 VW Golf, still haven't looked into electric options properly, the upfront cost just seems astronomical right now even with government grants), I passed a few cyclists heading towards Hampstead Heath. Jealousy. Pure, unadulterated jealousy. I need that release. The wind in my face, the burning in my legs. It clears my head. The photography gear is gathering dust too. But no time. Never time.
+
+**Final Shaping & Cold Proof (The Patience Game):**
+*   **Process:** After rest, gently shape dough into its final form (batard or boule). Aim for a tight skin without tearing. Place seam-side up in a floured banneton basket.
+*   **Cold Proof:** Cover banneton, refrigerate for 12-18 hours. Slow fermentation develops flavour and makes dough easier to handle.
+*   **Time:** Around 05:45 PM (after getting kids home).
+*   **Notes:** Picked up Lily, swimming costume handed over. Got an earful from Mrs. Henderson about forgetting things – she was polite but firm. I just nodded, apologised profusely, blaming my 'busy morning'. Then Max from Little Stars Nursery. He'd painted a picture of a blue dinosaur, which was actually quite good. Brought a smile to my face, briefly. The pure, unadulterated joy in their faces, untainted by server outages and payment migrations. It's a reminder of what all this stress is for.
+*   **Dinner:** Claire got home around 5:30. She was looking tired too. Had a rough day with Year 1 – apparently, they discovered what happens when you mix all the paint colours together. "Brown. Lots of brown," she said, sighing. We cobbled together something quick for dinner – fish fingers and chips for the kids, a quick salad for us. My stomach was churning a bit from the stress.
+*   **Shaping the dough:** Finally got to the final shape around 5:45 PM. The dough felt good. Really good. It had bulked up nicely, full of air, and was surprisingly easy to handle. Almost therapeutic. The smooth, cool feel of it under my hands. A moment of peace. Got it into the banneton. Into the fridge. Now, to wait.
+
+**Work Block 3: 07:00 PM - 09:30 PM (Post-dinner, Pre-bed)**
+*   **Impact Assessment:** Sat down after dinner to start drafting that 'accelerated go-live' impact assessment. It's bleak. Tried to focus on facts, but the frustration kept creeping in.
+    *   **Risks (High/Critical):**
+        *   Insufficient UAT (User Acceptance Testing) time – **CRITICAL** risk of bugs in production, reputational damage.
+        *   Performance bottlenecks not fully identified/addressed – **HIGH** risk of system slowdowns under load, poor user experience.
+        *   Security audit incomplete – **CRITICAL** major regulatory breach risk. (Need to highlight this one strongly, James will listen to security. PII implications are huge).
+        *   Rollback plan untested – **HIGH** if it goes wrong, we're properly screwed. Recovery could take days.
+        *   Team burnout – already happening, this will break us. Morale will tank. (This is personal, but I included it).
+    *   **Recommendation:** Strongly advise against acceleration. Recommend sticking to original timeline, potentially adding resources (HA HA HA, like that'll happen, budget cuts are more likely).
+*   **Lily's homework:** While I was trying to articulate the technical implications of rushing, Lily needed help with her maths homework. "Dad, what's 12 x 7?" My brain had completely switched off from multiplication tables. "Um... let's work it out together, sweetie." Managed it, eventually. It's funny how a simple primary school sum can feel like advanced calculus when your brain is running on fumes.
+*   **Max's bath:** Claire handled Max's bath. Heard his delighted shrieks from the bathroom. Good. He's happy. At least one of us is.
+*   **Bedtime stories:** My turn for Lily's story. Finished a chapter of 'The Hobbit'. She loves Bilbo and the dwarves. It's nice to lose myself in Middle Earth for a bit. She gave me a big hug, "Love you, Daddy." Melts the stress away, if only for a moment.
+*   **Reviewing the bug:** Got back to the laptop after putting Lily to bed. Just a quick check on the JIRA ticket for that reconciliation bug. Saw Richard had already commented, "Fixed in my feature branch, will push to dev after review." He’d fixed *my* fix. And hadn't even reviewed it properly, probably just assumed. Sigh. The passive-aggressive incompetence is exhausting. I’m going to have to review *his* review of *my* fix. It’s a bureaucracy of mediocrity.
+
+**The Aftermath & Reflections (Late Night Musings):**
+*   **Date:** Still 2025-04-26, but it feels like the 27th already. It's 10:30 PM.
+*   **Current status:** Just sent the draft impact assessment to James and Priya. Expect fireworks tomorrow. Or more likely, a polite but firm "we understand your concerns, but..." followed by pushing ahead anyway. That's usually how these things go. The feeling of powerlessness is draining.
+*   **Claire:** She's already asleep. I can hear her gentle breathing from the other side of the bed. She deserves a peaceful night. She deals with enough chaos during the day with Year 1.
+*   **My mum, Janet:** Haven't called her in a few days. She called Tuesday, asking about the kids. "How's my Lily-bug?" she always says. George would've been 75 this year. Still miss him, especially on days like these. He used to love my sourdough. Always gave me tips, even though he only ever made basic white loaves. His garden in Bristol was his masterpiece. Wish I had some of his calm.
+*   **Hannah & Luke:** Should text Hannah tomorrow. See how things are in Manchester. Luke probably still doing something crazy in Edinburgh. At least they're both doing well.
+*   **Car:** Seriously need to look at the electric Golf R. The environmental aspect appeals, but also the lower running costs. London ULEZ is only going to get tighter. Still, the deposit and monthly payments… another big chunk out of the budget. Barclays mortgage is already hefty enough. It’s always money, isn’t it?
+*   **Hobbies:** The fish tank. It's glowing softly in the living room. The rummy-nose tetras are schooling beautifully. The bristlenose pleco is clinging to a piece of driftwood. It's a tiny, self-contained ecosystem. Predictable. Calming. Nothing like work. I need to get back into photography. Capturing moments. Not just staring at screens all day. Maybe I'll take the camera out this weekend, even if it's just in Regent's Park. If I have time. If I have energy. The seasonal allergies are starting to kick in too, makes me just want to stay indoors.
+*   **This sourdough:** It's in the fridge now. Sleeping. Getting ready for its big reveal tomorrow. There's a certain satisfaction in that. Taking raw ingredients, applying knowledge and patience, and creating something tangible and good. Unlike lines of code that break at 11 PM and make your life hell. Or project deadlines that shift without warning.
+*   **Sleep:** I need it. My back is screaming. My eyes feel like sandpaper. My brain is still replaying the server incident. The rush of fear, then the methodical troubleshooting. The relief. The lingering frustration.
+*   **Next step:** Wake up, preheat oven, bake the damn bread. Hope for the best. Like everything else, really. Just hope for the best.
+
+**Baking Day (Tomorrow, hopefully):**
+*   **Preheat Oven:** 250°C (fan off). Dutch oven inside. Preheat for at least 30 minutes.
+*   **Score:** Take dough directly from fridge. Score deeply. Quick and decisive.
+*   **Bake (covered):** 20 minutes at 250°C (with lid).
+*   **Bake (uncovered):** Reduce temp to 230°C. 25-30 minutes, until dark golden brown.
+*   **Cool:** On a wire rack for at least an hour. RESIST the urge to cut early. Patience. (The hardest part.)
+*   **Notes for tomorrow:**
+    *   ✅ Check emails for James/Priya reactions to impact assessment. Brace myself.
+    *   ✅ Call Mum (Janet). Briefly.
+    *   ✅ Text Hannah.
+    *   ⬜ Look up specs for electric Golf. (Probably won't get to this, let's be honest.)
+    *   ⬜ Clean fish tank. (Maybe Saturday morning if I'm not completely dead.)
+    *   ✅ Get Lily's swimming costume into her bag tonight. For the love of god.
+    *   ✅ Try to get more than 5 hours sleep. This is critical.
+    *   ✅ Don't let Richard push anything to prod without *my* review. Ever again. Set up an alert.
+    *   ⬜ Think about what to cook for dinner Saturday. Something simple, comforting. Maybe a slow-cooker chicken curry. Max loves that. Lily tolerates it. Claire appreciates it. A recipe that doesn't feel like another source of stress.
+
+This sourdough. It's more than just bread. It's a measure of control in a life that feels increasingly out of it. It's proof that I can still create something good, something tangible, something that feeds my family, even when everything else feels like it's falling apart.
+
+Just need to get through tomorrow. Just need to get through this migration. Just need to get through... everything.
+And maybe, just maybe, this loaf will have a perfect crumb. That would be something.

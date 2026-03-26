@@ -1,0 +1,41 @@
+**Barclays Bank PLC**
+1 Churchill Place, Canary Wharf, London E14 5HP
+
+**Account Statement**
+
+**Account Holder:** Mr. Ethan Marsh
+**Address:** 14 Elmwood Drive, North London, N12 8FG
+**Statement Date:** 22 July 2023
+**Account Number:** **** **** 7654
+**Sort Code:** 20-32-58
+
+---
+
+**Summary of Account Activity (01 July 2023 - 21 July 2023)**
+
+**Opening Balance (01 July 2023):** £4,892.15
+
+**Transactions:**
+
+| Date       | Description                                  | Debit (£) | Credit (£) |
+|:-----------|:---------------------------------------------|:----------|:-----------|
+| 03 Jul     | Direct Debit: QPA Primary School (Lily's trip) | 12.50     |            |
+| 05 Jul     | DEBIT CARD: Currys PC World (Appliances)     | 489.99    |            |
+| 07 Jul     | BACS Credit: Fintech Solutions Ltd (Salary)  |           | 4,287.64   |
+| 10 Jul     | Standing Order: Barclays Mortgage            | 1,485.00  |            |
+| 12 Jul     | Faster Payment: J. Marsh (Bristol visit fuel) | 60.00     |            |
+| 15 Jul     | DEBIT CARD: Tesco (Weekly Shop)              | 98.75     |            |
+| 18 Jul     | Faster Payment: BuildRight Ltd (Kitchen Deposit) | 5,550.00 |            |
+|            | *Ref: BR-Q-2025-0147*                        |           |            |
+| 20 Jul     | Direct Debit: Little Stars Nursery (Max)     | 650.00    |            |
+| 21 Jul     | DEBIT CARD: Waterstones (Photography book)   | 28.50     |            |
+
+**Closing Balance (21 July 2023):** £694.05
+
+---
+
+**Important Information:**
+
+Your payment of £5,550.00 to BuildRight Ltd on 18 July relates to the deposit for your kitchen renovation, as per quote BR-Q-2025-0147. Please remember the remaining balance will be due in two further instalments. Contact Steve from BuildRight if you have any questions regarding the project timeline starting 07 April 2025.
+
+For assistance, please visit barclays.co.uk/help or call us on 0345 7345 345.

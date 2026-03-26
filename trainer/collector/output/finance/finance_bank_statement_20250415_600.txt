@@ -1,0 +1,30 @@
+First National Bank
+123 High Street
+London, SW1 9AB
+
+**Bank Statement**
+
+**Account Holder:** John Smith
+**Address:** 14 Elmwood Drive
+London
+SW1A 0AA
+
+**Account Number:** **** **** 1234
+**Sort Code:** 40-01-23
+**Statement Period:** 15
+March 2025 - 14 April 2025
+**Statement Date:** 15 April 2025
+**Currency:** GBP
+
+**Summary of your account for this period:**
+
+Previous Balance as at 14 March 2025:       £850.32 CR
+Total Debits:                             £1,3
+50.75 DR
+Total Credits:                            £2,100.00 CR
+New Balance as at 14 April 2025:          £1,599.57 CR
+
+**Transactions for this period:**
+
+| Date       | Description                                | Reference         | Amount (DR) | Amount (CR) |
+| :--------- | :

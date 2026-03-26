@@ -1,0 +1,206 @@
+**NORTH LONDON MEDICAL CENTRE**
+Dental Department
+145 High Street, Islington, London, N1 9XX
+Tel: 020 7XXX XXXX | Email: dental@nlmcentre.co.uk | Web: www.nlmcentre.co.uk
+
+---
+
+**DENTAL PATIENT REPORT**
+
+**PATIENT DETAILS:**
+*   **Name:** Marsh, Ethan David
+*   **Date of Birth:** 19/08/1986 (Age: 38)
+*   **NHS Number:** 987 654 3210
+*   **Address:** 27 Willowbrook Lane, Highbury, London, N5 1YZ
+*   **Contact Number:** 07700 900XXX
+*   **Email:** ethan.marsh@example.com
+*   **General Practitioner:** Dr. Eleanor Vance, Highbury Medical Practice
+
+**APPOINTMENT DETAILS:**
+*   **Date of Report:** 2025-05-27
+*   **Date of Examination:** 2025-05-27
+*   **Time of Examination:** 10:30 AM
+*   **Examining Clinician:** Dr. Sarah Kim (GDC No. 210XXX)
+*   **Reason for Visit:** Routine 6-monthly dental check-up and review of monitored lower left wisdom tooth (38).
+
+---
+
+**1. HISTORY**
+
+**1.1 Presenting Complaint (PC):**
+Mr. Ethan Marsh attends for his routine 6-monthly dental check-up. He reports no specific pain or acute concerns at present. His primary aim for this visit is a thorough examination and to monitor the status of his lower left wisdom tooth (38), which has been partially erupted and previously subject to occasional mild discomfort.
+
+**1.2 History of Presenting Complaint (HPC):**
+Mr. Marsh's last dental check-up was approximately six months ago, on 2024-11-25, at this facility. At that time, tooth 38 was noted to be partially erupted with an overlying operculum, and was advised for continued monitoring unless symptomatic. Since the last visit, Mr. Marsh reports no significant episodes of pain, swelling, or food trapping around tooth 38. He occasionally experiences a very mild, transient dull ache in the area, particularly after a long day or periods of stress at work, but this resolves spontaneously without analgesia and does not interfere with function. No specific triggers or alleviating factors were identified other than general rest. He denies any recent changes in bite, difficulty chewing, or persistent sensitivity.
+
+**1.3 Past Dental History (PDH):**
+*   **Regular Attender:** Mr. Marsh is a consistent attender for 6-monthly check-ups.
+*   **Restorations:** History of several amalgam and composite restorations, primarily in posterior teeth. Most recent restoration was a composite filling on tooth 27 (lower left second molar) in May 2023 for an occlusal carious lesion.
+*   **Extractions:** Extraction of tooth 18 (upper right wisdom tooth) in 2018 due to recurrent pericoronitis. Tooth 48 (lower right wisdom tooth) extracted in 2015 due to impaction and repeated episodes of infection. Tooth 28 (upper left wisdom tooth) is fully erupted and asymptomatic.
+*   **Orthodontics:** None.
+*   **Periodontal History:** History of mild gingivitis, managed with routine scale and polish and improved oral hygiene. No history of periodontitis or significant bone loss noted in previous records.
+*   **Trauma:** No history of dental trauma.
+*   **Sensitivity:** Reports occasional mild sensitivity to cold in the lower left quadrant generally, but no specific tooth identified.
+
+**1.4 Medical History (MH):**
+*   **General Health:** Good.
+*   **Known Conditions:**
+    *   Mild Asthma: Diagnosed in childhood. Managed with Salbutamol inhaler (Ventolin) PRN, typically used 2-3 times per month, more frequently during seasonal allergy peaks. Last exacerbation was mild, during pollen season last month.
+    *   Seasonal Allergies (Hay fever): Managed with Loratadine PRN during spring/summer. Currently taking Loratadine daily due to high pollen count.
+    *   Lower Back Pain: Chronic, mild-to-moderate lower back pain attributed to prolonged desk work as a Senior Software Engineer. Manages with regular stretching, ergonomic adjustments at work, and occasional ibuprofen. No significant impact on daily activities or dental care.
+*   **Medications:**
+    *   Salbutamol inhaler (PRN)
+    *   Loratadine (PRN, currently daily)
+    *   Ibuprofen (occasional, PRN for back pain)
+*   **Allergies:** No known drug allergies (NKDA). No known latex allergy.
+*   **Family Medical History:**
+    *   Father, George Marsh, passed away in 2021 (cardiovascular event).
+    *   Mother, Janet Marsh (72), resides in Bristol, generally good health, manages mild hypertension with medication.
+    *   No family history of specific dental conditions, e.g., amelogenesis imperfecta, aggressive periodontitis.
+
+**1.5 Social History (SH):**
+*   **Occupation:** Senior Software Engineer at a fintech company in London. Works primarily from home 3 days/week, 2 days in office. Reports long hours at the desk, sometimes leading to stress.
+*   **Marital Status:** Married to Claire Marsh (teacher).
+*   **Children:** Lily (7, Year 3 at QPA Primary School), Max (4, Little Stars Nursery).
+*   **Home Life:** Resides in a 3-bed semi-detached house in North London with family. Mortgage with Barclays. Busy family life, often involving school runs and children's activities.
+*   **Diet:** Generally balanced, home-cooked meals (enjoys cooking). Reports occasional sugary snacks (biscuits, chocolate) during work hours, particularly when under pressure. Drinks 2-3 cups of coffee daily, primarily water, occasional fruit juice.
+*   **Smoking:** Non-smoker.
+*   **Alcohol:** Social drinker, typically 2-3 units per week (e.g., a couple of beers on weekends).
+*   **Hobbies:** Tropical fish keeping, cycling (2-3 times a week, often with energy drinks post-ride), photography, cooking.
+*   **Oral Hygiene Habits:**
+    *   Brushing: Twice daily for 2 minutes using an electric toothbrush (Sonicare) and fluoride toothpaste (Colgate Total).
+    *   Flossing: Attempts to floss nightly but admits this is often skipped due to fatigue or rushed evenings, especially after putting children to bed. Estimates flossing 3-4 times per week.
+    *   Mouthwash: Uses an alcohol-free fluoride mouthwash (Corsodyl Daily) inconsistently, perhaps 3-4 times a week.
+*   **Concerns/Goals:** Maintain good oral health, prevent future problems, and gain reassurance regarding tooth 38.
+
+---
+
+**2. EXAMINATION**
+
+**2.1 Extra-oral Examination (EOE):**
+*   **Facial Symmetry:** Symmetrical.
+*   **Lymph Nodes:** No palpable lymphadenopathy in submandibular, submental, cervical regions.
+*   **Temporomandibular Joints (TMJ):** No tenderness on palpation, no clicking or crepitus on opening/closing. Full range of motion. Maximum interincisal opening: 48mm. No deviation on opening.
+*   **Lips:** Intact, healthy, no lesions.
+*   **Perioral Tissues:** Healthy, no abnormalities.
+
+**2.2 Intra-oral Soft Tissue Examination (IOSE):**
+*   **Buccal Mucosa:** Healthy, no lesions. Linea alba present bilaterally, within normal limits.
+*   **Labial Mucosa:** Healthy, no lesions.
+*   **Floor of Mouth:** Healthy, no lesions, Wharton's ducts patent.
+*   **Palate:** Pink and healthy, no lesions.
+*   **Tongue:** Dorsum papillae intact, no fissuring or coating. Ventral surface healthy.
+*   **Oropharynx:** Appears healthy, tonsils not enlarged.
+*   **Salivary Flow:** Appears normal. No xerostomia reported.
+
+**2.3 Hard Tissue Examination (HTE) / Odontogram (FDI Notation):**
+*   **General Condition:** Dentition appears well-maintained. Existing restorations are generally satisfactory.
+*   **Caries:**
+    *   Tooth 16: Existing mesio-occlusal (MO) amalgam restoration, intact, no recurrent caries detected clinically or radiographically.
+    *   Tooth 27: Existing disto-occlusal (DO) composite restoration, intact, no recurrent caries.
+    *   Tooth 36: Existing occlusal amalgam restoration, intact.
+    *   Tooth 37: No clinical caries.
+    *   Tooth 38 (Lower Left Wisdom Tooth): Partially erupted, mesio-angular impaction. Approximately 50% of the crown visible. Overlying gingival operculum present, covering the distal and part of the occlusal surface. No visible caries clinically on 38 itself. Distal surface of 37 is accessible to probe, no obvious caries detected clinically, however, access is limited.
+    *   Tooth 46: Existing mesio-occlusal-distal (MOD) amalgam restoration, intact.
+    *   No new carious lesions identified elsewhere clinically.
+*   **Wear:** Mild occlusal wear facets noted on posterior teeth, consistent with age. No significant signs of bruxism or attrition.
+*   **Cracks/Fractures:** No visible cracks or fractures.
+*   **Abrasions/Erosions:** Mild gingival recession noted on buccal aspect of 13 and 43 (approximately 1-2mm), likely related to toothbrushing technique. No significant erosion.
+
+**2.4 Periodontal Examination (PCE) / Basic Periodontal Examination (BPE):**
+*   **Gingival Health:** Generally pink and firm, but localized areas of mild erythema and oedema noted interdentally, particularly in the lower anterior sextant (31-41) and around tooth 38.
+*   **Plaque & Calculus:** Moderate plaque accumulation noted on lingual surfaces of lower anterior teeth and around tooth 38. Light supragingival calculus present in these areas.
+*   **Bleeding on Probing (BOP):** Localized BOP noted in areas of inflammation, particularly interdentally in the lower anterior sextant (BPE score 2) and distally around 38 (BPE score 2).
+*   **BPE Scores:**
+    *   17-14: 1
+    *   13-23: 1
+    *   24-27: 1
+    *   47-44: 1
+    *   43-33: 2
+    *   34-37: 2 (localized score of 2 around 38 distally)
+*   **Probing Depths:** Within normal limits (≤3mm) generally, except for the distal aspect of tooth 38, which showed a localized probing depth of 4mm beneath the operculum, indicating a potential food trap and area for bacterial accumulation.
+
+**2.5 Occlusion:**
+*   **Classification:** Class I molar and canine relationship bilaterally.
+*   **Overjet/Overbite:** Normal.
+*   **Interferences:** No premature contacts or non-working side interferences detected.
+*   **Fremitus:** No fremitus detected.
+*   **Bruxism:** No clinical signs of significant bruxism.
+
+**2.6 Radiographic Examination:**
+*   **Previous Radiographs:** Two bitewing radiographs (BWs) dated 2024-11-25. Periapical (PA) radiograph of 38 dated 2024-11-25.
+*   **Current Radiographs:** New Periapical (PA) radiograph of tooth 38 was taken today to reassess its position and relationship with 37 and the mandibular canal.
+*   **Findings (Current PA of 38 and previous BWs):**
+    *   **Bitewings (2024-11-25):** No interproximal caries detected. Good bone levels, no significant bone loss. Existing restorations appear sound.
+    *   **Periapical of 38 (2025-05-27):** Confirms mesio-angular impaction of tooth 38. The crown of 38 is in close proximity to the distal surface of tooth 37. No radiographic evidence of caries on either 37 or 38 at this time. The follicle around 38 appears within normal limits. The roots of 38 are well-formed, and the apex appears approximately 2-3mm superior to the superior border of the mandibular canal, indicating a low-to-moderate risk of nerve involvement if extraction were required. Bone levels around 38 show no significant pathology.
+
+---
+
+**3. DIFFERENTIAL DIAGNOSIS**
+
+1.  **Asymptomatic Partially Erupted Mandibular Third Molar (Tooth 38) with Overlying Operculum:** The primary diagnosis. While currently asymptomatic, the partial eruption and operculum create a potential food trap and site for bacterial accumulation, predisposing to pericoronitis or distal caries on 37.
+2.  **Mild Localized Gingivitis:** Evident by the BPE scores of 2 in the lower anterior and around 38, with mild erythema, oedema, and BOP. This is primarily plaque-induced.
+3.  **Enamel Hypersensitivity:** Reported mild transient sensitivity to cold. Likely multifactorial, potentially related to mild gingival recession on 13 and 43, or general dentinal tubule exposure.
+4.  **Early Carious Lesion (Incipient):** While no frank caries was detected, the limited access around 38 and the presence of plaque accumulation mean that an incipient lesion on the distal aspect of 37 cannot be entirely ruled out without further monitoring or more advanced imaging in the future if symptoms arise.
+
+---
+
+**4. TREATMENT PLAN**
+
+**4.1 Immediate Care:**
+*   No urgent or immediate treatment required based on current presentation.
+
+**4.2 Preventative & Oral Hygiene:**
+*   **Oral Hygiene Instruction (OHI):** Reinforce optimal brushing technique, focusing on the gumline and posterior molars, especially around tooth 38.
+    *   Demonstrate interdental cleaning techniques: Emphasize consistent daily flossing, particularly in areas of plaque accumulation (lower anterior, around 38). Recommend the use of interdental brushes (e.g., TePe brushes) for better access around tooth 38 and other posterior interproximal spaces.
+    *   Advise consistent use of fluoride mouthwash as a supplement, especially given his occasional asthma inhaler use (which can contribute to dry mouth and altered pH).
+*   **Dietary Advice:** Advise Mr. Marsh to be mindful of the frequency of sugary snack consumption during work hours. Recommend water as the primary beverage, especially after coffee or energy drinks (post-cycling).
+*   **Professional Cleaning:** Routine Scale and Polish (S&P) to remove plaque and calculus, particularly in areas of gingival inflammation. This will be performed today.
+
+**4.3 Restorative:**
+*   No new restorative treatment required at this visit. All existing restorations are sound.
+
+**4.4 Periodontal:**
+*   As per 4.2, S&P to address localized gingivitis.
+
+**4.5 Surgical:**
+*   **Tooth 38 (Lower Left Wisdom Tooth):**
+    *   **Continue Monitoring:** Given the tooth is currently asymptomatic and radiographic findings show no pathology or caries, the current plan is to continue monitoring tooth 38.
+    *   **Discussion of Extraction:** Discussed the indications for extraction with Mr. Marsh, including recurrent pericoronitis, irreversible caries on tooth 37 or 38, development of cystic/tumour pathology, or orthodontic reasons. Mr. Marsh understands that if symptoms become recurrent or more severe, or if pathology develops, extraction would be the recommended course of action.
+    *   **Referral Criteria:** Advised that if extraction becomes indicated, a referral to an Oral Surgery specialist would be made under NHS guidelines to assess the complexity and perform the procedure, given the impaction and proximity to the mandibular canal.
+
+**4
+**4.6 Other/Preventative:**
+*   **Asthma and Oral Health:** Reiterate the importance of rinsing the mouth thoroughly with water after each use of his asthma inhaler. This helps to wash away residual medication that can contribute to dry mouth, alter oral pH, and potentially increase the risk of oral candidiasis or caries. Advised Mr. Marsh to maintain good hydration throughout the day.
+*   **Dietary Habits (Work/Hobbies):** Discussed the potential impact of frequent coffee consumption and occasional energy drinks (especially post-cycling) on tooth enamel due to their acidic nature. Recommended consuming these with meals where possible, or rinsing with water immediately afterwards. Advised limiting sugary snacks during long work sessions and opting for healthier alternatives.
+*   **Bruxism/Clenching:** Given the observation of slight occlusal wear and his self-reported stress levels, the importance of continued nightly wear of his custom-fitted occlusal splint (nightguard) was reinforced. This appliance is crucial for protecting teeth from further wear, reducing muscle strain, and alleviating potential TMJ symptoms. Advised Mr. Marsh to be mindful of clenching habits during waking hours, especially when concentrating at work.
+*   **General Health and Well-being:** Encouraged Mr. Marsh to continue with his healthy lifestyle choices, including regular cycling and a balanced diet, which indirectly contribute to good oral health. Briefly touched upon the connection between general systemic health and oral health, especially in managing inflammatory conditions like gingivitis. No specific concerns regarding his mild seasonal allergies or lower back pain requiring dental intervention at this time, though good posture at his desk job can indirectly reduce overall tension that might contribute to clenching.
+
+**5. Follow-up and Recall:**
+*   **Routine Recall:** Mr. Marsh is advised to return for his next routine dental examination and professional cleaning in **six (6) months**. This recall period is appropriate given his current oral health status, the monitoring of tooth 38, and the presence of mild localized gingivitis requiring ongoing home care emphasis.
+*   **Monitoring Tooth 38:** Continued close monitoring of tooth 38 (lower left wisdom tooth) is essential. Mr. Marsh was advised to contact the practice immediately if he experiences any new or worsening symptoms related to this tooth, including pain, swelling, difficulty opening his mouth, bad taste, or signs of pericoronitis (inflammation of the gum tissue around the tooth).
+*   **Review of Home Care:** At the next recall appointment, his oral hygiene techniques and the effectiveness of his home care regimen will be reviewed and reinforced.
+*   **NHS Guidelines:** This recall period aligns with current NHS dental guidelines for routine examinations for patients with stable oral health.
+
+**6. Patient Declaration and Consent:**
+I, Dr. Sarah Kim, have discussed the findings of today's examination with Mr. Ethan Marsh. This included a detailed explanation of his current oral health status, the condition of tooth 38, the diagnosis of mild localized gingivitis, and the proposed treatment plan.
+
+Mr. Ethan Marsh confirms that he understands:
+*   His current oral health status and the findings of the examination.
+*   The importance of maintaining excellent oral hygiene, including daily brushing with fluoride toothpaste, flossing, and the use of interdental brushes, particularly around tooth 38 and the lower anterior teeth.
+*   The advice regarding his diet, asthma inhaler use, and the continued use of his nightguard for bruxism.
+*   The plan to continue monitoring tooth 38 and the indications for potential future extraction, as well as the referral process should it become necessary.
+*   The procedure for today's Scale and Polish, its benefits in removing plaque and calculus, and any associated minor discomfort.
+*   The need for a follow-up examination in six months, or sooner if any new symptoms arise.
+*   He has had the opportunity to ask questions and all his questions have been answered to his satisfaction.
+
+Mr. Marsh provides his informed consent for the Scale and Polish procedure to be carried out today.
+
+**Signature:**
+___________________________
+Dr. Sarah Kim
+GDC No. 123456
+North London Medical Centre
+
+**Date of Next Appointment:**
+2025-11-27 at 10:30 AM (Provisional)
