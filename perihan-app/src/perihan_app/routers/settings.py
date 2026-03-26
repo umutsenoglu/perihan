@@ -14,6 +14,7 @@ router = APIRouter()
 @router.get("/browse-folders")
 async def browse_folders(path: str = ""):
     """List subfolders (and drives on Windows) for the folder picker UI."""
+    import asyncio
     import platform
     import string
 
@@ -33,22 +34,27 @@ async def browse_folders(path: str = ""):
     if not p.exists() or not p.is_dir():
         raise HTTPException(status_code=400, detail=f"Folder not found: {path}")
 
-    parent = str(p.parent) if p.parent != p else None
-    folders = []
-    try:
-        for entry in sorted(p.iterdir()):
-            if entry.is_dir() and not entry.name.startswith("."):
-                folders.append({"name": entry.name, "path": str(entry)})
-    except PermissionError:
-        pass
+    def _list_dirs():
+        parent = str(p.parent) if p.parent != p else None
+        folders = []
+        try:
+            for entry in sorted(p.iterdir()):
+                if entry.is_dir() and not entry.name.startswith("."):
+                    folders.append({"name": entry.name, "path": str(entry)})
+        except PermissionError:
+            pass
+        return parent, folders
+
+    parent, folders = await asyncio.to_thread(_list_dirs)
     return {"parent": parent, "folders": folders}
 
 
 @router.get("/documents")
 async def list_documents():
     """List all indexed documents."""
+    import asyncio
     collection = get_collection()
-    all_docs = collection.get()
+    all_docs = await asyncio.to_thread(collection.get)
     return {
         "count": len(all_docs["ids"]),
         "documents": [
@@ -63,8 +69,9 @@ async def list_documents():
 @router.get("/document/{doc_id}")
 async def get_document(doc_id: str):
     """Get full content of a specific indexed document by ID."""
+    import asyncio
     collection = get_collection()
-    result = collection.get(ids=[doc_id], include=["documents", "metadatas"])
+    result = await asyncio.to_thread(collection.get, ids=[doc_id], include=["documents", "metadatas"])
     if not result["ids"]:
         raise HTTPException(status_code=404, detail=f"Document '{doc_id}' not found")
     return {
@@ -78,8 +85,9 @@ async def get_document(doc_id: str):
 @router.get("/documents/chunks")
 async def get_document_chunks(title: str, folder: str = ""):
     """Return all chunks for a specific file (by title and folder)."""
+    import asyncio
     collection = get_collection()
-    all_docs = collection.get(include=["documents", "metadatas"])
+    all_docs = await asyncio.to_thread(collection.get, include=["documents", "metadatas"])
     chunks = []
     for id_, doc, meta in zip(all_docs["ids"], all_docs["documents"], all_docs["metadatas"]):
         if meta.get("title", "") == title and meta.get("folder", "") == folder:
@@ -96,8 +104,9 @@ async def get_document_chunks(title: str, folder: str = ""):
 @router.get("/folders")
 async def list_folders():
     """List all indexed folders and their files."""
+    import asyncio
     collection = get_collection()
-    all_docs = collection.get()
+    all_docs = await asyncio.to_thread(collection.get)
     folders: dict = {}
     for meta in all_docs["metadatas"]:
         folder = meta.get("folder", "unknown")
@@ -112,8 +121,9 @@ async def list_folders():
 @router.get("/stats")
 async def vectordb_stats():
     """Return summary statistics about the vector database."""
+    import asyncio
     collection = get_collection()
-    all_docs = collection.get()
+    all_docs = await asyncio.to_thread(collection.get)
     chunk_count = len(all_docs["ids"])
     unique_files: set = set()
     unique_folders: set = set()
@@ -124,12 +134,15 @@ async def vectordb_stats():
             unique_folders.add(meta["folder"])
 
     # Disk size of vectordb directory
-    vectordb_path = Path(VECTORDB_PATH)
-    disk_bytes = (
-        sum(f.stat().st_size for f in vectordb_path.rglob("*") if f.is_file())
-        if vectordb_path.exists()
-        else 0
-    )
+    def _disk_size():
+        vectordb_path = Path(VECTORDB_PATH)
+        return (
+            sum(f.stat().st_size for f in vectordb_path.rglob("*") if f.is_file())
+            if vectordb_path.exists()
+            else 0
+        )
+
+    disk_bytes = await asyncio.to_thread(_disk_size)
 
     return {
         "chunks": chunk_count,
@@ -260,6 +273,7 @@ async def get_config_endpoint():
 
 @router.post("/config")
 async def update_config(body: ConfigUpdate):
+    import asyncio
     from perihan_app.services.config_service import save_config
     patch = {}
     if body.gemini_api_key is not None:
@@ -268,34 +282,41 @@ async def update_config(body: ConfigUpdate):
         patch["ollama_host"] = body.ollama_host.rstrip("/")
     if body.setup_complete is not None:
         patch["setup_complete"] = body.setup_complete
-    save_config(patch)
+    await asyncio.to_thread(save_config, patch)
     return {"ok": True}
 
 
 @router.delete("/logs")
 async def clear_logs():
     """Delete all log entries."""
+    import asyncio
     log_file = DATA_DIR / "logs" / "chat.jsonl"
     if log_file.exists():
-        log_file.write_text("", encoding="utf-8")
+        await asyncio.to_thread(log_file.write_text, "", encoding="utf-8")
     return {"ok": True}
 
 
 @router.get("/logs")
 async def get_logs(limit: int = 100, offset: int = 0):
     """Return log entries from chat.jsonl, newest first."""
+    import asyncio
     import json
     log_file = DATA_DIR / "logs" / "chat.jsonl"
     if not log_file.exists():
         return {"entries": [], "total": 0}
-    lines = log_file.read_text(encoding="utf-8").splitlines()
-    entries = []
-    for line in reversed(lines):
-        line = line.strip()
-        if line:
-            try:
-                entries.append(json.loads(line))
-            except Exception:
-                pass
+
+    def _read_logs():
+        lines = log_file.read_text(encoding="utf-8").splitlines()
+        entries = []
+        for line in reversed(lines):
+            line = line.strip()
+            if line:
+                try:
+                    entries.append(json.loads(line))
+                except Exception:
+                    pass
+        return entries
+
+    entries = await asyncio.to_thread(_read_logs)
     total = len(entries)
     return {"entries": entries[offset: offset + limit], "total": total}

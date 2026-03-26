@@ -23,6 +23,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -100,9 +101,8 @@ If the answer is not in the documents, say "I don't have that information."
 # ---------------------------------------------------------------------------
 
 def log(msg: str, level: str = "INFO"):
-    ts = datetime.now().strftime("%H:%M:%S")
     prefix = {"INFO": "->", "OK": "OK", "ERR": "!!", "SKIP": "--", "COST": "$$"}.get(level, "->")
-    print(f"  {prefix} [{ts}] {msg}", flush=True)
+    print(f"  {prefix} {msg}", flush=True)
 
 
 def calc_cost(usage: dict) -> tuple[float, str]:
@@ -211,20 +211,29 @@ async def ask_benchmark(question: str, source_docs: list[str]) -> str:
 # Perihan: ask via /chat
 # ---------------------------------------------------------------------------
 
-def ask_perihan(question: str) -> str:
-    try:
-        resp = requests.post(
-            PERIHAN_CHAT,
-            params={"question": question, "use_drive": "false", "deep_think": "true"},
-            timeout=120,
-        )
-        resp.raise_for_status()
-        data = resp.json()
-        return data.get("reply") or data.get("answer") or str(data)
-    except requests.exceptions.ConnectionError:
-        return "[ERROR: Could not connect to Perihan at localhost:8000]"
-    except Exception as e:
-        return f"[ERROR: {e}]"
+def ask_perihan(question: str, max_retries: int = 3) -> str:
+    for attempt in range(max_retries):
+        try:
+            resp = requests.post(
+                PERIHAN_CHAT,
+                params={"question": question, "use_drive": "false", "deep_think": "true"},
+                timeout=180,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            return data.get("reply") or data.get("answer") or str(data)
+        except requests.exceptions.ConnectionError:
+            return "[ERROR: Could not connect to Perihan at localhost:8000]"
+        except requests.exceptions.HTTPError as e:
+            status = e.response.status_code if e.response is not None else 0
+            if status in (429, 500, 502, 503) and attempt < max_retries - 1:
+                wait = 2 ** attempt * 5  # 5s, 10s, 20s
+                time.sleep(wait)
+                continue
+            return f"[ERROR: HTTP {status} — {e}]"
+        except Exception as e:
+            return f"[ERROR: {e}]"
+    return "[ERROR: max retries exceeded]"
 
 
 # ---------------------------------------------------------------------------
@@ -247,7 +256,8 @@ async def judge(question: str, expected: str, reply: str) -> tuple[int, str]:
 
 async def run_benchmark(only_ids: list[str] | None = None):
     """Run benchmark: send each question + source docs to Gemini, judge the answer.
-    Skips questions that already have a benchmark score."""
+    Skips questions that already have a benchmark score.
+    Runs up to 5 questions concurrently."""
     questions = load_questions()
     results = load_results()
 
@@ -265,33 +275,38 @@ async def run_benchmark(only_ids: list[str] | None = None):
 
     log(f"Benchmark: {len(pending)} questions to process ({len(questions) - len(pending)} already done)")
 
-    try:
-        for i, q in enumerate(pending, 1):
-            qid = q["id"]
-            short_q = q["question"][:60]
-            log(f"[{i}/{len(pending)}] {qid}: {short_q}")
+    sem = asyncio.Semaphore(5)
+    lock = asyncio.Lock()
 
+    async def process_one(q):
+        qid = q["id"]
+        short_q = q["question"][:60]
+
+        async with sem:
+            log(f"[{qid}] {short_q}")
             reply = await ask_benchmark(q["question"], q.get("source_documents", []))
             score, reason = await judge(q["question"], q["answer"], reply)
+            log(f"[{qid}] Score: {score} | {reason}", "OK" if score == 2 else "INFO")
 
-            log(f"  Score: {score} | {reason}", "OK" if score == 2 else "INFO")
-
-            if qid not in results:
-                results[qid] = {
-                    "question": q["question"],
-                    "expected": q["answer"],
-                    "difficulty": q.get("difficulty"),
-                    "strategy": q.get("strategy"),
-                    "source_documents": q.get("source_documents", []),
+            async with lock:
+                if qid not in results:
+                    results[qid] = {
+                        "question": q["question"],
+                        "expected": q["answer"],
+                        "difficulty": q.get("difficulty"),
+                        "strategy": q.get("strategy"),
+                        "source_documents": q.get("source_documents", []),
+                    }
+                results[qid]["benchmark"] = {
+                    "reply": reply,
+                    "score": score,
+                    "reason": reason,
+                    "timestamp": datetime.now().isoformat(),
                 }
-            results[qid]["benchmark"] = {
-                "reply": reply,
-                "score": score,
-                "reason": reason,
-                "timestamp": datetime.now().isoformat(),
-            }
-            save_results(results)
+                save_results(results)
 
+    try:
+        await asyncio.gather(*[process_one(q) for q in pending])
     except KeyboardInterrupt:
         log("Interrupted — progress saved.", "INFO")
         save_results(results)
@@ -303,7 +318,8 @@ async def run_benchmark(only_ids: list[str] | None = None):
 
 async def run_perihan(only_ids: list[str] | None = None):
     """Run Perihan eval: only questions that have benchmark scores.
-    Always re-runs — overwrites previous perihan scores."""
+    Always re-runs — overwrites previous perihan scores.
+    Runs up to 5 questions concurrently."""
     questions = load_questions()
     results = load_results()
 
@@ -320,25 +336,33 @@ async def run_perihan(only_ids: list[str] | None = None):
 
     log(f"Perihan: {len(questions)} questions to process (all will be re-evaluated)")
 
-    try:
-        for i, q in enumerate(questions, 1):
-            qid = q["id"]
-            short_q = q["question"][:60]
-            log(f"[{i}/{len(questions)}] {qid}: {short_q}")
+    sem = asyncio.Semaphore(3)
+    completed = 0
+    lock = asyncio.Lock()
 
-            reply = ask_perihan(q["question"])
+    async def process_one(q):
+        nonlocal completed
+        qid = q["id"]
+        short_q = q["question"][:60]
+
+        async with sem:
+            log(f"[{qid}] {short_q}")
+            reply = await asyncio.to_thread(ask_perihan, q["question"])
             score, reason = await judge(q["question"], q["answer"], reply)
+            log(f"[{qid}] Score: {score} | {reason}", "OK" if score == 2 else "INFO")
 
-            log(f"  Score: {score} | {reason}", "OK" if score == 2 else "INFO")
+            async with lock:
+                completed += 1
+                results[qid]["perihan"] = {
+                    "reply": reply,
+                    "score": score,
+                    "reason": reason,
+                    "timestamp": datetime.now().isoformat(),
+                }
+                save_results(results)
 
-            results[qid]["perihan"] = {
-                "reply": reply,
-                "score": score,
-                "reason": reason,
-                "timestamp": datetime.now().isoformat(),
-            }
-            save_results(results)
-
+    try:
+        await asyncio.gather(*[process_one(q) for q in questions])
     except KeyboardInterrupt:
         log("Interrupted — progress saved.", "INFO")
         save_results(results)

@@ -37,6 +37,7 @@ async def google_auth():
 @router.get("/auth/google/callback")
 async def google_callback(code: str):
     """Step 2: Exchange auth code for token, save to token.json."""
+    import asyncio
     from google_auth_oauthlib.flow import Flow
 
     flow = Flow.from_client_secrets_file(
@@ -44,7 +45,7 @@ async def google_callback(code: str):
         scopes=GOOGLE_SCOPES,
         redirect_uri=f"{APP_BASE_URL}/auth/google/callback",
     )
-    flow.fetch_token(code=code)
-    GOOGLE_TOKEN_FILE.write_text(flow.credentials.to_json())
-    load_drive_service()  # warm up cache
+    await asyncio.to_thread(flow.fetch_token, code=code)
+    await asyncio.to_thread(GOOGLE_TOKEN_FILE.write_text, flow.credentials.to_json())
+    await asyncio.to_thread(load_drive_service)  # warm up cache
     return {"message": "Google Drive connected successfully."}

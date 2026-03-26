@@ -32,18 +32,23 @@ async def chat(question: str, use_drive: bool = True, deep_think: bool = False):
 @router.post("/chat-folder")
 async def chat_folder(question: str, folder: str = None):
     """Ask a question, optionally limited to a specific folder."""
+    import asyncio
     from perihan_core.services.search_service import hybrid_search
     from datetime import datetime
 
     collection = get_collection()
     where = {"folder": folder} if folder else None
-    docs, metas, _ = hybrid_search(question, n_results=3, where=where, collection=collection)
+    docs, metas, _ = await asyncio.to_thread(
+        hybrid_search, question, n_results=3, where=where, collection=collection
+    )
 
     context = "\n---\n".join(docs) if docs else "No documents found."
 
     model = get_current_model()
+    llm_client = get_llm_client()
     try:
-        response = get_llm_client().chat.completions.create(
+        response = await asyncio.to_thread(
+            llm_client.chat.completions.create,
             model=model,
             temperature=0.3,
             messages=[

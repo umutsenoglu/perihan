@@ -128,7 +128,8 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
             )
             if summary:
                 summary_text = f"[Summary of {file.name}]\n{summary}"
-                collection.upsert(
+                await asyncio.to_thread(
+                    collection.upsert,
                     ids=[f"{relative_path}_summary"],
                     documents=[summary_text],
                     metadatas=[
@@ -218,7 +219,7 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
             current_mtime = file.stat().st_mtime
 
             # Skip unchanged files (also skip if already indexed but no mtime stored — old data)
-            existing = collection.get(where={"full_path": str(file)})
+            existing = await asyncio.to_thread(collection.get, where={"full_path": str(file)})
             if existing["ids"] and existing["metadatas"]:
                 stored_mtime = existing["metadatas"][0].get("modified_at")
                 if stored_mtime is None or abs(float(stored_mtime) - current_mtime) < 1:
@@ -226,12 +227,13 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
                     yield {"type": "skip", "file": file.name, "reason": "unchanged", "done": done_count, "total": total}
                     continue
 
-            content = read_file_content(file)
+            content = await asyncio.to_thread(read_file_content, file)
             if not content or len(content.strip()) < 10:
                 relative = file.relative_to(base_path)
                 skipped_empty.append({"file": str(relative), "name": file.name})
                 # Store a marker so we skip this file on next run
-                collection.upsert(
+                await asyncio.to_thread(
+                    collection.upsert,
                     ids=[f"{relative}_empty"],
                     documents=["[empty file]"],
                     metadatas=[{
@@ -257,7 +259,7 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
             folder_context = f"[Source: {folder}/{file.name}]\n"
 
             if existing["ids"]:
-                collection.delete(ids=existing["ids"])
+                await asyncio.to_thread(collection.delete, ids=existing["ids"])
 
             words = content.split()
             chunks = []
@@ -267,7 +269,8 @@ async def index_local_folder(folder_path: str, *, collection=None, llm_client=No
 
             for j, chunk in enumerate(chunks):
                 doc_id = f"{relative_path}_{j}"
-                collection.upsert(
+                await asyncio.to_thread(
+                    collection.upsert,
                     ids=[doc_id],
                     documents=[chunk],
                     metadatas=[
@@ -350,60 +353,129 @@ async def index_gdrive_files(folder_id: str = "root", *, collection=None, drive_
     total_input_tokens = 0
     total_output_tokens = 0
 
-    for i, f in enumerate(all_files):
+    # Concurrent processing queue
+    event_queue = asyncio.Queue()
+    running_tasks = set()
+    MAX_CONCURRENT = 5
+    done_count = 0
+
+    async def _process_file(f, task_id):
+        """Read + summarize + upsert a single Drive file in background."""
         file_id = f["id"]
         name = f["name"]
         mime = f["mimeType"]
         folder_path = f["folder_path"]
-
         try:
             # Skip files already indexed (resume support)
-            existing = collection.get(where={"file_id": file_id})
+            existing = await asyncio.to_thread(collection.get, where={"file_id": file_id})
             if existing["ids"]:
-                skipped_existing += 1
-                yield {"type": "skip", "file": name, "reason": "already indexed", "done": i + 1, "total": total}
-                continue
+                await event_queue.put({"type": "skip_existing", "file": name, "task_id": task_id})
+                return
 
-            yield {"type": "progress", "file": name, "step": "reading", "done": i, "total": total}
             content = await asyncio.to_thread(drive_read_content, drive_svc, file_id, name, mime)
             if not content or len(content.strip()) < 10:
-                skipped.append({"file": name, "reason": "unsupported or empty"})
-                yield {"type": "skip", "file": name, "reason": "unsupported or empty", "done": i + 1, "total": total}
-                continue
+                await event_queue.put({"type": "skip_empty", "file": name, "task_id": task_id})
+                return
 
-            yield {"type": "progress", "file": name, "step": "summarizing", "done": i, "total": total}
-            summary, cost_info = await asyncio.to_thread(generate_file_summary, name, content, llm_client=llm_client, model=model)
-            total_cost += cost_info.get("cost", 0)
-            total_input_tokens += cost_info.get("input_tokens", 0)
-            total_output_tokens += cost_info.get("output_tokens", 0)
+            summary, cost_info = await asyncio.to_thread(
+                generate_file_summary, name, content, llm_client=llm_client, model=model
+            )
 
             if not summary:
-                skipped.append({"file": name, "reason": "summary generation failed"})
-                yield {"type": "skip", "file": name, "reason": "summary generation failed", "done": i + 1, "total": total}
-                continue
+                await event_queue.put({"type": "skip_no_summary", "file": name, "task_id": task_id})
+                return
 
             summary_text = f"[Google Drive Summary: {name}]\n{summary}"
-            collection.upsert(
+            await asyncio.to_thread(
+                collection.upsert,
                 ids=[f"gdrive_{file_id}_summary"],
                 documents=[summary_text],
-                metadatas=[
-                    {
-                        "title": name,
-                        "file_id": file_id,
-                        "source": "gdrive",
-                        "mime_type": mime,
-                        "folder": folder_path,
-                        "is_summary": "true",
-                        "chunk": -1,
-                    }
-                ],
+                metadatas=[{
+                    "title": name,
+                    "file_id": file_id,
+                    "source": "gdrive",
+                    "mime_type": mime,
+                    "folder": folder_path,
+                    "is_summary": "true",
+                    "chunk": -1,
+                }],
             )
-            indexed.append({"file": name, "folder": folder_path, "file_id": file_id})
-            yield {"type": "file_done", "file": name, "done": i + 1, "total": total, "total_cost": round(total_cost, 4), "total_input_tokens": total_input_tokens, "total_output_tokens": total_output_tokens}
-
+            await event_queue.put({
+                "type": "done", "file": name, "folder": folder_path, "file_id": file_id,
+                "cost_info": cost_info, "task_id": task_id,
+            })
         except Exception as e:
-            errors.append({"file": name, "error": str(e)})
-            yield {"type": "file_error", "file": name, "error": str(e), "done": i + 1, "total": total}
+            await event_queue.put({"type": "error", "file": name, "error": str(e), "task_id": task_id})
+
+    async def _drain_completed():
+        """Drain all completed events from the queue."""
+        nonlocal done_count, total_cost, total_input_tokens, total_output_tokens, skipped_existing
+        events = []
+        while not event_queue.empty():
+            item = event_queue.get_nowait()
+            running_tasks.discard(item["task_id"])
+            done_count += 1
+            events.append(item)
+        return events
+
+    def _handle_item(item):
+        """Process a queue item and return an SSE event."""
+        nonlocal total_cost, total_input_tokens, total_output_tokens, skipped_existing
+        name = item.get("file", "")
+        if item["type"] == "skip_existing":
+            skipped_existing += 1
+            return {"type": "skip", "file": name, "reason": "already indexed", "done": done_count, "total": total}
+        elif item["type"] == "skip_empty":
+            skipped.append({"file": name, "reason": "unsupported or empty"})
+            return {"type": "skip", "file": name, "reason": "unsupported or empty", "done": done_count, "total": total}
+        elif item["type"] == "skip_no_summary":
+            skipped.append({"file": name, "reason": "summary generation failed"})
+            return {"type": "skip", "file": name, "reason": "summary generation failed", "done": done_count, "total": total}
+        elif item["type"] == "done":
+            ci = item.get("cost_info", {})
+            total_cost += ci.get("cost", 0)
+            total_input_tokens += ci.get("input_tokens", 0)
+            total_output_tokens += ci.get("output_tokens", 0)
+            indexed.append({"file": name, "folder": item["folder"], "file_id": item["file_id"]})
+            return {"type": "file_done", "file": name, "done": done_count, "total": total,
+                    "total_cost": round(total_cost, 4), "total_input_tokens": total_input_tokens, "total_output_tokens": total_output_tokens}
+        elif item["type"] == "error":
+            errors.append({"file": name, "error": item["error"]})
+            return {"type": "file_error", "file": name, "error": item["error"], "done": done_count, "total": total}
+
+    task_counter = 0
+
+    for f in all_files:
+        # Drain completed tasks
+        for item in await _drain_completed():
+            ev = _handle_item(item)
+            if ev:
+                yield ev
+
+        # Wait for a slot if all slots are busy
+        while len(running_tasks) >= MAX_CONCURRENT:
+            item = await event_queue.get()
+            running_tasks.discard(item["task_id"])
+            done_count += 1
+            ev = _handle_item(item)
+            if ev:
+                yield ev
+
+        # Launch file processing in background
+        task_counter += 1
+        tid = task_counter
+        running_tasks.add(tid)
+        yield {"type": "progress", "file": f["name"], "step": "queued", "done": done_count, "total": total}
+        asyncio.create_task(_process_file(f, tid))
+
+    # Wait for all remaining tasks
+    while running_tasks:
+        item = await event_queue.get()
+        running_tasks.discard(item["task_id"])
+        done_count += 1
+        ev = _handle_item(item)
+        if ev:
+            yield ev
 
     asyncio.create_task(asyncio.to_thread(build_global_vocab, collection))
     yield {
@@ -438,9 +510,9 @@ async def index_gmail_threads(max_threads: int = 500, *, collection=None, gmail_
 
     # Delete existing gmail chunks before re-indexing
     try:
-        existing = collection.get(where={"source": "gmail"})
+        existing = await asyncio.to_thread(collection.get, where={"source": "gmail"})
         if existing["ids"]:
-            collection.delete(ids=existing["ids"])
+            await asyncio.to_thread(collection.delete, ids=existing["ids"])
     except Exception:
         pass
 
@@ -453,24 +525,27 @@ async def index_gmail_threads(max_threads: int = 500, *, collection=None, gmail_
     skipped = []
     errors = []
 
-    for i, t in enumerate(all_threads):
+    event_queue = asyncio.Queue()
+    running_tasks = set()
+    MAX_CONCURRENT = 10  # Gmail has no LLM calls, can go higher
+    done_count = 0
+
+    async def _process_thread(t, task_id):
         thread_id = t["id"]
         try:
-            yield {"type": "progress", "file": t.get("snippet", "")[:60], "step": "reading", "done": i, "total": total}
             thread_data = await asyncio.to_thread(gmail_get_thread, gmail_svc, thread_id)
             subject = thread_data.get("subject", "(no subject)")
             text = gmail_format_thread_text(thread_data)
 
             if len(text.strip()) < 20:
-                skipped.append({"file": subject, "reason": "empty thread"})
-                yield {"type": "skip", "file": subject, "reason": "empty thread", "done": i + 1, "total": total}
-                continue
+                await event_queue.put({"type": "skip", "file": subject, "reason": "empty thread", "task_id": task_id})
+                return
 
             # Save raw file for development/debugging
             if raw_dir is not None:
                 safe_subject = "".join(c if c.isascii() and c not in ' /\\:*?"<>|' else "_" for c in subject)[:80]
                 raw_file = raw_dir / f"{thread_id}_{safe_subject}.txt"
-                raw_file.write_text(text, encoding="utf-8")
+                await asyncio.to_thread(raw_file.write_text, text, encoding="utf-8")
 
             # Store raw text chunks directly (no LLM summary)
             folder_context = f"[Gmail: {subject}]\n"
@@ -482,7 +557,8 @@ async def index_gmail_threads(max_threads: int = 500, *, collection=None, gmail_
 
             for j, chunk in enumerate(chunks):
                 doc_id = f"gmail_{thread_id}_{j}"
-                collection.upsert(
+                await asyncio.to_thread(
+                    collection.upsert,
                     ids=[doc_id],
                     documents=[chunk],
                     metadatas=[{
@@ -494,12 +570,71 @@ async def index_gmail_threads(max_threads: int = 500, *, collection=None, gmail_
                     }],
                 )
 
-            indexed.append({"file": subject, "thread_id": thread_id, "chunks": len(chunks)})
-            yield {"type": "file_done", "file": subject[:60], "chunks": len(chunks), "done": i + 1, "total": total}
-
+            await event_queue.put({
+                "type": "done", "file": subject, "thread_id": thread_id,
+                "chunks": len(chunks), "task_id": task_id,
+            })
         except Exception as e:
-            errors.append({"file": t.get("snippet", "")[:60], "error": str(e)})
-            yield {"type": "file_error", "file": t.get("snippet", "")[:60], "error": str(e), "done": i + 1, "total": total}
+            await event_queue.put({
+                "type": "error", "file": t.get("snippet", "")[:60],
+                "error": str(e), "task_id": task_id,
+            })
+
+    task_counter = 0
+
+    for t in all_threads:
+        # Drain completed tasks
+        while not event_queue.empty():
+            item = event_queue.get_nowait()
+            running_tasks.discard(item["task_id"])
+            done_count += 1
+            name = item.get("file", "")
+            if item["type"] == "skip":
+                skipped.append({"file": name, "reason": item["reason"]})
+                yield {"type": "skip", "file": name, "reason": item["reason"], "done": done_count, "total": total}
+            elif item["type"] == "done":
+                indexed.append({"file": name, "thread_id": item["thread_id"], "chunks": item["chunks"]})
+                yield {"type": "file_done", "file": name[:60], "chunks": item["chunks"], "done": done_count, "total": total}
+            elif item["type"] == "error":
+                errors.append({"file": name, "error": item["error"]})
+                yield {"type": "file_error", "file": name, "error": item["error"], "done": done_count, "total": total}
+
+        # Wait for a slot
+        while len(running_tasks) >= MAX_CONCURRENT:
+            item = await event_queue.get()
+            running_tasks.discard(item["task_id"])
+            done_count += 1
+            name = item.get("file", "")
+            if item["type"] == "skip":
+                skipped.append({"file": name, "reason": item["reason"]})
+                yield {"type": "skip", "file": name, "reason": item["reason"], "done": done_count, "total": total}
+            elif item["type"] == "done":
+                indexed.append({"file": name, "thread_id": item["thread_id"], "chunks": item["chunks"]})
+                yield {"type": "file_done", "file": name[:60], "chunks": item["chunks"], "done": done_count, "total": total}
+            elif item["type"] == "error":
+                errors.append({"file": name, "error": item["error"]})
+                yield {"type": "file_error", "file": name, "error": item["error"], "done": done_count, "total": total}
+
+        task_counter += 1
+        tid = task_counter
+        running_tasks.add(tid)
+        asyncio.create_task(_process_thread(t, tid))
+
+    # Wait for remaining tasks
+    while running_tasks:
+        item = await event_queue.get()
+        running_tasks.discard(item["task_id"])
+        done_count += 1
+        name = item.get("file", "")
+        if item["type"] == "skip":
+            skipped.append({"file": name, "reason": item["reason"]})
+            yield {"type": "skip", "file": name, "reason": item["reason"], "done": done_count, "total": total}
+        elif item["type"] == "done":
+            indexed.append({"file": name, "thread_id": item["thread_id"], "chunks": item["chunks"]})
+            yield {"type": "file_done", "file": name[:60], "chunks": item["chunks"], "done": done_count, "total": total}
+        elif item["type"] == "error":
+            errors.append({"file": name, "error": item["error"]})
+            yield {"type": "file_error", "file": name, "error": item["error"], "done": done_count, "total": total}
 
     asyncio.create_task(asyncio.to_thread(build_global_vocab, collection))
     yield {

@@ -174,7 +174,8 @@ Follow these steps strictly:
     for i in range(max_iterations):
         iteration_entry = {"iteration": i + 1, "prompt": [m if isinstance(m, dict) else m.model_dump() for m in messages]}
         try:
-            response = llm_client.chat.completions.create(
+            response = await asyncio.to_thread(
+                llm_client.chat.completions.create,
                 model=model,
                 temperature=0.3,
                 messages=messages,
@@ -230,9 +231,10 @@ Follow these steps strictly:
                 search_count += 1
             args = json.loads(tc.function.arguments)
             func = tool_funcs.get(func_name)
-            result = (
-                func(**args) if func else json.dumps({"error": f"Unknown tool: {func_name}"})
-            )
+            if func:
+                result = await asyncio.to_thread(func, **args)
+            else:
+                result = json.dumps({"error": f"Unknown tool: {func_name}"})
 
             result_preview = result[:200] + "..." if len(result) > 200 else result
             log_entry = {"tool": func_name, "args": args, "result_preview": result_preview, "result_full": result}
@@ -267,7 +269,9 @@ async def rag_query(question: str, use_drive: bool = True, deep_think: bool = Fa
     start_time = time.perf_counter()
     rag_start = start_time
     where = None if use_drive else {"source": {"$ne": "gdrive"}}
-    docs, metas, search_debug = hybrid_search(question, n_results=15, where=where, collection=collection)
+    docs, metas, search_debug = await asyncio.to_thread(
+        hybrid_search, question, n_results=15, where=where, collection=collection
+    )
 
     # Google Drive native search fallback — searches actual file content, not just indexed summaries
     if use_drive and drive_svc:
@@ -373,7 +377,7 @@ async def rag_query(question: str, use_drive: bool = True, deep_think: bool = Fa
     if any(w in q_lower for w in ("group", "groups", "grup", "grub", "gruplari", "gruplarda")):
         try:
             col = collection
-            all_meta = col.get(include=["metadatas"])
+            all_meta = await asyncio.to_thread(col.get, include=["metadatas"])
             named_groups = set()
             for m in all_meta["metadatas"]:
                 cn = m.get("chat_name", "")
@@ -427,7 +431,8 @@ Documents:
 
     llm_start = time.perf_counter()
     try:
-        response = llm_client.chat.completions.create(
+        response = await asyncio.to_thread(
+            llm_client.chat.completions.create,
             model=model,
             temperature=0.3,
             messages=llm_messages,

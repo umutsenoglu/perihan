@@ -36,12 +36,12 @@ async def start_whatsapp(request: Request):
     if _state["status"] == "importing":
         return {"ok": True, "message": "Import already in progress"}
 
-    if not shutil.which("node"):
+    if not await asyncio.to_thread(shutil.which, "node"):
         return {"ok": False, "error": "Node.js is not installed. Please install it from https://nodejs.org"}
 
     # Kill any existing sidecar process (including node child on Windows)
     if _process and _process.poll() is None:
-        subprocess.run(f"taskkill /F /T /PID {_process.pid}", shell=True, capture_output=True)
+        await asyncio.to_thread(subprocess.run, f"taskkill /F /T /PID {_process.pid}", shell=True, capture_output=True)
         await asyncio.to_thread(_process.wait)
 
     AUTH_DIR.mkdir(parents=True, exist_ok=True)
@@ -108,12 +108,12 @@ async def relogin_whatsapp(request: Request):
         return {"ok": False, "error": "Import in progress, please wait"}
 
     if _process and _process.poll() is None:
-        subprocess.run(f"taskkill /F /T /PID {_process.pid}", shell=True, capture_output=True)
+        await asyncio.to_thread(subprocess.run, f"taskkill /F /T /PID {_process.pid}", shell=True, capture_output=True)
         await asyncio.to_thread(_process.wait)
 
     import shutil as _shutil
     if AUTH_DIR.exists():
-        _shutil.rmtree(AUTH_DIR)
+        await asyncio.to_thread(_shutil.rmtree, AUTH_DIR)
     AUTH_DIR.mkdir(parents=True, exist_ok=True)
     _state = {"status": "waiting_qr", "qr": None, "message": "Starting...", "total": 0, "done": 0}
 
@@ -209,7 +209,8 @@ async def receive_messages(body: MessagesBody):
             raw_id = f"whatsapp_{chat_name}_{date}"
             doc_id = "".join(c if c.isascii() and c not in ' /\\:*?"<>|' else "_" for c in raw_id)
 
-            collection.upsert(
+            await asyncio.to_thread(
+                collection.upsert,
                 ids=[doc_id],
                 documents=[content],
                 metadatas=[{
@@ -226,7 +227,7 @@ async def receive_messages(body: MessagesBody):
             safe_chat = chat_name.replace("/", "-").replace("\\", "-").replace(":", "-")
             chat_dir = raw_dir / safe_chat
             chat_dir.mkdir(parents=True, exist_ok=True)
-            (chat_dir / f"{date}.txt").write_text(content, encoding="utf-8")
+            await asyncio.to_thread((chat_dir / f"{date}.txt").write_text, content, encoding="utf-8")
 
         except Exception as e:
             errors.append(f"{group.chat_name} ({group.date}): {e}")

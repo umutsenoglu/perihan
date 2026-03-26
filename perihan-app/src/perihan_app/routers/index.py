@@ -24,7 +24,8 @@ async def index_document(title: str, content: str):
 
     for i, chunk in enumerate(chunks):
         doc_id = f"{title}_{i}"
-        collection.upsert(
+        await asyncio.to_thread(
+            collection.upsert,
             ids=[doc_id],
             documents=[chunk],
             metadatas=[{"title": title, "chunk": i}],

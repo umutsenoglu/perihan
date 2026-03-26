@@ -1,5 +1,6 @@
 from pathlib import Path
 
+import anyio
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
@@ -8,6 +9,10 @@ from perihan_app.dependencies import init_startup
 from perihan_app.routers import chat, index, drive, settings, whatsapp
 
 app = FastAPI(title="Perihan")
+
+# Raise default threadpool limit from 40 to 200 so asyncio.to_thread()
+# calls don't bottleneck under concurrent requests.
+anyio.to_thread.current_default_thread_limiter().total_tokens = 200
 
 _STATIC_DIR = Path(__file__).parent / "static"
 
