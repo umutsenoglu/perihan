@@ -142,15 +142,16 @@ async def new_cycle():
 
 
 @app.post("/api/cycle/{run_id}/{step}")
-async def run_cycle_step(run_id: int, step: str):
+async def run_cycle_step(run_id: int, step: str, only_low_scores: bool = False):
     """Start an improve cycle step. Returns SSE stream."""
+    print(f"[DEBUG] run_cycle_step: step={step}, only_low_scores={only_low_scores}", flush=True)
     run = get_run(run_id)
     if not run:
         return JSONResponse({"error": "Cycle not found"}, status_code=404)
 
     generators = {
         "index": lambda: run_index(),
-        "perihan": lambda: run_perihan_eval(),
+        "perihan": lambda: run_perihan_eval(only_low_scores=only_low_scores),
         "report": lambda: run_report(),
     }
 

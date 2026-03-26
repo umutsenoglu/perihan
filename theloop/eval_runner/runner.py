@@ -316,7 +316,7 @@ async def run_benchmark(only_ids: list[str] | None = None):
     print_summary(results, "benchmark")
 
 
-async def run_perihan(only_ids: list[str] | None = None):
+async def run_perihan(only_ids: list[str] | None = None, only_low_scores: bool = False):
     """Run Perihan eval: only questions that have benchmark scores.
     Always re-runs — overwrites previous perihan scores.
     Runs up to 5 questions concurrently."""
@@ -329,6 +329,14 @@ async def run_perihan(only_ids: list[str] | None = None):
     # Only questions with benchmark scores
     benchmarked_ids = {qid for qid, r in results.items() if "benchmark" in r}
     questions = [q for q in questions if q["id"] in benchmarked_ids]
+
+    # Filter to only low-scoring questions (0 or 1) from previous Perihan eval
+    if only_low_scores:
+        low_ids = {qid for qid, r in results.items()
+                   if r.get("perihan", {}).get("score", 2) < 2}
+        before = len(questions)
+        questions = [q for q in questions if q["id"] in low_ids]
+        log(f"Low-scores filter: {len(questions)} of {before} questions have score 0 or 1")
 
     if not questions:
         log("No benchmarked questions found. Run 'benchmark' mode first.", "ERR")
@@ -450,20 +458,22 @@ def main():
     args = [a for a in sys.argv[1:]]
     if not args:
         print("  Usage:")
-        print("    python runner.py benchmark          # score Gemini with raw docs (skips done)")
-        print("    python runner.py perihan            # score Perihan RAG (always re-runs)")
-        print("    python runner.py benchmark Q0001    # specific questions")
-        print("    python runner.py report             # side-by-side report")
+        print("    python runner.py benchmark              # score Gemini with raw docs (skips done)")
+        print("    python runner.py perihan                # score Perihan RAG (always re-runs)")
+        print("    python runner.py perihan --low-scores   # re-run only questions scored 0 or 1")
+        print("    python runner.py benchmark Q0001        # specific questions")
+        print("    python runner.py report                 # side-by-side report")
         sys.exit(0)
 
     mode = args[0].lower()
-    only_ids = [a.upper() for a in args[1:]] or None
+    low_scores = "--low-scores" in args
+    only_ids = [a.upper() for a in args[1:] if not a.startswith("--")] or None
 
     try:
         if mode == "benchmark":
             asyncio.run(run_benchmark(only_ids))
         elif mode == "perihan":
-            asyncio.run(run_perihan(only_ids))
+            asyncio.run(run_perihan(only_ids, only_low_scores=low_scores))
         elif mode == "report":
             results = load_results()
             if not results:

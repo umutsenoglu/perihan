@@ -187,13 +187,15 @@ async def run_benchmark():
 # Step 5: Evaluate Perihan
 # ---------------------------------------------------------------------------
 
-async def run_perihan_eval():
+async def run_perihan_eval(only_low_scores: bool = False):
     """Run eval_runner perihan mode."""
     if not await check_perihan():
         yield {"type": "error", "text": "Perihan server not running at localhost:8000"}
         return
 
     cmd = [PYTHON, "runner.py", "perihan"]
+    if only_low_scores:
+        cmd.append("--low-scores")
     async for event in _run_subprocess("perihan", cmd, str(THELOOP_DIR / "eval_runner")):
         yield event
 

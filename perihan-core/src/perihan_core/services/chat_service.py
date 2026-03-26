@@ -64,7 +64,7 @@ def drive_fallback_search(
                 break
             content = drive_read_content(drive_svc, f["id"], f["name"], f["mimeType"])
             if content and len(content.strip()) >= 10:
-                docs.append(content[:3000])
+                docs.append(content[:5000])
                 metas.append(
                     {
                         "title": f["name"],
@@ -270,7 +270,7 @@ async def rag_query(question: str, use_drive: bool = True, deep_think: bool = Fa
     rag_start = start_time
     where = None if use_drive else {"source": {"$ne": "gdrive"}}
     docs, metas, search_debug = await asyncio.to_thread(
-        hybrid_search, question, n_results=15, where=where, collection=collection
+        hybrid_search, question, n_results=20, where=where, collection=collection
     )
 
     # Google Drive native search fallback — searches actual file content, not just indexed summaries
@@ -345,18 +345,18 @@ async def rag_query(question: str, use_drive: bool = True, deep_think: bool = Fa
                         pos = idx + len(term)
 
                 if match_positions:
-                    # Merge overlapping windows (400 chars before and after each match)
+                    # Merge overlapping windows (600 chars before and after each match)
                     match_positions.sort()
                     windows = []
                     for pos in match_positions:
-                        start = max(0, pos - 400)
-                        end = min(len(doc), pos + 400)
+                        start = max(0, pos - 600)
+                        end = min(len(doc), pos + 600)
                         if windows and start <= windows[-1][1]:
                             windows[-1] = (windows[-1][0], max(windows[-1][1], end))
                         else:
                             windows.append((start, end))
                     snippets = []
-                    for start, end in windows[:3]:  # max 3 windows
+                    for start, end in windows[:5]:  # max 5 windows
                         snippet = doc[start:end].strip()
                         if start > 0:
                             snippet = "..." + snippet
@@ -365,7 +365,7 @@ async def rag_query(question: str, use_drive: bool = True, deep_think: bool = Fa
                         snippets.append(snippet)
                     focused = "\n\n".join(snippets)
                 else:
-                    focused = doc[:600]
+                    focused = doc[:800]
 
             labeled_chunks.append(f"=== SOURCE: {title} ===\n{focused}")
         context = "\n\n".join(labeled_chunks)
@@ -416,6 +416,13 @@ In WhatsApp chat logs, "Me" is the user (Umut). Speakers labeled "Unknown" can o
 In MSN Messenger chat logs (from hatira/ folders), "umut" or "(li)umut(li)" is also the user. All indexed documents — WhatsApp chats, MSN logs, trainer files — belong to the same person.
 WhatsApp chat names may be phone numbers (e.g. "905058540590"). These are system-generated identifiers, NOT personal contact information. Never reveal or infer someone's phone number from a chat identifier. If asked for a phone number, say you do not have that information.
 The indexed data contains both English and Turkish content. Match concepts across languages (e.g. "Noel" = "Christmas", "yeni yıl" = "New Year"). When listing items (groups, people, events), scan ALL provided documents thoroughly — do not stop after finding a few matches.
+
+ANSWERING RULES:
+- For questions about evolution, progression, or timeline: synthesize information from ALL provided documents chronologically. Do not stop after finding the first relevant document — trace the full timeline from earliest to most recent.
+- For questions about a person's current state (e.g. "who is X's doctor?"): prefer the MOST RECENT document when multiple documents give different answers.
+- When multiple documents contain related but different facts, combine them into a comprehensive answer. More detail from the documents is always better than less.
+- When asked how something might influence or affect something else, use your general knowledge combined with the specific facts in the documents to provide a reasoned answer. Do NOT refuse to answer inference questions — if the documents contain relevant facts, use them to reason.
+- When documents contain medical records across time, track how treatments, medications, and conditions evolved — note what was tried, what worked, what was discontinued, and why.
 
 IMPORTANT: Start your response with [CONFIDENT] if the documents contain specific, relevant information that answers the question. Start with [UNCERTAIN] if:
 - The documents do not contain the answer, OR

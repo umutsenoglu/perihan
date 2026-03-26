@@ -404,6 +404,15 @@ function showStepDetail(stepId) {
             <button class="btn btn-start" onclick="startStep('generate_qa')" ${!canRun ? 'disabled' : ''}>Start</button>
             <button class="btn btn-stop" onclick="stopStep('generate_qa')" ${!isRunning ? 'disabled' : ''}>Stop</button>
         `;
+    } else if (stepId === 'perihan') {
+        controls.innerHTML = `
+            <label style="display:inline-flex;align-items:center;gap:6px;color:#ccc;font-size:13px;cursor:pointer">
+                <input type="checkbox" id="perihan-low-scores"> Only low scores (0-1)
+            </label>
+            <button class="btn btn-start" onclick="startStep('perihan')" ${!canRun ? 'disabled' : ''}>Start</button>
+            <button class="btn btn-stop" onclick="stopStep('perihan')" ${!isRunning ? 'disabled' : ''}>Stop</button>
+            <button class="btn btn-skip" onclick="skipStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Skip</button>
+        `;
     } else if (stepId === 'report') {
         controls.innerHTML = `
             <button class="btn btn-start" onclick="startStep('report')" ${!canRun ? 'disabled' : ''}>Generate</button>
@@ -449,6 +458,11 @@ async function newCycle() {
 async function startStep(stepId) {
     const isBenchmark = BENCHMARK_IDS.has(stepId);
 
+    // Capture UI state BEFORE any async calls or re-renders that may destroy DOM elements
+    const lowScoresChecked = document.getElementById('perihan-low-scores')?.checked || false;
+    const collectCategory = document.getElementById('collect-category')?.value || 'all';
+    const qaStrategy = document.getElementById('qa-strategy')?.value || 'all';
+
     // For improve steps, auto-create cycle if needed
     if (!isBenchmark && !currentCycle) {
         await newCycle();
@@ -465,14 +479,15 @@ async function startStep(stepId) {
     if (isBenchmark) {
         url = `/api/benchmark/${stepId}`;
         if (stepId === 'collect') {
-            const cat = document.getElementById('collect-category')?.value || 'all';
-            params.set('category', cat);
+            params.set('category', collectCategory);
         } else if (stepId === 'generate_qa') {
-            const strat = document.getElementById('qa-strategy')?.value || 'all';
-            params.set('strategy', strat);
+            params.set('strategy', qaStrategy);
         }
     } else {
         url = `/api/cycle/${currentCycle.id}/${stepId}`;
+        if (stepId === 'perihan' && lowScoresChecked) {
+            params.set('only_low_scores', 'true');
+        }
     }
 
     if (params.toString()) url += '?' + params.toString();
@@ -485,6 +500,10 @@ async function startStep(stepId) {
     }
     updateLoop();
     showStepDetail(stepId);
+
+    // Restore checkbox states after re-render
+    const lowScoresEl = document.getElementById('perihan-low-scores');
+    if (lowScoresEl) lowScoresEl.checked = lowScoresChecked;
 
     appendLog(`Starting ${stepId}...`, 'ok');
 
