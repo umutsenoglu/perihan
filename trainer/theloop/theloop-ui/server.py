@@ -88,8 +88,13 @@ async def sse_stream(step_name: str, generator, run_id: int = None, is_benchmark
 # ---------------------------------------------------------------------------
 
 @app.get("/", response_class=HTMLResponse)
-async def dashboard():
-    return (STATIC_DIR / "index.html").read_text(encoding="utf-8")
+async def benchmark_page():
+    return (STATIC_DIR / "benchmark.html").read_text(encoding="utf-8")
+
+
+@app.get("/perihan", response_class=HTMLResponse)
+async def perihan_page():
+    return (STATIC_DIR / "perihan.html").read_text(encoding="utf-8")
 
 
 @app.get("/api/status")

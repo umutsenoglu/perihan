@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TheLoop — Benchmark</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0a0b10; color: #e0e0e0; min-height: 100vh; }
+
+    .header { text-align: center; padding: 20px 0 0; }
+    .header h1 { font-size: 24px; color: #fff; letter-spacing: 2px; }
+    .header .sub { font-size: 12px; color: #555; margin-top: 4px; }
+
+    /* Navigation tabs */
+    .nav { display: flex; justify-content: center; gap: 0; margin: 12px auto 0; width: fit-content; border-radius: 6px; overflow: hidden; }
+    .nav a {
+        padding: 8px 28px; font-size: 13px; font-weight: 600; text-decoration: none;
+        background: #1a1b26; color: #888; border: 1px solid #2a2a3a; transition: all 0.2s;
+    }
+    .nav a:first-child { border-radius: 6px 0 0 6px; }
+    .nav a:last-child { border-radius: 0 6px 6px 0; }
+    .nav a:hover { color: #ccc; }
+    .nav a.active { background: #4fc3f7; color: #000; border-color: #4fc3f7; }
+
+    .main { display: flex; gap: 20px; padding: 10px 24px; height: calc(100vh - 110px); }
+    .loops-panel { flex: 0 0 360px; display: flex; flex-direction: column; align-items: center; }
+    .detail-panel { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+    .circle-group { display: flex; flex-direction: column; align-items: center; margin-top: 20px; }
+    .circle-title { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; color: #4fc3f7; }
+
+    .loop-circle { position: relative; }
+    .loop-circle.circle-3 { width: 300px; height: 300px; }
+    .loop-svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .loop-center {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .loop-center .cost { font-size: 20px; font-weight: 700; color: #4fc3f7; }
+    .loop-center .cost-label { font-size: 10px; color: #666; }
+
+    .step-node {
+        position: absolute; width: 72px; height: 72px; border-radius: 50%;
+        background: #1a1b26; border: 2px solid #2a2a3a;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        cursor: pointer; transition: all 0.3s; z-index: 2;
+        transform: translate(-50%, -50%);
+    }
+    .step-node:hover { border-color: #4fc3f7; }
+    .step-node.active { border-color: #4fc3f7; box-shadow: 0 0 16px rgba(79,195,247,0.3); }
+    .step-node.running { border-color: #ffb74d; animation: pulse 1.5s infinite; }
+    .step-node.done { border-color: #81c784; }
+    .step-node.error { border-color: #e57373; }
+    .step-node .icon { font-size: 20px; }
+    .step-node .label { font-size: 9px; color: #888; margin-top: 2px; text-align: center; line-height: 1.1; }
+    .step-node .status-dot {
+        position: absolute; top: 4px; right: 4px; width: 8px; height: 8px;
+        border-radius: 50%; background: #333;
+    }
+    .step-node.running .status-dot { background: #ffb74d; }
+    .step-node.done .status-dot { background: #81c784; }
+    .step-node.error .status-dot { background: #e57373; }
+
+    @keyframes pulse {
+        0%, 100% { box-shadow: 0 0 8px rgba(255,183,77,0.3); }
+        50% { box-shadow: 0 0 20px rgba(255,183,77,0.5); }
+    }
+
+    .loop-arrow { stroke: #2a2a3a; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .loop-arrow.done { stroke: #81c784; }
+
+    /* Stats */
+    .stats-bar { display: flex; gap: 16px; margin-top: 20px; }
+    .stat-box { text-align: center; background: #1a1b26; border-radius: 6px; padding: 10px 16px; }
+    .stat-box .val { font-size: 18px; font-weight: 700; color: #4fc3f7; }
+    .stat-box .lbl { font-size: 10px; color: #666; }
+
+    /* Detail panel */
+    .detail-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: #1a1b26; border-radius: 8px 8px 0 0; }
+    .detail-header h2 { font-size: 16px; color: #fff; }
+    .detail-header .step-info { font-size: 12px; color: #888; }
+    .detail-controls { display: flex; gap: 8px; padding: 10px 16px; background: #151620; flex-wrap: wrap; }
+    .detail-controls select, .detail-controls input { background: #1a1b26; border: 1px solid #2a2a3a; color: #ccc; padding: 6px 10px; border-radius: 4px; font-size: 13px; }
+    .detail-controls .btn { padding: 6px 16px; border-radius: 4px; border: none; cursor: pointer; font-size: 13px; font-weight: 600; }
+    .btn-start { background: #22c55e; color: #000; }
+    .btn-start:hover { background: #16a34a; }
+    .btn-stop { background: #e57373; color: #000; }
+    .btn-stop:hover { background: #c62828; }
+
+    .detail-log {
+        flex: 1; overflow-y: auto; background: #0d0e14; padding: 10px 16px;
+        font-family: 'Cascadia Code', 'Consolas', monospace; font-size: 12px;
+        border-radius: 0 0 8px 8px; line-height: 1.6;
+    }
+    .detail-log .log-line { color: #888; }
+    .detail-log .log-line .time { color: #555; }
+    .detail-log .log-line.error { color: #e57373; }
+    .detail-log .log-line.ok { color: #81c784; }
+
+    .detail-cost { padding: 8px 16px; background: #151620; font-size: 12px; color: #888; display: flex; gap: 16px; }
+    .detail-cost .cost-val { color: #4fc3f7; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>THE LOOP</h1>
+    <div class="sub">Benchmark baseline, then iterate on Perihan</div>
+</div>
+
+<div class="nav">
+    <a href="/" class="active">Benchmark</a>
+    <a href="/perihan">Perihan</a>
+</div>
+
+<div class="main">
+    <div class="loops-panel">
+        <div class="circle-group">
+            <div class="circle-title">Benchmark</div>
+            <div class="loop-circle circle-3" id="circle-benchmark">
+                <svg class="loop-svg" viewBox="0 0 300 300">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                            <polygon points="0 0, 8 3, 0 6" fill="#2a2a3a"/>
+                        </marker>
+                        <marker id="arrowhead-done" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                            <polygon points="0 0, 8 3, 0 6" fill="#81c784"/>
+                        </marker>
+                    </defs>
+                    <g id="arrows-benchmark"></g>
+                </svg>
+                <div class="loop-center">
+                    <div class="cost" id="benchmark-cost">$0.00</div>
+                    <div class="cost-label">benchmark cost</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-box">
+                <div class="val" id="stat-files">-</div>
+                <div class="lbl">Collector files</div>
+            </div>
+            <div class="stat-box">
+                <div class="val" id="stat-qa">-</div>
+                <div class="lbl">QA questions</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail-panel" id="detail-panel">
+        <div class="detail-header">
+            <h2 id="detail-title">Select a step</h2>
+            <span class="step-info" id="detail-info"></span>
+        </div>
+        <div class="detail-controls" id="detail-controls"></div>
+        <div class="detail-cost" id="detail-cost" style="display:none">
+            <span>Cost: <span class="cost-val" id="step-cost">$0.00</span></span>
+            <span>Tokens: <span id="step-tokens">-</span></span>
+        </div>
+        <div class="detail-log" id="detail-log">
+            <div class="log-line" style="color:#555">Click a step in the circle to begin</div>
+        </div>
+    </div>
+</div>
+
+<script>
+const STEPS = [
+    { id: 'collect',     label: 'Collect',      icon: '1' },
+    { id: 'generate_qa', label: 'Generate\nQA', icon: '2' },
+    { id: 'benchmark',   label: 'Benchmark',    icon: '3' },
+];
+
+let benchmarkState = {};
+let selectedStep = null;
+
+function circlePositions(steps, cx, cy, r) {
+    return steps.map((s, i) => {
+        const angle = (i / steps.length) * Math.PI * 2 - Math.PI / 2;
+        return { x: cx + r * Math.cos(angle), y: cy + r * Math.sin(angle) };
+    });
+}
+
+const positions = circlePositions(STEPS, 150, 155, 100);
+
+function initCircle() {
+    const circle = document.getElementById('circle-benchmark');
+    circle.querySelectorAll('.step-node').forEach(n => n.remove());
+
+    STEPS.forEach((step, i) => {
+        const node = document.createElement('div');
+        node.className = 'step-node';
+        node.id = `node-${step.id}`;
+        node.style.left = positions[i].x + 'px';
+        node.style.top = positions[i].y + 'px';
+        node.innerHTML = `
+            <div class="status-dot"></div>
+            <div class="icon">${step.icon}</div>
+            <div class="label">${step.label}</div>
+        `;
+        node.onclick = () => selectStep(step.id);
+        circle.appendChild(node);
+    });
+
+    const arrowsG = document.getElementById('arrows-benchmark');
+    arrowsG.innerHTML = '';
+    for (let i = 0; i < STEPS.length; i++) {
+        const j = (i + 1) % STEPS.length;
+        const from = positions[i], to = positions[j];
+        const dx = to.x - from.x, dy = to.y - from.y;
+        const dist = Math.sqrt(dx*dx + dy*dy);
+        const nx = dx/dist, ny = dy/dist;
+
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', from.x + nx * 40);
+        line.setAttribute('y1', from.y + ny * 40);
+        line.setAttribute('x2', to.x - nx * 40);
+        line.setAttribute('y2', to.y - ny * 40);
+        line.setAttribute('class', 'loop-arrow');
+        line.id = `arrow-${STEPS[i].id}`;
+        arrowsG.appendChild(line);
+    }
+}
+
+function updateLoop() {
+    const cost = benchmarkState.total_cost || 0;
+    document.getElementById('benchmark-cost').textContent = `$${cost.toFixed(4)}`;
+
+    STEPS.forEach(step => {
+        const node = document.getElementById(`node-${step.id}`);
+        if (!node) return;
+        const data = benchmarkState[step.id] || {};
+        node.className = 'step-node';
+        if (step.id === selectedStep) node.classList.add('active');
+        if (data.status === 'running') node.classList.add('running');
+        else if (data.status === 'done') node.classList.add('done');
+        else if (data.status === 'error') node.classList.add('error');
+
+        const arrow = document.getElementById(`arrow-${step.id}`);
+        if (arrow && data.status === 'done') {
+            arrow.classList.add('done');
+            arrow.setAttribute('marker-end', 'url(#arrowhead-done)');
+        } else if (arrow) {
+            arrow.classList.remove('done');
+            arrow.setAttribute('marker-end', 'url(#arrowhead)');
+        }
+    });
+}
+
+function selectStep(stepId) {
+    selectedStep = stepId;
+    updateLoop();
+    showStepDetail(stepId);
+}
+
+function showStepDetail(stepId) {
+    const step = STEPS.find(s => s.id === stepId);
+    if (!step) return;
+    const data = benchmarkState[stepId] || {};
+
+    document.getElementById('detail-title').textContent = step.label.replace('\n', ' ');
+
+    let info = 'Benchmark';
+    if (data.started) info += ` | Started: ${new Date(data.started).toLocaleTimeString()}`;
+    if (data.finished) info += ` | Finished: ${new Date(data.finished).toLocaleTimeString()}`;
+    if (data.cost) info += ` | Cost: $${data.cost.toFixed(4)}`;
+    document.getElementById('detail-info').textContent = info;
+
+    const controls = document.getElementById('detail-controls');
+    const isRunning = data.status === 'running';
+    const canRun = !isRunning;
+
+    if (stepId === 'collect') {
+        controls.innerHTML = `
+            <select id="collect-category">
+                <option value="all">All categories</option>
+                <option value="knowledge">Knowledge</option>
+                <option value="medical">Medical</option>
+                <option value="messaging">Messaging</option>
+                <option value="legal">Legal</option>
+                <option value="finance">Finance</option>
+                <option value="personal">Personal</option>
+                <option value="calendar">Calendar</option>
+                <option value="trello">Trello</option>
+            </select>
+            <button class="btn btn-start" onclick="startStep('collect')" ${!canRun ? 'disabled' : ''}>Start</button>
+            <button class="btn btn-stop" onclick="stopStep('collect')" ${!isRunning ? 'disabled' : ''}>Stop</button>
+        `;
+    } else if (stepId === 'generate_qa') {
+        controls.innerHTML = `
+            <select id="qa-strategy">
+                <option value="all">All strategies</option>
+                <option value="single_doc">Single doc</option>
+                <option value="same_category">Same category</option>
+                <option value="cross_storyline">Cross storyline</option>
+            </select>
+            <button class="btn btn-start" onclick="startStep('generate_qa')" ${!canRun ? 'disabled' : ''}>Start</button>
+            <button class="btn btn-stop" onclick="stopStep('generate_qa')" ${!isRunning ? 'disabled' : ''}>Stop</button>
+        `;
+    } else {
+        controls.innerHTML = `
+            <button class="btn btn-start" onclick="startStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Start</button>
+            <button class="btn btn-stop" onclick="stopStep('${stepId}')" ${!isRunning ? 'disabled' : ''}>Stop</button>
+        `;
+    }
+
+    document.getElementById('detail-cost').style.display = '';
+}
+
+async function startStep(stepId) {
+    const collectCategory = document.getElementById('collect-category')?.value || 'all';
+    const qaStrategy = document.getElementById('qa-strategy')?.value || 'all';
+
+    const log = document.getElementById('detail-log');
+    log.innerHTML = '';
+    document.getElementById('step-cost').textContent = '$0.00';
+    document.getElementById('step-tokens').textContent = '-';
+
+    let url = `/api/benchmark/${stepId}`;
+    const params = new URLSearchParams();
+    if (stepId === 'collect') params.set('category', collectCategory);
+    else if (stepId === 'generate_qa') params.set('strategy', qaStrategy);
+    if (params.toString()) url += '?' + params.toString();
+
+    benchmarkState[stepId] = { ...(benchmarkState[stepId] || {}), status: 'running' };
+    updateLoop();
+    showStepDetail(stepId);
+
+    appendLog(`Starting ${stepId}...`, 'ok');
+
+    try {
+        const resp = await fetch(url, { method: 'POST' });
+        if (!resp.ok) {
+            appendLog(`Server error ${resp.status}: ${await resp.text()}`, 'error');
+            return;
+        }
+
+        const reader = resp.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            buffer += decoder.decode(value, { stream: true });
+            const parts = buffer.split('\n\n');
+            buffer = parts.pop() || '';
+
+            for (const part of parts) {
+                if (!part.startsWith('data: ')) continue;
+                try {
+                    const event = JSON.parse(part.slice(6));
+                    handleEvent(stepId, event);
+                } catch (e) { console.warn('Parse error:', e, part); }
+            }
+        }
+    } catch (err) {
+        appendLog('Connection error: ' + err.message, 'error');
+    }
+
+    await refreshStatus();
+    updateLoop();
+    showStepDetail(stepId);
+}
+
+function handleEvent(stepId, event) {
+    if (event.type === 'log') appendLog(event.text, event.text?.includes('Error') ? 'error' : '');
+    else if (event.type === 'error') appendLog(event.text, 'error');
+    else if (event.type === 'exit') appendLog(`Process exited with code ${event.code}`, event.code === 0 ? 'ok' : 'error');
+    else if (['file_done', 'complete', 'progress'].includes(event.type) && event.text) appendLog(event.text);
+    else if (event.type === 'step_complete') appendLog(`Step ${event.step}: ${event.status}`, event.status === 'done' ? 'ok' : 'error');
+
+    if (event.total_cost !== undefined) document.getElementById('step-cost').textContent = `$${event.total_cost.toFixed(4)}`;
+    if (event.total_input_tokens !== undefined) {
+        document.getElementById('step-tokens').textContent =
+            `${event.total_input_tokens.toLocaleString()} in / ${(event.total_output_tokens||0).toLocaleString()} out`;
+    }
+}
+
+function appendLog(text, cls) {
+    const log = document.getElementById('detail-log');
+    const line = document.createElement('div');
+    line.className = 'log-line' + (cls ? ' ' + cls : '');
+    const time = new Date().toLocaleTimeString();
+    line.innerHTML = `<span class="time">${time}</span> ${text.replace(/</g, '&lt;')}`;
+    log.appendChild(line);
+    log.scrollTop = log.scrollHeight;
+}
+
+async function stopStep(stepId) {
+    await fetch(`/api/stop/${stepId}`, { method: 'POST' });
+    appendLog('Stop requested', 'error');
+}
+
+async function refreshStatus() {
+    const data = await (await fetch('/api/status')).json();
+    benchmarkState = data.benchmark || {};
+    document.getElementById('stat-files').textContent = data.collector_files ?? '-';
+    document.getElementById('stat-qa').textContent = data.qa_count ?? '-';
+}
+
+// Init
+initCircle();
+refreshStatus().then(() => {
+    updateLoop();
+    selectStep('collect');
+});
+</script>
+</body>
+</html>

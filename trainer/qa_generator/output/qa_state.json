@@ -657,13 +657,5 @@
       "completed_at": "2026-03-19T17:18:31.869922"
     }
   },
-  "in_progress": {
-    "hash": "cbaf912b3d1781db",
-    "strategy": "single_doc",
-    "files": [
-      "personal/personal_grocery_list_20250906_341.txt"
-    ],
-    "storyline": null,
-    "category": "personal"
-  }
+  "in_progress": null
 }
