@@ -5,5 +5,5 @@ GOOGLE_SCOPES = [
     "https://www.googleapis.com/auth/drive.readonly",
     "https://www.googleapis.com/auth/gmail.readonly",
 ]
-GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.0-flash"]
+GEMINI_MODELS = ["gemini-3.0-flash", "gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash"]
 CHUNK_SIZE = 500

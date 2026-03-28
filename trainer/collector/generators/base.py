@@ -9,12 +9,12 @@ from datetime import datetime, timedelta
 
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent"
 
-# Gemini 2.5 Flash pricing
-_PRICE_INPUT = 0.15 / 1_000_000
-_PRICE_OUTPUT = 0.60 / 1_000_000
-_PRICE_THINKING = 3.50 / 1_000_000
+# Gemini 2.5 Flash Lite pricing
+_PRICE_INPUT = 0.10 / 1_000_000
+_PRICE_OUTPUT = 0.40 / 1_000_000
+_PRICE_THINKING = 0.0 / 1_000_000
 
 # Running cost totals
 total_cost = 0.0

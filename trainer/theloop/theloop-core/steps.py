@@ -259,6 +259,15 @@ def get_collector_file_count() -> int:
         return 0
 
 
+def clear_eval_results():
+    """Delete eval_results.json so benchmark can start from scratch."""
+    results_file = TRAINER_DIR / "eval_runner" / "output" / "eval_results.json"
+    if results_file.exists():
+        results_file.unlink()
+        return True
+    return False
+
+
 def get_eval_summary() -> dict | None:
     """Get summary from eval_results.json."""
     results_file = TRAINER_DIR / "eval_runner" / "output" / "eval_results.json"

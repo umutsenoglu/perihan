@@ -5,10 +5,14 @@ from perihan_core.config import SUPPORTED_EXTENSIONS, CHUNK_SIZE
 from perihan_core.utils.file_reader import read_file_content
 
 
-# Gemini 2.5 Flash pricing (per token)
-_PRICE_INPUT = 0.15 / 1_000_000
-_PRICE_OUTPUT = 0.60 / 1_000_000
-_PRICE_THINKING = 3.50 / 1_000_000
+# Gemini pricing per million tokens: (input, output)
+_GEMINI_PRICING = {
+    "gemini-3.0-flash": (0.50, 3.00),
+    "gemini-2.5-flash": (0.30, 2.50),
+    "gemini-2.5-flash-lite": (0.10, 0.40),
+    "gemini-2.0-flash": (0.15, 0.60),
+}
+_DEFAULT_GEMINI_PRICE = (0.50, 3.00)  # fallback for unknown gemini models
 
 
 def _calc_llm_cost(usage, model: str = "") -> dict:
@@ -29,9 +33,9 @@ def _calc_llm_cost(usage, model: str = "") -> dict:
     is_cloud = model.startswith("gemini-") if model else False
     cost = 0.0
     if is_cloud:
-        cost = (input_tokens * _PRICE_INPUT
-                + output_tokens * _PRICE_OUTPUT
-                + thinking_tokens * _PRICE_THINKING)
+        price_in, price_out = _GEMINI_PRICING.get(model, _DEFAULT_GEMINI_PRICE)
+        cost = (input_tokens * price_in / 1_000_000
+                + (output_tokens + thinking_tokens) * price_out / 1_000_000)
 
     return {
         "input_tokens": input_tokens,

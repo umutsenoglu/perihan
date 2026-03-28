@@ -87,6 +87,8 @@
     .btn-start:hover { background: #16a34a; }
     .btn-stop { background: #e57373; color: #000; }
     .btn-stop:hover { background: #c62828; }
+    .btn-clear { background: #ffb74d; color: #000; }
+    .btn-clear:hover { background: #f59e0b; }
 
     .detail-log {
         flex: 1; overflow-y: auto; background: #0d0e14; padding: 10px 16px;
@@ -298,6 +300,12 @@ function showStepDetail(stepId) {
             <button class="btn btn-start" onclick="startStep('generate_qa')" ${!canRun ? 'disabled' : ''}>Start</button>
             <button class="btn btn-stop" onclick="stopStep('generate_qa')" ${!isRunning ? 'disabled' : ''}>Stop</button>
         `;
+    } else if (stepId === 'benchmark') {
+        controls.innerHTML = `
+            <button class="btn btn-start" onclick="startStep('benchmark')" ${!canRun ? 'disabled' : ''}>Start</button>
+            <button class="btn btn-stop" onclick="stopStep('benchmark')" ${!isRunning ? 'disabled' : ''}>Stop</button>
+            <button class="btn btn-clear" onclick="clearBenchmark()" ${isRunning ? 'disabled' : ''}>Clear Results</button>
+        `;
     } else {
         controls.innerHTML = `
             <button class="btn btn-start" onclick="startStep('${stepId}')" ${!canRun ? 'disabled' : ''}>Start</button>
@@ -386,6 +394,16 @@ function appendLog(text, cls) {
     line.innerHTML = `<span class="time">${time}</span> ${text.replace(/</g, '&lt;')}`;
     log.appendChild(line);
     log.scrollTop = log.scrollHeight;
+}
+
+async function clearBenchmark() {
+    if (!confirm('Clear all benchmark results? This cannot be undone.')) return;
+    const resp = await fetch('/api/benchmark/clear-results', { method: 'POST' });
+    const data = await resp.json();
+    appendLog(data.cleared ? 'Benchmark results cleared' : 'No results to clear', 'ok');
+    await refreshStatus();
+    updateLoop();
+    showStepDetail('benchmark');
 }
 
 async function stopStep(stepId) {

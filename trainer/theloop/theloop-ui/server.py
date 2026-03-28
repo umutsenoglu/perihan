@@ -21,7 +21,7 @@ from history import (
 from steps import (
     run_collect, run_index, run_generate_qa, run_benchmark, run_perihan_eval,
     run_report, get_report_html, stop_step, check_perihan,
-    get_qa_count, get_collector_file_count, get_eval_summary,
+    get_qa_count, get_collector_file_count, get_eval_summary, clear_eval_results,
 )
 
 app = FastAPI(title="TheLoop")
@@ -120,6 +120,13 @@ async def history():
 # ---------------------------------------------------------------------------
 # Benchmark steps (standalone, no run tracking)
 # ---------------------------------------------------------------------------
+
+@app.post("/api/benchmark/clear-results")
+async def clear_benchmark_results():
+    """Delete eval_results.json so benchmark starts from scratch."""
+    deleted = clear_eval_results()
+    return {"cleared": deleted}
+
 
 @app.post("/api/benchmark/{step}")
 async def run_benchmark_step(step: str, category: str = "all", strategy: str = "all"):

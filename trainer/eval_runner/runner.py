@@ -47,14 +47,14 @@ PERIHAN_BASE = "http://localhost:8000"
 PERIHAN_CHAT = f"{PERIHAN_BASE}/chat"
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent"
 
-JUDGE_MODEL = "gemini-2.5-flash"
+JUDGE_MODEL = "gemini-2.5-flash-lite"
 
-# Pricing (Gemini 2.5 Flash)
-PRICE_INPUT = 0.15 / 1_000_000
-PRICE_OUTPUT = 0.60 / 1_000_000
-PRICE_THINKING = 3.50 / 1_000_000
+# Pricing (Gemini 2.5 Flash Lite)
+PRICE_INPUT = 0.10 / 1_000_000
+PRICE_OUTPUT = 0.40 / 1_000_000
+PRICE_THINKING = 0.0 / 1_000_000
 
 # Running totals
 total_cost = 0.0
@@ -330,13 +330,13 @@ async def run_perihan(only_ids: list[str] | None = None, only_low_scores: bool =
     benchmarked_ids = {qid for qid, r in results.items() if "benchmark" in r}
     questions = [q for q in questions if q["id"] in benchmarked_ids]
 
-    # Filter to only low-scoring questions (0 or 1) from previous Perihan eval
+    # Filter to low-scoring (0 or 1) + unanswered questions
     if only_low_scores:
-        low_ids = {qid for qid, r in results.items()
-                   if r.get("perihan", {}).get("score", 2) < 2}
+        needs_run = {qid for qid, r in results.items()
+                     if "perihan" not in r or r["perihan"].get("score", 0) < 2}
         before = len(questions)
-        questions = [q for q in questions if q["id"] in low_ids]
-        log(f"Low-scores filter: {len(questions)} of {before} questions have score 0 or 1")
+        questions = [q for q in questions if q["id"] in needs_run]
+        log(f"Low-scores filter: {len(questions)} of {before} questions (low score + unanswered)")
 
     if not questions:
         log("No benchmarked questions found. Run 'benchmark' mode first.", "ERR")
