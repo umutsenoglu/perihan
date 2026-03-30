@@ -102,6 +102,28 @@
 
     .detail-cost { padding: 8px 16px; background: #151620; font-size: 12px; color: #888; display: flex; gap: 16px; }
     .detail-cost .cost-val { color: #4fc3f7; font-weight: 600; }
+
+    /* Model config panel */
+    .model-config { margin-top: 16px; width: 100%; }
+    .model-config-toggle {
+        font-size: 11px; color: #888; cursor: pointer; text-align: center;
+        padding: 6px; letter-spacing: 1px; text-transform: uppercase;
+    }
+    .model-config-toggle:hover { color: #4fc3f7; }
+    .model-config-body { display: none; background: #1a1b26; border-radius: 8px; padding: 12px 16px; }
+    .model-config-body.open { display: block; }
+    .model-role { margin-bottom: 10px; }
+    .model-role label { font-size: 11px; color: #888; display: block; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 1px; }
+    .model-role select {
+        width: 100%; background: #0d0e14; border: 1px solid #2a2a3a; color: #e0e0e0;
+        padding: 6px 8px; border-radius: 4px; font-size: 13px; font-family: inherit;
+    }
+    .model-role select:focus { border-color: #4fc3f7; outline: none; }
+    .model-save-row { display: flex; justify-content: flex-end; gap: 8px; margin-top: 8px; }
+    .model-save-row .btn { padding: 5px 14px; border-radius: 4px; border: none; cursor: pointer; font-size: 12px; font-weight: 600; }
+    .btn-save { background: #4fc3f7; color: #000; }
+    .btn-save:hover { background: #29b6f6; }
+    .model-feedback { font-size: 11px; color: #81c784; margin-top: 4px; text-align: right; }
 </style>
 </head>
 <body>
@@ -147,6 +169,32 @@
             <div class="stat-box">
                 <div class="val" id="stat-qa">-</div>
                 <div class="lbl">QA questions</div>
+            </div>
+        </div>
+
+        <div class="model-config">
+            <div class="model-config-toggle" onclick="toggleModelConfig()">&#9881; Model Config</div>
+            <div class="model-config-body" id="model-config-body">
+                <div class="model-role">
+                    <label>Benchmark</label>
+                    <select id="cfg-benchmark"></select>
+                </div>
+                <div class="model-role">
+                    <label>Judge</label>
+                    <select id="cfg-judge"></select>
+                </div>
+                <div class="model-role">
+                    <label>QA Generator</label>
+                    <select id="cfg-qa_generator"></select>
+                </div>
+                <div class="model-role">
+                    <label>Collector</label>
+                    <select id="cfg-collector"></select>
+                </div>
+                <div class="model-save-row">
+                    <button class="btn btn-save" onclick="saveModelConfig()">Save</button>
+                </div>
+                <div class="model-feedback" id="model-feedback"></div>
             </div>
         </div>
     </div>
@@ -418,8 +466,82 @@ async function refreshStatus() {
     document.getElementById('stat-qa').textContent = data.qa_count ?? '-';
 }
 
+// ---------------------------------------------------------------------------
+// Model config
+// ---------------------------------------------------------------------------
+
+const MODEL_ROLES = ['benchmark', 'judge', 'qa_generator', 'collector'];
+let availableModels = [];
+let trainerConfig = {};
+
+function toggleModelConfig() {
+    document.getElementById('model-config-body').classList.toggle('open');
+}
+
+async function loadModelConfig() {
+    try {
+        const [configResp, modelsResp] = await Promise.all([
+            fetch('/api/trainer-config'),
+            fetch('/api/available-models'),
+        ]);
+        trainerConfig = await configResp.json();
+        const modelsData = await modelsResp.json();
+        availableModels = modelsData.models || [];
+        populateModelDropdowns();
+    } catch (e) {
+        console.warn('Failed to load model config:', e);
+    }
+}
+
+function populateModelDropdowns() {
+    for (const role of MODEL_ROLES) {
+        const sel = document.getElementById(`cfg-${role}`);
+        if (!sel) continue;
+        sel.innerHTML = '';
+        for (const m of availableModels) {
+            const opt = document.createElement('option');
+            opt.value = JSON.stringify({model: m.name, provider: m.provider});
+            opt.textContent = m.name + (m.size_gb != null ? ` (${m.size_gb} GB)` : '') + ` [${m.provider}]`;
+            sel.appendChild(opt);
+        }
+        // Select current value
+        const current = trainerConfig[role];
+        if (current) {
+            const target = JSON.stringify({model: current.model, provider: current.provider});
+            for (const opt of sel.options) {
+                if (opt.value === target) { opt.selected = true; break; }
+            }
+        }
+    }
+}
+
+async function saveModelConfig() {
+    const body = {};
+    for (const role of MODEL_ROLES) {
+        const sel = document.getElementById(`cfg-${role}`);
+        if (sel && sel.value) {
+            body[role] = JSON.parse(sel.value);
+        }
+    }
+    try {
+        const resp = await fetch('/api/trainer-config', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(body),
+        });
+        if (resp.ok) {
+            const fb = document.getElementById('model-feedback');
+            fb.textContent = 'Saved';
+            setTimeout(() => fb.textContent = '', 2000);
+        }
+    } catch (e) {
+        alert('Failed to save: ' + e.message);
+    }
+}
+
 // Init
 initCircle();
+loadModelConfig();
 refreshStatus().then(() => {
     updateLoop();
     selectStep('collect');

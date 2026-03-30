@@ -9,9 +9,11 @@ from datetime import datetime
 from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent.parent.parent / ".env")
 
+import httpx
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "theloop-core"))
 from history import (
@@ -115,6 +117,73 @@ async def status():
 @app.get("/api/history")
 async def history():
     return load_runs()
+
+
+# ---------------------------------------------------------------------------
+# Trainer model config
+# ---------------------------------------------------------------------------
+
+TRAINER_CONFIG_FILE = Path(__file__).parent.parent.parent / "trainer_config.json"
+
+ROLES = ["benchmark", "judge", "qa_generator", "collector"]
+DEFAULT_CONFIG = {r: {"model": "phi4:14b", "provider": "ollama"} for r in ROLES}
+
+
+def _read_trainer_config() -> dict:
+    if TRAINER_CONFIG_FILE.exists():
+        try:
+            return json.loads(TRAINER_CONFIG_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return dict(DEFAULT_CONFIG)
+
+
+class TrainerConfigUpdate(BaseModel):
+    benchmark: dict | None = None
+    judge: dict | None = None
+    qa_generator: dict | None = None
+    collector: dict | None = None
+
+
+@app.get("/api/trainer-config")
+async def get_trainer_config():
+    return _read_trainer_config()
+
+
+@app.post("/api/trainer-config")
+async def update_trainer_config(body: TrainerConfigUpdate):
+    config = _read_trainer_config()
+    for role in ROLES:
+        val = getattr(body, role, None)
+        if val is not None:
+            config[role] = val
+    TRAINER_CONFIG_FILE.write_text(json.dumps(config, indent=2), encoding="utf-8")
+    return {"ok": True}
+
+
+@app.get("/api/available-models")
+async def available_models():
+    """List models from Ollama + Gemini."""
+    import os
+    models = []
+
+    # Ollama
+    ollama_host = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
+    try:
+        async with httpx.AsyncClient(timeout=5) as client:
+            resp = await client.get(f"{ollama_host}/api/tags")
+            resp.raise_for_status()
+            for m in resp.json().get("models", []):
+                models.append({"name": m["name"], "provider": "ollama", "size_gb": round(m.get("size", 0) / 1e9, 2)})
+    except Exception:
+        pass
+
+    # Gemini (if API key set)
+    if os.environ.get("GEMINI_API_KEY"):
+        for name in ["gemini-3.0-flash", "gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash"]:
+            models.append({"name": name, "provider": "gemini", "size_gb": None})
+
+    return {"models": models}
 
 
 # ---------------------------------------------------------------------------

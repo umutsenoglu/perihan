@@ -7,11 +7,13 @@ import random
 import re
 from datetime import datetime, timedelta
 
-from openai import OpenAI as _OpenAI
+import sys
+from pathlib import Path
 
-OLLAMA_BASE = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
-LLM_MODEL = "phi4:14b"
-_llm_client = _OpenAI(base_url=f"{OLLAMA_BASE}/v1", api_key="ollama")
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+from model_helper import get_model_from_env
+
+LLM_MODEL, _LLM_PROVIDER, _llm_client = get_model_from_env("collector")
 
 # Running totals
 total_input_tokens = 0

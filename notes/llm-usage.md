@@ -20,14 +20,17 @@ The user selects the model from the Settings UI. These calls use whatever model 
 |---|------|-------------|
 | 4 | `perihan-app/.../routers/index.py` | File summary generation during indexing |
 
-### Ollama phi4:14b (via OpenAI-compatible client, local)
+### Configurable from TheLoop UI (default: phi4:14b / Ollama)
 
-| # | File | What it does |
-|---|------|-------------|
-| 5 | `trainer/eval_runner/runner.py` | Benchmark — sends question + raw docs to LLM |
-| 6 | `trainer/eval_runner/runner.py` | Judge — scores responses |
-| 7 | `trainer/qa_generator/generator.py` | QA generation — creates test questions from docs |
-| 8 | `trainer/collector/generators/base.py` | Synthetic data generation — creates training content |
+Model selection is in TheLoop dashboard > Model Config panel. Config stored in `trainer/trainer_config.json`.
+Env vars (`TRAINER_<ROLE>_MODEL`, `TRAINER_<ROLE>_PROVIDER`) are passed to subprocesses by `steps.py`.
+
+| # | Role | File | What it does |
+|---|------|------|-------------|
+| 5 | benchmark | `trainer/eval_runner/runner.py` | Benchmark — sends question + raw docs to LLM |
+| 6 | judge | `trainer/eval_runner/runner.py` | Judge — scores responses |
+| 7 | qa_generator | `trainer/qa_generator/generator.py` | QA generation — creates test questions from docs |
+| 8 | collector | `trainer/collector/generators/base.py` | Synthetic data generation — creates training content |
 
 ## Model pricing
 

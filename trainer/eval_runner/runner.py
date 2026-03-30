@@ -45,9 +45,6 @@ COLLECTOR_OUTPUT_DIR = TRAINER / "collector" / "output"
 PERIHAN_BASE = "http://localhost:8000"
 PERIHAN_CHAT = f"{PERIHAN_BASE}/chat"
 
-OLLAMA_BASE = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
-LLM_MODEL = "phi4:14b"
-
 # Running totals
 total_requests = 0
 
@@ -136,20 +133,28 @@ def read_source_document(path: str) -> str | None:
 
 
 # ---------------------------------------------------------------------------
-# LLM API calls (Ollama, OpenAI-compatible)
+# LLM API calls (configured via env vars from TheLoop UI)
 # ---------------------------------------------------------------------------
 
-from openai import OpenAI as _OpenAI
-_llm_client = _OpenAI(base_url=f"{OLLAMA_BASE}/v1", api_key="ollama")
+sys.path.insert(0, str(TRAINER))
+from model_helper import get_model_from_env
+
+BENCHMARK_MODEL, BENCHMARK_PROVIDER, _benchmark_client = get_model_from_env("benchmark")
+JUDGE_MODEL, JUDGE_PROVIDER, _judge_client = get_model_from_env("judge")
+
+log(f"Benchmark model: {BENCHMARK_MODEL} ({BENCHMARK_PROVIDER})", "INFO")
+log(f"Judge model: {JUDGE_MODEL} ({JUDGE_PROVIDER})", "INFO")
 
 
-async def call_llm(prompt: str, temperature: float = 0.3) -> tuple[str, object]:
-    """Call the local LLM via Ollama and return (response_text, usage)."""
+async def call_llm(prompt: str, temperature: float = 0.3, role: str = "benchmark") -> tuple[str, object]:
+    """Call the configured LLM and return (response_text, usage)."""
     global total_requests
+    client = _benchmark_client if role == "benchmark" else _judge_client
+    model = BENCHMARK_MODEL if role == "benchmark" else JUDGE_MODEL
 
     resp = await asyncio.to_thread(
-        _llm_client.chat.completions.create,
-        model=LLM_MODEL,
+        client.chat.completions.create,
+        model=model,
         temperature=temperature,
         messages=[{"role": "user", "content": prompt}],
     )
@@ -157,7 +162,7 @@ async def call_llm(prompt: str, temperature: float = 0.3) -> tuple[str, object]:
     usage = resp.usage
     total_requests += 1
     summary = calc_tokens(usage) if usage else "no usage"
-    log(f"LLM #{total_requests}: {summary}", "COST")
+    log(f"LLM #{total_requests} ({role}): {summary}", "COST")
 
     return resp.choices[0].message.content.strip(), usage
 
@@ -179,7 +184,7 @@ async def ask_benchmark(question: str, source_docs: list[str]) -> str:
 
     documents = "\n\n---\n\n".join(doc_texts)
     prompt = BENCHMARK_PROMPT.format(documents=documents, question=question)
-    text, _ = await call_llm(prompt, temperature=0.1)
+    text, _ = await call_llm(prompt, temperature=0.1, role="benchmark")
     return text
 
 
@@ -218,7 +223,7 @@ def ask_perihan(question: str, max_retries: int = 3) -> str:
 
 async def judge(question: str, expected: str, reply: str) -> tuple[int, str]:
     prompt = JUDGE_PROMPT.format(question=question, expected=expected, reply=reply)
-    text, _ = await call_llm(prompt, temperature=0.0)
+    text, _ = await call_llm(prompt, temperature=0.0, role="judge")
     score_match = re.search(r"SCORE:\s*([012])", text)
     reason_match = re.search(r"REASON:\s*(.+)", text)
     score = int(score_match.group(1)) if score_match else 0
@@ -429,7 +434,7 @@ def main():
     args = [a for a in sys.argv[1:]]
     if not args:
         print("  Usage:")
-        print(f"    python runner.py benchmark              # score {LLM_MODEL} with raw docs (skips done)")
+        print(f"    python runner.py benchmark              # score {BENCHMARK_MODEL} with raw docs (skips done)")
         print("    python runner.py perihan                # score Perihan RAG (always re-runs)")
         print("    python runner.py perihan --low-scores   # re-run only questions scored 0 or 1")
         print("    python runner.py benchmark Q0001        # specific questions")

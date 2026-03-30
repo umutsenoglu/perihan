@@ -12,17 +12,42 @@ THELOOP_DIR = Path(__file__).resolve().parent.parent
 ROOT_DIR = THELOOP_DIR.parent
 TRAINER_DIR = THELOOP_DIR.parent
 PYTHON = sys.executable
+TRAINER_CONFIG_FILE = TRAINER_DIR / "trainer_config.json"
+
+
+def _load_trainer_config() -> dict:
+    """Read trainer_config.json."""
+    if TRAINER_CONFIG_FILE.exists():
+        try:
+            return json.loads(TRAINER_CONFIG_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def _model_env(*roles: str) -> dict[str, str]:
+    """Return env vars for the given model roles."""
+    config = _load_trainer_config()
+    env = {}
+    for role in roles:
+        rc = config.get(role, {})
+        prefix = f"TRAINER_{role.upper()}"
+        env[f"{prefix}_MODEL"] = rc.get("model", "")
+        env[f"{prefix}_PROVIDER"] = rc.get("provider", "")
+    return env
 
 # Active subprocesses (so we can cancel)
 _active_processes: dict[str, asyncio.subprocess.Process] = {}
 
 
-async def _run_subprocess(step_name: str, cmd: list[str], cwd: str):
+async def _run_subprocess(step_name: str, cmd: list[str], cwd: str, extra_env: dict[str, str] | None = None):
     """Run a command as subprocess, yielding stdout lines as events."""
     import os
     env = os.environ.copy()
     env["PYTHONUNBUFFERED"] = "1"
     env["PYTHONIOENCODING"] = "utf-8"
+    if extra_env:
+        env.update(extra_env)
     proc = await asyncio.create_subprocess_exec(
         *cmd,
         stdout=asyncio.subprocess.PIPE,
@@ -78,7 +103,7 @@ async def run_collect(category: str = "all"):
     cmd = [PYTHON, "app.py"]
     if category != "all":
         cmd.append(category)
-    async for event in _run_subprocess("collect", cmd, str(TRAINER_DIR / "collector")):
+    async for event in _run_subprocess("collect", cmd, str(TRAINER_DIR / "collector"), _model_env("collector")):
         yield event
 
 
@@ -169,7 +194,7 @@ async def run_generate_qa(strategy: str = "all"):
     cmd = [PYTHON, "runner.py"]
     if strategy != "all":
         cmd.append(strategy)
-    async for event in _run_subprocess("generate_qa", cmd, str(TRAINER_DIR / "qa_generator")):
+    async for event in _run_subprocess("generate_qa", cmd, str(TRAINER_DIR / "qa_generator"), _model_env("qa_generator")):
         yield event
 
 
@@ -180,7 +205,7 @@ async def run_generate_qa(strategy: str = "all"):
 async def run_benchmark():
     """Run eval_runner benchmark mode."""
     cmd = [PYTHON, "runner.py", "benchmark"]
-    async for event in _run_subprocess("benchmark", cmd, str(TRAINER_DIR / "eval_runner")):
+    async for event in _run_subprocess("benchmark", cmd, str(TRAINER_DIR / "eval_runner"), _model_env("benchmark", "judge")):
         yield event
 
 
@@ -197,7 +222,7 @@ async def run_perihan_eval(only_low_scores: bool = False):
     cmd = [PYTHON, "runner.py", "perihan"]
     if only_low_scores:
         cmd.append("--low-scores")
-    async for event in _run_subprocess("perihan", cmd, str(TRAINER_DIR / "eval_runner")):
+    async for event in _run_subprocess("perihan", cmd, str(TRAINER_DIR / "eval_runner"), _model_env("judge")):
         yield event
 
 
