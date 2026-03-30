@@ -11,15 +11,20 @@ The user selects the model from the Settings UI. These calls use whatever model 
 | 1 | `perihan-core/.../chat_service.py` | RAG query — main chat response |
 | 2 | `perihan-core/.../chat_service.py` | MCP tool-calling loop — agentic fallback |
 | 3 | `perihan-app/.../routers/chat.py` | Folder-scoped chat — `/chat-folder` endpoint |
-| 4 | `perihan-core/.../index_service.py` | File summary generation during indexing (background) |
 
 ## Internal (hardcoded model)
 
-These always use `gemini-2.5-flash-lite` via direct httpx calls. Not user-configurable.
+### gemini-2.5-flash (via OpenAI-compatible client)
 
 | # | File | What it does |
 |---|------|-------------|
-| 5 | `trainer/eval_runner/runner.py` | Benchmark — sends question + raw docs to Gemini |
+| 4 | `perihan-app/.../routers/index.py` | File summary generation during indexing |
+
+### Ollama phi4:14b (via OpenAI-compatible client, local)
+
+| # | File | What it does |
+|---|------|-------------|
+| 5 | `trainer/eval_runner/runner.py` | Benchmark — sends question + raw docs to LLM |
 | 6 | `trainer/eval_runner/runner.py` | Judge — scores responses |
 | 7 | `trainer/qa_generator/generator.py` | QA generation — creates test questions from docs |
 | 8 | `trainer/collector/generators/base.py` | Synthetic data generation — creates training content |

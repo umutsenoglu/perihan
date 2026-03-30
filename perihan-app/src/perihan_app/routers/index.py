@@ -3,7 +3,7 @@ import json
 from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
 
-from perihan_app.dependencies import get_collection, get_llm_client, get_current_model, get_drive, get_gmail
+from perihan_app.dependencies import get_collection, get_llm_client, get_current_model, get_drive, get_gmail, get_summary_client, SUMMARY_MODEL
 from perihan_app.config import DATA_DIR, CHUNK_SIZE
 from perihan_core.services import index_service
 
@@ -39,8 +39,8 @@ async def index_document(title: str, content: str):
 async def index_folder(folder_path: str):
     """Index all documents from a local folder recursively. Streams SSE progress events."""
     collection = get_collection()
-    llm_client = get_llm_client()
-    model = get_current_model()
+    llm_client = get_summary_client()
+    model = SUMMARY_MODEL
 
     async def stream():
         async for event in index_service.index_local_folder(
@@ -60,8 +60,8 @@ async def index_gdrive(folder_id: str = "root"):
     """Index all Google Drive files into the local VectorDB. Streams SSE progress events."""
     collection = get_collection()
     drive_svc = get_drive()
-    llm_client = get_llm_client()
-    model = get_current_model()
+    llm_client = get_summary_client()
+    model = SUMMARY_MODEL
 
     async def stream():
         async for event in index_service.index_gdrive_files(

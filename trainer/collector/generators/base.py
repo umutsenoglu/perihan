@@ -1,45 +1,35 @@
 """Base generator with shared LLM, web-fetch logic, and persona system."""
 
+import asyncio
 import os
-import httpx
 import json
 import random
 import re
 from datetime import datetime, timedelta
 
+from openai import OpenAI as _OpenAI
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent"
+OLLAMA_BASE = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
+LLM_MODEL = "phi4:14b"
+_llm_client = _OpenAI(base_url=f"{OLLAMA_BASE}/v1", api_key="ollama")
 
-# Gemini 2.5 Flash Lite pricing
-_PRICE_INPUT = 0.10 / 1_000_000
-_PRICE_OUTPUT = 0.40 / 1_000_000
-_PRICE_THINKING = 0.0 / 1_000_000
-
-# Running cost totals
-total_cost = 0.0
+# Running totals
 total_input_tokens = 0
 total_output_tokens = 0
 total_requests = 0
 
 
-def _accumulate_cost(data: dict):
-    """Extract token counts from Gemini response and accumulate cost."""
-    global total_cost, total_input_tokens, total_output_tokens, total_requests
-    usage = data.get("usageMetadata", {})
-    inp = usage.get("promptTokenCount", 0)
-    out = usage.get("candidatesTokenCount", 0)
-    think = usage.get("thoughtsTokenCount", 0)
-    cost = inp * _PRICE_INPUT + out * _PRICE_OUTPUT + think * _PRICE_THINKING
-    total_input_tokens += inp
-    total_output_tokens += out
-    total_cost += cost
+def _accumulate_usage(usage):
+    """Extract token counts from OpenAI-compatible usage and accumulate."""
+    global total_input_tokens, total_output_tokens, total_requests
+    total_input_tokens += getattr(usage, "prompt_tokens", 0) or 0
+    total_output_tokens += getattr(usage, "completion_tokens", 0) or 0
     total_requests += 1
 
 
 def get_cost_summary() -> dict:
     return {
-        "total_cost": round(total_cost, 4),
+        "total_cost": 0.0,
         "total_input_tokens": total_input_tokens,
         "total_output_tokens": total_output_tokens,
         "total_requests": total_requests,
@@ -47,64 +37,43 @@ def get_cost_summary() -> dict:
 
 
 async def llm_generate(prompt: str, temperature: float = 1.0, max_tokens: int = 8192) -> str:
-    """Call Gemini to generate text content.
-    If the response is truncated (MAX_TOKENS), automatically continues generation."""
-    if not GEMINI_API_KEY:
-        raise RuntimeError("GEMINI_API_KEY not set")
-
-    # Ensure a reasonable minimum so small sizes don't get cut off
+    """Call the local LLM via Ollama to generate text content.
+    If the response is truncated, automatically continues generation."""
     effective_tokens = max(max_tokens, 2048)
 
-    request_body = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "temperature": temperature,
-            "maxOutputTokens": effective_tokens,
-            "thinkingConfig": {"thinkingBudget": 0},
-        },
-    }
+    resp = await asyncio.to_thread(
+        _llm_client.chat.completions.create,
+        model=LLM_MODEL,
+        temperature=temperature,
+        max_tokens=effective_tokens,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    _accumulate_usage(resp.usage)
+    text = resp.choices[0].message.content.strip()
+    finish_reason = resp.choices[0].finish_reason
 
-    async with httpx.AsyncClient(timeout=300) as client:
-        resp = await client.post(
-            f"{GEMINI_URL}?key={GEMINI_API_KEY}",
-            json=request_body,
-        )
-        resp.raise_for_status()
-        data = resp.json()
-        _accumulate_cost(data)
-        candidate = data["candidates"][0]
-        text = candidate["content"]["parts"][0]["text"]
-        finish_reason = candidate.get("finishReason", "")
+    # If truncated, request a continuation (up to 2 retries)
+    if finish_reason == "length":
+        for _ in range(2):
+            continuation_prompt = (
+                prompt + "\n\n--- PARTIAL OUTPUT SO FAR (continue from where it left off) ---\n"
+                + text[-2000:]
+                + "\n--- CONTINUE WRITING FROM HERE, do not repeat what's above ---"
+            )
+            resp2 = await asyncio.to_thread(
+                _llm_client.chat.completions.create,
+                model=LLM_MODEL,
+                temperature=temperature,
+                max_tokens=effective_tokens,
+                messages=[{"role": "user", "content": continuation_prompt}],
+            )
+            _accumulate_usage(resp2.usage)
+            continuation = resp2.choices[0].message.content.strip()
+            text += "\n" + continuation
+            if resp2.choices[0].finish_reason != "length":
+                break
 
-        # If truncated, request a continuation (up to 2 retries)
-        if finish_reason == "MAX_TOKENS":
-            for _ in range(2):
-                continuation_prompt = (
-                    prompt + "\n\n--- PARTIAL OUTPUT SO FAR (continue from where it left off) ---\n"
-                    + text[-2000:]
-                    + "\n--- CONTINUE WRITING FROM HERE, do not repeat what's above ---"
-                )
-                resp2 = await client.post(
-                    f"{GEMINI_URL}?key={GEMINI_API_KEY}",
-                    json={
-                        "contents": [{"parts": [{"text": continuation_prompt}]}],
-                        "generationConfig": {
-                            "temperature": temperature,
-                            "maxOutputTokens": effective_tokens,
-                            "thinkingConfig": {"thinkingBudget": 0},
-                        },
-                    },
-                )
-                resp2.raise_for_status()
-                data2 = resp2.json()
-                _accumulate_cost(data2)
-                candidate2 = data2["candidates"][0]
-                continuation = candidate2["content"]["parts"][0]["text"]
-                text += "\n" + continuation
-                if candidate2.get("finishReason", "") != "MAX_TOKENS":
-                    break
-
-        return text
+    return text
 
 
 # Size profiles: (word_range_label, min_words, max_words, weight)

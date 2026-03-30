@@ -6,7 +6,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
 from perihan_app.config import GEMINI_MODELS, VECTORDB_PATH, DATA_DIR
-from perihan_app.dependencies import get_collection, get_gemini_api_key, get_ollama_host, reset_chroma, set_current_model
+from perihan_app.dependencies import get_collection, get_gemini_api_key, get_ollama_host, reset_chroma, set_current_model, get_deberta_qa, DEBERTA_MODEL_NAME
 
 router = APIRouter()
 
@@ -179,12 +179,19 @@ async def list_models():
         for name in GEMINI_MODELS:
             models.append({"name": name, "provider": "gemini", "size_gb": None})
 
+    # DeBERTa extractive QA (always listed — loads on first use)
+    models.append({"name": DEBERTA_MODEL_NAME, "provider": "deberta", "size_gb": 0.4})
+
     return {"models": models}
 
 
 @router.post("/model")
 async def set_model(model_name: str):
     """Set the active LLM model (Ollama or Gemini)."""
+    if model_name == DEBERTA_MODEL_NAME:
+        set_current_model(model_name)
+        return {"message": f"Model set to '{model_name}' (DeBERTa extractive QA)"}
+
     if model_name.startswith("gemini-"):
         if not get_gemini_api_key():
             raise HTTPException(

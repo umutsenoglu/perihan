@@ -1,12 +1,14 @@
-"""Core QA generation — sends document packages to Gemini and parses QA responses."""
+"""Core QA generation — sends document packages to LLM and parses QA responses."""
 
 import json
 import os
 import re
-import httpx
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent"
+from openai import OpenAI as _OpenAI
+
+OLLAMA_BASE = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
+LLM_MODEL = "phi4:14b"
+_llm_client = _OpenAI(base_url=f"{OLLAMA_BASE}/v1", api_key="ollama")
 
 MAX_RETRIES = 2
 
@@ -61,75 +63,40 @@ def _try_parse_json(raw: str) -> dict | None:
     return None
 
 
-# Gemini 2.5 Flash pricing (per token)
-PRICE_INPUT = 0.15 / 1_000_000    # $0.15 per 1M input tokens
-PRICE_OUTPUT = 0.60 / 1_000_000   # $0.60 per 1M output tokens
-PRICE_THINKING = 3.50 / 1_000_000 # $3.50 per 1M thinking tokens
-
 # Running totals
-total_cost = 0.0
 total_requests = 0
 
 
-def _calc_cost(usage: dict) -> tuple[float, str]:
-    """Calculate cost from usageMetadata. Returns (cost, summary_string)."""
-    input_tokens = usage.get("promptTokenCount", 0)
-    output_tokens = usage.get("candidatesTokenCount", 0)
-    thinking_tokens = usage.get("thoughtsTokenCount", 0)
-
-    cost = (input_tokens * PRICE_INPUT
-            + output_tokens * PRICE_OUTPUT
-            + thinking_tokens * PRICE_THINKING)
-
-    parts = [f"in={input_tokens}"]
-    if thinking_tokens:
-        parts.append(f"think={thinking_tokens}")
-    parts.append(f"out={output_tokens}")
-    parts.append(f"${cost:.4f}")
-
-    return cost, " | ".join(parts)
-
-
 async def generate_qas(prompt: str) -> list[dict]:
-    """Send a prompt to Gemini and parse the QA JSON response. Retries on failure."""
-    global total_cost, total_requests
-
-    if not GEMINI_API_KEY:
-        raise RuntimeError("GEMINI_API_KEY not set")
+    """Send a prompt to the LLM and parse the QA JSON response. Retries on failure."""
+    import asyncio
+    global total_requests
 
     last_error = None
 
     for attempt in range(1 + MAX_RETRIES):
-        async with httpx.AsyncClient(timeout=300) as client:
-            resp = await client.post(
-                f"{GEMINI_URL}?key={GEMINI_API_KEY}",
-                json={
-                    "contents": [{"parts": [{"text": prompt}]}],
-                    "generationConfig": {
-                        "temperature": 0.3,
-                        "maxOutputTokens": 32768,
-                        "responseMimeType": "application/json",
-                    },
-                },
-            )
-            resp.raise_for_status()
-            data = resp.json()
+        resp = await asyncio.to_thread(
+            _llm_client.chat.completions.create,
+            model=LLM_MODEL,
+            temperature=0.3,
+            messages=[
+                {"role": "system", "content": "You are a QA generator. Always respond with valid JSON."},
+                {"role": "user", "content": prompt},
+            ],
+        )
 
-            # Report token usage and cost
-            usage = data.get("usageMetadata", {})
-            cost, summary = _calc_cost(usage)
-            total_requests += 1
-            total_cost += cost
-            print(f"    Gemini #{total_requests}: {summary} (total: ${total_cost:.4f})")
+        total_requests += 1
+        usage = resp.usage
+        in_t = getattr(usage, "prompt_tokens", 0) or 0
+        out_t = getattr(usage, "completion_tokens", 0) or 0
+        print(f"    LLM #{total_requests}: in={in_t} | out={out_t}")
 
-            candidate = data["candidates"][0]
-            raw_text = candidate["content"]["parts"][0]["text"]
-            finish_reason = candidate.get("finishReason", "")
+        raw_text = resp.choices[0].message.content.strip()
 
-            parsed = _try_parse_json(raw_text)
-            if parsed:
-                return parsed.get("questions", [])
+        parsed = _try_parse_json(raw_text)
+        if parsed:
+            return parsed.get("questions", [])
 
-            last_error = f"JSON parse failed (finishReason={finish_reason}, len={len(raw_text)})"
+        last_error = f"JSON parse failed (len={len(raw_text)})"
 
     raise ValueError(last_error)

@@ -32,7 +32,6 @@ TRAINER = Path(__file__).resolve().parent.parent
 ROOT = TRAINER.parent
 load_dotenv(ROOT / ".env")
 
-import httpx
 import requests
 
 # ---------------------------------------------------------------------------
@@ -46,18 +45,10 @@ COLLECTOR_OUTPUT_DIR = TRAINER / "collector" / "output"
 PERIHAN_BASE = "http://localhost:8000"
 PERIHAN_CHAT = f"{PERIHAN_BASE}/chat"
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent"
-
-JUDGE_MODEL = "gemini-2.5-flash-lite"
-
-# Pricing (Gemini 2.5 Flash Lite)
-PRICE_INPUT = 0.10 / 1_000_000
-PRICE_OUTPUT = 0.40 / 1_000_000
-PRICE_THINKING = 0.0 / 1_000_000
+OLLAMA_BASE = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
+LLM_MODEL = "phi4:14b"
 
 # Running totals
-total_cost = 0.0
 total_requests = 0
 
 # ---------------------------------------------------------------------------
@@ -105,19 +96,10 @@ def log(msg: str, level: str = "INFO"):
     print(f"  {prefix} {msg}", flush=True)
 
 
-def calc_cost(usage: dict) -> tuple[float, str]:
-    input_tokens = usage.get("promptTokenCount", 0)
-    output_tokens = usage.get("candidatesTokenCount", 0)
-    thinking_tokens = usage.get("thoughtsTokenCount", 0)
-    cost = (input_tokens * PRICE_INPUT
-            + output_tokens * PRICE_OUTPUT
-            + thinking_tokens * PRICE_THINKING)
-    parts = [f"in={input_tokens}"]
-    if thinking_tokens:
-        parts.append(f"think={thinking_tokens}")
-    parts.append(f"out={output_tokens}")
-    parts.append(f"${cost:.4f}")
-    return cost, " | ".join(parts)
+def calc_tokens(usage) -> str:
+    input_tokens = getattr(usage, "prompt_tokens", 0) or 0
+    output_tokens = getattr(usage, "completion_tokens", 0) or 0
+    return f"in={input_tokens} | out={output_tokens}"
 
 
 def load_questions() -> list[dict]:
@@ -154,36 +136,30 @@ def read_source_document(path: str) -> str | None:
 
 
 # ---------------------------------------------------------------------------
-# Gemini API calls
+# LLM API calls (Ollama, OpenAI-compatible)
 # ---------------------------------------------------------------------------
 
-async def call_gemini(prompt: str, temperature: float = 0.3) -> tuple[str, dict]:
-    """Call Gemini and return (response_text, usage_metadata)."""
-    global total_cost, total_requests
+from openai import OpenAI as _OpenAI
+_llm_client = _OpenAI(base_url=f"{OLLAMA_BASE}/v1", api_key="ollama")
 
-    async with httpx.AsyncClient(timeout=300) as client:
-        resp = await client.post(
-            f"{GEMINI_URL}?key={GEMINI_API_KEY}",
-            json={
-                "contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {
-                    "temperature": temperature,
-                    "maxOutputTokens": 8192,
-                },
-            },
-        )
-        resp.raise_for_status()
-        data = resp.json()
 
-    usage = data.get("usageMetadata", {})
-    cost, summary = calc_cost(usage)
+async def call_llm(prompt: str, temperature: float = 0.3) -> tuple[str, object]:
+    """Call the local LLM via Ollama and return (response_text, usage)."""
+    global total_requests
+
+    resp = await asyncio.to_thread(
+        _llm_client.chat.completions.create,
+        model=LLM_MODEL,
+        temperature=temperature,
+        messages=[{"role": "user", "content": prompt}],
+    )
+
+    usage = resp.usage
     total_requests += 1
-    total_cost += cost
-    log(f"Gemini #{total_requests}: {summary} (total: ${total_cost:.4f})", "COST")
+    summary = calc_tokens(usage) if usage else "no usage"
+    log(f"LLM #{total_requests}: {summary}", "COST")
 
-    candidate = data["candidates"][0]
-    text = candidate["content"]["parts"][0]["text"]
-    return text, usage
+    return resp.choices[0].message.content.strip(), usage
 
 
 # ---------------------------------------------------------------------------
@@ -203,7 +179,7 @@ async def ask_benchmark(question: str, source_docs: list[str]) -> str:
 
     documents = "\n\n---\n\n".join(doc_texts)
     prompt = BENCHMARK_PROMPT.format(documents=documents, question=question)
-    text, _ = await call_gemini(prompt, temperature=0.1)
+    text, _ = await call_llm(prompt, temperature=0.1)
     return text
 
 
@@ -242,7 +218,7 @@ def ask_perihan(question: str, max_retries: int = 3) -> str:
 
 async def judge(question: str, expected: str, reply: str) -> tuple[int, str]:
     prompt = JUDGE_PROMPT.format(question=question, expected=expected, reply=reply)
-    text, _ = await call_gemini(prompt, temperature=0.0)
+    text, _ = await call_llm(prompt, temperature=0.0)
     score_match = re.search(r"SCORE:\s*([012])", text)
     reason_match = re.search(r"REASON:\s*(.+)", text)
     score = int(score_match.group(1)) if score_match else 0
@@ -255,9 +231,8 @@ async def judge(question: str, expected: str, reply: str) -> tuple[int, str]:
 # ---------------------------------------------------------------------------
 
 async def run_benchmark(only_ids: list[str] | None = None):
-    """Run benchmark: send each question + source docs to Gemini, judge the answer.
-    Skips questions that already have a benchmark score.
-    Runs up to 5 questions concurrently."""
+    """Run benchmark: send each question + source docs to LLM, judge the answer.
+    Skips questions that already have a benchmark score."""
     questions = load_questions()
     results = load_results()
 
@@ -275,7 +250,7 @@ async def run_benchmark(only_ids: list[str] | None = None):
 
     log(f"Benchmark: {len(pending)} questions to process ({len(questions) - len(pending)} already done)")
 
-    sem = asyncio.Semaphore(5)
+    sem = asyncio.Semaphore(1)
     lock = asyncio.Lock()
 
     async def process_one(q):
@@ -438,7 +413,7 @@ def print_summary(results: dict, mode: str | None = None):
         print()
         print(f"  RAG wins: {wins} | Draws: {draws} | Gemini wins: {losses}")
 
-    print(f"  Total API cost this session: ${total_cost:.4f}")
+    print(f"  Total LLM requests this session: {total_requests}")
     print("  " + "=" * 60)
     print()
 
@@ -451,14 +426,10 @@ def main():
     if sys.platform == "win32":
         sys.stdout.reconfigure(encoding="utf-8")
 
-    if not GEMINI_API_KEY:
-        print("  !! GEMINI_API_KEY not set.")
-        sys.exit(1)
-
     args = [a for a in sys.argv[1:]]
     if not args:
         print("  Usage:")
-        print("    python runner.py benchmark              # score Gemini with raw docs (skips done)")
+        print(f"    python runner.py benchmark              # score {LLM_MODEL} with raw docs (skips done)")
         print("    python runner.py perihan                # score Perihan RAG (always re-runs)")
         print("    python runner.py perihan --low-scores   # re-run only questions scored 0 or 1")
         print("    python runner.py benchmark Q0001        # specific questions")

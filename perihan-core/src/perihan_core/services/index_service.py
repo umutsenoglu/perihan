@@ -71,16 +71,13 @@ def generate_file_summary(filename: str, content: str, *, llm_client=None, model
                     "content": (
                         f"Document name: {filename}\n\n"
                         f"Content:\n{sample}\n\n"
-                        "Create a search-optimized summary. Include ALL of the following:\n"
+                        "Create a compact search-optimized summary (max 400 words). Include:\n"
                         "1. A 2-3 sentence description of what this document is about\n"
-                        "2. Every person's name mentioned, with their role or relationship if stated\n"
-                        "3. Every specific place, city, country, or location mentioned\n"
-                        "4. Every date, year, or time period mentioned\n"
-                        "5. Every key fact, event, or specific detail a user might search for\n"
-                        "6. Every company, organization, or product name\n"
-                        "7. Topics and categories\n\n"
-                        "Be exhaustive — include every specific detail, even minor ones. "
-                        "A user might search for any fact in this document."
+                        "2. People mentioned (name: role) as a comma-separated list\n"
+                        "3. Places, dates, companies, and organizations as comma-separated lists\n"
+                        "4. Key facts: one bullet per fact, keep each bullet to one sentence\n\n"
+                        "Focus on specific, searchable details (names, numbers, amounts, events). "
+                        "Skip generic descriptions and filler. Be dense, not verbose."
                     ),
                 },
             ],
@@ -528,22 +525,23 @@ async def index_gmail_threads(max_threads: int = 500, *, collection=None, gmail_
     indexed = []
     skipped = []
     errors = []
-
-    event_queue = asyncio.Queue()
-    running_tasks = set()
-    MAX_CONCURRENT = 10  # Gmail has no LLM calls, can go higher
     done_count = 0
 
-    async def _process_thread(t, task_id):
+    for t in all_threads:
         thread_id = t["id"]
         try:
-            thread_data = await asyncio.to_thread(gmail_get_thread, gmail_svc, thread_id)
+            thread_data = await asyncio.wait_for(
+                asyncio.to_thread(gmail_get_thread, gmail_svc, thread_id),
+                timeout=30,
+            )
             subject = thread_data.get("subject", "(no subject)")
             text = gmail_format_thread_text(thread_data)
 
             if len(text.strip()) < 20:
-                await event_queue.put({"type": "skip", "file": subject, "reason": "empty thread", "task_id": task_id})
-                return
+                done_count += 1
+                skipped.append({"file": subject, "reason": "empty thread"})
+                yield {"type": "skip", "file": subject, "reason": "empty thread", "done": done_count, "total": total}
+                continue
 
             # Save raw file for development/debugging
             if raw_dir is not None:
@@ -574,71 +572,15 @@ async def index_gmail_threads(max_threads: int = 500, *, collection=None, gmail_
                     }],
                 )
 
-            await event_queue.put({
-                "type": "done", "file": subject, "thread_id": thread_id,
-                "chunks": len(chunks), "task_id": task_id,
-            })
+            done_count += 1
+            indexed.append({"file": subject, "thread_id": thread_id, "chunks": len(chunks)})
+            yield {"type": "file_done", "file": subject[:60], "chunks": len(chunks), "done": done_count, "total": total}
+
         except Exception as e:
-            await event_queue.put({
-                "type": "error", "file": t.get("snippet", "")[:60],
-                "error": str(e), "task_id": task_id,
-            })
-
-    task_counter = 0
-
-    for t in all_threads:
-        # Drain completed tasks
-        while not event_queue.empty():
-            item = event_queue.get_nowait()
-            running_tasks.discard(item["task_id"])
             done_count += 1
-            name = item.get("file", "")
-            if item["type"] == "skip":
-                skipped.append({"file": name, "reason": item["reason"]})
-                yield {"type": "skip", "file": name, "reason": item["reason"], "done": done_count, "total": total}
-            elif item["type"] == "done":
-                indexed.append({"file": name, "thread_id": item["thread_id"], "chunks": item["chunks"]})
-                yield {"type": "file_done", "file": name[:60], "chunks": item["chunks"], "done": done_count, "total": total}
-            elif item["type"] == "error":
-                errors.append({"file": name, "error": item["error"]})
-                yield {"type": "file_error", "file": name, "error": item["error"], "done": done_count, "total": total}
-
-        # Wait for a slot
-        while len(running_tasks) >= MAX_CONCURRENT:
-            item = await event_queue.get()
-            running_tasks.discard(item["task_id"])
-            done_count += 1
-            name = item.get("file", "")
-            if item["type"] == "skip":
-                skipped.append({"file": name, "reason": item["reason"]})
-                yield {"type": "skip", "file": name, "reason": item["reason"], "done": done_count, "total": total}
-            elif item["type"] == "done":
-                indexed.append({"file": name, "thread_id": item["thread_id"], "chunks": item["chunks"]})
-                yield {"type": "file_done", "file": name[:60], "chunks": item["chunks"], "done": done_count, "total": total}
-            elif item["type"] == "error":
-                errors.append({"file": name, "error": item["error"]})
-                yield {"type": "file_error", "file": name, "error": item["error"], "done": done_count, "total": total}
-
-        task_counter += 1
-        tid = task_counter
-        running_tasks.add(tid)
-        asyncio.create_task(_process_thread(t, tid))
-
-    # Wait for remaining tasks
-    while running_tasks:
-        item = await event_queue.get()
-        running_tasks.discard(item["task_id"])
-        done_count += 1
-        name = item.get("file", "")
-        if item["type"] == "skip":
-            skipped.append({"file": name, "reason": item["reason"]})
-            yield {"type": "skip", "file": name, "reason": item["reason"], "done": done_count, "total": total}
-        elif item["type"] == "done":
-            indexed.append({"file": name, "thread_id": item["thread_id"], "chunks": item["chunks"]})
-            yield {"type": "file_done", "file": name[:60], "chunks": item["chunks"], "done": done_count, "total": total}
-        elif item["type"] == "error":
-            errors.append({"file": name, "error": item["error"]})
-            yield {"type": "file_error", "file": name, "error": item["error"], "done": done_count, "total": total}
+            snippet = t.get("snippet", "")[:60]
+            errors.append({"file": snippet, "error": str(e)})
+            yield {"type": "file_error", "file": snippet, "error": str(e), "done": done_count, "total": total}
 
     asyncio.create_task(asyncio.to_thread(build_global_vocab, collection))
     yield {

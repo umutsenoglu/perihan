@@ -110,8 +110,9 @@ def hybrid_search(query: str, n_results: int = 5, where: dict = None, *, collect
         a, b = cleaned_words[i], cleaned_words[i + 1]
         phrase = f"{a} {b}"
         phrase_lower = phrase.lower()
-        # Skip if both words are stopwords
-        if a.lower() in _stopwords and b.lower() in _stopwords:
+        # Skip if either word is a stopword — phrases like "How many",
+        # "work at", "are there" are question fragments, not content terms
+        if a.lower() in _stopwords or b.lower() in _stopwords:
             continue
         phrases.append(phrase)
         # Phrase weight: multi-word matches are far more discriminative than

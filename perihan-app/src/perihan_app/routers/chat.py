@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 
-from perihan_app.dependencies import get_current_model, get_llm_client, get_collection, get_drive, get_gmail
+from perihan_app.dependencies import get_current_model, get_llm_client, get_collection, get_drive, get_gmail, get_deberta_qa, DEBERTA_MODEL_NAME
 from perihan_app.services.log_service import append_log
 from perihan_core.services import chat_service
 from perihan_core.services.chat_service import LLMError
@@ -19,10 +19,19 @@ async def get_current_model_endpoint():
 @router.post("/chat")
 async def chat(question: str, use_drive: bool = True, deep_think: bool = False):
     """Ask a question across all documents. If deep_think=True and RAG is uncertain, falls back to MCP."""
+    model = get_current_model()
+
+    if model == DEBERTA_MODEL_NAME:
+        return await chat_service.deberta_rag_query(
+            question, use_drive=use_drive, endpoint="/chat",
+            collection=get_collection(), deberta_qa=get_deberta_qa(),
+            drive_svc=get_drive(), gmail_svc=get_gmail(), log_fn=append_log,
+        )
+
     try:
         return await chat_service.rag_query(
             question, use_drive=use_drive, deep_think=deep_think, endpoint="/chat",
-            collection=get_collection(), llm_client=get_llm_client(), model=get_current_model(),
+            collection=get_collection(), llm_client=get_llm_client(), model=model,
             drive_svc=get_drive(), gmail_svc=get_gmail(), log_fn=append_log,
         )
     except LLMError as e:

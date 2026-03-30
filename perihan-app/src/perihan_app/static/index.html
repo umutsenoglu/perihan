@@ -286,6 +286,9 @@
         .model-chip.gemini { border-color: #4285f4; }
         .model-chip.gemini .size { color: #4285f4; }
         .model-chip.gemini.active { background: #4285f4; border-color: #4285f4; }
+        .model-chip.deberta { border-color: #16a34a; }
+        .model-chip.deberta .size { color: #16a34a; }
+        .model-chip.deberta.active { background: #16a34a; border-color: #16a34a; }
 
         /* Progress bar (indexing) */
         .prog-label {
@@ -981,6 +984,12 @@
                 <div class="save-feedback" id="gemini-feedback"></div>
                 <div class="model-list" id="gemini-model-list">Loading...</div>
             </div>
+
+            <div class="card">
+                <h2>DeBERTa (Extractive QA)</h2>
+                <p style="font-size:12px;color:#94a3b8;margin:0 0 8px;">Local CPU model. Extracts answers directly from document text — no hallucination possible.</p>
+                <div class="model-list" id="deberta-model-list">Loading...</div>
+            </div>
         </div>
     </div>
 
@@ -1573,13 +1582,16 @@
         async function loadModels() {
             const ollamaEl = document.getElementById('ollama-model-list');
             const geminiEl = document.getElementById('gemini-model-list');
+            const debertaEl = document.getElementById('deberta-model-list');
             try {
                 const resp = await fetch(`${API}/models`);
                 const data = await resp.json();
                 ollamaEl.innerHTML = '';
                 geminiEl.innerHTML = '';
-                const ollamaModels = data.models.filter(m => m.provider !== 'gemini');
+                debertaEl.innerHTML = '';
+                const ollamaModels = data.models.filter(m => m.provider === 'ollama');
                 const geminiModels = data.models.filter(m => m.provider === 'gemini');
+                const debertaModels = data.models.filter(m => m.provider === 'deberta');
                 if (ollamaModels.length === 0) {
                     ollamaEl.textContent = 'No models found. Is Ollama running?';
                 } else {
@@ -1602,6 +1614,13 @@
                         geminiEl.appendChild(chip);
                     });
                 }
+                debertaModels.forEach(m => {
+                    const chip = document.createElement('div');
+                    chip.className = 'model-chip deberta' + (m.name === currentModel ? ' active' : '');
+                    chip.innerHTML = escapeHtml(m.name) + `<span class="size">${m.size_gb} GB</span>`;
+                    chip.onclick = () => setModel(m.name);
+                    debertaEl.appendChild(chip);
+                });
             } catch (err) {
                 ollamaEl.textContent = 'Error loading models: ' + err.message;
                 geminiEl.textContent = '';

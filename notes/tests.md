@@ -46,6 +46,10 @@ Who are my close friends?
 
 Who is sending most emails to me
 
+-----------
+
+I have bought some radiators. Can you list their model and BPUs? Search emails
+
 
 -----------------
 

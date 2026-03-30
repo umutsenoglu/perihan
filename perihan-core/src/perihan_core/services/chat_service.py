@@ -258,6 +258,120 @@ Follow these steps strictly:
     return {"reply": last_content, "tool_calls": tool_call_log, "mcp_iterations": mcp_iterations, "usage": total_usage}
 
 
+def _deberta_extract(question: str, context: str, tokenizer, model) -> tuple[str, float]:
+    """Run DeBERTa extractive QA on a single context. Returns (answer, score)."""
+    import torch
+    inputs = tokenizer(question, context, return_tensors="pt", truncation=True, max_length=512)
+    with torch.no_grad():
+        outputs = model(**inputs)
+    start = torch.argmax(outputs.start_logits)
+    end = torch.argmax(outputs.end_logits) + 1
+    # Empty answer check (start > end or pointing to [CLS])
+    if start >= end or start == 0:
+        return "", -999.0
+    tokens = inputs["input_ids"][0][start:end]
+    answer = tokenizer.decode(tokens, skip_special_tokens=True)
+    score = (outputs.start_logits[0][start] + outputs.end_logits[0][end - 1]).item()
+    return answer.strip(), score
+
+
+async def deberta_rag_query(question: str, use_drive: bool = True, endpoint: str = "/chat",
+                            *, collection=None, deberta_qa=None, drive_svc=None, gmail_svc=None, log_fn=None) -> dict:
+    """RAG pipeline using DeBERTa extractive QA instead of a generative LLM."""
+    from perihan_core.services.search_service import hybrid_search
+
+    if deberta_qa is None:
+        raise LLMError("DeBERTa model not available. Check transformers/torch installation.", status_code=500)
+    if collection is None:
+        raise ValueError("collection is required")
+
+    tokenizer, model = deberta_qa
+    start_time = time.perf_counter()
+
+    where = None if use_drive else {"source": {"$ne": "gdrive"}}
+    docs, metas, search_debug = await asyncio.to_thread(
+        hybrid_search, question, n_results=20, where=where, collection=collection
+    )
+
+    # Drive/Gmail fallback
+    if use_drive and drive_svc:
+        existing_ids = {m.get("file_id") for m in metas if m.get("source") == "gdrive"}
+        drive_docs, drive_metas = await asyncio.to_thread(
+            drive_fallback_search, question, existing_ids, drive_svc=drive_svc
+        )
+        docs = docs + drive_docs
+        metas = metas + drive_metas
+    if gmail_svc:
+        gmail_docs, gmail_metas = await asyncio.to_thread(
+            gmail_fallback_search, question, gmail_svc=gmail_svc
+        )
+        docs = docs + gmail_docs
+        metas = metas + gmail_metas
+
+    if not docs:
+        return {"reply": "No documents found.", "sources": [], "model": "deberta-v3-qa"}
+
+    # Run DeBERTa on each chunk, pick the best answer
+    best_answer = ""
+    best_score = -999.0
+    best_source = ""
+    all_answers = []
+
+    for doc, meta in zip(docs, metas):
+        answer, score = await asyncio.to_thread(_deberta_extract, question, doc, tokenizer, model)
+        title = meta.get("title", "unknown")
+        if answer:
+            all_answers.append({"answer": answer, "score": score, "source": title})
+            if score > best_score:
+                best_score = score
+                best_answer = answer
+                best_source = title
+
+    # Build sources
+    sources = []
+    seen = set()
+    for meta in metas:
+        title = meta.get("title", "")
+        path = meta.get("relative_path", "") or meta.get("full_path", "")
+        key = f"{title}|{path}"
+        if key not in seen:
+            seen.add(key)
+            sources.append({"title": title, "path": path})
+
+    duration_ms = round((time.perf_counter() - start_time) * 1000)
+
+    if not best_answer:
+        reply = "I could not find the answer in the indexed documents."
+    else:
+        reply = best_answer
+
+    if log_fn:
+        log_fn({
+            "endpoint": endpoint,
+            "model": "deberta-v3-qa",
+            "question": question,
+            "use_drive": use_drive,
+            "deep_think": False,
+            "rag_results": [{"title": m.get("title", ""), "source": m.get("source", "local"), "content": d[:200]} for d, m in zip(docs, metas)],
+            "llm_prompt": None,
+            "llm_response": reply,
+            "deep_think_triggered": False,
+            "mcp_iterations": [],
+            "error": None,
+            "duration_ms": duration_ms,
+            "deberta_all_answers": all_answers[:10],
+        })
+
+    return {
+        "reply": reply,
+        "sources": sources,
+        "model": "deberta-v3-qa",
+        "duration_ms": duration_ms,
+        "deberta_score": round(best_score, 2),
+        "deberta_source": best_source,
+    }
+
+
 async def rag_query(question: str, use_drive: bool = True, deep_think: bool = False, endpoint: str = "/chat",
                     *, collection=None, llm_client=None, model=None, drive_svc=None, gmail_svc=None, log_fn=None) -> dict:
     """Full RAG pipeline with optional deep-think MCP fallback."""

@@ -45,6 +45,42 @@ def get_llm_client() -> OpenAI:
     return OpenAI(base_url=f"{get_ollama_host()}/v1", api_key="ollama")
 
 
+SUMMARY_MODEL = "gemini-2.5-flash"
+
+# ---------------------------------------------------------------------------
+# DeBERTa extractive QA
+# ---------------------------------------------------------------------------
+
+DEBERTA_MODEL_NAME = "deberta-v3-qa"
+_deberta_tokenizer = None
+_deberta_model = None
+
+
+def get_deberta_qa():
+    """Lazily load DeBERTa QA model. Returns (tokenizer, model) or None if not available."""
+    global _deberta_tokenizer, _deberta_model
+    if _deberta_model is not None:
+        return _deberta_tokenizer, _deberta_model
+    try:
+        import torch
+        from transformers import AutoTokenizer, AutoModelForQuestionAnswering
+        _deberta_tokenizer = AutoTokenizer.from_pretrained("deepset/deberta-v3-large-squad2")
+        _deberta_model = AutoModelForQuestionAnswering.from_pretrained("deepset/deberta-v3-large-squad2")
+        _deberta_model.eval()
+        return _deberta_tokenizer, _deberta_model
+    except Exception:
+        return None
+
+
+def get_summary_client() -> OpenAI:
+    """Return a Gemini client pinned to SUMMARY_MODEL for indexing summaries."""
+    api_key = get_gemini_api_key()
+    if not api_key:
+        raise HTTPException(status_code=400,
+            detail="Gemini API key is not configured. Set it in Settings.")
+    return OpenAI(base_url="https://generativelanguage.googleapis.com/v1beta/openai/", api_key=api_key)
+
+
 def get_current_model() -> str:
     """Return the currently active model name."""
     return current_model
