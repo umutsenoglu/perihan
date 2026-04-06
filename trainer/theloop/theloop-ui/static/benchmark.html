@@ -275,7 +275,17 @@ function initCircle() {
 
 function updateLoop() {
     const cost = benchmarkState.total_cost || 0;
-    document.getElementById('benchmark-cost').textContent = `$${cost.toFixed(4)}`;
+    const anyPaid = MODEL_ROLES.some(r => trainerConfig[r]?.provider === 'gemini');
+    const centerCost = document.getElementById('benchmark-cost');
+    const centerLabel = document.querySelector('.cost-label');
+    if (anyPaid) {
+        centerCost.textContent = `$${cost.toFixed(4)}`;
+        centerCost.style.display = '';
+        if (centerLabel) centerLabel.style.display = '';
+    } else {
+        centerCost.style.display = 'none';
+        if (centerLabel) centerLabel.style.display = 'none';
+    }
 
     STEPS.forEach(step => {
         const node = document.getElementById(`node-${step.id}`);
@@ -361,7 +371,11 @@ function showStepDetail(stepId) {
         `;
     }
 
-    document.getElementById('detail-cost').style.display = '';
+    // Show cost bar only if step uses a paid (gemini) model
+    const stepRoles = { collect: ['collector'], generate_qa: ['qa_generator'], benchmark: ['benchmark', 'judge'] };
+    const roles = stepRoles[stepId] || [];
+    const hasPaid = roles.some(r => trainerConfig[r]?.provider === 'gemini');
+    document.getElementById('detail-cost').style.display = hasPaid ? '' : 'none';
 }
 
 async function startStep(stepId) {
@@ -370,6 +384,10 @@ async function startStep(stepId) {
 
     const log = document.getElementById('detail-log');
     log.innerHTML = '';
+    const stepRolesMap = { collect: ['collector'], generate_qa: ['qa_generator'], benchmark: ['benchmark', 'judge'] };
+    const stepRoles = stepRolesMap[stepId] || [];
+    const stepHasPaid = stepRoles.some(r => trainerConfig[r]?.provider === 'gemini');
+    document.getElementById('detail-cost').style.display = stepHasPaid ? '' : 'none';
     document.getElementById('step-cost').textContent = '$0.00';
     document.getElementById('step-tokens').textContent = '-';
 
@@ -427,7 +445,10 @@ function handleEvent(stepId, event) {
     else if (['file_done', 'complete', 'progress'].includes(event.type) && event.text) appendLog(event.text);
     else if (event.type === 'step_complete') appendLog(`Step ${event.step}: ${event.status}`, event.status === 'done' ? 'ok' : 'error');
 
-    if (event.total_cost !== undefined) document.getElementById('step-cost').textContent = `$${event.total_cost.toFixed(4)}`;
+    if (event.total_cost !== undefined && event.total_cost > 0) {
+        document.getElementById('detail-cost').style.display = '';
+        document.getElementById('step-cost').textContent = `$${event.total_cost.toFixed(4)}`;
+    }
     if (event.total_input_tokens !== undefined) {
         document.getElementById('step-tokens').textContent =
             `${event.total_input_tokens.toLocaleString()} in / ${(event.total_output_tokens||0).toLocaleString()} out`;

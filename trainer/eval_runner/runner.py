@@ -45,8 +45,33 @@ COLLECTOR_OUTPUT_DIR = TRAINER / "collector" / "output"
 PERIHAN_BASE = "http://localhost:8000"
 PERIHAN_CHAT = f"{PERIHAN_BASE}/chat"
 
-# Running totals
+# ---------------------------------------------------------------------------
+# Cost tracking
+# ---------------------------------------------------------------------------
+
+_GEMINI_PRICING = {  # (input_per_1M, output_per_1M)
+    "gemini-3.0-flash": (0.50, 3.00),
+    "gemini-2.5-flash": (0.30, 2.50),
+    "gemini-2.5-flash-lite": (0.10, 0.40),
+    "gemini-2.0-flash": (0.15, 0.60),
+}
+
 total_requests = 0
+total_input_tokens = 0
+total_output_tokens = 0
+total_cost = 0.0
+
+
+def _calc_cost(model: str, usage) -> float:
+    """Calculate cost in USD for a single LLM call. Returns 0 for local models."""
+    if not usage:
+        return 0.0
+    inp = getattr(usage, "prompt_tokens", 0) or 0
+    out = getattr(usage, "completion_tokens", 0) or 0
+    pricing = _GEMINI_PRICING.get(model)
+    if not pricing:
+        return 0.0  # Ollama = free
+    return (inp * pricing[0] + out * pricing[1]) / 1_000_000
 
 # ---------------------------------------------------------------------------
 # Prompts
@@ -142,13 +167,22 @@ from model_helper import get_model_from_env
 BENCHMARK_MODEL, BENCHMARK_PROVIDER, _benchmark_client = get_model_from_env("benchmark")
 JUDGE_MODEL, JUDGE_PROVIDER, _judge_client = get_model_from_env("judge")
 
+
+def _model_slug(name: str) -> str:
+    """Sanitize model name for use as a JSON key fragment."""
+    return name.replace(":", "-").replace("/", "-")
+
+
+BENCHMARK_LABEL = f"benchmark-{_model_slug(BENCHMARK_MODEL)}"
+
 log(f"Benchmark model: {BENCHMARK_MODEL} ({BENCHMARK_PROVIDER})", "INFO")
+log(f"Benchmark label: {BENCHMARK_LABEL}", "INFO")
 log(f"Judge model: {JUDGE_MODEL} ({JUDGE_PROVIDER})", "INFO")
 
 
 async def call_llm(prompt: str, temperature: float = 0.3, role: str = "benchmark") -> tuple[str, object]:
     """Call the configured LLM and return (response_text, usage)."""
-    global total_requests
+    global total_requests, total_input_tokens, total_output_tokens, total_cost
     client = _benchmark_client if role == "benchmark" else _judge_client
     model = BENCHMARK_MODEL if role == "benchmark" else JUDGE_MODEL
 
@@ -161,8 +195,16 @@ async def call_llm(prompt: str, temperature: float = 0.3, role: str = "benchmark
 
     usage = resp.usage
     total_requests += 1
-    summary = calc_tokens(usage) if usage else "no usage"
-    log(f"LLM #{total_requests} ({role}): {summary}", "COST")
+    inp = getattr(usage, "prompt_tokens", 0) or 0 if usage else 0
+    out = getattr(usage, "completion_tokens", 0) or 0 if usage else 0
+    total_input_tokens += inp
+    total_output_tokens += out
+    cost = _calc_cost(model, usage)
+    total_cost += cost
+    cost_str = f" ${cost:.4f}" if cost > 0 else ""
+    log(f"LLM #{total_requests} ({role}): in={inp} | out={out}{cost_str} [total: ${total_cost:.4f}]", "COST")
+    # Structured cost line for UI parsing
+    print(json.dumps({"__cost__": True, "total_cost": total_cost, "total_input_tokens": total_input_tokens, "total_output_tokens": total_output_tokens}), flush=True)
 
     return resp.choices[0].message.content.strip(), usage
 
@@ -244,16 +286,16 @@ async def run_benchmark(only_ids: list[str] | None = None):
     if only_ids:
         questions = [q for q in questions if q["id"] in only_ids]
 
-    # Skip already benchmarked
+    # Skip already benchmarked (for this specific model)
     pending = [q for q in questions if q["id"] not in results
-               or "benchmark" not in results[q["id"]]]
+               or BENCHMARK_LABEL not in results[q["id"]]]
 
     if not pending:
         log("All questions already benchmarked!", "OK")
-        print_summary(results, "benchmark")
+        print_summary(results, BENCHMARK_LABEL)
         return
 
-    log(f"Benchmark: {len(pending)} questions to process ({len(questions) - len(pending)} already done)")
+    log(f"Benchmark ({BENCHMARK_LABEL}): {len(pending)} questions to process ({len(questions) - len(pending)} already done)")
 
     sem = asyncio.Semaphore(1)
     lock = asyncio.Lock()
@@ -277,10 +319,11 @@ async def run_benchmark(only_ids: list[str] | None = None):
                         "strategy": q.get("strategy"),
                         "source_documents": q.get("source_documents", []),
                     }
-                results[qid]["benchmark"] = {
+                results[qid][BENCHMARK_LABEL] = {
                     "reply": reply,
                     "score": score,
                     "reason": reason,
+                    "model": BENCHMARK_MODEL,
                     "timestamp": datetime.now().isoformat(),
                 }
                 save_results(results)
@@ -290,10 +333,10 @@ async def run_benchmark(only_ids: list[str] | None = None):
     except KeyboardInterrupt:
         log("Interrupted — progress saved.", "INFO")
         save_results(results)
-        print_summary(results, "benchmark")
+        print_summary(results, BENCHMARK_LABEL)
         return
 
-    print_summary(results, "benchmark")
+    print_summary(results, BENCHMARK_LABEL)
 
 
 async def run_perihan(only_ids: list[str] | None = None, only_low_scores: bool = False):
@@ -306,8 +349,9 @@ async def run_perihan(only_ids: list[str] | None = None, only_low_scores: bool =
     if only_ids:
         questions = [q for q in questions if q["id"] in only_ids]
 
-    # Only questions with benchmark scores
-    benchmarked_ids = {qid for qid, r in results.items() if "benchmark" in r}
+    # Only questions with at least one benchmark score
+    benchmarked_ids = {qid for qid, r in results.items()
+                       if any(k.startswith("benchmark-") for k in r)}
     questions = [q for q in questions if q["id"] in benchmarked_ids]
 
     # Filter to low-scoring (0 or 1) + unanswered questions
@@ -364,61 +408,79 @@ async def run_perihan(only_ids: list[str] | None = None, only_low_scores: bool =
 # Report
 # ---------------------------------------------------------------------------
 
+def _find_benchmark_keys(results: dict) -> list[str]:
+    """Find all unique benchmark-* keys across all questions."""
+    keys = set()
+    for r in results.values():
+        for k in r:
+            if k.startswith("benchmark-"):
+                keys.add(k)
+    return sorted(keys)
+
+
 def print_summary(results: dict, mode: str | None = None):
     """Print score summary."""
-    benchmark_scores = []
+    benchmark_keys = _find_benchmark_keys(results)
     perihan_scores = []
-    both = []
 
     for qid, r in sorted(results.items()):
-        b = r.get("benchmark", {}).get("score")
         p = r.get("perihan", {}).get("score")
-        if b is not None:
-            benchmark_scores.append(b)
         if p is not None:
             perihan_scores.append(p)
-        if b is not None and p is not None:
-            both.append((qid, r))
 
     print()
     print("  " + "=" * 60)
 
-    if benchmark_scores:
-        total = sum(benchmark_scores)
-        max_s = len(benchmark_scores) * 2
-        pct = total / max_s * 100 if max_s else 0
-        print(f"  Gemini Benchmark: {total}/{max_s} ({pct:.1f}%) — {len(benchmark_scores)} questions")
+    for bk in benchmark_keys:
+        scores = [r.get(bk, {}).get("score") for r in results.values()]
+        scores = [s for s in scores if s is not None]
+        if scores:
+            total = sum(scores)
+            max_s = len(scores) * 2
+            pct = total / max_s * 100 if max_s else 0
+            model = bk.replace("benchmark-", "")
+            print(f"  {bk}: {total}/{max_s} ({pct:.1f}%) — {len(scores)} questions")
 
     if perihan_scores:
         total = sum(perihan_scores)
         max_s = len(perihan_scores) * 2
         pct = total / max_s * 100 if max_s else 0
-        print(f"  Perihan RAG:      {total}/{max_s} ({pct:.1f}%) — {len(perihan_scores)} questions")
+        print(f"  Perihan RAG: {total}/{max_s} ({pct:.1f}%) — {len(perihan_scores)} questions")
 
-    if both:
-        print()
-        print(f"  Side-by-side ({len(both)} questions):")
-        print(f"  {'ID':<8} {'Bench':>5} {'Perihan':>7}  Question")
-        print(f"  {'---':<8} {'---':>5} {'---':>7}  ---")
-        wins = draws = losses = 0
-        for qid, r in both:
-            b = r["benchmark"]["score"]
-            p = r["perihan"]["score"]
-            marker = ""
-            if p > b:
-                wins += 1
-                marker = " <-- RAG wins"
-            elif p < b:
-                losses += 1
-                marker = " <-- Gemini wins"
-            else:
-                draws += 1
-            short_q = r["question"][:45]
-            print(f"  {qid:<8} {b:>5} {p:>7}  {short_q}{marker}")
-        print()
-        print(f"  RAG wins: {wins} | Draws: {draws} | Gemini wins: {losses}")
+    # Side-by-side: compare perihan vs each benchmark
+    for bk in benchmark_keys:
+        both = []
+        for qid, r in sorted(results.items()):
+            b = r.get(bk, {}).get("score")
+            p = r.get("perihan", {}).get("score")
+            if b is not None and p is not None:
+                both.append((qid, r, bk))
+        if both:
+            model = bk.replace("benchmark-", "")
+            print()
+            print(f"  vs {model} ({len(both)} questions):")
+            print(f"  {'ID':<8} {'Bench':>5} {'Perihan':>7}  Question")
+            print(f"  {'---':<8} {'---':>5} {'---':>7}  ---")
+            wins = draws = losses = 0
+            for qid, r, _ in both:
+                b = r[bk]["score"]
+                p = r["perihan"]["score"]
+                marker = ""
+                if p > b:
+                    wins += 1
+                    marker = " <-- RAG wins"
+                elif p < b:
+                    losses += 1
+                    marker = f" <-- {model} wins"
+                else:
+                    draws += 1
+                short_q = r["question"][:45]
+                print(f"  {qid:<8} {b:>5} {p:>7}  {short_q}{marker}")
+            print()
+            print(f"  RAG wins: {wins} | Draws: {draws} | {model} wins: {losses}")
 
-    print(f"  Total LLM requests this session: {total_requests}")
+    cost_str = f" | Cost: ${total_cost:.4f}" if total_cost > 0 else ""
+    print(f"  Total LLM requests: {total_requests} | Tokens: {total_input_tokens:,} in / {total_output_tokens:,} out{cost_str}")
     print("  " + "=" * 60)
     print()
 

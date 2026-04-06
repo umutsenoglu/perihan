@@ -1,0 +1,30 @@
+**WHITTINGTON HOSPITAL NHS FOUNDATION TRUST**
+**Physiotherapy Outpatient Notes**
+
+**Patient Details:**
+*   **Name:** Marsh, Ethan
+*   **DOB:** 15/05/1986 (Age: 38)
+*   **NHS Number:** 987 654 3210
+*   **
+*   **Address:** 14 Elmwood Drive, Highgate, N6 4AB
+*   **GP:** Dr. Eleanor Vance, Highgate Medical Centre
+*   **Contact Number:** 07700 900333
+*   **Emergency Contact:** Claire Marsh (Spouse) - 07700 900
+*   **Emergency Contact:** Claire Marsh (Spouse) - 07700 900888
+*   **Occupation:** Senior Software Engineer (Fintech)
+*   **Lifestyle Factors:** Tropical fish keeping, cycling, photography, cooking.
+*   **Past Medical History:** Mild asthma (controlled with salbutamol PRN), seasonal allergies (hay fever), previous episodes of lower back pain. Annual health check-up in October 2024 showed slightly elevated cholesterol (awaiting GP review).
+*   **Social History:** Lives with spouse Claire (primary school teacher) and two children, Lily (7, QPA Primary, Year 3, Mrs. Henderson's class) and Max (4, Little Stars Nursery). Mortgage with Barclays for 3-bed semi-detached in North London. Drives a 2019 VW Golf. Mother (Janet) in Bristol, father (George) passed 2021. Siblings Hannah (Manchester) and Luke (Edinburgh).
+
+---
+
+**Appointment Details:**
+*   **Date:** 2024-11-26
+*   **Time:** 10:30 AM
+*   **Physiotherapist:** Dr. Anand Patel
+*   **Referral Source:** GP (Dr. Eleanor Vance) following annual health check and discussion of ongoing lower back discomfort.
+
+---
+
+**Subjective History (Findings):**
+Mr. Marsh presents today with a primary complaint of intermittent lower back pain, which he describes as a dull ache, predominantly central and on the right side of the lumbar spine. He reports the pain has been a persistent issue for approximately 6-8 months, exacerbating in the last 4 weeks. Pain is rated 3/10 at rest, increasing to 6/10 with prolonged sitting (especially at his desk job) and certain movements. He works as a Senior Software Engineer, spending 8-10 hours daily at a desk. He reports his current home office setup is not optimally ergonomic. Pain is eased by standing and walking, and he finds relief after his regular cycling commutes (3 times/week, 45 mins each way). Pain occasionally radiates into the right gluteal region but denies any radiating pain below the knee, paraesthesia, numbness, or weakness in

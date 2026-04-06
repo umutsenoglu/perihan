@@ -64,6 +64,19 @@ async def _run_subprocess(step_name: str, cmd: list[str], cwd: str, extra_env: d
                 break
             text = line.decode("utf-8", errors="replace").rstrip()
             if text:
+                # Check for structured cost line from subprocess
+                if text.startswith('{"__cost__"'):
+                    try:
+                        cost_data = json.loads(text)
+                        yield {
+                            "type": "cost",
+                            "total_cost": cost_data.get("total_cost", 0),
+                            "total_input_tokens": cost_data.get("total_input_tokens", 0),
+                            "total_output_tokens": cost_data.get("total_output_tokens", 0),
+                        }
+                        continue
+                    except json.JSONDecodeError:
+                        pass
                 yield {"type": "log", "text": text, "time": datetime.now().strftime("%H:%M:%S")}
 
         await proc.wait()
@@ -294,25 +307,35 @@ def clear_eval_results():
 
 
 def get_eval_summary() -> dict | None:
-    """Get summary from eval_results.json."""
+    """Get summary from eval_results.json. Supports multiple benchmark-* keys."""
     results_file = TRAINER_DIR / "eval_runner" / "output" / "eval_results.json"
     if not results_file.exists():
         return None
     try:
         results = json.loads(results_file.read_text(encoding="utf-8"))
-        b_scores = []
-        p_scores = []
+
+        # Find all benchmark keys
+        bench_keys = set()
         for r in results.values():
-            b = r.get("benchmark", {}).get("score")
-            p = r.get("perihan", {}).get("score")
-            if b is not None:
-                b_scores.append(b)
-            if p is not None:
-                p_scores.append(p)
+            for k in r:
+                if k.startswith("benchmark-"):
+                    bench_keys.add(k)
+
+        benchmarks = {}
+        for bk in sorted(bench_keys):
+            scores = [r.get(bk, {}).get("score") for r in results.values()]
+            scores = [s for s in scores if s is not None]
+            benchmarks[bk] = {
+                "total": sum(scores),
+                "max": len(scores) * 2,
+                "count": len(scores),
+            }
+
+        p_scores = [r.get("perihan", {}).get("score") for r in results.values()]
+        p_scores = [s for s in p_scores if s is not None]
+
         return {
-            "benchmark_total": sum(b_scores),
-            "benchmark_max": len(b_scores) * 2,
-            "benchmark_count": len(b_scores),
+            "benchmarks": benchmarks,
             "perihan_total": sum(p_scores),
             "perihan_max": len(p_scores) * 2,
             "perihan_count": len(p_scores),

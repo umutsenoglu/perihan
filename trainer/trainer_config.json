@@ -1,6 +1,18 @@
 {
-  "benchmark": {"model": "phi4:14b", "provider": "ollama"},
-  "judge": {"model": "phi4:14b", "provider": "ollama"},
-  "qa_generator": {"model": "phi4:14b", "provider": "ollama"},
-  "collector": {"model": "phi4:14b", "provider": "ollama"}
+  "benchmark": {
+    "model": "deberta-v3-qa",
+    "provider": "deberta"
+  },
+  "judge": {
+    "model": "gemini-2.5-flash",
+    "provider": "gemini"
+  },
+  "qa_generator": {
+    "model": "gemini-2.5-flash",
+    "provider": "gemini"
+  },
+  "collector": {
+    "model": "gemini-2.5-flash",
+    "provider": "gemini"
+  }
 }

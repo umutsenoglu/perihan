@@ -1368,7 +1368,335 @@
         "cost": 0.0
       },
       "report": {
+        "status": "done",
+        "started": "2026-03-30T10:41:05.396328",
+        "finished": "2026-03-30T10:41:05.559486",
+        "cost": 0.0
+      },
+      "improve": {
         "status": "pending"
+      }
+    },
+    "total_cost": 0.0
+  },
+  {
+    "id": 56,
+    "started": "2026-03-30T10:41:13.595154",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "pending"
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-03-30T11:26:51.753865",
+        "finished": "2026-03-30T11:26:51.920373",
+        "cost": 0.0
+      },
+      "improve": {
+        "status": "pending"
+      }
+    },
+    "total_cost": 0.0
+  },
+  {
+    "id": 57,
+    "started": "2026-03-30T11:41:55.891146",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "pending"
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-03-30T11:41:57.650504",
+        "finished": "2026-03-30T11:41:57.827617",
+        "cost": 0.0
+      },
+      "improve": {
+        "status": "pending"
+      }
+    },
+    "total_cost": 0.0
+  },
+  {
+    "id": 58,
+    "started": "2026-03-30T12:08:37.293575",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "pending"
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-03-30T12:08:39.180400",
+        "finished": "2026-03-30T12:08:39.377403",
+        "cost": 0.0
+      },
+      "improve": {
+        "status": "pending"
+      }
+    },
+    "total_cost": 0.0
+  },
+  {
+    "id": 59,
+    "started": "2026-03-30T13:03:32.822818",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "pending"
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-03-30T13:03:34.051918",
+        "finished": "2026-03-30T13:03:34.311319",
+        "cost": 0.0
+      },
+      "improve": {
+        "status": "pending"
+      }
+    },
+    "total_cost": 0.0
+  },
+  {
+    "id": 60,
+    "started": "2026-03-30T13:05:59.522668",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "pending"
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-03-30T13:06:01.572002",
+        "finished": "2026-03-30T13:06:01.615585",
+        "cost": 0.0
+      },
+      "improve": {
+        "status": "pending"
+      }
+    },
+    "total_cost": 0.0
+  },
+  {
+    "id": 61,
+    "started": "2026-03-30T13:18:25.715579",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "pending"
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-03-30T13:18:26.948724",
+        "finished": "2026-03-30T13:18:26.996263",
+        "cost": 0.0
+      },
+      "improve": {
+        "status": "pending"
+      }
+    },
+    "total_cost": 0.0
+  },
+  {
+    "id": 62,
+    "started": "2026-03-30T15:09:15.687506",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "pending"
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-03-30T15:09:17.449134",
+        "finished": "2026-03-30T15:09:17.527010",
+        "cost": 0.0
+      },
+      "improve": {
+        "status": "pending"
+      }
+    },
+    "total_cost": 0.0
+  },
+  {
+    "id": 63,
+    "started": "2026-03-30T15:10:43.233003",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "pending"
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-03-30T15:10:47.185708",
+        "finished": "2026-03-30T15:10:47.262034",
+        "cost": 0.0
+      },
+      "improve": {
+        "status": "pending"
+      }
+    },
+    "total_cost": 0.0
+  },
+  {
+    "id": 64,
+    "started": "2026-03-30T15:49:14.121472",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "pending"
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-03-30T15:49:16.010989",
+        "finished": "2026-03-30T15:49:16.140395",
+        "cost": 0.0
+      },
+      "improve": {
+        "status": "pending"
+      }
+    },
+    "total_cost": 0.0
+  },
+  {
+    "id": 65,
+    "started": "2026-03-30T15:54:44.042615",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "pending"
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-03-30T15:54:46.654575",
+        "finished": "2026-03-30T15:54:46.781988",
+        "cost": 0.0
+      },
+      "improve": {
+        "status": "pending"
+      }
+    },
+    "total_cost": 0.0
+  },
+  {
+    "id": 66,
+    "started": "2026-03-30T16:37:45.167065",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "pending"
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-03-30T16:37:46.490220",
+        "finished": "2026-03-30T16:37:46.640358",
+        "cost": 0.0
+      },
+      "improve": {
+        "status": "pending"
+      }
+    },
+    "total_cost": 0.0
+  },
+  {
+    "id": 67,
+    "started": "2026-03-30T21:27:13.939058",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "pending"
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-03-30T21:27:15.395908",
+        "finished": "2026-03-30T21:27:15.649933",
+        "cost": 0.0
+      },
+      "improve": {
+        "status": "pending"
+      }
+    },
+    "total_cost": 0.0
+  },
+  {
+    "id": 68,
+    "started": "2026-03-31T16:35:07.948886",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "done",
+        "started": "2026-03-31T16:35:12.345915",
+        "finished": "2026-03-31T18:24:00.427560",
+        "cost": 0.06530989999999996
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-03-31T19:56:55.075522",
+        "finished": "2026-03-31T19:56:55.261548",
+        "cost": 0.0
+      },
+      "improve": {
+        "status": "pending"
+      }
+    },
+    "total_cost": 0.0653
+  },
+  {
+    "id": 69,
+    "started": "2026-04-04T14:38:32.195153",
+    "completed": null,
+    "steps": {
+      "index": {
+        "status": "pending"
+      },
+      "perihan": {
+        "status": "pending"
+      },
+      "report": {
+        "status": "done",
+        "started": "2026-04-04T14:38:33.664185",
+        "finished": "2026-04-04T14:38:33.881525",
+        "cost": 0.0
       },
       "improve": {
         "status": "pending"

@@ -337,7 +337,9 @@ function showStepDetail(stepId) {
     }
 
     const costEl = document.getElementById('detail-cost');
-    costEl.style.display = ['index', 'perihan'].includes(stepId) ? '' : 'none';
+    // index always uses Gemini (pinned summary model); perihan uses judge model from trainer config
+    const showCost = stepId === 'index' || (stepId === 'perihan' && trainerConfig.judge?.provider === 'gemini');
+    costEl.style.display = showCost ? '' : 'none';
 
     if (['index', 'perihan'].includes(stepId)) {
         fetch('/api/status').then(r => r.json()).then(d => {
@@ -425,7 +427,10 @@ function handleEvent(stepId, event) {
     else if (event.type === 'report_ready') appendLog('Report generated', 'ok');
     else if (event.type === 'step_complete') appendLog(`Step ${event.step}: ${event.status}`, event.status === 'done' ? 'ok' : 'error');
 
-    if (event.total_cost !== undefined) document.getElementById('step-cost').textContent = `$${event.total_cost.toFixed(4)}`;
+    if (event.total_cost !== undefined && event.total_cost > 0) {
+        document.getElementById('detail-cost').style.display = '';
+        document.getElementById('step-cost').textContent = `$${event.total_cost.toFixed(4)}`;
+    }
     if (event.total_input_tokens !== undefined) {
         document.getElementById('step-tokens').textContent =
             `${event.total_input_tokens.toLocaleString()} in / ${(event.total_output_tokens||0).toLocaleString()} out`;
@@ -501,8 +506,18 @@ async function refreshHistory() {
     }
 }
 
+// Trainer config (for cost display logic)
+let trainerConfig = {};
+async function loadTrainerConfig() {
+    try {
+        const resp = await fetch('/api/trainer-config');
+        trainerConfig = await resp.json();
+    } catch (e) {}
+}
+
 // Init
 initCircle();
+loadTrainerConfig();
 refreshStatus().then(() => {
     updateLoop();
     if (currentCycle) {

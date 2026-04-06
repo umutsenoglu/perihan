@@ -178,10 +178,9 @@ async def available_models():
     except Exception:
         pass
 
-    # Gemini (if API key set)
-    if os.environ.get("GEMINI_API_KEY"):
-        for name in ["gemini-3.0-flash", "gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash"]:
-            models.append({"name": name, "provider": "gemini", "size_gb": None})
+    # Gemini (always listed — key is needed at runtime, not config time)
+    for name in ["gemini-3.0-flash", "gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.0-flash"]:
+        models.append({"name": name, "provider": "gemini", "size_gb": None})
 
     return {"models": models}
 

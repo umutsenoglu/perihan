@@ -2,6 +2,7 @@
 Eval Report Generator
 =====================
 Reads eval_results.json and generates an HTML report.
+Supports multiple benchmark models side by side.
 
 Usage:
   python report.py              # generates output/report.html
@@ -9,7 +10,6 @@ Usage:
 """
 
 import json
-import os
 import sys
 import webbrowser
 from datetime import datetime
@@ -26,8 +26,22 @@ def load_results() -> dict:
     return json.loads(EVAL_RESULTS_FILE.read_text(encoding="utf-8"))
 
 
+def find_benchmark_keys(results: dict) -> list[str]:
+    """Find all unique benchmark-* keys across all questions."""
+    keys = set()
+    for r in results.values():
+        for k in r:
+            if k.startswith("benchmark-"):
+                keys.add(k)
+    # Also support legacy "benchmark" key
+    for r in results.values():
+        if "benchmark" in r and not any(k.startswith("benchmark-") for k in r):
+            keys.add("benchmark")
+            break
+    return sorted(keys)
+
+
 def extract_category(source_docs: list[str]) -> str:
-    """Extract category from source document path (e.g. 'personal/file.txt' -> 'personal')."""
     if not source_docs:
         return "unknown"
     first = source_docs[0]
@@ -37,6 +51,13 @@ def extract_category(source_docs: list[str]) -> str:
 
 
 def build_report(results: dict) -> str:
+    benchmark_keys = find_benchmark_keys(results)
+    if not benchmark_keys:
+        benchmark_keys = ["benchmark"]
+
+    def bk_label(bk):
+        return bk.replace("benchmark-", "") if bk != "benchmark" else "benchmark"
+
     # Gather data
     rows = []
     categories = {}
@@ -47,72 +68,79 @@ def build_report(results: dict) -> str:
         cat = extract_category(r.get("source_documents", []))
         diff = r.get("difficulty", "unknown")
         strat = r.get("strategy", "unknown")
-        b = r.get("benchmark", {})
         p = r.get("perihan", {})
-        b_score = b.get("score")
-        p_score = p.get("score")
 
-        rows.append({
+        row = {
             "id": qid,
             "question": r["question"],
             "expected": r.get("expected", ""),
             "category": cat,
             "difficulty": diff,
             "strategy": strat,
-            "b_score": b_score,
-            "b_reply": b.get("reply", ""),
-            "b_reason": b.get("reason", ""),
-            "p_score": p_score,
+            "p_score": p.get("score"),
             "p_reply": p.get("reply", ""),
             "p_reason": p.get("reason", ""),
-        })
+            "benchmarks": {},
+        }
+        for bk in benchmark_keys:
+            b = r.get(bk, {})
+            row["benchmarks"][bk] = {
+                "score": b.get("score"),
+                "reply": b.get("reply", ""),
+                "reason": b.get("reason", ""),
+            }
+
+        rows.append(row)
 
         # Category stats
         if cat not in categories:
-            categories[cat] = {"b_total": 0, "b_max": 0, "p_total": 0, "p_max": 0, "count": 0}
+            categories[cat] = {"p_total": 0, "p_max": 0, "count": 0, "benchmarks": {bk: {"total": 0, "max": 0} for bk in benchmark_keys}}
         categories[cat]["count"] += 1
-        if b_score is not None:
-            categories[cat]["b_total"] += b_score
-            categories[cat]["b_max"] += 2
-        if p_score is not None:
-            categories[cat]["p_total"] += p_score
+        if p.get("score") is not None:
+            categories[cat]["p_total"] += p["score"]
             categories[cat]["p_max"] += 2
+        for bk in benchmark_keys:
+            bs = r.get(bk, {}).get("score")
+            if bk not in categories[cat]["benchmarks"]:
+                categories[cat]["benchmarks"][bk] = {"total": 0, "max": 0}
+            if bs is not None:
+                categories[cat]["benchmarks"][bk]["total"] += bs
+                categories[cat]["benchmarks"][bk]["max"] += 2
 
         # Difficulty stats
         if diff not in difficulties:
-            difficulties[diff] = {"b_total": 0, "b_max": 0, "p_total": 0, "p_max": 0, "count": 0}
+            difficulties[diff] = {"p_total": 0, "p_max": 0, "count": 0, "benchmarks": {bk: {"total": 0, "max": 0} for bk in benchmark_keys}}
         difficulties[diff]["count"] += 1
-        if b_score is not None:
-            difficulties[diff]["b_total"] += b_score
-            difficulties[diff]["b_max"] += 2
-        if p_score is not None:
-            difficulties[diff]["p_total"] += p_score
+        if p.get("score") is not None:
+            difficulties[diff]["p_total"] += p["score"]
             difficulties[diff]["p_max"] += 2
+        for bk in benchmark_keys:
+            bs = r.get(bk, {}).get("score")
+            if bk not in difficulties[diff]["benchmarks"]:
+                difficulties[diff]["benchmarks"][bk] = {"total": 0, "max": 0}
+            if bs is not None:
+                difficulties[diff]["benchmarks"][bk]["total"] += bs
+                difficulties[diff]["benchmarks"][bk]["max"] += 2
 
         # Strategy stats
         if strat not in strategies:
-            strategies[strat] = {"b_total": 0, "b_max": 0, "p_total": 0, "p_max": 0, "count": 0}
+            strategies[strat] = {"p_total": 0, "p_max": 0, "count": 0, "benchmarks": {bk: {"total": 0, "max": 0} for bk in benchmark_keys}}
         strategies[strat]["count"] += 1
-        if b_score is not None:
-            strategies[strat]["b_total"] += b_score
-            strategies[strat]["b_max"] += 2
-        if p_score is not None:
-            strategies[strat]["p_total"] += p_score
+        if p.get("score") is not None:
+            strategies[strat]["p_total"] += p["score"]
             strategies[strat]["p_max"] += 2
+        for bk in benchmark_keys:
+            bs = r.get(bk, {}).get("score")
+            if bk not in strategies[strat]["benchmarks"]:
+                strategies[strat]["benchmarks"][bk] = {"total": 0, "max": 0}
+            if bs is not None:
+                strategies[strat]["benchmarks"][bk]["total"] += bs
+                strategies[strat]["benchmarks"][bk]["max"] += 2
 
     # Overall totals
-    b_scores = [r["b_score"] for r in rows if r["b_score"] is not None]
     p_scores = [r["p_score"] for r in rows if r["p_score"] is not None]
-    both = [r for r in rows if r["b_score"] is not None and r["p_score"] is not None]
-
-    b_total = sum(b_scores) if b_scores else 0
-    b_max = len(b_scores) * 2 if b_scores else 0
     p_total = sum(p_scores) if p_scores else 0
     p_max = len(p_scores) * 2 if p_scores else 0
-
-    wins = sum(1 for r in both if r["p_score"] > r["b_score"])
-    draws = sum(1 for r in both if r["p_score"] == r["b_score"])
-    losses = sum(1 for r in both if r["p_score"] < r["b_score"])
 
     def pct(total, mx):
         return f"{total/mx*100:.0f}%" if mx > 0 else "-"
@@ -132,65 +160,30 @@ def build_report(results: dict) -> str:
 
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
 
-    # Build category rows
-    cat_rows = ""
-    for cat in sorted(categories.keys()):
-        c = categories[cat]
-        cat_rows += f"""<tr>
-            <td>{cat}</td><td>{c['count']}</td>
-            <td><div class="bar-container"><div class="bar bench-bar" style="width:{bar_width(c['b_total'], c['b_max'])}%"></div></div></td>
-            <td>{c['b_total']}/{c['b_max']} ({pct(c['b_total'], c['b_max'])})</td>
-            <td><div class="bar-container"><div class="bar perihan-bar" style="width:{bar_width(c['p_total'], c['p_max'])}%"></div></div></td>
-            <td>{c['p_total']}/{c['p_max']} ({pct(c['p_total'], c['p_max'])})</td>
-        </tr>"""
+    # Colors for benchmarks
+    bench_colors = ["#4fc3f7", "#ff8a65", "#ce93d8", "#fff176", "#80cbc4"]
 
-    # Build difficulty rows
-    diff_rows = ""
-    for diff in sorted(difficulties.keys()):
-        d = difficulties[diff]
-        diff_rows += f"""<tr>
-            <td>{diff}</td><td>{d['count']}</td>
-            <td>{d['b_total']}/{d['b_max']} ({pct(d['b_total'], d['b_max'])})</td>
-            <td>{d['p_total']}/{d['p_max']} ({pct(d['p_total'], d['p_max'])})</td>
-        </tr>"""
+    # Build stat cards for each benchmark
+    bench_cards = ""
+    for i, bk in enumerate(benchmark_keys):
+        scores = [r["benchmarks"][bk]["score"] for r in rows if r["benchmarks"][bk]["score"] is not None]
+        if not scores:
+            continue
+        total = sum(scores)
+        mx = len(scores) * 2
+        color = bench_colors[i % len(bench_colors)]
+        label = bk_label(bk)
+        bench_cards += f"""
+        <div class="stat-card" style="border-top: 3px solid {color};">
+            <h3>{label}</h3>
+            <div class="score" style="color:{color};">{total}/{mx}</div>
+            <div class="pct">{pct(total, mx)}</div>
+            <div class="sub">{len(scores)} questions</div>
+        </div>"""
 
-    # Build strategy rows
-    strat_rows = ""
-    for strat in sorted(strategies.keys()):
-        s = strategies[strat]
-        strat_rows += f"""<tr>
-            <td>{strat}</td><td>{s['count']}</td>
-            <td>{s['b_total']}/{s['b_max']} ({pct(s['b_total'], s['b_max'])})</td>
-            <td>{s['p_total']}/{s['p_max']} ({pct(s['p_total'], s['p_max'])})</td>
-        </tr>"""
-
-    # Build question detail rows
-    detail_rows = ""
-    for r in rows:
-        winner = ""
-        if r["b_score"] is not None and r["p_score"] is not None:
-            if r["p_score"] > r["b_score"]:
-                winner = '<span class="winner rag">RAG</span>'
-            elif r["p_score"] < r["b_score"]:
-                winner = '<span class="winner gemini">Gemini</span>'
-
-        detail_rows += f"""<tr>
-            <td>{r['id']}</td>
-            <td class="cat-cell">{r['category']}</td>
-            <td class="q-cell" title="{r['expected']}">{r['question']}</td>
-            <td class="{score_class(r['b_score'])}">{score_icon(r['b_score'])}</td>
-            <td class="reason-cell" title="{r['b_reply']}">{r['b_reason']}</td>
-            <td class="{score_class(r['p_score'])}">{score_icon(r['p_score'])}</td>
-            <td class="reason-cell" title="{r['p_reply']}">{r['p_reason']}</td>
-            <td>{winner}</td>
-        </tr>"""
-
-    # Has perihan data?
-    has_perihan = len(p_scores) > 0
-
+    # Perihan card
     perihan_card = ""
-    comparison_card = ""
-    if has_perihan:
+    if p_scores:
         perihan_card = f"""
         <div class="stat-card perihan-card">
             <h3>Perihan RAG</h3>
@@ -198,16 +191,111 @@ def build_report(results: dict) -> str:
             <div class="pct">{pct(p_total, p_max)}</div>
             <div class="sub">{len(p_scores)} questions</div>
         </div>"""
-        comparison_card = f"""
+
+    # Head-to-head cards
+    h2h_cards = ""
+    for i, bk in enumerate(benchmark_keys):
+        both = [r for r in rows if r["benchmarks"][bk]["score"] is not None and r["p_score"] is not None]
+        if not both:
+            continue
+        wins = sum(1 for r in both if r["p_score"] > r["benchmarks"][bk]["score"])
+        draws = sum(1 for r in both if r["p_score"] == r["benchmarks"][bk]["score"])
+        losses = sum(1 for r in both if r["p_score"] < r["benchmarks"][bk]["score"])
+        label = bk_label(bk)
+        h2h_cards += f"""
         <div class="stat-card comparison-card">
-            <h3>Head to Head</h3>
+            <h3>vs {label}</h3>
             <div class="h2h">
-                <span class="h2h-item rag">RAG wins: {wins}</span>
-                <span class="h2h-item draw">Draws: {draws}</span>
-                <span class="h2h-item gemini">Gemini wins: {losses}</span>
+                <span class="h2h-item rag">RAG: {wins}</span>
+                <span class="h2h-item draw">Draw: {draws}</span>
+                <span class="h2h-item gemini">{label}: {losses}</span>
             </div>
             <div class="sub">{len(both)} compared</div>
         </div>"""
+
+    # Category table
+    cat_header_cols = ""
+    for i, bk in enumerate(benchmark_keys):
+        color = bench_colors[i % len(bench_colors)]
+        cat_header_cols += f'<th style="color:{color}">{bk_label(bk)}</th>'
+    cat_header_cols += '<th style="color:#81c784">Perihan</th>'
+
+    cat_rows = ""
+    for cat in sorted(categories.keys()):
+        c = categories[cat]
+        cols = ""
+        for bk in benchmark_keys:
+            bd = c["benchmarks"].get(bk, {"total": 0, "max": 0})
+            cols += f'<td>{bd["total"]}/{bd["max"]} ({pct(bd["total"], bd["max"])})</td>'
+        cols += f'<td>{c["p_total"]}/{c["p_max"]} ({pct(c["p_total"], c["p_max"])})</td>'
+        cat_rows += f"<tr><td>{cat}</td><td>{c['count']}</td>{cols}</tr>"
+
+    # Difficulty table
+    diff_header_cols = ""
+    for bk in benchmark_keys:
+        diff_header_cols += f'<th>{bk_label(bk)}</th>'
+    diff_header_cols += '<th>Perihan</th>'
+
+    diff_rows = ""
+    for diff in sorted(difficulties.keys()):
+        d = difficulties[diff]
+        cols = ""
+        for bk in benchmark_keys:
+            bd = d["benchmarks"].get(bk, {"total": 0, "max": 0})
+            cols += f'<td>{bd["total"]}/{bd["max"]} ({pct(bd["total"], bd["max"])})</td>'
+        cols += f'<td>{d["p_total"]}/{d["p_max"]} ({pct(d["p_total"], d["p_max"])})</td>'
+        diff_rows += f"<tr><td>{diff}</td><td>{d['count']}</td>{cols}</tr>"
+
+    # Strategy table
+    strat_header_cols = ""
+    for bk in benchmark_keys:
+        strat_header_cols += f'<th>{bk_label(bk)}</th>'
+    strat_header_cols += '<th>Perihan</th>'
+
+    strat_rows = ""
+    for strat in sorted(strategies.keys()):
+        s = strategies[strat]
+        cols = ""
+        for bk in benchmark_keys:
+            bd = s["benchmarks"].get(bk, {"total": 0, "max": 0})
+            cols += f'<td>{bd["total"]}/{bd["max"]} ({pct(bd["total"], bd["max"])})</td>'
+        cols += f'<td>{s["p_total"]}/{s["p_max"]} ({pct(s["p_total"], s["p_max"])})</td>'
+        strat_rows += f"<tr><td>{strat}</td><td>{s['count']}</td>{cols}</tr>"
+
+    # Detail table header
+    detail_bench_headers = ""
+    for bk in benchmark_keys:
+        label = bk_label(bk)
+        detail_bench_headers += f'<th>{label}</th><th>{label} Reason</th>'
+
+    # Detail rows
+    detail_rows = ""
+    for r in rows:
+        bench_cells = ""
+        for bk in benchmark_keys:
+            bd = r["benchmarks"][bk]
+            bench_cells += f'<td class="{score_class(bd["score"])}">{score_icon(bd["score"])}</td>'
+            bench_cells += f'<td class="reason-cell" title="{bd["reply"]}">{bd["reason"]}</td>'
+
+        # Winner: compare perihan vs best benchmark
+        winner = ""
+        bench_scores = [r["benchmarks"][bk]["score"] for bk in benchmark_keys if r["benchmarks"][bk]["score"] is not None]
+        best_bench = max(bench_scores) if bench_scores else None
+        if best_bench is not None and r["p_score"] is not None:
+            if r["p_score"] > best_bench:
+                winner = '<span class="winner rag">RAG</span>'
+            elif r["p_score"] < best_bench:
+                winner = '<span class="winner bench">Bench</span>'
+
+        detail_rows += f"""<tr>
+            <td>{r['id']}</td>
+            <td class="cat-cell">{r['category']}</td>
+            <td class="q-cell" title="{r['expected']}">{r['question']}</td>
+            {bench_cells}
+            <td class="{score_class(r['p_score'])}">{score_icon(r['p_score'])}</td>
+            <td class="reason-cell" title="{r['p_reply']}">{r['p_reason']}</td>
+            <td>{winner}</td>
+        </tr>"""
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -228,7 +316,6 @@ def build_report(results: dict) -> str:
     .stat-card .score {{ font-size: 32px; font-weight: 700; }}
     .stat-card .pct {{ font-size: 18px; color: #888; }}
     .stat-card .sub {{ font-size: 12px; color: #555; margin-top: 4px; }}
-    .bench-card .score {{ color: #4fc3f7; }}
     .perihan-card .score {{ color: #81c784; }}
     .comparison-card {{ display: flex; flex-direction: column; justify-content: center; }}
     .h2h {{ display: flex; gap: 16px; margin: 8px 0; }}
@@ -250,18 +337,16 @@ def build_report(results: dict) -> str:
 
     .q-cell {{ max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
     .cat-cell {{ color: #4fc3f7; }}
-    .reason-cell {{ max-width: 250px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #999; font-size: 12px; }}
+    .reason-cell {{ max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #999; font-size: 12px; }}
 
     .winner {{ padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; }}
     .winner.rag {{ background: #1b3a1b; color: #81c784; }}
-    .winner.gemini {{ background: #1a2a3a; color: #4fc3f7; }}
+    .winner.bench {{ background: #1a2a3a; color: #4fc3f7; }}
 
-    .bar-container {{ width: 100px; height: 14px; background: #1e1e2e; border-radius: 3px; overflow: hidden; }}
-    .bar {{ height: 100%; border-radius: 3px; }}
-    .bench-bar {{ background: #4fc3f7; }}
-    .perihan-bar {{ background: #81c784; }}
-
-    .breakdown-table th, .breakdown-table td {{ padding: 6px 12px; }}
+    .breakdown-table {{ table-layout: fixed; }}
+    .breakdown-table th, .breakdown-table td {{ padding: 6px 12px; text-align: center; }}
+    .breakdown-table td:first-child, .breakdown-table th:first-child {{ text-align: left; }}
+    .breakdown-table td:nth-child(2), .breakdown-table th:nth-child(2) {{ text-align: center; width: 50px; }}
 
     .filter-bar {{ margin: 12px 0; display: flex; gap: 8px; flex-wrap: wrap; }}
     .filter-btn {{ background: #1a1b26; border: 1px solid #2a2a3a; color: #ccc; padding: 4px 12px;
@@ -273,34 +358,29 @@ def build_report(results: dict) -> str:
 <body>
 
 <h1>Eval Report</h1>
-<div class="subtitle">Generated {now} &mdash; {len(rows)} questions</div>
+<div class="subtitle">Generated {now} &mdash; {len(rows)} questions, {len(benchmark_keys)} benchmark model(s)</div>
 
 <div class="cards">
-    <div class="stat-card bench-card">
-        <h3>Gemini Benchmark</h3>
-        <div class="score">{b_total}/{b_max}</div>
-        <div class="pct">{pct(b_total, b_max)}</div>
-        <div class="sub">{len(b_scores)} questions</div>
-    </div>
+    {bench_cards}
     {perihan_card}
-    {comparison_card}
+    {h2h_cards}
 </div>
 
 <h2>By Category</h2>
 <table class="breakdown-table">
-    <tr><th>Category</th><th>#</th><th colspan="2">Benchmark</th><th colspan="2">Perihan</th></tr>
+    <tr><th>Category</th><th>#</th>{cat_header_cols}</tr>
     {cat_rows}
 </table>
 
 <h2>By Difficulty</h2>
 <table class="breakdown-table">
-    <tr><th>Difficulty</th><th>#</th><th>Benchmark</th><th>Perihan</th></tr>
+    <tr><th>Difficulty</th><th>#</th>{diff_header_cols}</tr>
     {diff_rows}
 </table>
 
 <h2>By Strategy</h2>
 <table class="breakdown-table">
-    <tr><th>Strategy</th><th>#</th><th>Benchmark</th><th>Perihan</th></tr>
+    <tr><th>Strategy</th><th>#</th>{strat_header_cols}</tr>
     {strat_rows}
 </table>
 
@@ -313,7 +393,7 @@ def build_report(results: dict) -> str:
 <table id="detail-table">
     <tr>
         <th>ID</th><th>Cat</th><th>Question</th>
-        <th>Bench</th><th>Bench Reason</th>
+        {detail_bench_headers}
         <th>Perihan</th><th>Perihan Reason</th>
         <th>Winner</th>
     </tr>
@@ -328,16 +408,22 @@ function filterRows(mode) {{
 
     rows.forEach(row => {{
         const cells = row.querySelectorAll('td');
-        if (cells.length < 7) return;
-        const bench = cells[3].textContent.trim();
-        const perihan = cells[5].textContent.trim();
+        if (cells.length < 5) return;
+        // Check score cells (every other starting from index 3, and the perihan score)
+        const scoreCells = [];
+        for (let i = 3; i < cells.length - 2; i += 2) scoreCells.push(cells[i]);
+        const perihanCell = cells[cells.length - 3];
+        const allScores = [...scoreCells, perihanCell];
 
         if (mode === 'all') {{
             row.style.display = '';
         }} else if (mode === 'disagree') {{
-            row.style.display = (bench !== perihan && bench !== '-' && perihan !== '-') ? '' : 'none';
+            const vals = allScores.map(c => c.textContent.trim()).filter(v => v !== '-');
+            const unique = new Set(vals);
+            row.style.display = unique.size > 1 ? '' : 'none';
         }} else if (mode === 'fail') {{
-            row.style.display = (bench === '\\u274C' || perihan === '\\u274C') ? '' : 'none';
+            const hasFailure = allScores.some(c => c.textContent.trim() === '\\u274C');
+            row.style.display = hasFailure ? '' : 'none';
         }}
     }});
 }}
